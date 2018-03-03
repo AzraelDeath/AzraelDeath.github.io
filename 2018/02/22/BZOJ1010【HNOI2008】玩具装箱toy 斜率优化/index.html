@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1010【HNOI2008】玩具装箱toy &lt;斜率优化&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem 【HNOI2008】玩具装箱toyTime Limit: $10 Sec$Memory Limit: $162 MB$ Description$P$教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。$P$教授有编号为$1\sim N$的$N$件玩具，第$i$件玩具经过压缩后变成一维">
 <meta property="og:updated_time" content="2018-03-01T14:22:42.389Z">
 <meta name="twitter:card" content="summary">
@@ -125,7 +125,7 @@
 
 
 
-  <title>BZOJ1010【HNOI2008】玩具装箱toy <斜率优化> | Hexo</title>
+  <title>BZOJ1010【HNOI2008】玩具装箱toy <斜率优化> | NIRVANA</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -235,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -311,7 +311,7 @@
 </blockquote>
 <p>标签：斜率优化$DP$</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>令$L=L+1$，有如下$DP$方程：$f[i]=\min_{j=0}^{i-1}{f[j]+[(i-j+\sum_{k=j}^{i}C_k)-L]^2}$。</p>
-<p>预处理$s[i]=\sum_{j=1}^{i}C_j,\;w[i]=s[i]+i$。对于当前$DP$到的位置$i$，必然存在$p,q\in[0,i)$，使得<br>$$<br>\begin{aligned}<br>f[p]+[(i-p+\sum_{k=p}^{i}C_k)-L]^2&amp;\le f[q]+[(i-q+\sum_{k=q}^{i}C_k)-L]^2\<br>&amp;\Updownarrow\<br>f[p]+(w[i]-w[p]-L)^2&amp;\le f[q]+(w[i]-w[q]-L)^2\<br>&amp;\Updownarrow\<br>f[p]+w[i]^2+w[p]^2+L^2-2\times w[i]&amp;\times w[p]-2\times w[i]\times L+2\times w[p]\times L\<br>&amp;\le\<br>f[q]+w[i]^2+w[q]^2+L^2-2\times w[i]&amp;\times w[q]-2\times w[i]\times L+2\times w[q]\times L\<br>&amp;\Updownarrow\<br>f[p]+(w[p]+L)^2-2\times w[i]\times w[p]&amp;\le f[q]+(w[q]+L)^2-2\times w[i]\times w[q]\<br>&amp;\Updownarrow\<br>\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}&amp;\le w[i]\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}\le w[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
+<p>预处理$s[i]=\sum_{j=1}^{i}C_j,\;w[i]=s[i]+i$。对于当前$DP$到的位置$i$，必然存在$p,q\in[0,i)$，使得<br>$$<br>\begin{aligned}<br>f[p]+[(i-p+\sum_{k=p}^{i}C_k)-L]^2&amp;\le f[q]+[(i-q+\sum_{k=q}^{i}C_k)-L]^2\\<br>&amp;\Updownarrow\\<br>f[p]+(w[i]-w[p]-L)^2&amp;\le f[q]+(w[i]-w[q]-L)^2\\<br>&amp;\Updownarrow\\<br>f[p]+w[i]^2+w[p]^2+L^2-2\times w[i]&amp;\times w[p]-2\times w[i]\times L+2\times w[p]\times L\\<br>&amp;\le\\<br>f[q]+w[i]^2+w[q]^2+L^2-2\times w[i]&amp;\times w[q]-2\times w[i]\times L+2\times w[q]\times L\\<br>&amp;\Updownarrow\\<br>f[p]+(w[p]+L)^2-2\times w[i]\times w[p]&amp;\le f[q]+(w[q]+L)^2-2\times w[i]\times w[q]\\<br>&amp;\Updownarrow\\<br>\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}&amp;\le w[i]\\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}\le w[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 50000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, l, sta[MAX_N+<span class="number">5</span>], s, t;	lnt f[MAX_N+<span class="number">5</span>], w[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function">dnt <span class="title">calc</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;<span class="keyword">return</span> (f[p]-f[q]+(w[p]+l)*(w[p]+l)-(w[q]+l)*(w[q]+l))/(<span class="number">2.0</span>*(w[p]-w[q]));&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n), read(l), l++;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) read(w[i]), w[i] += w[i<span class="number">-1</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) w[i] += i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">while</span> (s &lt; t &amp;&amp; calc(sta[s+<span class="number">1</span>], sta[s]) &lt;= w[i]) s++;</span><br><span class="line">		f[i] = f[sta[s]]+(w[i]-w[sta[s]]-l)*(w[i]-w[sta[s]]-l);</span><br><span class="line">		<span class="keyword">while</span> (s &lt; t &amp;&amp; calc(sta[t], sta[t<span class="number">-1</span>]) &gt; calc(i, sta[t])) t--;</span><br><span class="line">		sta[++t] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[n]), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -358,8 +358,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/26/BZOJ2693 jzptab 莫比乌斯反演/" rel="prev" title="BZOJ2693 jzptab <莫比乌斯反演>">
-                BZOJ2693 jzptab <莫比乌斯反演> <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" rel="prev" title="BZOJ2154 Crash的数字表格 <莫比乌斯反演>">
+                BZOJ2154 Crash的数字表格 <莫比乌斯反演> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -426,7 +426,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -507,7 +507,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>

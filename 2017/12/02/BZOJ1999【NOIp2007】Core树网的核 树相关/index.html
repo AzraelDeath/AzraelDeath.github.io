@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1999【NOIp2007】Core树网的核 &lt;树相关&gt;">
 <meta property="og:url" content="http://yoursite.com/2017/12/02/BZOJ1999【NOIp2007】Core树网的核 树相关/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem 【NOIp2007】Core树网的核 Time Limit: $10 Sec$  Memory Limit: $64 MB$  Description 设$T=(V, E, W)$ 是一个无圈且连通的无向图（也称为无根树），每条边带有正整数的权，我们称$T$为树网（$treenetwork$），其中$V, E$分别表示结点与边的集合，$W$表示各边长度的集合，并设$T$有$n$个结">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999\_10000&sec=1494764397908&di=b5ded99b0dfdd2ea72eb50ce5ca2656f&imgtype=0&src=http%3A%2F%2Fdn-vijos-org-static.qbox.me%2Fstatic%2FProblemImg%2FP1362.png">
 <meta property="og:updated_time" content="2018-02-10T14:43:29.225Z">
@@ -127,7 +127,7 @@
 
 
 
-  <title>BZOJ1999【NOIp2007】Core树网的核 <树相关> | Hexo</title>
+  <title>BZOJ1999【NOIp2007】Core树网的核 <树相关> | NIRVANA</title>
   
 
 
@@ -157,7 +157,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -237,13 +237,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/02/BZOJ1999【NOIp2007】Core树网的核 树相关/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -307,7 +307,7 @@
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><blockquote>
 <p>设$T=(V, E, W)$ 是一个无圈且连通的无向图（也称为无根树），每条边带有正整数的权，我们称$T$为树网（$treenetwork$），其中$V, E$分别表示结点与边的集合，$W$表示各边长度的集合，并设$T$有$n$个结点。 路径：树网中任何两结点$a,b$都存在唯一的一条简单路径，用$d(a,b)$表示以$a,b$为端点的路径的长度，它是该路径上各边长度之和。我们称$d(a,b)$为$a,b$两结点间的距离。 一点$v$到一条路径$P$的距离为该点与$P$上的最近的结点的距离： $d(v，P)=min_{u在P上}{d(v，u)}$。 树网的直径：树网中最长的路径称为树网的直径。对于给定的树网$T$，直径不一定是唯一的，但可以证明：各直径的中点（不一定恰好是某个结点，可能在某条边的内部）是唯一的，我们称该点为树网的中心。 偏心距$ECC(F)$：树网$T$中距路径$F$最远的结点到路径$F$的距离，即 。 任务：对于给定的树网$T=(V, E,W)$和非负整数$s$，求一个路径$F$，它是某直径上的一段路径（该路径两端均为树网中的结点），其长度不超过$s$（可以等于$s$），使偏心距$ECC(F)$最小。我们称这个路径为树网$T=(V,E,W)$的核（$Core$）。必要时，$F$可以退化为某个结点。一般来说，在上述定义下，核不一定只有一个，但最小偏心距是唯一的。 下面的图给出了树网的一个实例。图中，$A-B$与$A-C$是两条直径，长度均为$20$。点$W$是树网的中心，$EF$边的长度为$5$。如果指定$s=11$，则树网的核为路径$DEFG$（也可以取为路径$DEF$），偏心距为$8$。如果指定$s=0$（或$s=1$、$s=2$），则树网的核为结点$F$，偏心距为$12$。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999\_10000&amp;sec=1494764397908&amp;di=b5ded99b0dfdd2ea72eb50ce5ca2656f&amp;imgtype=0&amp;src=http%3A%2F%2Fdn-vijos-org-static.qbox.me%2Fstatic%2FProblemImg%2FP1362.png" alt=""></p>
 </blockquote>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>包含$n$行： 第$1$行，两个正整数$n$和$s$，中间用一个空格隔开。其中$n$为树网结点的个数，$s$为树网的核的长度的上界。设结点编号依次为$1, 2, \cdots, n$。 从第$2$行到第$n$行，每行给出$3$个用空格隔开的正整数，依次表示每一条边的两个端点编号和长度。例如，“$2\ 4\ 7$”表示连接结点$2$与$4$的边的长度为$7$。 所给的数据都是正确的，不必检验。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>包含$n$行： 第$1$行，两个正整数$n$和$s$，中间用一个空格隔开。其中$n$为树网结点的个数，$s$为树网的核的长度的上界。设结点编号依次为$1, 2, \cdots, n$。 从第$2$行到第$n$行，每行给出$3$个用空格隔开的正整数，依次表示每一条边的两个端点编号和长度。例如，“$2 4 7$”表示连接结点$2$与$4$的边的长度为$7$。 所给的数据都是正确的，不必检验。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个非负整数，为指定意义下的最小偏心距。</p>
 <blockquote>
 </blockquote>
@@ -356,8 +356,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/30/BZOJ4145【AMPPZ2014】The Prices 状压DP/" rel="next" title="BZOJ4145【AMPPZ2014】The Prices <状压DP>">
-                <i class="fa fa-chevron-left"></i> BZOJ4145【AMPPZ2014】The Prices <状压DP>
+              <a href="/2017/11/30/BZOJ1468 Tree 点分治/" rel="next" title="BZOJ1468 Tree <点分治>">
+                <i class="fa fa-chevron-left"></i> BZOJ1468 Tree <点分治>
               </a>
             
           </div>
@@ -434,7 +434,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -515,7 +515,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>

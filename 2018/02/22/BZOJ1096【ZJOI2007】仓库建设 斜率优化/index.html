@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1096【ZJOI2007】仓库建设 &lt;斜率优化&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/02/22/BZOJ1096【ZJOI2007】仓库建设 斜率优化/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem 【ZJOI2007】仓库建设Time Limit: $10 Sec$Memory Limit: $162 MB$ Description$L$公司有$N$个工厂，由高到底分布在一座山上。如图所示，工厂$1$在山顶，工厂$N$在山脚。由于这座山处于高原内陆地区（干燥少雨），$L$公司一般把产品直接堆放在露天，以节省费用。突然有一天，$L$公司的总裁$L$先生接到气象部门的电话，被告知">
 <meta property="og:updated_time" content="2018-02-26T15:08:18.815Z">
 <meta name="twitter:card" content="summary">
@@ -125,7 +125,7 @@
 
 
 
-  <title>BZOJ1096【ZJOI2007】仓库建设 <斜率优化> | Hexo</title>
+  <title>BZOJ1096【ZJOI2007】仓库建设 <斜率优化> | NIRVANA</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -235,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/BZOJ1096【ZJOI2007】仓库建设 斜率优化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -316,7 +316,7 @@
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">32</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>标签：斜率优化$DP$</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>由题意，易得到$DP$方程：$f[i]=c[i]+\min_{j=0}^{i-1}{f[j]+\sum_{k=j+1}^{i}p[k]\times(x[i]-x[k])}$<br>那么对于当前$DP$到的位置$i$，一定存在$p,q\in[0,i)$使得<br>$$<br>\begin{aligned}<br>f[p]+\sum_{k=p+1}^{i}p[k]\times(x[i]-x[k])&amp;\le f[q]+\sum_{k=q+1}^{i}p[k]\times(x[i]-x[k])\<br>f[p]+\sum_{k=p+1}^{i}p[k]\times x[i]-\sum_{k=p+1}^{i}p[k]\times x[k]&amp;\le f[q]+\sum_{k=q+1}^{i}p[k]\times x[i]-\sum_{k=q+1}^{i}p[k]\times x[k]\<br>Let\;s_1[i]=\sum_{j=1}^{i}p[j]\times x[j]&amp;,\;s_2[i]=\sum_{j=1}^{i}p[j]\<br>f[p]+(s_2[i]-s_2[p])\times x[i]-s_1[i]+s_1[p]&amp;\le f[q]+(s_2[i]-s_2[q])\times x[i]-s_1[i]+s_1[q]\<br>f[p]-s_2[p]\times x[i]+s_1[p]&amp;\le f[q]-s_2[q]\times x[i]+s_1[q]\<br>\frac{(f[p]-f[q])+(s_1[p]-s_1[q])}{s_2[p]-s_2[q]}&amp;\le x[i]\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+(s_1[p]-s_1[q])}{s_2[p]-s_2[q]}\le x[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>由题意，易得到$DP$方程：$f[i]=c[i]+\min_{j=0}^{i-1}{f[j]+\sum_{k=j+1}^{i}p[k]\times(x[i]-x[k])}$<br>那么对于当前$DP$到的位置$i$，一定存在$p,q\in[0,i)$使得<br>$$<br>\begin{aligned}<br>f[p]+\sum_{k=p+1}^{i}p[k]\times(x[i]-x[k])&amp;\le f[q]+\sum_{k=q+1}^{i}p[k]\times(x[i]-x[k])\\<br>f[p]+\sum_{k=p+1}^{i}p[k]\times x[i]-\sum_{k=p+1}^{i}p[k]\times x[k]&amp;\le f[q]+\sum_{k=q+1}^{i}p[k]\times x[i]-\sum_{k=q+1}^{i}p[k]\times x[k]\\<br>Let\;s_1[i]=\sum_{j=1}^{i}p[j]\times x[j]&amp;,\;s_2[i]=\sum_{j=1}^{i}p[j]\\<br>f[p]+(s_2[i]-s_2[p])\times x[i]-s_1[i]+s_1[p]&amp;\le f[q]+(s_2[i]-s_2[q])\times x[i]-s_1[i]+s_1[q]\\<br>f[p]-s_2[p]\times x[i]+s_1[p]&amp;\le f[q]-s_2[q]\times x[i]+s_1[q]\\<br>\frac{(f[p]-f[q])+(s_1[p]-s_1[q])}{s_2[p]-s_2[q]}&amp;\le x[i]\\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+(s_1[p]-s_1[q])}{s_2[p]-s_2[q]}\le x[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, c[MAX_N+<span class="number">5</span>], x[MAX_N+<span class="number">5</span>], m[MAX_N+<span class="number">5</span>];</span><br><span class="line">lnt s1[MAX_N+<span class="number">5</span>], s2[MAX_N+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> l, r, sta[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function">dnt <span class="title">calc</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;<span class="keyword">return</span> (dnt)(f[p]-f[q]+s1[p]-s1[q])/(dnt)(s2[p]-s2[q]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) read(x[i]), read(m[i]), read(c[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) s1[i] = s1[i<span class="number">-1</span>]+<span class="number">1L</span>L*m[i]*x[i], s2[i] = s2[i<span class="number">-1</span>]+m[i];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">while</span> (l &lt; r &amp;&amp; calc(sta[l+<span class="number">1</span>], sta[l]) &lt;= x[i]) l++;</span><br><span class="line">		f[i] = f[sta[l]]+<span class="number">1L</span>L*x[i]*(s2[i]-s2[sta[l]])-s1[i]+s1[sta[l]]+c[i];</span><br><span class="line">		<span class="keyword">while</span> (l &lt; r &amp;&amp; calc(sta[r], sta[r<span class="number">-1</span>]) &gt; calc(i, sta[r])) r--;</span><br><span class="line">		sta[++r] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[n]), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -431,7 +431,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -512,7 +512,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>

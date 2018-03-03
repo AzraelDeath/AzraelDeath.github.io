@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ2339【HNOI2011】卡农 &lt;计数DP+组合数学&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/02/11/BZOJ2339【HNOI2011】卡农 计数DP+组合数学/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem 【HNOI2011】卡农 Time Limit: $10 Sec$  Memory Limit: $128MB$  Description&amp;gt;### Input&amp;gt;### Output&amp;gt;### Sample Input  标签：计数$DP$ Solution考试时没想出来，不过听了觉得挺简单的。 首先把每个片段看成一个数，每个音阶看成该数的一位，则每位为$0$或$1$">
 <meta property="og:image" content="https://i.loli.net/2018/02/11/5a8034a027595.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/02/11/5a8034c89c9e6.jpg">
@@ -130,7 +130,7 @@
 
 
 
-  <title>BZOJ2339【HNOI2011】卡农 <计数DP+组合数学> | Hexo</title>
+  <title>BZOJ2339【HNOI2011】卡农 <计数DP+组合数学> | NIRVANA</title>
   
 
 
@@ -160,7 +160,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -240,13 +240,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/11/BZOJ2339【HNOI2011】卡农 计数DP+组合数学/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -314,7 +314,7 @@
 <p>首先把每个片段看成一个数，每个音阶看成该数的一位，则每位为$0$或$1$，题意可以转化为求在$1\sim 2^n-1$中选$m$个数使其异或和为$0$的方案数。我们先不考虑无序性，求出所有排列后除$m!$即为答案。</p>
 <p>设$f[i]$为选$i$个数的方案数，考虑先选$i-1$个数，最后一个数即为前面的数的异或和，这样才能使总异或和位$0$。那么如果不考虑限制，直接选则有$P_{2^n-1}^{i-1}=(2^n-1)\times (2^n-2)\times (2^n-3)\times \cdots \times (2^n-i+1)$种选法。</p>
 <p>只可能有两种不合法的情况，即最后一个数位$0$或最后一个数在前面$i-1$个数种出现过。对于第一种情况，不合法方案数为选$i-1$个数的合法方案数，即为$f[i-1]$。而对于第二种情况，去掉相同的数后，其他数异或和为$0$，这样就有$f[i-2]$中方案，而去掉的数的位置有$i-1$种选法，去掉的数的值有$2^n-1-(i-2)$种选法，故共会去掉$f[i-2]\times (i-1)\times (2^n-i+1)$种不合法方案。</p>
-<p>于是，$DP$方程为<br>$$<br>f[i]=<br>\begin{cases}<br>\ \ \ \ \ \ \ \ \ \ \ \ 1 &amp;\mbox{$(i=0)$}\<br>\ \ \ \ \ \ \ \ \ \ \ \ 0 &amp;\mbox{$(i=1)$}\<br>(2^n-1)\times (2^n-2)\times \cdots \times (2^n-i+1)-f[i-1]-f[i-2]\times (i-1)\times (2^n-i+1) &amp;\mbox{$(i\ge 2)$}<br>\end{cases}<br>$$</p>
+<p>于是，$DP$方程为<br>$$<br>f[i]=<br>\begin{cases}<br>            1 &amp;\mbox{$(i=0)$}\\<br>            0 &amp;\mbox{$(i=1)$}\\<br>(2^n-1)\times (2^n-2)\times \cdots \times (2^n-i+1)-f[i-1]-f[i-2]\times (i-1)\times (2^n-i+1) &amp;\mbox{$(i\ge 2)$}<br>\end{cases}<br>$$</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 100000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, m;	lnt p, q, c, f[MAX_N+<span class="number">5</span>], g[MAX_N+<span class="number">5</span>], inv[MAX_N+<span class="number">5</span>] = &#123;<span class="number">1L</span>L, <span class="number">1L</span>L&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++) inv[i] = (MOD-MOD/i*inv[MOD%i]%MOD)%MOD;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(m), read(n), init(n), p = f[<span class="number">0</span>] = c = <span class="number">1L</span>L, f[<span class="number">1</span>] = <span class="number">0L</span>L, g[<span class="number">1</span>] = <span class="number">1L</span>L;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) (p *= <span class="number">2</span>) %= MOD; (p += MOD<span class="number">-1</span>) %= MOD, q = p;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++, (q += MOD<span class="number">-1</span>) %= MOD) g[i] = g[i<span class="number">-1</span>]*q%MOD;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++) f[i] = (g[i]-(f[i<span class="number">-1</span>]+<span class="number">1L</span>L*(i<span class="number">-1</span>)*(p-i+<span class="number">2</span>)%MOD*f[i<span class="number">-2</span>]%MOD)%MOD+MOD)%MOD;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) (c *= inv[i]) %= MOD;	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[n]*c%MOD), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -431,7 +431,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -512,7 +512,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>

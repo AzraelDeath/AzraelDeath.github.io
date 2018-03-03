@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4407 于神之怒加强版 &lt;莫比乌斯反演&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/03/02/BZOJ4407 于神之怒加强版 莫比乌斯反演/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem DZY Loves MathTime Limit: $80 Sec$Memory Limit: $512 MB$ Description给下$N,M,K$，计算$\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\mod(10^9+7)$的值。 Input输入有多组数据，输入数据的第一行两个正整数$T,K$，代表有$T$组数据，$K$的意义如上所示，下面">
 <meta property="og:updated_time" content="2018-03-02T10:29:08.646Z">
 <meta name="twitter:card" content="summary">
@@ -125,7 +125,7 @@
 
 
 
-  <title>BZOJ4407 于神之怒加强版 <莫比乌斯反演> | Hexo</title>
+  <title>BZOJ4407 于神之怒加强版 <莫比乌斯反演> | NIRVANA</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -235,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/02/BZOJ4407 于神之怒加强版 莫比乌斯反演/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -313,8 +313,8 @@
 <h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$1\le N,M,K\le5\times 10^6,\;1\le T\le2000$<br><a href="http://www.lydsy.com/JudgeOnline/upload/201603/4407.rar" target="_blank" rel="noopener">官方题解</a></p>
 </blockquote>
 <p>标签：莫比乌斯反演</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>先套路转换出$\mu$：<br>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{n}\sum_{j=1}^{m}[\gcd(i,j)=d]\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\sum_{x|\gcd(i ,j)}\mu(x)\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{x=1}^{\lfloor\frac{\min(n,m)}{d}\rfloor}\mu(x)\lfloor\frac{n}{x\cdot d}\rfloor\lfloor\frac{m}{x\cdot d}\rfloor\<br>&amp;=\sum_{t=1}^{\min(n,m)}\sum_{d=1}^{t}d^k\mu(\frac{t}{d})\lfloor\frac{n}{t}\rfloor\lfloor\frac{m}{t}\rfloor\<br>&amp;=\sum_{t=1}^{\min(n,m)}\lfloor\frac{n}{t}\rfloor\lfloor\frac{m}{t}\rfloor\sum_{d=1}^{t}d^k\mu(\frac{t}{d})\<br>\end{aligned}<br>$$<br>那么每次询问对于前半部分可以根号分块，随后需要$O(1)$计算后半部分的值，因而需要线筛预处理后半部分的值。</p>
-<p>令$f(t)=\sum_{d=1}^{t}d^k\mu(\frac{t}{d})$，$t=p_1^{a_1}\times p_2^{q_2}\times\cdots p_l^{a_l}$<br>由于$y=d^k$和$y=\mu(d)$均为积性函数，因而$f$也为积性函数。<br>那么就有<br>$$<br>\begin{aligned}<br>f(t)&amp;=\prod_{i=1}^{l}f(p_i^{a_i})\&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(\frac{p_i^{a_i}}{p_i^j})\<br>&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(p_i^{a_i-j})\<br>\end{aligned}<br>$$<br>易知当$j\in[0,a_i-1)$时，均有$\mu(p_i^{a_i-j})=0$，因此有<br>$$<br>\begin{aligned}<br>f(t)&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(p_i^{a_i-j})\<br>&amp;=\prod_{i=1}^{l}(\mu(p_i)\cdot p_i^{k\cdot(a_i-1)}+\mu(1)\cdot p_i^{k\cdot a_i})\<br>&amp;=\prod_{i=1}^{l}(p_i^{k\cdot a_i}-p_i^{k\cdot(a_i-1)})\<br>&amp;=\prod_{i=1}^{l}p_i^{k\cdot(a_i-1)}(p_i-1)<br>\end{aligned}<br>$$<br>接下来考虑在线筛中如何处理。<br>首先，对于所有质数，均有$f(p)=p^k-1$。<br>而对于合数，假设当前筛到的数是$x$，对于一个比它小的素数$p$，有两种情况：</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>先套路转换出$\mu$：<br>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{n}\sum_{j=1}^{m}[\gcd(i,j)=d]\\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\sum_{x|\gcd(i ,j)}\mu(x)\\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{x=1}^{\lfloor\frac{\min(n,m)}{d}\rfloor}\mu(x)\lfloor\frac{n}{x\cdot d}\rfloor\lfloor\frac{m}{x\cdot d}\rfloor\\<br>&amp;=\sum_{t=1}^{\min(n,m)}\sum_{d=1}^{t}d^k\mu(\frac{t}{d})\lfloor\frac{n}{t}\rfloor\lfloor\frac{m}{t}\rfloor\\<br>&amp;=\sum_{t=1}^{\min(n,m)}\lfloor\frac{n}{t}\rfloor\lfloor\frac{m}{t}\rfloor\sum_{d=1}^{t}d^k\mu(\frac{t}{d})\\<br>\end{aligned}<br>$$<br>那么每次询问对于前半部分可以根号分块，随后需要$O(1)$计算后半部分的值，因而需要线筛预处理后半部分的值。</p>
+<p>令$f(t)=\sum_{d=1}^{t}d^k\mu(\frac{t}{d})$，$t=p_1^{a_1}\times p_2^{q_2}\times\cdots p_l^{a_l}$<br>由于$y=d^k$和$y=\mu(d)$均为积性函数，因而$f$也为积性函数。<br>那么就有<br>$$<br>\begin{aligned}<br>f(t)&amp;=\prod_{i=1}^{l}f(p_i^{a_i})\\&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(\frac{p_i^{a_i}}{p_i^j})\\<br>&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(p_i^{a_i-j})\\<br>\end{aligned}<br>$$<br>易知当$j\in[0,a_i-1)$时，均有$\mu(p_i^{a_i-j})=0$，因此有<br>$$<br>\begin{aligned}<br>f(t)&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(p_i^{a_i-j})\\<br>&amp;=\prod_{i=1}^{l}(\mu(p_i)\cdot p_i^{k\cdot(a_i-1)}+\mu(1)\cdot p_i^{k\cdot a_i})\\<br>&amp;=\prod_{i=1}^{l}(p_i^{k\cdot a_i}-p_i^{k\cdot(a_i-1)})\\<br>&amp;=\prod_{i=1}^{l}p_i^{k\cdot(a_i-1)}(p_i-1)<br>\end{aligned}<br>$$<br>接下来考虑在线筛中如何处理。<br>首先，对于所有质数，均有$f(p)=p^k-1$。<br>而对于合数，假设当前筛到的数是$x$，对于一个比它小的素数$p$，有两种情况：</p>
 <ol>
 <li>若$p|x$，设$p$在$x$分解质因数中的次数为$a$，那么$f(x\times p)$相比于$f(x)$而言，在含$p$的约数中$p$的次数都增加了$1$，否则$\mu=0$无贡献。因此$k\cdot(a-1)$增加了$k$，这样总共扩大了$p^k$倍，故$f(x\times p)=f(x)\times p^k$；</li>
 <li>若$p\nmid x$，由积性函数可知$f(x\times p)=f(x)\times f(p)$。</li>
@@ -428,7 +428,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -509,7 +509,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>

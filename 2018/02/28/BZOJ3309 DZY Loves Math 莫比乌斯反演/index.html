@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ3309 DZY Loves Math &lt;莫比乌斯反演&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/02/28/BZOJ3309 DZY Loves Math 莫比乌斯反演/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem DZY Loves MathTime Limit: $20 Sec$Memory Limit: $512 MB$ Description对于正整数$n$，定义$f(n)$为$n$所含质因子的最大幂指数。例如$f(1960)=f(2^3\times5^1\times7\times2)=3$, $f(10007)=1$, $f(1)=0$。给定正整数$a,b$，求$\sum_{i=1}">
 <meta property="og:updated_time" content="2018-03-02T10:17:29.143Z">
 <meta name="twitter:card" content="summary">
@@ -125,7 +125,7 @@
 
 
 
-  <title>BZOJ3309 DZY Loves Math <莫比乌斯反演> | Hexo</title>
+  <title>BZOJ3309 DZY Loves Math <莫比乌斯反演> | NIRVANA</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -235,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/BZOJ3309 DZY Loves Math 莫比乌斯反演/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -314,7 +314,7 @@
 </blockquote>
 <p>标签：莫比乌斯反演</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>好题，$get$线筛新姿势。</p>
-<p>首先套路转化出莫比乌斯函数：<br>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{i=1}^{a}\sum_{j=1}^{b}f(\gcd(i,j))\<br>&amp;=\sum_{d=1}^{\min(a,b)}\sum_{i=1}^{a}\sum_{j=1}^{b}f(d)[\gcd(i,j)=d]\<br>&amp;=\sum_{d=1}^{\min(a,b)}f(d)\sum_{i=1}^{\lfloor\frac{a}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{b}{d}\rfloor}\sum_{k|\gcd(i,j)}\mu(k)\<br>&amp;=\sum_{d=1}^{\min(a,b)}f(d)\sum_{k=1}^{\lfloor\frac{\min(a,b)}{d}\rfloor}\mu(k)\times\lfloor\frac{a}{d\times k}\rfloor\times\lfloor\frac{b}{d\times k}\rfloor\<br>&amp;=\sum_{t=1}^{\min(a,b)}\lfloor\frac{a}{t}\rfloor\lfloor\frac{b}{t}\rfloor\sum_{d|t}\mu(\frac{t}{d})\times f(d)\<br>\end{aligned}<br>$$<br>这时会发现前面用根号分块很好处理，而后面的部分需要$O(1)$计算，所以需要线性筛预处理。</p>
+<p>首先套路转化出莫比乌斯函数：<br>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{i=1}^{a}\sum_{j=1}^{b}f(\gcd(i,j))\\<br>&amp;=\sum_{d=1}^{\min(a,b)}\sum_{i=1}^{a}\sum_{j=1}^{b}f(d)[\gcd(i,j)=d]\\<br>&amp;=\sum_{d=1}^{\min(a,b)}f(d)\sum_{i=1}^{\lfloor\frac{a}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{b}{d}\rfloor}\sum_{k|\gcd(i,j)}\mu(k)\\<br>&amp;=\sum_{d=1}^{\min(a,b)}f(d)\sum_{k=1}^{\lfloor\frac{\min(a,b)}{d}\rfloor}\mu(k)\times\lfloor\frac{a}{d\times k}\rfloor\times\lfloor\frac{b}{d\times k}\rfloor\\<br>&amp;=\sum_{t=1}^{\min(a,b)}\lfloor\frac{a}{t}\rfloor\lfloor\frac{b}{t}\rfloor\sum_{d|t}\mu(\frac{t}{d})\times f(d)\\<br>\end{aligned}<br>$$<br>这时会发现前面用根号分块很好处理，而后面的部分需要$O(1)$计算，所以需要线性筛预处理。</p>
 <p>令$g(t)=\sum_{d|t}\mu(\frac{t}{d})\times f(d)$，考虑通过$\mu$与$f$的性质找到其积性关系。</p>
 <p>设$t=p_1^{a_1}\times p_2^{a_2}\times\cdots\times p_k^{a_k}$，$\frac{t}{d}=p_1^{a_1’}\times p_2^{a_2’}\times\cdots\times p_k^{a_k’}$，$d=p_1^{a_1-a_1’}\times p_2^{a_2-a_2’}\times\cdots\times p_k^{a_k-a_k’}$<br>那么一定有$0\le a_1’,a_2’,\cdots,a_k’\le 1$，否则$\mu(\lfloor\frac{t}{d}\rfloor)=0$，不计入总贡献。</p>
 <ol>
@@ -365,8 +365,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" rel="next" title="BZOJ2154 Crash的数字表格 <莫比乌斯反演>">
-                <i class="fa fa-chevron-left"></i> BZOJ2154 Crash的数字表格 <莫比乌斯反演>
+              <a href="/2018/02/26/BZOJ2693 jzptab 莫比乌斯反演/" rel="next" title="BZOJ2693 jzptab <莫比乌斯反演>">
+                <i class="fa fa-chevron-left"></i> BZOJ2693 jzptab <莫比乌斯反演>
               </a>
             
           </div>
@@ -443,7 +443,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -524,7 +524,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>

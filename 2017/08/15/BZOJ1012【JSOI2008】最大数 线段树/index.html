@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Problem 最大数 题目描述现在请求你维护一个数列，要求提供以下两种操作：  查询操作。  语法：$Q\ \ L$功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。限制：$L$不超过当前数列的长度。  插入操作。  语法：$A\ \ n$功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，">
+<meta name="description" content="Problem 最大数 题目描述现在请求你维护一个数列，要求提供以下两种操作：  查询操作。  语法：$Q  L$功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。限制：$L$不超过当前数列的长度。  插入操作。  语法：$A  n$功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答">
 <meta name="keywords" content="数据结构,BZOJ,省选,线段树">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1012【JSOI2008】最大数 &lt;线段树&gt;">
 <meta property="og:url" content="http://yoursite.com/2017/08/15/BZOJ1012【JSOI2008】最大数 线段树/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Problem 最大数 题目描述现在请求你维护一个数列，要求提供以下两种操作：  查询操作。  语法：$Q\ \ L$功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。限制：$L$不超过当前数列的长度。  插入操作。  语法：$A\ \ n$功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，">
+<meta property="og:site_name" content="NIRVANA">
+<meta property="og:description" content="Problem 最大数 题目描述现在请求你维护一个数列，要求提供以下两种操作：  查询操作。  语法：$Q  L$功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。限制：$L$不超过当前数列的长度。  插入操作。  语法：$A  n$功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答">
 <meta property="og:updated_time" content="2018-02-08T01:48:55.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1012【JSOI2008】最大数 &lt;线段树&gt;">
-<meta name="twitter:description" content="Problem 最大数 题目描述现在请求你维护一个数列，要求提供以下两种操作：  查询操作。  语法：$Q\ \ L$功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。限制：$L$不超过当前数列的长度。  插入操作。  语法：$A\ \ n$功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，">
+<meta name="twitter:description" content="Problem 最大数 题目描述现在请求你维护一个数列，要求提供以下两种操作：  查询操作。  语法：$Q  L$功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。限制：$L$不超过当前数列的长度。  插入操作。  语法：$A  n$功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>BZOJ1012【JSOI2008】最大数 <线段树> | Hexo</title>
+  <title>BZOJ1012【JSOI2008】最大数 <线段树> | NIRVANA</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">NIRVANA</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -235,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/15/BZOJ1012【JSOI2008】最大数 线段树/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Azrael_Death">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="NIRVANA">
     </span>
 
     
@@ -305,11 +305,11 @@
 <ol>
 <li>查询操作。</li>
 </ol>
-<p>语法：$Q\ \ L$<br>功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。<br>限制：$L$不超过当前数列的长度。</p>
+<p>语法：$Q  L$<br>功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。<br>限制：$L$不超过当前数列的长度。</p>
 <ol>
 <li>插入操作。</li>
 </ol>
-<p>语法：$A\ \ n$<br>功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答案插入到数列的末尾。<br>限制：$n$是整数（可能为负数）并且在长整范围内。<br>注意：初始时数列是空的，没有一个数。</p>
+<p>语法：$A  n$<br>功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答案插入到数列的末尾。<br>限制：$n$是整数（可能为负数）并且在长整范围内。<br>注意：初始时数列是空的，没有一个数。</p>
 <blockquote>
 </blockquote>
 <h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>第一行两个整数，$M$和$D$，其中$M$表示操作的个数$(M\le 2\times 10^5)$，$D$如上文中所述，满足$(0&lt;D&lt;2\times 10^9)$<br>接下来的$M$行，每行一个字符串，描述一个具体的操作。语法如上文所述。<br>输出格式：<br>对于每一个查询操作，你应该按照顺序依次输出结果，每个结果占一行。</p>
@@ -367,8 +367,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/15/HDU5340 Three Palindromes Manacher/" rel="prev" title="HDU5340 Three Palindromes <Manacher>">
-                HDU5340 Three Palindromes <Manacher> <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/15/POJ2155 Matrix 树套树二维树状数组/" rel="prev" title="POJ2155 Matrix <树套树/二维树状数组>">
+                POJ2155 Matrix <树套树/二维树状数组> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -435,7 +435,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -516,7 +516,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
 </div>
