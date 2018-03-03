@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/27/BZOJ1930【SHOI2003】Pacman 吃豆豆 费用流/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/27/BZOJ1283 序列 费用流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -280,7 +280,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/27/BZOJ1930【SHOI2003】Pacman 吃豆豆 费用流/" itemprop="url">BZOJ1930【SHOI2003】Pacman 吃豆豆 <费用流></a></h1>
+                <a class="post-title-link" href="/2017/12/27/BZOJ1283 序列 费用流/" itemprop="url">BZOJ1283 序列 <费用流></a></h1>
         
 
         <div class="post-meta">
@@ -333,22 +333,31 @@
         
           
             <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【SHOI2003】Pacman-吃豆豆"><a href="#【SHOI2003】Pacman-吃豆豆" class="headerlink" title="【SHOI2003】Pacman 吃豆豆"></a>【SHOI2003】Pacman 吃豆豆</h2><p>Time Limit: $10 Sec$  Memory Limit: $64 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>两个$PACMAN$吃豆豆。一开始的时候，$PACMAN$都在坐标原点的左下方，豆豆都在右上方。$PACMAN$走到豆豆处就会吃掉它。$PACMAN$行走的路线很奇怪，只能向右走或者向上走，他们行走的路线不可以相交。 请你帮这两个$PACMAN$计算一下，他们俩加起来最多能吃掉多少豆豆。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行为一个整数$N$，表示豆豆的数目。 接下来 $N$ 行，每行一对正整数，表示第$i$个豆豆的坐标。任意两个豆豆的坐标都不会重合。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅有一行包含一个整数，即两个$PACMAN$加起来最多能吃掉的豆豆数量</p>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">8</span><br><span class="line">8 1</span><br><span class="line">1 5</span><br><span class="line">5 7</span><br><span class="line">2 2</span><br><span class="line">7 8</span><br><span class="line">4 6</span><br><span class="line">3 3</span><br><span class="line">6 4</span><br></pre></td></tr></table></figure>
+<h2 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h2><p>Time Limit: $10 Sec$  Memory Limit: $162 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给出一个长度为$N$的正整数序列$C_i$，求一个子序列，使得原序列中任意长度为$M$的子串中被选出的元素不超过$K(K,M\le 100)$ 个，并且选出的元素之和最大。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第$1$行三个数$N,M,K$。 接下来$1$行$N$个正整数表示$C_i$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>最大和。</p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10 5 3</span><br><span class="line">4 4 4 6 6 6 6 6 4 4</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">30</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
-<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$N \le 2000$<br>【样例解释】</p>
-<center><br><img src="http://www.lydsy.com/JudgeOnline/images/1930.jpg" alt=""><br></center>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$20\%$的数据: $N\le 10$。<br>$100\%$的数据：$N\le 1000，K,M\le 100。C_i\le 20000$。</p>
+<h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><p>$By  YM$</p>
 </blockquote>
 <p>标签：费用流</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>貌似是可以用$DP$肝的。<br>费用流建模细节挺多。<br>首先可以发现不相交时废话。若穿过则互换名字即可。<br>由于点数很多，所以不能两两连边，发现只需要把按$x$和$y$排序后相邻两点连边即可。<br>首先需要限制每个点的流量，需要将每个点拆成两个点，连边限流。<br>这里由于两条线可以经过同一个点，但贡献只算一个，则需要连两条边，流量均为$1$，而费用则是一条为$1$另一条为$0$。<br>注意源点也需要限制$2$的流量，即需要把源点拆成两个点，中间连流量$2$费用$0$的边。<br>相邻两点间连流量为$2$费用为$0$的边。<br>总结建图：<br>源点拆成两个点$S$和$SS$<br>$S\to SS$ 流量$2$ 费用$0$<br>把每个点拆成$i$和$i’$<br>$SS\to i$ 流量$2$ 费用$0$<br>$i’\to T$ 流量$2$ 费用$0$<br>$i\to i’$ 流量$1$ 费用$1$<br>$i\to i’$ 流量$1$ 费用$0$<br>可连边的相邻两点$i$和$j$间有<br>$i’\to j$ 流量$2$ 费用$0$<br>最后跑大费流即可。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 5000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 500000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 0x7f7f7f7f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">P</span> &#123;</span><span class="keyword">int</span> x, y;&#125; p[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> n, s, ss, t, cnt, pr[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>], mxf, mxc;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, w, nxt;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, ss = n*<span class="number">2</span>+<span class="number">1</span>, t = n*<span class="number">2</span>+<span class="number">2</span>, <span class="built_in">memset</span>(pr, <span class="number">-1</span>, <span class="keyword">sizeof</span> pr);&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span> <span class="params">(<span class="keyword">const</span> P &amp;a, <span class="keyword">const</span> P &amp;b)</span> </span>&#123;<span class="keyword">return</span> a.x == b.x ? a.y &lt; b.y : a.x &lt; b.x;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c, <span class="keyword">int</span> w)</span> </span>&#123;E[cnt] = (node)&#123;v, c, w, pr[u]&#125;, pr[u] = cnt++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c, <span class="keyword">int</span> w)</span> </span>&#123;insert(u, v, c, w), insert(v, u, <span class="number">0</span>, -w);&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">SPFA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	<span class="keyword">bool</span> inq[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> d[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(inq, <span class="literal">false</span>, <span class="keyword">sizeof</span> inq), <span class="built_in">memset</span>(cr, <span class="number">-1</span>, <span class="keyword">sizeof</span> cr);</span><br><span class="line">	<span class="built_in">memset</span>(d, <span class="number">-1</span>, <span class="keyword">sizeof</span> d);	d[s] = <span class="number">0</span>, que.push(s), inq[s] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();	que.pop(), inq[u] = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pr[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v, c = E[i].c, w = E[i].w;</span><br><span class="line">			<span class="keyword">if</span> (c &amp;&amp; d[u]+w &gt; d[v]) &#123;</span><br><span class="line">				d[v] = d[u]+w, cr[v] = i;</span><br><span class="line">				<span class="keyword">if</span> (!inq[v]) que.push(v), inq[v] = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (d[t] &lt;= <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;	<span class="keyword">int</span> flow = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) flow = min(flow, E[i].c);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) E[i].c -= flow, E[i^<span class="number">1</span>].c += flow;</span><br><span class="line">	mxf += flow, mxc += d[t];	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);	init(), addedge(s, ss, <span class="number">2</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) addedge(ss, i, <span class="number">2</span>, <span class="number">0</span>), addedge(i+n, t, <span class="number">2</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) addedge(i, i+n, <span class="number">1</span>, <span class="number">1</span>), addedge(i, i+n, <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;p[i].x, &amp;p[i].y);	sort(p+<span class="number">1</span>, p+n+<span class="number">1</span>, cmp);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, mi = INF; i &lt;= n; i++, mi = INF) <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">		<span class="keyword">if</span> (p[i].y &lt;= p[j].y &amp;&amp; p[j].y &lt;= mi) addedge(i+n, j, <span class="number">2</span>, <span class="number">0</span>), mi = p[j].y;</span><br><span class="line">	<span class="keyword">while</span> (SPFA()) ;	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%d"</span>, mxc), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>常规费用流建模。<br>转化题意为：选$K$次，每次选一个子序列，每一次连续$M$个里面只能选一个。<br>对于第$i$个数$C_i$，</p>
+<ul>
+<li><p>如果不选：$i\to i+1$ 流量$K$ 费用$0$</p>
+</li>
+<li><p>如果选，则下一个数在$i+M$之后：</p>
+<p>1)若$i\in [1, n-m]$：$i\to i+M$ 流量$1$ 费用$C_i$</p>
+<p>2) 若$i\in (n-m, n]$：$i\to T$ 流量$1$ 费用$C_i$</p>
+</li>
+</ul>
+<p>特别地，有$S\to 1$ 流量$K$ 费用$0$；$N\to T$ 流量$K$ 费用$0$。<br>跑大费流即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 2000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 100000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 0x7f7f7f7f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, k, a[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> s, t, cnt, pr[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>], mxf, mic;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, w, nxt;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, t = n+<span class="number">1</span>, <span class="built_in">memset</span>(pr, <span class="number">-1</span>, <span class="keyword">sizeof</span> pr);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c, <span class="keyword">int</span> w)</span> </span>&#123;E[cnt] = (node)&#123;v, c, w, pr[u]&#125;, pr[u] = cnt++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c, <span class="keyword">int</span> w)</span> </span>&#123;insert(u, v, c, w), insert(v, u, <span class="number">0</span>, -w);&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">SPFA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	<span class="keyword">bool</span> inq[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> d[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(inq, <span class="literal">false</span>, <span class="keyword">sizeof</span> inq), <span class="built_in">memset</span>(d, INF, <span class="keyword">sizeof</span> d);</span><br><span class="line">	d[s] = <span class="number">0</span>, que.push(s), inq[s] = <span class="literal">true</span>, <span class="built_in">memset</span>(cr, <span class="number">-1</span>, <span class="keyword">sizeof</span> cr);</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();	que.pop(), inq[u] = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pr[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v, c = E[i].c, w = E[i].w;</span><br><span class="line">			<span class="keyword">if</span> (c &amp;&amp; d[u]+w &lt; d[v]) &#123;</span><br><span class="line">				d[v] = d[u]+w, cr[v] = i;</span><br><span class="line">				<span class="keyword">if</span> (!inq[v]) que.push(v), inq[v] = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (d[t] == INF) <span class="keyword">return</span> <span class="literal">false</span>;	<span class="keyword">int</span> flow = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) flow = min(flow, E[i].c);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) E[i].c -= flow, E[i^<span class="number">1</span>].c += flow;</span><br><span class="line">	mxf += flow, mic += d[t];	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;n, &amp;m, &amp;k), init();</span><br><span class="line">	addedge(s, <span class="number">1</span>, k, <span class="number">0</span>), addedge(n, t, k, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, a+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) addedge(i, i+<span class="number">1</span>, k, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n-m; i++) addedge(i, i+m, <span class="number">1</span>, -a[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = n-m+<span class="number">1</span>; i &lt;= n; i++) addedge(i, t, <span class="number">1</span>, -a[i]);</span><br><span class="line">	<span class="keyword">while</span> (SPFA()) ;	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%d"</span>, -mic), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
@@ -690,6 +699,284 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ4514【SDOI2016】数字配对 费用流/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/25/BZOJ4514【SDOI2016】数字配对 费用流/" itemprop="url">BZOJ4514【SDOI2016】数字配对 <费用流></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【SDOI2016】数字配对"><a href="#【SDOI2016】数字配对" class="headerlink" title="【SDOI2016】数字配对"></a>【SDOI2016】数字配对</h2><p>Time Limit: $10 Sec$  Memory Limit: $128 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。<br>若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获得 $c_i\times c_j$ 的价值。<br>一个数字只能参与一次配对，可以不参与配对。<br>在获得的价值总和不小于 $0$ 的前提下，求最多进行多少次配对。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数 $n$。<br>第二行 $n$ 个整数 $a_1,a_2,\cdots,a_n$。<br>第三行 $n$ 个整数$b_1,b_2,\cdots,b_n$。<br>第四行 $n$ 个整数 $c_1,c_2,\cdots,c_n$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个数，最多进行多少次配对</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">2 4 8</span><br><span class="line">2 200 7</span><br><span class="line">-1 -2 1</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$n\le 200，a_i\le 10^9，b_i\le 10^5，∣c_i∣\le 10^5$</p>
+</blockquote>
+<p>标签：费用流</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>比较难想的二分图建模。<br>记$f(x)$为$x$分解质因数后的项数（$4=2\times 2$算两项），$\frac{a_i}{a_j}$为质数的充要条件为$f(x)=f(y)+1且y|x$。<br>可知$f(x)$奇偶性相同的一定不能配对，所以可建二分图，$f(x)$为奇在一边，$f(x)$为偶在另一边。<br>两边间连边则看是否有整除条件，流量为$INF$，费用为$c_i\times c_j$。<br>把每个点拆成左右两个点，左边与源点相连，右边与汇点相连，容量为 $b_i$，费用为零。<br>跑费用流每增广一次就判一下是否费用小于 $0$，注意最后退出的时候不要把新加入的流全退完，退一部分至刚好大于等于$0$即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 300</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 50000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 1e16</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">int</span> n, s, t, cnt, pr[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>];	lnt mxf, cur;</span><br><span class="line"><span class="keyword">int</span> a[MAX_N+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>];	lnt b[MAX_N+<span class="number">5</span>], c[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, nxt; lnt c, w;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, t = n+<span class="number">1</span>, <span class="built_in">memset</span>(pr, <span class="number">-1</span>, <span class="keyword">sizeof</span> pr);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, lnt c, lnt w)</span> </span>&#123;E[cnt] = (node)&#123;v, pr[u], c, w&#125;, pr[u] = cnt++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, lnt c, lnt w)</span> </span>&#123;insert(u, v, c, w), insert(v, u, <span class="number">0</span>, -w);&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">SPFA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	<span class="keyword">bool</span> inq[MAX_N+<span class="number">5</span>], mrk[MAX_N+<span class="number">5</span>];	lnt d[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> cr[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(inq, <span class="literal">false</span>, <span class="keyword">sizeof</span> inq), <span class="built_in">memset</span>(cr, <span class="number">-1</span>, <span class="keyword">sizeof</span> cr), <span class="built_in">memset</span>(d, <span class="number">0</span>, <span class="keyword">sizeof</span> d);</span><br><span class="line">	<span class="built_in">memset</span>(mrk, <span class="literal">false</span>, <span class="keyword">sizeof</span> mrk), d[s] = <span class="number">0</span>, que.push(s), inq[s] = <span class="literal">true</span>, mrk[s] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();	que.pop(), inq[u] = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pr[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v;	lnt c = E[i].c, w = E[i].w;</span><br><span class="line">			<span class="keyword">if</span> (c &amp;&amp; (!mrk[v] || d[u]+w &gt; d[v])) &#123;</span><br><span class="line">				mrk[v] = <span class="literal">true</span>, d[v] = d[u]+w, cr[v] = i;</span><br><span class="line">				<span class="keyword">if</span> (!inq[v]) que.push(v), inq[v] = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (!mrk[t]) <span class="keyword">return</span> <span class="literal">false</span>;	lnt flow = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) flow = min(flow, E[i].c);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) E[i].c -= flow, E[i^<span class="number">1</span>].c += flow;</span><br><span class="line">	mxf += flow, cur += d[t]*flow;</span><br><span class="line">	<span class="keyword">if</span> (cur &lt; <span class="number">0</span>) &#123;mxf -= cur%d[t] == <span class="number">0</span> ? cur/d[t] : cur/d[t]+<span class="number">1</span>; <span class="keyword">return</span> <span class="literal">false</span>;&#125;	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= x; i++)</span><br><span class="line">		<span class="keyword">while</span> (!(x%i)) x /= i, ret++;</span><br><span class="line">	<span class="keyword">if</span> (x^<span class="number">1</span>) ret++;	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, a+i), f[i] = calc(a[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, b+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, c+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="keyword">if</span> (f[i]&amp;<span class="number">1</span>) addedge(s, i, b[i], <span class="number">0</span>); <span class="keyword">else</span> addedge(i, t, b[i], <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">		<span class="keyword">if</span> ((f[i]&amp;<span class="number">1</span>) &amp;&amp; ((f[i] == f[j]+<span class="number">1</span> &amp;&amp; a[i]%a[j] == <span class="number">0</span>) || (f[i]+<span class="number">1</span> == f[j] &amp;&amp; a[j]%a[i] == <span class="number">0</span>)))</span><br><span class="line">			addedge(i, j, INF, c[i]*c[j]);</span><br><span class="line">	<span class="keyword">while</span> (SPFA()) ;	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, mxf), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/25/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/" itemprop="url">BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【HNOI2007】梦幻岛宝珠"><a href="#【HNOI2007】梦幻岛宝珠" class="headerlink" title="【HNOI2007】梦幻岛宝珠"></a>【HNOI2007】梦幻岛宝珠</h2><p>Time Limit: $10 Sec$  Memory Limit: $162 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。<br>数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a\le 10,b\le 30$）</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件中包含多组数据。每组数据的格式如下：第一行是两个正整数$n$和$W$，$1\le n\le 100,1\le W\le 2^{30}$，分别表示宝石的数目和最多能带走的宝石重量。接下来的$n$行，每行有两个正整数$weight_i$和$value_i$，$1\le weight_i\le 2^{30}, 0\le value_i\le 2^{30}$，分别表示第i颗宝石的重量和价值，且保证$weight_i$能写成$a\times 2^b(1\le a\le 10,0\le b\le 30)$的形式。同一行的两个正整数之间用空格隔开。最后一组数据的后面有两个$-1$，表示文件的结束。这两个$-1$并不代表一组数据，你不需对这组数据输出结果。并且输入文件中数据的组数不超过$20$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于输入的每组数据，输出一个整数$C$，表示小P最多能带走的宝石的总价值。每个结果整数$C$单独占一行，且保证$C$不会超过$2^{30}$。</p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">4 10</span><br><span class="line">8 9</span><br><span class="line">5 8</span><br><span class="line">4 6</span><br><span class="line">2 5</span><br><span class="line">4 13</span><br><span class="line">8 9</span><br><span class="line">5 8</span><br><span class="line">4 6</span><br><span class="line">2 5</span><br><span class="line">16 75594681</span><br><span class="line">393216 5533</span><br><span class="line">2 77</span><br><span class="line">32768 467</span><br><span class="line">29360128 407840</span><br><span class="line">112 68</span><br><span class="line">24576 372</span><br><span class="line">768 60</span><br><span class="line">33554432 466099</span><br><span class="line">16384 318</span><br><span class="line">33554432 466090</span><br><span class="line">2048 111</span><br><span class="line">24576 350</span><br><span class="line">9216 216</span><br><span class="line">12582912 174768</span><br><span class="line">16384 295</span><br><span class="line">1024 76</span><br><span class="line">-1 -1</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">14</span><br><span class="line">19</span><br><span class="line">1050650</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>标签：分层DP</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$W$很大，不能直接搞。<br>而保证 $weight=a\times 2^b, a\le 10$<br>因而可以按$b$分层后背包。<br>分层后先层内DP出$f[i][j]$表示$2^i$层级内容量为$2^i\times j$的最大价值。<br>然后层间DP求最大值：$f[i][j] = max(f[i][j], f[i][k]+f[i-1][(j-k)\times2+(w&gt;&gt;i-1)\&amp;1])$<br>详见代码。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LOG 30</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 100</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, l, w[MAX_N+<span class="number">5</span>][LOG+<span class="number">5</span>], c[MAX_N+<span class="number">5</span>][LOG], f[LOG+<span class="number">5</span>][MAX_N+<span class="number">5</span>], cnt[LOG+<span class="number">5</span>], s[LOG+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m) &amp;&amp; ~n &amp;&amp; ~m) &#123;</span><br><span class="line">		<span class="built_in">memset</span>(cnt, <span class="number">0</span>, <span class="keyword">sizeof</span> cnt), <span class="built_in">memset</span>(s, <span class="number">0</span>, <span class="keyword">sizeof</span> s), <span class="built_in">memset</span>(f, <span class="number">0</span>, <span class="keyword">sizeof</span> f), l = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span> (n--) &#123;</span><br><span class="line">			<span class="keyword">int</span> x;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;x);</span><br><span class="line">			<span class="keyword">int</span> t = <span class="number">0</span>;	<span class="keyword">while</span> (!(x&amp;<span class="number">1</span>)) t++, x &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">			w[t][++cnt[t]] = x, s[t] += x;</span><br><span class="line">			l = max(l, t), <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;c[t][cnt[t]]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= l; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= cnt[i]; j++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> k = s[i]; k &gt;= w[i][j]; k--) f[i][k] = max(f[i][k], f[i][k-w[i][j]]+c[i][j]);</span><br><span class="line">		<span class="keyword">while</span> (m &gt;&gt; l) l++;	l--;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= l; i++) &#123;</span><br><span class="line">			s[i] += (s[i<span class="number">-1</span>]+<span class="number">1</span>)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = s[i]; ~j; j--) <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= j; k++)</span><br><span class="line">				f[i][j] = max(f[i][j], f[i][j-k]+f[i<span class="number">-1</span>][min(s[i<span class="number">-1</span>], (k&lt;&lt;<span class="number">1</span>)|((m&gt;&gt;(i<span class="number">-1</span>))&amp;<span class="number">1</span>))]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, f[l][<span class="number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ4205【FJ2015集训】卡牌配对 网络流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -916,284 +1203,6 @@
 <p>标签：最大权闭合子图，网络流，拓扑</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>可以发现，如果一个植物能被吃，则要先吃掉它右边的植物和所有攻击范围有它的植物。<br>这样可以形成一个有向图。所得到的最大收入为最大权闭合子图。<br>发现此有向图是可以有环的，而环上的植物一定是不能被吃的。<br>因而先拓扑一遍，标记掉环上的点，然后跑最小割即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 1000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 0x7f7f7f7f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, nxt;&#125; E[MAX_M+<span class="number">5</span>];    <span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; G[MAX_N+<span class="number">5</span>];  <span class="keyword">bool</span> mrk[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> n, m, s, t, cnt, sum, c[MAX_N+<span class="number">5</span>], d[MAX_N+<span class="number">5</span>], pr[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>], into[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, t = n*m+<span class="number">1</span>, cnt = <span class="number">0</span>; <span class="built_in">memset</span>(pr, <span class="number">-1</span>, <span class="keyword">sizeof</span> pr);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;E[cnt].v = v, E[cnt].c = c, E[cnt].nxt = pr[u], pr[u] = cnt++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;insert(u, v, c), insert(v, u, <span class="number">0</span>); G[u].push_back(v), into[v]++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">topo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	mrk[s] = mrk[t] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = s; i &lt;= t; i++) <span class="keyword">if</span> (!into[i]) que.push(i), mrk[i] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();    que.pop();</span><br><span class="line">		<span class="keyword">if</span> (c[u] &gt; <span class="number">0</span>) sum += c[u];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = G[u][i];    <span class="keyword">if</span> (mrk[v]) <span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span> (!--into[v]) que.push(v), mrk[v] = <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">BFS</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;  que.push(s);</span><br><span class="line">	<span class="built_in">memset</span>(d, <span class="number">-1</span>, <span class="keyword">sizeof</span> d), d[s] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();    que.pop();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pr[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v, c = E[i].c;</span><br><span class="line">			<span class="keyword">if</span> (!c || ~d[v] || !mrk[v]) <span class="keyword">continue</span>;</span><br><span class="line">			d[v] = d[u]+<span class="number">1</span>, que.push(v);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ~d[t];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> flow)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (u == t) <span class="keyword">return</span> flow;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> &amp;i = pr[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">		<span class="keyword">int</span> v = E[i].v, c = E[i].c;</span><br><span class="line">		<span class="keyword">if</span> (!c || d[v] != d[u]+<span class="number">1</span> || !mrk[v]) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">int</span> tmp = DFS(v, min(flow, c));</span><br><span class="line">		E[i].c -= tmp, E[i^<span class="number">1</span>].c += tmp;</span><br><span class="line">		flow -= tmp, ret += tmp;</span><br><span class="line">		<span class="keyword">if</span> (!flow) <span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (!ret) d[u] = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Dinic</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = s; i &lt;= t; i++) cr[i] = pr[i];</span><br><span class="line">	<span class="keyword">while</span> (BFS()) &#123;</span><br><span class="line">		ret += DFS(s, INF);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = s; i &lt;= t; i++) pr[i] = cr[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trans</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;<span class="keyword">return</span> x*m+y+<span class="number">1</span>;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; m; j++) addedge(trans(i, j), trans(i, j<span class="number">-1</span>), INF);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>, a, w, x, y; j &lt; m; j++) &#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;a, &amp;w), c[trans(i, j)] = a;</span><br><span class="line">			<span class="keyword">if</span> (a &gt; <span class="number">0</span>) addedge(trans(i, j), t, a);    <span class="keyword">else</span> addedge(s, trans(i, j), -a);</span><br><span class="line">			<span class="keyword">while</span> (w--) <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;x, &amp;y), addedge(trans(i, j), trans(x, y), INF);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> topo(), <span class="built_in">printf</span>(<span class="string">"%d"</span>, sum-Dinic()), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/25/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/" itemprop="url">BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
-                2017-12-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【HNOI2007】梦幻岛宝珠"><a href="#【HNOI2007】梦幻岛宝珠" class="headerlink" title="【HNOI2007】梦幻岛宝珠"></a>【HNOI2007】梦幻岛宝珠</h2><p>Time Limit: $10 Sec$  Memory Limit: $162 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。<br>数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a\le 10,b\le 30$）</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件中包含多组数据。每组数据的格式如下：第一行是两个正整数$n$和$W$，$1\le n\le 100,1\le W\le 2^{30}$，分别表示宝石的数目和最多能带走的宝石重量。接下来的$n$行，每行有两个正整数$weight_i$和$value_i$，$1\le weight_i\le 2^{30}, 0\le value_i\le 2^{30}$，分别表示第i颗宝石的重量和价值，且保证$weight_i$能写成$a\times 2^b(1\le a\le 10,0\le b\le 30)$的形式。同一行的两个正整数之间用空格隔开。最后一组数据的后面有两个$-1$，表示文件的结束。这两个$-1$并不代表一组数据，你不需对这组数据输出结果。并且输入文件中数据的组数不超过$20$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于输入的每组数据，输出一个整数$C$，表示小P最多能带走的宝石的总价值。每个结果整数$C$单独占一行，且保证$C$不会超过$2^{30}$。</p>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">4 10</span><br><span class="line">8 9</span><br><span class="line">5 8</span><br><span class="line">4 6</span><br><span class="line">2 5</span><br><span class="line">4 13</span><br><span class="line">8 9</span><br><span class="line">5 8</span><br><span class="line">4 6</span><br><span class="line">2 5</span><br><span class="line">16 75594681</span><br><span class="line">393216 5533</span><br><span class="line">2 77</span><br><span class="line">32768 467</span><br><span class="line">29360128 407840</span><br><span class="line">112 68</span><br><span class="line">24576 372</span><br><span class="line">768 60</span><br><span class="line">33554432 466099</span><br><span class="line">16384 318</span><br><span class="line">33554432 466090</span><br><span class="line">2048 111</span><br><span class="line">24576 350</span><br><span class="line">9216 216</span><br><span class="line">12582912 174768</span><br><span class="line">16384 295</span><br><span class="line">1024 76</span><br><span class="line">-1 -1</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">14</span><br><span class="line">19</span><br><span class="line">1050650</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>标签：分层DP</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$W$很大，不能直接搞。<br>而保证 $weight=a\times 2^b, a\le 10$<br>因而可以按$b$分层后背包。<br>分层后先层内DP出$f[i][j]$表示$2^i$层级内容量为$2^i\times j$的最大价值。<br>然后层间DP求最大值：$f[i][j] = max(f[i][j], f[i][k]+f[i-1][(j-k)\times2+(w&gt;&gt;i-1)\&amp;1])$<br>详见代码。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LOG 30</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 100</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, l, w[MAX_N+<span class="number">5</span>][LOG+<span class="number">5</span>], c[MAX_N+<span class="number">5</span>][LOG], f[LOG+<span class="number">5</span>][MAX_N+<span class="number">5</span>], cnt[LOG+<span class="number">5</span>], s[LOG+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m) &amp;&amp; ~n &amp;&amp; ~m) &#123;</span><br><span class="line">		<span class="built_in">memset</span>(cnt, <span class="number">0</span>, <span class="keyword">sizeof</span> cnt), <span class="built_in">memset</span>(s, <span class="number">0</span>, <span class="keyword">sizeof</span> s), <span class="built_in">memset</span>(f, <span class="number">0</span>, <span class="keyword">sizeof</span> f), l = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span> (n--) &#123;</span><br><span class="line">			<span class="keyword">int</span> x;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;x);</span><br><span class="line">			<span class="keyword">int</span> t = <span class="number">0</span>;	<span class="keyword">while</span> (!(x&amp;<span class="number">1</span>)) t++, x &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">			w[t][++cnt[t]] = x, s[t] += x;</span><br><span class="line">			l = max(l, t), <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;c[t][cnt[t]]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= l; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= cnt[i]; j++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> k = s[i]; k &gt;= w[i][j]; k--) f[i][k] = max(f[i][k], f[i][k-w[i][j]]+c[i][j]);</span><br><span class="line">		<span class="keyword">while</span> (m &gt;&gt; l) l++;	l--;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= l; i++) &#123;</span><br><span class="line">			s[i] += (s[i<span class="number">-1</span>]+<span class="number">1</span>)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = s[i]; ~j; j--) <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= j; k++)</span><br><span class="line">				f[i][j] = max(f[i][j], f[i][j-k]+f[i<span class="number">-1</span>][min(s[i<span class="number">-1</span>], (k&lt;&lt;<span class="number">1</span>)|((m&gt;&gt;(i<span class="number">-1</span>))&amp;<span class="number">1</span>))]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, f[l][<span class="number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ4514【SDOI2016】数字配对 费用流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/25/BZOJ4514【SDOI2016】数字配对 费用流/" itemprop="url">BZOJ4514【SDOI2016】数字配对 <费用流></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
-                2017-12-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【SDOI2016】数字配对"><a href="#【SDOI2016】数字配对" class="headerlink" title="【SDOI2016】数字配对"></a>【SDOI2016】数字配对</h2><p>Time Limit: $10 Sec$  Memory Limit: $128 MB$</p>
-</blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。<br>若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获得 $c_i\times c_j$ 的价值。<br>一个数字只能参与一次配对，可以不参与配对。<br>在获得的价值总和不小于 $0$ 的前提下，求最多进行多少次配对。</p>
-<blockquote>
-</blockquote>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数 $n$。<br>第二行 $n$ 个整数 $a_1,a_2,\cdots,a_n$。<br>第三行 $n$ 个整数$b_1,b_2,\cdots,b_n$。<br>第四行 $n$ 个整数 $c_1,c_2,\cdots,c_n$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个数，最多进行多少次配对</p>
-<blockquote>
-</blockquote>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">2 4 8</span><br><span class="line">2 200 7</span><br><span class="line">-1 -2 1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$n\le 200，a_i\le 10^9，b_i\le 10^5，∣c_i∣\le 10^5$</p>
-</blockquote>
-<p>标签：费用流</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>比较难想的二分图建模。<br>记$f(x)$为$x$分解质因数后的项数（$4=2\times 2$算两项），$\frac{a_i}{a_j}$为质数的充要条件为$f(x)=f(y)+1且y|x$。<br>可知$f(x)$奇偶性相同的一定不能配对，所以可建二分图，$f(x)$为奇在一边，$f(x)$为偶在另一边。<br>两边间连边则看是否有整除条件，流量为$INF$，费用为$c_i\times c_j$。<br>把每个点拆成左右两个点，左边与源点相连，右边与汇点相连，容量为 $b_i$，费用为零。<br>跑费用流每增广一次就判一下是否费用小于 $0$，注意最后退出的时候不要把新加入的流全退完，退一部分至刚好大于等于$0$即可。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 300</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 50000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 1e16</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">int</span> n, s, t, cnt, pr[MAX_N+<span class="number">5</span>], cr[MAX_N+<span class="number">5</span>];	lnt mxf, cur;</span><br><span class="line"><span class="keyword">int</span> a[MAX_N+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>];	lnt b[MAX_N+<span class="number">5</span>], c[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, nxt; lnt c, w;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, t = n+<span class="number">1</span>, <span class="built_in">memset</span>(pr, <span class="number">-1</span>, <span class="keyword">sizeof</span> pr);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, lnt c, lnt w)</span> </span>&#123;E[cnt] = (node)&#123;v, pr[u], c, w&#125;, pr[u] = cnt++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, lnt c, lnt w)</span> </span>&#123;insert(u, v, c, w), insert(v, u, <span class="number">0</span>, -w);&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">SPFA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	<span class="keyword">bool</span> inq[MAX_N+<span class="number">5</span>], mrk[MAX_N+<span class="number">5</span>];	lnt d[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> cr[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(inq, <span class="literal">false</span>, <span class="keyword">sizeof</span> inq), <span class="built_in">memset</span>(cr, <span class="number">-1</span>, <span class="keyword">sizeof</span> cr), <span class="built_in">memset</span>(d, <span class="number">0</span>, <span class="keyword">sizeof</span> d);</span><br><span class="line">	<span class="built_in">memset</span>(mrk, <span class="literal">false</span>, <span class="keyword">sizeof</span> mrk), d[s] = <span class="number">0</span>, que.push(s), inq[s] = <span class="literal">true</span>, mrk[s] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();	que.pop(), inq[u] = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pr[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v;	lnt c = E[i].c, w = E[i].w;</span><br><span class="line">			<span class="keyword">if</span> (c &amp;&amp; (!mrk[v] || d[u]+w &gt; d[v])) &#123;</span><br><span class="line">				mrk[v] = <span class="literal">true</span>, d[v] = d[u]+w, cr[v] = i;</span><br><span class="line">				<span class="keyword">if</span> (!inq[v]) que.push(v), inq[v] = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (!mrk[t]) <span class="keyword">return</span> <span class="literal">false</span>;	lnt flow = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) flow = min(flow, E[i].c);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = cr[t]; ~i; i = cr[E[i^<span class="number">1</span>].v]) E[i].c -= flow, E[i^<span class="number">1</span>].c += flow;</span><br><span class="line">	mxf += flow, cur += d[t]*flow;</span><br><span class="line">	<span class="keyword">if</span> (cur &lt; <span class="number">0</span>) &#123;mxf -= cur%d[t] == <span class="number">0</span> ? cur/d[t] : cur/d[t]+<span class="number">1</span>; <span class="keyword">return</span> <span class="literal">false</span>;&#125;	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= x; i++)</span><br><span class="line">		<span class="keyword">while</span> (!(x%i)) x /= i, ret++;</span><br><span class="line">	<span class="keyword">if</span> (x^<span class="number">1</span>) ret++;	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, a+i), f[i] = calc(a[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, b+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, c+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="keyword">if</span> (f[i]&amp;<span class="number">1</span>) addedge(s, i, b[i], <span class="number">0</span>); <span class="keyword">else</span> addedge(i, t, b[i], <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">		<span class="keyword">if</span> ((f[i]&amp;<span class="number">1</span>) &amp;&amp; ((f[i] == f[j]+<span class="number">1</span> &amp;&amp; a[i]%a[j] == <span class="number">0</span>) || (f[i]+<span class="number">1</span> == f[j] &amp;&amp; a[j]%a[i] == <span class="number">0</span>)))</span><br><span class="line">			addedge(i, j, INF, c[i]*c[j]);</span><br><span class="line">	<span class="keyword">while</span> (SPFA()) ;	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, mxf), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
