@@ -545,142 +545,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" itemprop="url">BZOJ2154 Crash的数字表格 <莫比乌斯反演></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T00:00:00+08:00">
-                2018-02-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="Crash的数字表格"><a href="#Crash的数字表格" class="headerlink" title="Crash的数字表格"></a>Crash的数字表格</h2><p>Time Limit: $20 Sec$<br>Memory Limit: $259 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>今天的数学课上，$Crash$小朋友学习了最小公倍数$(Least\;Common\;Multiple)$。对于两个正整数$a$和$b$，$LCM(a, b)$表示能同时被a和b整除的最小正整数。例如，$LCM(6, 8) = 24$。回到家后，$Crash$还在想着课上学的东西，为了研究最小公倍数，他画了一张$N\times M$的表格。每个格子里写了一个数字，其中第$i$行第$j$列的那个格子里写着数为$LCM(i, j)$。看着这个表格，$Crash$想到了很多可以思考的问题。不过他最想解决的问题却是一个十分简单的问题：这个表格中所有数的和是多少。当$N$和$M$很大时，$Crash$就束手无策了，因此他找到了聪明的你用程序帮他解决这个问题。由于最终结果可能会很大，$Crash$只想知道表格里所有数的和$\mod 20101009\;\;$的值。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含两个正整数，分别表示$N$和$M$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个正整数，表示表格中所有数的和$\mod 20101009\;\;$的值。</p>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 5</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">122</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$100\%$的数据满足$N,M\le10^7$。</p>
-</blockquote>
-<p>标签：莫比乌斯反演</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{x=1}^{n}\sum_{y=1}^{m}\frac{x\times y}{\gcd(x,y)}\\<br>&amp;=\sum_{d=1}^{\min(n,m)}\sum_{x=1}^{n}\sum_{y=1}^{m}[\gcd(x,y)=d]\frac{x\times y}{d}\\<br>\end{aligned}<br>$$<br>$$<br>\begin{aligned}<br>&amp;Let\;f(n,m,d)=\sum_{x=1}^{n}\sum_{y=1}^{m}[\gcd(x,y)=d]\cdot x\cdot y\\<br>&amp;then\;f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)=\sum_{x=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{y=1}^{\lfloor\frac{m}{d}\rfloor}[\gcd(x,y)=1]\cdot x\cdot y\\<br>&amp;\therefore Ans=\sum_{d=1}^{\min(n,m)}\frac{f(n,m,d)}{d}=\sum_{d=1}^{\min(n,m)}f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)\times d\\<br>&amp;\;\;\;\;If\;we\;can\;calculate\;f(p,q,1)\;in\;a\;rapid\;way,\\&amp;\;\;\;\;we\;can\;calculate\;the\;answer\;rapidly.\\<br>\end{aligned}<br>$$<br>$$<br>\begin{aligned}<br>f(p,q,1)&amp;=\sum_{i=1}^{p}\sum_{j=1}^{q}\sum_{d|\gcd(i,j)}\mu(d)\cdot i\cdot j\\<br>&amp;=\sum_{d=1}^{\min(p,q)}\mu(d)\times d^2\;\sum_{i=1}^{\lfloor\frac{p}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{q}{d}\rfloor}i\times j\\<br>&amp;=\sum_{d=1}^{\min(p,q)}\mu(d)\times d^2\times\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}\\<br>\end{aligned}<br>$$<br>由以上推导，可见$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$和$\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}$是可以根号分块的，在外层对$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$进行分块，在每个值相同的块中，对$\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}$进行分块以求出$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$带回外层算贡献。</p>
-<p>综上，外层复杂度为$O(\sqrt{n})$，内层复杂度为$O(\sqrt{n})$，总时间复杂度为$O(n)$。</p>
-<p>其实可以做得更块，详见加强版<a href="http://azrael.top/2018/02/26/BZOJ2693%20jzptab%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" target="_blank" rel="noopener">BZOJ2693</a>。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 10000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 20101009</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line">lnt n, m, ans, s[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> cnt, pri[MAX_N+<span class="number">5</span>], mu[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">bool</span> NotPri[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getMu</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	NotPri[<span class="number">1</span>] = <span class="literal">true</span>, mu[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= min(n,m); i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (!NotPri[i]) pri[cnt++] = i, mu[i] = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; cnt; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (i*pri[j] &gt; min(n,m)) <span class="keyword">break</span>;</span><br><span class="line">			NotPri[i*pri[j]] = <span class="literal">true</span>;</span><br><span class="line">			<span class="keyword">if</span> (i%pri[j]) mu[i*pri[j]] = -mu[i];</span><br><span class="line">			<span class="keyword">else</span> &#123;mu[i*pri[j]] = <span class="number">0</span>; <span class="keyword">break</span>;&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= min(n,m); i++) s[i] = (s[i<span class="number">-1</span>]+<span class="number">1L</span>L*mu[i]*i*i%MOD)%MOD;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">lnt <span class="title">f</span><span class="params">(lnt p, lnt q)</span> </span>&#123;</span><br><span class="line">	lnt ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (lnt l = <span class="number">1</span>, r; l &lt;= min(p, q); l = r+<span class="number">1</span>)</span><br><span class="line">		r = min(p/(p/l), q/(q/l)), </span><br><span class="line">		(ret += (p/l*(p/l+<span class="number">1</span>)/<span class="number">2</span>%MOD)*(q/l*(q/l+<span class="number">1</span>)/<span class="number">2</span>%MOD)%MOD*(s[r]-s[l<span class="number">-1</span>])%MOD) %= MOD;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n), read(m), getMu();</span><br><span class="line">	<span class="keyword">for</span> (lnt l = <span class="number">1</span>, r; l &lt;= min(n, m); l = r+<span class="number">1</span>)</span><br><span class="line">		r = min(n/(n/l), m/(m/l)), (ans += (l+r)*(r-l+<span class="number">1</span>)/<span class="number">2</span>%MOD*f(n/l, m/l)%MOD) %= MOD;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, (ans+MOD)%MOD), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/BZOJ2693 jzptab 莫比乌斯反演/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -816,7 +680,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -835,7 +699,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" itemprop="url">BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></a></h1>
+                <a class="post-title-link" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" itemprop="url">BZOJ2154 Crash的数字表格 <莫比乌斯反演></a></h1>
         
 
         <div class="post-meta">
@@ -847,8 +711,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T00:00:00+08:00">
-                2018-02-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T00:00:00+08:00">
+                2018-02-26
               </time>
             
 
@@ -888,19 +752,23 @@
         
           
             <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【HNOI2008】玩具装箱toy"><a href="#【HNOI2008】玩具装箱toy" class="headerlink" title="【HNOI2008】玩具装箱toy"></a>【HNOI2008】玩具装箱toy</h2><p>Time Limit: $10 Sec$<br>Memory Limit: $162 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$P$教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。$P$教授有编号为$1\sim N$的$N$件玩具，第$i$件玩具经过压缩后变成一维长度为$C_i$.为了方便整理，$P$教授要求在一个一维容器中的玩具编号是连续的。同时如果一个一维容器中有多个玩具，那么两件玩具之间要加入一个单位长度的填充物，形式地说如果将第$i$件玩具到第$j$个玩具放到一个容器中，那么容器的长度将为 $x=j-i+\sum_{k=i}^{j}C_k$制作容器的费用与容器的长度有关，根据教授研究，如果容器长度为$X$,其制作费用为$(X-L)^2$.其中$L$是一个常量。$P$教授不关心容器的数目，他可以制作出任意长度的容器，甚至超过$L$。但他希望费用最小.</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行输入两个整数$N,L$.接下来$N$行输入$C_i$.<br>$1\le N\le50000,1\le L,C_i\le10^7$</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出最小费用.</p>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">5 4</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">2</span><br><span class="line">1</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+<h2 id="Crash的数字表格"><a href="#Crash的数字表格" class="headerlink" title="Crash的数字表格"></a>Crash的数字表格</h2><p>Time Limit: $20 Sec$<br>Memory Limit: $259 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>今天的数学课上，$Crash$小朋友学习了最小公倍数$(Least\;Common\;Multiple)$。对于两个正整数$a$和$b$，$LCM(a, b)$表示能同时被a和b整除的最小正整数。例如，$LCM(6, 8) = 24$。回到家后，$Crash$还在想着课上学的东西，为了研究最小公倍数，他画了一张$N\times M$的表格。每个格子里写了一个数字，其中第$i$行第$j$列的那个格子里写着数为$LCM(i, j)$。看着这个表格，$Crash$想到了很多可以思考的问题。不过他最想解决的问题却是一个十分简单的问题：这个表格中所有数的和是多少。当$N$和$M$很大时，$Crash$就束手无策了，因此他找到了聪明的你用程序帮他解决这个问题。由于最终结果可能会很大，$Crash$只想知道表格里所有数的和$\mod 20101009\;\;$的值。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含两个正整数，分别表示$N$和$M$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个正整数，表示表格中所有数的和$\mod 20101009\;\;$的值。</p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 5</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">122</span><br></pre></td></tr></table></figure>
 </blockquote>
-<p>标签：斜率优化$DP$</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>令$L=L+1$，有如下$DP$方程：$f[i]=\min_{j=0}^{i-1}{f[j]+[(i-j+\sum_{k=j}^{i}C_k)-L]^2}$。</p>
-<p>预处理$s[i]=\sum_{j=1}^{i}C_j,\;w[i]=s[i]+i$。对于当前$DP$到的位置$i$，必然存在$p,q\in[0,i)$，使得<br>$$<br>\begin{aligned}<br>f[p]+[(i-p+\sum_{k=p}^{i}C_k)-L]^2&amp;\le f[q]+[(i-q+\sum_{k=q}^{i}C_k)-L]^2\\<br>&amp;\Updownarrow\\<br>f[p]+(w[i]-w[p]-L)^2&amp;\le f[q]+(w[i]-w[q]-L)^2\\<br>&amp;\Updownarrow\\<br>f[p]+w[i]^2+w[p]^2+L^2-2\times w[i]&amp;\times w[p]-2\times w[i]\times L+2\times w[p]\times L\\<br>&amp;\le\\<br>f[q]+w[i]^2+w[q]^2+L^2-2\times w[i]&amp;\times w[q]-2\times w[i]\times L+2\times w[q]\times L\\<br>&amp;\Updownarrow\\<br>f[p]+(w[p]+L)^2-2\times w[i]\times w[p]&amp;\le f[q]+(w[q]+L)^2-2\times w[i]\times w[q]\\<br>&amp;\Updownarrow\\<br>\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}&amp;\le w[i]\\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}\le w[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 50000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, l, sta[MAX_N+<span class="number">5</span>], s, t;	lnt f[MAX_N+<span class="number">5</span>], w[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function">dnt <span class="title">calc</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;<span class="keyword">return</span> (f[p]-f[q]+(w[p]+l)*(w[p]+l)-(w[q]+l)*(w[q]+l))/(<span class="number">2.0</span>*(w[p]-w[q]));&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n), read(l), l++;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) read(w[i]), w[i] += w[i<span class="number">-1</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) w[i] += i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">while</span> (s &lt; t &amp;&amp; calc(sta[s+<span class="number">1</span>], sta[s]) &lt;= w[i]) s++;</span><br><span class="line">		f[i] = f[sta[s]]+(w[i]-w[sta[s]]-l)*(w[i]-w[sta[s]]-l);</span><br><span class="line">		<span class="keyword">while</span> (s &lt; t &amp;&amp; calc(sta[t], sta[t<span class="number">-1</span>]) &gt; calc(i, sta[t])) t--;</span><br><span class="line">		sta[++t] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[n]), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$100\%$的数据满足$N,M\le10^7$。</p>
+</blockquote>
+<p>标签：莫比乌斯反演</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{x=1}^{n}\sum_{y=1}^{m}\frac{x\times y}{\gcd(x,y)}\\<br>&amp;=\sum_{d=1}^{\min(n,m)}\sum_{x=1}^{n}\sum_{y=1}^{m}[\gcd(x,y)=d]\frac{x\times y}{d}\\<br>\end{aligned}<br>$$<br>$$<br>\begin{aligned}<br>&amp;Let\;f(n,m,d)=\sum_{x=1}^{n}\sum_{y=1}^{m}[\gcd(x,y)=d]\cdot x\cdot y\\<br>&amp;then\;f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)=\sum_{x=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{y=1}^{\lfloor\frac{m}{d}\rfloor}[\gcd(x,y)=1]\cdot x\cdot y\\<br>&amp;\therefore Ans=\sum_{d=1}^{\min(n,m)}\frac{f(n,m,d)}{d}=\sum_{d=1}^{\min(n,m)}f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)\times d\\<br>&amp;\;\;\;\;If\;we\;can\;calculate\;f(p,q,1)\;in\;a\;rapid\;way,\\&amp;\;\;\;\;we\;can\;calculate\;the\;answer\;rapidly.\\<br>\end{aligned}<br>$$<br>$$<br>\begin{aligned}<br>f(p,q,1)&amp;=\sum_{i=1}^{p}\sum_{j=1}^{q}\sum_{d|\gcd(i,j)}\mu(d)\cdot i\cdot j\\<br>&amp;=\sum_{d=1}^{\min(p,q)}\mu(d)\times d^2\;\sum_{i=1}^{\lfloor\frac{p}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{q}{d}\rfloor}i\times j\\<br>&amp;=\sum_{d=1}^{\min(p,q)}\mu(d)\times d^2\times\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}\\<br>\end{aligned}<br>$$<br>由以上推导，可见$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$和$\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}$是可以根号分块的，在外层对$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$进行分块，在每个值相同的块中，对$\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}$进行分块以求出$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$带回外层算贡献。</p>
+<p>综上，外层复杂度为$O(\sqrt{n})$，内层复杂度为$O(\sqrt{n})$，总时间复杂度为$O(n)$。</p>
+<p>其实可以做得更块，详见加强版<a href="http://azrael.top/2018/02/26/BZOJ2693%20jzptab%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/" target="_blank" rel="noopener">BZOJ2693</a>。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 10000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 20101009</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line">lnt n, m, ans, s[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> cnt, pri[MAX_N+<span class="number">5</span>], mu[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">bool</span> NotPri[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getMu</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	NotPri[<span class="number">1</span>] = <span class="literal">true</span>, mu[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= min(n,m); i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (!NotPri[i]) pri[cnt++] = i, mu[i] = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; cnt; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (i*pri[j] &gt; min(n,m)) <span class="keyword">break</span>;</span><br><span class="line">			NotPri[i*pri[j]] = <span class="literal">true</span>;</span><br><span class="line">			<span class="keyword">if</span> (i%pri[j]) mu[i*pri[j]] = -mu[i];</span><br><span class="line">			<span class="keyword">else</span> &#123;mu[i*pri[j]] = <span class="number">0</span>; <span class="keyword">break</span>;&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= min(n,m); i++) s[i] = (s[i<span class="number">-1</span>]+<span class="number">1L</span>L*mu[i]*i*i%MOD)%MOD;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">lnt <span class="title">f</span><span class="params">(lnt p, lnt q)</span> </span>&#123;</span><br><span class="line">	lnt ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (lnt l = <span class="number">1</span>, r; l &lt;= min(p, q); l = r+<span class="number">1</span>)</span><br><span class="line">		r = min(p/(p/l), q/(q/l)), </span><br><span class="line">		(ret += (p/l*(p/l+<span class="number">1</span>)/<span class="number">2</span>%MOD)*(q/l*(q/l+<span class="number">1</span>)/<span class="number">2</span>%MOD)%MOD*(s[r]-s[l<span class="number">-1</span>])%MOD) %= MOD;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n), read(m), getMu();</span><br><span class="line">	<span class="keyword">for</span> (lnt l = <span class="number">1</span>, r; l &lt;= min(n, m); l = r+<span class="number">1</span>)</span><br><span class="line">		r = min(n/(n/l), m/(m/l)), (ans += (l+r)*(r-l+<span class="number">1</span>)/<span class="number">2</span>%MOD*f(n/l, m/l)%MOD) %= MOD;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, (ans+MOD)%MOD), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -1038,6 +906,138 @@
 <p>标签：斜率优化$DP$</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>由题意，易得到$DP$方程：$f[i]=c[i]+\min_{j=0}^{i-1}{f[j]+\sum_{k=j+1}^{i}p[k]\times(x[i]-x[k])}$<br>那么对于当前$DP$到的位置$i$，一定存在$p,q\in[0,i)$使得<br>$$<br>\begin{aligned}<br>f[p]+\sum_{k=p+1}^{i}p[k]\times(x[i]-x[k])&amp;\le f[q]+\sum_{k=q+1}^{i}p[k]\times(x[i]-x[k])\\<br>f[p]+\sum_{k=p+1}^{i}p[k]\times x[i]-\sum_{k=p+1}^{i}p[k]\times x[k]&amp;\le f[q]+\sum_{k=q+1}^{i}p[k]\times x[i]-\sum_{k=q+1}^{i}p[k]\times x[k]\\<br>Let\;s_1[i]=\sum_{j=1}^{i}p[j]\times x[j]&amp;,\;s_2[i]=\sum_{j=1}^{i}p[j]\\<br>f[p]+(s_2[i]-s_2[p])\times x[i]-s_1[i]+s_1[p]&amp;\le f[q]+(s_2[i]-s_2[q])\times x[i]-s_1[i]+s_1[q]\\<br>f[p]-s_2[p]\times x[i]+s_1[p]&amp;\le f[q]-s_2[q]\times x[i]+s_1[q]\\<br>\frac{(f[p]-f[q])+(s_1[p]-s_1[q])}{s_2[p]-s_2[q]}&amp;\le x[i]\\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+(s_1[p]-s_1[q])}{s_2[p]-s_2[q]}\le x[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, c[MAX_N+<span class="number">5</span>], x[MAX_N+<span class="number">5</span>], m[MAX_N+<span class="number">5</span>];</span><br><span class="line">lnt s1[MAX_N+<span class="number">5</span>], s2[MAX_N+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> l, r, sta[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function">dnt <span class="title">calc</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;<span class="keyword">return</span> (dnt)(f[p]-f[q]+s1[p]-s1[q])/(dnt)(s2[p]-s2[q]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) read(x[i]), read(m[i]), read(c[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) s1[i] = s1[i<span class="number">-1</span>]+<span class="number">1L</span>L*m[i]*x[i], s2[i] = s2[i<span class="number">-1</span>]+m[i];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">while</span> (l &lt; r &amp;&amp; calc(sta[l+<span class="number">1</span>], sta[l]) &lt;= x[i]) l++;</span><br><span class="line">		f[i] = f[sta[l]]+<span class="number">1L</span>L*x[i]*(s2[i]-s2[sta[l]])-s1[i]+s1[sta[l]]+c[i];</span><br><span class="line">		<span class="keyword">while</span> (l &lt; r &amp;&amp; calc(sta[r], sta[r<span class="number">-1</span>]) &gt; calc(i, sta[r])) r--;</span><br><span class="line">		sta[++r] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[n]), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" itemprop="url">BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T00:00:00+08:00">
+                2018-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【HNOI2008】玩具装箱toy"><a href="#【HNOI2008】玩具装箱toy" class="headerlink" title="【HNOI2008】玩具装箱toy"></a>【HNOI2008】玩具装箱toy</h2><p>Time Limit: $10 Sec$<br>Memory Limit: $162 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$P$教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。$P$教授有编号为$1\sim N$的$N$件玩具，第$i$件玩具经过压缩后变成一维长度为$C_i$.为了方便整理，$P$教授要求在一个一维容器中的玩具编号是连续的。同时如果一个一维容器中有多个玩具，那么两件玩具之间要加入一个单位长度的填充物，形式地说如果将第$i$件玩具到第$j$个玩具放到一个容器中，那么容器的长度将为 $x=j-i+\sum_{k=i}^{j}C_k$制作容器的费用与容器的长度有关，根据教授研究，如果容器长度为$X$,其制作费用为$(X-L)^2$.其中$L$是一个常量。$P$教授不关心容器的数目，他可以制作出任意长度的容器，甚至超过$L$。但他希望费用最小.</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行输入两个整数$N,L$.接下来$N$行输入$C_i$.<br>$1\le N\le50000,1\le L,C_i\le10^7$</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出最小费用.</p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">5 4</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">2</span><br><span class="line">1</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>标签：斜率优化$DP$</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>令$L=L+1$，有如下$DP$方程：$f[i]=\min_{j=0}^{i-1}{f[j]+[(i-j+\sum_{k=j}^{i}C_k)-L]^2}$。</p>
+<p>预处理$s[i]=\sum_{j=1}^{i}C_j,\;w[i]=s[i]+i$。对于当前$DP$到的位置$i$，必然存在$p,q\in[0,i)$，使得<br>$$<br>\begin{aligned}<br>f[p]+[(i-p+\sum_{k=p}^{i}C_k)-L]^2&amp;\le f[q]+[(i-q+\sum_{k=q}^{i}C_k)-L]^2\\<br>&amp;\Updownarrow\\<br>f[p]+(w[i]-w[p]-L)^2&amp;\le f[q]+(w[i]-w[q]-L)^2\\<br>&amp;\Updownarrow\\<br>f[p]+w[i]^2+w[p]^2+L^2-2\times w[i]&amp;\times w[p]-2\times w[i]\times L+2\times w[p]\times L\\<br>&amp;\le\\<br>f[q]+w[i]^2+w[q]^2+L^2-2\times w[i]&amp;\times w[q]-2\times w[i]\times L+2\times w[q]\times L\\<br>&amp;\Updownarrow\\<br>f[p]+(w[p]+L)^2-2\times w[i]\times w[p]&amp;\le f[q]+(w[q]+L)^2-2\times w[i]\times w[q]\\<br>&amp;\Updownarrow\\<br>\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}&amp;\le w[i]\\<br>\end{aligned}<br>$$<br>$$<br>\therefore k(p,q)=\frac{(f[p]-f[q])+((w[p]+L)^2-(w[q]+L)^2)}{2\times(w[p]-w[q])}\le w[i]\iff p\;is\;better\;than\;q<br>$$<br>按照此斜率维护单调栈即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 50000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, l, sta[MAX_N+<span class="number">5</span>], s, t;	lnt f[MAX_N+<span class="number">5</span>], w[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function">dnt <span class="title">calc</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;<span class="keyword">return</span> (f[p]-f[q]+(w[p]+l)*(w[p]+l)-(w[q]+l)*(w[q]+l))/(<span class="number">2.0</span>*(w[p]-w[q]));&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	read(n), read(l), l++;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) read(w[i]), w[i] += w[i<span class="number">-1</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) w[i] += i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">while</span> (s &lt; t &amp;&amp; calc(sta[s+<span class="number">1</span>], sta[s]) &lt;= w[i]) s++;</span><br><span class="line">		f[i] = f[sta[s]]+(w[i]-w[sta[s]]-l)*(w[i]-w[sta[s]]-l);</span><br><span class="line">		<span class="keyword">while</span> (s &lt; t &amp;&amp; calc(sta[t], sta[t<span class="number">-1</span>]) &gt; calc(i, sta[t])) t--;</span><br><span class="line">		sta[++t] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[n]), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -1817,13 +1817,11 @@
 
   <div class="powered-by">
   <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-    本站访客数:<span id="busuanzi_value_site_uv"></span>
+    本站访客数:<span id="busuanzi_value_site_uv"></span> |
   </span>
   </div>
   
-  <div class="powered-by">
-    由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动
-  </div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
