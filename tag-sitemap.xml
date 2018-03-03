@@ -226,13 +226,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
-        <lastmod>2018-02-13T08:48:48.275Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/%E9%98%9F%E5%88%97/</loc>
         <lastmod>2018-02-13T14:24:10.633Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -478,13 +471,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
-        <lastmod>2018-03-03T14:53:35.074Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/%E7%9C%81%E9%80%89/</loc>
         <lastmod>2018-03-03T14:53:35.074Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -492,29 +478,43 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <lastmod>2018-03-03T14:56:40.202Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/tags/%E5%9B%BE%E8%AE%BA/</loc>
-        <lastmod>2018-03-03T14:53:35.074Z</lastmod>
+        <lastmod>2018-03-03T14:56:40.202Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <lastmod>2018-03-03T14:56:40.202Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/BZOJ/</loc>
-        <lastmod>2018-03-03T14:54:41.471Z</lastmod>
+        <lastmod>2018-03-03T14:58:19.751Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-        <lastmod>2018-03-03T14:54:41.471Z</lastmod>
+        <lastmod>2018-03-03T14:58:19.751Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/LCT/</loc>
-        <lastmod>2018-03-03T14:54:41.471Z</lastmod>
+        <lastmod>2018-03-03T14:58:19.751Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
