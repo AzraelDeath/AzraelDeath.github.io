@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="Problem Gold Transportation  Time Limit: $2000MS$  Memory Limit: $65536K$   DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must trans">
+<meta name="description" content="ProblemGold TransportationTime Limit: $2000MS$Memory Limit: $65536K$ DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must transport th">
 <meta name="keywords" content="图论,MST,POJ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="POJ3228 Gold Transportation &lt;MST&gt;">
 <meta property="og:url" content="http://yoursite.com/2017/10/24/POJ3228 Gold Transportation MST/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem Gold Transportation  Time Limit: $2000MS$  Memory Limit: $65536K$   DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must trans">
+<meta property="og:description" content="ProblemGold TransportationTime Limit: $2000MS$Memory Limit: $65536K$ DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must transport th">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-19T07:31:17.880Z">
+<meta property="og:updated_time" content="2018-03-03T14:35:27.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="POJ3228 Gold Transportation &lt;MST&gt;">
-<meta name="twitter:description" content="Problem Gold Transportation  Time Limit: $2000MS$  Memory Limit: $65536K$   DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must trans">
+<meta name="twitter:description" content="ProblemGold TransportationTime Limit: $2000MS$Memory Limit: $65536K$ DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must transport th">
 
 
 
@@ -375,22 +375,12 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="Gold-Transportation"><a href="#Gold-Transportation" class="headerlink" title="Gold Transportation"></a>Gold Transportation</h2></blockquote>
-<p> Time Limit: $2000MS$  Memory Limit: $65536K$</p>
-<blockquote>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Gold-Transportation"><a href="#Gold-Transportation" class="headerlink" title="Gold Transportation"></a>Gold Transportation</h3><p>Time Limit: $2000MS$<br>Memory Limit: $65536K$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Recently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must transport this gold to the storehouses as quickly as possible. Suppose that the Zorroming State consists of N towns and there are M bidirectional roads among these towns. The gold mines are only discovered in parts of the towns, while the storehouses are also owned by parts of the towns. The storage of the gold mine and storehouse for each town is finite. The truck drivers in the Zorroming State are famous for their bad temper that they would not like to drive all the time and they need a bar and an inn available in the trip for a good rest. Therefore, your task is to minimize the maximum adjacent distance among all the possible transport routes on the condition that all the gold is safely transported to the storehouses. </p>
-<blockquote>
-</blockquote>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The input contains several test cases. For each case, the first line is integer $N$$(1\le N\le 200)$. The second line is $N$ integers associated with the storage of the gold mine in every towns .The third line is also $N$ integers associated with the storage of the storehouses in every towns .Next is integer $M$$(0\le M\le \frac{(n-1)\times n}{2})$.Then M lines follow. Each line is three integers $x$, $y$ and $d$$(1\le x,y\le N, 0&lt;d\le 10^4)$, means that there is a road between $x$ and $y$ for distance of $d$. $N=0$ means end of the input.</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each case, output the minimum of the maximum adjacent distance on the condition that all the gold has been transported to the storehouses or “No Solution”.</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each case, output the minimum of the maximum adjacent distance on the condition that all the gold has been transported to the storehouses or “No Solution”.<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">3 2 0 0</span><br><span class="line">0 0 3 3</span><br><span class="line">6</span><br><span class="line">1 2 4</span><br><span class="line">1 3 10</span><br><span class="line">1 4 12</span><br><span class="line">2 3 6</span><br><span class="line">2 4 8</span><br><span class="line">3 4 5</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6</span><br></pre></td></tr></table></figure>
-</blockquote>
 <h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：有$n$个村庄，每个村庄有一个黄金矿和一个仓库，求一棵生成树森林，使得每棵生成树上的黄金矿都可被这棵生成树上的仓库存下，并且森林中最大边权最小。</p>
 <p>标签：$MST$</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一个简单的$MST$变形。<br>用$Kruskal$从大到小贪心选边，每加一条边就$O(n)$判断森林中是否所有点所在的树都可以“自给自足”。总时间复杂度$O(mn)$，即$O(n^3)$。</p>
@@ -449,8 +439,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/" rel="prev" title="BZOJ3993【SDOI2015】星际战争 <二分+网络流>">
-                BZOJ3993【SDOI2015】星际战争 <二分+网络流> <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/25/BZOJ4325【NOIp2015】斗地主 搜索+贪心/" rel="prev" title="BZOJ4325【NOIp2015】斗地主 <搜索+贪心>">
+                BZOJ4325【NOIp2015】斗地主 <搜索+贪心> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -537,7 +527,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">122</span>
+                  <span class="site-state-item-count">120</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -652,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gold-Transportation"><span class="nav-number">2.</span> <span class="nav-text">Gold Transportation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">3.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">5.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Gold-Transportation"><span class="nav-number">1.1.</span> <span class="nav-text">Gold Transportation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">2.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

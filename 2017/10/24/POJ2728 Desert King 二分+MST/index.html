@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="Problem Desert King DescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every">
+<meta name="description" content="ProblemDesert KingDescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every v">
 <meta name="keywords" content="图论,MST,二分答案,POJ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="POJ728 Desert King &lt;二分+MST&gt;">
 <meta property="og:url" content="http://yoursite.com/2017/10/24/POJ2728 Desert King 二分+MST/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem Desert King DescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every">
+<meta property="og:description" content="ProblemDesert KingDescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every v">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-19T07:27:20.468Z">
+<meta property="og:updated_time" content="2018-03-03T14:36:26.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="POJ728 Desert King &lt;二分+MST&gt;">
-<meta name="twitter:description" content="Problem Desert King DescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every">
+<meta name="twitter:description" content="ProblemDesert KingDescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every v">
 
 
 
@@ -375,19 +375,11 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="Desert-King"><a href="#Desert-King" class="headerlink" title="Desert King"></a>Desert King</h2></blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>David the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every village. Villages which are connected to his capital village will be watered. As the dominate ruler and the symbol of wisdom in the country, he needs to build the channels in a most elegant way.<br>After days of study, he finally figured his plan out. He wanted the average cost of each mile of the channels to be minimized. In other words, the ratio of the overall cost of the channels to the total length must be minimized. He just needs to build the necessary channels to bring water to all the villages, which means there will be only one way to connect each village to the capital.<br>His engineers surveyed the country and recorded the position and altitude of each village. All the channels must go straight between two villages and be built horizontally. Since every two villages are at different altitudes, they concluded that each channel between two villages needed a vertical water lifter, which can lift water up or let water flow down. The length of the channel is the horizontal distance between the two villages. The cost of the channel is the height of the lifter. You should notice that each village is at a different altitude, and different channels can’t share a lifter. Channels can intersect safely and no three villages are on the same line.<br>As King David’s prime scientist and programmer, you are asked to find out the best solution to build the channels.</p>
-<blockquote>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Desert-King"><a href="#Desert-King" class="headerlink" title="Desert King"></a>Desert King</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>David the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every village. Villages which are connected to his capital village will be watered. As the dominate ruler and the symbol of wisdom in the country, he needs to build the channels in a most elegant way.<br>After days of study, he finally figured his plan out. He wanted the average cost of each mile of the channels to be minimized. In other words, the ratio of the overall cost of the channels to the total length must be minimized. He just needs to build the necessary channels to bring water to all the villages, which means there will be only one way to connect each village to the capital.<br>His engineers surveyed the country and recorded the position and altitude of each village. All the channels must go straight between two villages and be built horizontally. Since every two villages are at different altitudes, they concluded that each channel between two villages needed a vertical water lifter, which can lift water up or let water flow down. The length of the channel is the horizontal distance between the two villages. The cost of the channel is the height of the lifter. You should notice that each village is at a different altitude, and different channels can’t share a lifter. Channels can intersect safely and no three villages are on the same line.<br>As King David’s prime scientist and programmer, you are asked to find out the best solution to build the channels.</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>There are several test cases. Each test case starts with a line containing a number $N (2 \le N \le 1000)$, which is the number of villages. Each of the following $N$ lines contains three integers, $x$, $y$ and $z$ $(0\le x, y &lt; 10^4, 0 \le z &lt; 10^7)$. $(x, y)$ is the position of the village and $z$ is the altitude. The first village is the capital. A test case with $N = 0$ ends the input, and should not be processed. </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each test case, output one line containing a decimal number, which is the minimum ratio of overall cost of the channels to the total length. This number should be rounded three digits after the decimal point. </p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each test case, output one line containing a decimal number, which is the minimum ratio of overall cost of the channels to the total length. This number should be rounded three digits after the decimal point.<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">0 0 0</span><br><span class="line">0 1 1</span><br><span class="line">1 1 2</span><br><span class="line">1 0 3</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.000</span><br></pre></td></tr></table></figure>
-</blockquote>
 <h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：给出$n$个村庄和$n^2$条路，以及每条路的长度和代价，要求选出一棵生成树使得其路径总代价除以路径总长度最小。</p>
 <p>标签：最优比例生成树，二分答案，$MST$</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>本题是最优比例生成树的裸题。<br>熟悉二分答案的套路。</p>
@@ -439,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/" rel="next" title="BZOJ3993【SDOI2015】星际战争 <二分+网络流>">
-                <i class="fa fa-chevron-left"></i> BZOJ3993【SDOI2015】星际战争 <二分+网络流>
+              <a href="/2017/10/17/BZOJ1972【SDOI2010】猪国杀/" rel="next" title="BZOJ1972 【SDOI2010】 猪国杀 <模拟>">
+                <i class="fa fa-chevron-left"></i> BZOJ1972 【SDOI2010】 猪国杀 <模拟>
               </a>
             
           </div>
@@ -449,8 +441,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/25/BZOJ4325【NOIp2015】斗地主 搜索+贪心/" rel="prev" title="BZOJ4325【NOIp2015】斗地主 <搜索+贪心>">
-                BZOJ4325【NOIp2015】斗地主 <搜索+贪心> <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/" rel="prev" title="BZOJ3993【SDOI2015】星际战争 <二分+网络流>">
+                BZOJ3993【SDOI2015】星际战争 <二分+网络流> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -537,7 +529,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">122</span>
+                  <span class="site-state-item-count">120</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -652,7 +644,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Desert-King"><span class="nav-number">2.</span> <span class="nav-text">Desert King</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">3.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">5.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Desert-King"><span class="nav-number">1.1.</span> <span class="nav-text">Desert King</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">2.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>
