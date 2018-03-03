@@ -397,141 +397,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/17/POJ1170 Shopping Offers 五维DP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/17/POJ1170 Shopping Offers 五维DP/" itemprop="url">POJ1170 Shopping Offers <五维DP></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-17T00:00:00+08:00">
-                2017-08-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="Shopping-Offers"><a href="#Shopping-Offers" class="headerlink" title="Shopping Offers"></a>Shopping Offers</h2></blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In a shop each kind of product has a price. For example, the price of a flower is $2$ ICU (Informatics Currency Units) and the price of a vase is $5$ ICU. In order to attract more customers, the shop introduces some special offers.<br>A special offer consists of one or more product items for a reduced price. Examples: three flowers for $5$ ICU instead of $6$, or two vases together with one flower for $10$ ICU instead of $12$.<br>Write a program that calculates the price a customer has to pay for certain items, making optimal use of the special offers. That is, the price should be as low as possible. You are not allowed to add items, even if that would lower the price.<br>For the prices and offers given above, the (lowest) price for three flowers and two vases is $14$ ICU: two vases and one flower for the reduced price of $10$ ICU and two flowers for the regular price of $4$ ICU. </p>
-<blockquote>
-</blockquote>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>Your program is to read from standard input. The first line contains the number $b$ of different kinds of products in the basket $(0 \le b \le 5)$. Each of the next b lines contains three values $c$, $k$, and $p$. The value $c$ is the (unique) product code $(1 \le c \le 999)$. The value $k$ indicates how many items of this product are in the basket $(1 \le k \le 5)$. The value p is the regular price per item $(1 \le p \le 999)$. Notice that all together at most $5\times 5=25$ items can be in the basket. The $b+2^{nd}$ line contains the number $s$ of special offers $(0 \le s \le 99)$. Each of the next $s$ lines describes one offer by giving its structure and its reduced price. The first number n on such a line is the number of different kinds of products that are part of the offer $(1 \le n \le 5)$. The next n pairs of numbers $(c,k)$ indicate that $k$ items $(1 \le k \le 5)$ with product code $c$ $(1 \le c \le 999)$ are involved in the offer. The last number $p$ on the line stands for the reduced price $(1 \le p \le 9999)$. The reduced price of an offer is less than the sum of the regular prices. </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Your program is to write to standard output. Output one line with the lowest possible price to be paid. </p>
-<blockquote>
-</blockquote>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">7 3 2</span><br><span class="line">8 2 5</span><br><span class="line">2</span><br><span class="line">1 7 3 5</span><br><span class="line">2 7 1 8 2 10</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">14</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>标签：五维$DP$</p>
-<h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：有至多五种物品，给出每一种物品的单价和几种套餐的价格，求买目标物品至少需要多少钱。</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>这是一道大水题。因为只有五种物品，可以用五维的$dp$来表示，五个维度分别表示五种物品的个数，即$f[i][j][p][q][r]$表示第一种物品取$i$个，第二种物品取$j$个……第五种物品取$r$个至少需要多少钱。把每种物品的单价看作一种只有一个物品的套餐，这样枚举套餐，看能否转移。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 5</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_S 100</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_C 1000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 2147483647</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, cnt, basket[MAX_N+<span class="number">5</span>], offer[MAX_S+<span class="number">10</span>][MAX_N+<span class="number">5</span>], v[MAX_S+<span class="number">10</span>], <span class="built_in">map</span>[MAX_C+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> f[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> id, num, p;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;id, &amp;num, &amp;p);</span><br><span class="line">		<span class="built_in">map</span>[id] = i, basket[i] = num, offer[cnt][i] = <span class="number">1</span>, v[cnt++] = p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;m);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> num, id, k, p;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;num);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;id, &amp;k);</span><br><span class="line">			offer[cnt][<span class="built_in">map</span>[id]] = k;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;p);</span><br><span class="line">		v[cnt++] = p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> a0 = <span class="number">0</span>; a0 &lt;= basket[<span class="number">0</span>]; a0++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> a1 = <span class="number">0</span>; a1 &lt;= basket[<span class="number">1</span>]; a1++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> a2 = <span class="number">0</span>; a2 &lt;= basket[<span class="number">2</span>]; a2++)</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> a3 = <span class="number">0</span>; a3 &lt;= basket[<span class="number">3</span>]; a3++)</span><br><span class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> a4 = <span class="number">0</span>; a4 &lt;= basket[<span class="number">4</span>]; a4++) &#123;</span><br><span class="line">						<span class="keyword">if</span> (a0 == <span class="number">0</span> &amp;&amp; a1 == <span class="number">0</span> &amp;&amp; a2 == <span class="number">0</span> &amp;&amp; a3 == <span class="number">0</span> &amp;&amp; a4 == <span class="number">0</span>) &#123;f[a0][a1][a2][a3][a4] = <span class="number">0</span>;	<span class="keyword">continue</span>;&#125;</span><br><span class="line">						f[a0][a1][a2][a3][a4] = INF;</span><br><span class="line">						<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt; i++) &#123;</span><br><span class="line">							<span class="keyword">if</span> (a0 &lt; offer[i][<span class="number">0</span>] || a1 &lt; offer[i][<span class="number">1</span>] || a2 &lt; offer[i][<span class="number">2</span>] || a3 &lt; offer[i][<span class="number">3</span>] || a4 &lt; offer[i][<span class="number">4</span>])	<span class="keyword">continue</span>;</span><br><span class="line">							f[a0][a1][a2][a3][a4] = min(f[a0][a1][a2][a3][a4], f[a0-offer[i][<span class="number">0</span>]][a1-offer[i][<span class="number">1</span>]][a2-offer[i][<span class="number">2</span>]][a3-offer[i][<span class="number">3</span>]][a4-offer[i][<span class="number">4</span>]]+v[i]);</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, f[basket[<span class="number">0</span>]][basket[<span class="number">1</span>]][basket[<span class="number">2</span>]][basket[<span class="number">3</span>]][basket[<span class="number">4</span>]]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/17/POJ1182 【NOI2001】 食物链 种类并查集/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -638,6 +503,141 @@
 </ol>
 <p>于是我们$merge(x, y+2n), merge(x+n, y), merge(x+2n, y+n)$<br>如果在接到信息$x$和$y$同类后，发现$x$和$y+n$同类或$x$和$y+2n$同类，则此信息与先前信息矛盾。因为对称性，我们不用再判断$y$是否和$x+n$或$x+2n$同类。同理可处理$x$吃$y$的情况。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 50000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, k, f[MAX_N*<span class="number">3</span>+<span class="number">5</span>], cnt = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (x != f[x])	f[x] = get(f[x]);</span><br><span class="line">	<span class="keyword">return</span> f[x];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ancx = get(x), ancy = get(y);</span><br><span class="line">	<span class="keyword">if</span> (ancx != ancy)	f[ancx] = ancy;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;k);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n*<span class="number">3</span>; i++)	f[i] = i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> s, x, y;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;s, &amp;x, &amp;y);</span><br><span class="line">		<span class="keyword">if</span> (x &gt; n || y &gt; n) &#123;</span><br><span class="line">			cnt++;</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (s == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (get(x) == get(y+n) || get(x) == get(y+<span class="number">2</span>*n)) &#123;</span><br><span class="line">				cnt++;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				merge(x, y);</span><br><span class="line">				merge(x+n, y+n);</span><br><span class="line">				merge(x+<span class="number">2</span>*n, y+<span class="number">2</span>*n);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">if</span> (x == y || get(x) == get(y) || get(x) == get(y+n)) &#123;</span><br><span class="line">				cnt++;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				merge(x, y+<span class="number">2</span>*n);</span><br><span class="line">				merge(x+n, y);</span><br><span class="line">				merge(x+<span class="number">2</span>*n, y+n);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, cnt);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/17/POJ1170 Shopping Offers 五维DP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/17/POJ1170 Shopping Offers 五维DP/" itemprop="url">POJ1170 Shopping Offers <五维DP></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-17T00:00:00+08:00">
+                2017-08-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="Shopping-Offers"><a href="#Shopping-Offers" class="headerlink" title="Shopping Offers"></a>Shopping Offers</h2></blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In a shop each kind of product has a price. For example, the price of a flower is $2$ ICU (Informatics Currency Units) and the price of a vase is $5$ ICU. In order to attract more customers, the shop introduces some special offers.<br>A special offer consists of one or more product items for a reduced price. Examples: three flowers for $5$ ICU instead of $6$, or two vases together with one flower for $10$ ICU instead of $12$.<br>Write a program that calculates the price a customer has to pay for certain items, making optimal use of the special offers. That is, the price should be as low as possible. You are not allowed to add items, even if that would lower the price.<br>For the prices and offers given above, the (lowest) price for three flowers and two vases is $14$ ICU: two vases and one flower for the reduced price of $10$ ICU and two flowers for the regular price of $4$ ICU. </p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>Your program is to read from standard input. The first line contains the number $b$ of different kinds of products in the basket $(0 \le b \le 5)$. Each of the next b lines contains three values $c$, $k$, and $p$. The value $c$ is the (unique) product code $(1 \le c \le 999)$. The value $k$ indicates how many items of this product are in the basket $(1 \le k \le 5)$. The value p is the regular price per item $(1 \le p \le 999)$. Notice that all together at most $5\times 5=25$ items can be in the basket. The $b+2^{nd}$ line contains the number $s$ of special offers $(0 \le s \le 99)$. Each of the next $s$ lines describes one offer by giving its structure and its reduced price. The first number n on such a line is the number of different kinds of products that are part of the offer $(1 \le n \le 5)$. The next n pairs of numbers $(c,k)$ indicate that $k$ items $(1 \le k \le 5)$ with product code $c$ $(1 \le c \le 999)$ are involved in the offer. The last number $p$ on the line stands for the reduced price $(1 \le p \le 9999)$. The reduced price of an offer is less than the sum of the regular prices. </p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Your program is to write to standard output. Output one line with the lowest possible price to be paid. </p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">7 3 2</span><br><span class="line">8 2 5</span><br><span class="line">2</span><br><span class="line">1 7 3 5</span><br><span class="line">2 7 1 8 2 10</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">14</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>标签：五维$DP$</p>
+<h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：有至多五种物品，给出每一种物品的单价和几种套餐的价格，求买目标物品至少需要多少钱。</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>这是一道大水题。因为只有五种物品，可以用五维的$dp$来表示，五个维度分别表示五种物品的个数，即$f[i][j][p][q][r]$表示第一种物品取$i$个，第二种物品取$j$个……第五种物品取$r$个至少需要多少钱。把每种物品的单价看作一种只有一个物品的套餐，这样枚举套餐，看能否转移。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 5</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_S 100</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_C 1000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 2147483647</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, cnt, basket[MAX_N+<span class="number">5</span>], offer[MAX_S+<span class="number">10</span>][MAX_N+<span class="number">5</span>], v[MAX_S+<span class="number">10</span>], <span class="built_in">map</span>[MAX_C+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> f[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> id, num, p;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;id, &amp;num, &amp;p);</span><br><span class="line">		<span class="built_in">map</span>[id] = i, basket[i] = num, offer[cnt][i] = <span class="number">1</span>, v[cnt++] = p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;m);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> num, id, k, p;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;num);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;id, &amp;k);</span><br><span class="line">			offer[cnt][<span class="built_in">map</span>[id]] = k;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;p);</span><br><span class="line">		v[cnt++] = p;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> a0 = <span class="number">0</span>; a0 &lt;= basket[<span class="number">0</span>]; a0++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> a1 = <span class="number">0</span>; a1 &lt;= basket[<span class="number">1</span>]; a1++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> a2 = <span class="number">0</span>; a2 &lt;= basket[<span class="number">2</span>]; a2++)</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> a3 = <span class="number">0</span>; a3 &lt;= basket[<span class="number">3</span>]; a3++)</span><br><span class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> a4 = <span class="number">0</span>; a4 &lt;= basket[<span class="number">4</span>]; a4++) &#123;</span><br><span class="line">						<span class="keyword">if</span> (a0 == <span class="number">0</span> &amp;&amp; a1 == <span class="number">0</span> &amp;&amp; a2 == <span class="number">0</span> &amp;&amp; a3 == <span class="number">0</span> &amp;&amp; a4 == <span class="number">0</span>) &#123;f[a0][a1][a2][a3][a4] = <span class="number">0</span>;	<span class="keyword">continue</span>;&#125;</span><br><span class="line">						f[a0][a1][a2][a3][a4] = INF;</span><br><span class="line">						<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt; i++) &#123;</span><br><span class="line">							<span class="keyword">if</span> (a0 &lt; offer[i][<span class="number">0</span>] || a1 &lt; offer[i][<span class="number">1</span>] || a2 &lt; offer[i][<span class="number">2</span>] || a3 &lt; offer[i][<span class="number">3</span>] || a4 &lt; offer[i][<span class="number">4</span>])	<span class="keyword">continue</span>;</span><br><span class="line">							f[a0][a1][a2][a3][a4] = min(f[a0][a1][a2][a3][a4], f[a0-offer[i][<span class="number">0</span>]][a1-offer[i][<span class="number">1</span>]][a2-offer[i][<span class="number">2</span>]][a3-offer[i][<span class="number">3</span>]][a4-offer[i][<span class="number">4</span>]]+v[i]);</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, f[basket[<span class="number">0</span>]][basket[<span class="number">1</span>]][basket[<span class="number">2</span>]][basket[<span class="number">3</span>]][basket[<span class="number">4</span>]]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
