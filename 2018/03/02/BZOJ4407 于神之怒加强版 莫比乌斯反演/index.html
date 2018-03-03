@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="ProblemDZY Loves MathTime Limit: $80 Sec$Memory Limit: $512 MB$ Description给下$N,M,K$，计算$\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\mod(10^9+7)$的值。 Input输入有多组数据，输入数据的第一行两个正整数$T,K$，代表有$T$组数据，$K$的意义如上所示，下面第">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-03T10:17:20.275Z">
+<meta property="og:updated_time" content="2018-03-03T10:59:20.437Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4407 于神之怒加强版 &lt;莫比乌斯反演&gt;">
 <meta name="twitter:description" content="ProblemDZY Loves MathTime Limit: $80 Sec$Memory Limit: $512 MB$ Description给下$N,M,K$，计算$\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\mod(10^9+7)$的值。 Input输入有多组数据，输入数据的第一行两个正整数$T,K$，代表有$T$组数据，$K$的意义如上所示，下面第">
@@ -332,13 +332,11 @@
         <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="DZY-Loves-Math"><a href="#DZY-Loves-Math" class="headerlink" title="DZY Loves Math"></a>DZY Loves Math</h3><p>Time Limit: $80 Sec$<br>Memory Limit: $512 MB$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给下$N,M,K$，计算$\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\mod(10^9+7)$的值。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入有多组数据，输入数据的第一行两个正整数$T,K$，代表有$T$组数据，$K$的意义如上所示，下面第$2$行到第$T+1$行，每行为两个正整数$N,M$，其意义如上式所示。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每一个询问，输出一行一个数作为回答。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每一个询问，输出一行一个数作为回答。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">3 3</span><br></pre></td></tr></table></figure>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure>
-<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><blockquote>
-<p>$1\le N,M,K\le5\times 10^6,\;1\le T\le2000$<br><a href="http://www.lydsy.com/JudgeOnline/upload/201603/4407.rar" target="_blank" rel="noopener">官方题解</a></p>
-</blockquote>
-<p>标签：莫比乌斯反演<br><a id="more"></a></p>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$1\le N,M,K\le5\times 10^6,\;1\le T\le2000$<br><a href="http://www.lydsy.com/JudgeOnline/upload/201603/4407.rar" target="_blank" rel="noopener">官方题解</a></p>
+<p>标签：莫比乌斯反演</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>先套路转换出$\mu$：<br>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{n}\sum_{j=1}^{m}[\gcd(i,j)=d]\\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\sum_{x|\gcd(i ,j)}\mu(x)\\<br>&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{x=1}^{\lfloor\frac{\min(n,m)}{d}\rfloor}\mu(x)\lfloor\frac{n}{x\cdot d}\rfloor\lfloor\frac{m}{x\cdot d}\rfloor\\<br>&amp;=\sum_{t=1}^{\min(n,m)}\sum_{d=1}^{t}d^k\mu(\frac{t}{d})\lfloor\frac{n}{t}\rfloor\lfloor\frac{m}{t}\rfloor\\<br>&amp;=\sum_{t=1}^{\min(n,m)}\lfloor\frac{n}{t}\rfloor\lfloor\frac{m}{t}\rfloor\sum_{d=1}^{t}d^k\mu(\frac{t}{d})\\<br>\end{aligned}<br>$$<br>那么每次询问对于前半部分可以根号分块，随后需要$O(1)$计算后半部分的值，因而需要线筛预处理后半部分的值。</p>
 <p>令$f(t)=\sum_{d=1}^{t}d^k\mu(\frac{t}{d})$，$t=p_1^{a_1}\times p_2^{q_2}\times\cdots p_l^{a_l}$<br>由于$y=d^k$和$y=\mu(d)$均为积性函数，因而$f$也为积性函数。<br>那么就有<br>$$<br>\begin{aligned}<br>f(t)&amp;=\prod_{i=1}^{l}f(p_i^{a_i})\\&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(\frac{p_i^{a_i}}{p_i^j})\\<br>&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(p_i^{a_i-j})\\<br>\end{aligned}<br>$$<br>易知当$j\in[0,a_i-1)$时，均有$\mu(p_i^{a_i-j})=0$，因此有<br>$$<br>\begin{aligned}<br>f(t)&amp;=\prod_{i=1}^{l}\sum_{j=0}^{a_i}p_i^{j\cdot k}\mu(p_i^{a_i-j})\\<br>&amp;=\prod_{i=1}^{l}(\mu(p_i)\cdot p_i^{k\cdot(a_i-1)}+\mu(1)\cdot p_i^{k\cdot a_i})\\<br>&amp;=\prod_{i=1}^{l}(p_i^{k\cdot a_i}-p_i^{k\cdot(a_i-1)})\\<br>&amp;=\prod_{i=1}^{l}p_i^{k\cdot(a_i-1)}(p_i-1)<br>\end{aligned}<br>$$<br>接下来考虑在线筛中如何处理。<br>首先，对于所有质数，均有$f(p)=p^k-1$。<br>而对于合数，假设当前筛到的数是$x$，对于一个比它小的素数$p$，有两种情况：</p>
 <ol>
