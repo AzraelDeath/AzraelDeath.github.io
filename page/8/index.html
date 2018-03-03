@@ -540,6 +540,131 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/14/BZOJ1997【HNOI2010】Planer 2-SAT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/14/BZOJ1997【HNOI2010】Planer 2-SAT/" itemprop="url">BZOJ1997 Planer <2-SAT></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T00:00:00+08:00">
+                2017-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<p>传送门：<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1997" target="_blank" rel="noopener">http://www.lydsy.com/JudgeOnline/problem.php?id=1997</a></p>
+</blockquote>
+<p>标签：2-SAT，并查集</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>本题和$POJ3207$没什么区别…<br>只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。<br>貌似此题可以种类并查集$trick$过。<br>把每条线段拆成两个点，代表从里面连和外面连，对于相交线段$a,b$，一定有$a$和$b$不同时在里面或外面，于是$merge(a, b’)$, $merge(a’, b)$。这样合并时判断是否有$i$, $i’$在同一集中即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 200</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 10000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, p[MAX_N+<span class="number">5</span>], l[MAX_M+<span class="number">5</span>], r[MAX_M+<span class="number">5</span>], fa[MAX_M*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>*m; i++)	fa[i] = i;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getf</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> fa[x] == x ? x : fa[x] = getf(fa[x]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;a = getf(a), b = getf(b);	<span class="keyword">if</span> (a != b)	fa[a] = b;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">	<span class="keyword">while</span> (T--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m), init();	<span class="keyword">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;l[i], &amp;r[i]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, x; i &lt; n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;x), p[x] = i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	l[i] = p[l[i]], r[i] = p[r[i]];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	<span class="keyword">if</span> (l[i] &gt; r[i])	swap(l[i], r[i]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; m; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</span><br><span class="line">			<span class="keyword">if</span> ((l[i] &lt; l[j] &amp;&amp; r[i] &gt; l[j] &amp;&amp; r[i] &lt; r[j]) || (l[i] &gt; l[j] &amp;&amp; l[i] &lt; r[j] &amp;&amp; r[i] &gt; r[j]))</span><br><span class="line">				merge(i*<span class="number">2</span>, j*<span class="number">2</span>+<span class="number">1</span>), merge(i*<span class="number">2</span>+<span class="number">1</span>, j*<span class="number">2</span>);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	flag &amp;= (getf(i*<span class="number">2</span>) != getf(i*<span class="number">2</span>+<span class="number">1</span>));</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%s\n"</span>, flag ? <span class="string">"YES"</span> : <span class="string">"NO"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/14/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -628,131 +753,6 @@
 <h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：$n$个数排成一圈，给出若干条两点间的线段，可以在圈内连，也可在圈外连，问能否使得无相交线段（端点相交不算）</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>本题是$2-SAT$的判定裸题。<br>把每条线段拆成两个点，即第$i$条为$i$和$i’$，分别代表$i$在圈内和在圈外。若线段$a$和$b$相交，则连边$a\to b’$，$a’\to b$，这样跑一个$tarjan$再判断$i$和$i’$是否在一个联通块内即可判断是否有冲突。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 500</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, x[MAX_M+<span class="number">5</span>], y[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> dfn[MAX_M*<span class="number">2</span>+<span class="number">5</span>], low[MAX_M*<span class="number">2</span>+<span class="number">5</span>], id[MAX_M*<span class="number">2</span>+<span class="number">5</span>], index, cnt;</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; G[MAX_M*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt; sta;</span><br><span class="line"><span class="keyword">bool</span> insta[MAX_M*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">tarjan</span><span class="params">(<span class="keyword">int</span> u)</span> </span>&#123;</span><br><span class="line">	dfn[u] = low[u] = ++index;</span><br><span class="line">	sta.push(u), insta[u] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; G[u].size(); i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> v = G[u][i];</span><br><span class="line">		<span class="keyword">if</span> (!dfn[v])	tarjan(v), low[u] = min(low[u], low[v]);</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (insta[v])	low[u] = min(low[u], dfn[v]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (dfn[u] == low[u]) &#123;</span><br><span class="line">		cnt++;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = sta.top(); ; i = sta.top()) &#123;</span><br><span class="line">			id[i] = cnt;</span><br><span class="line">			sta.pop();</span><br><span class="line">			<span class="keyword">if</span> (i == u)	<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= m; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i; j++)</span><br><span class="line">			<span class="keyword">if</span> ((x[i] &lt;= x[j] &amp;&amp; y[i] &gt;= x[j] &amp;&amp; y[i] &lt;= y[j]) || (x[i] &gt;= x[j] &amp;&amp; x[i] &lt;= y[j] &amp;&amp; y[i] &gt;= y[j]))</span><br><span class="line">				G[i].push_back(j+m), G[j].push_back(i+m), G[i+m].push_back(j), G[j+m].push_back(i);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)</span><br><span class="line">		<span class="keyword">if</span> (id[i] == id[i+m])</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;x[i], &amp;y[i]);</span><br><span class="line">		<span class="keyword">if</span> (x[i] &gt; y[i])	swap(x[i], y[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	build();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m*<span class="number">2</span>; i++)</span><br><span class="line">		<span class="keyword">if</span> (!dfn[i])</span><br><span class="line">			tarjan(i);</span><br><span class="line">	<span class="keyword">if</span> (check())	<span class="built_in">printf</span>(<span class="string">"panda is telling the truth...\n"</span>);</span><br><span class="line">	<span class="keyword">else</span>	<span class="built_in">printf</span>(<span class="string">"the evil panda is lying again\n"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/14/BZOJ1997【HNOI2010】Planer 2-SAT/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/14/BZOJ1997【HNOI2010】Planer 2-SAT/" itemprop="url">BZOJ1997 Planer <2-SAT></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T00:00:00+08:00">
-                2017-10-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<p>传送门：<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1997" target="_blank" rel="noopener">http://www.lydsy.com/JudgeOnline/problem.php?id=1997</a></p>
-</blockquote>
-<p>标签：2-SAT，并查集</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>本题和$POJ3207$没什么区别…<br>只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。<br>貌似此题可以种类并查集$trick$过。<br>把每条线段拆成两个点，代表从里面连和外面连，对于相交线段$a,b$，一定有$a$和$b$不同时在里面或外面，于是$merge(a, b’)$, $merge(a’, b)$。这样合并时判断是否有$i$, $i’$在同一集中即可。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 200</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 10000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, p[MAX_N+<span class="number">5</span>], l[MAX_M+<span class="number">5</span>], r[MAX_M+<span class="number">5</span>], fa[MAX_M*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>*m; i++)	fa[i] = i;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getf</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> fa[x] == x ? x : fa[x] = getf(fa[x]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;a = getf(a), b = getf(b);	<span class="keyword">if</span> (a != b)	fa[a] = b;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">	<span class="keyword">while</span> (T--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m), init();	<span class="keyword">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;l[i], &amp;r[i]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, x; i &lt; n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;x), p[x] = i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	l[i] = p[l[i]], r[i] = p[r[i]];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	<span class="keyword">if</span> (l[i] &gt; r[i])	swap(l[i], r[i]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; m; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</span><br><span class="line">			<span class="keyword">if</span> ((l[i] &lt; l[j] &amp;&amp; r[i] &gt; l[j] &amp;&amp; r[i] &lt; r[j]) || (l[i] &gt; l[j] &amp;&amp; l[i] &lt; r[j] &amp;&amp; r[i] &gt; r[j]))</span><br><span class="line">				merge(i*<span class="number">2</span>, j*<span class="number">2</span>+<span class="number">1</span>), merge(i*<span class="number">2</span>+<span class="number">1</span>, j*<span class="number">2</span>);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	flag &amp;= (getf(i*<span class="number">2</span>) != getf(i*<span class="number">2</span>+<span class="number">1</span>));</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%s\n"</span>, flag ? <span class="string">"YES"</span> : <span class="string">"NO"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
           
         
       
@@ -2245,7 +2245,9 @@
   </span>
   </div>
   
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">
+    由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动
+  </div>
 
 
 
@@ -2450,5 +2452,5 @@
 	<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
 	<script type="text/javascript" src="/js/src/fireworks.js"></script>
     
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({});</script></body>
 </html>
