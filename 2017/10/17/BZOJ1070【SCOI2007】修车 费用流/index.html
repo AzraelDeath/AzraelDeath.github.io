@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="网络流,BZOJ,省选,图论,费用流," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Problem 【SCOI2007】修车 Time Limit: $1 Sec$    Memory Limit: $128 MB$  Description同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在需要安排这$M$位技术人员所维修的车及顺序，使得顾客平均等待的时间最小。说明：顾客的等待时间是指从他">
+<meta name="keywords" content="网络流,BZOJ,省选,图论,费用流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ1070【SCOI2007】修车 &lt;费用流&gt;">
+<meta property="og:url" content="http://yoursite.com/2017/10/17/BZOJ1070【SCOI2007】修车 费用流/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Problem 【SCOI2007】修车 Time Limit: $1 Sec$    Memory Limit: $128 MB$  Description同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在需要安排这$M$位技术人员所维修的车及顺序，使得顾客平均等待的时间最小。说明：顾客的等待时间是指从他">
+<meta property="og:updated_time" content="2018-02-09T02:59:06.728Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BZOJ1070【SCOI2007】修车 &lt;费用流&gt;">
+<meta name="twitter:description" content="Problem 【SCOI2007】修车 Time Limit: $1 Sec$    Memory Limit: $128 MB$  Description同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在需要安排这$M$位技术人员所维修的车及顺序，使得顾客平均等待的时间最小。说明：顾客的等待时间是指从他">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/10/17/BZOJ1070【SCOI2007】修车 费用流/"/>
+
+
+
+
+
+  <title>BZOJ1070【SCOI2007】修车 <费用流> | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/BZOJ1070【SCOI2007】修车 费用流/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">BZOJ1070【SCOI2007】修车 <费用流></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-17T00:00:00+08:00">
+                2017-10-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【SCOI2007】修车"><a href="#【SCOI2007】修车" class="headerlink" title="【SCOI2007】修车"></a>【SCOI2007】修车</h2><p> Time Limit: $1 Sec$    Memory Limit: $128 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在需要安排这$M$位技术人员所维修的车及顺序，使得顾客平均等待的时间最小。<br>说明：顾客的等待时间是指从他把车送至维修中心到维修完毕所用的时间。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行有两个$m,n$，表示技术人员数与顾客数。 接下来$n$行，每行$m$个整数。第$i+1$行第$j$个数表示第$j$位技术人<br>员维修第$i$辆车需要用的时间$T$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>最小平均等待时间，答案精确到小数点后$2$位。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 2</span><br><span class="line">3 2</span><br><span class="line">1 4</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.50</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p> 据范围: $2\le M\le 9$, $1\le N\le 60$, $1\le T\le 1000$</p>
+</blockquote>
+<p>标签：费用流</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>此题建模是费用流中常见的拆点建模。<br>把每个技术人员拆成$n$个点，第$k$个点代表着此工作人员修的倒数第$k$辆车对答案的贡献。<br>对于每个顾客，如果他倒数第$k$个修车，花费$t$的时间，会对答案产生$t\times k$的贡献。<br>因此从每个顾客向每个技术人员的$n$个点连边，容量为$1$，花费为$t\times k$，然后跑费用流即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 10000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 200000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 2147483647</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, s, t, ans, a[<span class="number">65</span>][<span class="number">10</span>];</span><br><span class="line"><span class="keyword">int</span> pre[MAX_N+<span class="number">5</span>], cnt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, w, nxt;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, t = n*m+n+<span class="number">1</span>, cnt = <span class="number">0</span>;	<span class="built_in">memset</span>(pre, <span class="number">-1</span>, <span class="keyword">sizeof</span>(pre));&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c, <span class="keyword">int</span> w)</span> </span>&#123;</span><br><span class="line">	E[cnt].v = v, E[cnt].c = c, E[cnt].w = w, E[cnt].nxt = pre[u], pre[u] = cnt++;</span><br><span class="line">	E[cnt].v = u, E[cnt].c = <span class="number">0</span>, E[cnt].w =-w, E[cnt].nxt = pre[v], pre[v] = cnt++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">SPFA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	<span class="keyword">bool</span> inque[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> dis[MAX_N+<span class="number">5</span>], pree[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(inque, <span class="literal">false</span>, <span class="keyword">sizeof</span>(inque)), <span class="built_in">memset</span>(pree, <span class="number">-1</span>, <span class="keyword">sizeof</span>(pree));</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = s; i &lt;= t; i++)	dis[i] = INF;</span><br><span class="line">	dis[s] = <span class="number">0</span>, que.push(s), inque[s] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();	que.pop(), inque[u] = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pre[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v, c = E[i].c, w = E[i].w;</span><br><span class="line">			<span class="keyword">if</span> (c &amp;&amp; dis[u]+w &lt; dis[v]) &#123;</span><br><span class="line">				dis[v] = dis[u]+w, pree[v] = i;</span><br><span class="line">				<span class="keyword">if</span> (!inque[v])	que.push(v), inque[v] = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (dis[t] == INF)	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">int</span> flow = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = pree[t]; ~i; i = pree[E[i^<span class="number">1</span>].v])	flow = min(flow, E[i].c);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = pree[t]; ~i; i = pree[E[i^<span class="number">1</span>].v])	E[i].c -= flow, E[i^<span class="number">1</span>].c += flow;</span><br><span class="line">	ans += dis[t];	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;m, &amp;n), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i][j]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	insert(s, i, <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= n; k++)	insert(i, j*n+k, <span class="number">1</span>, a[i][j]*k);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= n; k++)	insert(j*n+k, t, <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">while</span> (SPFA()) ;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%.2lf"</span>, (<span class="keyword">double</span>)ans/n);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/网络流/" rel="tag"># 网络流</a>
+          
+            <a href="/tags/BZOJ/" rel="tag"># BZOJ</a>
+          
+            <a href="/tags/省选/" rel="tag"># 省选</a>
+          
+            <a href="/tags/图论/" rel="tag"># 图论</a>
+          
+            <a href="/tags/费用流/" rel="tag"># 费用流</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/" rel="next" title="BZOJ2466 【中山市选2009】树 <高斯消元>">
+                <i class="fa fa-chevron-left"></i> BZOJ2466 【中山市选2009】树 <高斯消元>
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/17/BZOJ1972【SDOI2010】猪国杀/" rel="prev" title="BZOJ1972 【SDOI2010】 猪国杀 <模拟>">
+                BZOJ1972 【SDOI2010】 猪国杀 <模拟> <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">122</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-name">Tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【SCOI2007】修车"><span class="nav-number">2.</span> <span class="nav-text">【SCOI2007】修车</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">2.6.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
