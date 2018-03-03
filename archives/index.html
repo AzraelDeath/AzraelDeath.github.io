@@ -91,6 +91,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="NIRVANA" type="application/atom+xml" />
+
 
 
 
@@ -246,26 +248,22 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
   </div>
-
+  <div id="local-search-result"></div>
+</div>
 
 
 
@@ -394,43 +392,6 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" itemprop="url">
-              
-                <span itemprop="name">BZOJ2154 Crash的数字表格 <莫比乌斯反演></span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-26T00:00:00+08:00"
-              content="2018-02-26" >
-          02-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
             <a class="post-title-link" href="/2018/02/26/BZOJ2693 jzptab 莫比乌斯反演/" itemprop="url">
               
                 <span itemprop="name">BZOJ2693 jzptab <莫比乌斯反演></span>
@@ -468,9 +429,46 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/02/22/BZOJ1096【ZJOI2007】仓库建设 斜率优化/" itemprop="url">
+            <a class="post-title-link" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" itemprop="url">
               
-                <span itemprop="name">BZOJ1096【ZJOI2007】仓库建设 <斜率优化></span>
+                <span itemprop="name">BZOJ2154 Crash的数字表格 <莫比乌斯反演></span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-02-26T00:00:00+08:00"
+              content="2018-02-26" >
+          02-26
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" itemprop="url">
+              
+                <span itemprop="name">BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></span>
               
             </a>
         
@@ -505,9 +503,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" itemprop="url">
+            <a class="post-title-link" href="/2018/02/22/BZOJ1096【ZJOI2007】仓库建设 斜率优化/" itemprop="url">
               
-                <span itemprop="name">BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></span>
+                <span itemprop="name">BZOJ1096【ZJOI2007】仓库建设 <斜率优化></span>
               
             </a>
         
@@ -756,6 +754,13 @@
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -1347,19 +1352,6 @@
   </script>
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 

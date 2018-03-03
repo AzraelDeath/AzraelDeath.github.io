@@ -85,11 +85,13 @@
 
 
 
-  <meta name="keywords" content="数据结构,BZOJ,省选,线段树," />
+  <meta name="keywords" content="BZOJ,省选,数据结构,线段树," />
 
 
 
 
+
+  <link rel="alternate" href="/atom.xml" title="NIRVANA" type="application/atom+xml" />
 
 
 
@@ -97,7 +99,7 @@
 
 
 <meta name="description" content="Problem 【SDOI2008】校门外的区间  Time Limit: $10 Sec$ Memory Limit: $128 MB$   Description 受校门外的树这道经典问题的启发，$A$君根据基本的离散数学的知识，抽象出$5$种运算维护集合$S$($S$初始为空)并最终输出$S$。现在，请你完成这道校门外的树之难度增强版——校门外的区间。$5$种运算如下：    编号 表示格式">
-<meta name="keywords" content="数据结构,BZOJ,省选,线段树">
+<meta name="keywords" content="BZOJ,省选,数据结构,线段树">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ3226【SDOI2008】校门外的区间 &lt;线段树&gt;">
 <meta property="og:url" content="http://yoursite.com/2017/09/22/BZOJ3226【SDOI2008】校门外的区间/index.html">
@@ -248,26 +250,22 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
   </div>
-
+  <div id="local-search-result"></div>
+</div>
 
 
 
@@ -489,11 +487,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/数据结构/" rel="tag"> <i class="fa fa-tag"></i> 数据结构</a>
-          
             <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
+          
+            <a href="/tags/数据结构/" rel="tag"> <i class="fa fa-tag"></i> 数据结构</a>
           
             <a href="/tags/线段树/" rel="tag"> <i class="fa fa-tag"></i> 线段树</a>
           
@@ -627,6 +625,13 @@
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -1249,19 +1254,6 @@
   </script>
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
