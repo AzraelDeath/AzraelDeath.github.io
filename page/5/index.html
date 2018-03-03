@@ -332,19 +332,27 @@
       
         
           
-          Problem
-【NOIp2007】Core树网的核 Time Limit: $10 Sec$  Memory Limit: $64 MB$
-
-Description
-设$T=(V, E, W)$ 是一个无圈且连通的无向图（也称为无根树），每条边带有正整数的权，我们称$T$为树网（$treenetwork$），其中$V, E$分别表示结点与边的集合，$W$表示各边长度的集合，并设$T$有$n$个结点。 路径：树网中任何两结点$a,b$都存在唯一的一条简单路径，用$d(a,b)$表示以$a,b$为端点的路径的长度，它是该路径上各边长度之和。我们称$d(a,b)$为$a,b$两结点间的距离。 一点
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/02/BZOJ1999【NOIp2007】Core树网的核 树相关/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【NOIp2007】Core树网的核"><a href="#【NOIp2007】Core树网的核" class="headerlink" title="【NOIp2007】Core树网的核"></a>【NOIp2007】Core树网的核</h2><p> Time Limit: $10 Sec$  Memory Limit: $64 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><blockquote>
+<p>设$T=(V, E, W)$ 是一个无圈且连通的无向图（也称为无根树），每条边带有正整数的权，我们称$T$为树网（$treenetwork$），其中$V, E$分别表示结点与边的集合，$W$表示各边长度的集合，并设$T$有$n$个结点。 路径：树网中任何两结点$a,b$都存在唯一的一条简单路径，用$d(a,b)$表示以$a,b$为端点的路径的长度，它是该路径上各边长度之和。我们称$d(a,b)$为$a,b$两结点间的距离。 一点$v$到一条路径$P$的距离为该点与$P$上的最近的结点的距离： $d(v，P)=min_{u在P上}{d(v，u)}$。 树网的直径：树网中最长的路径称为树网的直径。对于给定的树网$T$，直径不一定是唯一的，但可以证明：各直径的中点（不一定恰好是某个结点，可能在某条边的内部）是唯一的，我们称该点为树网的中心。 偏心距$ECC(F)$：树网$T$中距路径$F$最远的结点到路径$F$的距离，即 。 任务：对于给定的树网$T=(V, E,W)$和非负整数$s$，求一个路径$F$，它是某直径上的一段路径（该路径两端均为树网中的结点），其长度不超过$s$（可以等于$s$），使偏心距$ECC(F)$最小。我们称这个路径为树网$T=(V,E,W)$的核（$Core$）。必要时，$F$可以退化为某个结点。一般来说，在上述定义下，核不一定只有一个，但最小偏心距是唯一的。 下面的图给出了树网的一个实例。图中，$A-B$与$A-C$是两条直径，长度均为$20$。点$W$是树网的中心，$EF$边的长度为$5$。如果指定$s=11$，则树网的核为路径$DEFG$（也可以取为路径$DEF$），偏心距为$8$。如果指定$s=0$（或$s=1$、$s=2$），则树网的核为结点$F$，偏心距为$12$。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999\_10000&amp;sec=1494764397908&amp;di=b5ded99b0dfdd2ea72eb50ce5ca2656f&amp;imgtype=0&amp;src=http%3A%2F%2Fdn-vijos-org-static.qbox.me%2Fstatic%2FProblemImg%2FP1362.png" alt=""></p>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>包含$n$行： 第$1$行，两个正整数$n$和$s$，中间用一个空格隔开。其中$n$为树网结点的个数，$s$为树网的核的长度的上界。设结点编号依次为$1, 2, \cdots, n$。 从第$2$行到第$n$行，每行给出$3$个用空格隔开的正整数，依次表示每一条边的两个端点编号和长度。例如，“$2 4 7$”表示连接结点$2$与$4$的边的长度为$7$。 所给的数据都是正确的，不必检验。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个非负整数，为指定意义下的最小偏心距。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">5 2</span><br><span class="line">1 2 5</span><br><span class="line">2 3 2</span><br><span class="line">2 4 4</span><br><span class="line">2 5 3</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p> 于$70\%$的数据，$n\le 200000$<br> 对于$100\%$的数据，$n\le 500000$, $s&lt;2^{31}$, $所有权值&lt;500$<br>似乎$SPOJ$上加强版的数据…</p>
+</blockquote>
+<p>标签：树相关</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$BZOJ$上加强了数据。原题跑$O(n^3)Floyed$再枚举可过。<br>首先肯定需要两次$DFS$求直径，求法略。<br>显然，在长度不超过$s$的前提下，链越长越好（这样偏心距小）。在直径两端$l$到$r$上维护尽可能长的链，找到左右端点到直径做右端点的较大值的最小值。然后由链上各个点出发，找到不经过直径上的点抵达的其他点的最大深度。这个最大深度和之前的最小值中较大的就是答案。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 500000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 0x3f3f3f3f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, s, l, r;</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; G[MAX_N+<span class="number">5</span>], E[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> d[MAX_N+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>];	<span class="keyword">bool</span> mrk[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;G[u].push_back(v), E[u].push_back(c);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;s);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, u, v, c; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;u, &amp;v, &amp;c), add(u, v, c), add(v, u, c);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++)	<span class="keyword">if</span> (G[u][i]^f[u] &amp;&amp; !mrk[G[u][i]])</span><br><span class="line">		d[G[u][i]] = d[u]+E[u][i], f[G[u][i]] = u, DFS(G[u][i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getD</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	f[<span class="number">1</span>] = d[<span class="number">1</span>] = <span class="number">0</span>, DFS(<span class="number">1</span>);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">if</span> (!r || d[i] &gt; d[r])	r = i;</span><br><span class="line">	f[r] = d[r] = <span class="number">0</span>, DFS(r);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">if</span> (!l || d[i] &gt; d[l])	l = i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = l; i; i = f[i])	mrk[i] = <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sol</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ans = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = l, j = l; i; i = f[i]) &#123;</span><br><span class="line">		<span class="keyword">while</span> (f[j] &amp;&amp; d[i]-d[f[j]] &lt;= s)	j = f[j];</span><br><span class="line">		ans = min(ans, max(d[l]-d[i], d[j]));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = l; i; i = f[i])	d[i] = <span class="number">0</span>, DFS(i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	ans = max(ans, d[i]);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, ans);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;init(), getD(), sol();	<span class="keyword">return</span> <span class="number">0</span>;&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -462,21 +470,27 @@ Description
       
         
           
-          Problem
-【AMPPZ2014】The Prices Time Limit: $20 Sec$  Memory Limit: $256 MB$
-
-Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。
-
-
-Input第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表示商店数和物品数。接下来$n$行，每行第一个正整数$d[i]$($1\le d[i]\le 10^6$)表示到第$i$家商店的路费，接下来$m$个正
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/30/BZOJ4145【AMPPZ2014】The Prices 状压DP/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【AMPPZ2014】The-Prices"><a href="#【AMPPZ2014】The-Prices" class="headerlink" title="【AMPPZ2014】The Prices"></a>【AMPPZ2014】The Prices</h2><p> Time Limit: $20 Sec$  Memory Limit: $256 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表示商店数和物品数。<br>接下来$n$行，每行第一个正整数$d[i]$($1\le d[i]\le 10^6$)表示到第$i$家商店的路费，接下来$m$个正整数，<br>依次表示$c[i][j]$($1\le c[i][j]&lt; 10^6$)。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个正整数，即最小总费用。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3 4</span><br><span class="line">5 7 3 7 9</span><br><span class="line">2 1 20 3 2</span><br><span class="line">8 1 20 1 1</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>在第一家店买$2$号物品，在第二家店买剩下的物品。</p>
+</blockquote>
+<p>标签：状压$DP$</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$M\le 16$，显然是一道状压$DP$。<br>用$f[i][j]$表示考虑$1\sim i$家商店，购买状态为$j$的方案数。套路状压转移即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 100</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 16</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">int</span> n, m, d[MAX_N+<span class="number">5</span>], c[MAX_N+<span class="number">5</span>][MAX_M+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>][(<span class="number">1</span>&lt;&lt;MAX_M)+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;<span class="built_in">scanf</span>(<span class="string">"%d"</span>, d+i);	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, c[i]+j);&#125;</span><br><span class="line">	<span class="built_in">memset</span>(f, <span class="number">0x3f</span>, <span class="keyword">sizeof</span> f);	f[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">1</span>&lt;&lt;m); j++)	f[i][j] = f[i<span class="number">-1</span>][j]+d[i];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= m; k++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">1</span>&lt;&lt;m); j++)</span><br><span class="line">			<span class="keyword">if</span> ((j&amp;(<span class="number">1</span>&lt;&lt;k<span class="number">-1</span>)) == <span class="number">0</span>)	f[i][j|(<span class="number">1</span>&lt;&lt;k<span class="number">-1</span>)] = min(f[i][j]+c[i][k], f[i][j|(<span class="number">1</span>&lt;&lt;k<span class="number">-1</span>)]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">1</span>&lt;&lt;m); j++)	f[i][j] = min(f[i][j], f[i<span class="number">-1</span>][j]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, f[n][(<span class="number">1</span>&lt;&lt;m)<span class="number">-1</span>]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -594,21 +608,24 @@ Input第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表�
       
         
           
-          Problem
-【AMPPZ2014】Petrol Time Limit: $10 Sec$  Memory Limit: $256 MB$
-
-Description给定一个$n$个点、$m$条边的带权无向图，其中有$s$个点是加油站。每辆车都有一个油量上限$b$，即每次行走距离不能超过$b$，但在加油站可以补满。$q$次询问，每次给出$x,y,b$，表示出发点是$x$，终点是$y$，油量上限为$b$，且保证$x$点和$y$点都是加油站，请回答能否从$x$走到$y$。
-
-
-Input第一行包含三个正整数$n,s,m$($2\le s\le n\le 2\times 10^5$,$1\le m\
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/30/BZOJ4144【AMPPZ2014】Petrol MST/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【AMPPZ2014】Petrol"><a href="#【AMPPZ2014】Petrol" class="headerlink" title="【AMPPZ2014】Petrol"></a>【AMPPZ2014】Petrol</h2><p> Time Limit: $10 Sec$  Memory Limit: $256 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个$n$个点、$m$条边的带权无向图，其中有$s$个点是加油站。<br>每辆车都有一个油量上限$b$，即每次行走距离不能超过$b$，但在加油站可以补满。<br>$q$次询问，每次给出$x,y,b$，表示出发点是$x$，终点是$y$，油量上限为$b$，且保证$x$点和$y$点都是加油站，请回答能否从$x$走到$y$。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含三个正整数$n,s,m$($2\le s\le n\le 2\times 10^5$,$1\le m\le 2\times 10^5$)，表示点数、加油站数和边数。<br>第二行包含$s$个互不相同的正整数$c[1],c[2],…c<a href="1\le c[i]\le n">s</a>$，表示每个加油站。<br>接下来$m$行，每行三个正整数$u[i]$,$v[i]$,$d[i]$($1\le u[i],v[i]\le n$,$u[i]\ne v[i]$,$1\le d[i]\le 10^5$)，表示$u[i]$和$v[i]$之间有一条长度为$d[i]$的双向边。<br>接下来一行包含一个正整数$q$($1\le q\le 2\times 10^5$)，表示询问数。<br>接下来$q$行，每行包含三个正整数$x[i],y[i],b[i]$($1\le x[i],y[i]\le n$,$x[i]\ne y[i]$,$1\le b[i]\le 2\times 10^9$)，表示一个询问。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$q$行。第$i$行输出第$i$个询问的答案，如果可行，则输出$TAK$，否则输出$NIE$。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">6 4 5</span><br><span class="line">1 5 2 6</span><br><span class="line">1 3 1</span><br><span class="line">2 3 2</span><br><span class="line">3 4 3</span><br><span class="line">4 5 5</span><br><span class="line">6 4 5</span><br><span class="line">4</span><br><span class="line">1 2 4</span><br><span class="line">2 6 9</span><br><span class="line">1 5 9</span><br><span class="line">6 5 8</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">TAK</span><br><span class="line">TAK</span><br><span class="line">TAK</span><br><span class="line">NIE</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>标签：最短路预处理$+MST$</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道精妙的$MST$题。<br>首先考虑走到一个点，先去离它最近的加油站，回来后再去下一个点肯定比直接去要优。<br>于是用多源最短路预处理出每个点到它最近的加油站的距离，随后给每一条边分别加上它的起点和终点离它们最近加油站的距离。<br>对于询问，先离线下来按$b$值排序，按照边权加入边，用并查集维护。对于每个询问，先将比它的$b$值小的所有边都加入，再询问起点和终点是否联通即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fir first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> sec second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mp make_pair</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pii pair<span class="meta-string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 200000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, s, c[MAX_N+<span class="number">5</span>], fa[MAX_N+<span class="number">5</span>], dis[MAX_N+<span class="number">5</span>];	<span class="built_in">vector</span> &lt;pii&gt; G[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">edge</span> &#123;</span><span class="keyword">int</span> u, v, c;	<span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (<span class="keyword">const</span> edge &amp;t) <span class="keyword">const</span> &#123;<span class="keyword">return</span> c &lt; t.c;&#125;&#125; E[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">query</span> &#123;</span><span class="keyword">int</span> id, u, v, c;	<span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (<span class="keyword">const</span> query &amp;t) <span class="keyword">const</span> &#123;<span class="keyword">return</span> c &lt; t.c;&#125;&#125; Q[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getf</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> fa[x] == x ? x : fa[x] = getf(fa[x]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dijkstra</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	priority_queue &lt;pii&gt; que;	<span class="keyword">bool</span> mrk[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(dis, <span class="number">0x7f</span>, <span class="keyword">sizeof</span> dis), <span class="built_in">memset</span>(mrk, <span class="literal">false</span>, <span class="keyword">sizeof</span> mrk);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= s; i++)	dis[c[i]] = <span class="number">0</span>, que.push(mp(-dis[c[i]], c[i]));</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.top().sec;	que.pop();</span><br><span class="line">		<span class="keyword">if</span> (mrk[u])	<span class="keyword">continue</span>;	mrk[u] = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = G[u][i].fir, w = G[u][i].sec;</span><br><span class="line">			<span class="keyword">if</span> (dis[u]+w &lt; dis[v])	dis[v] = dis[u]+w, que.push(mp(-dis[v], v));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;n, &amp;s, &amp;m);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= s; i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, c+i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;E[i].u, &amp;E[i].v, &amp;E[i].c), G[E[i].u].push_back(mp(E[i].v, E[i].c)), G[E[i].v].push_back(mp(E[i].u, E[i].c));</span><br><span class="line">	Dijkstra();		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)	E[i].c += dis[E[i].u]+dis[E[i].v];</span><br><span class="line">	<span class="keyword">int</span> q;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;q);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= q; i++)	Q[i].id = i, <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;Q[i].u, &amp;Q[i].v, &amp;Q[i].c);</span><br><span class="line">	sort(E+<span class="number">1</span>, E+m+<span class="number">1</span>), sort(Q+<span class="number">1</span>, Q+q+<span class="number">1</span>);		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	fa[i] = i;		<span class="keyword">bool</span> ans[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, j = <span class="number">1</span>; i &lt;= q; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> u, v; j &lt;= m &amp;&amp; E[j].c &lt;= Q[i].c; j++)</span><br><span class="line">			<span class="keyword">if</span> ((u = getf(E[j].u)) != (v = getf(E[j].v)))	fa[u] = v;</span><br><span class="line">		ans[Q[i].id] = getf(Q[i].u) == getf(Q[i].v);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= q; i++)	<span class="built_in">puts</span>(ans[i] ? <span class="string">"TAK"</span> : <span class="string">"NIE"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -726,157 +743,22 @@ Input第一行包含三个正整数$n,s,m$($2\le s\le n\le 2\times 10^5$,$1\le m
       
         
           
-          Problem
-Tree Time Limit: $10 Sec$ Memory Limit: $64 MB$
-
-Description给你一棵树以及这棵树上边的距离.问有多少对点它们两者间的距离小于等于$K$
-Input$N$（$N\le 40000$） 接下来$n-1$行边描述管道，按照题目中写的输入 接下来是$K$
-Output一行，有多少对点之间的距离小于等于$K$
-
-
-Sample Input1234567871 6 13 6 3 9 3 5 7 4 1 3 2 4 20 4 7 2 10
-
-Sample Output15
-
-标签：点分治
-Solution点分治板题。对于每个点，我们
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/30/BZOJ1468 Tree 点分治/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/BZOJ3632 外太空旅行 随机化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/" itemprop="url">BZOJ3632 外太空旅行 <随机化></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T00:00:00+08:00">
-                2017-11-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p> Time Limit: $10 Sec$<br> Memory Limit: $64 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给你一棵树以及这棵树上边的距离.问有多少对点它们两者间的距离小于等于$K$</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>$N$（$N\le 40000$） 接下来$n-1$行边描述管道，按照题目中写的输入 接下来是$K$</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行，有多少对点之间的距离小于等于$K$</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">7</span><br><span class="line">1 6 13 </span><br><span class="line">6 3 9 </span><br><span class="line">3 5 7 </span><br><span class="line">4 1 3 </span><br><span class="line">2 4 20 </span><br><span class="line">4 7 2 </span><br><span class="line">10</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>标签：点分治</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>点分治板题。<br>对于每个点，我们计算穿过它的路径的条数。<br>这个值等于它的子树中所有深度之和小于$k$的点对数，可以双指针搞一搞。<br>但这样两个在同一儿子内的点对会算重，所以需要减去它的每个儿子的子树中深度之和小于$k-c$的点对数，其中$c$为它到此儿子的距离。这也可以双指针搞一搞。<br>对于每次分治，我们都要找到当前子树的重心，以保证复杂度为$O(n\log(n))$。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 40000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, k, rt, s[MAX_N+<span class="number">5</span>], h[MAX_N+<span class="number">5</span>], d[MAX_N+<span class="number">5</span>], tot, ans;</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; G[MAX_N+<span class="number">5</span>], E[MAX_N+<span class="number">5</span>], dep;	<span class="keyword">bool</span> mrk[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;G[u].push_back(v), E[u].push_back(c);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getrt</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> fa)</span> </span>&#123;</span><br><span class="line">	s[u] = <span class="number">1</span>, h[u] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> v = G[u][i];	<span class="keyword">if</span> (v == fa || mrk[v])	<span class="keyword">continue</span>;</span><br><span class="line">		getrt(v, u), s[u] += s[v], h[u] = max(h[u], s[v]);</span><br><span class="line">	&#125;</span><br><span class="line">	h[u] = max(h[u], tot-s[u]);	<span class="keyword">if</span> (h[u] &lt; h[rt]) rt = u;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getdep</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> fa)</span> </span>&#123;</span><br><span class="line">	dep.push_back(d[u]), s[u] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> v = G[u][i], c = E[u][i];</span><br><span class="line">		<span class="keyword">if</span> (v == fa || mrk[v])	<span class="keyword">continue</span>;</span><br><span class="line">		d[v] = d[u]+c, getdep(v, u), s[u] += s[v];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> init)</span> </span>&#123;</span><br><span class="line">	dep.clear(), d[u] = init, getdep(u, <span class="number">0</span>), sort(dep.begin(), dep.end());	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>, r = (<span class="keyword">int</span>)dep.size()<span class="number">-1</span>; l &lt; r; ) dep[l]+dep[r] &lt;= k ? ret += r-l++ : r--;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u)</span> </span>&#123;</span><br><span class="line">	ans += calc(u, <span class="number">0</span>), mrk[u] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> v = G[u][i], c = E[u][i];	<span class="keyword">if</span> (mrk[v])	<span class="keyword">continue</span>;</span><br><span class="line">		ans -= calc(v, c), h[<span class="number">0</span>] = tot = s[v], getrt(v, rt = <span class="number">0</span>), DFS(rt);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, u, v, c; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;u, &amp;v, &amp;c), addedge(u, v, c), addedge(v, u, c);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);	h[<span class="number">0</span>] = tot = n, getrt(<span class="number">1</span>, <span class="number">0</span>);	DFS(rt);	<span class="built_in">printf</span>(<span class="string">"%d"</span>, ans);	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-外太空旅行 Time Limit: $5 Sec$  Memory Limit: $128 MB$
-
-Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -994,21 +876,165 @@ Description在人类的触角伸向银河系的边缘之际，普通人上太空
       
         
           
-          Problem
-【AMPPZ2014】Pillars Time Limit: $5 Sec$  Memory Limit: $256 MB$  $Special Judge$
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【AMPPZ2014】Pillars"><a href="#【AMPPZ2014】Pillars" class="headerlink" title="【AMPPZ2014】Pillars"></a>【AMPPZ2014】Pillars</h2><p> Time Limit: $5 Sec$  Memory Limit: $256 MB$  $Special Judge$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，<br>且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出发经过所有没有障碍物的点各<br>一次的且最后回到左下角的回路。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含三个整数$n,m,f$($1\le n,m\le 1000$且$n,m$都为偶数)。<br>接下来$f$行，每行两个整数$x,y$($1\le x&lt;n$, $1\le y&lt;m$)，表示该障碍物左下角的坐标。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>如果无解，输出$NIE$，否则第一行输出$TAK$，第二行输出方案。<br>方案包含$n\times m-4\times f$个字符，第$i$个字符表示第$i$步的移动方向，用$G$表示上，$D$表示下，$L$表示左，$P$表示右。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">12 6 2</span><br><span class="line">3 3</span><br><span class="line">9 3</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TAK</span><br><span class="line">PPPPPPPPPPPGGGLDDLLLLLGPPGLLLDDLLLGGGPPPPPPPPPPGLLLLLLLLLLLDDDDD</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h3><p><img src="http://www.lydsy.com/JudgeOnline/upload/201506/PillarsSample.JPG" alt=""></p>
+</blockquote>
+<p>标签：构造</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道很适合构造入门的题。<br>我看了$Claris$的题解才想出来。<br>首先不考虑障碍，构造出一个走过全部格子的走法。由于$n$和$m$均为偶数，一定有解。<br>然后考虑障碍，对障碍四周的格子的方向进行修改。由于两个障碍间距离至少为$3$，故任两个障碍不会影响，只会有两大类。<br>具体构造方法参见代码。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, f;	<span class="keyword">char</span> s[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;n, &amp;m, &amp;f);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	s[i][j] = i&amp;<span class="number">1</span> ? <span class="string">'D'</span> : <span class="string">'G'</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (i^n)	s[i][<span class="number">1</span>] = <span class="string">'P'</span>;</span><br><span class="line">		<span class="keyword">if</span> ((i^<span class="number">1</span>) &amp;&amp; (i&amp;<span class="number">1</span>))	s[i][<span class="number">2</span>] = <span class="string">'L'</span>;</span><br><span class="line">		<span class="keyword">if</span> (!(i&amp;<span class="number">1</span>))	s[i][m] = <span class="string">'L'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; f; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> x, y;	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;x, &amp;y);</span><br><span class="line">		<span class="keyword">if</span> (x&amp;<span class="number">1</span>)	s[x][y+<span class="number">2</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][y<span class="number">-1</span>] = <span class="string">'L'</span>, s[x+<span class="number">1</span>][y+<span class="number">2</span>] = <span class="string">'P'</span>, s[x+<span class="number">2</span>][y+<span class="number">3</span>] = <span class="string">'L'</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (y^<span class="number">3</span>)	s[x][y<span class="number">-1</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][y<span class="number">-1</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][y+<span class="number">2</span>] = <span class="string">'L'</span>, s[x+<span class="number">2</span>][y<span class="number">-2</span>] = <span class="string">'L'</span>;</span><br><span class="line">		<span class="keyword">else</span>	s[x][<span class="number">1</span>] = <span class="string">'G'</span>, s[x][<span class="number">2</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][<span class="number">2</span>] = <span class="string">'D'</span>, s[x+<span class="number">1</span>][<span class="number">5</span>] = <span class="string">'L'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">"TAK"</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">1</span>, y = <span class="number">1</span>, lft = n*m<span class="number">-4</span>*f; lft; lft--) &#123;</span><br><span class="line">		<span class="built_in">putchar</span>(s[x][y]);</span><br><span class="line">		<span class="keyword">if</span> (s[x][y] == <span class="string">'P'</span>)	x++;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (s[x][y] == <span class="string">'L'</span>)	x--;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (s[x][y] == <span class="string">'G'</span>)	y++;</span><br><span class="line">		<span class="keyword">else</span>	y--;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
 
-Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出发经过所有没有障碍物的点各一次的且最后回到左下角的回路。
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-Input第一行包含三个整数$n,m,f$($1\le n,m\le 1000$且$n,m$都为偶数)。接下来$f$行，每行两
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/29/BZOJ4148【AMPPZ2014】Pillars 构造/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/BZOJ3632 外太空旅行 随机化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/" itemprop="url">BZOJ3632 外太空旅行 <随机化></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T00:00:00+08:00">
+                2017-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="外太空旅行"><a href="#外太空旅行" class="headerlink" title="外太空旅行"></a>外太空旅行</h2><p> Time Limit: $5 Sec$  Memory Limit: $128 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。<br>可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C$是朋友，但是小$A$和小$C$两人势如水火。<br>任意两个人之间要不就是敌人，要不就是朋友。<br>因为在太空船上发生人员斗殴事件是很恶劣也很危险的，因此选出来参加旅行活动的同学必须互相之间都是朋友。你的任务就是确定最多可以选多少人参加旅行。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数$n$($1\le n\le 50$)。所有的同学按照$1\sim n$编号。<br>接下来若干行，每行两个用空格隔开的整数$a, b$ ($1\le a,b\le n$)，表示$a$和$b$是朋友。<br>注意：如果一个数对$(x,y)$或者$(y,x)$没有在文件中出现，那么编号为$x$和$y$的两个同学就是敌人。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅仅一个数，即最多可以选多少人参加活动。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">1 2</span><br><span class="line">2 3</span><br><span class="line">3 1</span><br><span class="line">1 4</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>说明：选编号为$1,2,3$的同学参加，他们互相都是朋友。</p>
+</blockquote>
+<p>标签：最大团，随机化</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道随机化最大团的裸题。<br>每次随机出一个$1\sim n$的乱序排列，按照排列顺序贪心，这样随机$10^5$次取最大值即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 50</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> BOUND 100000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, seq[MAX_N+<span class="number">5</span>], ans;</span><br><span class="line"><span class="keyword">bool</span> G[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>], mrk[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(mrk, <span class="literal">false</span>, <span class="keyword">sizeof</span> mrk);</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="keyword">if</span> (!mrk[seq[i]]) &#123;</span><br><span class="line">		ret++, mrk[seq[i]] = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">			<span class="keyword">if</span> (!G[seq[i]][seq[j]])	mrk[seq[j]] = <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);	<span class="keyword">int</span> u, v;</span><br><span class="line">	<span class="keyword">while</span> (~<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;u, &amp;v))	G[u][v] = G[v][u] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	seq[i] = i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; BOUND; i++)</span><br><span class="line">		random_shuffle(seq+<span class="number">1</span>, seq+n+<span class="number">1</span>), ans = max(ans, calc());</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -1126,30 +1152,27 @@ Input第一行包含三个整数$n,m,f$($1\le n,m\le 1000$且$n,m$都为偶数)�
       
         
           
-          Problem
-神奇的矩阵 Time Limit: $5 Sec$  Memory Limit: $512 MB$
-
-Description给出三个行数和列数均为$N$的矩阵$A$、$B$、$C$，判断$A\times B=C$是否成立。
-
-
-Input题目可能包含若干组数据。对于每组数据，第一行一个数$N$，接下来给出三个$N\times N$的矩阵，依次为$A$、$B$、$C$三个矩阵。
-Output对于每组数据，若$A\times B=C$成立，则输出$Yes$，否则$No$。每个答案占一行。
-
-
-Sample Input1234122100
-
-Sample Output1No
-
-
-HI
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/28/BZOJ2396 神奇的矩阵 随机化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="神奇的矩阵"><a href="#神奇的矩阵" class="headerlink" title="神奇的矩阵"></a>神奇的矩阵</h2><p> Time Limit: $5 Sec$  Memory Limit: $512 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给出三个行数和列数均为$N$的矩阵$A$、$B$、$C$，判断$A\times B=C$是否成立。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>题目可能包含若干组数据。<br>对于每组数据，第一行一个数$N$，接下来给出三个$N\times N$的矩阵，依次为$A$、$B$、$C$三个矩阵。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每组数据，若$A\times B=C$成立，则输出$Yes$，否则$No$。每个答案占一行。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">2</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">No</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>对于$90\%$的数据，$N$不超过$100$；<br>对于$100\%$的数据，$N$不超过$1000$，矩阵中的数字大于等于$0$小于$1000$，数据组数不超过$5$组。</p>
+</blockquote>
+<p>标签：矩阵乘法，随机化</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>挺巧妙的一道随机化题。<br>首先考虑直接乘，由于$N\le 1000$，而矩乘是$O(n^3)$，肯定会$TLE$。<br>我们发现矩阵太大了，那么我们就要压缩矩阵，把这样一个正方形的矩阵压缩为一个行矩阵或列矩阵。<br>我们先随机出一个$1\times n$的列矩阵$R$，这样$A\times B\times R=A\times (B\times R)$，将结果与$C\times R$比较。这样乘法的复杂度就降为$O(n^2)$，比较复杂度为$O(n)$，总复杂度为$O(n^2)$。如果觉得随机一次不保险，还可以多随机几次，不过只随一次也很容易过。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 1000000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Matrix</span> &#123;</span></span><br><span class="line">	<span class="keyword">int</span> r, c;	<span class="keyword">long</span> <span class="keyword">long</span> ele[MAX_N][MAX_N];</span><br><span class="line">	<span class="keyword">inline</span> Matrix <span class="keyword">operator</span> * (<span class="keyword">const</span> Matrix &amp;x) <span class="keyword">const</span> &#123;</span><br><span class="line">		Matrix ret;	<span class="built_in">memset</span>(ret.ele, <span class="number">0</span>, <span class="keyword">sizeof</span>(ret.ele));</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (ret.r = r); i++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (ret.c = x.c); j++)</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; c; k++)</span><br><span class="line">					ret.ele[i][j] = (ret.ele[i][j]+ele[i][k]*x.ele[k][j])%MOD;</span><br><span class="line">		<span class="keyword">return</span> ret;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; A, B, C, R;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n)) &#123;</span><br><span class="line">		A.r = A.c = n;	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;A.ele[i][j]);</span><br><span class="line">		B.r = B.c = n;	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;B.ele[i][j]);</span><br><span class="line">		C.r = C.c = n;	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;C.ele[i][j]);</span><br><span class="line">		srand(<span class="number">19260817</span>);	R.r = n, R.c = <span class="number">1</span>;	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) R.ele[i][<span class="number">0</span>] = rand()*rand()%MOD;</span><br><span class="line">		A = A*(B*R), C = C*R;	<span class="keyword">bool</span> flag = <span class="literal">true</span>;	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) flag &amp;= (A.ele[i][<span class="number">0</span>] == C.ele[i][<span class="number">0</span>]);</span><br><span class="line">		<span class="built_in">puts</span>(flag ? <span class="string">"Yes"</span> : <span class="string">"No"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -1267,22 +1290,24 @@ HI
       
         
           
-          Problem
-【AMPPZ2014】The Captain Time Limit: $20 Sec$  Memory Limit: $256 MB$
-
-Description给定平面上的$n$个点，定义$(x1,y1)$到$(x2,y2)$的费用为$min(|x1-x2|,|y1-y2|)$，求从$1$号点走到$n$号点的最小费用。
-
-
-Input第一行包含一个正整数$n$($2\le n\le 2\times 10^5$)，表示点数。接下来$n$行，每行包含两个整数$x[i]$,$y[i]$($0\le x[i],y[i]\le 10^9$)，依次表示每个点的坐标。
-Output一个整数，
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/27/BZOJ4152【AMPPZ2014】The Captain 最短路径/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【AMPPZ2014】The-Captain"><a href="#【AMPPZ2014】The-Captain" class="headerlink" title="【AMPPZ2014】The Captain"></a>【AMPPZ2014】The Captain</h2><p> Time Limit: $20 Sec$  Memory Limit: $256 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定平面上的$n$个点，定义$(x1,y1)$到$(x2,y2)$的费用为$min(|x1-x2|,|y1-y2|)$，求从$1$号点走到$n$号点的最小费用。</p>
+<blockquote>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含一个正整数$n$($2\le n\le 2\times 10^5$)，表示点数。<br>接下来$n$行，每行包含两个整数$x[i]$,$y[i]$($0\le x[i],y[i]\le 10^9$)，依次表示每个点的坐标。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个整数，即最小费用。</p>
+<blockquote>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">2 2</span><br><span class="line">1 1</span><br><span class="line">4 5</span><br><span class="line">7 1</span><br><span class="line">6 7</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>标签：最短路径</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道比较基础的最短路变形。<br>不难发现，在一个凸壳上，如果走任意一条弦，显然没有直接沿着凸壳走优。<br>所以分别按$x$和$y$排两次序，相邻点连边，可得到一个图。在此图上跑最短路即可。<br>注意，此题卡$SPFA$（大佬：不错啊，卡错误算法天经地义~）</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 200000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fir first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> sec second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mp make_pair</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pli pair<span class="meta-string">&lt;lnt,int&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">int</span> n;	lnt dis[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; G[MAX_N+<span class="number">5</span>], E[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> id, x, y;&#125; p[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmpx</span><span class="params">(<span class="keyword">const</span> node &amp;a, <span class="keyword">const</span> node &amp;b)</span> </span>&#123;<span class="keyword">return</span> a.x &lt; b.x;&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmpy</span><span class="params">(<span class="keyword">const</span> node &amp;a, <span class="keyword">const</span> node &amp;b)</span> </span>&#123;<span class="keyword">return</span> a.y &lt; b.y;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedgex</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;G[u].push_back(v), E[u].push_back(p[b].x-p[a].x);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedgey</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;G[u].push_back(v), E[u].push_back(p[b].y-p[a].y);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dijkstra</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(dis, <span class="number">0x7f</span>, <span class="keyword">sizeof</span> dis), dis[<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">	priority_queue &lt;pli&gt; que;	que.push(mp(<span class="number">0L</span>L, <span class="number">1</span>));</span><br><span class="line">	<span class="keyword">bool</span> mrk[MAX_N+<span class="number">5</span>];	<span class="built_in">memset</span>(mrk, <span class="literal">false</span>, <span class="keyword">sizeof</span> mrk);</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.top().sec;	que.pop();</span><br><span class="line">		<span class="keyword">if</span> (mrk[u])	<span class="keyword">continue</span>;	mrk[u] = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)G[u].size(); i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = G[u][i];	lnt c = E[u][i];</span><br><span class="line">			<span class="keyword">if</span> (mrk[v] || dis[u]+c &gt; dis[v])	<span class="keyword">continue</span>;</span><br><span class="line">			dis[v] = dis[u]+c, que.push(mp(-dis[v], v));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) p[i].id = i, <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;p[i].x, &amp;p[i].y);</span><br><span class="line">	sort(p+<span class="number">1</span>, p+n+<span class="number">1</span>, cmpx);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) addedgex(p[i].id, p[i+<span class="number">1</span>].id, i, i+<span class="number">1</span>), addedgex(p[i+<span class="number">1</span>].id, p[i].id, i, i+<span class="number">1</span>);</span><br><span class="line">	sort(p+<span class="number">1</span>, p+n+<span class="number">1</span>, cmpy);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++)	addedgey(p[i].id, p[i+<span class="number">1</span>].id, i, i+<span class="number">1</span>), addedgey(p[i+<span class="number">1</span>].id, p[i].id, i, i+<span class="number">1</span>);</span><br><span class="line">	Dijkstra();	<span class="built_in">printf</span>(<span class="string">"%lld"</span>, dis[n]);	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -1400,16 +1425,13 @@ Output一个整数，
       
         
           
-          NOIp2017滚粗记Day0周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。赶快去看了看博客。一个上午就没了。下午到考场。吃饭前简略看了看树分治。晚上开会的时候又想到欧拉图还没复习，好多年没考过了，赶快看看，免得真考到了。
-Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结论题？推了半小时exGCD，果断弃坑。由于
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/14/NOIp2017提高组总结/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="NOIp2017滚粗记"><a href="#NOIp2017滚粗记" class="headerlink" title="NOIp2017滚粗记"></a>NOIp2017滚粗记</h1><h2 id="Day0"><a href="#Day0" class="headerlink" title="Day0"></a>Day0</h2><p>周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。<br>于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。<br>aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。<br>赶快去看了看博客。一个上午就没了。<br>下午到考场。吃饭前简略看了看树分治。<br>晚上开会的时候又想到欧拉图还没复习，好多年没考过了，赶快看看，免得真考到了。</p>
+<h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><p>刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结论题？推了半小时exGCD，果断弃坑。<br>由于先前没读T2（T2题面太长太烦不想读），气氛挺紧张。还好这时我先看了T2而没跳到T3，读完T2发现好简单，索性栈模拟。码到一半发现貌似栈上东西挺多，突然意识到可以递归模拟，肯定好写得多。不过没管，都码了2/3了，索性码完。<br>水完T2倒回来看T1，打了一个20x20的表，把不互质的情况去掉，发现规律很显然，不就是(a-1)*(b-1)-1吗？赶快水掉。<br>T3看到后觉得难度不算太大。发现可以最短路预处理+DP做。这时还没想到拆点，只想到一个带50大常数的容斥。考场上思维没那么开阔，打了容斥DP，调了半小时才过样例。大样例貌似T了，跑了5秒看没出结果我就没管了。回去看T2，总觉得T2会出锅，多出了几组自测小数据，好像没锅。（？）<br>考完后发现T3的容斥有些问题，遇到正环会死循环（因为我采用的是类似SPFA的DP顺序，而容斥的时候没及时清零）。<br>成绩出来后才发现T2只有50分。崩溃地发现把字符串转数字码错了…<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); i++)	ret = ret*<span class="number">10</span>+s[i]-<span class="string">'0'</span>;	<span class="comment">//正确代码</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); i++)	ret = ret*<span class="number">10</span>+i-<span class="string">'0'</span>;	<span class="comment">//我考试时写的，脑抽无极限...</span></span><br></pre></td></tr></table></figure></p>
+<p>最后只好100+50+20=170滚粗</p>
+<h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><p>拿到题目，担心Day1简单Day2会很难，结果看到T1就打消了顾虑。<br>T1是难得的大水题啊，直接并查集水过。<br>T2看到数据范围n&lt;=12就想到了状压DP，但想得不够深，始终在想如何存存下一棵子树的形态。<br>后来又想到了哈夫曼树的贪心，没注意到此题的顺序和贪心顺序是反的，打了一个错误的贪心，花了一个半小时，还自己把自己卡死了。水了40的树DP部分分。<br>T3显然是数据结构题，看到就有种Splay的感觉。但是我Splay板都打不熟，而Splay又是省选内容，再加上时间不太够，就没打Splay。先水了30分的裸暴力，又用BIT+二分写了20分的x=1的情况…结果二分的时候更新打错了。<br>最后100+40+30=170滚粗</p>
+<p>##总结<br>两天合起来是340分。<br>尴尬而耻辱的分数段，毕竟我当场估分时450，因为三道题打错而挂了110分。<br>其实也是自己的锅。十连测阶段我光顾着改题，代码能力有所下滑。<br>这在冬令营之前一定要补起来，虽然我今年大概是进不了冬令营的了。<br>此耻明年必报。</p>
+
+          
         
       
     </div>
@@ -1456,7 +1478,7 @@ Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/11/BZOJ4565【HAOI2016】字符合并 状压DP/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/11/LG1155【NOIp2008】双栈排序 二分图染色/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1475,7 +1497,7 @@ Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/11/BZOJ4565【HAOI2016】字符合并 状压DP/" itemprop="url">BZOJ4565【HAOI2016】字符合并 <状压DP></a></h1>
+                <a class="post-title-link" href="/2017/11/11/LG1155【NOIp2008】双栈排序 二分图染色/" itemprop="url">LG1155【NOIp2008】双栈排序 <二分图染色></a></h1>
         
 
         <div class="post-meta">
@@ -1527,21 +1549,38 @@ Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结�
       
         
           
-          Problem
-【HAOI2016】字符合并 Time Limit: $20 Sec$  Memory Limit: $256 MB$
-
-Description有一个长度为 $n$ 的 $01$ 串，你可以每次将相邻的 $k$ 个字符合并，得到一个新的字符并获得一定分数。得到的新字符和分数由这 $k$ 个字符确定。你需要求出你能获得的最大分数。
-
-
-Input第一行两个整数$n$，$k$。接下来一行长度为$n$的$01$串，表示初始串。接下来$2^k$行，每行一个字符$c_i$和一个整数$w_i$，$c_i$表示长度为$k$的$01$串连成二进制后按从小到大顺序得到的第$i$种合并方案得到的新
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/11/BZOJ4565【HAOI2016】字符合并 状压DP/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
+<h2 id="【NOIp2008】双栈排序"><a href="#【NOIp2008】双栈排序" class="headerlink" title="【NOIp2008】双栈排序"></a>【NOIp2008】双栈排序</h2></blockquote>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>$Tom$最近在研究一个有趣的排序问题。如图所示，通过$2$个栈$S_1$和$S_2$，$Tom$希望借助以下$4$种操作实现将输入序列升序排序。<br>操作$a$: 如果输入序列不为空，将第一个元素压入栈$S_1$<br>操作$b$: 如果栈$S_1$不为空，将$S_1$栈顶元素弹出至输出序列<br>操作$c$: 如果输入序列不为空，将第一个元素压入栈$S_2$<br>操作$d$: 如果栈$S_2$不为空，将$S_2$栈顶元素弹出至输出序列<br>如果一个$1\sim n$的排列$P$可以通过一系列操作使得输出序列为$1,2,\cdots(n-1),n$，$Tom$就称$P$是一个“可双栈排序排列”。例如$(1,3,2,4)$就是一个“可双栈排序序列”，而$(2,3,4,1)$不是。下图描述了一个将$(1,3,2,4)$排序的操作序列：$&lt;a,c,c,b,a,d,d,b&gt;$</p>
+<p><center><br><img src="https://cdn.luogu.org/upload/pic/52.png" alt=""><br></center><br>当然，这样的操作序列有可能有几个，对于上例$(1,3,2,4)$，$&lt;a,c,c,b,a,d,d,b&gt;$是另外一个可行的操作序列。$Tom$希望知道其中字典序最小的操作序列是什么。</p>
+<blockquote>
+</blockquote>
+<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>输入文件$twostack.in$的第一行是一个整数$n$。<br>第二行有$n$个用空格隔开的正整数，构成一个$1\sim n$的排列。<br>输出格式：<br>输出文件$twostack.out$共一行，如果输入的排列不是“可双栈排序排列”，输出数字$0$；否则输出字典序最小的操作序列，每两个操作之间用空格隔开，行尾没有空格。</p>
+<blockquote>
+</blockquote>
+<h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><p>输入样例$#1$：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">1 3 2 4</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>输出样例$#1$：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a b a a b b a b</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>输入样例$#2$：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">2 3 4 1</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>输出样例$#2$：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>输入样例$#3$：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">2 3 1</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>输出样例$#3$：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a c a b b d</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p> $30\%$的数据满足： $n\le10$<br> $50\%$的数据满足： $n\le 50$<br> $100\%$的数据满足： $n\le 1000$</p>
+</blockquote>
+<p>标签：二分图染色</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道很有意思的联赛题。<br>对于任意两数$i,j,k$，若有$i&lt;j&lt;k,a_k&lt;a_i&lt;a_j$，为了使$a_k$最先出栈，那么$a_i$和$a_j$一定在$a_k$之后出栈，若顺次放进同一个栈，那么$a_j$必然在$a_i$之前出栈，不满足题意。因此遇到这种情况$a_i$和$a_j$一定分别放入两个栈中。<br>据此，只要存在$i&lt;j&lt;k$，有$a_k&lt;a_i&lt;a_j$，那么$a_i$和$a_j$一定在不同栈中。这样就构成了一个二分图。<br>扫描一遍，确定那些数对不能在同一栈中，确定互斥关系。若不能构成二分图，那么就不可排序。否则在判断过程中染色，确定不同数在哪个栈中，模拟排序过程，每次等到当前排到的数进栈后把能出栈的都出栈。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; G[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> n, a[MAX_N+<span class="number">5</span>], mi[MAX_N+<span class="number">5</span>], col[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) &#123;</span><br><span class="line">		<span class="keyword">if</span> (!col[v])	col[v] = -col[u], DFS(v);</span><br><span class="line">		<span class="keyword">if</span> (col[u] == col[v]) &#123;<span class="built_in">puts</span>(<span class="string">"0"</span>);	<span class="built_in">exit</span>(<span class="number">0</span>);&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">prt</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> cur = <span class="number">1</span>;	<span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt; sa, sb;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (col[i] == <span class="number">1</span>)	<span class="built_in">putchar</span>(<span class="string">'a'</span>), <span class="built_in">putchar</span>(<span class="string">' '</span>), sa.push(a[i]);</span><br><span class="line">		<span class="keyword">else</span>	<span class="built_in">putchar</span>(<span class="string">'c'</span>), <span class="built_in">putchar</span>(<span class="string">' '</span>), sb.push(a[i]);</span><br><span class="line">		<span class="keyword">for</span> (; !sa.empty() &amp;&amp; sa.top() == cur; sa.pop(), cur++)	<span class="built_in">putchar</span>(<span class="string">'b'</span>), <span class="built_in">putchar</span>(<span class="string">' '</span>);</span><br><span class="line">		<span class="keyword">for</span> (; !sb.empty() &amp;&amp; sb.top() == cur; sb.pop(), cur++)	<span class="built_in">putchar</span>(<span class="string">'d'</span>), <span class="built_in">putchar</span>(<span class="string">' '</span>);</span><br><span class="line">		<span class="keyword">for</span> (; !sa.empty() &amp;&amp; sa.top() == cur; sa.pop(), cur++)	<span class="built_in">putchar</span>(<span class="string">'b'</span>), <span class="built_in">putchar</span>(<span class="string">' '</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, a+i);</span><br><span class="line">	mi[n+<span class="number">1</span>] = <span class="number">0x3f3f3f3f</span>;	<span class="keyword">for</span> (<span class="keyword">int</span> i = n; i; i--)	mi[i] = min(a[i], mi[i+<span class="number">1</span>]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">		<span class="keyword">if</span> (a[i] &lt; a[j] &amp;&amp; mi[j+<span class="number">1</span>] &lt; a[i])	G[i].push_back(j), G[j].push_back(i);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">if</span> (!col[i])	col[i] = <span class="number">1</span>, DFS(i);	prt();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
         
       
     </div>
@@ -1675,7 +1714,8 @@ Input第一行两个整数$n$，$k$。接下来一行长度为$n$的$01$串，�
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
