@@ -335,7 +335,7 @@
           Problem
 【ZJOI2006】Mahjong麻将 Time Limit: $1 Sec$  Memory Limit: $64 MB$
 
-Description很多人都知道玩麻将，当然也有人不知道，呵呵，不要紧，我在这里简要地介绍一下麻将规则：普通麻将有砣、索、万三种类型的牌，每种牌有$1\s
+Description很多人都知道玩麻将，当然也有人不知道，呵呵，不要紧，我在这里简要地介绍一下麻将规则：普通麻将有砣、索、万三种类型的牌，每种牌有$1\sim 9$个数字，其中相同的牌每个有四张，例如$1砣\sim 9砣$，$1索\sim 9索$，$1万\sim 9万$各$4$张，所以共$36\times 3=108$张牌。胡牌时每人有$14$张牌，其中只要某人手里有若干句话（就是同种类型的牌连续三张或同种牌三张），另外再加上一对，即可胡牌。当然如果全是对，叫七小对，也可以胡牌。要判断某人是否胡牌，显然一个弱智的算法就行了，某中学信息学小组超级麻将迷想了想，决定将普通麻将改造成超级麻将。所谓超级麻将没有了砣、索、万的区分，每种牌上的数字可以是$1\sim 100$而每种数字的牌各有$100$张。另外特别自由的是，玩牌的人手里想拿多少张牌都可以，好刺激哦！刺激归刺激，但是拿多了怎么胡牌呢？超级麻将规定只要一个人手里拿的牌是若干句话（三个连续数字
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -463,7 +463,10 @@ Description很多人都知道玩麻将，当然也有人不知道，呵呵，不
           
           Problem
 【ZJOI2008】杀蚂蚁
-Description最近，佳佳迷上了一款好玩的小游戏：$antbuster$。游戏规则非常简单：在一张地图上，左上角是蚂蚁窝，右下角是蛋糕，蚂蚁会源源不断地从窝里爬出来，试图把蛋糕搬回蚂蚁窝。而你的任务，就是用原始资金以及杀蚂蚁获得的奖金造防御塔，杀掉这
+Description最近，佳佳迷上了一款好玩的小游戏：$antbuster$。游戏规则非常简单：在一张地图上，左上角是蚂蚁窝，右下角是蛋糕，蚂蚁会源源不断地从窝里爬出来，试图把蛋糕搬回蚂蚁窝。而你的任务，就是用原始资金以及杀蚂蚁获得的奖金造防御塔，杀掉这些试图跟你抢蛋糕的蚂蚁~下附一张游戏截图：
+&lt;\center&gt;为了拿到尽可能高的分数，佳佳设计了很多种造塔的方案，但在尝试了其中的一小部分后，佳佳发现，这个游戏实在是太费时间了。为了节省时间，佳佳决定写个程序，对于每一种方案，模拟游戏进程，根据效果来判断方案的优劣。根据自己在游戏中积累的一些经验，以及上网搜到的一些参数，佳佳猜了蚂蚁爬行的算法，并且假设游戏中的蚂蚁也是按这个规则选择路线：
+1. 每一秒钟开始的时候，蚂蚁都在平面中的某个整点上。如果蚂蚁没有扛着蛋糕，它会在该点留下 2 单位的信息素，否则它会留下 5 单位的信息素。然后蚂蚁会在正北、正南、正东、正西四个方向中选择一个爬过去。
+2. 选择方向的规则是：首先，爬完一个单位长度后到达的那个点上，不能有其他蚂蚁或是防御塔，并
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -592,268 +595,14 @@ Description最近，佳佳迷上了一款好玩的小游戏：$antbuster$。游�
           Problem
 斗地主 Time Limit: $30 Sec$  Memory Limit: $1024 MB$
 
-Description牛牛最近迷上了一种叫斗地主的扑克游戏。斗地主是一种使用黑桃、红心、梅花、方片的$A$到$K$加上大小王的共$54$张牌来进行的扑克牌游戏。在斗地主中，牌的大小关
+Description牛牛最近迷上了一种叫斗地主的扑克游戏。斗地主是一种使用黑桃、红心、梅花、方片的$A$到$K$加上大小王的共$54$张牌来进行的扑克牌游戏。在斗地主中，牌的大小关系根据牌的数码表示如下：$3&lt;4&lt;5&lt;6&lt;7&lt;8&lt;9&lt;10&lt;J&lt;Q&lt;K&lt;A&lt;2&lt;小王&lt;大王$，而花色并不对牌的大小产生影响。每一局游戏中，一副手牌由$n$张牌组成。游戏者每次可以根据规定的牌型进行出牌，首先打光自己的手牌一方取得游戏的胜利。现在，牛牛只想知道，对于自己的若干组手牌，分别最少需要多少次出牌可以将它们打光。请你帮他解决这个问题。需要注意的是，本题中游戏者每次可以出手的牌型与一般的斗地主相似而略有不同。具体规则如下：
+
+
+Input第一行包含用空格隔开的$2$个正整数$T,N$，表示手牌的组数以及每组手牌的张数。接下来$T$组数据，每组数据$N$行，每行一个非负整数对$A_i,B_i$，表示一张牌，
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/10/25/BZOJ4325【NOIp2015】斗地主 搜索+贪心/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/24/POJ2728 Desert King 二分+MST/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/24/POJ2728 Desert King 二分+MST/" itemprop="url">POJ728 Desert King <二分+MST></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T00:00:00+08:00">
-                2017-10-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-Desert King
-DescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build cha
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/24/POJ2728 Desert King 二分+MST/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/" itemprop="url">BZOJ3993【SDOI2015】星际战争 <二分+网络流></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T00:00:00+08:00">
-                2017-10-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-【SDOI2015】星际战争 Time Limit: $10 Sec$  Memory Limit: $128 MBSec$  $Special Judge$
-
-Description$3333$年，在银河系的某星球上，$X$军团和$Y$军团正在激烈地作战。在战斗的某一阶段，$Y$军
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -980,7 +729,7 @@ Gold Transportation
  Time Limit: $2000MS$  Memory Limit: $65536K$
 
 
-DescriptionRecently, a number of gold mines have been discovered in Zorrom
+DescriptionRecently, a number of gold mines have been discovered in Zorroming State. To protect this treasure, we must transport this gold to the storehouses as quickly as possible. Suppose that the Zorroming State consists of N towns and there are M bidirectional roads among these towns. The gold mines are only discovered in parts of the towns, while the storehouses are also owned by parts of the towns. The storage of t
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1109,7 +858,11 @@ DescriptionRecently, a number of gold mines have been discovered in Zorrom
           Problem
 【JSOI2010】Group 部落划分 Group Time Limit: $10 Sec$  Memory Limit: $64 MB$
 
-Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于
+Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪根本就不知道部落究竟是如何分布的。 不过好消息是，聪聪得到了一份荒岛的地图。地图上标注了$N$个野人居住的地点（可以看作是平面上的坐标）。我们知道，同一个部落的野人总是生活在附近。我们把两个部落的距离，定义为部落中距离最近的那两个居住点的距离。聪聪还获得了一个有意义的信息——这些野人总共被分为了$K$个部落！这真是个好消息。聪聪希望从这些信息里挖掘出所有部落的详细信息。他正在尝试这样一种算法： 对于任意一种部落划分的方法，都能够求出两个部落之间的距离，聪聪希望求出一种部落划分的方法，使靠得最近的两个部落尽可能远离。 例如，下面的左图表示了一个好的划分，而右图则不是。请你编程帮助聪聪解决这个难题。 
+
+
+
+Input第一
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1164,7 +917,7 @@ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/HDU4757 Tree LCA+可持久化Trie/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/24/POJ2728 Desert King 二分+MST/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1183,7 +936,7 @@ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/17/HDU4757 Tree LCA+可持久化Trie/" itemprop="url">HDU4757 Tree <LCA+可持久化Trie></a></h1>
+                <a class="post-title-link" href="/2017/10/24/POJ2728 Desert King 二分+MST/" itemprop="url">POJ728 Desert King <二分+MST></a></h1>
         
 
         <div class="post-meta">
@@ -1195,8 +948,8 @@ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-17T00:00:00+08:00">
-                2017-10-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T00:00:00+08:00">
+                2017-10-24
               </time>
             
 
@@ -1236,12 +989,12 @@ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是
         
           
           Problem
-【LCA+可持久化Trie】Tree
-DescriptionZero and One are good friends who always have fun with each other.This time, they decide to do something on a tr
+Desert King
+DescriptionDavid the Great has just become the king of a desert country. To win the respect of his people, he decided to build channels all over his country to bring water to every village. Villages which are connected to his capital village will be watered. As the dominate ruler and the symbol of wisdom in the country, he needs to build the channels in a most elegant way.After days of study, he finally figured his plan out. He wanted the average cost of each mile of the chan
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/10/17/HDU4757 Tree LCA+可持久化Trie/#more" rel="contents">
+            <a class="btn" href="/2017/10/24/POJ2728 Desert King 二分+MST/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1292,7 +1045,7 @@ DescriptionZero and One are good friends who always have fun with each other.Thi
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1311,7 +1064,139 @@ DescriptionZero and One are good friends who always have fun with each other.Thi
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/" itemprop="url">BZOJ2466 【中山市选2009】树 <高斯消元></a></h1>
+                <a class="post-title-link" href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/" itemprop="url">BZOJ3993【SDOI2015】星际战争 <二分+网络流></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T00:00:00+08:00">
+                2017-10-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+【SDOI2015】星际战争 Time Limit: $10 Sec$  Memory Limit: $128 MBSec$  $Special Judge$
+
+Description$3333$年，在银河系的某星球上，$X$军团和$Y$军团正在激烈地作战。在战斗的某一阶段，$Y$军团一共派遣了$N$个巨型机器人进攻$X$军团的阵地，其中第$i$个巨型机器人的装甲值为$A_i$。当一个巨型机器人的装甲值减少到$0$或者以下时，这个巨型机器人就被摧毁了。$X$军团有$M$个激光武器，其中第i个激光武器每秒可以削减一个巨型机器人$B_i$的装甲值。激光武器的攻击是连续的。这种激光武器非常奇怪，一个激光武器只能攻击一些特定的敌人。$Y$军团看到自己的巨型机器人被$X$军团一个一个消灭，他们急需下达更多的指令。为了这个目标，$Y$军团需要知道$X$军团最少需要用多长时间才能将$Y$军团的所有巨型机器人摧毁。但是他们不会计算这个问题，因此向你求助。
+
+
+Input第一行，两个整数，$N$、$M$。第二行，$N$个整数，$A_1$、$A_2$ $\cdots$ $A_N$。第三行，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/24/BZOJ3993【SDOI2015】星际战争 二分+最大流/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/BZOJ1972【SDOI2010】猪国杀/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/17/BZOJ1972【SDOI2010】猪国杀/" itemprop="url">BZOJ1972 【SDOI2010】 猪国杀 <模拟></a></h1>
         
 
         <div class="post-meta">
@@ -1364,15 +1249,30 @@ DescriptionZero and One are good friends who always have fun with each other.Thi
         
           
           Problem
-【中山市选2009】树
- Time Limit: $10 Sec$ Memory Limit: $128 MB$
+【SDOI2010】猪国杀 Time Limit: $1 Sec$  Memory Limit: $64 MB$
 
+题目描述 Description
+概述《猪国杀》是一种多猪牌类回合制游戏，一共有三种角色：主猪，忠猪，反猪。
+每局游戏主猪有且只有一只，忠猪和反猪可以有多只，每只猪扮演一种角色。
 
-Description图论中的树为一个无环的无向图。给定一棵树，每个节点有一盏指示灯和一个按钮。如果节点的按扭被按了，那么该节点的灯会从熄灭变为点亮（当按之前是熄灭的
+游戏目的：·主猪（$MP$）：自己存活的情况下消灭所有的反猪。
+·忠猪（ZP）：不惜一切保护主猪，胜利条件与主猪相同。
+·反猪（FP）：杀死主猪。
+
+游戏过程：·游戏开始时候，每个玩家手里都会有$4$张牌，且体力上限和初始体力都是$4$。
+·开始游戏时，从主猪开始，按照逆时针方向（数据中就是按照编号从1,2,3..n,1..的顺序）依次行动。
+·每个玩家自己的回合可以分为2个阶段：
+·摸牌阶段：
+    ·从牌堆顶部摸两张牌，依次放到手牌的最右边。
+·出牌阶段：
+    ·你可以使用0张到任意张牌，每次使用牌的时候都使用最靠左的能够使用的牌。
+    ·当然，要满足如下规则：
+        ·1.如果没有猪哥连弩，每个出牌阶段只能使用一次“杀”来攻击。
+        ·2.
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/#more" rel="contents">
+            <a class="btn" href="/2017/10/17/BZOJ1972【SDOI2010】猪国杀/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1497,11 +1397,154 @@ Description图论中的树为一个无环的无向图。给定一棵树，每个
           Problem
 【SCOI2007】修车 Time Limit: $1 Sec$    Memory Limit: $128 MB$
 
-Description同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在
+Description同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在需要安排这$M$位技术人员所维修的车及顺序，使得顾客平均等待的时间最小。说明：顾客的等待时间是指从他把车送至维修中心到维修完毕所用的时间。
+
+
+Input第一行有两个$m,n$，表示技术人员数与顾客数。 接下来$n$行，每行$m$个整数。第$i+1$行第$j$个数表示第$j$位技术人员维修第$i$辆车需要用的时间$T$。
+Output最小平均等待时间，答案精确到小数点后$2$位。
+
+
+Sample Input1232 23 21 4
+
+Sample Output11.50
+
+
+HINT 据范围: $2\le M\le 9$, $1\le N\le 60$, $1\le T\le 1000$
+
+标签：费用流
+Solution此题建模是费用流中常见的拆点建模。把每个技术人员拆成$n$个点，第$k
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/10/17/BZOJ1070【SCOI2007】修车 费用流/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/HDU4757 Tree LCA+可持久化Trie/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/17/HDU4757 Tree LCA+可持久化Trie/" itemprop="url">HDU4757 Tree <LCA+可持久化Trie></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-17T00:00:00+08:00">
+                2017-10-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+【LCA+可持久化Trie】Tree
+DescriptionZero and One are good friends who always have fun with each other.This time, they decide to do something on a tree which is a kind of graph that there is only one path from node to node. First, Zero will give One an tree and every node in this tree has a value. Then, Zero will ask One a series of queries. Each query contains three parameters: $x$, $y$, $z$ which mean that he want to know the maximum value produced by $z$ $xor$ each value on the path from nod
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/17/HDU4757 Tree LCA+可持久化Trie/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>

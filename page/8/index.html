@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/BZOJ1972【SDOI2010】猪国杀/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -280,7 +280,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/17/BZOJ1972【SDOI2010】猪国杀/" itemprop="url">BZOJ1972 【SDOI2010】 猪国杀 <模拟></a></h1>
+                <a class="post-title-link" href="/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/" itemprop="url">BZOJ2466 【中山市选2009】树 <高斯消元></a></h1>
         
 
         <div class="post-meta">
@@ -333,15 +333,27 @@
         
           
           Problem
-【SDOI2010】猪国杀 Time Limit: $1 Sec$  Memory Limit: $64 MB$
+【中山市选2009】树
+ Time Limit: $10 Sec$ Memory Limit: $128 MB$
 
-题目描述 Description
-概述《猪国杀》是一种多猪牌类回合制游戏，一共有三种角色：主猪，忠猪，反猪。
-每局游戏主猪有且只有一只，忠猪和反猪可以有多只，每只猪扮演
+
+Description图论中的树为一个无环的无向图。给定一棵树，每个节点有一盏指示灯和一个按钮。如果节点的按扭被按了，那么该节点的灯会从熄灭变为点亮（当按之前是熄灭的），或者从点亮到熄灭（当按之前是点亮的），并且该节点的直接邻居也发生同样的变化。开始的时候，所有的指示灯都是熄灭的。请编程计算最少要按多少次按钮，才能让所有节点的指示灯变为点亮状态。
+
+
+Input输入文件有多组数据。输入第一行包含一个整数$n$，表示树的节点数目。每个节点的编号从$1$到$n$。输入接下来的$n–1$行，每一行包含两个整数$x$，$y$，表示节点$x$和$y$之间有一条无向边。当输入$n$为$0$时，表示输入结束。
+Output对于每组数据，输出最少要按多少次按钮，才能让所有节点的指示灯变为点亮状态。每一组数据独占一行。
+
+
+Sample Input123431 21 30
+
+Sample Output11
+
+
+HINT 对于$100\%$的数据，满足$1\le n\le1
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/10/17/BZOJ1972【SDOI2010】猪国杀/#more" rel="contents">
+            <a class="btn" href="/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -466,7 +478,7 @@
           Problem
 【BJOI2006】狼抓兔子Time Limit: $15 Sec$Memory Limit: $162 MB$
 
-Description现在小朋友们最喜欢的”喜羊羊与灰太狼”,话说灰太狼抓羊不到，但抓兔子还是比较在行的，而且现在的兔子还比较笨，它们只有两个窝，现在你做为狼王，面对一
+Description现在小朋友们最喜欢的”喜羊羊与灰太狼”,话说灰太狼抓羊不到，但抓兔子还是比较在行的，而且现在的兔子还比较笨，它们只有两个窝，现在你做为狼王，面对一个网格的地形：左上角点为$(1,1)$,右下角点为$(N,M)$.有以下三种类型的道路$1:(x,y)\Leftrightarrow(x+1,y)$$2:(x,y)\Leftrightarrow(x,y+1)$$3:(x,y)\Leftrightarrow(x+1,y+1)$道路上的权值表示这条路上最多能够通过的兔子数，道路是无向的. 左上角和右下角为兔子的两个窝，开始时所有的兔子都聚集在左上角$(1,1)$的窝里，现在它们要跑到右下解$(N,M)$的窝中去，狼王开始伏击这些兔子.当然为了保险起见，如果一条道路上最多通过的兔子数为$K$，狼王需要安排同样数量的K只狼，才能完全封锁这条道路，你需要帮助狼王安排一个伏击方案，使得在将兔子一网打尽的前提下，参与的狼的数量要最小。因为狼还要去找喜羊羊
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -596,7 +608,8 @@ Description现在小朋友们最喜欢的”喜羊羊与灰太狼”,话说灰�
 传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997
 
 标签：2-SAT，并查集
-Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这
+Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面连，对于相交线段$a,b$，一定有$a$和$b$不同时在里面或外面，于是$merge(a, b’)$, $merge(a’, b)$。这样合并时判断是否有$i$, $i’$在同一集中即可。
+Code12345678910111213141516171819202122232425#include &lt;iostream&gt;#include &lt;cstdio&gt;#define MAX_N 200#define MAX_M 10000using namespace std;int n, m, p[MAX_N+5], l[MAX_M+5], r[MAX_M+5], fa[MAX_M*2
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -724,7 +737,7 @@ Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-
           
           Problem
 Ikki’s Story IV - Panda’s Trick
-Descriptionliympanda, one of Ikki’s friend, likes playing games with Ikki. Today after minesweeping with Ikki 
+Descriptionliympanda, one of Ikki’s friend, likes playing games with Ikki. Today after minesweeping with Ikki and winning so many times, he is tired of such easy games and wants to play another game with Ikki.liympanda has a magic circle and he puts it on a plane, there are n points on its boundary in circular border: $0, 1, 2, \cdots , n-1$. Evil panda claims that he is connecting m pairs of points. To connect two points, liympanda either places the link 
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -854,7 +867,14 @@ Descriptionliympanda, one of Ikki’s friend, likes playing games with Ikki. Tod
 兴致勃勃地去，遍体鳞伤地回……
 八场考试爆六场，水题全都没做起……
 
-Day 1上午三道水题T1好简单，数轴上画圆，转化成线段覆盖。然而我并没有看出来~,,ԾㅂԾ,,~T2T3在哪里见过一样…突然意识到是暑假讲过的题。T2线段树套路题。并没有想起来正解，考完意识到
+Day 1上午三道水题T1好简单，数轴上画圆，转化成线段覆盖。然而我并没有看出来~,,ԾㅂԾ,,~T2T3在哪里见过一样…突然意识到是暑假讲过的题。T2线段树套路题。并没有想起来正解，考完意识到是傻逼暴力修改。T3数位DP，搞方程一小时没肝出来。
+中午颓颓颓
+下午讲YSY讲DP花了一个半小时把上午的题改了，成功跳过了DP基础部分。后面的题挺有意思。发现若干道FindStr讲过的题和BZOJ原题。最后一道没听懂。
+晚上讲了三道难题，听得半懂，口胡AC
+Day 2上午两道水题+一道数论T1显然是DP，撸方程一个半小时没肝出来，果断打了BFT2肯定图论，没想出正解，打了一个DFS分层，加上若干剪枝优化，并没骗到分T3乍一看容斥或莫比乌斯反演…等等这是NOIp模拟啊…果断放掉推反演，搞半天打了BF。结果标解是反演…ヾ(≧へ≦)〃又水了低保分
+中午颓颓颓
+下午YSY讲数论先改了一个半小时题，发现YSY把我会的都讲完了。接着就开始讲莫比乌斯反演等省选内容。出发后第一次怀疑这不是NOIp集训…
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -986,7 +1006,13 @@ Day 1上午三道水题T1好简单，数轴上画圆，转化成线段覆盖。�
 题目描述如题，现在有一个并查集，你需要完成合并和查询操作。
 
 
-输入输出格式输入格式：第一行包含两个整数N、M，表示共有N个元素和M个操作。接下来M行，每行包含三个整数Zi、Xi、Yi当Zi=1时，将Xi与Yi所在的集合合并当Zi=
+输入输出格式输入格式：第一行包含两个整数N、M，表示共有N个元素和M个操作。接下来M行，每行包含三个整数Zi、Xi、Yi当Zi=1时，将Xi与Yi所在的集合合并当Zi=2时，输出Xi与Yi是否在同一集合内，是的话输出Y；否则话输出N输出格式：如上，对于每一个Zi=2的操作，都有一行输出，每行包含一个大写字母，为Y或者N
+
+
+输入输出样例输入样例：4 72 1 21 1 22 1 21 3 42 1 41 2 32 1 4输出样例：NYNY
+
+
+说明时空限制：1000ms,128M数据规模：对于30%的数据，N&lt;=10，M&lt;=20；对于70%的数据，N&lt;=100，M&lt;=1000；对于100%的数据，N&lt;=10000，M&lt;=200000。123456789101112131415161718192021222324252627282930313233343536#include &lt;iostream&gt;#define
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1114,11 +1140,269 @@ Day 1上午三道水题T1好简单，数轴上画圆，转化成线段覆盖。�
           
           Problem
 【AHOI2008】Meet 紧急集合
-Description欢乐岛上有个非常好玩的游戏，叫做“紧急集合”。在岛上分散有$N$个等待点，有$N-1$条道路连接着它们，每条道路都连接某两个等待点，且通过这些道路可以走遍所有的等待点，通过道路从一点到另一点要花费一个游戏币。参加游戏的三人
+Description欢乐岛上有个非常好玩的游戏，叫做“紧急集合”。在岛上分散有$N$个等待点，有$N-1$条道路连接着它们，每条道路都连接某两个等待点，且通过这些道路可以走遍所有的等待点，通过道路从一点到另一点要花费一个游戏币。参加游戏的三人一组，开始的时候，所有人员均任意分散在各个等待点上（每个点同时允许多个人等待），每个人均带有足够多的游戏币（用于支付使用道路的花费）、地图（标明等待点之间道路连接的情况）以及对讲机（用于和同组的成员联系）。当集合号吹响后，每个成员之间迅速联系，了解到自己组所有成员所在的等待点后，迅速在$N$个等待点中确定一个集合点，组内所有成员将在该集合点集合，集合所用花费最少的组将是游戏的赢家。小可可和他的朋友邀请你一起参加这个游戏，有你来选择集合点，聪明的你能够完成这个任务，帮助小可可赢得游戏吗？
+
+
+Input第一行两个正整数$N$和$M$（$N\le 5\times 10^5$，$M\le 5\times 10^5$），之间用一个空格隔开。分别表示等待点的个数（等待点也从$1$到$N$进行编号）和获
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/09/27/BZOJ1787【AHOI2008】Meet紧急集合 LCA/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/25/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/" itemprop="url">BZOJ1103【POI2007】大都市meg <树上差分+树状数组></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+【POI2007】大都市megDescription 经济全球化浪潮的影响下,习惯于漫步在清晨的乡间小路的邮递员$Blue Mary$也开始骑着摩托车传递邮件了。不过，她经常回忆起以前在乡间漫步的情景。昔日，乡下有依次编号为$1\sim n$的$n$个小村庄，某些村庄之间有一些双向的土路。从每个村庄都恰好有一条路径到达村庄$1$（即比特堡）。并且，对于每个村庄，它到比特堡的路径恰好只经过编号比它的编号小的村庄。另外，对于所有道路而言，它们都不在除村庄以外的其他地点相遇。在这个未开化的地方，从来没有过高架桥和地下铁道。随着时间的推移，越来越多的土路被改造成了公路。至今，$Blue Mary$还清晰地记得最后一条土路被改造为公路的情景。现在，这里已经没有土路了——所有的路都成为了公路，而昔日的村庄已经变成了一个大都市。 $Blue Mary$想起了在改造期间她送信的经历。她从比特堡出发，需要去某个村庄，并且在两次送信经历的间隔期间,有某些土路被改造成了公路.现在$Blue Mary$需要你的帮助：计算出每次送信她需要走过的土路数目。（对于公路，她可以骑摩托车；而对于土路，她
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/25/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/" itemprop="url">UVa12345 Dynamic len(set(a[L:R])) <带修莫队></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+Dynamic len(set(a[L:R]))
+DescriptionIn python, we can use len(start(a[L:R])) to calculate the number of distinct values of elements $a[L],a[L + 1], \cdots,a[R-1]$.Tere are some interactive examples that may help you understand how it is done. Remember that the indices of python lists start from $0$.>>>a=[1,2,1,3,2,1,4]>>> print a[1:6][2, 1, 3, 2, 1]>>> print set(a[1:6])set([1, 2, 3])>>> printlen(set(a[1:6]))3>>> a[3]=2>>> printlen(set(a[1:6]))2>>> print len(set(a[3:5]))1Your task is to s
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1245,267 +1529,23 @@ Description欢乐岛上有个非常好玩的游戏，叫做“紧急集合”。
  Time Limit: $4000/2000 MS (Java/Others)$ Memory Limit: $32768/32768 K (Java/Others)$
 
 
-Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组
+Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $abba$等
+
+
+Input输入有多组$case$,不超过$120$组,每组输入为一行小写英文字符$a,b,c\cdots y,z$组成的字符串$S$两组$case$之间由空行隔开(该空行不用处理)字符串长度$len\le 110000$
+Output每一行一个整数$x$,对应一组$case$,表示该组$case$的字符串中所包含的最长回文长度.
+
+
+Sample Input12aaaaabab
+
+Sample Output1243
+
+标签：$Manacher$
+Solution$Manacher$板子题。不懂$Manacher$可以戳这里：https://segmentfault.com/a
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/09/25/HDU3068 最长回文 Manacher/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/" itemprop="url">UVa12345 Dynamic len(set(a[L:R])) <带修莫队></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
-                2017-09-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-Dynamic len(set(a[L:R]))
-DescriptionIn python, we can use len(start(a[L:R])) to calculate the number of distinct values of elements $a[L],a[L 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/BZOJ2038 小Z的袜子 莫队/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/25/BZOJ2038 小Z的袜子 莫队/" itemprop="url">BZOJ2038 小Z的袜子 <莫队></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
-                2017-09-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-小Z的袜子
-Description作为一个生活散漫的人，小$Z$每天早上都要耗费很久从一堆五颜六色的袜子中找出一双来穿。终于有一天，小$Z$再也无法忍受这恼人的找袜子过程，于是他决定听天由命……具体来说，小$Z$把这$N$只袜子从$1$到$N$编号，然后从编号$L$到$R$(尽管小$
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/25/BZOJ2038 小Z的袜子 莫队/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>

@@ -335,7 +335,18 @@
           Problem
 DZY Loves MathTime Limit: $80 Sec$Memory Limit: $512 MB$
 Description给下$N,M,K$，计算$\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\mod(10^9+7)$的值。
-Input
+Input输入有多组数据，输入数据的第一行两个正整数$T,K$，代表有$T$组数据，$K$的意义如上所示，下面第$2$行到第$T+1$行，每行为两个正整数$N,M$，其意义如上式所示。
+Output对于每一个询问，输出一行一个数作为回答。
+Sample Input121 23 3
+
+
+Sample Output120
+
+
+HINT$1\le N,M,K\le5\times 10^6,\;1\le T\le2000$官方题解
+
+标签：莫比乌斯反演
+Solution先套路转换出$\mu$：$$\begin{aligned}Ans&amp;=\sum_{i=1}^{n}\sum_{j=1}^{m}\gcd(i,j)^k\\&amp;=\sum_{d=1}^{\min(n,m)}d^k\sum_{i=1}^{
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -463,139 +474,22 @@ Input
           
           Problem
 DZY Loves MathTime Limit: $20 Sec$Memory Limit: $512 MB$
-Description对于正整数$n$，定义$f(n)$为$n$所含质因子的最大幂指数。例如$f(1960)=f(2^3\times5^1\times7\times2)=
+Description对于正整数$n$，定义$f(n)$为$n$所含质因子的最大幂指数。例如$f(1960)=f(2^3\times5^1\times7\times2)=3$, $f(10007)=1$, $f(1)=0$。给定正整数$a,b$，求$\sum_{i=1}^{a}\sum_{j=1}^{b}{f(\gcd(i,j))}$。
+Input第一行一个数$T$，表示询问数。接下来$T$行，每行两个数$a,b$，表示一个询问。
+Output对于每一个询问，输出一行一个非负整数作为回答。
+Sample Input1234547558588 96531146514903 44512117425644 11894426335198 4957
+
+
+Sample Output12343579345393990114225956593420433283884584615400094813
+
+
+HINT$T\le 10^4$$1\le a,b\le 10^7$
+
+标签
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/28/BZOJ3309 DZY Loves Math 莫比乌斯反演/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" itemprop="url">BZOJ2154 Crash的数字表格 <莫比乌斯反演></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T00:00:00+08:00">
-                2018-02-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-Crash的数字表格Time Limit: $20 Sec$Memory Limit: $259 MB$
-Description今天的数学课上，$Crash$小朋友学习了最小公倍数$(Least\;Common\;Multiple)$。对于两个正整数$a$和$b$，$LCM(a, b
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -720,7 +614,19 @@ Description今天的数学课上，$Crash$小朋友学习了最小公倍数$(Lea
           Problem
 jzptabTime Limit: $10 Sec$Memory Limit: $512 MB$
 Description求$\sum_{i=1}^{n}\sum_{j=1}^{m}lcm(i,j)$，答案模$10^9+9$输出。多组询问。
-Input一个正整数$T$表示数据组数。接下
+Input一个正整数$T$表示数据组数。接下来$T$行，每行两个正整数 表示$N,M$。
+Output$T$行，每行一个整数，表示第$i$组数据的结果。
+Sample Input1214 5
+
+
+Sample Output1122
+
+
+HINT$T\le 10^4$$N,M\le 10^7$
+Sourse版权所有者：倪泽堃
+
+标签：莫比乌斯反演
+Solution此题和$BZOJ2154$所求相同，只是又多组询问，如果每次都像$BZOJ2154$那样$O(n)$做为$TLE$。故需要改变求和方式。这里将使用$BZOJ2154$的最终推导结果来继续恒等变形。前面的推导见：BZOJ2154。$$\begin{aligned}Answer&amp;=\sum_{d=1}^{\min(n,m)}{d}\sum_{k=1}^{\min(\lflo
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -775,7 +681,7 @@ Input一个正整数$T$表示数据组数。接下
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -794,7 +700,7 @@ Input一个正整数$T$表示数据组数。接下
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" itemprop="url">BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></a></h1>
+                <a class="post-title-link" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/" itemprop="url">BZOJ2154 Crash的数字表格 <莫比乌斯反演></a></h1>
         
 
         <div class="post-meta">
@@ -806,8 +712,8 @@ Input一个正整数$T$表示数据组数。接下
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T00:00:00+08:00">
-                2018-02-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T00:00:00+08:00">
+                2018-02-26
               </time>
             
 
@@ -847,12 +753,14 @@ Input一个正整数$T$表示数据组数。接下
         
           
           Problem
-【HNOI2008】玩具装箱toyTime Limit: $10 Sec$Memory Limit: $162 MB$
-Description$P$教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特
+Crash的数字表格Time Limit: $20 Sec$Memory Limit: $259 MB$
+Description今天的数学课上，$Crash$小朋友学习了最小公倍数$(Least\;Common\;Multiple)$。对于两个正整数$a$和$b$，$LCM(a, b)$表示能同时被a和b整除的最小正整数。例如，$LCM(6, 8) = 24$。回到家后，$Crash$还在想着课上学的东西，为了研究最小公倍数，他画了一张$N\times M$的表格。每个格子里写了一个数字，其中第$i$行第$j$列的那个格子里写着数为$LCM(i, j)$。看着这个表格，$Crash$想到了很多可以思考的问题。不过他最想解决的问题却是一个十分简单的问题：这个表格中所有数的和是多少。当$N$和$M$很大时，$Crash$就束手无策了，因此他找到了聪明的你用程序帮他解决这个问题。由于最终结果可能会很大，$Crash$只想知道表格里所有数的和$\mod 20101009\;\;$的值。
+Input输入的第一行包含两个正整数，分别表示$N$和$M$。
+Output输出一个正整数，
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/#more" rel="contents">
+            <a class="btn" href="/2018/02/26/BZOJ2154 Crash的数字表格 莫比乌斯反演/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -976,11 +884,142 @@ Description$P$教授要去看奥运，但是他舍不下他的玩具，于是他
           
           Problem
 【ZJOI2007】仓库建设Time Limit: $10 Sec$Memory Limit: $162 MB$
-Description$L$公司有$N$个工厂，由高到底分布在一座山上。如图所示，工厂$1$在山顶，工厂$N$在山脚。由于这座山处于高原内陆地区（干燥少雨），$L$公司一
+Description$L$公司有$N$个工厂，由高到底分布在一座山上。如图所示，工厂$1$在山顶，工厂$N$在山脚。由于这座山处于高原内陆地区（干燥少雨），$L$公司一般把产品直接堆放在露天，以节省费用。突然有一天，$L$公司的总裁$L$先生接到气象部门的电话，被告知三天之后将有一场暴雨，于是$L$先生决定紧急在某些工厂建立一些仓库以免产品被淋坏。由于地形的不同，在不同工厂建立仓库的费用可能是不同的。第$i$个工厂目前已有成品$P_i$件，在第$i$个工厂位置建立仓库的费用是$C_i$。对于没有建立仓库的工厂，其产品应被运往其他的仓库进行储藏，而由于$L$公司产品的对外销售处设置在山脚的工厂$N$，故产品只能往山下运（即只能运往编号更大的工厂的仓库），当然运送产品也是需要费用的，假设一件产品运送$1$个单位距离的费用是$1$。假设建立的仓库容量都都是足够大的，可以容下所有的产品。你将得到以下数据：
+
+工厂$i$距离工厂$1$的距离$X_i$（其中$X_1=
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/22/BZOJ1096【ZJOI2007】仓库建设 斜率优化/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" itemprop="url">BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T00:00:00+08:00">
+                2018-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+【HNOI2008】玩具装箱toyTime Limit: $10 Sec$Memory Limit: $162 MB$
+Description$P$教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。$P$教授有编号为$1\sim N$的$N$件玩具，第$i$件玩具经过压缩后变成一维长度为$C_i$.为了方便整理，$P$教授要求在一个一维容器中的玩具编号是连续的。同时如果一个一维容器中有多个玩具，那么两件玩具之间要加入一个单位长度的填充物，形式地说如果将第$i$件玩具到第$j$个玩具放到一个容器中，那么容器的长度将为 $x=j-i+\sum_{k=i}^{j}C_k$制作容器的费用与容器的长度有关，根据教授研究，如果容器长度为$X$,其制作费用为$(X-L)^2$.其中$L$是一个常量。$P$教授不关心容器的数目，他可以制作出任意长度的容器，甚至超过$L$。但他希望费用最小.
+Input第一行输入两个整数$N,L$.接下来$N$行输入$C_i$.$1\le N\le500
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/22/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1107,7 +1146,10 @@ Description$L$公司有$N$个工厂，由高到底分布在一座山上。如图
  Time Limit: $2000 MS$ Memory Limit: $32768 KB$
 
 
-Description$2013$年一开始，一档音乐节目“我是歌手”就惊艳了大家一回。闲话少说，现在，你成为了这档节目的总导演，你的任务很简单，安排每一期节目的内容。现在有$
+Description$2013$年一开始，一档音乐节目“我是歌手”就惊艳了大家一回。闲话少说，现在，你成为了这档节目的总导演，你的任务很简单，安排每一期节目的内容。现在有$N$个歌手，$M$种歌曲流派（$Rock$，$Pop$之类），每个歌手都有自己擅长的流派领域，这些资料都已整理。你的工作是，安排尽可能多场的演唱比赛。每一场比赛所有歌手都必须上场，为了提高收视率，每个人演唱的歌曲类型不能相同，即便一些歌手要被迫选择一些他们不擅长的。同时，为了展现全面性，在不同的演唱比赛上，每个歌手都会安排不同的歌曲流派。但是问题是，对于任何一个歌曲流派的歌迷，如果超过$K$个不擅长的歌手演唱了这种歌曲，他们就会表示不满，比如，发一些宣泄不满的帖子微博，为了表示观点挑起事端等等。你当然不希望这些事情与你的节目有关，在这个前提下，你可以任意安排尽可能多的比赛场次。
+
+
+Input输入第一行为$T$，表示有$T$组测试数据。每组数据以四个数字$N$，$M$，$L$，$K$开始。$
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1236,7 +1278,9 @@ Description$2013$年一开始，一档音乐节目“我是歌手”就惊艳了
           Problem
 DZY Loves Fibonacci Numbers Time limit: $4Sec$ Memory limit: $256MB$
 
-DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $num
+DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F_2 = 1,F_3=F_1+F_2=3,\cdots F_n = F_{n-1}+F_{n-2}$.$DZY$ loves Fibonacci numbers very much. Today $DZY$ gives you an array consisting of $n$ integers: $a_1, a_2,cdots , a_n$. Moreover, there are $m$ queries, each query has one of the two types:
+
+Format of the query “$1$ $l$ $r$”. In reply to the
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1370,7 +1414,58 @@ $1\le a&lt;b\le N$
 $(a+b)|(a\cdot b)$
 
 Input一行一个数$N$。
+Output一行一个数表示答案。
+Sample Input115
 
+
+Sample Output14
+
+
+HINT
+
+
+测试点编号
+数据规模
+测试点编号
+数据规模
+
+
+
+
+$01$
+$N\le 10$
+$11$
+$N\le 5\times 10^7$
+
+
+$02$
+$N \le 50$
+$12$
+$N\le 10^8$
+
+
+$03$
+$N\le 10^3$
+$13$
+$N\le 2\times 10^8$
+
+
+$04$
+$N\le 5\times 10^3$
+$14$
+$N\le 3\times 10^8$
+
+
+$05$
+$N\le 2\times 10^4$
+$15$
+$N\le 5\times 10^8$
+
+
+$06$
+$N\le 2\times 10^5$
+$16$
+$N\le 10^
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1502,7 +1597,10 @@ Input一行一个数$N$。
 Description&gt;### Input&gt;### Output&gt;### Sample Input
 
 标签：计数$DP$
-Solution考试时没想出
+Solution考试时没想出来，不过听了觉得挺简单的。
+首先把每个片段看成一个数，每个音阶看成该数的一位，则每位为$0$或$1$，题意可以转化为求在$1\sim 2^n-1$中选$m$个数使其异或和为$0$的方案数。我们先不考虑无序性，求出所有排列后除$m!$即为答案。
+设$f[i]$为选$i$个数的方案数，考虑先选$i-1$个数，最后一个数即为前面的数的异或和，这样才能使总异或和位$0$。那么如果不考虑限制，直接选则有$P_{2^n-1}^{i-1}=(2^n-1)\times (2^n-2)\times (2^n-3)\times \cdots \times (2^n-i+1)$种选法。
+只可能有两种不合法的情况，即最后一个数位$0$或最后一个数在前面$i-1$个数种出现过。对于第一种情况，不合法方案数为选$i-1
           ...
           <!--noindex-->
           <div class="post-button text-center">
