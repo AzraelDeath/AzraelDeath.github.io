@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Problem DZY Loves Fibonacci Numbers Time limit: $4Sec$ Memory limit: $256MB$  DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 =">
+<meta name="description" content="ProblemDZY Loves Fibonacci NumbersTime limit: $4Sec$Memory limit: $256MB$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F">
 <meta name="keywords" content="数据结构,线段树,CodeForces">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CF446C DZY Loves Fibonacci Numbers &lt;线段树&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/02/20/CF446C DZY Loves Fibonacci Numbers 线段树/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem DZY Loves Fibonacci Numbers Time limit: $4Sec$ Memory limit: $256MB$  DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 =">
+<meta property="og:description" content="ProblemDZY Loves Fibonacci NumbersTime limit: $4Sec$Memory limit: $256MB$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-25T07:53:05.765Z">
+<meta property="og:updated_time" content="2018-03-03T11:47:40.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CF446C DZY Loves Fibonacci Numbers &lt;线段树&gt;">
-<meta name="twitter:description" content="Problem DZY Loves Fibonacci Numbers Time limit: $4Sec$ Memory limit: $256MB$  DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 =">
+<meta name="twitter:description" content="ProblemDZY Loves Fibonacci NumbersTime limit: $4Sec$Memory limit: $256MB$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F">
 
 
 
@@ -363,26 +363,18 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="DZY-Loves-Fibonacci-Numbers"><a href="#DZY-Loves-Fibonacci-Numbers" class="headerlink" title="DZY Loves Fibonacci Numbers"></a>DZY Loves Fibonacci Numbers</h2><p> Time limit: $4Sec$<br> Memory limit: $256MB$</p>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="DZY-Loves-Fibonacci-Numbers"><a href="#DZY-Loves-Fibonacci-Numbers" class="headerlink" title="DZY Loves Fibonacci Numbers"></a>DZY Loves Fibonacci Numbers</h3><p>Time limit: $4Sec$<br>Memory limit: $256MB$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F_2 = 1,F_3=F_1+F_2=3,\cdots F_n = F_{n-1}+F_{n-2}$.<br>$DZY$ loves Fibonacci numbers very much. Today $DZY$ gives you an array consisting of $n$ integers: $a_1, a_2,cdots , a_n$. Moreover, there are $m$ queries, each query has one of the two types:</p>
 <ol>
 <li>Format of the query “$1$ $l$ $r$”. In reply to the query, you need to add $F_{i-l+1}$ to each element $a_i$, where $l\le i\le r$.</li>
-<li>Format of the query “$2$ $l$ $r$”. In reply to the query you should output the value of  $\sum_{i=l}^{r}{a_i}$ modulo $10^9+9$.<blockquote>
-<p>Help $DZY$ reply to all the queries.</p>
-</blockquote>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3>The first line of the input contains two integers $n$ and $m$ $(1 \le n, m \le 3\times 10^5)$. The second line contains <em>n</em> integers $a_1, a_2, \cdots, a_n (1 ≤ a_i \le10^9)$ — initial array $a$.<br>Then, <em>m</em> lines follow. A single line describes a single query in the format given in the statement. It is guaranteed that for each query inequality $1 \le l \le r \le n$ holds.<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3>For each query of the second type, print the value of the sum on a single line.<blockquote>
-</blockquote>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><strong>Input</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">4 4</span><br><span class="line">1 2 3 4</span><br><span class="line">1 1 4</span><br><span class="line">2 1 4</span><br><span class="line">1 2 4</span><br><span class="line">2 1 3</span><br></pre></td></tr></table></figure>
-</li>
+<li>Format of the query “$2$ $l$ $r$”. In reply to the query you should output the value of  $\sum_{i=l}^{r}{a_i}$ modulo $10^9+9$.</li>
 </ol>
-<blockquote>
+<p>Help $DZY$ reply to all the queries.</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The first line of the input contains two integers $n$ and $m$ $(1 \le n, m \le 3\times 10^5)$. The second line contains <em>n</em> integers $a_1, a_2, \cdots, a_n (1 ≤ a_i \le10^9)$ — initial array $a$.<br>Then, <em>m</em> lines follow. A single line describes a single query in the format given in the statement. It is guaranteed that for each query inequality $1 \le l \le r \le n$ holds.</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each query of the second type, print the value of the sum on a single line.<br><a id="more"></a></p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p><strong>Input</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">4 4</span><br><span class="line">1 2 3 4</span><br><span class="line">1 1 4</span><br><span class="line">2 1 4</span><br><span class="line">1 2 4</span><br><span class="line">2 1 3</span><br></pre></td></tr></table></figure></p>
 <p><strong>Output</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">17</span><br><span class="line">12</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
 <h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><p>After the first query, $a = [2, 3, 5, 7]$.<br>For the second query, $sum = 2 + 3 + 5 + 7 = 17$.<br>After the third query, $a = [2, 4, 6, 9]$.<br>For the fourth query, $sum = 2 + 4 + 6 = 12$.</p>
-</blockquote>
 <p>标签：线段树</p>
 <h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：<br>给出一个长为$3\times 10^5$级别的初始数组，要求维护两种操作：</p>
 <ol>
@@ -572,7 +564,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DZY-Loves-Fibonacci-Numbers"><span class="nav-number">2.</span> <span class="nav-text">DZY Loves Fibonacci Numbers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">2.4.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note"><span class="nav-number">2.5.</span> <span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">3.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">5.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DZY-Loves-Fibonacci-Numbers"><span class="nav-number">1.1.</span> <span class="nav-text">DZY Loves Fibonacci Numbers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">1.5.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note"><span class="nav-number">1.6.</span> <span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">2.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

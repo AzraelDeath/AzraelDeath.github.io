@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Problem CalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。 Sample Input115   Sample Output14">
+<meta name="description" content="ProblemCalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：-$1\le a&amp;lt;b\le N$-$(a+b)|(a\cdot b)$ Input一行一个数$N$。 Output一行一个数表示答案。">
 <meta name="keywords" content="BZOJ,数论数学,莫比乌斯反演">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ2671 Calc &lt;莫比乌斯反演&gt;">
 <meta property="og:url" content="http://yoursite.com/2018/02/12/BZOJ2671 Calc 莫比乌斯反演/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem CalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。 Sample Input115   Sample Output14">
+<meta property="og:description" content="ProblemCalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：-$1\le a&amp;lt;b\le N$-$(a+b)|(a\cdot b)$ Input一行一个数$N$。 Output一行一个数表示答案。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-13T05:35:53.301Z">
+<meta property="og:updated_time" content="2018-03-03T11:49:13.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ2671 Calc &lt;莫比乌斯反演&gt;">
-<meta name="twitter:description" content="Problem CalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。 Sample Input115   Sample Output14">
+<meta name="twitter:description" content="ProblemCalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：-$1\le a&amp;lt;b\le N$-$(a+b)|(a\cdot b)$ Input一行一个数$N$。 Output一行一个数表示答案。">
 
 
 
@@ -363,21 +363,12 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="Calc"><a href="#Calc" class="headerlink" title="Calc"></a>Calc</h2><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给出$N$，统计满足下面条件的数对$(a,b)$的个数：</p>
-<ul>
-<li>$1\le a&lt;b\le N$</li>
-<li>$(a+b)|(a\cdot b)$</li>
-</ul>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Calc"><a href="#Calc" class="headerlink" title="Calc"></a>Calc</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给出$N$，统计满足下面条件的数对$(a,b)$的个数：<br>-$1\le a&lt;b\le N$<br>-$(a+b)|(a\cdot b)$</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>一行一个数$N$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个数表示答案。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个数表示答案。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">15</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 <h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><table>
 <thead>
 <tr>
@@ -450,7 +441,6 @@
 </tr>
 </tbody>
 </table>
-</blockquote>
 <p>标签：莫比乌斯反演</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道稍有变形的莫比乌斯反演，$blutrex$有$O(n^{\frac{3}{4}})$的算法，但我只会小常数的$O(n)$算法，不过可以过$BZOJ$数据。</p>
 <p>问题即求$\sum_{i=1}^{n}\sum_{j=i+1}^{n}{[(i+j)|(i\times j)]}$的值。设$\gcd(i,j)=d$, $i=x\times d$, $j=y\times d$，易知$\gcd(x,y)=1$。<br>那么$(i+j)|(i\times j)$$\iff$$((x+y)\times d)|(x\times y\times d^2)$$\iff$$(x+y)|(x\times y\times d)$$\iff$$(x+y)|d$。<br>不妨设$d=k\times(x+y)​$，那么$a=x\times d=k\times x\times(x+y)​$, $b=y\times d=k\times y\times(x+y)​$。<br>有<br>$$<br>\begin{equation}<br>\begin{aligned}<br>原式 =&amp; \sum_{x=1}^{n}\sum_{y=x+1}^{n}[\gcd(x,y)=1 \&amp;\&amp; a&lt;b\le n]\\<br>=&amp; \sum_{y=1}^{\lfloor\sqrt{n}-1\rfloor}\sum_{x=1}^{y-1}\sum_{k\in \mathbb{Z}^*}{[\gcd(x,y)=1 \&amp;\&amp; k\times y\times (x+y)\le n]}\\<br>=&amp; \sum_{y=1}^{\lfloor\sqrt{n}-1\rfloor}\sum_{x=1}^{y-1}[\gcd(x,y)=1]\times \lfloor\frac{n}{y\times(x+y)}\rfloor\\<br>\end{aligned}<br>\end{equation}<br>$$<br>显然$val=\lfloor\frac{n}{y\times(x+y)}\rfloor$只有$\sqrt{n}$级别种取值，可以根号分块来算，即枚举$y$，每次找到$val$相等的一段$x\in[lo,hi]$，统计$[lo,hi]$间满足$\gcd(x,y)=1$的$x$的个数，可以套用基础莫比乌斯反演公式，即$\sum_{d|y}{\mu(d)\cdot(\lfloor\frac{hi}{d}\rfloor-\lfloor\frac{lo-1}{d}\rfloor)}$。</p>
@@ -635,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calc"><span class="nav-number">2.</span> <span class="nav-text">Calc</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">2.6.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Calc"><span class="nav-number">1.1.</span> <span class="nav-text">Calc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">1.7.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>
