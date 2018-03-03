@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/27/BZOJ1283 序列 费用流/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/27/BZOJ3442 学习小组 费用流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -280,7 +280,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/27/BZOJ1283 序列 费用流/" itemprop="url">BZOJ1283 序列 <费用流></a></h1>
+                <a class="post-title-link" href="/2017/12/27/BZOJ3442 学习小组 费用流/" itemprop="url">BZOJ3442 学习小组 <费用流></a></h1>
         
 
         <div class="post-meta">
@@ -333,30 +333,12 @@
         
           
           Problem
-序列Time Limit: $10 Sec$  Memory Limit: $162 MB$
-Description给出一个长度为$N$的正整数序列$C_i$，求一个子序列，使得原序列中任意长度为$M$的子串中被选出的元素不超过$K(K,M\le 100)$ 个，并且选出的元素之和最大。
-Input第$1$行三个数$N,M,K$。 接下来$1$行$N$个正整数表示$C_i$。
-Output最大和。
-Sample Input1210 5 34 4 4 6 6 6 6 6 4 4
-
-
-Sample Output130
-
-
-HINT$20\%$的数据: $N\le 10$。$100\%$的数据：$N\le 1000，K,M\le 100。C_i\le 20000$。
-Source$By  YM$
-
-标签：费用流
-Solution常规费用流建模。转化题意为：选$K$次，每次选一个子序列，每一次连续$M$个里面只能选一个。对于第$i$个数$C_i$，
-
-如果不选：$i\to i+1$ 流量$K$ 费用$0$
-
-如果选，则下一个数在$i+M$之后：
-1)若$i\in [1, n-m
+学习小组Time Limit: $5 Sec$  Memory Limit: $128 MB$
+Description坑校准备鼓励学生参加学习小组。共有$n$个学生，$m$个学习小组，每个学生有一定的喜好，只愿意参加其中的一些学习小组，但是校领导为学生考虑，规定一个学生最多参加$k$个学习小组。财务处的大叔就没那么好了，他想尽量多收钱，因为每个学生参加学习小组都要交一定的手续费，不同的学习小组有不同的手续费。然而，事与愿违，校领导又决定对学习小组组织者进行奖励，若有$a$个学生参加第i个学习小组，那么给这个学习小组组织者奖励$C_i\times a^2$元。在参与学生（而不是每
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/27/BZOJ1283 序列 费用流/#more" rel="contents">
+            <a class="btn" href="/2017/12/27/BZOJ3442 学习小组 费用流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -481,7 +463,7 @@ Solution常规费用流建模。转化题意为：选$K$次，每次选一个子
           Problem
 【HNOI2001】软件开发Time Limit: $10 Sec$  Memory Limit: $162 MB$
 
-Description某软件公司正在规划一项$n$天的软件开发计划，根据开发计划第$i$天需要$n_i$个软件开发人员，为了提高软件开发人员的效率，公司给软件人员提供了很多的服务，其中一项服务就是要为每个开发人员每天提供一块消毒毛巾，这种消毒毛巾使用一天后必须再做消毒处理后才能使用。消毒方式有两种，$A$种方式的消毒需要$a$天时间，$B$种方式的消毒需要$b$天（$b&gt;a$），$A$种消毒方式的费用为每块毛巾$f_A$, $B$种消毒方式的费用为每块毛巾$f_B$，而买一块新毛巾的费用为$f$（新毛巾是已消毒的，当天可以使用）；而且$f&gt;f_A&gt;f_B$。公司经理正在规划在这$n$天中，每天买多少块新毛巾、每天送多少块毛巾进行$A$种消毒和每天送多少块毛巾进行$B$种消毒。当然，公司经理希望费用最低。你的任务就是：为该软件公司计划每天买多少块毛巾、每天多少块毛巾进行$A$种消毒和多少毛巾进行$B$种消毒，使公司在这项$n$天的软件开
+Description某软件公司正在规划一项$n$天的软件开发计划，根据开发计划第$i$天需要$n_i$个软件开发人员，为了提高软件开发人员的效率，公司给软件人员提供了很多的服务，其中一项服务就是要为每个开发人员每天提供一块消毒毛巾，这种消毒毛巾使用一天后必须再做消毒处理后才能使用。消毒方式有两种，$A$种方式的消毒需要$a$天时间，$B$种方式的消毒需要$b$天（$b&gt;a$），$A$种消毒方式的费用为每块毛巾$f_A$, $B$种消毒方式的费用为每块毛
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -613,282 +595,11 @@ Description某软件公司正在规划一项$n$天的软件开发计划，根据
 Description每年春季，在某岛屿上都会举行游行活动。在这个岛屿上有$N$个城市，$M$条连接着城市的有向道路。你要安排英雄们的巡游。英雄从城市$s_i$出发，经过若干个城市，到城市$t_i$结束，需要特别注意的是，每个英雄的巡游的$s_i$可以和$t_i$相同，但是必须至少途径2个城市。每次游行你的花费将由3部分构成：
 
 每个英雄游行经过的距离之和，需要特别注意的是，假如一条边被途径了$k$次，那么它对答案的贡献是$k\times c_i$，$c_i$表示这条边的边权。
-如果一个英雄的巡游的$s_i$不等于$t_i$，那么会额外增加$C$的费用。因为英雄要打的回到起点。
-如果一个城市没有任何一个英雄途经，那么这个城市会很不高兴，需要$C$费用的补偿。
 
-你有无数个的英雄。你要合理安排游行方案，使得费用最小。由于每年，$C$值都是不一样的。所以你要回答$Q$个询问，每个询问都是，当$C$为当前输入数值的时候的答案。
-
-
-Input第一行正整数$N，M，Q$ 。接下来
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/26/BZOJ3691 游行 二分+费用流/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ1877【SDOI2009】晨跑 拆点费用流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/25/BZOJ1877【SDOI2009】晨跑 拆点费用流/" itemprop="url">BZOJ1877【SDOI2009】晨跑 <拆点费用流></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
-                2017-12-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-【SDOI2009】晨跑Time Limit: $4 Sec$  Memory Limit: $64 MB$
-
-Description$Elaxia$最近迷恋上了空手道，他为自己设定了一套健身计划，比如俯卧撑、仰卧起坐等 等，不过到目前为止，他坚持下来的只有晨跑。 现在给出一张学校附近的地图，这张地图中包含$N$个十字路口和$M$条街道，$Elaxia$只能从 一个十字路口跑向另外一个十字路口，街道之间只在十字路口处相交。$Elaxia$每天从寝室出发 跑到学校，保证寝室编号为$1$，学校编号为$N$。 $Elaxia$的晨跑计划是按周期（包含若干天）进行的，由于他不喜欢走重复的路线，所以在一个周期内，每天的晨跑路线都不会相交（在十字路口处），寝室和学校不算十字路 口。$Elaxia$耐力不太好，他希望在一个周期内跑的路程尽量短，但是又希望训练周期包含的天数尽量长。 除了练空手道，$Elaxia$其他时间都花在了学习和找$MM$上面，所有他想请你帮忙为他设计 一套满足他要求的晨跑计划。
-
-
-Input第一行：两个数$N,M$。表示十字路口数和街道数。接下来$M$行，每行
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/25/BZOJ1877【SDOI2009】晨跑 拆点费用流/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ2321【BJ2011集训】星器 物理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/25/BZOJ2321【BJ2011集训】星器 物理/" itemprop="url">BZOJ2321【BJ2011集训】星器 <物理></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
-                2017-12-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-【BJ2011集训】星器 Time Limit: $1 Sec$  Memory Limit: $128 MB$
-
-Description$Magic Land$上的时间又过了若干世纪……现在，人们谈论着一个传说：从前，他们的祖先来到了一个位于东方的岛屿，那里简直就是另外一个世界。善于分析与构造的$Magic Land$上的人们总是不明白那里的人们是如何不借助精确的实验与计算驱动和操纵魔法。偶然地，一个魔法使（$Magician$）来到了$Magic Land$，在临走的时候留下了一个神奇的盒子，叫做星器（$casket of star$）。虽然不知道这个盒子是做什么的，但是经过了大量的实验和计算后，人们已经清楚它的一些事实：
-
-星器之中有$N\times M$个区域，可看作分成$N$行和$M$列的格子，每个区域之中有若干单位的称为“星”的对象，这个对象的最小单位已经被确定，所以，这个数量总是整数。
-魔法使可以驱动星器中位于同一行或同一列的不相邻（有公共边的区域称为相邻的）两个区域中各1单位的“星”，使得它们分别向中心移动1格。
-每一次使用2中的方法驱动“星”，将会产生
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/25/BZOJ2321【BJ2011集训】星器 物理/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1012,10 +723,7 @@ Description$Magic Land$上的时间又过了若干世纪……现在，人们谈
           
           Problem
 【FJ2015集训】卡牌配对Time Limit: $20 Sec$  Memory Limit: $512 MB$
-Description现在有一种卡牌游戏，每张卡牌上有三个属性值：$A,B,C$。把卡牌分为$X,Y$两类，分别有$n_1,n_2$张。两张卡牌能够配对，当且仅当，存在至多一项属性值使得两张卡牌该项属性值互质，且两张卡牌类别不同。比如一张$X$类卡牌属性值分别是$225,233,101$，一张$Y$类卡牌属性值分别为$115,466,99$。那么这两张牌是可以配对的，因为只有$101$和$99$一组属性互质。游戏的目的是最大化匹配上的卡牌组数，当然每张卡牌只能用一次。
-Input数据第一行两个数$n_1$，$n_2$，空格分割。接下来$n_1$行，每行$3$个数，依次表示每张$X$类卡牌的$3$项属性值。接下来$n_2$行，每行$3$个数，依次表示每张$Y$类卡牌的$3$项属性值。
-Output输出一个整数：最多能够匹配的数目。
-Sample Input123456&gt;2 2&gt;2 2 2&gt;2 5 5&gt;2 2 5&gt;5 5 5&g
+Description现在有一种卡牌游戏，每张卡牌上有三个属性值：$A,B,C$。把卡牌分为$X,Y$两类，分别有$n_1,n_2$张。两张卡牌能够配对，当且仅当，存在至多一项属性值使得两张卡牌该项属性值互质，且两张卡牌类别不同。比如一张$X$类卡牌属性值分别是$225,233,101$，一张$Y$类卡牌属性值分别为$115,466,99$。那么这两张牌是可以配对的，因为只有$101$和$99$一组属性互质。游戏的目的是最大化匹配上的卡牌组数，当然每张卡牌只能用
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1152,11 +860,140 @@ Sample Input12345673 210 020 0-10 0-5 1 0 0100 1 2 1100 0
 Sample Output125
 
 
-HINT在样例中, 植物$P_{1,1}$可以攻击位置$(0,0)$, $P_{2, 0}$可以攻击位置$(2,1)$。一个方案为，首先进攻$P_{1,1}, P_{0,1}$，此时可以攻击$P_{0,0}$ 。共得到能源收益为$(-5)+20+10 = 25$。注意, 位置$(2,1)$被植物$P_{2,0}$保护，所以无法攻击第$2$行中的任何植物。【数据规模】$20\%$的数据满足$1\le N, M\le 5$；$40\%$的数据满足$1 \le N, M \le10$
+HINT在样例中, 植物$P_{1,1}$可以攻击位置$(0,0)$, $P_{2
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/25/BZOJ1565【NOI2009】植物大战僵尸 网络流/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ2321【BJ2011集训】星器 物理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/25/BZOJ2321【BJ2011集训】星器 物理/" itemprop="url">BZOJ2321【BJ2011集训】星器 <物理></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+【BJ2011集训】星器 Time Limit: $1 Sec$  Memory Limit: $128 MB$
+
+Description$Magic Land$上的时间又过了若干世纪……现在，人们谈论着一个传说：从前，他们的祖先来到了一个位于东方的岛屿，那里简直就是另外一个世界。善于分析与构造的$Magic Land$上的人们总是不明白那里的人们是如何不借助精确的实验与计算驱动和操纵魔法。偶然地，一个魔法使（$Magician$）来到了$Magic Land$，在临走的时候留下了一个神奇的盒子，叫做星器（$casket of star$）。虽然不知道这个盒子是做什么的，但是经
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/25/BZOJ2321【BJ2011集训】星器 物理/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1281,7 +1118,7 @@ HINT在样例中, 植物$P_{1,1}$可以攻击位置$(0,0)$, $P_{2, 0}$可以攻�
           Problem
 【HNOI2007】梦幻岛宝珠Time Limit: $10 Sec$  Memory Limit: $162 MB$
 Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a\le 10,b\le 30$）
-Input输入文件中包含多组数据。每组数据的格式如下：第一行是两个正整数$n$和$W$，$1\le n\le 100,1\le W\le 2^{30}$，分别表示宝石的数目和最多能带走的宝石重量。接下来的$n$行，每行有两个正整数$weight_i$和$value_i$，$1\le weight_i\le 2^{30}, 0\le value_i\le 2^{30}$，分别表示第i颗宝石的重量和价值，且保证$weight_i$能写成$a\times 2^b(1\le a\le 10,0\le b\le 30)$的形式。同一行的两个正整数之间用空格隔开。最
+Input输入文件中包含多组数据。每组数据的格式如下：第一行是两个正整数$n$和$W$，$1\le n\le 100,1\le W\le 2^{30}$，分别表
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1413,16 +1250,7 @@ Input输入文件中包含多组数据。每组数据的格式如下：第一行
 Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获得 $c_i\times c_j$ 的价值。一个数字只能参与一次配对，可以不参与配对。在获得的价值总和不小于 $0$ 的前提下，求最多进行多少次配对。
 
 
-Input第一行一个整数 $n$。第二行 $n$ 个整数 $a_1,a_2,\cdots,a_n$。第三行 $n$ 个整数$b_1,b_2,\cdots,b_n$。第四行 $n$ 个整数 $c_1,c_2,\cdots,c_n$。
-Output一行一个数，最多进行多少次配对
-
-
-Sample Input123432 4 82 200 7-1 -2 1
-
-Sample Output14
-
-
-HINT$n\le 200，a_i\le 1
+Input第一行一个整数 $n$。第
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1477,7 +1305,7 @@ HINT$n\le 200，a_i\le 1
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/10/BZOJ1822【JSOI2010】Frozen Nove 冷冻波 二分+最大流/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/BZOJ1877【SDOI2009】晨跑 拆点费用流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1496,7 +1324,136 @@ HINT$n\le 200，a_i\le 1
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/10/BZOJ1822【JSOI2010】Frozen Nove 冷冻波 二分+最大流/" itemprop="url">BZOJ1822【JSOI2010】Frozen Nova 冷冻波 <二分+最大流></a></h1>
+                <a class="post-title-link" href="/2017/12/25/BZOJ1877【SDOI2009】晨跑 拆点费用流/" itemprop="url">BZOJ1877【SDOI2009】晨跑 <拆点费用流></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+【SDOI2009】晨跑Time Limit: $4 Sec$  Memory Limit: $64 MB$
+
+Description$Elaxia$最近迷恋上了空手道，他为自己设定了一套健身计划，比如俯卧撑、仰卧起坐等 等，不过到目前为止，他坚持下来的只有晨跑。 现在给出一张学校附近的地图，这张地图中包含$N$个十字路口和$M$条街道，$Elaxia$只能从 一个十字路口跑向另外一个十字路口，街道之间只在十字路口处相交。$Elaxia$每天从寝室出发 跑到学校，保证寝室编号为$1$，学校编号为$N$。 $Elaxia$的晨跑计划是按周期（包含若干天）进行的，由于他不喜欢走重复
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/25/BZOJ1877【SDOI2009】晨跑 拆点费用流/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/10/CF291D Choosing Capital for Treeland 树形DP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/10/CF291D Choosing Capital for Treeland 树形DP/" itemprop="url">CF291D Choosing Capital for Treeland <树形DP></a></h1>
         
 
         <div class="post-meta">
@@ -1549,16 +1506,13 @@ HINT$n\le 200，a_i\le 1
         
           
           Problem
-【JSOI2010】Frozen Nova 冷冻波Time Limit: $10 Sec$  Memory Limit: $64 MB$
+Choosing Capital for Treeland Time limit: $3000 ms$    Memory limit: $262144 kB$
 
-Description$WJJ$喜欢“魔兽争霸”这个游戏。在游戏中，巫妖是一种强大的英雄，它的技能$Frozen Nova$每次可以杀死一个小精灵。我们认为，巫妖和小精灵都可以看成是平面上的点。 当巫妖和小精灵之间的直线距离不超过$R$，且巫妖看到小精灵的视线没有被树木阻挡（也就是说，巫妖和小精灵的连线与任何树木都没有公共点）的话，巫妖就可以瞬间杀灭一个小精灵。 在森林里有$N$个巫妖，每个巫妖释放$Frozen Nova$之后，都需要等待一段时间，才能再次施放。不同的巫妖有不同的等待时间和施法范围，但相同的是，每次施放都可以杀死一个小精灵。 现在巫妖的头目想知道，若从$0$时刻开始计算，至少需要花费多少时间，可以杀死所有的小精灵？
-
-
-Input输入文件第一行包含三个整数$N,M,K(N,M,K\le 200)$，分别代表巫妖的数量、小精灵的数量和树木的数量。 接下来$N$行，每行包含四个整数$x, y, r, t$，分别代表了每
+DescriptionThe country Treeland consists of n cities, some pairs of them are connected with unidirectional roads. Overall there are $n-1$ roads in the country. We know that if we don’t take the direction of the
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/10/BZOJ1822【JSOI2010】Frozen Nove 冷冻波 二分+最大流/#more" rel="contents">
+            <a class="btn" href="/2017/12/10/CF291D Choosing Capital for Treeland 树形DP/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>

@@ -336,7 +336,7 @@
 【NOIp2007】Core树网的核 Time Limit: $10 Sec$  Memory Limit: $64 MB$
 
 Description
-设$T=(V, E, W)$ 是一个无圈且连通的无向图（也称为无根树），每条边带有正整数的权，我们称$T$为树网（$treenetwork$），其中$V, E$分别表示结点与边的集合，$W$表示各边长度的集合，并设$T$有$n$个结点。 路径：树网中任何两结点$a,b$都存在唯一的一条简单路径，用$d(a,b)$表示以$a,b$为端点的路径的长度，它是该路径上各边长度之和。我们称$d(a,b)$为$a,b$两结点间的距离。 一点$v$到一条路径$P$的距离为该点与$P$上的最近的结点的距离： $d(v，P)=min_{u在P上}{d(v，u)}$。 树网的直径：树网中最长的路径称为树网的直径。对于给定的树网$T$，直径不一定是唯一的，但可以证明：各直径的中点（不一定恰好是某个结点，可能在某条边的内部）是唯一的，我们称该点为树网的中心。 偏心距$ECC(F)$：树网$T$中距路径$F$最远的结点到路径$F$的距离，即 。 
+设$T=(V, E, W)$ 是一个无圈且连通的无向图（也称为无根树），每条边带有正整数的权，我们称$T$为树网（$treenetwork$），其中$V, E$分别表示结点与边的集合，$W$表示各边长度的集合，并设$T$有$n$个结点。 路径：树网中任何两结点$a,b$都存在唯一的一条简单路径，用$d(a,b)$表示以$a,b$为端点的路径的长度，它是该路径上各边长度之和。我们称$d(a,b)$为$a,b$两结点间的距离。 一点
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -468,19 +468,7 @@ Description
 Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。
 
 
-Input第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表示商店数和物品数。接下来$n$行，每行第一个正整数$d[i]$($1\le d[i]\le 10^6$)表示到第$i$家商店的路费，接下来$m$个正整数，依次表示$c[i][j]$($1\le c[i][j]&lt; 10^6$)。
-Output一个正整数，即最小总费用。
-
-
-Sample Input12343 45 7 3 7 92 1 20 3 28 1 20 1 1
-
-Sample Output116
-
-
-HINT在第一家店买$2$号物品，在第二家店买剩下的物品。
-
-标签：状压$DP$
-Solution$M\le 16$，显然是一道状压
+Input第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表示商店数和物品数。接下来$n$行，每行第一个正整数$d[i]$($1\le d[i]\le 10^6$)表示到第$i$家商店的路费，接下来$m$个正
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -612,7 +600,7 @@ Solution$M\le 16$，显然是一道状压
 Description给定一个$n$个点、$m$条边的带权无向图，其中有$s$个点是加油站。每辆车都有一个油量上限$b$，即每次行走距离不能超过$b$，但在加油站可以补满。$q$次询问，每次给出$x,y,b$，表示出发点是$x$，终点是$y$，油量上限为$b$，且保证$x$点和$y$点都是加油站，请回答能否从$x$走到$y$。
 
 
-Input第一行包含三个正整数$n,s,m$($2\le s\le n\le 2\times 10^5$,$1\le m\le 2\times 10^5$)，表示点数、加油站数和边数。第二行包含$s$个互不相同的正整数$c[1],c[2],…cs$，表示每个加油站。接下来$m$行，每行三个正整数$u[i]$,$v[i]$,$d[i]$($1\le u[i],v[i]\le n$,$u[i]\ne v[i]$,$1\le d[i]\le 10^5$)，表示$u[i]$和$v[i]$之间有一条长度为$d[i]$的双向边。
+Input第一行包含三个正整数$n,s,m$($2\le s\le n\le 2\times 10^5$,$1\le m\
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -751,12 +739,140 @@ Sample Input1234567871 6 13 6 3 9 3 5 7 4 1 3 2 4 20 4 7 2 10
 Sample Output15
 
 标签：点分治
-Solution点分治板题。对于每个点，我们计算穿过它的路径的条数。这个值等于它的子树中所有深度之和小于$k$的点对数，可以双指针搞一搞。但这样两个在同一儿子内的点对会算重，所以需要减去它的每个儿子的子树中深度之和小于$k-c$的点对数，其中$c$为它到此儿子的距离。这也可以双指针搞一搞。对于每次分治，我们都要找到当前子树的重心，以保证复杂度为$O(n\log(n))$。
-Code123456789101112131415161718192
+Solution点分治板题。对于每个点，我们
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/11/30/BZOJ1468 Tree 点分治/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/BZOJ3632 外太空旅行 随机化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/" itemprop="url">BZOJ3632 外太空旅行 <随机化></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T00:00:00+08:00">
+                2017-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Problem
+外太空旅行 Time Limit: $5 Sec$  Memory Limit: $128 MB$
+
+Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -884,147 +1000,11 @@ Code123456789101112131415161718192
 Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出发经过所有没有障碍物的点各一次的且最后回到左下角的回路。
 
 
-Input第一行包含三个整数$n,m,f$($1\le n,m\le 1000$且$n,m$都为偶数)。接下来$f$行，每行两个整数$x,y$($1\le x&lt;n$, $1\le y&lt;m$)，表示该障碍物左下角的坐标。
-Output如果无解，输出$NIE$，否则第一行输出$TAK$，第二行输出方案。方案包含$n\times m-4\times f$个字符，第$i$个字符表示第$i$步的移动方向，用$G$表示上，$D$表示下，$L$表示左，$P$表示右。
-
-
-Sample Input12312 6 23 39 
+Input第一行包含三个整数$n,m,f$($1\le n,m\le 1000$且$n,m$都为偶数)。接下来$f$行，每行两
           ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/11/29/BZOJ4148【AMPPZ2014】Pillars 构造/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/BZOJ3632 外太空旅行 随机化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/" itemprop="url">BZOJ3632 外太空旅行 <随机化></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T00:00:00+08:00">
-                2017-11-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Problem
-外太空旅行 Time Limit: $5 Sec$  Memory Limit: $128 MB$
-
-Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C$是朋友，但是小$A$和小$C$两人势如水火。任意两个人之间要不就是敌人，要不就是朋友。因为在太空船上发生人员斗殴事件是很恶劣也很危险的，因此选出来参加旅行活动的同学必须互相之间都是朋友。你的任务就是确定最多可以选多少人参加旅行。
-
-
-Input第一行一个整数$n$($1\le n\le 50$)。所有的同学按照$1\sim n$编号。接下来若干行，每行两个用空格隔开的整数$a, b$ ($1\l
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/29/BZOJ3632 外太空旅行 随机化/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1161,10 +1141,7 @@ Sample Input1234122100
 Sample Output1No
 
 
-HINT对于$90\%$的数据，$N$不超过$100$；对于$100\%$的数据，$N$不超过$1000$，矩阵中的数字大于等于$0$小于$1000$，数据组数不超过$5$组。
-
-标签：矩阵乘法，随机化
-Solution挺巧妙的一道随机化题。首先考虑直接乘，由于$N\le 1000$，而矩乘是$O(n^3)$，肯定会$TLE$。我们发现矩阵太大了，那么我们就要压缩矩阵，把这样一个正方形的矩阵压缩为一个
+HI
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1297,16 +1274,7 @@ Description给定平面上的$n$个点，定义$(x1,y1)$到$(x2,y2)$的费用为
 
 
 Input第一行包含一个正整数$n$($2\le n\le 2\times 10^5$)，表示点数。接下来$n$行，每行包含两个整数$x[i]$,$y[i]$($0\le x[i],y[i]\le 10^9$)，依次表示每个点的坐标。
-Output一个整数，即最小费用。
-
-
-Sample Input12345652 21 14 57 16 7
-
-Sample Output12
-
-标签：最短路径
-Solution一道比较基础的最短路变形。不难发现，在一个凸壳上，如果走任意一条弦，显然没有直接沿着凸壳走优。所以分别按$x$和$y$排两次序，相邻点连边，可得到一个图。在此图上跑最短路即可。注意，此题卡$SPFA$（大佬：不错啊，卡错误算法天经地义~）
-Co
+Output一个整数，
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1433,7 +1401,7 @@ Co
         
           
           NOIp2017滚粗记Day0周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。赶快去看了看博客。一个上午就没了。下午到考场。吃饭前简略看了看树分治。晚上开会的时候又想到欧拉图还没复习，好多年没考过了，赶快看看，免得真考到了。
-Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结论题？推了半小时exGCD，果断弃坑。由于先前没读T2（T2题面太长太烦不想读），气氛挺紧张。还好这时我先看了T2而没跳到T3，读完T2发现好简单，索性栈模拟。码到一半发现貌似栈上东西挺多，突然意识到可以递归模拟，肯定好写得多。不过没管，都码了2/3了，索性码完。水完T2倒回来看T1，打了一个20x20的表，把不互质的情况去掉，发现规律很显然，不就是(a-1)*(b-1)-1吗？赶快水掉。T3看到后觉得难度不算太大。发现可以最短路预处理+
+Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结论题？推了半小时exGCD，果断弃坑。由于
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1488,7 +1456,7 @@ Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/11/LG1155【NOIp2008】双栈排序 二分图染色/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/11/BZOJ4565【HAOI2016】字符合并 状压DP/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1507,7 +1475,7 @@ Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/11/LG1155【NOIp2008】双栈排序 二分图染色/" itemprop="url">LG1155【NOIp2008】双栈排序 <二分图染色></a></h1>
+                <a class="post-title-link" href="/2017/11/11/BZOJ4565【HAOI2016】字符合并 状压DP/" itemprop="url">BZOJ4565【HAOI2016】字符合并 <状压DP></a></h1>
         
 
         <div class="post-meta">
@@ -1560,13 +1528,16 @@ Day1刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结�
         
           
           Problem
-【NOIp2008】双栈排序
-题目描述$Tom$最近在研究一个有趣的排序问题。如图所示，通过$2$个栈$S_1$和$S_2$，$Tom$希望借助以下$4$种操作实现将输入序列升序排序。操作$a$: 如果输入序列不为空，将第一个元素压入栈$S_1$操作$b$: 如果栈$S_1$不为空，将$S_1$栈顶元素弹出至输出序列操作$c$: 如果输入序列不为空，将第一个元素压入栈$S_2$操作$d$: 如果栈$S_2$不为空，将$S_2$栈顶元素弹出至输出序列如果一个$1\sim n$的排列$P$可以通过一系列操作使得输出序列为$1,2,\cdots(n-1),n$，$Tom$就称$P$是一个“可双栈排序排列”。例如$(1,3,2,4)$就是一个“可双栈排序序列”，而$(2,3,4,1)$不是。下图描述了一个将$(1,3,2,4)$排序的操作序列：$&lt;a,c,c,b,a,d,d,b&gt;$
-当然，这样的操作序列有可能有几个，对于上例$(1,3,2,4)$，$&lt;a,c,c,b,a,d,d,b&gt;$是另外一个可行的操作序列。$Tom$希望知道其中字典序最小的操作序列是
+【HAOI2016】字符合并 Time Limit: $20 Sec$  Memory Limit: $256 MB$
+
+Description有一个长度为 $n$ 的 $01$ 串，你可以每次将相邻的 $k$ 个字符合并，得到一个新的字符并获得一定分数。得到的新字符和分数由这 $k$ 个字符确定。你需要求出你能获得的最大分数。
+
+
+Input第一行两个整数$n$，$k$。接下来一行长度为$n$的$01$串，表示初始串。接下来$2^k$行，每行一个字符$c_i$和一个整数$w_i$，$c_i$表示长度为$k$的$01$串连成二进制后按从小到大顺序得到的第$i$种合并方案得到的新
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/11/11/LG1155【NOIp2008】双栈排序 二分图染色/#more" rel="contents">
+            <a class="btn" href="/2017/11/11/BZOJ4565【HAOI2016】字符合并 状压DP/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
