@@ -98,10 +98,22 @@
 
 
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('Password') !== ''){
+                alert('ERROR! Wrong Password!');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
 <meta name="description" content="Veni, Vidi, Vici">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NIRVANA">
-<meta property="og:url" content="http://yoursite.com/page/8/index.html">
+<meta property="og:url" content="http://azrael.top/page/8/index.html">
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Veni, Vidi, Vici">
 <meta property="og:locale" content="zh-Hans">
@@ -137,7 +149,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/8/"/>
+  <link rel="canonical" href="http://azrael.top/page/8/"/>
 
 
 
@@ -307,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1070【SCOI2007】修车 费用流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -326,7 +338,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/17/BZOJ2466【中山市选2009】树 高斯消元/" itemprop="url">BZOJ2466 【中山市选2009】树 <高斯消元></a></h1>
+                <a class="post-title-link" href="/BZOJ1070【SCOI2007】修车 费用流/" itemprop="url">BZOJ1070【SCOI2007】修车 <费用流></a></h1>
         
 
         <div class="post-meta">
@@ -360,6 +372,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  803
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
 
           
 
@@ -379,28 +422,25 @@
         
           
             <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【中山市选2009】树"><a href="#【中山市选2009】树" class="headerlink" title="【中山市选2009】树"></a>【中山市选2009】树</h2></blockquote>
-<p> Time Limit: $10 Sec$<br> Memory Limit: $128 MB$</p>
+<h2 id="【SCOI2007】修车"><a href="#【SCOI2007】修车" class="headerlink" title="【SCOI2007】修车"></a>【SCOI2007】修车</h2><p> Time Limit: $1 Sec$    Memory Limit: $128 MB$</p>
+</blockquote>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>同一时刻有$N$位车主带着他们的爱车来到了汽车维修中心。维修中心共有$M$位技术人员，不同的技术人员对不同的车进行维修所用的时间是不同的。现在需要安排这$M$位技术人员所维修的车及顺序，使得顾客平均等待的时间最小。<br>说明：顾客的等待时间是指从他把车送至维修中心到维修完毕所用的时间。</p>
 <blockquote>
 </blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>图论中的树为一个无环的无向图。给定一棵树，每个节点有一盏指示灯和一个按钮。如果节点的按扭被按了，那么该节点的灯会从熄灭变为点亮（当按之前是熄灭的），或者从点亮到熄灭（当按之前是点亮的），并且该节点的直接邻居也发生同样的变化。开始的时候，所有的指示灯都是熄灭的。<br>请编程计算最少要按多少次按钮，才能让所有节点的指示灯变为点亮状态。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行有两个$m,n$，表示技术人员数与顾客数。 接下来$n$行，每行$m$个整数。第$i+1$行第$j$个数表示第$j$位技术人<br>员维修第$i$辆车需要用的时间$T$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>最小平均等待时间，答案精确到小数点后$2$位。</p>
 <blockquote>
 </blockquote>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件有多组数据。<br>输入第一行包含一个整数$n$，表示树的节点数目。每个节点的编号从$1$到$n$。<br>输入接下来的$n–1$行，每一行包含两个整数$x$，$y$，表示节点$x$和$y$之间有一条无向边。<br>当输入$n$为$0$时，表示输入结束。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每组数据，输出最少要按多少次按钮，才能让所有节点的指示灯变为点亮状态。每一组数据独占一行。</p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 2</span><br><span class="line">3 2</span><br><span class="line">1 4</span><br></pre></td></tr></table></figure>
 <blockquote>
-</blockquote>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">1 2</span><br><span class="line">1 3</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.50</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
-<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p> 对于$100\%$的数据，满足$1\le n\le100$。</p>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p> 据范围: $2\le M\le 9$, $1\le N\le 60$, $1\le T\le 1000$</p>
 </blockquote>
-<p>标签：高斯消元</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>将所有节点按的次数设为$x_1\sim x_n$，会得到一个线性异或方程组。<br>这时可以$bitset+高消$水过。</p>
-<p>不懂高消可以戳这里：<a href="http://www.cppblog.com/menjitianya/archive/2014/06/08/207226.html" target="_blank" rel="noopener">http://www.cppblog.com/menjitianya/archive/2014/06/08/207226.html</a></p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bitset&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 100</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, x[MAX_N+<span class="number">5</span>], num[MAX_N+<span class="number">5</span>], cnt;</span><br><span class="line"><span class="built_in">bitset</span> &lt;MAX_N+5&gt; f[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;cnt = <span class="number">0</span>;	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	f[i].reset(), f[i][i] = f[i][n+<span class="number">1</span>] = <span class="number">1</span>;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">gauss</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> cur = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, tmp; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (tmp = cur; tmp &lt;= n; tmp++)	<span class="keyword">if</span> (f[tmp][i] == <span class="number">1</span>)	<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">if</span> (tmp &gt; n) &#123;num[cnt++] = i;	<span class="keyword">continue</span>;&#125;	swap(f[cur], f[tmp]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)	<span class="keyword">if</span> (j != cur &amp;&amp; f[j][i])	f[j] ^= f[cur];</span><br><span class="line">		cur++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">(<span class="keyword">int</span> sta)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	x[i] = f[i][n+<span class="number">1</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cnt; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (!(sta&amp;(<span class="number">1</span>&lt;&lt;i)))	<span class="keyword">continue</span>;	ret++;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)	<span class="keyword">if</span> (f[j][num[i]])	x[j] ^= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	ret += x[i];</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n) &amp;&amp; n != <span class="number">0</span>) &#123;</span><br><span class="line">		init();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, u, v; i &lt; n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;u, &amp;v), f[u][v] = f[v][u] = <span class="number">1</span>;</span><br><span class="line">		gauss();	<span class="keyword">int</span> ans = n;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> sta = <span class="number">0</span>; sta &lt; (<span class="number">1</span>&lt;&lt;cnt); sta++)	ans = min(ans, calc(sta));</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, ans);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>标签：费用流</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>此题建模是费用流中常见的拆点建模。<br>把每个技术人员拆成$n$个点，第$k$个点代表着此工作人员修的倒数第$k$辆车对答案的贡献。<br>对于每个顾客，如果他倒数第$k$个修车，花费$t$的时间，会对答案产生$t\times k$的贡献。<br>因此从每个顾客向每个技术人员的$n$个点连边，容量为$1$，花费为$t\times k$，然后跑费用流即可。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 10000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 200000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 2147483647</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, s, t, ans, a[<span class="number">65</span>][<span class="number">10</span>];</span><br><span class="line"><span class="keyword">int</span> pre[MAX_N+<span class="number">5</span>], cnt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, w, nxt;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;s = <span class="number">0</span>, t = n*m+n+<span class="number">1</span>, cnt = <span class="number">0</span>;	<span class="built_in">memset</span>(pre, <span class="number">-1</span>, <span class="keyword">sizeof</span>(pre));&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c, <span class="keyword">int</span> w)</span> </span>&#123;</span><br><span class="line">	E[cnt].v = v, E[cnt].c = c, E[cnt].w = w, E[cnt].nxt = pre[u], pre[u] = cnt++;</span><br><span class="line">	E[cnt].v = u, E[cnt].c = <span class="number">0</span>, E[cnt].w =-w, E[cnt].nxt = pre[v], pre[v] = cnt++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">SPFA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;	<span class="keyword">bool</span> inque[MAX_N+<span class="number">5</span>];	<span class="keyword">int</span> dis[MAX_N+<span class="number">5</span>], pree[MAX_N+<span class="number">5</span>];</span><br><span class="line">	<span class="built_in">memset</span>(inque, <span class="literal">false</span>, <span class="keyword">sizeof</span>(inque)), <span class="built_in">memset</span>(pree, <span class="number">-1</span>, <span class="keyword">sizeof</span>(pree));</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = s; i &lt;= t; i++)	dis[i] = INF;</span><br><span class="line">	dis[s] = <span class="number">0</span>, que.push(s), inque[s] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();	que.pop(), inque[u] = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pre[u]; ~i; i = E[i].nxt) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v, c = E[i].c, w = E[i].w;</span><br><span class="line">			<span class="keyword">if</span> (c &amp;&amp; dis[u]+w &lt; dis[v]) &#123;</span><br><span class="line">				dis[v] = dis[u]+w, pree[v] = i;</span><br><span class="line">				<span class="keyword">if</span> (!inque[v])	que.push(v), inque[v] = <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (dis[t] == INF)	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">int</span> flow = INF;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = pree[t]; ~i; i = pree[E[i^<span class="number">1</span>].v])	flow = min(flow, E[i].c);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = pree[t]; ~i; i = pree[E[i^<span class="number">1</span>].v])	E[i].c -= flow, E[i^<span class="number">1</span>].c += flow;</span><br><span class="line">	ans += dis[t];	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;m, &amp;n), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i][j]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	insert(s, i, <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= n; k++)	insert(i, j*n+k, <span class="number">1</span>, a[i][j]*k);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= n; k++)	insert(j*n+k, t, <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">while</span> (SPFA()) ;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%.2lf"</span>, (<span class="keyword">double</span>)ans/n);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -452,7 +492,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/16/BZOJ1001【BJOI2006】狼抓兔子 网络流/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1001【BJOI2006】狼抓兔子 网络流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -471,7 +511,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/16/BZOJ1001【BJOI2006】狼抓兔子 网络流/" itemprop="url">BZOJ1001【BJOI2006】狼抓兔子 <网络流></a></h1>
+                <a class="post-title-link" href="/BZOJ1001【BJOI2006】狼抓兔子 网络流/" itemprop="url">BZOJ1001【BJOI2006】狼抓兔子 <网络流></a></h1>
         
 
         <div class="post-meta">
@@ -505,6 +545,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  984
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
 
           
 
@@ -534,7 +605,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数，表示参与伏击的狼的最小数量.<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/10/16/BZOJ1001【BJOI2006】狼抓兔子 网络流/#more" rel="contents">
+            <a class="btn" href="/BZOJ1001【BJOI2006】狼抓兔子 网络流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -589,7 +660,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/14/BZOJ1997【HNOI2010】Planer 2-SAT/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -608,7 +679,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/14/BZOJ1997【HNOI2010】Planer 2-SAT/" itemprop="url">BZOJ1997 Planer <2-SAT></a></h1>
+                <a class="post-title-link" href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/" itemprop="url">POJ3207 Ikki's Story IV - Panda's Trick <2-SAT></a></h1>
         
 
         <div class="post-meta">
@@ -641,6 +712,198 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  717
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Ikki’s-Story-IV-Panda’s-Trick"><a href="#Ikki’s-Story-IV-Panda’s-Trick" class="headerlink" title="Ikki’s Story IV - Panda’s Trick"></a>Ikki’s Story IV - Panda’s Trick</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>liympanda, one of Ikki’s friend, likes playing games with Ikki. Today after minesweeping with Ikki and winning so many times, he is tired of such easy games and wants to play another game with Ikki.<br>liympanda has a magic circle and he puts it on a plane, there are n points on its boundary in circular border: $0, 1, 2, \cdots , n-1$. Evil panda claims that he is connecting m pairs of points. To connect two points, liympanda either places the link entirely inside the circle or entirely outside the circle. Now liympanda tells Ikki no two links touch inside/outside the circle, except on the boundary. He wants Ikki to figure out whether this is possible…<br>Despaired at the minesweeping game just played, Ikki is totally at a loss, so he decides to write a program to help him.</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The input contains exactly one test case.<br>In the test case there will be a line consisting of of two integers: $n$ and $m$ $(n \le 1,000, m \le 500)$. The following $m$ lines each contain two integers $a_i$ and $b_i$, which denote the endpoints of the $i^{th}$ wire. Every point will have at most one link.</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Output a line, either “panda is telling the truth…” or “the evil panda is lying again”.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1997【HNOI2010】Planer 2-SAT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1997【HNOI2010】Planer 2-SAT/" itemprop="url">BZOJ1997 Planer <2-SAT></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T00:00:00+08:00">
+                2017-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  399
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
           
 
           
@@ -718,7 +981,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/14/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/20171001-08总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -737,137 +1000,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/14/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/" itemprop="url">POJ3207 Ikki's Story IV - Panda's Trick <2-SAT></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T00:00:00+08:00">
-                2017-10-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Ikki’s-Story-IV-Panda’s-Trick"><a href="#Ikki’s-Story-IV-Panda’s-Trick" class="headerlink" title="Ikki’s Story IV - Panda’s Trick"></a>Ikki’s Story IV - Panda’s Trick</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>liympanda, one of Ikki’s friend, likes playing games with Ikki. Today after minesweeping with Ikki and winning so many times, he is tired of such easy games and wants to play another game with Ikki.<br>liympanda has a magic circle and he puts it on a plane, there are n points on its boundary in circular border: $0, 1, 2, \cdots , n-1$. Evil panda claims that he is connecting m pairs of points. To connect two points, liympanda either places the link entirely inside the circle or entirely outside the circle. Now liympanda tells Ikki no two links touch inside/outside the circle, except on the boundary. He wants Ikki to figure out whether this is possible…<br>Despaired at the minesweeping game just played, Ikki is totally at a loss, so he decides to write a program to help him.</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The input contains exactly one test case.<br>In the test case there will be a line consisting of of two integers: $n$ and $m$ $(n \le 1,000, m \le 500)$. The following $m$ lines each contain two integers $a_i$ and $b_i$, which denote the endpoints of the $i^{th}$ wire. Every point will have at most one link.</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Output a line, either “panda is telling the truth…” or “the evil panda is lying again”.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/14/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/10/20171001-08总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/10/20171001-08总结/" itemprop="url">201701001-08总结</a></h1>
+                <a class="post-title-link" href="/20171001-08总结/" itemprop="url">201701001-08总结</a></h1>
         
 
         <div class="post-meta">
@@ -900,6 +1033,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,773
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
           
 
           
@@ -1008,7 +1172,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/29/洛谷模板汇总/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/洛谷模板汇总/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1027,7 +1191,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/29/洛谷模板汇总/" itemprop="url">【福利】洛谷模板汇总</a></h1>
+                <a class="post-title-link" href="/洛谷模板汇总/" itemprop="url">【福利】洛谷模板汇总</a></h1>
         
 
         <div class="post-meta">
@@ -1060,6 +1224,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  11,555
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  72
+                </span>
+              
+            </div>
           
 
           
@@ -1170,7 +1365,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/27/BZOJ1787【AHOI2008】Meet紧急集合 LCA/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1787【AHOI2008】Meet紧急集合 LCA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1189,7 +1384,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/27/BZOJ1787【AHOI2008】Meet紧急集合 LCA/" itemprop="url">BZOJ1787【AHOI2008】Meet紧急集合 <LCA></a></h1>
+                <a class="post-title-link" href="/BZOJ1787【AHOI2008】Meet紧急集合 LCA/" itemprop="url">BZOJ1787【AHOI2008】Meet紧急集合 <LCA></a></h1>
         
 
         <div class="post-meta">
@@ -1222,6 +1417,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  954
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
           
 
           
@@ -1313,7 +1539,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2038 小Z的袜子 莫队/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1332,7 +1558,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/" itemprop="url">UVa12345 Dynamic len(set(a[L:R])) <带修莫队></a></h1>
+                <a class="post-title-link" href="/BZOJ2038 小Z的袜子 莫队/" itemprop="url">BZOJ2038 小Z的袜子 <莫队></a></h1>
         
 
         <div class="post-meta">
@@ -1366,135 +1592,36 @@
           
 
           
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Dynamic-len-set-a-L-R"><a href="#Dynamic-len-set-a-L-R" class="headerlink" title="Dynamic len(set(a[L:R]))"></a>Dynamic len(set(a[L:R]))</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In python, we can use len(start(a[L:R])) to calculate the number of distinct values of elements $a[L],a[L + 1], \cdots,a[R-1]$.<br>Tere are some interactive examples that may help you understand how it is done. Remember that the indices of python lists start from $0$.<br>>>><br>a=[1,2,1,3,2,1,4]<br>>>> print a[1:6]<br>[2, 1, 3, 2, 1]<br>>>> print set(a[1:6])<br>set([1, 2, 3])<br>>>> print<br>len(set(a[1:6]))<br>3<br>>>> a[3]=2<br>>>> print<br>len(set(a[1:6]))<br>2<br>>>> print len(set(a[3:5]))<br>1<br>Your task is to simulate this process.</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>There will be only one test case. The first line contains two integers $n$ and $m$ $(1\le n,m\le 50,000)$.<br>The next line contains the original list.<br>All the integers are between $1$ and $1,000,000$ (inclusive). The next m lines contain the statements<br>that you need to execute.<br>A line formatted as ‘$M$ $x$ $y$’ $(1\le y\le 1,000,000)$ means $a[x] = y$, and a line formatted as ‘$Q$ $x$<br>$y$’ means $print len(set(a[x : y]))$.<br>It is guaranteed that the statements will not cause $index$ $out$ $of$ $range$ error.</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Print the simulated result, one line for each query.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/25/UVa12345 Dynamic len(set(a[LR])) 带修莫队/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/BZOJ2038 小Z的袜子 莫队/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+            <div class="post-wordcount">
+              
                 
-                <a class="post-title-link" href="/2017/09/25/BZOJ2038 小Z的袜子 莫队/" itemprop="url">BZOJ2038 小Z的袜子 <莫队></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,048
+                </span>
               
-                <span class="post-meta-item-text">发表于</span>
+
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
-                2017-09-25
-              </time>
-            
+                <span class="post-meta-divider">|</span>
+              
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
           
 
           
@@ -1584,7 +1711,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/HDU3068 最长回文 Manacher/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/HDU3068 最长回文 Manacher/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1603,7 +1730,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/25/HDU3068 最长回文 Manacher/" itemprop="url">HDU3068 最长回文 <Manacher></a></h1>
+                <a class="post-title-link" href="/HDU3068 最长回文 Manacher/" itemprop="url">HDU3068 最长回文 <Manacher></a></h1>
         
 
         <div class="post-meta">
@@ -1636,6 +1763,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  483
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
           
 
           
@@ -1675,6 +1833,167 @@
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$Manacher$板子题。<br>不懂$Manacher$可以戳这里：<a href="https://segmentfault.com/a/1190000003914228" target="_blank" rel="noopener">https://segmentfault.com/a/1190000003914228</a><br>简单来说，$Manacher$就是记录以每个位置为中心的回文串的半径长度，这样在后面计算的时候可以根据对称性，利用前面的结果加速，找更长匹配时暴力扩展，复杂度$O(n)$。由于此算法仅能对付长度为奇数的回文串（毕竟你算的是以每个点为<strong>中心</strong>的回文串），故先在每两个字符间插入一个占位符。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_L 110000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s[MAX_L*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> f[MAX_L*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">manacher</span> <span class="params">(<span class="keyword">char</span>* s0)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> len = <span class="built_in">strlen</span>(s0);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)	s[i*<span class="number">2</span>+<span class="number">1</span>] = <span class="string">'#'</span>, s[i*<span class="number">2</span>+<span class="number">2</span>] = s0[i];</span><br><span class="line">	s[len = len*<span class="number">2</span>+<span class="number">1</span>] = <span class="string">'#'</span>;</span><br><span class="line">	<span class="keyword">int</span> pos = <span class="number">0</span>, r = <span class="number">0</span>, ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= len; i++) &#123;</span><br><span class="line">		f[i] = (i &lt; r) ? min(f[<span class="number">2</span>*pos-i], r-i) : <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span> (i-f[i] &gt;= <span class="number">1</span> &amp;&amp; i+f[i] &lt;= len &amp;&amp; s[i-f[i]] == s[i+f[i]])	f[i]++;</span><br><span class="line">		<span class="keyword">if</span> (i+f[i] &gt; r)	pos = i, r = i+f[i];</span><br><span class="line">		ret = max(ret, f[i]<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">char</span> s0[MAX_L+<span class="number">5</span>];</span><br><span class="line">	<span class="keyword">while</span> (~<span class="built_in">scanf</span>(<span class="string">"%s"</span>, s0))	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, manacher(s0));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/UVa12345 Dynamic len(set(a[LR])) 带修莫队/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/UVa12345 Dynamic len(set(a[LR])) 带修莫队/" itemprop="url">UVa12345 Dynamic len(set(a[L:R])) <带修莫队></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  939
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Dynamic-len-set-a-L-R"><a href="#Dynamic-len-set-a-L-R" class="headerlink" title="Dynamic len(set(a[L:R]))"></a>Dynamic len(set(a[L:R]))</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In python, we can use len(start(a[L:R])) to calculate the number of distinct values of elements $a[L],a[L + 1], \cdots,a[R-1]$.<br>Tere are some interactive examples that may help you understand how it is done. Remember that the indices of python lists start from $0$.<br>>>><br>a=[1,2,1,3,2,1,4]<br>>>> print a[1:6]<br>[2, 1, 3, 2, 1]<br>>>> print set(a[1:6])<br>set([1, 2, 3])<br>>>> print<br>len(set(a[1:6]))<br>3<br>>>> a[3]=2<br>>>> print<br>len(set(a[1:6]))<br>2<br>>>> print len(set(a[3:5]))<br>1<br>Your task is to simulate this process.</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>There will be only one test case. The first line contains two integers $n$ and $m$ $(1\le n,m\le 50,000)$.<br>The next line contains the original list.<br>All the integers are between $1$ and $1,000,000$ (inclusive). The next m lines contain the statements<br>that you need to execute.<br>A line formatted as ‘$M$ $x$ $y$’ $(1\le y\le 1,000,000)$ means $a[x] = y$, and a line formatted as ‘$Q$ $x$<br>$y$’ means $print len(set(a[x : y]))$.<br>It is guaranteed that the statements will not cause $index$ $out$ $of$ $range$ error.</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Print the simulated result, one line for each query.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/UVa12345 Dynamic len(set(a[LR])) 带修莫队/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1797,6 +2116,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/AzraelDeath" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/azraeldeath" target="_blank" title="ZhiHu">
+                      
+                        <i class="fa fa-fw fa-globe"></i>ZhiHu</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -1893,15 +2228,26 @@
   <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">123.7k</span>
+  
 </div>
 
 
   <div class="powered-by">
   <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-    本站访客数:<span id="busuanzi_value_site_uv"></span>  | 
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
   </span>
   </div>
   
+  <span class="post-meta-divider">|</span>
+
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 

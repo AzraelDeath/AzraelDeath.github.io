@@ -2,17 +2,17 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://yoursite.com/post-sitemap.xml</loc>
-        <lastmod>2018-03-03T15:24:03.077Z</lastmod>
+        <loc>http://azrael.top/post-sitemap.xml</loc>
+        <lastmod>2018-03-04T10:56:10.699Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/page-sitemap.xml</loc>
+        <loc>http://azrael.top/page-sitemap.xml</loc>
         <lastmod>2018-03-03T13:12:12.942Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/tag-sitemap.xml</loc>
+        <loc>http://azrael.top/tag-sitemap.xml</loc>
         <lastmod>2018-01-06T02:06:41.223Z</lastmod>
     </sitemap>
 
