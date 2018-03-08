@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem 【AMPPZ2014】The Prices Time Limit: $20 Sec$  Memory Limit: $256 MB$  Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。   Input第一行包含两个正整数$n,m$($1\le n">
+<meta name="description" content="Problem【AMPPZ2014】The PricesTime Limit: $20 Sec$Memory Limit: $256 MB$ Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。 Input第一行包含两个正整数$n,m$($1\le n\le 100">
 <meta name="keywords" content="BZOJ,DP,状压DP,AMPPZ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4145【AMPPZ2014】The Prices &lt;状压DP&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4145【AMPPZ2014】The Prices 状压DP/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 【AMPPZ2014】The Prices Time Limit: $20 Sec$  Memory Limit: $256 MB$  Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。   Input第一行包含两个正整数$n,m$($1\le n">
+<meta property="og:description" content="Problem【AMPPZ2014】The PricesTime Limit: $20 Sec$Memory Limit: $256 MB$ Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。 Input第一行包含两个正整数$n,m$($1\le n\le 100">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T03:39:21.293Z">
+<meta property="og:updated_time" content="2018-03-08T08:01:36.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4145【AMPPZ2014】The Prices &lt;状压DP&gt;">
-<meta name="twitter:description" content="Problem 【AMPPZ2014】The Prices Time Limit: $20 Sec$  Memory Limit: $256 MB$  Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。   Input第一行包含两个正整数$n,m$($1\le n">
+<meta name="twitter:description" content="Problem【AMPPZ2014】The PricesTime Limit: $20 Sec$Memory Limit: $256 MB$ Description你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。 Input第一行包含两个正整数$n,m$($1\le n\le 100">
 
 
 
@@ -418,24 +418,14 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【AMPPZ2014】The-Prices"><a href="#【AMPPZ2014】The-Prices" class="headerlink" title="【AMPPZ2014】The Prices"></a>【AMPPZ2014】The Prices</h2><p> Time Limit: $20 Sec$  Memory Limit: $256 MB$</p>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【AMPPZ2014】The-Prices"><a href="#【AMPPZ2014】The-Prices" class="headerlink" title="【AMPPZ2014】The Prices"></a>【AMPPZ2014】The Prices</h3><p>Time Limit: $20 Sec$<br>Memory Limit: $256 MB$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。</p>
-<blockquote>
-</blockquote>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表示商店数和物品数。<br>接下来$n$行，每行第一个正整数$d[i]$($1\le d[i]\le 10^6$)表示到第$i$家商店的路费，接下来$m$个正整数，<br>依次表示$c[i][j]$($1\le c[i][j]&lt; 10^6$)。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个正整数，即最小总费用。</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个正整数，即最小总费用。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3 4</span><br><span class="line">5 7 3 7 9</span><br><span class="line">2 1 20 3 2</span><br><span class="line">8 1 20 1 1</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 <h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>在第一家店买$2$号物品，在第二家店买剩下的物品。</p>
-</blockquote>
-<p>标签：状压$DP$</p>
+<p>标签：<code>状压DP</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$M\le 16$，显然是一道状压$DP$。<br>用$f[i][j]$表示考虑$1\sim i$家商店，购买状态为$j$的方案数。套路状压转移即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 100</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 16</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">int</span> n, m, d[MAX_N+<span class="number">5</span>], c[MAX_N+<span class="number">5</span>][MAX_M+<span class="number">5</span>], f[MAX_N+<span class="number">5</span>][(<span class="number">1</span>&lt;&lt;MAX_M)+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;<span class="built_in">scanf</span>(<span class="string">"%d"</span>, d+i);	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, c[i]+j);&#125;</span><br><span class="line">	<span class="built_in">memset</span>(f, <span class="number">0x3f</span>, <span class="keyword">sizeof</span> f);	f[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">1</span>&lt;&lt;m); j++)	f[i][j] = f[i<span class="number">-1</span>][j]+d[i];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= m; k++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">1</span>&lt;&lt;m); j++)</span><br><span class="line">			<span class="keyword">if</span> ((j&amp;(<span class="number">1</span>&lt;&lt;k<span class="number">-1</span>)) == <span class="number">0</span>)	f[i][j|(<span class="number">1</span>&lt;&lt;k<span class="number">-1</span>)] = min(f[i][j]+c[i][k], f[i][j|(<span class="number">1</span>&lt;&lt;k<span class="number">-1</span>)]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">1</span>&lt;&lt;m); j++)	f[i][j] = min(f[i][j], f[i<span class="number">-1</span>][j]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, f[n][(<span class="number">1</span>&lt;&lt;m)<span class="number">-1</span>]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -502,8 +492,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ4148【AMPPZ2014】Pillars 构造/" rel="next" title="BZOJ4148【AMPPZ2014】Pillars <构造>">
-                <i class="fa fa-chevron-left"></i> BZOJ4148【AMPPZ2014】Pillars <构造>
+              <a href="/BZOJ1468 Tree 点分治/" rel="next" title="BZOJ1468 Tree <点分治>">
+                <i class="fa fa-chevron-left"></i> BZOJ1468 Tree <点分治>
               </a>
             
           </div>
@@ -639,7 +629,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -757,7 +747,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【AMPPZ2014】The-Prices"><span class="nav-number">2.</span> <span class="nav-text">【AMPPZ2014】The Prices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">2.6.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【AMPPZ2014】The-Prices"><span class="nav-number">1.1.</span> <span class="nav-text">【AMPPZ2014】The Prices</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">1.7.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

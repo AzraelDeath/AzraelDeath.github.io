@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="网络流,BZOJ,省选,图论," />
+  <meta name="keywords" content="BZOJ,省选,网络流,图论," />
 
 
 
@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem 善意的投票 题目描述幼儿园里有n个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？   输入输">
-<meta name="keywords" content="网络流,BZOJ,省选,图论">
+<meta name="description" content="Problem善意的投票题目描述幼儿园里有$n$个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？ 输入输出格">
+<meta name="keywords" content="BZOJ,省选,网络流,图论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1934【SHOI2007】善意的投票 &lt;网络流&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1934【SHOI2007】善意的投票 网络流/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 善意的投票 题目描述幼儿园里有n个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？   输入输">
+<meta property="og:description" content="Problem善意的投票题目描述幼儿园里有$n$个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？ 输入输出格">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T14:11:20.031Z">
+<meta property="og:updated_time" content="2018-03-08T08:36:45.667Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1934【SHOI2007】善意的投票 &lt;网络流&gt;">
-<meta name="twitter:description" content="Problem 善意的投票 题目描述幼儿园里有n个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？   输入输">
+<meta name="twitter:description" content="Problem善意的投票题目描述幼儿园里有$n$个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？ 输入输出格">
 
 
 
@@ -381,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  887
+                  897
                 </span>
               
 
@@ -418,23 +418,13 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="善意的投票"><a href="#善意的投票" class="headerlink" title="善意的投票"></a>善意的投票</h2></blockquote>
-<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>幼儿园里有n个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。<br>虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。<br>我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？</p>
-<blockquote>
-</blockquote>
-<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>文件的第一行只有两个整数n，m，保证有2 ≤n ≤300，1 ≤m ≤n(n-1)/2。<br>其中n代表总人数，m代表好朋友的对数。文件第二行有n个整数，第i个<br>整数代表第i个小朋友的意愿，当它为1时表示同意睡觉，当它为0时表示<br>反对睡觉。接下来文件还有m行，每行有两个整数i，j。表示i，j是一对<br>好朋友，我们保证任何两对i，j不会重复。<br>输出格式：<br>只需要输出一个整数，即可能的最小冲突数。</p>
-<blockquote>
-</blockquote>
-<h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><p>输入样例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">3 3</span><br><span class="line">1 0 0</span><br><span class="line">1 2</span><br><span class="line">1 3</span><br><span class="line">3 2</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>输出样例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>2≤n≤300，1≤m≤n(n-1)/2。</p>
-</blockquote>
-<p>标签：网络流，最小割</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>最小割建图如下：<br>如果本人意见为0，则与源点相连，反之与汇点相连。<br>对于每对朋友关系，互相连边。<br>所有边的容量均为1，跑最大流最小割即可。</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="善意的投票"><a href="#善意的投票" class="headerlink" title="善意的投票"></a>善意的投票</h3><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>幼儿园里有$n$个小朋友打算通过投票来决定睡不睡午觉。对他们来说，这个问题并不是很重要，于是他们决定发扬谦让精神。<br>虽然每个人都有自己的主见，但是为了照顾一下自己朋友的想法，他们也可以投和自己本来意愿相反的票。我们定义一次投票的冲突数为好朋友之间发生冲突的总数加上和所有和自己本来意愿发生冲突的人数。<br>我们的问题就是，每位小朋友应该怎样投票，才能使冲突数最小？</p>
+<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p><strong>输入格式</strong><br>文件的第一行只有两个整数$n$，$m$，保证有$2\le n\le 300$，$1\le m\le n\times (n-1)/2$。<br>其中$n$代表总人数，$m$代表好朋友的对数。文件第二行有$n$个整数，第$i$个整数代表第$i$个小朋友的意愿，当它为$1$时表示同意睡觉，当它为$0$时表示反对睡觉。接下来文件还有$m$行，每行有两个整数$i$，$j$。表示$i$，$j$是一对好朋友，我们保证任何两对$i$，$j$不会重复。<br><strong>输出格式</strong><br>只需要输出一个整数，即可能的最小冲突数。<br><a id="more"></a></p>
+<h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><p><strong>输入样例</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">3 3</span><br><span class="line">1 0 0</span><br><span class="line">1 2</span><br><span class="line">1 3</span><br><span class="line">3 2</span><br></pre></td></tr></table></figure></p>
+<p><strong>输出样例</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure></p>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>$2\le n\le 300$，$1\le m\le n\times (n-1)/2$。</p>
+<p>标签：<code>网络流</code> <code>最小割</code></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>最小割建图如下：<br>如果本人意见为$0$，则与源点相连，反之与汇点相连。<br>对于每对朋友关系，互相连边。<br>所有边的容量均为$1$，跑最大流最小割即可。</p>
 <p>原理：对于每个人，如果有朋友与他意见不合，则他要么割自己到源点（汇点）的一条边，要么割与朋友的边，代价等于容量。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 300</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M MAX_N*(MAX_N-1)*2 </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 2147483647</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, s, t;</span><br><span class="line"><span class="keyword">int</span> d[MAX_N+<span class="number">5</span>], first[MAX_N+<span class="number">5</span>], cnt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, next;&#125; E[MAX_M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	cnt = <span class="number">0</span>;</span><br><span class="line">	<span class="built_in">memset</span>(first, <span class="number">-1</span>, <span class="keyword">sizeof</span>(first));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">	E[cnt].v = v, E[cnt].c = c;</span><br><span class="line">	E[cnt].next = first[u];</span><br><span class="line">	first[u] = cnt++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">AddEdge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">	Insert(u, v, c);</span><br><span class="line">	Insert(v, u, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">BFS</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(d, <span class="number">-1</span>, <span class="keyword">sizeof</span>(d));</span><br><span class="line">	<span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; que;</span><br><span class="line">	que.push(s), d[s] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.front();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = first[u]; i != <span class="number">-1</span>; i = E[i].next) &#123;</span><br><span class="line">			<span class="keyword">int</span> v = E[i].v;</span><br><span class="line">			<span class="keyword">if</span> (E[i].c &amp;&amp; d[v] == <span class="number">-1</span>) &#123;</span><br><span class="line">				d[v] = d[u]+<span class="number">1</span>;</span><br><span class="line">				que.push(v);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		que.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> (d[t] != <span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> flow)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (u == t)	<span class="keyword">return</span> flow;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = first[u]; i != <span class="number">-1</span>; i = E[i].next) &#123;</span><br><span class="line">		<span class="keyword">int</span> v = E[i].v;</span><br><span class="line">		<span class="keyword">if</span> (E[i].c &amp;&amp; d[v] == d[u]+<span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">int</span> tmp = DFS(v, min(flow, E[i].c));</span><br><span class="line">			<span class="keyword">if</span> (!tmp)	<span class="keyword">continue</span>;</span><br><span class="line">			flow -= tmp, E[i].c -= tmp;</span><br><span class="line">			ret += tmp, E[i^<span class="number">1</span>].c += tmp;</span><br><span class="line">			<span class="keyword">if</span> (!flow)	<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (!ret)	d[u] = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Dinic</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (BFS())</span><br><span class="line">		ret += DFS(s, INF);</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	Init();	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">	s = <span class="number">0</span>, t = n+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> f;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;f);</span><br><span class="line">		<span class="keyword">if</span> (f == <span class="number">1</span>) &#123;</span><br><span class="line">			AddEdge(s, i, <span class="number">1</span>);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			AddEdge(i, t, <span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> u, v;	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;u, &amp;v);</span><br><span class="line">		AddEdge(u, v, <span class="number">1</span>);</span><br><span class="line">		AddEdge(v, u, <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, Dinic());</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -482,11 +472,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
-          
             <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
+          
+            <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
           
             <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
           
@@ -501,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ3144【HZNOI2013】切糕 最小割/" rel="next" title="BZOJ3144【HZNOI2013】切糕 <最小割>">
-                <i class="fa fa-chevron-left"></i> BZOJ3144【HZNOI2013】切糕 <最小割>
+              <a href="/BZOJ1015【JSOI2008】星球大战 离线并查集/" rel="next" title="BZOJ1015【JSOI2008】星球大战 <离线并查集>">
+                <i class="fa fa-chevron-left"></i> BZOJ1015【JSOI2008】星球大战 <离线并查集>
               </a>
             
           </div>
@@ -638,7 +628,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -756,7 +746,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#善意的投票"><span class="nav-number">2.</span> <span class="nav-text">善意的投票</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">2.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入输出格式"><span class="nav-number">2.2.</span> <span class="nav-text">输入输出格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入输出样例"><span class="nav-number">2.3.</span> <span class="nav-text">输入输出样例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">2.4.</span> <span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#善意的投票"><span class="nav-number">1.1.</span> <span class="nav-text">善意的投票</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.2.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入输出格式"><span class="nav-number">1.3.</span> <span class="nav-text">输入输出格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入输出样例"><span class="nav-number">1.4.</span> <span class="nav-text">输入输出样例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">1.5.</span> <span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

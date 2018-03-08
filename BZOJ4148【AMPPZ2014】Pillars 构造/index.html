@@ -110,19 +110,19 @@
 </script>
 
 
-<meta name="description" content="Problem 【AMPPZ2014】Pillars Time Limit: $5 Sec$  Memory Limit: $256 MB$  $Special Judge$  Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(">
+<meta name="description" content="Problem【AMPPZ2014】PillarsTime Limit: $5 Sec$Memory Limit: $256 MB$$Special\;Judge$ Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出">
 <meta name="keywords" content="BZOJ,AMPPZ,构造">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4148【AMPPZ2014】Pillars &lt;构造&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4148【AMPPZ2014】Pillars 构造/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 【AMPPZ2014】Pillars Time Limit: $5 Sec$  Memory Limit: $256 MB$  $Special Judge$  Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(">
+<meta property="og:description" content="Problem【AMPPZ2014】PillarsTime Limit: $5 Sec$Memory Limit: $256 MB$$Special\;Judge$ Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.lydsy.com/JudgeOnline/upload/201506/PillarsSample.JPG">
-<meta property="og:updated_time" content="2018-02-09T03:42:45.702Z">
+<meta property="og:updated_time" content="2018-03-08T08:00:28.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4148【AMPPZ2014】Pillars &lt;构造&gt;">
-<meta name="twitter:description" content="Problem 【AMPPZ2014】Pillars Time Limit: $5 Sec$  Memory Limit: $256 MB$  $Special Judge$  Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(">
+<meta name="twitter:description" content="Problem【AMPPZ2014】PillarsTime Limit: $5 Sec$Memory Limit: $256 MB$$Special\;Judge$ Description给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出">
 <meta name="twitter:image" content="http://www.lydsy.com/JudgeOnline/upload/201506/PillarsSample.JPG">
 
 
@@ -420,24 +420,15 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="【AMPPZ2014】Pillars"><a href="#【AMPPZ2014】Pillars" class="headerlink" title="【AMPPZ2014】Pillars"></a>【AMPPZ2014】Pillars</h2><p> Time Limit: $5 Sec$  Memory Limit: $256 MB$  $Special Judge$</p>
-</blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，<br>且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出发经过所有没有障碍物的点各<br>一次的且最后回到左下角的回路。</p>
-<blockquote>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【AMPPZ2014】Pillars"><a href="#【AMPPZ2014】Pillars" class="headerlink" title="【AMPPZ2014】Pillars"></a>【AMPPZ2014】Pillars</h3><p>Time Limit: $5 Sec$<br>Memory Limit: $256 MB$<br>$Special\;Judge$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个$n\times m$的矩形，其中有f个$2\times 2$的障碍物，其中任意两个障碍物中心之间的欧几里得距离至少为$6$，<br>且每个障碍物的中心到边缘的距离至少为$3$。请找到一条从左下角$(1,1)$出发经过所有没有障碍物的点各一次的且最后回到左下角的回路。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含三个整数$n,m,f$($1\le n,m\le 1000$且$n,m$都为偶数)。<br>接下来$f$行，每行两个整数$x,y$($1\le x&lt;n$, $1\le y&lt;m$)，表示该障碍物左下角的坐标。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>如果无解，输出$NIE$，否则第一行输出$TAK$，第二行输出方案。<br>方案包含$n\times m-4\times f$个字符，第$i$个字符表示第$i$步的移动方向，用$G$表示上，$D$表示下，$L$表示左，$P$表示右。</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>如果无解，输出$NIE$，否则第一行输出$TAK$，第二行输出方案。<br>方案包含$n\times m-4\times f$个字符，第$i$个字符表示第$i$步的移动方向，用$G$表示上，$D$表示下，$L$表示左，$P$表示右。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">12 6 2</span><br><span class="line">3 3</span><br><span class="line">9 3</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TAK</span><br><span class="line">PPPPPPPPPPPGGGLDDLLLLLGPPGLLLDDLLLGGGPPPPPPPPPPGLLLLLLLLLLLDDDDD</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h3><p><img src="http://www.lydsy.com/JudgeOnline/upload/201506/PillarsSample.JPG" alt=""></p>
-</blockquote>
-<p>标签：构造</p>
+<h3 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h3><center><br><img src="http://www.lydsy.com/JudgeOnline/upload/201506/PillarsSample.JPG" alt=""><br></center>
+
+<p>标签：<code>构造</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道很适合构造入门的题。<br>我看了$Claris$的题解才想出来。<br>首先不考虑障碍，构造出一个走过全部格子的走法。由于$n$和$m$均为偶数，一定有解。<br>然后考虑障碍，对障碍四周的格子的方向进行修改。由于两个障碍间距离至少为$3$，故任两个障碍不会影响，只会有两大类。<br>具体构造方法参见代码。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, f;	<span class="keyword">char</span> s[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;n, &amp;m, &amp;f);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++)	s[i][j] = i&amp;<span class="number">1</span> ? <span class="string">'D'</span> : <span class="string">'G'</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (i^n)	s[i][<span class="number">1</span>] = <span class="string">'P'</span>;</span><br><span class="line">		<span class="keyword">if</span> ((i^<span class="number">1</span>) &amp;&amp; (i&amp;<span class="number">1</span>))	s[i][<span class="number">2</span>] = <span class="string">'L'</span>;</span><br><span class="line">		<span class="keyword">if</span> (!(i&amp;<span class="number">1</span>))	s[i][m] = <span class="string">'L'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; f; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> x, y;	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;x, &amp;y);</span><br><span class="line">		<span class="keyword">if</span> (x&amp;<span class="number">1</span>)	s[x][y+<span class="number">2</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][y<span class="number">-1</span>] = <span class="string">'L'</span>, s[x+<span class="number">1</span>][y+<span class="number">2</span>] = <span class="string">'P'</span>, s[x+<span class="number">2</span>][y+<span class="number">3</span>] = <span class="string">'L'</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (y^<span class="number">3</span>)	s[x][y<span class="number">-1</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][y<span class="number">-1</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][y+<span class="number">2</span>] = <span class="string">'L'</span>, s[x+<span class="number">2</span>][y<span class="number">-2</span>] = <span class="string">'L'</span>;</span><br><span class="line">		<span class="keyword">else</span>	s[x][<span class="number">1</span>] = <span class="string">'G'</span>, s[x][<span class="number">2</span>] = <span class="string">'P'</span>, s[x+<span class="number">1</span>][<span class="number">2</span>] = <span class="string">'D'</span>, s[x+<span class="number">1</span>][<span class="number">5</span>] = <span class="string">'L'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">"TAK"</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">1</span>, y = <span class="number">1</span>, lft = n*m<span class="number">-4</span>*f; lft; lft--) &#123;</span><br><span class="line">		<span class="built_in">putchar</span>(s[x][y]);</span><br><span class="line">		<span class="keyword">if</span> (s[x][y] == <span class="string">'P'</span>)	x++;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (s[x][y] == <span class="string">'L'</span>)	x--;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (s[x][y] == <span class="string">'G'</span>)	y++;</span><br><span class="line">		<span class="keyword">else</span>	y--;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -502,8 +493,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ3632 外太空旅行 随机化/" rel="next" title="BZOJ3632 外太空旅行 <随机化>">
-                <i class="fa fa-chevron-left"></i> BZOJ3632 外太空旅行 <随机化>
+              <a href="/BZOJ2396 神奇的矩阵 随机化/" rel="next" title="BZOJ2396 神奇的矩阵 <随机化>">
+                <i class="fa fa-chevron-left"></i> BZOJ2396 神奇的矩阵 <随机化>
               </a>
             
           </div>
@@ -512,8 +503,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4145【AMPPZ2014】The Prices 状压DP/" rel="prev" title="BZOJ4145【AMPPZ2014】The Prices <状压DP>">
-                BZOJ4145【AMPPZ2014】The Prices <状压DP> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ3632 外太空旅行 随机化/" rel="prev" title="BZOJ3632 外太空旅行 <随机化>">
+                BZOJ3632 外太空旅行 <随机化> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -639,7 +630,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -757,7 +748,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【AMPPZ2014】Pillars"><span class="nav-number">2.</span> <span class="nav-text">【AMPPZ2014】Pillars</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hint"><span class="nav-number">2.6.</span> <span class="nav-text">Hint</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【AMPPZ2014】Pillars"><span class="nav-number">1.1.</span> <span class="nav-text">【AMPPZ2014】Pillars</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hint"><span class="nav-number">1.7.</span> <span class="nav-text">Hint</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

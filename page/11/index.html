@@ -319,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1012【JSOI2008】最大数 线段树/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -338,7 +338,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/" itemprop="url">BZOJ2434【NOI2011】阿狸的打字机 <AC自动机+Fail树+树状数组></a></h1>
+                <a class="post-title-link" href="/BZOJ1012【JSOI2008】最大数 线段树/" itemprop="url">BZOJ1012【JSOI2008】最大数 <线段树></a></h1>
         
 
         <div class="post-meta">
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,689
+                  699
                 </span>
               
 
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  3
                 </span>
               
             </div>
@@ -420,18 +420,16 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="BZOJ2434-阿狸的打字机"><a href="#BZOJ2434-阿狸的打字机" class="headerlink" title="BZOJ2434 阿狸的打字机"></a>BZOJ2434 阿狸的打字机</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>阿狸喜欢收藏各种稀奇古怪的东西，最近他淘到一台老式的打字机。打字机上只有$28$个按键，分别印有$26$个小写英文字母和$B$、$P$两个字母。<br>经阿狸研究发现，这个打字机是这样工作的：</p>
-<ul>
-<li>输入小写字母，打字机的一个凹槽中会加入这个字母(这个字母加在凹槽的最后)。</li>
-<li>按一下印有$B$的按键，打字机凹槽中最后一个字母会消失。</li>
-<li>按一下印有$P$的按键，打字机会在纸上打印出凹槽中现有的所有字母并换行，但凹槽中的字母不会消失。</li>
-</ul>
-<p>例如，阿狸输入$aPaPBbP$，纸上被打印的字符如下：<br>$a$<br>$aa$<br>$ab$<br>我们把纸上打印出来的字符串从$1$开始顺序编号，一直到$n$。打字机有一个非常有趣的功能，在打字机中暗藏一个带数字的小键盘，在小键盘上输入两个数$(x,y)$（其中$1\le x,y\le n$），打字机会显示第$x$个打印的字符串在第$y$个打印的字符串中出现了多少次。<br>阿狸发现了这个功能以后很兴奋，他想写个程序完成同样的功能，你能帮助他么？</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含一个字符串，按阿狸的输入顺序给出所有阿狸输入的字符。<br>第二行包含一个整数$m$，表示询问个数。<br>接下来$m$行描述所有由小键盘输入的询问。其中第$i$行包含两个整数$x$, $y$，表示第$i$个询问为$(x, y)$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$m$行，其中第$i$行包含一个整数，表示第$i$个询问的答案。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="最大数"><a href="#最大数" class="headerlink" title="最大数"></a>最大数</h3><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>现在请求你维护一个数列，要求提供以下两种操作：</p>
+<ol>
+<li>查询操作。<br>语法：$Q  L$<br>功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。<br>限制：$L$不超过当前数列的长度。</li>
+<li>插入操作。<br>语法：$A  n$<br>功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答案插入到数列的末尾。<br>限制：$n$是整数（可能为负数）并且在长整范围内。</li>
+</ol>
+<p><strong>注意：初始时数列是空的，没有一个数。</strong></p>
+<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p><strong>输入格式</strong><br>第一行两个整数，$M$和$D$，其中$M$表示操作的个数$(M\le 2\times 10^5)$，$D$如上文中所述，满足$(0&lt;D&lt;2\times 10^9)$<br>接下来的$M$行，每行一个字符串，描述一个具体的操作。语法如上文所述。<br><strong>输出格式</strong><br>对于每一个查询操作，你应该按照顺序依次输出结果，每个结果占一行。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/#more" rel="contents">
+            <a class="btn" href="/BZOJ1012【JSOI2008】最大数 线段树/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -486,7 +484,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ1201 Intervals 差分约束系统/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2002 Bounce 弹飞绵羊 分块/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -505,7 +503,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/POJ1201 Intervals 差分约束系统/" itemprop="url">POJ1201 Intervals <差分约束系统></a></h1>
+                <a class="post-title-link" href="/BZOJ2002 Bounce 弹飞绵羊 分块/" itemprop="url">BZOJ2002 Bounce 弹飞绵羊 <分块></a></h1>
         
 
         <div class="post-meta">
@@ -549,7 +547,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  826
+                  713
                 </span>
               
 
@@ -565,7 +563,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  3
                 </span>
               
             </div>
@@ -587,12 +585,12 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Intervals"><a href="#Intervals" class="headerlink" title="Intervals"></a>Intervals</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>You are given $n$ closed, integer intervals $[a_i, b_i]$ and $n$ integers $c_1\sim c_n$.<br>Write a program that:<br>reads the number of intervals, their end points and integers $c_1\sim c_n$ from the standard input, computes the minimal size of a set $Z$ of integers which has at least $c_i$ common elements with interval $[a_i, b_i]$, for each $i=1,2,\cdots ,n$, writes the answer to the standard output. </p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The first line of the input contains an integer $n$ ($1\le n\le 5\times 10^4$) – the number of intervals. The following n lines describe the intervals. The $(i+1)^{th}$ line of the input contains three integers $a_i$, $b_i$ and $c_i$ separated by single spaces and such that $0\le a_i\le b_i\le 5\times 10^4$ and $1\le c_i\le b_i - a_i+1$. </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>The output contains exactly one integer equal to the minimal size of set $Z$ sharing at least $c_i$ elements with interval $[a_i, b_i]$, for each $i=1,2,\cdots ,n$.<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Bounce-弹飞绵羊"><a href="#Bounce-弹飞绵羊" class="headerlink" title="Bounce 弹飞绵羊"></a>Bounce 弹飞绵羊</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>某天，$Lostmonkey$发明了一种超级弹力装置，为了在他的绵羊朋友面前显摆，他邀请小绵羊一起玩个游戏。游戏一开始，$Lostmonkey$在地上沿着一条直线摆上$n$个装置，每个装置设定初始弹力系数$k_i$，当绵羊达到第$i$个装置时，它会往后弹$k_i$步，达到第$i+k_i$个装置，若不存在第$i+k_i$个装置，则绵羊被弹飞。绵羊想知道当它从第$i$个装置起步时，被弹几次后会被弹飞。为了使得游戏更有趣，$Lostmonkey$可以修改某个弹力装置的弹力系数，任何时候弹力系数均为正整数。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含一个整数$n$，表示地上有$n$个装置，装置的编号从$0$到$n-1$,接下来一行有$n$个正整数，依次为那$n$个装置的初始弹力系数。第三行有一个正整数$m$，接下来$m$行每行至少有两个数$i$、$j$，若$i=1$，你要输出从$j$出发被弹几次后被弹飞，若$i=2$则还会再输入一个正整数$k$，表示第$j$个弹力装置的系数被修改成$k$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每个$i=1$的情况，你都要输出一个需要的步数，占一行。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/POJ1201 Intervals 差分约束系统/#more" rel="contents">
+            <a class="btn" href="/BZOJ2002 Bounce 弹飞绵羊 分块/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -808,7 +806,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3673 可持久化并查集 by zky 可持久化数组+主席树/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -827,7 +825,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ3673 可持久化并查集 by zky 可持久化数组+主席树/" itemprop="url">BZOJ3673 可持久化并查集 by zky <可持久化数组></a></h1>
+                <a class="post-title-link" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/" itemprop="url">BZOJ2434【NOI2011】阿狸的打字机 <AC自动机+Fail树+树状数组></a></h1>
         
 
         <div class="post-meta">
@@ -871,7 +869,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  810
+                  1,689
                 </span>
               
 
@@ -887,7 +885,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  8
                 </span>
               
             </div>
@@ -909,23 +907,22 @@
 
       
         
-          
-            <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="可持久化并查集-by-zky"><a href="#可持久化并查集-by-zky" class="headerlink" title="可持久化并查集 by zky"></a>可持久化并查集 by zky</h2></blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$n$个集合 $m$个操作<br>操作：<br>$1 a b$ 合并$a,b$所在集合<br>$2 k$ 回到第$k$次操作之后的状态(查询算作操作)<br>$3 a b$ 询问$a,b$是否属于同一集合，是则输出$1$否则输出$0$</p>
-<blockquote>
-</blockquote>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">5 6</span><br><span class="line">1 1 2</span><br><span class="line">3 1 2</span><br><span class="line">2 0</span><br><span class="line">3 1 2</span><br><span class="line">2 1</span><br><span class="line">3 1 2</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">0</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h3><p> $1 &lt; n,m \le 2\times 10^4$</p>
-</blockquote>
-<p>标签：主席树维护可持久化数组</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>本题的做法其实和并查集没太大关联。<br>如果是撤销，那可以用不加路径压缩的并查集完成，但是如果回到某时间，则不太好写。<br>这时，我们发现并查集这个东西构造其实很简单，只需要一个$fa$数组就行了。所以我们自然可以想到直接用一个二维数组存储每个时间的$fa$数组，即用增加的一维表示时间。<br>但是，$n$、$m$是$2\times 10^4$级别，所以肯定会$MLE$，这里我们就需要用到主席树，把$fa$数组可持久化。这里需要注意我们不能用路径压缩优化，因为我们需要回到前面的状态，为了让它跑得更快，我们可以用按秩合并优化。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 20000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, cnt, now, root[MAX_N*<span class="number">10</span>+<span class="number">5</span>];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> fa, dep, ls, rs;&#125; tr[MAX_N*<span class="number">100</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (l == r) &#123;tr[v].fa = l;	<span class="keyword">return</span>;&#125;</span><br><span class="line">	<span class="keyword">int</span> mid = l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	tr[v].ls = ++cnt, tr[v].rs = ++cnt;</span><br><span class="line">	build(tr[v].ls, l, mid);</span><br><span class="line">	build(tr[v].rs, mid+<span class="number">1</span>, r);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">modifyfa</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> o, <span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> pos, <span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">	tr[v] = tr[o];</span><br><span class="line">	<span class="keyword">if</span> (s == t)	&#123;tr[v].fa = x;	<span class="keyword">return</span>;&#125;</span><br><span class="line">	<span class="keyword">int</span> mid = s+t&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span> (pos &lt;= mid)	modifyfa(tr[v].ls = ++cnt, tr[o].ls, s, mid, pos, x);</span><br><span class="line">	<span class="keyword">else</span>	modifyfa(tr[v].rs = ++cnt, tr[o].rs, mid+<span class="number">1</span>, t, pos, x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">modifydep</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> pos)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (s == t)	&#123;tr[v].dep++;	<span class="keyword">return</span>;&#125;</span><br><span class="line">	<span class="keyword">int</span> mid = s+t&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span> (pos &lt;= mid)	modifydep(tr[v].ls, s, mid, pos);</span><br><span class="line">	<span class="keyword">else</span>	modifydep(tr[v].rs, mid+<span class="number">1</span>, t, pos);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> s, <span class="keyword">int</span> t, <span class="keyword">int</span> pos)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (s == t)	<span class="keyword">return</span> v;</span><br><span class="line">	<span class="keyword">int</span> mid = s+t&gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span> (pos &lt;= mid)	<span class="keyword">return</span> find(tr[v].ls, s, mid, pos);</span><br><span class="line">	<span class="keyword">else</span>	<span class="keyword">return</span> find(tr[v].rs, mid+<span class="number">1</span>, t, pos);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getf</span><span class="params">(<span class="keyword">int</span> r, <span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> pos = find(r, <span class="number">1</span>, n, x);</span><br><span class="line">	<span class="keyword">if</span> (tr[pos].fa != x)	<span class="keyword">return</span> getf(r, tr[pos].fa);</span><br><span class="line">	<span class="keyword">return</span> pos;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">	cnt = <span class="number">0</span>, root[<span class="number">0</span>] = ++cnt;</span><br><span class="line">	build(root[<span class="number">0</span>], <span class="number">1</span>, n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> now = <span class="number">1</span>; now &lt;= m; now++) &#123;</span><br><span class="line">		<span class="keyword">int</span> opt;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;opt);</span><br><span class="line">		<span class="keyword">if</span> (opt == <span class="number">1</span>) &#123;</span><br><span class="line">			root[now] = root[now<span class="number">-1</span>];</span><br><span class="line">			<span class="keyword">int</span> a, b;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;a, &amp;b);</span><br><span class="line">			<span class="keyword">int</span> posa = getf(root[now], a), posb = getf(root[now], b);</span><br><span class="line">			<span class="keyword">if</span> (tr[posa].fa == tr[posb].fa)	<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span> (tr[posa].dep &gt; tr[posb].dep)	swap(posa, posb);</span><br><span class="line">			root[now] = ++cnt;</span><br><span class="line">			modifyfa(root[now], root[now<span class="number">-1</span>], <span class="number">1</span>, n, tr[posa].fa, tr[posb].fa);</span><br><span class="line">			<span class="keyword">if</span> (tr[posa].dep == tr[posb].dep)	modifydep(root[now], <span class="number">1</span>, n, tr[posb].fa);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (opt == <span class="number">2</span>) &#123;</span><br><span class="line">			<span class="keyword">int</span> k;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</span><br><span class="line">			root[now] = root[k];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (opt == <span class="number">3</span>) &#123;</span><br><span class="line">			root[now] = root[now<span class="number">-1</span>];</span><br><span class="line">			<span class="keyword">int</span> a, b;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;a, &amp;b);</span><br><span class="line">			<span class="keyword">if</span> (tr[getf(root[now], a)].fa == tr[getf(root[now], b)].fa)	<span class="built_in">printf</span>(<span class="string">"1\n"</span>);</span><br><span class="line">			<span class="keyword">else</span>	<span class="built_in">printf</span>(<span class="string">"0\n"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="BZOJ2434-阿狸的打字机"><a href="#BZOJ2434-阿狸的打字机" class="headerlink" title="BZOJ2434 阿狸的打字机"></a>BZOJ2434 阿狸的打字机</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>阿狸喜欢收藏各种稀奇古怪的东西，最近他淘到一台老式的打字机。打字机上只有$28$个按键，分别印有$26$个小写英文字母和$B$、$P$两个字母。<br>经阿狸研究发现，这个打字机是这样工作的：</p>
+<ul>
+<li>输入小写字母，打字机的一个凹槽中会加入这个字母(这个字母加在凹槽的最后)。</li>
+<li>按一下印有$B$的按键，打字机凹槽中最后一个字母会消失。</li>
+<li>按一下印有$P$的按键，打字机会在纸上打印出凹槽中现有的所有字母并换行，但凹槽中的字母不会消失。</li>
+</ul>
+<p>例如，阿狸输入$aPaPBbP$，纸上被打印的字符如下：<br>$a$<br>$aa$<br>$ab$<br>我们把纸上打印出来的字符串从$1$开始顺序编号，一直到$n$。打字机有一个非常有趣的功能，在打字机中暗藏一个带数字的小键盘，在小键盘上输入两个数$(x,y)$（其中$1\le x,y\le n$），打字机会显示第$x$个打印的字符串在第$y$个打印的字符串中出现了多少次。<br>阿狸发现了这个功能以后很兴奋，他想写个程序完成同样的功能，你能帮助他么？</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含一个字符串，按阿狸的输入顺序给出所有阿狸输入的字符。<br>第二行包含一个整数$m$，表示询问个数。<br>接下来$m$行描述所有由小键盘输入的询问。其中第$i$行包含两个整数$x$, $y$，表示第$i$个询问为$(x, y)$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$m$行，其中第$i$行包含一个整数，表示第$i$个询问的答案。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1960,7 +1957,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

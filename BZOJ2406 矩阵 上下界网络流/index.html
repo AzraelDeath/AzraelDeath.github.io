@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="网络流,BZOJ,图论,上下界网络流,线性规划," />
+  <meta name="keywords" content="BZOJ,网络流,图论,上下界网络流,线性规划," />
 
 
 
@@ -110,19 +110,19 @@
 </script>
 
 
-<meta name="description" content="Problem 矩阵Time Limit: $10 Sec$  Memory Limit: $128 MB$ Description Input第一行两个数$n$、$m$，表示矩阵的大小。接下来$n$行，每行$m$列，描述矩阵$A$。最后一行两个数$L$，$R$。 Output一行，输出最小的答案。 Sample Input12342 20 12 10 1   Sample Output11">
-<meta name="keywords" content="网络流,BZOJ,图论,上下界网络流,线性规划">
+<meta name="description" content="Problem矩阵Time Limit: $10 Sec$Memory Limit: $128 MB$ Description  Input第一行两个数$n$、$m$，表示矩阵的大小。接下来$n$行，每行$m$列，描述矩阵$A$。最后一行两个数$L$，$R$。 Output一行，输出最小的答案。">
+<meta name="keywords" content="BZOJ,网络流,图论,上下界网络流,线性规划">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ2406 矩阵 &lt;上下界网络流&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ2406 矩阵 上下界网络流/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 矩阵Time Limit: $10 Sec$  Memory Limit: $128 MB$ Description Input第一行两个数$n$、$m$，表示矩阵的大小。接下来$n$行，每行$m$列，描述矩阵$A$。最后一行两个数$L$，$R$。 Output一行，输出最小的答案。 Sample Input12342 20 12 10 1   Sample Output11">
+<meta property="og:description" content="Problem矩阵Time Limit: $10 Sec$Memory Limit: $128 MB$ Description  Input第一行两个数$n$、$m$，表示矩阵的大小。接下来$n$行，每行$m$列，描述矩阵$A$。最后一行两个数$L$，$R$。 Output一行，输出最小的答案。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.lydsy.com/JudgeOnline/upload/201107/2(1).jpg">
-<meta property="og:updated_time" content="2018-02-10T12:10:40.602Z">
+<meta property="og:updated_time" content="2018-03-08T07:31:21.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ2406 矩阵 &lt;上下界网络流&gt;">
-<meta name="twitter:description" content="Problem 矩阵Time Limit: $10 Sec$  Memory Limit: $128 MB$ Description Input第一行两个数$n$、$m$，表示矩阵的大小。接下来$n$行，每行$m$列，描述矩阵$A$。最后一行两个数$L$，$R$。 Output一行，输出最小的答案。 Sample Input12342 20 12 10 1   Sample Output11">
+<meta name="twitter:description" content="Problem矩阵Time Limit: $10 Sec$Memory Limit: $128 MB$ Description  Input第一行两个数$n$、$m$，表示矩阵的大小。接下来$n$行，每行$m$列，描述矩阵$A$。最后一行两个数$L$，$R$。 Output一行，输出最小的答案。">
 <meta name="twitter:image" content="http://www.lydsy.com/JudgeOnline/upload/201107/2(1).jpg">
 
 
@@ -420,20 +420,15 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>Time Limit: $10 Sec$  Memory Limit: $128 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p><img src="http://www.lydsy.com/JudgeOnline/upload/201107/2(1).jpg" alt=""></p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><center><br><img src="http://www.lydsy.com/JudgeOnline/upload/201107/2(1).jpg" alt=""><br></center>
+
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个数$n$、$m$，表示矩阵的大小。<br>接下来$n$行，每行$m$列，描述矩阵$A$。<br>最后一行两个数$L$，$R$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行，输出最小的答案。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行，输出最小的答案。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2 2</span><br><span class="line">0 1</span><br><span class="line">2 1</span><br><span class="line">0 1</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 <h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$N,M\le 200$, $0\le L\le R\le 1000$, $0\le A_{i,j}\le 1000$</p>
-</blockquote>
-<p>标签：线性规划，上下界网络流</p>
+<p>标签：<code>线性规划</code>，<code>上下界网络流</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>线性规划转上下界网络流。<br>看到所求为最大值中的最小，可想到二分答案。<br>对于当前答案$tans​$，验证是否能构造矩阵B使得：</p>
 <ul>
 <li>对于$\forall i\in [1,n], \forall j\in[1,m]$，$L\le B_{i,j}\le R$</li>
@@ -505,9 +500,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
-          
             <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
+          
+            <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
           
             <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
           
@@ -663,7 +658,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -781,7 +776,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵"><span class="nav-number">2.</span> <span class="nav-text">矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">2.6.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">1.7.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

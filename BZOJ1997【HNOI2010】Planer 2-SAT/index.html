@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem 传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997  标签：2-SAT，并查集 Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面">
+<meta name="description" content="Problem传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997 标签：2-SAT 并查集 Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面连，">
 <meta name="keywords" content="BZOJ,图论,2-SAT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1997 Planer &lt;2-SAT&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1997【HNOI2010】Planer 2-SAT/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997  标签：2-SAT，并查集 Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面">
+<meta property="og:description" content="Problem传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997 标签：2-SAT 并查集 Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面连，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-10T14:34:20.763Z">
+<meta property="og:updated_time" content="2018-03-08T07:12:14.376Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1997 Planer &lt;2-SAT&gt;">
-<meta name="twitter:description" content="Problem 传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997  标签：2-SAT，并查集 Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面">
+<meta name="twitter:description" content="Problem传送门：http://www.lydsy.com/JudgeOnline/problem.php?id=1997 标签：2-SAT 并查集 Solution本题和$POJ3207$没什么区别…只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。貌似此题可以种类并查集$trick$过。把每条线段拆成两个点，代表从里面连和外面连，">
 
 
 
@@ -418,10 +418,8 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<p>传送门：<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1997" target="_blank" rel="noopener">http://www.lydsy.com/JudgeOnline/problem.php?id=1997</a></p>
-</blockquote>
-<p>标签：2-SAT，并查集</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>传送门：<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1997" target="_blank" rel="noopener">http://www.lydsy.com/JudgeOnline/problem.php?id=1997</a></p>
+<p>标签：<code>2-SAT</code> <code>并查集</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>本题和$POJ3207$没什么区别…<br>只是刚做$POJ3207$时是复习$2-SAT$，所以写了$tarjan$，然而某天碰到这题突然想到了并查集。<br>貌似此题可以种类并查集$trick$过。<br>把每条线段拆成两个点，代表从里面连和外面连，对于相交线段$a,b$，一定有$a$和$b$不同时在里面或外面，于是$merge(a, b’)$, $merge(a’, b)$。这样合并时判断是否有$i$, $i’$在同一集中即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 200</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 10000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, p[MAX_N+<span class="number">5</span>], l[MAX_M+<span class="number">5</span>], r[MAX_M+<span class="number">5</span>], fa[MAX_M*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>*m; i++)	fa[i] = i;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getf</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> fa[x] == x ? x : fa[x] = getf(fa[x]);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;a = getf(a), b = getf(b);	<span class="keyword">if</span> (a != b)	fa[a] = b;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T;	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">	<span class="keyword">while</span> (T--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m), init();	<span class="keyword">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;l[i], &amp;r[i]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, x; i &lt; n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;x), p[x] = i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	l[i] = p[l[i]], r[i] = p[r[i]];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	<span class="keyword">if</span> (l[i] &gt; r[i])	swap(l[i], r[i]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; m; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</span><br><span class="line">			<span class="keyword">if</span> ((l[i] &lt; l[j] &amp;&amp; r[i] &gt; l[j] &amp;&amp; r[i] &lt; r[j]) || (l[i] &gt; l[j] &amp;&amp; l[i] &lt; r[j] &amp;&amp; r[i] &gt; r[j]))</span><br><span class="line">				merge(i*<span class="number">2</span>, j*<span class="number">2</span>+<span class="number">1</span>), merge(i*<span class="number">2</span>+<span class="number">1</span>, j*<span class="number">2</span>);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)	flag &amp;= (getf(i*<span class="number">2</span>) != getf(i*<span class="number">2</span>+<span class="number">1</span>));</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%s\n"</span>, flag ? <span class="string">"YES"</span> : <span class="string">"NO"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -487,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/20171001-08总结/" rel="next" title="201701001-08总结">
-                <i class="fa fa-chevron-left"></i> 201701001-08总结
+              <a href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/" rel="next" title="POJ3207 Ikki's Story IV - Panda's Trick <2-SAT>">
+                <i class="fa fa-chevron-left"></i> POJ3207 Ikki's Story IV - Panda's Trick <2-SAT>
               </a>
             
           </div>
@@ -497,8 +495,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/" rel="prev" title="POJ3207 Ikki's Story IV - Panda's Trick <2-SAT>">
-                POJ3207 Ikki's Story IV - Panda's Trick <2-SAT> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1001【BJOI2006】狼抓兔子 网络流/" rel="prev" title="BZOJ1001【BJOI2006】狼抓兔子 <网络流>">
+                BZOJ1001【BJOI2006】狼抓兔子 <网络流> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -624,7 +622,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

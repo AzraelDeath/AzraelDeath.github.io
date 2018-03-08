@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem 外太空旅行 Time Limit: $5 Sec$  Memory Limit: $128 MB$  Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门">
+<meta name="description" content="Problem外太空旅行Time Limit: $5 Sec$Memory Limit: $128 MB$ Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫">
 <meta name="keywords" content="BZOJ,图论,随机化,最大团">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ3632 外太空旅行 &lt;随机化&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ3632 外太空旅行 随机化/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 外太空旅行 Time Limit: $5 Sec$  Memory Limit: $128 MB$  Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门">
+<meta property="og:description" content="Problem外太空旅行Time Limit: $5 Sec$Memory Limit: $128 MB$ Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T03:16:42.363Z">
+<meta property="og:updated_time" content="2018-03-08T08:18:11.349Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ3632 外太空旅行 &lt;随机化&gt;">
-<meta name="twitter:description" content="Problem 外太空旅行 Time Limit: $5 Sec$  Memory Limit: $128 MB$  Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门">
+<meta name="twitter:description" content="Problem外太空旅行Time Limit: $5 Sec$Memory Limit: $128 MB$ Description在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫">
 
 
 
@@ -418,24 +418,14 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="外太空旅行"><a href="#外太空旅行" class="headerlink" title="外太空旅行"></a>外太空旅行</h2><p> Time Limit: $5 Sec$  Memory Limit: $128 MB$</p>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="外太空旅行"><a href="#外太空旅行" class="headerlink" title="外太空旅行"></a>外太空旅行</h3><p>Time Limit: $5 Sec$<br>Memory Limit: $128 MB$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。<br>可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C$是朋友，但是小$A$和小$C$两人势如水火。<br>任意两个人之间要不就是敌人，要不就是朋友。<br>因为在太空船上发生人员斗殴事件是很恶劣也很危险的，因此选出来参加旅行活动的同学必须互相之间都是朋友。你的任务就是确定最多可以选多少人参加旅行。</p>
-<blockquote>
-</blockquote>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数$n$($1\le n\le 50$)。所有的同学按照$1\sim n$编号。<br>接下来若干行，每行两个用空格隔开的整数$a, b$ ($1\le a,b\le n$)，表示$a$和$b$是朋友。<br>注意：如果一个数对$(x,y)$或者$(y,x)$没有在文件中出现，那么编号为$x$和$y$的两个同学就是敌人。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅仅一个数，即最多可以选多少人参加活动。</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅仅一个数，即最多可以选多少人参加活动。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">1 2</span><br><span class="line">2 3</span><br><span class="line">3 1</span><br><span class="line">1 4</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
 <p>说明：选编号为$1,2,3$的同学参加，他们互相都是朋友。</p>
-</blockquote>
-<p>标签：最大团，随机化</p>
+<p>标签：<code>最大团</code> <code>随机化</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道随机化最大团的裸题。<br>每次随机出一个$1\sim n$的乱序排列，按照排列顺序贪心，这样随机$10^5$次取最大值即可。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 50</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> BOUND 100000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, seq[MAX_N+<span class="number">5</span>], ans;</span><br><span class="line"><span class="keyword">bool</span> G[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>], mrk[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(mrk, <span class="literal">false</span>, <span class="keyword">sizeof</span> mrk);</span><br><span class="line">	<span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="keyword">if</span> (!mrk[seq[i]]) &#123;</span><br><span class="line">		ret++, mrk[seq[i]] = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">			<span class="keyword">if</span> (!G[seq[i]][seq[j]])	mrk[seq[j]] = <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);	<span class="keyword">int</span> u, v;</span><br><span class="line">	<span class="keyword">while</span> (~<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;u, &amp;v))	G[u][v] = G[v][u] = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	seq[i] = i;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; BOUND; i++)</span><br><span class="line">		random_shuffle(seq+<span class="number">1</span>, seq+n+<span class="number">1</span>), ans = max(ans, calc());</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -502,8 +492,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ2396 神奇的矩阵 随机化/" rel="next" title="BZOJ2396 神奇的矩阵 <随机化>">
-                <i class="fa fa-chevron-left"></i> BZOJ2396 神奇的矩阵 <随机化>
+              <a href="/BZOJ4148【AMPPZ2014】Pillars 构造/" rel="next" title="BZOJ4148【AMPPZ2014】Pillars <构造>">
+                <i class="fa fa-chevron-left"></i> BZOJ4148【AMPPZ2014】Pillars <构造>
               </a>
             
           </div>
@@ -512,8 +502,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4148【AMPPZ2014】Pillars 构造/" rel="prev" title="BZOJ4148【AMPPZ2014】Pillars <构造>">
-                BZOJ4148【AMPPZ2014】Pillars <构造> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1468 Tree 点分治/" rel="prev" title="BZOJ1468 Tree <点分治>">
+                BZOJ1468 Tree <点分治> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -639,7 +629,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -757,7 +747,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外太空旅行"><span class="nav-number">2.</span> <span class="nav-text">外太空旅行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#外太空旅行"><span class="nav-number">1.1.</span> <span class="nav-text">外太空旅行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem 【SCOI2005】互不侵犯King ime Limit: $10 Sec$  Memory Limit: $162 MB$  Description在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。   Input只有一行，包含两个数$N$, $K$ ($1">
+<meta name="description" content="Problem【SCOI2005】互不侵犯KingTime Limit: $10 Sec$Memory Limit: $162 MB$ Description在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。 Input只有一行，包含两个数$N$, $K$ ($1 \le N">
 <meta name="keywords" content="BZOJ,省选,DP,状压DP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1087【SCOI2005】互不侵犯King &lt;状压DP&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1087【SCOI2005】互不侵犯King 状压DP/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 【SCOI2005】互不侵犯King ime Limit: $10 Sec$  Memory Limit: $162 MB$  Description在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。   Input只有一行，包含两个数$N$, $K$ ($1">
+<meta property="og:description" content="Problem【SCOI2005】互不侵犯KingTime Limit: $10 Sec$Memory Limit: $162 MB$ Description在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。 Input只有一行，包含两个数$N$, $K$ ($1 \le N">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T03:04:11.485Z">
+<meta property="og:updated_time" content="2018-03-08T08:19:39.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1087【SCOI2005】互不侵犯King &lt;状压DP&gt;">
-<meta name="twitter:description" content="Problem 【SCOI2005】互不侵犯King ime Limit: $10 Sec$  Memory Limit: $162 MB$  Description在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。   Input只有一行，包含两个数$N$, $K$ ($1">
+<meta name="twitter:description" content="Problem【SCOI2005】互不侵犯KingTime Limit: $10 Sec$Memory Limit: $162 MB$ Description在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。 Input只有一行，包含两个数$N$, $K$ ($1 \le N">
 
 
 
@@ -418,21 +418,13 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h3 id="【SCOI2005】互不侵犯King"><a href="#【SCOI2005】互不侵犯King" class="headerlink" title="【SCOI2005】互不侵犯King"></a>【SCOI2005】互不侵犯King</h3><p> ime Limit: $10 Sec$  Memory Limit: $162 MB$</p>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2005】互不侵犯King"><a href="#【SCOI2005】互不侵犯King" class="headerlink" title="【SCOI2005】互不侵犯King"></a>【SCOI2005】互不侵犯King</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $162 MB$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在$N\times N$的棋盘里面放$K$个国王，使他们互不攻击，共有多少种摆放方案。国王能攻击到它上下左右，以及左上左下右上右下八个方向上附近的各一个格子，共$8$个格子。</p>
-<blockquote>
-</blockquote>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>只有一行，包含两个数$N$, $K$ ($1 \le N \le 9$, $0 \le K \le N^2$)</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>方案数。</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>方案数。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3 2</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>标签：状压$DP$</p>
+<p>标签：<code>状压DP</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>状压$DP$的基础题。<br>对于每个国王，不难发现它放与不放只与当行和前一行有关，而它放完后的影响只作用于当行和后一行。<br>而$N\le 9$<br>于是考虑状压$DP$，$f[i][j][k]$表示当前考虑到第$i$行，共用了$j$个国王，第$i$行状态为$k$的方案数。那么$k$和前一行的状态$k’$是否冲突可以用$k$、$k&lt;&lt;1$、$k&gt;&gt;1$与$k’$取$\&amp;$得到。时间复杂度$O(n^2\times 2^k\times 2^k)$。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">int</span> n, k, cnt[<span class="number">100</span>], sta[<span class="number">1000</span>], tot;</span><br><span class="line">lnt f[<span class="number">10</span>][<span class="number">1000</span>][<span class="number">1000</span>], ans;	<span class="keyword">bool</span> mrk[<span class="number">1000</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="number">1</span>&lt;&lt;n); i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (i&amp;(i&lt;&lt;<span class="number">1</span>))	<span class="keyword">continue</span>;</span><br><span class="line">		mrk[i] = <span class="literal">true</span>, sta[tot++] = i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i; j; j &gt;&gt;= <span class="number">1</span>)	cnt[i] += (j&amp;<span class="number">1</span>);</span><br><span class="line">		f[<span class="number">1</span>][cnt[i]][i] = <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;k), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= k; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> p = <span class="number">0</span>; p &lt; tot; p++) &#123;</span><br><span class="line">		<span class="keyword">int</span> cur = sta[p];	<span class="keyword">if</span> (cnt[cur] &gt; j)	<span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> q = <span class="number">0</span>; q &lt; tot; q++) &#123;</span><br><span class="line">			<span class="keyword">int</span> lst = sta[q];</span><br><span class="line">			<span class="keyword">if</span> ((cur&amp;lst) || ((cur&lt;&lt;<span class="number">1</span>)&amp;lst) || ((cur&gt;&gt;<span class="number">1</span>)&amp;lst))	<span class="keyword">continue</span>;</span><br><span class="line">			f[i][j][cur] += f[i<span class="number">-1</span>][j-cnt[cur]][lst];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tot; i++)	ans += f[n][k][sta[i]];</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%lld"</span>, ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -499,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1046【HAOI2007】上升序列 DP/" rel="next" title="BZOJ1046【HAOI2007】上升序列 <DP>">
-                <i class="fa fa-chevron-left"></i> BZOJ1046【HAOI2007】上升序列 <DP>
+              <a href="/BZOJ4034【HAOI2015】树上操作 树链剖分/" rel="next" title="BZOJ4034【HAOI2015】树上操作 <树链剖分>">
+                <i class="fa fa-chevron-left"></i> BZOJ4034【HAOI2015】树上操作 <树链剖分>
               </a>
             
           </div>
@@ -509,8 +501,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4491 我也不知道题目名字是什么 线段树/" rel="prev" title="BZOJ4491 我也不知道题目名字是什么 <线段树>">
-                BZOJ4491 我也不知道题目名字是什么 <线段树> <i class="fa fa-chevron-right"></i>
+              <a href="/LG1155【NOIp2008】双栈排序 二分图染色/" rel="prev" title="LG1155【NOIp2008】双栈排序 <二分图染色>">
+                LG1155【NOIp2008】双栈排序 <二分图染色> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -636,7 +628,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
