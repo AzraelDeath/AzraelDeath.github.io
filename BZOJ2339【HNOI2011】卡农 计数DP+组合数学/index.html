@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,省选,DP,组合数学,计数," />
+  <meta name="keywords" content="BZOJ,省选,组合数学,DP,计数," />
 
 
 
@@ -111,7 +111,7 @@
 
 
 <meta name="description" content="Problem【HNOI2011】卡农Time Limit: $10 Sec$Memory Limit: $128MB$ Description Input Output">
-<meta name="keywords" content="BZOJ,省选,DP,组合数学,计数">
+<meta name="keywords" content="BZOJ,省选,组合数学,DP,计数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ2339【HNOI2011】卡农 &lt;计数DP+组合数学&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ2339【HNOI2011】卡农 计数DP+组合数学/index.html">
@@ -122,7 +122,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/02/11/5a8034c89c9e6.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/02/11/5a8034e3bc6fd.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/02/11/5a8034f8900b2.jpg">
-<meta property="og:updated_time" content="2018-03-03T11:53:47.960Z">
+<meta property="og:updated_time" content="2018-03-08T04:49:30.102Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ2339【HNOI2011】卡农 &lt;计数DP+组合数学&gt;">
 <meta name="twitter:description" content="Problem【HNOI2011】卡农Time Limit: $10 Sec$Memory Limit: $128MB$ Description Input Output">
@@ -428,7 +428,7 @@
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p><img src="https://i.loli.net/2018/02/11/5a8034c89c9e6.jpg" alt=""></p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p><img src="https://i.loli.net/2018/02/11/5a8034e3bc6fd.jpg" alt=""><br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><p><img src="https://i.loli.net/2018/02/11/5a8034f8900b2.jpg" alt=""> </p>
-<p>标签：计数$DP$</p>
+<p>标签：<code>计数DP</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>考试时没想出来，不过听了觉得挺简单的。</p>
 <p>首先把每个片段看成一个数，每个音阶看成该数的一位，则每位为$0$或$1$，题意可以转化为求在$1\sim 2^n-1$中选$m$个数使其异或和为$0$的方案数。我们先不考虑无序性，求出所有排列后除$m!$即为答案。</p>
 <p>设$f[i]$为选$i$个数的方案数，考虑先选$i-1$个数，最后一个数即为前面的数的异或和，这样才能使总异或和位$0$。那么如果不考虑限制，直接选则有$P_{2^n-1}^{i-1}=(2^n-1)\times (2^n-2)\times (2^n-3)\times \cdots \times (2^n-i+1)$种选法。</p>
@@ -484,9 +484,9 @@
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
           
-            <a href="/tags/DP/" rel="tag"> <i class="fa fa-tag"></i> DP</a>
-          
             <a href="/tags/组合数学/" rel="tag"> <i class="fa fa-tag"></i> 组合数学</a>
+          
+            <a href="/tags/DP/" rel="tag"> <i class="fa fa-tag"></i> DP</a>
           
             <a href="/tags/计数/" rel="tag"> <i class="fa fa-tag"></i> 计数</a>
           

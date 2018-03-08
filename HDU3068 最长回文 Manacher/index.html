@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="字符串,HDU,Manacher," />
+  <meta name="keywords" content="字符串,Manacher,HDU," />
 
 
 
@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem 最长回文  Time Limit: $4000/2000 MS (Java/Others)$ Memory Limit: $32768/32768 K (Java/Others)$   Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $">
-<meta name="keywords" content="字符串,HDU,Manacher">
+<meta name="description" content="Problem最长回文Time Limit: $4000/2000 MS (Java/Others)$Memory Limit: $32768/32768 K (Java/Others)$ Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $abba$等">
+<meta name="keywords" content="字符串,Manacher,HDU">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HDU3068 最长回文 &lt;Manacher&gt;">
 <meta property="og:url" content="http://azrael.top/HDU3068 最长回文 Manacher/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 最长回文  Time Limit: $4000/2000 MS (Java/Others)$ Memory Limit: $32768/32768 K (Java/Others)$   Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $">
+<meta property="og:description" content="Problem最长回文Time Limit: $4000/2000 MS (Java/Others)$Memory Limit: $32768/32768 K (Java/Others)$ Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $abba$等">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-13T14:35:12.956Z">
+<meta property="og:updated_time" content="2018-03-08T04:56:25.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HDU3068 最长回文 &lt;Manacher&gt;">
-<meta name="twitter:description" content="Problem 最长回文  Time Limit: $4000/2000 MS (Java/Others)$ Memory Limit: $32768/32768 K (Java/Others)$   Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $">
+<meta name="twitter:description" content="Problem最长回文Time Limit: $4000/2000 MS (Java/Others)$Memory Limit: $32768/32768 K (Java/Others)$ Problem Description给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.回文就是正反读都是一样的字符串, 如$aba$, $abba$等">
 
 
 
@@ -381,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  483
+                  479
                 </span>
               
 
@@ -418,24 +418,14 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="最长回文"><a href="#最长回文" class="headerlink" title="最长回文"></a>最长回文</h2></blockquote>
-<p> Time Limit: $4000/2000 MS (Java/Others)$<br> Memory Limit: $32768/32768 K (Java/Others)$</p>
-<blockquote>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="最长回文"><a href="#最长回文" class="headerlink" title="最长回文"></a>最长回文</h3><p>Time Limit: $4000/2000 MS (Java/Others)$<br>Memory Limit: $32768/32768 K (Java/Others)$</p>
 <h3 id="Problem-Description"><a href="#Problem-Description" class="headerlink" title="Problem Description"></a>Problem Description</h3><p>给出一个只由小写英文字符$a,b,c\cdots y,z$组成的字符串$S$, 求$S$中最长回文串的长度.<br>回文就是正反读都是一样的字符串, 如$aba$, $abba$等</p>
-<blockquote>
-</blockquote>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入有多组$case$,不超过$120$组,每组输入为一行小写英文字符$a,b,c\cdots y,z$组成的字符串$S$<br>两组$case$之间由空行隔开(该空行不用处理)<br>字符串长度$len\le 110000$</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>每一行一个整数$x$,对应一组$case$,表示该组$case$的字符串中所包含的最长回文长度.</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>每一行一个整数$x$,对应一组$case$,表示该组$case$的字符串中所包含的最长回文长度.<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aaaa</span><br><span class="line">abab</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>标签：$Manacher$</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$Manacher$板子题。<br>不懂$Manacher$可以戳这里：<a href="https://segmentfault.com/a/1190000003914228" target="_blank" rel="noopener">https://segmentfault.com/a/1190000003914228</a><br>简单来说，$Manacher$就是记录以每个位置为中心的回文串的半径长度，这样在后面计算的时候可以根据对称性，利用前面的结果加速，找更长匹配时暴力扩展，复杂度$O(n)$。由于此算法仅能对付长度为奇数的回文串（毕竟你算的是以每个点为<strong>中心</strong>的回文串），故先在每两个字符间插入一个占位符。</p>
+<p>标签：<code>Manacher</code></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$Manacher$板子题。<br>不懂$Manacher$可以戳<a href="https://segmentfault.com/a/1190000003914228" target="_blank" rel="noopener">此博客</a>。<br>简单来说，$Manacher$就是记录以每个位置为中心的回文串的半径长度，这样在后面计算的时候可以根据对称性，利用前面的结果加速，找更长匹配时暴力扩展，复杂度$O(n)$。由于此算法仅能对付长度为奇数的回文串（毕竟你算的是以每个点为<strong>中心</strong>的回文串），故先在每两个字符间插入一个占位符。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_L 110000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s[MAX_L*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> f[MAX_L*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">manacher</span> <span class="params">(<span class="keyword">char</span>* s0)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> len = <span class="built_in">strlen</span>(s0);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)	s[i*<span class="number">2</span>+<span class="number">1</span>] = <span class="string">'#'</span>, s[i*<span class="number">2</span>+<span class="number">2</span>] = s0[i];</span><br><span class="line">	s[len = len*<span class="number">2</span>+<span class="number">1</span>] = <span class="string">'#'</span>;</span><br><span class="line">	<span class="keyword">int</span> pos = <span class="number">0</span>, r = <span class="number">0</span>, ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= len; i++) &#123;</span><br><span class="line">		f[i] = (i &lt; r) ? min(f[<span class="number">2</span>*pos-i], r-i) : <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span> (i-f[i] &gt;= <span class="number">1</span> &amp;&amp; i+f[i] &lt;= len &amp;&amp; s[i-f[i]] == s[i+f[i]])	f[i]++;</span><br><span class="line">		<span class="keyword">if</span> (i+f[i] &gt; r)	pos = i, r = i+f[i];</span><br><span class="line">		ret = max(ret, f[i]<span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">char</span> s0[MAX_L+<span class="number">5</span>];</span><br><span class="line">	<span class="keyword">while</span> (~<span class="built_in">scanf</span>(<span class="string">"%s"</span>, s0))	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, manacher(s0));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -484,9 +474,9 @@
           
             <a href="/tags/字符串/" rel="tag"> <i class="fa fa-tag"></i> 字符串</a>
           
-            <a href="/tags/HDU/" rel="tag"> <i class="fa fa-tag"></i> HDU</a>
-          
             <a href="/tags/Manacher/" rel="tag"> <i class="fa fa-tag"></i> Manacher</a>
+          
+            <a href="/tags/HDU/" rel="tag"> <i class="fa fa-tag"></i> HDU</a>
           
         </div>
       
@@ -754,7 +744,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最长回文"><span class="nav-number">2.</span> <span class="nav-text">最长回文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Description"><span class="nav-number">2.1.</span> <span class="nav-text">Problem Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最长回文"><span class="nav-number">1.1.</span> <span class="nav-text">最长回文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Description"><span class="nav-number">1.2.</span> <span class="nav-text">Problem Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>

@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="ProblemCrash的数字表格Time Limit: $20 Sec$Memory Limit: $259 MB$ Description今天的数学课上，$Crash$小朋友学习了最小公倍数$(Least\;Common\;Multiple)$。对于两个正整数$a$和$b$，$LCM(a, b)$表示能同时被a和b整除的最小正整数。例如，$LCM(6, 8) = 24$。回到家后，$Crash">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-04T10:56:10.699Z">
+<meta property="og:updated_time" content="2018-03-08T04:41:28.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ2154 Crash的数字表格 &lt;莫比乌斯反演&gt;">
 <meta name="twitter:description" content="ProblemCrash的数字表格Time Limit: $20 Sec$Memory Limit: $259 MB$ Description今天的数学课上，$Crash$小朋友学习了最小公倍数$(Least\;Common\;Multiple)$。对于两个正整数$a$和$b$，$LCM(a, b)$表示能同时被a和b整除的最小正整数。例如，$LCM(6, 8) = 24$。回到家后，$Crash">
@@ -425,7 +425,7 @@
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 5</span><br></pre></td></tr></table></figure>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">122</span><br></pre></td></tr></table></figure>
 <h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$100\%$的数据满足$N,M\le10^7$。</p>
-<p>标签：莫比乌斯反演</p>
+<p>标签：<code>莫比乌斯反演</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{x=1}^{n}\sum_{y=1}^{m}\frac{x\times y}{\gcd(x,y)}\\<br>&amp;=\sum_{d=1}^{\min(n,m)}\sum_{x=1}^{n}\sum_{y=1}^{m}[\gcd(x,y)=d]\frac{x\times y}{d}\\<br>\end{aligned}<br>$$<br>$$<br>\begin{aligned}<br>&amp;Let\;f(n,m,d)=\sum_{x=1}^{n}\sum_{y=1}^{m}[\gcd(x,y)=d]\cdot x\cdot y\\<br>&amp;then\;f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)=\sum_{x=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{y=1}^{\lfloor\frac{m}{d}\rfloor}[\gcd(x,y)=1]\cdot x\cdot y\\<br>&amp;\therefore Ans=\sum_{d=1}^{\min(n,m)}\frac{f(n,m,d)}{d}=\sum_{d=1}^{\min(n,m)}f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)\times d\\<br>&amp;\;\;\;\;If\;we\;can\;calculate\;f(p,q,1)\;in\;a\;rapid\;way,\\&amp;\;\;\;\;we\;can\;calculate\;the\;answer\;rapidly.\\<br>\end{aligned}<br>$$<br>$$<br>\begin{aligned}<br>f(p,q,1)&amp;=\sum_{i=1}^{p}\sum_{j=1}^{q}\sum_{d|\gcd(i,j)}\mu(d)\cdot i\cdot j\\<br>&amp;=\sum_{d=1}^{\min(p,q)}\mu(d)\times d^2\;\sum_{i=1}^{\lfloor\frac{p}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{q}{d}\rfloor}i\times j\\<br>&amp;=\sum_{d=1}^{\min(p,q)}\mu(d)\times d^2\times\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}\\<br>\end{aligned}<br>$$<br>由以上推导，可见$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$和$\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}$是可以根号分块的，在外层对$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$进行分块，在每个值相同的块中，对$\frac{\lfloor\frac{p}{d}\rfloor\times(\lfloor\frac{p}{d}\rfloor+1)}{2}\times\frac{\lfloor\frac{q}{d}\rfloor\times(\lfloor\frac{q}{d}\rfloor+1)}{2}$进行分块以求出$f(\lfloor\frac{n}{d}\rfloor,\lfloor\frac{m}{d}\rfloor,1)$带回外层算贡献。</p>
 <p>综上，外层复杂度为$O(\sqrt{n})$，内层复杂度为$O(\sqrt{n})$，总时间复杂度为$O(n)$。</p>
 <p>其实可以做得更块，详见加强版<a href="http://azrael.top/BZOJ2693%20jzptab%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/">BZOJ2693</a>。</p>
@@ -492,8 +492,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" rel="next" title="BZOJ1010【HNOI2008】玩具装箱toy <斜率优化>">
-                <i class="fa fa-chevron-left"></i> BZOJ1010【HNOI2008】玩具装箱toy <斜率优化>
+              <a href="/BZOJ2693 jzptab 莫比乌斯反演/" rel="next" title="BZOJ2693 jzptab <莫比乌斯反演>">
+                <i class="fa fa-chevron-left"></i> BZOJ2693 jzptab <莫比乌斯反演>
               </a>
             
           </div>
@@ -502,8 +502,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ2693 jzptab 莫比乌斯反演/" rel="prev" title="BZOJ2693 jzptab <莫比乌斯反演>">
-                BZOJ2693 jzptab <莫比乌斯反演> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ3309 DZY Loves Math 莫比乌斯反演/" rel="prev" title="BZOJ3309 DZY Loves Math <莫比乌斯反演>">
+                BZOJ3309 DZY Loves Math <莫比乌斯反演> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

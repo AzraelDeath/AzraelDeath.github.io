@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem我是歌手Time Limit: $2000 MS$Memory Limit: $32768 KB$ Description$2013$年一开始，一档音乐节目“我是歌手”就惊艳了大家一回。闲话少说，现在，你成为了这档节目的总导演，你的任务很简单，安排每一期节目的内容。现在有$N$个歌手，$M$种歌曲流派（$Rock$，$Pop$之类），每个歌手都有自己擅长的流派领域，这些资料都已整理。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-04T11:44:33.402Z">
+<meta property="og:updated_time" content="2018-03-08T04:41:12.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HDU4560 我是歌手 &lt;二分+网络流&gt;">
 <meta name="twitter:description" content="Problem我是歌手Time Limit: $2000 MS$Memory Limit: $32768 KB$ Description$2013$年一开始，一档音乐节目“我是歌手”就惊艳了大家一回。闲话少说，现在，你成为了这档节目的总导演，你的任务很简单，安排每一期节目的内容。现在有$N$个歌手，$M$种歌曲流派（$Rock$，$Pop$之类），每个歌手都有自己擅长的流派领域，这些资料都已整理。">
@@ -426,7 +426,7 @@
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Case 1: 1</span><br><span class="line">Case 2: 3</span><br><span class="line">Case 3: 2</span><br></pre></td></tr></table></figure>
 <p><strong>Explanation</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对第三组样例，可以如此安排：</span><br><span class="line">第一场三位歌手分别演唱(2,3,1)类型的歌曲，第二场分别演唱(1,2,3)。</span><br><span class="line">这样只有类型3被不擅长的歌手演唱过1次，挑剔的歌迷观众还可以接受。</span><br></pre></td></tr></table></figure></p>
 <h3 id="Hint"><a href="#Hint" class="headerlink" title="Hint"></a>Hint</h3><p>$1\le T \le 100 $<br>$1\le N \le M \le 74, 0 \le K \le N $<br>$0\le L \le N\times M$<br>$1\le A_i \le N, 1 \le B_i \le M$<br>相同关系不会重复出现</p>
-<p>标签：带修主席树</p>
+<p>标签：<code>带修主席树</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>挺好的一道$二分+网络流$套路建模题。</p>
 <p>二分最多能安排的场次，得到当前答案进行判定。</p>
 <p>首先，如果保证每个人唱每种流派最多仅一次，并且$n$个流派均会被唱至少$tans$次，那么一定能找到一组解。这样就可以用最大流判定。<br>由于有“每个流派仅能有$k$个不擅长的选手唱”，我们需要把每个流派又擅长的选手唱和不擅长的选手唱分开，而限制不擅长的选手的数量。可将每个流派拆成两个点，即第$i$个流派$Style_i$拆成$Style_i$和$Style_i’$。从$Style_i$向擅长的选手连边，从$Style_i’$向不擅长的选手连边，而由于从源点向$Style_i$连有$tans$的边，因而所有可用流量都在$Style_i$中，$Style_i’$的流量需要限制，故要在$Style_i$和$Style_i’$间连$K$的边来限制不擅长选手的数量。</p>
@@ -504,8 +504,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ1096【ZJOI2007】仓库建设 斜率优化/" rel="prev" title="BZOJ1096【ZJOI2007】仓库建设 <斜率优化>">
-                BZOJ1096【ZJOI2007】仓库建设 <斜率优化> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1010【HNOI2008】玩具装箱toy 斜率优化/" rel="prev" title="BZOJ1010【HNOI2008】玩具装箱toy <斜率优化>">
+                BZOJ1010【HNOI2008】玩具装箱toy <斜率优化> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

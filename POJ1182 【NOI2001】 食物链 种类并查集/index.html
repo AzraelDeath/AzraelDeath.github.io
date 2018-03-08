@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem食物链Description动物王国中有三类动物$A,B,C$，这三类动物的食物链构成了有趣的环形。$A$吃$B$，$B$吃$C$，$C$吃$A$。有$N$个动物，以$1\sim N$编号。每个动物都是$A,B,C$中的一种，但是我们并不知道它到底是哪一种。人用两种说法对这$N$个动物所构成的食物链关系进行描述：一种说法是$1\;X\;Y$，表示$X$和$Y$是同类。二种说法是$2\">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-04T12:27:46.284Z">
+<meta property="og:updated_time" content="2018-03-08T04:40:59.205Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="POJ1182 【NOI2001】 食物链 &lt;种类并查集&gt;">
 <meta name="twitter:description" content="Problem食物链Description动物王国中有三类动物$A,B,C$，这三类动物的食物链构成了有趣的环形。$A$吃$B$，$B$吃$C$，$C$吃$A$。有$N$个动物，以$1\sim N$编号。每个动物都是$A,B,C$中的一种，但是我们并不知道它到底是哪一种。人用两种说法对这$N$个动物所构成的食物链关系进行描述：一种说法是$1\;X\;Y$，表示$X$和$Y$是同类。二种说法是$2\">
@@ -429,7 +429,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个整数，表示假话的数目。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">100 7</span><br><span class="line">1 101 1 </span><br><span class="line">2 1 2</span><br><span class="line">2 2 3 </span><br><span class="line">2 3 3 </span><br><span class="line">1 1 3 </span><br><span class="line">2 3 1 </span><br><span class="line">1 5 5</span><br></pre></td></tr></table></figure>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
-<p>标签：种类并查集</p>
+<p>标签：<code>种类并查集</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>逻辑推理的题有一部分和并查集有关，此题是种类并查集的经典例题。<br>首先我们把每个动物分成三个点，对于点$i$，点$i$表示第$i$个动物的种类，点$i+n$表示第$i$个动物的食物，点$i+2n$表示第$i$个动物的天敌。<br>这样一来，提供信息：$x$和$y$同类，相当于提供三条信息：</p>
 <ol>
 <li>$x$、$y$在同一个集中</li>
@@ -511,8 +511,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ3110 K大数查询 树套树/" rel="next" title="BZOJ3110 K大数查询 <树套树>">
-                <i class="fa fa-chevron-left"></i> BZOJ3110 K大数查询 <树套树>
+              <a href="/POJ1170 Shopping Offers 五维DP/" rel="next" title="POJ1170 Shopping Offers <五维DP>">
+                <i class="fa fa-chevron-left"></i> POJ1170 Shopping Offers <五维DP>
               </a>
             
           </div>
@@ -521,8 +521,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/HDU4348 To The Moon 带修主席树/" rel="prev" title="HDU4348 To The Moon <带修主席树>">
-                HDU4348 To The Moon <带修主席树> <i class="fa fa-chevron-right"></i>
+              <a href="/LG1073【NOIp2009】最优贸易 Tarjan+DP/" rel="prev" title="LG1073【NOIp2009】最优贸易 <Tarjan+DP>">
+                LG1073【NOIp2009】最优贸易 <Tarjan+DP> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,网络流,图论,最小割," />
+  <meta name="keywords" content="网络流,BZOJ,图论,最小割," />
 
 
 
@@ -110,19 +110,19 @@
 </script>
 
 
-<meta name="description" content="Problem 千钧一发 Time Limit: $10 Sec $ Memory Limit: $512 MB$  Description   Input第一行一个正整数$N$。第二行共包括$N$个正整数，第 个正整数表示$A_i$。第三行共包括$N$个正整数，第 个正整数表示$B_i$。 Output共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。   Sampl">
-<meta name="keywords" content="BZOJ,网络流,图论,最小割">
+<meta name="description" content="Problem千钧一发Time Limit: $10 Sec $Memory Limit: $512 MB$ Description  Input第一行一个正整数$N$。第二行共包括$N$个正整数，第 个正整数表示$A_i$。第三行共包括$N$个正整数，第 个正整数表示$B_i$。 Output共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。">
+<meta name="keywords" content="网络流,BZOJ,图论,最小割">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ3158 千钧一发 &lt;黑白染色+最小割&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ3158 千钧一发 最小割/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem 千钧一发 Time Limit: $10 Sec $ Memory Limit: $512 MB$  Description   Input第一行一个正整数$N$。第二行共包括$N$个正整数，第 个正整数表示$A_i$。第三行共包括$N$个正整数，第 个正整数表示$B_i$。 Output共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。   Sampl">
+<meta property="og:description" content="Problem千钧一发Time Limit: $10 Sec $Memory Limit: $512 MB$ Description  Input第一行一个正整数$N$。第二行共包括$N$个正整数，第 个正整数表示$A_i$。第三行共包括$N$个正整数，第 个正整数表示$B_i$。 Output共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.lydsy.com/JudgeOnline/upload/201305/1(3).jpg">
-<meta property="og:updated_time" content="2018-02-13T08:47:34.271Z">
+<meta property="og:updated_time" content="2018-03-08T05:03:51.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ3158 千钧一发 &lt;黑白染色+最小割&gt;">
-<meta name="twitter:description" content="Problem 千钧一发 Time Limit: $10 Sec $ Memory Limit: $512 MB$  Description   Input第一行一个正整数$N$。第二行共包括$N$个正整数，第 个正整数表示$A_i$。第三行共包括$N$个正整数，第 个正整数表示$B_i$。 Output共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。   Sampl">
+<meta name="twitter:description" content="Problem千钧一发Time Limit: $10 Sec $Memory Limit: $512 MB$ Description  Input第一行一个正整数$N$。第二行共包括$N$个正整数，第 个正整数表示$A_i$。第三行共包括$N$个正整数，第 个正整数表示$B_i$。 Output共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。">
 <meta name="twitter:image" content="http://www.lydsy.com/JudgeOnline/upload/201305/1(3).jpg">
 
 
@@ -420,24 +420,15 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="千钧一发"><a href="#千钧一发" class="headerlink" title="千钧一发"></a>千钧一发</h2><p> Time Limit: $10 Sec $<br> Memory Limit: $512 MB$</p>
-</blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p><center><br><img src="http://www.lydsy.com/JudgeOnline/upload/201305/1(3).jpg" alt=""><br></center></p>
-<blockquote>
-</blockquote>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="千钧一发"><a href="#千钧一发" class="headerlink" title="千钧一发"></a>千钧一发</h3><p>Time Limit: $10 Sec $<br>Memory Limit: $512 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><center><br><img src="http://www.lydsy.com/JudgeOnline/upload/201305/1(3).jpg" alt=""><br></center>
+
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个正整数$N$。<br>第二行共包括$N$个正整数，第 个正整数表示$A_i$。<br>第三行共包括$N$个正整数，第 个正整数表示$B_i$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。</p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">3 4 5 12</span><br><span class="line">9 8 30 9</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">39</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p> $1\le N\le 1000,1\le A_i,B_i\le 10^6$</p>
-</blockquote>
-<p>标签：黑白染色+最小割</p>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$1\le N\le 1000,1\le A_i,B_i\le 10^6$</p>
+<p>标签：<code>黑白染色</code> <code>最小割</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>和$BZOJ3275$差不多<br>两条性质：</p>
 <ul>
 <li>$奇^2+奇^2 \ne X^2 (X\in \mathbb{N}^*)$</li>
@@ -490,9 +481,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
-          
             <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
+          
+            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
           
@@ -509,8 +500,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ2599【IOI2011】Race 点分治/" rel="next" title="BZOJ2599【IOI2011】 Race <点分治>">
-                <i class="fa fa-chevron-left"></i> BZOJ2599【IOI2011】 Race <点分治>
+              <a href="/BZOJ1475 方格取数 最小割/" rel="next" title="BZOJ1475 方格取数 <黑白染色+最小割>">
+                <i class="fa fa-chevron-left"></i> BZOJ1475 方格取数 <黑白染色+最小割>
               </a>
             
           </div>
@@ -764,7 +755,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#千钧一发"><span class="nav-number">2.</span> <span class="nav-text">千钧一发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">2.6.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#千钧一发"><span class="nav-number">1.1.</span> <span class="nav-text">千钧一发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">1.7.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>
