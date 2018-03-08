@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="字符串,Manacher,HDU," />
+  <meta name="keywords" content="字符串,HDU,Manacher," />
 
 
 
@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="Problem Three Palindromes DescriptionCan we divided a given string $S$ into three nonempty palindromes?    InputFirst line contains a single integer $T\le 20$ which denotes the number of test cases.Fo">
-<meta name="keywords" content="字符串,Manacher,HDU">
+<meta name="description" content="ProblemThree PalindromesDescriptionCan we divided a given string $S$ into three nonempty palindromes?  InputFirst line contains a single integer $T\le 20$ which denotes the number of test cases.For ea">
+<meta name="keywords" content="字符串,HDU,Manacher">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HDU5340 Three Palindromes &lt;Manacher&gt;">
 <meta property="og:url" content="http://azrael.top/HDU5340 Three Palindromes Manacher/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem Three Palindromes DescriptionCan we divided a given string $S$ into three nonempty palindromes?    InputFirst line contains a single integer $T\le 20$ which denotes the number of test cases.Fo">
+<meta property="og:description" content="ProblemThree PalindromesDescriptionCan we divided a given string $S$ into three nonempty palindromes?  InputFirst line contains a single integer $T\le 20$ which denotes the number of test cases.For ea">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-13T14:40:02.853Z">
+<meta property="og:updated_time" content="2018-03-08T04:37:01.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HDU5340 Three Palindromes &lt;Manacher&gt;">
-<meta name="twitter:description" content="Problem Three Palindromes DescriptionCan we divided a given string $S$ into three nonempty palindromes?    InputFirst line contains a single integer $T\le 20$ which denotes the number of test cases.Fo">
+<meta name="twitter:description" content="ProblemThree PalindromesDescriptionCan we divided a given string $S$ into three nonempty palindromes?  InputFirst line contains a single integer $T\le 20$ which denotes the number of test cases.For ea">
 
 
 
@@ -418,20 +418,12 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><blockquote>
-<h2 id="Three-Palindromes"><a href="#Three-Palindromes" class="headerlink" title="Three Palindromes"></a>Three Palindromes</h2></blockquote>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Can we divided a given string $S$ into three nonempty palindromes? </p>
-<blockquote>
-</blockquote>
+        <h3 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h3><h3 id="Three-Palindromes"><a href="#Three-Palindromes" class="headerlink" title="Three Palindromes"></a>Three Palindromes</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Can we divided a given string $S$ into three nonempty palindromes? </p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>First line contains a single integer $T\le 20$ which denotes the number of test cases.<br>For each test case , there is an single line contains a string $S$ which only consist of lowercase English letters.$1\le |s|\le 20000$</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each case, output the $Yes$ or $No$ in a single line. </p>
-<blockquote>
-</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each case, output the $Yes$ or $No$ in a single line.<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">abc</span><br><span class="line">abaadada</span><br></pre></td></tr></table></figure>
-<blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Yes</span><br><span class="line">No</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>标签：Manacher</p>
+<p>标签：<code>Manacher</code></p>
 <h2 id="Translation"><a href="#Translation" class="headerlink" title="Translation"></a>Translation</h2><p>题目大意：给出字符串$S$，判断$S$是否能被分为三段回文串。</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>看到回文串，可知本题大概和$Manacher$有关。<br>在$Manacher$中，我们有一个数组$f[]$，$f[i]$记录从第i位向两边拓展，最长回文串的半径是多少。注意到本题有一个特殊的数据——$3$，而三段中，只要能确定任意两段，另一段就能确定。而这三段中肯定有两段是覆盖到串首或串尾的。因而我们可以用$f[i]$是否等于$i$来确定$i$位置是否能成为第一个段的中心点，如法炮制可求出第三段。这时我们暴力枚举第一段和第三段，这样确定第二段后，找到此段中心，可通过$f[]$确定第二段是否是回文串。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_L 20000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s[MAX_L*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> f[MAX_L*<span class="number">2</span>+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">manacher</span> <span class="params">(<span class="keyword">char</span>* s0)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> len = <span class="built_in">strlen</span>(s0), pos = <span class="number">0</span>, r = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)	s[i*<span class="number">2</span>+<span class="number">1</span>] = <span class="string">'#'</span>, s[i*<span class="number">2</span>+<span class="number">2</span>] = s0[i];	s[len = len*<span class="number">2</span>+<span class="number">1</span>] = <span class="string">'#'</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= len; i++) &#123;</span><br><span class="line">		f[i] = (i &lt; r) ? min(f[<span class="number">2</span>*pos-i], r-i) : <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span> (i-f[i] &gt;= <span class="number">1</span> &amp;&amp; i+f[i] &lt;= len &amp;&amp; s[i-f[i]] == s[i+f[i]])	f[i]++;</span><br><span class="line">		<span class="keyword">if</span> (i+f[i] &gt; r)	pos = i, r = i+f[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> lm[MAX_L*<span class="number">2</span>+<span class="number">5</span>], rm[MAX_L*<span class="number">2</span>+<span class="number">5</span>], cntl = <span class="number">0</span>, cntr = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= len; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (f[i] == i &amp;&amp; f[i] &gt; <span class="number">1</span>)	lm[cntl++] = i;</span><br><span class="line">		<span class="keyword">if</span> (f[len-i+<span class="number">1</span>] == i &amp;&amp; f[len-i+<span class="number">1</span>] &gt; <span class="number">1</span>)	rm[cntr++] = len-i+<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; cntl; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; cntr; j++) &#123;</span><br><span class="line">			<span class="keyword">int</span> s = lm[i]+f[lm[i]], t = rm[j]-f[rm[j]];</span><br><span class="line">			<span class="keyword">if</span> (s &gt; t)	<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span> (f[s+t&gt;&gt;<span class="number">1</span>] == <span class="number">1</span>)	<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span> (f[s+t&gt;&gt;<span class="number">1</span>]*<span class="number">2</span><span class="number">-1</span> &lt; t-s+<span class="number">1</span>)	<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">	<span class="keyword">while</span> (T--) &#123;</span><br><span class="line">		<span class="keyword">char</span> s0[MAX_L+<span class="number">5</span>];</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%s"</span>, s0);</span><br><span class="line">		<span class="keyword">if</span> (manacher(s0))	<span class="built_in">printf</span>(<span class="string">"Yes\n"</span>);</span><br><span class="line">		<span class="keyword">else</span>	<span class="built_in">printf</span>(<span class="string">"No\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -482,9 +474,9 @@
           
             <a href="/tags/字符串/" rel="tag"> <i class="fa fa-tag"></i> 字符串</a>
           
-            <a href="/tags/Manacher/" rel="tag"> <i class="fa fa-tag"></i> Manacher</a>
-          
             <a href="/tags/HDU/" rel="tag"> <i class="fa fa-tag"></i> HDU</a>
+          
+            <a href="/tags/Manacher/" rel="tag"> <i class="fa fa-tag"></i> Manacher</a>
           
         </div>
       
@@ -497,8 +489,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/POJ2155 Matrix 树套树二维树状数组/" rel="next" title="POJ2155 Matrix <树套树/二维树状数组>">
-                <i class="fa fa-chevron-left"></i> POJ2155 Matrix <树套树/二维树状数组>
+              <a href="/BZOJ2588 Count on a tree DFS序+LCA+值域主席树/" rel="next" title="BZOJ2588 Count on a tree <DFS序+LCA+值域主席树>">
+                <i class="fa fa-chevron-left"></i> BZOJ2588 Count on a tree <DFS序+LCA+值域主席树>
               </a>
             
           </div>
@@ -507,8 +499,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ1179【APOI2009】ATM Tarjan/" rel="prev" title="BZOJ1179【APIO2009】ATM <Tarjan>">
-                BZOJ1179【APIO2009】ATM <Tarjan> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/" rel="prev" title="BZOJ2434【NOI2011】阿狸的打字机 <AC自动机+Fail树+树状数组>">
+                BZOJ2434【NOI2011】阿狸的打字机 <AC自动机+Fail树+树状数组> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -752,7 +744,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Three-Palindromes"><span class="nav-number">2.</span> <span class="nav-text">Three Palindromes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">2.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">2.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">2.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">2.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">2.5.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number">3.</span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">5.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Three-Palindromes"><span class="nav-number">2.</span> <span class="nav-text">Three Palindromes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">3.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">4.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">5.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">6.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">7.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translation"><span class="nav-number"></span> <span class="nav-text">Translation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number"></span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number"></span> <span class="nav-text">Code</span></a></div>
             
 
           </div>
