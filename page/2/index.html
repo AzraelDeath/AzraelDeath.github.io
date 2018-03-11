@@ -968,168 +968,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4199【NOI2015】品酒大会 后缀数组/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ4199【NOI2015】品酒大会 后缀数组/" itemprop="url">BZOJ3676【NOI2015】品酒大会 <后缀数组+并查集></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T00:00:00+08:00">
-                2018-02-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,591
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  8
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="BZOJ3676【NOI2015】品酒大会"><a href="#BZOJ3676【NOI2015】品酒大会" class="headerlink" title="BZOJ3676【NOI2015】品酒大会"></a>BZOJ3676【NOI2015】品酒大会</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $512 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>一年一度的“幻影阁夏日品酒大会”隆重开幕了。大会包含品尝和趣味挑战两个环节，分别向优胜者颁发“首席品酒家”和“首席猎手”两个奖项，吸引了众多品酒师参加。<br>在大会的晚餐上，调酒师 $Rainbow$ 调制了 $n$ 杯鸡尾酒。这 $n$ 杯鸡尾酒排成一行，其中第 $i$ 杯酒 $(1\le i\le n)$ 被贴上了一个标签 $s_i$，每个标签都是 $26$ 个小写英文字母之一。设 $str(i,j)$ 表示第 $i$ 杯酒到第 $j$ 杯酒的 $j-i+1$ 个标签顺次连接构成的字符串。若 $str(l_1,r_1)=str(l_2,r_2)$，其中$1\le l_1\le r_1\le n$，$1\le l_2\le r_2\le n$，$l_1\ne l_2$，$r_1-l_1+1=r_2-l_2+1=p$，则称第 $l_1$ 杯酒与第 $l_2$ 杯酒是“$p$ 相似”的。当然两杯“$p$ 相似” $(p&gt;1)$ 的酒同时也是“$1$ 相似”、“$2$ 相似”、……、“$(p-1)$ 相似”的。特别地，对于任意的$1\le p,q\le n, p\ne q$，第 $p$ 杯酒和第 $q$ 杯酒都是“$0$ 相似”的。<br>在品尝环节上，品酒师 $Freda$ 轻松地评定了每一杯酒的美味度，凭借其专业的水准和经验成功夺取了“首席品酒家”的称号，其中第 $i$ 杯酒$(1\le i\le n)$ 的美味度为 $a_i$。现在 $Rainbow$ 公布了挑战环节的问题：本次大会调制的鸡尾酒有一个特点，如果把第 $i$ 杯酒与第 $j$ 杯酒调兑在一起，将得到一杯美味度为 $a_i\times a_j$ 的酒。现在请各位品酒师分别对于 $p = 0,1,2,\cdots ,p-1$，统计出有多少种方法可以选出 $2$ 杯“$p$ 相似”的酒，并回答选择 $2$ 杯“$p$相似”的酒调兑可以得到的美味度的最大值。 </p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第 $1$ 行包含 $1$ 个正整数 $n$，表示鸡尾酒的杯数。<br>第 $2$ 行包含一个长度为 $n$ 的字符串 $S$，其中第 i 个字符表示第 $i$ 杯酒的标签。<br>第 $3$ 行包含 $n$ 个整数，相邻整数之间用单个空格隔开，其中第 $i$ 个整数表示第 $i$ 杯酒的美味度 $a_i$。 </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出文件包括 $n$ 行。第 $i$ 行输出 $2$ 个整数，中间用单个空格隔开。第 $1$个整数表示选出两杯“$i-1$ 相似”的酒的方案数，第 $2$ 个整数表示选出两杯“$i-1$ 相似”的酒调兑可以得到的最大美味度。若不存在两杯“$i-1$ 相似”的酒，这两个数均为 $0$。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4199【NOI2015】品酒大会 后缀数组/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3676【APIO2014】回文串 回文自动机/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1238,6 +1076,168 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/BZOJ3676【APIO2014】回文串 回文自动机/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4199【NOI2015】品酒大会 后缀数组/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ4199【NOI2015】品酒大会 后缀数组/" itemprop="url">BZOJ3676【NOI2015】品酒大会 <后缀数组+并查集></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T00:00:00+08:00">
+                2018-02-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,591
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="BZOJ3676【NOI2015】品酒大会"><a href="#BZOJ3676【NOI2015】品酒大会" class="headerlink" title="BZOJ3676【NOI2015】品酒大会"></a>BZOJ3676【NOI2015】品酒大会</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $512 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>一年一度的“幻影阁夏日品酒大会”隆重开幕了。大会包含品尝和趣味挑战两个环节，分别向优胜者颁发“首席品酒家”和“首席猎手”两个奖项，吸引了众多品酒师参加。<br>在大会的晚餐上，调酒师 $Rainbow$ 调制了 $n$ 杯鸡尾酒。这 $n$ 杯鸡尾酒排成一行，其中第 $i$ 杯酒 $(1\le i\le n)$ 被贴上了一个标签 $s_i$，每个标签都是 $26$ 个小写英文字母之一。设 $str(i,j)$ 表示第 $i$ 杯酒到第 $j$ 杯酒的 $j-i+1$ 个标签顺次连接构成的字符串。若 $str(l_1,r_1)=str(l_2,r_2)$，其中$1\le l_1\le r_1\le n$，$1\le l_2\le r_2\le n$，$l_1\ne l_2$，$r_1-l_1+1=r_2-l_2+1=p$，则称第 $l_1$ 杯酒与第 $l_2$ 杯酒是“$p$ 相似”的。当然两杯“$p$ 相似” $(p&gt;1)$ 的酒同时也是“$1$ 相似”、“$2$ 相似”、……、“$(p-1)$ 相似”的。特别地，对于任意的$1\le p,q\le n, p\ne q$，第 $p$ 杯酒和第 $q$ 杯酒都是“$0$ 相似”的。<br>在品尝环节上，品酒师 $Freda$ 轻松地评定了每一杯酒的美味度，凭借其专业的水准和经验成功夺取了“首席品酒家”的称号，其中第 $i$ 杯酒$(1\le i\le n)$ 的美味度为 $a_i$。现在 $Rainbow$ 公布了挑战环节的问题：本次大会调制的鸡尾酒有一个特点，如果把第 $i$ 杯酒与第 $j$ 杯酒调兑在一起，将得到一杯美味度为 $a_i\times a_j$ 的酒。现在请各位品酒师分别对于 $p = 0,1,2,\cdots ,p-1$，统计出有多少种方法可以选出 $2$ 杯“$p$ 相似”的酒，并回答选择 $2$ 杯“$p$相似”的酒调兑可以得到的美味度的最大值。 </p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第 $1$ 行包含 $1$ 个正整数 $n$，表示鸡尾酒的杯数。<br>第 $2$ 行包含一个长度为 $n$ 的字符串 $S$，其中第 i 个字符表示第 $i$ 杯酒的标签。<br>第 $3$ 行包含 $n$ 个整数，相邻整数之间用单个空格隔开，其中第 $i$ 个整数表示第 $i$ 杯酒的美味度 $a_i$。 </p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出文件包括 $n$ 行。第 $i$ 行输出 $2$ 个整数，中间用单个空格隔开。第 $1$个整数表示选出两杯“$i-1$ 相似”的酒的方案数，第 $2$ 个整数表示选出两杯“$i-1$ 相似”的酒调兑可以得到的最大美味度。若不存在两杯“$i-1$ 相似”的酒，这两个数均为 $0$。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ4199【NOI2015】品酒大会 后缀数组/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1517,7 +1517,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,398
+                  1,435
                 </span>
               
 
@@ -1555,20 +1555,14 @@
 
       
         
-          
-            <h1 id="高新2017联训划水记"><a href="#高新2017联训划水记" class="headerlink" title="高新2017联训划水记"></a>高新2017联训划水记</h1><h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><p>T1看到数论题就想放水…惊讶地发现貌似可以DP。不过状态定义出来推不出转移，就交了暴力…题解是个矩乘，我的状态没构造对。不过Joker貌似因为前置0出锅了。<br>T2怎么又是数论…不过化一化发现貌似底数和指数可以合到一起，就是BSGS的板子了。这时候发现了一个大问题…BSGS怎么写啊！BSGS怎么写啊！！BSGS怎么写啊！！！作为一个mr板都没写过的老年选手，我仍不会写BSGS。写了个随机化骗分，不过和暴力分一样。<br>T3好熟悉啊，FLOJ上出现三次的题呢，貌似叫什么重组病毒病毒重组之类的玩意。应该是个LCT吧。不过自己Splay板子都不熟，LCT就别说了，弃坑搞暴力。<br>水了三道低保，20+20+20=60pts。</p>
-<h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><p>T1没看到数据随机…打了一个n方的暴力，一直在想怎么搞到nlogn…结果是按长度排序后枚举且及时break…唯一的水题就这样甩了…<br>T2先想了想字典树，但是是没法搞的。又去推了推线性基，结果没推出了。打暴力弃坑。标解高消按两个关键字贪心。<br>T3由于T1的错误方向想太久已经没时间了，所幸交了暴力，水了30。标解线段树维护区间左右端黑白段长，需要线段树合并。<br>50+40+30=120pts</p>
-<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2><p>T1数论，还好是水题。可知gcd一定是(a-b)的约数，(a-b)是固定的。因此枚举gcd即可。我和flx特判0写挂了，数据挺强，卡成70。<br>T2正解就别说了，连暴力都不好写。索性弃坑做T3。标解行列式，有点像矩阵树。<br>T3乱搞了一个KMP和一个Manacher，写完发现公用变量名了…调出*。按水50分写，最后因为常数得了40。<br>70+0+40=110pts</p>
-<h2 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h2><p>T1nlogn二合一。后面nlogn的lcm会做，水20部分分，30的暴力打错了…标解前半段是平衡树维护做到nlogn，不过我下来看std发现可以值域线段树水过，反正是删排名为k的数。这样比平衡树快而且好写。<br>T2小学奥数。我没有推公式，直接打了一个30x30的表就把规律看出来了。水过。<br>T3看起来像是北京讲的群论。不过貌似不太会推。索性打暴力水20。<br>20+100+20=140pts</p>
-<h2 id="Day5"><a href="#Day5" class="headerlink" title="Day5"></a>Day5</h2><p>YJQ的题目顺序huaji题。滚粗勒。<br>T1没推出公式…暴力滚粗<br>T2没思路…暴力滚粗<br>T3不会维护…暴力滚粗<br>T1正解数论错位相减推通项然后逆元搞搞<br>T2变成A走一步B走两步后最短路乱搞<br>T3维护max-min+L-R=0的区间。用单调栈+线段树搞搞即可<br>20+0+30=50pts</p>
-<h2 id="Day6"><a href="#Day6" class="headerlink" title="Day6"></a>Day6</h2><p>唯一一次考好。<br>T1主席树套路题。有点卡常，不过把传参移到外面以后就瞬间快了6倍。<br>T2合并石子。不会做nlogn，但是会四边形优化的n^2和升序的贪心。水80pts。正解一个叫g什么的鬼畜算法，证明不详，平衡树维护一种贪心操作。<br>T3网络流，发现直接最小割是有锅的，写了分层暴力+错解最小割。正解把每条边建INF反边后跑最小割。<br>100+80+25=205pts</p>
-<h2 id="Day8"><a href="#Day8" class="headerlink" title="Day8"></a>Day8</h2><p>T1推半天没推出来。用基本公式打暴力水60。正解通项是f(x)=φ(x)/2+μ(x)/2。杜教筛可过。<br>T2点分。不会合并信息，没做/QAQ。<br>T3网络流二合一。第二个写了，没写出第一个。贪心打第一个结果出锅了。<br>60+0+35=95pts</p>
-<h2 id="Day9"><a href="#Day9" class="headerlink" title="Day9"></a>Day9</h2><p>T1没想到记忆化（我傻逼）打10pts暴力。正解记忆化，复杂度可证是玄学的O(nlogn√Q)。<br>T2是ZCY讲过的原题，树上背包，维护两个DP。我把两个DP打到一起了，互相更新答案，出锅QAQ。<br>T3丧心病狂WF网络流，不会建图没写。<br>10+40=50pts</p>
-<h2 id="Day10"><a href="#Day10" class="headerlink" title="Day10"></a>Day10</h2><p>T1貌似可以CDQ但是没推出来。用单调栈写n^2部分分，结果定义了全局变量和局部变量n，以至于传进函数的n是0，然后就没输出…正解CDQ分治。<br>T2应该是DP，但是没推出来，按题目模拟水低保。正解n^3DP，wxh有O(n)的做法，学了学发现很精妙，不过很难想，细节也比较多。<br>T3想到是DP，但是细节太多，而且补集转换的全集不会求。标解DP，细节很多，转移方程一大堆。<br>0+40+30=70pts</p>
-<h2 id="Day11"><a href="#Day11" class="headerlink" title="Day11"></a>Day11</h2><p>T1看出来是基环树森林里贪心，不过没调出来，交了n^2暴力，水60pts。正解和我想的一样。<br>T2水题没做起QAQ。暴力打错了，滚粗。<br>T3通讯题会前两个subtask，不会只染两种颜色。正解很精妙，用若干个四位二进制数表示倍增跑多少格，保证能识别三位就认出整个数，target当行位杂色行，上下方位交替杂色行和纯色行。<br>60+0+30=90pts</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>本次集训收获还是蛮大的。见识了一些比较新奇的玩意儿。不过考试也暴露出一些水题我想不出的情况，而且有时暴力还打错。另外，我貌似做套路题很上手，但是做一些灵活的题则很被动。需要多训练思维。</p>
-
-          
+          <h1 id="高新2017联训划水记"><a href="#高新2017联训划水记" class="headerlink" title="高新2017联训划水记"></a>高新2017联训划水记</h1>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/20171219-30总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2133,7 +2127,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">126.1k</span>
+    <span title="Site words total count">126.2k</span>
   
 </div>
 

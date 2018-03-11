@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="NOIp2017滚粗记Day0周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。赶快去看了看博客。一个上午就没了。下午到考场。吃饭前简略">
+<meta name="description" content="NOIp2017滚粗记">
 <meta name="keywords" content="总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NOIp2017提高组总结">
 <meta property="og:url" content="http://azrael.top/NOIp2017提高组总结/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="NOIp2017滚粗记Day0周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。赶快去看了看博客。一个上午就没了。下午到考场。吃饭前简略">
+<meta property="og:description" content="NOIp2017滚粗记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-28T05:37:19.351Z">
+<meta property="og:updated_time" content="2018-03-11T12:07:28.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NOIp2017提高组总结">
-<meta name="twitter:description" content="NOIp2017滚粗记Day0周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。赶快去看了看博客。一个上午就没了。下午到考场。吃饭前简略">
+<meta name="twitter:description" content="NOIp2017滚粗记">
 
 
 
@@ -381,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  942
+                  956
                 </span>
               
 
@@ -418,11 +418,12 @@
       
 
       
-        <h1 id="NOIp2017滚粗记"><a href="#NOIp2017滚粗记" class="headerlink" title="NOIp2017滚粗记"></a>NOIp2017滚粗记</h1><h2 id="Day0"><a href="#Day0" class="headerlink" title="Day0"></a>Day0</h2><p>周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年NOIp真题刷完了（个别太早的题没做）。<br>于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和tarjan的板。接着颓了一会儿纸牌和扫雷。<br>aziint此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。<br>赶快去看了看博客。一个上午就没了。<br>下午到考场。吃饭前简略看了看树分治。<br>晚上开会的时候又想到欧拉图还没复习，好多年没考过了，赶快看看，免得真考到了。</p>
-<h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><p>刚上场就被T1搞得一脸懵逼。蛤？数论题放D1T1？或者说结论题？推了半小时exGCD，果断弃坑。<br>由于先前没读T2（T2题面太长太烦不想读），气氛挺紧张。还好这时我先看了T2而没跳到T3，读完T2发现好简单，索性栈模拟。码到一半发现貌似栈上东西挺多，突然意识到可以递归模拟，肯定好写得多。不过没管，都码了2/3了，索性码完。<br>水完T2倒回来看T1，打了一个20x20的表，把不互质的情况去掉，发现规律很显然，不就是(a-1)*(b-1)-1吗？赶快水掉。<br>T3看到后觉得难度不算太大。发现可以最短路预处理+DP做。这时还没想到拆点，只想到一个带50大常数的容斥。考场上思维没那么开阔，打了容斥DP，调了半小时才过样例。大样例貌似T了，跑了5秒看没出结果我就没管了。回去看T2，总觉得T2会出锅，多出了几组自测小数据，好像没锅。（？）<br>考完后发现T3的容斥有些问题，遇到正环会死循环（因为我采用的是类似SPFA的DP顺序，而容斥的时候没及时清零）。<br>成绩出来后才发现T2只有50分。崩溃地发现把字符串转数字码错了…<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); i++)	ret = ret*<span class="number">10</span>+s[i]-<span class="string">'0'</span>;	<span class="comment">//正确代码</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); i++)	ret = ret*<span class="number">10</span>+i-<span class="string">'0'</span>;	<span class="comment">//我考试时写的，脑抽无极限...</span></span><br></pre></td></tr></table></figure></p>
-<p>最后只好100+50+20=170滚粗</p>
-<h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><p>拿到题目，担心Day1简单Day2会很难，结果看到T1就打消了顾虑。<br>T1是难得的大水题啊，直接并查集水过。<br>T2看到数据范围n&lt;=12就想到了状压DP，但想得不够深，始终在想如何存存下一棵子树的形态。<br>后来又想到了哈夫曼树的贪心，没注意到此题的顺序和贪心顺序是反的，打了一个错误的贪心，花了一个半小时，还自己把自己卡死了。水了40的树DP部分分。<br>T3显然是数据结构题，看到就有种Splay的感觉。但是我Splay板都打不熟，而Splay又是省选内容，再加上时间不太够，就没打Splay。先水了30分的裸暴力，又用BIT+二分写了20分的x=1的情况…结果二分的时候更新打错了。<br>最后100+40+30=170滚粗</p>
-<p>##总结<br>两天合起来是340分。<br>尴尬而耻辱的分数段，毕竟我当场估分时450，因为三道题打错而挂了110分。<br>其实也是自己的锅。十连测阶段我光顾着改题，代码能力有所下滑。<br>这在冬令营之前一定要补起来，虽然我今年大概是进不了冬令营的了。<br>此耻明年必报。</p>
+        <h1 id="NOIp2017滚粗记"><a href="#NOIp2017滚粗记" class="headerlink" title="NOIp2017滚粗记"></a>NOIp2017滚粗记</h1><a id="more"></a>
+<h2 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h2><p>周五上午，想到下午就要去考场了，就不刷题了吧。毕竟前一周我已把历年$NOIp$真题刷完了（个别太早的题没做）。<br>于是就打了打板。当时觉得没什么可复习的了，于是就只打了树剖、线筛和$tarjan$的板。接着颓了一会儿纸牌和扫雷。<br>$aziint$此时正在写一道点双连通分量的题解，突然意识到我几种无向图连通分量（割点和桥）还没复习。<br>赶快去看了看博客。一个上午就没了。<br>下午到考场。吃饭前简略看了看树分治。<br>晚上开会的时候又想到欧拉图还没复习，好多年没考过了，赶快看看，免得真考到了。</p>
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>刚上场就被$T1$搞得一脸懵逼。蛤？数论题放$D1T1$？或者说结论题？推了半小时$exGCD$，果断弃坑。<br>由于先前没读$T2$（$T2$题面太长太烦不想读），气氛挺紧张。还好这时我先看了$T2$而没跳到$T3$，读完$T2$发现好简单，索性栈模拟。码到一半发现貌似栈上东西挺多，突然意识到可以递归模拟，肯定好写得多。不过没管，都码了$\frac{2}{3}$了，索性码完。<br>水完$T2$倒回来看$T1$，打了一个$20\times20$的表，把不互质的情况去掉，发现规律很显然，不就是$(a-1)\times(b-1)-1$吗？赶快水掉。<br>$T3$看到后觉得难度不算太大。发现可以最短路预处理+DP做。这时还没想到拆点，只想到一个带$50$大常数的容斥。考场上思维没那么开阔，打了容斥DP，调了半小时才过样例。大样例貌似$TLE$了，跑了$5$秒看没出结果我就没管了。回去看$T2$，总觉得$T2$会出锅，多出了几组自测小数据，好像没锅。（？）<br>考完后发现$T3$的容斥有些问题，遇到正环会死循环（因为我采用的是类似$SPFA$的$DP$顺序，而容斥的时候没及时清零）。<br>成绩出来后才发现$T2$只有$50$分。崩溃地发现把字符串转数字码错了…<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); i++)	ret = ret*<span class="number">10</span>+s[i]-<span class="string">'0'</span>; <span class="comment">//正确代码</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); i++)	ret = ret*<span class="number">10</span>+i-<span class="string">'0'</span>; <span class="comment">//我考试时写的，脑抽无极限...</span></span><br></pre></td></tr></table></figure></p>
+<p>最后只好$100+50+20=170$滚粗</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p>拿到题目，担心$Day1$简单$Day2$会很难，结果看到$T1$就打消了顾虑。<br>$T1$是难得的大水题啊，直接并查集水过。<br>$T2$看到数据范围$n\le12$就想到了状压$DP$，但想得不够深，始终在想如何存存下一棵子树的形态。<br>后来又想到了哈夫曼树的贪心，没注意到此题的顺序和贪心顺序是反的，打了一个错误的贪心，花了一个半小时，还自己把自己卡死了。水了$40$的树$DP$部分分。<br>$T3$显然是数据结构题，看到就有种$Splay$的感觉。但是我$Splay$板都打不熟，而$Splay$又是省选内容，再加上时间不太够，就没打$Splay$。先水了$30$分的裸暴力，又用$BIT+二分$写了$20$分的$x=1$的情况…结果二分的时候更新打错了。<br>最后$100+40+30=170$滚粗</p>
+<p>##Conclusion<br>两天合起来是$340$分。<br>尴尬而耻辱的分数段，毕竟我当场估分时$450$，因为三道题打错而挂了$110$分。<br>其实也是自己的锅。十连测阶段我光顾着改题，代码能力有所下滑。<br>这在冬令营之前一定要补起来，虽然我今年大概是进不了冬令营的了。<br>此耻明年必报。</p>
 
       
     </div>
@@ -482,8 +483,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/LG1967【NOIp2013】货车运输 LCA/" rel="next" title="LG1967【NOIp2013】货车运输 <MST+LCA>">
-                <i class="fa fa-chevron-left"></i> LG1967【NOIp2013】货车运输 <MST+LCA>
+              <a href="/BZOJ4565【HAOI2016】字符合并 状压DP/" rel="next" title="BZOJ4565【HAOI2016】字符合并 <状压DP>">
+                <i class="fa fa-chevron-left"></i> BZOJ4565【HAOI2016】字符合并 <状压DP>
               </a>
             
           </div>
@@ -737,7 +738,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NOIp2017滚粗记"><span class="nav-number">1.</span> <span class="nav-text">NOIp2017滚粗记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Day0"><span class="nav-number">1.1.</span> <span class="nav-text">Day0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day1"><span class="nav-number">1.2.</span> <span class="nav-text">Day1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day2"><span class="nav-number">1.3.</span> <span class="nav-text">Day2</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NOIp2017滚粗记"><span class="nav-number">1.</span> <span class="nav-text">NOIp2017滚粗记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-0"><span class="nav-number">1.1.</span> <span class="nav-text">Day 0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-1"><span class="nav-number">1.2.</span> <span class="nav-text">Day 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-2"><span class="nav-number">1.3.</span> <span class="nav-text">Day 2</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -772,7 +773,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">126.1k</span>
+    <span title="Site words total count">126.2k</span>
   
 </div>
 
