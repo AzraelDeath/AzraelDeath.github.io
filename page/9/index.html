@@ -902,7 +902,70 @@
       
         
           <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2008】校门外的区间"><a href="#【SDOI2008】校门外的区间" class="headerlink" title="【SDOI2008】校门外的区间"></a>【SDOI2008】校门外的区间</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>受校门外的树这道经典问题的启发，$A$君根据基本的离散数学的知识，抽象出$5$种运算维护集合$S$($S$初始为空)并最终输出$S$。现在，请你完成这道校门外的树之难度增强版——校门外的区间。<br>$5$种运算如下：<br>| <font color="#000000">编号</font> | <font color="#000000">表示格式</font> | <font color="#000000">数学表示</font> |<br>| :——————————————-: | :———————————————–: | :———————————————–: |<br>|                      $1$                      |                      $U$ $T$                      |                     $S\cup T$                     |<br>|                      $2$                      |                      $I$ $T$                      |                     $S\cap T$                     |<br>|                      $3$                      |                      $D$ $T$                      |                       $S-T$                       |<br>|                      $4$                      |                      $C$ $T$                      |                       $S+T$                       |<br>|                      $5$                      |                      $S$ $T$                      |                   $S\otimes T$                    |<br>基本集合运算如下：<br>| <font color="#000000">运算</font> | <font color="#000000">结果</font> |<br>| :——————————————-: | :——————————————-: |<br>|                   $A\cup B$                   |          ${x\in A$ $or$ $x\in B}$           |<br>|                   $A\cap B$                   |         ${x\in A$ $\&amp;\&amp;$ $x\in B}$          |<br>|                     $A-B$                     |        ${x\in A$ $\&amp;\&amp;$ $x\notin B}$        |<br>|                 $A\otimes B$                  |               $(A-B)\cup(B-A)$                |</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>受校门外的树这道经典问题的启发，$A$君根据基本的离散数学的知识，抽象出$5$种运算维护集合$S$($S$初始为空)并最终输出$S$。现在，请你完成这道校门外的树之难度增强版——校门外的区间。<br>$5$种运算如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">表示格式</th>
+<th style="text-align:center">数学表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$1$</td>
+<td style="text-align:center">$U$ $T$</td>
+<td style="text-align:center">$S\cup T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$2$</td>
+<td style="text-align:center">$I$ $T$</td>
+<td style="text-align:center">$S\cap T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$3$</td>
+<td style="text-align:center">$D$ $T$</td>
+<td style="text-align:center">$S-T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$4$</td>
+<td style="text-align:center">$C$ $T$</td>
+<td style="text-align:center">$S+T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$5$</td>
+<td style="text-align:center">$S$ $T$</td>
+<td style="text-align:center">$S\otimes T$</td>
+</tr>
+</tbody>
+</table>
+<p>基本集合运算如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">运算</th>
+<th style="text-align:center">结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$A\cup B$</td>
+<td style="text-align:center">${x\in A$ $or$ $x\in B}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$A\cap B$</td>
+<td style="text-align:center">${x\in A$ $\&amp;\&amp;$ $x\in B}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$A-B$</td>
+<td style="text-align:center">${x\in A$ $\&amp;\&amp;$ $x\notin B}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$A\otimes B$</td>
+<td style="text-align:center">$(A-B)\cup(B-A)$</td>
+</tr>
+</tbody>
+</table>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入共$M$行。<br>每行的格式为$X$ $T$，用一个空格隔开，$X$表示运算的种类，$T$为一个区间(区间用$(a,b), (a,b], [a,b), [a,b]$表示)。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>共一行，即集合$S$，每个区间后面带一个空格。若$S$为空则输出$empty$ $set$。<br>
           <!--noindex-->
