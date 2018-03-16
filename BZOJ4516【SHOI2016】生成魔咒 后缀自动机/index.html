@@ -110,18 +110,18 @@
 </script>
 
 
-<meta name="description" content="ProblemBZOJ4516【SHOI2016】生成魔咒Time Limit: $10 Sec$Memory Limit: $256 MB$ Description魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒。例如 $S=[1,2,1]$ 时，它的生成魔">
+<meta name="description" content="ProblemBZOJ4516【SHOI2016】生成魔咒$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB$ Description魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒">
 <meta name="keywords" content="BZOJ,省选,字符串,后缀自动机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4516【SHOI2016】生成魔咒 &lt;后缀自动机&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4516【SHOI2016】生成魔咒 后缀自动机/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="ProblemBZOJ4516【SHOI2016】生成魔咒Time Limit: $10 Sec$Memory Limit: $256 MB$ Description魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒。例如 $S=[1,2,1]$ 时，它的生成魔">
+<meta property="og:description" content="ProblemBZOJ4516【SHOI2016】生成魔咒$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB$ Description魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-12T08:51:23.477Z">
+<meta property="og:updated_time" content="2018-03-16T06:14:51.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4516【SHOI2016】生成魔咒 &lt;后缀自动机&gt;">
-<meta name="twitter:description" content="ProblemBZOJ4516【SHOI2016】生成魔咒Time Limit: $10 Sec$Memory Limit: $256 MB$ Description魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒。例如 $S=[1,2,1]$ 时，它的生成魔">
+<meta name="twitter:description" content="ProblemBZOJ4516【SHOI2016】生成魔咒$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB$ Description魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒">
 
 
 
@@ -381,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  712
+                  714
                 </span>
               
 
@@ -418,7 +418,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="BZOJ4516【SHOI2016】生成魔咒"><a href="#BZOJ4516【SHOI2016】生成魔咒" class="headerlink" title="BZOJ4516【SHOI2016】生成魔咒"></a>BZOJ4516【SHOI2016】生成魔咒</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $256 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="BZOJ4516【SHOI2016】生成魔咒"><a href="#BZOJ4516【SHOI2016】生成魔咒" class="headerlink" title="BZOJ4516【SHOI2016】生成魔咒"></a>BZOJ4516【SHOI2016】生成魔咒</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;256\;MB$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>魔咒串由许多魔咒字符组成，魔咒字符可以用数字表示。例如可以将魔咒字符 $1$,$2$ 拼凑起来形成一个魔咒串 $[1,2]$。<br>一个魔咒串 $S$ 的非空字串被称为魔咒串 $S$ 的生成魔咒。例如 $S=[1,2,1]$ 时，它的生成魔咒有 $[1]$,$[2]$,$[1,2]$,$[2,1]$,$[1,2,1]$ 五种。$S=[1,1,1]$ 时，它的生成魔咒有 $[1]$,$[1,1]$,$[1,1,1]$ 三种。<br>最初 $S$ 为空串。共进行 $n$ 次操作，每次操作是在 $S$ 的结尾加入一个魔咒字符。每次操作后都需要求出，当前的魔咒串 $S$ 共有多少种生成魔咒。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数 $n$。<br>第二行 $n$ 个数，第 $i$ 个数表示第 $i$ 次操作加入的魔咒字符<br>$1\le n\le100000$，用来表示魔咒字符的数字 $x$ 满足 $1\le x\le10^9$</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出 $n$ 行，每行一个数。第 $i$ 行的数表示第 $i$ 次操作后 $S$ 的生成魔咒数量<br><a id="more"></a></p>
@@ -618,7 +618,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">126</span>
+                  <span class="site-state-item-count">127</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -784,7 +784,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">129.0k</span>
+    <span title="Site words total count">129.8k</span>
   
 </div>
 
