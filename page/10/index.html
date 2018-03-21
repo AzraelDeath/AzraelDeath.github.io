@@ -319,6 +319,231 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3226【SDOI2008】校门外的区间/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ3226【SDOI2008】校门外的区间/" itemprop="url">BZOJ3226【SDOI2008】校门外的区间 <线段树></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-22T00:00:00+08:00">
+                2017-09-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,088
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2008】校门外的区间"><a href="#【SDOI2008】校门外的区间" class="headerlink" title="【SDOI2008】校门外的区间"></a>【SDOI2008】校门外的区间</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>受校门外的树这道经典问题的启发，$A$君根据基本的离散数学的知识，抽象出$5$种运算维护集合$S$($S$初始为空)并最终输出$S$。现在，请你完成这道校门外的树之难度增强版——校门外的区间。<br>$5$种运算如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">表示格式</th>
+<th style="text-align:center">数学表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$1$</td>
+<td style="text-align:center">$U\;\;T$</td>
+<td style="text-align:center">$S\cup T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$2$</td>
+<td style="text-align:center">$I\;\;T$</td>
+<td style="text-align:center">$S\cap T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$3$</td>
+<td style="text-align:center">$D\;\;T$</td>
+<td style="text-align:center">$S-T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$4$</td>
+<td style="text-align:center">$C\;\;T$</td>
+<td style="text-align:center">$S+T$</td>
+</tr>
+<tr>
+<td style="text-align:center">$5$</td>
+<td style="text-align:center">$S\;\;T$</td>
+<td style="text-align:center">$S\otimes T$</td>
+</tr>
+</tbody>
+</table>
+<p>基本集合运算如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">运算</th>
+<th style="text-align:center">结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$A\cup B$</td>
+<td style="text-align:center">${x\in A\;\;or\;\;x\in B}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$A\cap B$</td>
+<td style="text-align:center">${x\in A\;\;\&amp;\&amp;\;\;x\in B}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$A-B$</td>
+<td style="text-align:center">${x\in A\;\;\&amp;\&amp;\;\;x\notin B}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$A\otimes B$</td>
+<td style="text-align:center">$(A-B)\cup(B-A)$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入共$M$行。<br>每行的格式为$X$ $T$，用一个空格隔开，$X$表示运算的种类，$T$为一个区间(区间用$(a,b), (a,b], [a,b), [a,b]$表示)。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>共一行，即集合$S$，每个区间后面带一个空格。若$S$为空则输出$empty$ $set$。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ3226【SDOI2008】校门外的区间/#espandi" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1934【SHOI2007】善意的投票 网络流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -424,7 +649,7 @@
 <h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p><strong>输入格式</strong><br>文件的第一行只有两个整数$n$，$m$，保证有$2\le n\le 300$，$1\le m\le n\times (n-1)/2$。<br>其中$n$代表总人数，$m$代表好朋友的对数。文件第二行有$n$个整数，第$i$个整数代表第$i$个小朋友的意愿，当它为$1$时表示同意睡觉，当它为$0$时表示反对睡觉。接下来文件还有$m$行，每行有两个整数$i$，$j$。表示$i$，$j$是一对好朋友，我们保证任何两对$i$，$j$不会重复。<br><strong>输出格式</strong><br>只需要输出一个整数，即可能的最小冲突数。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1934【SHOI2007】善意的投票 网络流/#more" rel="contents">
+            <a class="btn" href="/BZOJ1934【SHOI2007】善意的投票 网络流/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -584,7 +809,7 @@
 <h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p><strong>输入格式</strong><br>输入文件第一行包含两个整数，$N (1\le N\le 2\times M)$ 和$M (1\le M\le 2\times 10^5)$，分别表示星球的数目和以太隧道的数目。星球用$0\sim N-1$的整数编号。<br>接下来的$M$行，每行包括两个整数$X, Y$，其中（$0\le X,Y&lt;N$且$X\ne Y$），表示星球$X$和星球$Y$之间有以太隧道。注意所有的以太隧道都是双向的。<br>接下来一行是一个整数$K$，表示帝国计划打击的星球个数。<br>接下来的$K$行每行一个整数$X$，满足$0\le X&lt;N$，表示帝国计划打击的星球编号。帝国总是按输入的顺序依次摧毁星球的。<br><strong>输出格式</strong><br>输出文件的第一行是开始时星球的连通块个数。<br>接下来的$K$行，每行一个整数，表示经过该次打击后现存星球的连通块个数。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1015【JSOI2008】星球大战 离线并查集/#more" rel="contents">
+            <a class="btn" href="/BZOJ1015【JSOI2008】星球大战 离线并查集/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -750,169 +975,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅包含一个整数，表示在合法基础上最小的总不和谐值。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3144【HZNOI2013】切糕 最小割/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/" itemprop="url">BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-16T00:00:00+08:00">
-                2017-09-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  2,327
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  12
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【HNOI2007】紧急疏散evacuate"><a href="#【HNOI2007】紧急疏散evacuate" class="headerlink" title="【HNOI2007】紧急疏散evacuate"></a>【HNOI2007】紧急疏散evacuate</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>发生了火警，所有人员需要紧急疏散！假设每个房间是一个$N\times M$的矩形区域。每个格子如果是’$.$’，那么表示这是一块空地；如果是’$X$’，那么表示这是一面墙，如果是’$D$’，那么表示这是一扇门，人们可以从这儿撤出房间。已知门一定在房间的边界上，并且边界上不会有空地。最初，每块空地上都有一个人，在疏散的时候，每一秒钟每个人都可以向上下左右四个方向移动一格，当然他也可以站着不动。疏散开始后，每块空地上就没有人数限制了（也就是说每块空地可以同时站无数个人）。但是，由于门很窄，每一秒钟只能有一个人移动到门的位置，一旦移动到门的位置，就表示他已经安全撤离了。现在的问题是：如果希望所有的人安全撤离，最短需要多少时间？或者告知根本不可能。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件第一行是由空格隔开的一对正整数$N$与$M$，$3\le N\le 20$，$3\le M\le 20$，以下$N$行$M$列描述一个$N\times M$的矩阵。其中的元素可为字符’$.$’, ‘$X$’和’$D$’，且字符间无空格。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个整数K，表示让所有人安全撤离的最短时间，如果不可能撤离，那么输出’$impossible$’（不包括引号）。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/#more" rel="contents">
+            <a class="btn" href="/BZOJ3144【HZNOI2013】切糕 最小割/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1074,7 +1137,169 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>能越狱的状态数，答案模$100003$ 。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1008【HNOI2008】越狱 补集转换/#more" rel="contents">
+            <a class="btn" href="/BZOJ1008【HNOI2008】越狱 补集转换/#espandi" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/" itemprop="url">BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-16T00:00:00+08:00">
+                2017-09-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,327
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  12
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【HNOI2007】紧急疏散evacuate"><a href="#【HNOI2007】紧急疏散evacuate" class="headerlink" title="【HNOI2007】紧急疏散evacuate"></a>【HNOI2007】紧急疏散evacuate</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>发生了火警，所有人员需要紧急疏散！假设每个房间是一个$N\times M$的矩形区域。每个格子如果是’$.$’，那么表示这是一块空地；如果是’$X$’，那么表示这是一面墙，如果是’$D$’，那么表示这是一扇门，人们可以从这儿撤出房间。已知门一定在房间的边界上，并且边界上不会有空地。最初，每块空地上都有一个人，在疏散的时候，每一秒钟每个人都可以向上下左右四个方向移动一格，当然他也可以站着不动。疏散开始后，每块空地上就没有人数限制了（也就是说每块空地可以同时站无数个人）。但是，由于门很窄，每一秒钟只能有一个人移动到门的位置，一旦移动到门的位置，就表示他已经安全撤离了。现在的问题是：如果希望所有的人安全撤离，最短需要多少时间？或者告知根本不可能。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件第一行是由空格隔开的一对正整数$N$与$M$，$3\le N\le 20$，$3\le M\le 20$，以下$N$行$M$列描述一个$N\times M$的矩阵。其中的元素可为字符’$.$’, ‘$X$’和’$D$’，且字符间无空格。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个整数K，表示让所有人安全撤离的最短时间，如果不可能撤离，那么输出’$impossible$’（不包括引号）。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1235,7 +1460,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出仅一行，包含一个整数，即无法逃离的蜥蜴总数的最小值。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1066【SCOI2007】蜥蜴 网络流/#more" rel="contents">
+            <a class="btn" href="/BZOJ1066【SCOI2007】蜥蜴 网络流/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1404,7 +1629,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">... (for each query, simply print the result. )</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/HDU4348 To The Moon 带修主席树/#more" rel="contents">
+            <a class="btn" href="/HDU4348 To The Moon 带修主席树/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1564,7 +1789,7 @@
 <h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>第一行包含 $2$ 个正整数 $n$ 和 $m$，中间用一个空格隔开，分别表示城市的数目和道路的数目。<br>第二行 $n$ 个正整数，每两个整数之间用一个空格隔开，按标号顺序分别表示这 $n$ 个城市的商品价格。<br>接下来 $m$ 行，每行有 $3$ 个正整数，$x$，$y$，$z$，每两个整数之间用一个空格隔开。如果 $z=1$，表示这条道路是城市 $x$ 到城市 $y$ 之间的单向道路；如果 $z=2$，表示这条道路为城市 $x$ 和城市 $y$ 之间的双向道路。<br>输出格式：<br>输出文件 $trade.out$ 共 $1$ 行，包含 $1$ 个整数，表示最多能赚取的旅费。如果没有进行贸易，则输出 $0$。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/LG1073【NOIp2009】最优贸易 Tarjan+DP/#more" rel="contents">
+            <a class="btn" href="/LG1073【NOIp2009】最优贸易 Tarjan+DP/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1731,168 +1956,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个整数，表示假话的数目。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/POJ1182 【NOI2001】 食物链 种类并查集/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ1170 Shopping Offers 五维DP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/POJ1170 Shopping Offers 五维DP/" itemprop="url">POJ1170 Shopping Offers <五维DP></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-17T00:00:00+08:00">
-                2017-08-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  925
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Shopping-Offers"><a href="#Shopping-Offers" class="headerlink" title="Shopping Offers"></a>Shopping Offers</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In a shop each kind of product has a price. For example, the price of a flower is $2$ ICU (Informatics Currency Units) and the price of a vase is $5$ ICU. In order to attract more customers, the shop introduces some special offers.<br>A special offer consists of one or more product items for a reduced price. Examples: three flowers for $5$ ICU instead of $6$, or two vases together with one flower for $10$ ICU instead of $12$.<br>Write a program that calculates the price a customer has to pay for certain items, making optimal use of the special offers. That is, the price should be as low as possible. You are not allowed to add items, even if that would lower the price.<br>For the prices and offers given above, the (lowest) price for three flowers and two vases is $14$ ICU: two vases and one flower for the reduced price of $10$ ICU and two flowers for the regular price of $4$ ICU. </p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>Your program is to read from standard input. The first line contains the number $b$ of different kinds of products in the basket $(0 \le b \le 5)$. Each of the next b lines contains three values $c$, $k$, and $p$. The value $c$ is the (unique) product code $(1 \le c \le 999)$. The value $k$ indicates how many items of this product are in the basket $(1 \le k \le 5)$. The value p is the regular price per item $(1 \le p \le 999)$. Notice that all together at most $5\times 5=25$ items can be in the basket. The $b+2^{nd}$ line contains the number $s$ of special offers $(0 \le s \le 99)$. Each of the next $s$ lines describes one offer by giving its structure and its reduced price. The first number n on such a line is the number of different kinds of products that are part of the offer $(1 \le n \le 5)$. The next n pairs of numbers $(c,k)$ indicate that $k$ items $(1 \le k \le 5)$ with product code $c$ $(1 \le c \le 999)$ are involved in the offer. The last number $p$ on the line stands for the reduced price $(1 \le p \le 9999)$. The reduced price of an offer is less than the sum of the regular prices. </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Your program is to write to standard output. Output one line with the lowest possible price to be paid.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/POJ1170 Shopping Offers 五维DP/#more" rel="contents">
+            <a class="btn" href="/POJ1182 【NOI2001】 食物链 种类并查集/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1988,7 +2052,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">129</span>
+                  <span class="site-state-item-count">130</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2001,7 +2065,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-count">77</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2138,7 +2202,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">131.5k</span>
+    <span title="Site words total count">132.4k</span>
   
 </div>
 
