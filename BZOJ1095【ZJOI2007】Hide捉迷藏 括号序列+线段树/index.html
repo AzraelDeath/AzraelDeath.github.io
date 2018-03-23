@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,省选,括号序列,线段树,数据结构," />
+  <meta name="keywords" content="BZOJ,省选,线段树,数据结构,括号序列," />
 
 
 
@@ -111,7 +111,7 @@
 
 
 <meta name="description" content="Problem【ZJOI2007】Hide捉迷藏$\mathrm{Time\;Limit:\;40\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description捉迷藏$\mathrm{Jiajia}$和$\mathrm{Wind}$是一对恩爱的夫妻，并且他们有很多孩子。某天，$\mathrm{Jiajia}$、$\mathrm{Wind}$和孩子们决定在">
-<meta name="keywords" content="BZOJ,省选,括号序列,线段树,数据结构">
+<meta name="keywords" content="BZOJ,省选,线段树,数据结构,括号序列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1095【ZJOI2007】Hide捉迷藏 &lt;括号序列+线段树&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1095【ZJOI2007】Hide捉迷藏 括号序列+线段树/index.html">
@@ -119,7 +119,7 @@
 <meta property="og:description" content="Problem【ZJOI2007】Hide捉迷藏$\mathrm{Time\;Limit:\;40\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description捉迷藏$\mathrm{Jiajia}$和$\mathrm{Wind}$是一对恩爱的夫妻，并且他们有很多孩子。某天，$\mathrm{Jiajia}$、$\mathrm{Wind}$和孩子们决定在">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://images2015.cnblogs.com/blog/890886/201703/890886-20170304113106126-1381317123.png">
-<meta property="og:updated_time" content="2018-03-23T12:53:59.771Z">
+<meta property="og:updated_time" content="2018-03-23T13:05:29.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1095【ZJOI2007】Hide捉迷藏 &lt;括号序列+线段树&gt;">
 <meta name="twitter:description" content="Problem【ZJOI2007】Hide捉迷藏$\mathrm{Time\;Limit:\;40\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description捉迷藏$\mathrm{Jiajia}$和$\mathrm{Wind}$是一对恩爱的夫妻，并且他们有很多孩子。某天，$\mathrm{Jiajia}$、$\mathrm{Wind}$和孩子们决定在">
@@ -383,7 +383,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,944
+                  2,010
                 </span>
               
 
@@ -399,7 +399,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  9
+                  10
                 </span>
               
             </div>
@@ -448,10 +448,10 @@
 </ul>
 <p>我们需要维护每个区间中两黑点间括号序列长度的最大值，那么我们还需要维护另外几个信息（有点像区间最大字段和）：</p>
 <ul>
-<li>$lp=\max{a+b|S’(a,b)是S的一个前缀，且一个黑点接在S’之后}$</li>
-<li>$lm=\max{b-a|S’(a,b)是S的一个前缀，且一个黑点接在S’之后}$</li>
-<li>$rp=\max{a+b|S’(a,b)是S的一个后缀，且S’接在一个黑点后}$</li>
-<li>$rm=\max{a-b|S’(a,b)是S的一个后缀，且S’接在一个黑点后}$</li>
+<li>$lp=\max\lbrace a+b|S’(a,b)是S的一个前缀，且一个黑点接在S’之后\rbrace$</li>
+<li>$lm=\max\lbrace b-a|S’(a,b)是S的一个前缀，且一个黑点接在S’之后\rbrace$</li>
+<li>$rp=\max\lbrace a+b|S’(a,b)是S的一个后缀，且S’接在一个黑点后\rbrace$</li>
+<li>$rm=\max\lbrace a-b|S’(a,b)是S的一个后缀，且S’接在一个黑点后\rbrace$</li>
 </ul>
 <p>对于一个区间$S$，其两个子区间$S_1,S_2$的七个值分别为$a_1,b_1,lp_1,lm_1,rp_1,rm_1,dis_1$和$a_2,b_2,lp_2,lm_2,rp_2,rm_2,dis_2$，那么该区间的$dis$一定是以下四个值的最大值：</p>
 <ul>
@@ -459,6 +459,13 @@
 <li>$dis_2$</li>
 <li>$rp_1+lm_2$</li>
 <li>$rm_1+lp_2$</li>
+</ul>
+<p>而对于维护的$4$个信息，观察发现可以这样计算：</p>
+<ul>
+<li>$lp=\max\lbrace lp_1,\;a_1-b_1+lp_2,\;a_1+b_1+lm_2\rbrace$</li>
+<li>$lm=\max\lbrace lm_1,\;-a_1+b_1+lm_2\rbrace$</li>
+<li>$rp=\max\lbrace rp_2,\;-a_2+b_2+rp_1,\;a_2+b_2+rm_1\rbrace$</li>
+<li>$rm=\max\lbrace rm_2,\;a_2-b_2+rm_1\rbrace$</li>
 </ul>
 <p>这样以后我们就可以用线段树维护这七个标记了。<br>除了$update$有点长以外，其他都和裸线段树一样。</p>
 <p>以后找个时间把动态点分学一学吧。</p>
@@ -512,11 +519,11 @@
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
           
-            <a href="/tags/括号序列/" rel="tag"> <i class="fa fa-tag"></i> 括号序列</a>
-          
             <a href="/tags/线段树/" rel="tag"> <i class="fa fa-tag"></i> 线段树</a>
           
             <a href="/tags/数据结构/" rel="tag"> <i class="fa fa-tag"></i> 数据结构</a>
+          
+            <a href="/tags/括号序列/" rel="tag"> <i class="fa fa-tag"></i> 括号序列</a>
           
         </div>
       
@@ -529,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1857【SCOI2010】传送带 三分法/" rel="next" title="BZOJ1857【SCOI2010】传送带 <三分法>">
-                <i class="fa fa-chevron-left"></i> BZOJ1857【SCOI2010】传送带 <三分法>
+              <a href="/BZOJ1068【SCOI2007】压缩 区间DP/" rel="next" title="BZOJ1068【SCOI2007】压缩 <区间DP>">
+                <i class="fa fa-chevron-left"></i> BZOJ1068【SCOI2007】压缩 <区间DP>
               </a>
             
           </div>
@@ -815,7 +822,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">134.4k</span>
+    <span title="Site words total count">134.5k</span>
   
 </div>
 
