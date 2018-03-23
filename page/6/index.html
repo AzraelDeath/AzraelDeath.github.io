@@ -426,7 +426,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行，有多少对点之间的距离小于等于$K$<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1468 Tree 点分治/#espandi" rel="contents">
+            <a class="btn" href="/BZOJ1468 Tree 点分治/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -588,7 +588,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$q$行。第$i$行输出第$i$个询问的答案，如果可行，则输出$TAK$，否则输出$NIE$。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4144【AMPPZ2014】Petrol MST/#espandi" rel="contents">
+            <a class="btn" href="/BZOJ4144【AMPPZ2014】Petrol MST/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -643,7 +643,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3632 外太空旅行 随机化/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4145【AMPPZ2014】The Prices 状压DP/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -662,7 +662,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ3632 外太空旅行 随机化/" itemprop="url">BZOJ3632 外太空旅行 <随机化></a></h1>
+                <a class="post-title-link" href="/BZOJ4145【AMPPZ2014】The Prices 状压DP/" itemprop="url">BZOJ4145【AMPPZ2014】The Prices <状压DP></a></h1>
         
 
         <div class="post-meta">
@@ -674,8 +674,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T00:00:00+08:00">
-                2017-11-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-30T00:00:00+08:00">
+                2017-11-30
               </time>
             
 
@@ -706,7 +706,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  680
+                  452
                 </span>
               
 
@@ -722,7 +722,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  2
                 </span>
               
             </div>
@@ -744,13 +744,13 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="外太空旅行"><a href="#外太空旅行" class="headerlink" title="外太空旅行"></a>外太空旅行</h3><p>Time Limit: $5 Sec$<br>Memory Limit: $128 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。<br>可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C$是朋友，但是小$A$和小$C$两人势如水火。<br>任意两个人之间要不就是敌人，要不就是朋友。<br>因为在太空船上发生人员斗殴事件是很恶劣也很危险的，因此选出来参加旅行活动的同学必须互相之间都是朋友。你的任务就是确定最多可以选多少人参加旅行。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数$n$($1\le n\le 50$)。所有的同学按照$1\sim n$编号。<br>接下来若干行，每行两个用空格隔开的整数$a, b$ ($1\le a,b\le n$)，表示$a$和$b$是朋友。<br>注意：如果一个数对$(x,y)$或者$(y,x)$没有在文件中出现，那么编号为$x$和$y$的两个同学就是敌人。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅仅一个数，即最多可以选多少人参加活动。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【AMPPZ2014】The-Prices"><a href="#【AMPPZ2014】The-Prices" class="headerlink" title="【AMPPZ2014】The Prices"></a>【AMPPZ2014】The Prices</h3><p>Time Limit: $20 Sec$<br>Memory Limit: $256 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>你要购买$m$种物品各一件，一共有$n$家商店，你到第$i$家商店的路费为$d[i]$，在第$i$家商店购买第$j$种物品的费用为$c[i][j]$，求最小总费用。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个正整数$n,m$($1\le n\le 100$,$1\le m\le 16$)，表示商店数和物品数。<br>接下来$n$行，每行第一个正整数$d[i]$($1\le d[i]\le 10^6$)表示到第$i$家商店的路费，接下来$m$个正整数，<br>依次表示$c[i][j]$($1\le c[i][j]&lt; 10^6$)。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个正整数，即最小总费用。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3632 外太空旅行 随机化/#espandi" rel="contents">
+            <a class="btn" href="/BZOJ4145【AMPPZ2014】The Prices 状压DP/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -912,7 +912,169 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>如果无解，输出$NIE$，否则第一行输出$TAK$，第二行输出方案。<br>方案包含$n\times m-4\times f$个字符，第$i$个字符表示第$i$步的移动方向，用$G$表示上，$D$表示下，$L$表示左，$P$表示右。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4148【AMPPZ2014】Pillars 构造/#espandi" rel="contents">
+            <a class="btn" href="/BZOJ4148【AMPPZ2014】Pillars 构造/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3632 外太空旅行 随机化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ3632 外太空旅行 随机化/" itemprop="url">BZOJ3632 外太空旅行 <随机化></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T00:00:00+08:00">
+                2017-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  680
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="外太空旅行"><a href="#外太空旅行" class="headerlink" title="外太空旅行"></a>外太空旅行</h3><p>Time Limit: $5 Sec$<br>Memory Limit: $128 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在人类的触角伸向银河系的边缘之际，普通人上太空旅行已经变得稀松平常了。某理科试验班有$n$个人，现在班主任要从中选出尽量多的人去参加一次太空旅行活动。<br>可是$n$名同学并不是和平相处的。有的人，比如小$A$和小$B$整天狼狈为奸，是好朋友；但还有的人，比如杜鲁门和赫鲁晓夫就水火不相容。这$n$名同学，由于是理科生，都非常的理性，所以“朋友的朋友就是朋友”和“敌人的朋友就是敌人”这两句话对这些同学无效。换句话说，有可能小$A$和小$B$是朋友，小$B$和小$C$是朋友，但是小$A$和小$C$两人势如水火。<br>任意两个人之间要不就是敌人，要不就是朋友。<br>因为在太空船上发生人员斗殴事件是很恶劣也很危险的，因此选出来参加旅行活动的同学必须互相之间都是朋友。你的任务就是确定最多可以选多少人参加旅行。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数$n$($1\le n\le 50$)。所有的同学按照$1\sim n$编号。<br>接下来若干行，每行两个用空格隔开的整数$a, b$ ($1\le a,b\le n$)，表示$a$和$b$是朋友。<br>注意：如果一个数对$(x,y)$或者$(y,x)$没有在文件中出现，那么编号为$x$和$y$的两个同学就是敌人。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅仅一个数，即最多可以选多少人参加活动。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ3632 外太空旅行 随机化/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1074,7 +1236,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每组数据，若$A\times B=C$成立，则输出$Yes$，否则$No$。每个答案占一行。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ2396 神奇的矩阵 随机化/#espandi" rel="contents">
+            <a class="btn" href="/BZOJ2396 神奇的矩阵 随机化/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1236,7 +1398,7 @@
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个整数，即最小费用。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4152【AMPPZ2014】The Captain 最短路/#espandi" rel="contents">
+            <a class="btn" href="/BZOJ4152【AMPPZ2014】The Captain 最短路/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1395,167 +1557,7 @@
           <h1 id="NOIp2017滚粗记"><a href="#NOIp2017滚粗记" class="headerlink" title="NOIp2017滚粗记"></a>NOIp2017滚粗记</h1>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/NOIp2017提高组总结/#espandi" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/LG1967【NOIp2013】货车运输 LCA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/LG1967【NOIp2013】货车运输 LCA/" itemprop="url">LG1967【NOIp2013】货车运输 <MST+LCA></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-11T00:00:00+08:00">
-                2017-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,113
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="货车运输"><a href="#货车运输" class="headerlink" title="货车运输"></a>货车运输</h3><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>$A$ 国有 $n$ 座城市，编号从 $1$ 到 $n$，城市之间有 $m$ 条双向道路。每一条道路对车辆都有重量限制，简称限重。现在有 $q$ 辆货车在运输货物， 司机们想知道每辆车在不超过车辆限重的情况下，最多能运多重的货物。</p>
-<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>输入文件名为 $truck.in$。<br>输入文件第一行有两个用一个空格隔开的整数 $n$, $m$，表示 $A$ 国有 $n$ 座城市和 $m$ 条道路。 接下来 $m$ 行每行 $3$ 个整数 $x$、 $y$、 $z$，每两个整数之间用一个空格隔开，表示从 $x$ 号城市到 $y$ 号城市有一条限重为 $z$ 的道路。注意： $x$ 不等于 $y$，两座城市之间可能有多条道路 。<br>接下来一行有一个整数 $q$，表示有 $q$ 辆货车需要运货。<br>接下来 $q$ 行，每行两个整数 $x$、$y$，之间用一个空格隔开，表示一辆货车需要从 $x$ 城市运输货物到 $y$ 城市，注意： $x$ 不等于 $y$ 。<br>输出格式：<br>输出文件名为 $truck.out$。<br>输出共有 $q$ 行，每行一个整数，表示对于每一辆货车，它的最大载重是多少。如果货车不能到达目的地，输出$-1$。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/LG1967【NOIp2013】货车运输 LCA/#espandi" rel="contents">
+            <a class="btn" href="/NOIp2017提高组总结/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1718,7 +1720,7 @@
 <h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>输入文件$twostack.in$的第一行是一个整数$n$。<br>第二行有$n$个用空格隔开的正整数，构成一个$1\sim n$的排列。<br>输出格式：<br>输出文件$twostack.out$共一行，如果输入的排列不是“可双栈排序排列”，输出数字$0$；否则输出字典序最小的操作序列，每两个操作之间用空格隔开，行尾没有空格。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/LG1155【NOIp2008】双栈排序 二分图染色/#espandi" rel="contents">
+            <a class="btn" href="/LG1155【NOIp2008】双栈排序 二分图染色/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1773,7 +1775,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4565【HAOI2016】字符合并 状压DP/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/LG1967【NOIp2013】货车运输 LCA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1792,7 +1794,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ4565【HAOI2016】字符合并 状压DP/" itemprop="url">BZOJ4565【HAOI2016】字符合并 <状压DP></a></h1>
+                <a class="post-title-link" href="/LG1967【NOIp2013】货车运输 LCA/" itemprop="url">LG1967【NOIp2013】货车运输 <MST+LCA></a></h1>
         
 
         <div class="post-meta">
@@ -1836,7 +1838,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  736
+                  1,113
                 </span>
               
 
@@ -1852,7 +1854,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  6
                 </span>
               
             </div>
@@ -1874,13 +1876,11 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【HAOI2016】字符合并"><a href="#【HAOI2016】字符合并" class="headerlink" title="【HAOI2016】字符合并"></a>【HAOI2016】字符合并</h3><p>Time Limit: $20 Sec$<br>Memory Limit: $256 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>有一个长度为 $n$ 的 $01$ 串，你可以每次将相邻的 $k$ 个字符合并，得到一个新的字符并获得一定分数。得到的新字符和分数由这 $k$ 个字符确定。你需要求出你能获得的最大分数。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个整数$n$，$k$。接下来一行长度为$n$的$01$串，表示初始串。接下来$2^k$行，每行一个字符$c_i$和一个整数$w_i$，$c_i$表示长度为$k$的$01$串连成二进制后按从小到大顺序得到的第$i$种合并方案得到的新字符，$w_i$表示对应的第$i$种方案对应获得的分数。$1\le n\le 300$, $0\le c_i\le 1$, $w_i\ge 1$, $k\le 8$</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数表示答案<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="货车运输"><a href="#货车运输" class="headerlink" title="货车运输"></a>货车运输</h3><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>$A$ 国有 $n$ 座城市，编号从 $1$ 到 $n$，城市之间有 $m$ 条双向道路。每一条道路对车辆都有重量限制，简称限重。现在有 $q$ 辆货车在运输货物， 司机们想知道每辆车在不超过车辆限重的情况下，最多能运多重的货物。</p>
+<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p>输入格式：<br>输入文件名为 $truck.in$。<br>输入文件第一行有两个用一个空格隔开的整数 $n$, $m$，表示 $A$ 国有 $n$ 座城市和 $m$ 条道路。 接下来 $m$ 行每行 $3$ 个整数 $x$、 $y$、 $z$，每两个整数之间用一个空格隔开，表示从 $x$ 号城市到 $y$ 号城市有一条限重为 $z$ 的道路。注意： $x$ 不等于 $y$，两座城市之间可能有多条道路 。<br>接下来一行有一个整数 $q$，表示有 $q$ 辆货车需要运货。<br>接下来 $q$ 行，每行两个整数 $x$、$y$，之间用一个空格隔开，表示一辆货车需要从 $x$ 城市运输货物到 $y$ 城市，注意： $x$ 不等于 $y$ 。<br>输出格式：<br>输出文件名为 $truck.out$。<br>输出共有 $q$ 行，每行一个整数，表示对于每一辆货车，它的最大载重是多少。如果货车不能到达目的地，输出$-1$。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4565【HAOI2016】字符合并 状压DP/#espandi" rel="contents">
+            <a class="btn" href="/LG1967【NOIp2013】货车运输 LCA/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1926,7 +1926,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1976,7 +1976,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">130</span>
+                  <span class="site-state-item-count">131</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1989,7 +1989,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">77</span>
+                  <span class="site-state-item-count">78</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2126,7 +2126,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">132.4k</span>
+    <span title="Site words total count">134.4k</span>
   
 </div>
 
