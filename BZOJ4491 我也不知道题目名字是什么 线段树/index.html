@@ -81,7 +81,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,线段树,数据结构," />
+  <meta name="keywords" content="线段树,BZOJ,数据结构," />
 
 
 
@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="Problem我也不知道题目名字是什么Time Limit: $10 Sec$Memory Limit: $512 MB$ Description给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串 Input第一行$n$，表示$A$数组有多少元素接下来一行为$n$个整数$A[i]$接下来一个整数$Q$，表示询问数量接下来$Q$行，每行$2$">
-<meta name="keywords" content="BZOJ,线段树,数据结构">
+<meta name="description" content="Problem我也不知道题目名字是什么$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;512\;MB}$ Description给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串 Input第一行$n$，表示$A$数组有多少元素接下来一行为$n$个整数$A[i]$接下来一个整">
+<meta name="keywords" content="线段树,BZOJ,数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4491 我也不知道题目名字是什么 &lt;线段树&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4491 我也不知道题目名字是什么 线段树/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem我也不知道题目名字是什么Time Limit: $10 Sec$Memory Limit: $512 MB$ Description给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串 Input第一行$n$，表示$A$数组有多少元素接下来一行为$n$个整数$A[i]$接下来一个整数$Q$，表示询问数量接下来$Q$行，每行$2$">
+<meta property="og:description" content="Problem我也不知道题目名字是什么$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;512\;MB}$ Description给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串 Input第一行$n$，表示$A$数组有多少元素接下来一行为$n$个整数$A[i]$接下来一个整">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T07:34:55.910Z">
+<meta property="og:updated_time" content="2018-03-27T11:25:47.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4491 我也不知道题目名字是什么 &lt;线段树&gt;">
-<meta name="twitter:description" content="Problem我也不知道题目名字是什么Time Limit: $10 Sec$Memory Limit: $512 MB$ Description给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串 Input第一行$n$，表示$A$数组有多少元素接下来一行为$n$个整数$A[i]$接下来一个整数$Q$，表示询问数量接下来$Q$行，每行$2$">
+<meta name="twitter:description" content="Problem我也不知道题目名字是什么$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;512\;MB}$ Description给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串 Input第一行$n$，表示$A$数组有多少元素接下来一行为$n$个整数$A[i]$接下来一个整">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  734
+                  736
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="我也不知道题目名字是什么"><a href="#我也不知道题目名字是什么" class="headerlink" title="我也不知道题目名字是什么"></a>我也不知道题目名字是什么</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $512 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="我也不知道题目名字是什么"><a href="#我也不知道题目名字是什么" class="headerlink" title="我也不知道题目名字是什么"></a>我也不知道题目名字是什么</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;512\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个序列$A[i]$，每次询问$l,r$，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行$n$，表示$A$数组有多少元素<br>接下来一行为$n$个整数$A[i]$<br>接下来一个整数$Q$，表示询问数量<br>接下来$Q$行，每行$2$个整数$l, r$</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每个询问，求$[l,r]$内最长子串，使得该子串为不上升子串或不下降子串<br><a id="more"></a></p>
@@ -471,9 +471,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
-          
             <a href="/tags/线段树/" rel="tag"> <i class="fa fa-tag"></i> 线段树</a>
+          
+            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/数据结构/" rel="tag"> <i class="fa fa-tag"></i> 数据结构</a>
           
@@ -488,8 +488,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1087【SCOI2005】互不侵犯King 状压DP/" rel="next" title="BZOJ1087【SCOI2005】互不侵犯King <状压DP>">
-                <i class="fa fa-chevron-left"></i> BZOJ1087【SCOI2005】互不侵犯King <状压DP>
+              <a href="/BZOJ4034【HAOI2015】树上操作 树链剖分/" rel="next" title="BZOJ4034【HAOI2015】树上操作 <树链剖分>">
+                <i class="fa fa-chevron-left"></i> BZOJ4034【HAOI2015】树上操作 <树链剖分>
               </a>
             
           </div>
@@ -498,8 +498,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4034【HAOI2015】树上操作 树链剖分/" rel="prev" title="BZOJ4034【HAOI2015】树上操作 <树链剖分>">
-                BZOJ4034【HAOI2015】树上操作 <树链剖分> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ4720【NOIp2016】换教室 期望DP/" rel="prev" title="BZOJ4720【NOIp2016】换教室 <期望DP>">
+                BZOJ4720【NOIp2016】换教室 <期望DP> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -612,7 +612,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">131</span>
+                  <span class="site-state-item-count">134</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -625,7 +625,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">82</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -778,7 +778,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">134.5k</span>
+    <span title="Site words total count">137.8k</span>
   
 </div>
 
