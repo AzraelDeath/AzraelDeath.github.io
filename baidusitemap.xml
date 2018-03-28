@@ -4,6 +4,173 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ1078%E3%80%90SCOI2008%E3%80%91%E6%96%9C%E5%A0%86%20%E5%8F%AF%E5%B9%B6%E5%A0%86/</loc>
+    <lastmod>2018-03-28T12:46:40.985Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1078【SCOI2008】斜堆 <可并堆></title>
+        <pubTime>2018-03-25T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>可并堆</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1071%E3%80%90SCOI2007%E3%80%91%E7%BB%84%E9%98%9F%20%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
+    <lastmod>2018-03-28T12:32:31.475Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1071【SCOI2007】组队 <双指针></title>
+        <pubTime>2018-03-26T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>双指针</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ4034%E3%80%90HAOI2015%E3%80%91%E6%A0%91%E4%B8%8A%E6%93%8D%E4%BD%9C%20%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</loc>
+    <lastmod>2018-03-28T12:14:20.500Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ4034【HAOI2015】树上操作 <树链剖分></title>
+        <pubTime>2017-11-08T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>树链剖分</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1006%E3%80%90HNOI2008%E3%80%91%E7%A5%9E%E5%A5%87%E7%9A%84%E5%9B%BD%E5%BA%A6%20%E5%BC%A6%E5%9B%BE+MCS/</loc>
+    <lastmod>2018-03-28T12:11:07.442Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1006【HNOI2008】神奇的国度 <弦图+MCS></title>
+        <pubTime>2018-03-25T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>弦图</tag>
+         
+        <tag>MCS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1008%E3%80%90HNOI2008%E3%80%91%E8%B6%8A%E7%8B%B1%20%E8%A1%A5%E9%9B%86%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2018-03-28T12:01:14.775Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1008【HNOI2008】越狱 <补集转换></title>
+        <pubTime>2017-09-15T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>补集转换</tag>
+         
+        <tag>数论数学</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1052%E3%80%90HAOI2007%E3%80%91%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/</loc>
+    <lastmod>2018-03-28T11:59:08.224Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1052【HAOI2007】覆盖问题 <二分答案></title>
+        <pubTime>2018-03-24T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>二分答案</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ3993%E3%80%90SDOI2015%E3%80%91%E6%98%9F%E9%99%85%E6%88%98%E4%BA%89%20%E4%BA%8C%E5%88%86+%E6%9C%80%E5%A4%A7%E6%B5%81/</loc>
+    <lastmod>2018-03-28T11:51:31.008Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ3993【SDOI2015】星际战争 <二分+网络流></title>
+        <pubTime>2017-10-23T16:00:00.000Z</pubTime>
+        
+        <tag>网络流</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>二分答案</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/LG1073%E3%80%90NOIp2009%E3%80%91%E6%9C%80%E4%BC%98%E8%B4%B8%E6%98%93%20Tarjan+DP/</loc>
     <lastmod>2018-03-27T12:25:41.212Z</lastmod>
     <data>
@@ -170,9 +337,9 @@
          
         <tag>MST</tag>
          
-        <tag>最短路</tag>
-         
         <tag>AMPPZ</tag>
+         
+        <tag>最短路</tag>
          
          
            
@@ -460,9 +627,9 @@
         
         <tag>DP</tag>
          
-        <tag>CodeForces</tag>
-         
         <tag>树形DP</tag>
+         
+        <tag>CodeForces</tag>
          
          
            
@@ -647,31 +814,6 @@
         <tag>斜率优化</tag>
          
         <tag>DP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ1008%E3%80%90HNOI2008%E3%80%91%E8%B6%8A%E7%8B%B1%20%E8%A1%A5%E9%9B%86%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2018-03-16T15:40:30.201Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ1008【HNOI2008】越狱</title>
-        <pubTime>2017-09-15T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>省选</tag>
-         
-        <tag>组合数学</tag>
-         
-        <tag>补集转换</tag>
-         
-        <tag>数论数学</tag>
          
          
            
@@ -1264,9 +1406,9 @@
          
         <tag>图论</tag>
          
-        <tag>费用流</tag>
-         
         <tag>二分答案</tag>
+         
+        <tag>费用流</tag>
          
          
            
@@ -1471,9 +1613,9 @@
          
         <tag>数据结构</tag>
          
-        <tag>差分</tag>
-         
         <tag>树状数组</tag>
+         
+        <tag>差分</tag>
          
         <tag>POI</tag>
          
@@ -1529,54 +1671,6 @@
 
     
   <url>
-    <loc>http://azrael.top/BZOJ3993%E3%80%90SDOI2015%E3%80%91%E6%98%9F%E9%99%85%E6%88%98%E4%BA%89%20%E4%BA%8C%E5%88%86+%E6%9C%80%E5%A4%A7%E6%B5%81/</loc>
-    <lastmod>2018-03-08T08:14:18.754Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ3993【SDOI2015】星际战争 <二分+网络流></title>
-        <pubTime>2017-10-23T16:00:00.000Z</pubTime>
-        
-        <tag>网络流</tag>
-         
-        <tag>BZOJ</tag>
-         
-        <tag>省选</tag>
-         
-        <tag>图论</tag>
-         
-        <tag>二分答案</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ4034%E3%80%90HAOI2015%E3%80%91%E6%A0%91%E4%B8%8A%E6%93%8D%E4%BD%9C%20%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</loc>
-    <lastmod>2018-03-08T08:09:32.292Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ4034【HAOI2015】树上操作 <树链剖分></title>
-        <pubTime>2017-11-08T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>线段树</tag>
-         
-        <tag>数据结构</tag>
-         
-        <tag>树链剖分</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://azrael.top/BZOJ4152%E3%80%90AMPPZ2014%E3%80%91The%20Captain%20%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
     <lastmod>2018-03-08T08:05:01.660Z</lastmod>
     <data>
@@ -1588,9 +1682,9 @@
          
         <tag>图论</tag>
          
-        <tag>最短路</tag>
-         
         <tag>AMPPZ</tag>
+         
+        <tag>最短路</tag>
          
          
            
@@ -2291,9 +2385,9 @@
         
         <tag>DP</tag>
          
-        <tag>CodeForces</tag>
-         
         <tag>树形DP</tag>
+         
+        <tag>CodeForces</tag>
          
          
            
@@ -2425,11 +2519,11 @@
          
         <tag>数据结构</tag>
          
-        <tag>树状数组</tag>
-         
         <tag>NOI</tag>
          
         <tag>AC自动机</tag>
+         
+        <tag>树状数组</tag>
          
         <tag>字符串</tag>
          
@@ -2492,9 +2586,9 @@
         
         <tag>图论</tag>
          
-        <tag>MST</tag>
-         
         <tag>二分答案</tag>
+         
+        <tag>MST</tag>
          
         <tag>POJ</tag>
          
@@ -2837,9 +2931,9 @@
         
         <tag>图论</tag>
          
-        <tag>LCA</tag>
-         
         <tag>MST</tag>
+         
+        <tag>LCA</tag>
          
         <tag>NOIp</tag>
          
