@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="Problem【HNOI2007】梦幻岛宝珠Time Limit: $10 Sec$Memory Limit: $162 MB$ Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a">
+<meta name="description" content="Problem【HNOI2007】梦幻岛宝珠$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;162\;MB}$ Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以">
 <meta name="keywords" content="BZOJ,省选,DP,分层DP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1190【HNOI2007】梦幻岛宝珠 &lt;分层DP&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem【HNOI2007】梦幻岛宝珠Time Limit: $10 Sec$Memory Limit: $162 MB$ Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a">
+<meta property="og:description" content="Problem【HNOI2007】梦幻岛宝珠$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;162\;MB}$ Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T04:43:09.745Z">
+<meta property="og:updated_time" content="2018-04-02T05:14:46.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1190【HNOI2007】梦幻岛宝珠 &lt;分层DP&gt;">
-<meta name="twitter:description" content="Problem【HNOI2007】梦幻岛宝珠Time Limit: $10 Sec$Memory Limit: $162 MB$ Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a">
+<meta name="twitter:description" content="Problem【HNOI2007】梦幻岛宝珠$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;162\;MB}$ Description给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  798
+                  800
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【HNOI2007】梦幻岛宝珠"><a href="#【HNOI2007】梦幻岛宝珠" class="headerlink" title="【HNOI2007】梦幻岛宝珠"></a>【HNOI2007】梦幻岛宝珠</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $162 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【HNOI2007】梦幻岛宝珠"><a href="#【HNOI2007】梦幻岛宝珠" class="headerlink" title="【HNOI2007】梦幻岛宝珠"></a>【HNOI2007】梦幻岛宝珠</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给你N颗宝石，每颗宝石都有重量和价值。要你从这些宝石中选取一些宝石，保证总重量不超过W，且总价值最大，输出最大的总价值。<br>数据范围：$N\le 100，W\le 2^{30}$，且保证每颗宝石的重量可以表示为$a\times 2^b$的形式（其中$a\le 10,b\le 30$）</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件中包含多组数据。每组数据的格式如下：第一行是两个正整数$n$和$W$，$1\le n\le 100,1\le W\le 2^{30}$，分别表示宝石的数目和最多能带走的宝石重量。接下来的$n$行，每行有两个正整数$weight_i$和$value_i$，$1\le weight_i\le 2^{30}, 0\le value_i\le 2^{30}$，分别表示第i颗宝石的重量和价值，且保证$weight_i$能写成$a\times 2^b(1\le a\le 10,0\le b\le 30)$的形式。同一行的两个正整数之间用空格隔开。最后一组数据的后面有两个$-1$，表示文件的结束。这两个$-1$并不代表一组数据，你不需对这组数据输出结果。并且输入文件中数据的组数不超过$20$。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于输入的每组数据，输出一个整数$C$，表示小P最多能带走的宝石的总价值。每个结果整数$C$单独占一行，且保证$C$不会超过$2^{30}$。<br><a id="more"></a></p>
@@ -487,8 +487,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1877【SDOI2009】晨跑 拆点费用流/" rel="next" title="BZOJ1877【SDOI2009】晨跑 <拆点费用流>">
-                <i class="fa fa-chevron-left"></i> BZOJ1877【SDOI2009】晨跑 <拆点费用流>
+              <a href="/BZOJ2321【BJ2011集训】星器 物理/" rel="next" title="BZOJ2321【BJ2011集训】星器 <物理>">
+                <i class="fa fa-chevron-left"></i> BZOJ2321【BJ2011集训】星器 <物理>
               </a>
             
           </div>
@@ -497,8 +497,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4514【SDOI2016】数字配对 费用流/" rel="prev" title="BZOJ4514【SDOI2016】数字配对 <费用流>">
-                BZOJ4514【SDOI2016】数字配对 <费用流> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1221【HNOI2001】软件开发 拆点费用流/" rel="prev" title="BZOJ1221【HNOI2001】软件开发 <拆点费用流>">
+                BZOJ1221【HNOI2001】软件开发 <拆点费用流> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -611,7 +611,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">138</span>
+                  <span class="site-state-item-count">140</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -777,7 +777,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">141.1k</span>
+    <span title="Site words total count">144.3k</span>
   
 </div>
 

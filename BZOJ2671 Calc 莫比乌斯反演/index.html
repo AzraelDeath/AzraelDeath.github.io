@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="ProblemCalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。">
+<meta name="description" content="ProblemCalc$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。">
 <meta name="keywords" content="BZOJ,数论数学,莫比乌斯反演">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ2671 Calc &lt;莫比乌斯反演&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ2671 Calc 莫比乌斯反演/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="ProblemCalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。">
+<meta property="og:description" content="ProblemCalc$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T04:49:15.254Z">
+<meta property="og:updated_time" content="2018-04-02T03:02:20.036Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ2671 Calc &lt;莫比乌斯反演&gt;">
-<meta name="twitter:description" content="ProblemCalcTime Limit: $10 Sec$Memory Limit: $128 MB$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。">
+<meta name="twitter:description" content="ProblemCalc$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description给出$N$，统计满足下面条件的数对$(a,b)$的个数：  $1\le a&amp;lt;b\le N$ $(a+b)|(a\cdot b)$  Input一行一个数$N$。 Output一行一个数表示答案。">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  956
+                  958
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Calc"><a href="#Calc" class="headerlink" title="Calc"></a>Calc</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Calc"><a href="#Calc" class="headerlink" title="Calc"></a>Calc</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给出$N$，统计满足下面条件的数对$(a,b)$的个数：</p>
 <ul>
 <li>$1\le a&lt;b\le N$</li>
@@ -498,7 +498,7 @@
 </table>
 <p>标签：<code>莫比乌斯反演</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>一道稍有变形的莫比乌斯反演，$blutrex$有$O(n^{\frac{3}{4}})$的算法，但我只会小常数的$O(n)$算法，不过可以过$BZOJ$数据。</p>
-<p>问题即求$\sum_{i=1}^{n}\sum_{j=i+1}^{n}{[(i+j)|(i\times j)]}$的值。设$\gcd(i,j)=d$, $i=x\times d$, $j=y\times d$，易知$\gcd(x,y)=1$。<br>那么$(i+j)|(i\times j)$$\iff$$((x+y)\times d)|(x\times y\times d^2)$$\iff$$(x+y)|(x\times y\times d)$$\iff$$(x+y)|d$。<br>不妨设$d=k\times(x+y)​$，那么$a=x\times d=k\times x\times(x+y)​$, $b=y\times d=k\times y\times(x+y)​$。<br>有<br>$$<br>\begin{equation}<br>\begin{aligned}<br>原式 =&amp; \sum_{x=1}^{n}\sum_{y=x+1}^{n}[\gcd(x,y)=1 \&amp;\&amp; a&lt;b\le n]\\<br>=&amp; \sum_{y=1}^{\lfloor\sqrt{n}-1\rfloor}\sum_{x=1}^{y-1}\sum_{k\in \mathbb{Z}^*}{[\gcd(x,y)=1 \&amp;\&amp; k\times y\times (x+y)\le n]}\\<br>=&amp; \sum_{y=1}^{\lfloor\sqrt{n}-1\rfloor}\sum_{x=1}^{y-1}[\gcd(x,y)=1]\times \lfloor\frac{n}{y\times(x+y)}\rfloor\\<br>\end{aligned}<br>\end{equation}<br>$$<br>显然$val=\lfloor\frac{n}{y\times(x+y)}\rfloor$只有$\sqrt{n}$级别种取值，可以根号分块来算，即枚举$y$，每次找到$val$相等的一段$x\in[lo,hi]$，统计$[lo,hi]$间满足$\gcd(x,y)=1$的$x$的个数，可以套用基础莫比乌斯反演公式，即$\sum_{d|y}{\mu(d)\cdot(\lfloor\frac{hi}{d}\rfloor-\lfloor\frac{lo-1}{d}\rfloor)}$。</p>
+<p>问题即求$\sum_{i=1}^{n}\sum_{j=i+1}^{n}{[(i+j)|(i\times j)]}$的值。设$\gcd(i,j)=d$, $i=x\times d$, $j=y\times d$，易知$\gcd(x,y)=1$。<br>那么$(i+j)|(i\times j)$$\iff$$((x+y)\times d)|(x\times y\times d^2)$$\iff$$(x+y)|(x\times y\times d)$$\iff$$(x+y)|d$。<br>不妨设$d=k\times(x+y)$，那么$a=x\times d=k\times x\times(x+y)$, $b=y\times d=k\times y\times(x+y)$。<br>有<br>$$<br>\begin{equation}<br>\begin{aligned}<br>原式 =&amp; \sum_{x=1}^{n}\sum_{y=x+1}^{n}[\gcd(x,y)=1 \&amp;\&amp; a&lt;b\le n]\\<br>=&amp; \sum_{y=1}^{\lfloor\sqrt{n}-1\rfloor}\sum_{x=1}^{y-1}\sum_{k\in \mathbb{Z}^*}{[\gcd(x,y)=1 \&amp;\&amp; k\times y\times (x+y)\le n]}\\<br>=&amp; \sum_{y=1}^{\lfloor\sqrt{n}-1\rfloor}\sum_{x=1}^{y-1}[\gcd(x,y)=1]\times \lfloor\frac{n}{y\times(x+y)}\rfloor\\<br>\end{aligned}<br>\end{equation}<br>$$<br>显然$val=\lfloor\frac{n}{y\times(x+y)}\rfloor$只有$\sqrt{n}$级别种取值，可以根号分块来算，即枚举$y$，每次找到$val$相等的一段$x\in[lo,hi]$，统计$[lo,hi]$间满足$\gcd(x,y)=1$的$x$的个数，可以套用基础莫比乌斯反演公式，即$\sum_{d|y}{\mu(d)\cdot(\lfloor\frac{hi}{d}\rfloor-\lfloor\frac{lo-1}{d}\rfloor)}$。</p>
 <p>此算法先枚举$y$的取值，再枚举$val$的取值，最后枚举$y$的约数$d$计算反演。其中$y$有$\sqrt{n}$级别种取值，$val$所对应的$[lo,hi]$都在$(0,y)$之间，即共有$\sqrt{y}\thickapprox\sqrt[4]{n}$级别种取值，而最后的$d$又有$\sqrt{y}\thickapprox\sqrt[4]{n}$级别种取值，故总时间复杂度应为$O(n)$。但是由于$val$的取值总数通常到不了$\sqrt[4]{n}$级别，且$d$的取值总数通常也到不了$\sqrt[4]{n}$级别，因此常数非常小，跑得贼快，可以过此题$2\times 10^9$级别的数据。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 100000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> pri[MAX_N+<span class="number">5</span>], mu[MAX_N+<span class="number">5</span>], fac[MAX_N+<span class="number">5</span>], cnt;	<span class="keyword">bool</span> NotPri[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PriS</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	mu[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= MAX_N; i++) &#123;</span><br><span class="line">		<span class="keyword">if</span> (!NotPri[i]) pri[cnt++] = i, mu[i] = <span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>, x; j &lt; cnt; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> ((x = i*pri[j]) &gt; MAX_N) <span class="keyword">break</span>;</span><br><span class="line">			NotPri[x] = <span class="literal">true</span>;</span><br><span class="line">			<span class="keyword">if</span> (i%pri[j]) mu[x] = -mu[i];</span><br><span class="line">			<span class="keyword">else</span> &#123;mu[x] = <span class="number">0</span>;	<span class="keyword">break</span>;&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;	read(n), PriS();	lnt ans = <span class="number">0L</span>L;</span><br><span class="line">	<span class="keyword">for</span> (lnt i = <span class="number">1</span>, l, r; i &lt; <span class="built_in">sqrt</span>(n); i++) &#123;</span><br><span class="line">		cnt = <span class="number">0</span>; <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="built_in">sqrt</span>(i); j++) <span class="keyword">if</span> (i%j == <span class="number">0</span>) fac[cnt++] = j;</span><br><span class="line">		<span class="keyword">for</span> (l = <span class="number">1</span>; l &lt; i; l = r+<span class="number">1</span>) &#123;</span><br><span class="line">			lnt val = n/(i*(i+l)); <span class="keyword">if</span> (!val) <span class="keyword">break</span>;	r = min(n/val/i-i, i<span class="number">-1</span>);</span><br><span class="line">			<span class="keyword">for</span> (lnt k = <span class="number">0</span>, j; k &lt; cnt; k++) &#123;</span><br><span class="line">				j = fac[k], ans += mu[j]*(r/j-(l<span class="number">-1</span>)/j)*val;	lnt t = i/j;</span><br><span class="line">				<span class="keyword">if</span> (i%t == <span class="number">0</span> &amp;&amp; (j^t)) ans += mu[t]*(r/t-(l<span class="number">-1</span>)/t)*val;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -687,7 +687,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">138</span>
+                  <span class="site-state-item-count">140</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -853,7 +853,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">141.1k</span>
+    <span title="Site words total count">144.3k</span>
   
 </div>
 
