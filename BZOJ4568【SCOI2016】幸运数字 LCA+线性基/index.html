@@ -81,7 +81,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,省选,图论,数论数学,LCA,线性基," />
+  <meta name="keywords" content="BZOJ,省选,数论数学,图论,LCA,线性基," />
 
 
 
@@ -107,14 +107,14 @@
 
 
 <meta name="description" content="Problem【SCOI2016】幸运数字$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256MB}$ Description$A$国共有$n$座城市，这些城市由$n-1$条道路相连，使得任意两座城市可以互达，且路径唯一。每座城市都有一个幸运数字，以纪念碑的形式矗立在这座城市的正中心，作为城市的象征。一些旅行者希望游览$A$国。旅">
-<meta name="keywords" content="BZOJ,省选,图论,数论数学,LCA,线性基">
+<meta name="keywords" content="BZOJ,省选,数论数学,图论,LCA,线性基">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4568【SCOI2016】幸运数字 &lt;LCA+线性基&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4568【SCOI2016】幸运数字 LCA+线性基/index.html">
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem【SCOI2016】幸运数字$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256MB}$ Description$A$国共有$n$座城市，这些城市由$n-1$条道路相连，使得任意两座城市可以互达，且路径唯一。每座城市都有一个幸运数字，以纪念碑的形式矗立在这座城市的正中心，作为城市的象征。一些旅行者希望游览$A$国。旅">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-02T13:17:52.375Z">
+<meta property="og:updated_time" content="2018-04-03T04:32:50.895Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4568【SCOI2016】幸运数字 &lt;LCA+线性基&gt;">
 <meta name="twitter:description" content="Problem【SCOI2016】幸运数字$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256MB}$ Description$A$国共有$n$座城市，这些城市由$n-1$条道路相连，使得任意两座城市可以互达，且路径唯一。每座城市都有一个幸运数字，以纪念碑的形式矗立在这座城市的正中心，作为城市的象征。一些旅行者希望游览$A$国。旅">
@@ -415,7 +415,7 @@
 
       
         <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2016】幸运数字"><a href="#【SCOI2016】幸运数字" class="headerlink" title="【SCOI2016】幸运数字"></a>【SCOI2016】幸运数字</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;256MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$A$国共有$n$座城市，这些城市由$n-1$条道路相连，使得任意两座城市可以互达，且路径唯一。每座城市都有一个幸运数字，以纪念碑的形式矗立在这座城市的正中心，作为城市的象征。一些旅行者希望游览$A$国。旅行者计划乘飞机降落在$x$号城市，沿着$x$号城市到$y$号城市之间那条唯一的路径游览，最终从$y$城市起飞离开$A$国。在经过每一座城市时，游览者就会有机会与这座城市的幸运数字拍照，从而将这份幸运保存到自己身上。然而，幸运是不能简单叠加的，这一点游览者也十分清楚。他们迷信着幸运数字是以异或的方式保留在自己身上的。例如，游览者拍了$3$张照片，幸运值分别是$5,7,11$，那么最终保留在自己身上的幸运值就是 $\mathrm{9\;(5\otimes7\otimes11)}$。有些聪明的游览者发现，只要选择性地进行拍照，便能获得更大的幸运值。例如在上述三个幸运值中，只选择$5$和$11$，可以保留的幸运值为$14$ 。现在，一些游览者找到了聪明的你，希望你帮他们计算出在他们的行程安排中可以保留的最大幸运值是多少。</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$A$国共有$n$座城市，这些城市由$n-1$条道路相连，使得任意两座城市可以互达，且路径唯一。每座城市都有一个幸运数字，以纪念碑的形式矗立在这座城市的正中心，作为城市的象征。一些旅行者希望游览$A$国。旅行者计划乘飞机降落在$x$号城市，沿着$x$号城市到$y$号城市之间那条唯一的路径游览，最终从$y$城市起飞离开$A$国。在经过每一座城市时，游览者就会有机会与这座城市的幸运数字拍照，从而将这份幸运保存到自己身上。然而，幸运是不能简单叠加的，这一点游览者也十分清楚。他们迷信着幸运数字是以异或的方式保留在自己身上的。例如，游览者拍了$3$张照片，幸运值分别是$5,7,11$，那么最终保留在自己身上的幸运值就是 $\mathrm{9\;(5\oplus7\oplus11)}$。有些聪明的游览者发现，只要选择性地进行拍照，便能获得更大的幸运值。例如在上述三个幸运值中，只选择$5$和$11$，可以保留的幸运值为$14$ 。现在，一些游览者找到了聪明的你，希望你帮他们计算出在他们的行程安排中可以保留的最大幸运值是多少。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含$2$个正整数$n,q$，分别表示城市的数量和旅行者数量。第二行包含$n$个非负整数，其中第$i$个整数$G_i$表示$i$号城市的幸运值。随后$n-1$行，每行包含两个正整数$x,y$，表示$x$号城市和$y$号城市之间有一条道路相连。随后$q$行，每行包含两个正整数$x,y$，表示这名旅行者的旅行计划是从$x$号城市到$y$号城市。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出需要包含$q$行，每行包含$1$个非负整数，表示这名旅行者可以保留的最大幸运值。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">11</span> <span class="number">5</span> <span class="number">7</span> <span class="number">9</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">4</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">4</span></span><br></pre></td></tr></table></figure>
@@ -474,9 +474,9 @@
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
           
-            <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
-          
             <a href="/tags/数论数学/" rel="tag"> <i class="fa fa-tag"></i> 数论数学</a>
+          
+            <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
           
             <a href="/tags/LCA/" rel="tag"> <i class="fa fa-tag"></i> LCA</a>
           
@@ -493,8 +493,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ2115【WC2011】Xor 线性基/" rel="next" title="BZOJ2115【WC2011】Xor <线性基>">
-                <i class="fa fa-chevron-left"></i> BZOJ2115【WC2011】Xor <线性基>
+              <a href="/BZOJ2177 曼哈顿最小生成树 树状数组优化建边/" rel="next" title="BZOJ2177 曼哈顿最小生成树 <树状数组优化建边>">
+                <i class="fa fa-chevron-left"></i> BZOJ2177 曼哈顿最小生成树 <树状数组优化建边>
               </a>
             
           </div>
@@ -502,6 +502,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/BZOJ2115【WC2011】Xor 线性基/" rel="prev" title="BZOJ2115【WC2011】Xor <线性基>">
+                BZOJ2115【WC2011】Xor <线性基> <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -613,7 +617,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">142</span>
+                  <span class="site-state-item-count">145</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -626,7 +630,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">88</span>
+                  <span class="site-state-item-count">89</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -695,6 +699,10 @@ var jiathis_config={
                 
                   <li class="links-of-blogroll-item">
                     <a href="http://blog.csdn.net/myjs999" title="myjs99" target="_blank">myjs99</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/YangZehai41" title="wsyzh" target="_blank">wsyzh</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
@@ -779,7 +787,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">146.1k</span>
+    <span title="Site words total count">148.4k</span>
   
 </div>
 
