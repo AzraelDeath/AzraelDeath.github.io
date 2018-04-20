@@ -106,19 +106,19 @@
 </script>
 
 
-<meta name="description" content="Problem【JSOI2010】Group 部落划分 GroupTime Limit: $10 Sec$Memory Limit: $64 MB$ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪根本就不知道部落究竟是如何分布的。">
+<meta name="description" content="Problem【JSOI2010】Group 部落划分$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪">
 <meta name="keywords" content="BZOJ,省选,图论,MST">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1821【JSOI2010】Group部落划分 &lt; MST &gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1821【JSOI2010】Group部落划分 MST/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem【JSOI2010】Group 部落划分 GroupTime Limit: $10 Sec$Memory Limit: $64 MB$ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪根本就不知道部落究竟是如何分布的。">
+<meta property="og:description" content="Problem【JSOI2010】Group 部落划分$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.lydsy.com/JudgeOnline/images/1821.jpg">
-<meta property="og:updated_time" content="2018-03-27T12:24:37.714Z">
+<meta property="og:updated_time" content="2018-04-20T12:29:56.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1821【JSOI2010】Group部落划分 &lt; MST &gt;">
-<meta name="twitter:description" content="Problem【JSOI2010】Group 部落划分 GroupTime Limit: $10 Sec$Memory Limit: $64 MB$ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪根本就不知道部落究竟是如何分布的。">
+<meta name="twitter:description" content="Problem【JSOI2010】Group 部落划分$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪">
 <meta name="twitter:image" content="http://www.lydsy.com/JudgeOnline/images/1821.jpg">
 
 
@@ -379,7 +379,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  787
+                  790
                 </span>
               
 
@@ -416,7 +416,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【JSOI2010】Group-部落划分-Group"><a href="#【JSOI2010】Group-部落划分-Group" class="headerlink" title="【JSOI2010】Group 部落划分 Group"></a>【JSOI2010】Group 部落划分 Group</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $64 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【JSOI2010】Group-部落划分"><a href="#【JSOI2010】Group-部落划分" class="headerlink" title="【JSOI2010】Group 部落划分"></a>【JSOI2010】Group 部落划分</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;64\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>聪聪研究发现，荒岛野人总是过着群居的生活，但是，并不是整个荒岛上的所有野人都属于同一个部落，野人们总是拉帮结派形成属于自己的部落，不同的部落之间则经常发生争斗。只是，这一切都成为谜团了——聪聪根本就不知道部落究竟是如何分布的。 不过好消息是，聪聪得到了一份荒岛的地图。地图上标注了$N$个野人居住的地点（可以看作是平面上的坐标）。我们知道，同一个部落的野人总是生活在附近。我们把两个部落的距离，定义为部落中距离最近的那两个居住点的距离。聪聪还获得了一个有意义的信息——这些野人总共被分为了$K$个部落！这真是个好消息。聪聪希望从这些信息里挖掘出所有部落的详细信息。他正在尝试这样一种算法： 对于任意一种部落划分的方法，都能够求出两个部落之间的距离，聪聪希望求出一种部落划分的方法，使靠得最近的两个部落尽可能远离。 例如，下面的左图表示了一个好的划分，而右图则不是。请你编程帮助聪聪解决这个难题。 </p>
 <center><br><img src="http://www.lydsy.com/JudgeOnline/images/1821.jpg" alt=""><br></center>
 
@@ -425,7 +425,7 @@
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4 2</span><br><span class="line">0 0</span><br><span class="line">0 1</span><br><span class="line">1 1</span><br><span class="line">1 0</span><br></pre></td></tr></table></figure>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.00</span><br></pre></td></tr></table></figure>
 <p>标签：<code>MST</code></p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>此题是$MST$的一个简单变形。<br>本题要求分为$k$个部落，即在生成树上拆$k-1$条边。<br>使得其最小距离最大，可以$kruskal$贪心向下选，选到剩$k-1$条边为止。</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>此题是$\mathrm{MST}$的一个简单变形。<br>本题要求分为$k$个部落，即在生成树上拆$k-1$条边。<br>使得其最小距离最大，可以$\mathrm{Kruskal}$$贪心向下选，选到剩$k-1$条边为止。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 1000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> u, v;	dnt c;&#125; E[MAX_N*MAX_N+<span class="number">50</span>];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span> <span class="params">(<span class="keyword">const</span> node &amp;a, <span class="keyword">const</span> node &amp;b)</span> </span>&#123;<span class="keyword">return</span> a.c &lt; b.c;&#125;</span><br><span class="line"><span class="keyword">int</span> n, k, cnt, x[MAX_N+<span class="number">5</span>], y[MAX_N+<span class="number">5</span>], fa[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	fa[i] = i;&#125;</span><br><span class="line"><span class="function">dnt <span class="title">dist</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;<span class="keyword">return</span> (dnt)<span class="built_in">sqrt</span>((x[a]-x[b])*(x[a]-x[b])+(y[a]-y[b])*(y[a]-y[b]));&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getf</span><span class="params">(<span class="keyword">int</span> c)</span> </span>&#123;<span class="keyword">return</span> fa[c] == c ? c : fa[c] = getf(fa[c]);&#125;</span><br><span class="line"><span class="function">dnt <span class="title">Kruskal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	sort(E, E+cnt, cmp);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, tot = <span class="number">0</span>; i &lt; cnt; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = getf(E[i].u), v = getf(E[i].v);</span><br><span class="line">		<span class="keyword">if</span> (u != v)	fa[u] = v, tot++;</span><br><span class="line">		<span class="keyword">if</span> (tot &gt; n-k)	<span class="keyword">return</span> E[i].c;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;k), init();</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;x[i], &amp;y[i]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= n; j++)	E[cnt++] = (node)&#123;i, j, dist(i, j)&#125;;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%.2lf"</span>, Kruskal());</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -491,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/POJ3228 Gold Transportation MST/" rel="next" title="POJ3228 Gold Transportation < MST >">
-                <i class="fa fa-chevron-left"></i> POJ3228 Gold Transportation < MST >
+              <a href="/BZOJ1972【SDOI2010】猪国杀/" rel="next" title="BZOJ1972 【SDOI2010】 猪国杀 <模拟>">
+                <i class="fa fa-chevron-left"></i> BZOJ1972 【SDOI2010】 猪国杀 <模拟>
               </a>
             
           </div>
@@ -501,8 +501,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4325【NOIp2015】斗地主 搜索+贪心/" rel="prev" title="BZOJ4325【NOIp2015】斗地主 <搜索+贪心>">
-                BZOJ4325【NOIp2015】斗地主 <搜索+贪心> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ3993【SDOI2015】星际战争 二分+最大流/" rel="prev" title="BZOJ3993【SDOI2015】星际战争 <二分+网络流>">
+                BZOJ3993【SDOI2015】星际战争 <二分+网络流> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -615,7 +615,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">150</span>
+                  <span class="site-state-item-count">155</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -628,7 +628,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">89</span>
+                  <span class="site-state-item-count">92</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -750,7 +750,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【JSOI2010】Group-部落划分-Group"><span class="nav-number">1.1.</span> <span class="nav-text">【JSOI2010】Group 部落划分 Group</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【JSOI2010】Group-部落划分"><span class="nav-number">1.1.</span> <span class="nav-text">【JSOI2010】Group 部落划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>
@@ -785,7 +785,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">155.3k</span>
+    <span title="Site words total count">161.1k</span>
   
 </div>
 

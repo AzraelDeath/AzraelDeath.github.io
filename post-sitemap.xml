@@ -7,6 +7,86 @@
     </url>
 
     <url>
+        <loc>http://azrael.top/BZOJ2753%E3%80%90SCOI2012%E3%80%91%E6%BB%91%E9%9B%AA%E4%B8%8E%E6%97%B6%E9%97%B4%E8%83%B6%E5%9B%8A%20MST/</loc>
+        <lastmod>2018-04-20T12:45:02.026Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ1821%E3%80%90JSOI2010%E3%80%91Group%E9%83%A8%E8%90%BD%E5%88%92%E5%88%86%20MST/</loc>
+        <lastmod>2018-04-20T12:29:56.260Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ2303%E3%80%90APIO2011%E3%80%91%E6%96%B9%E6%A0%BC%E6%9F%93%E8%89%B2%20%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+        <lastmod>2018-04-20T12:21:28.438Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ1178%E3%80%90APIO2009%E3%80%91%E4%BC%9A%E8%AE%AE%E4%B8%AD%E5%BF%83%20%E8%B4%AA%E5%BF%83+%E5%80%8D%E5%A2%9E/</loc>
+        <lastmod>2018-04-20T12:03:56.820Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ4144%E3%80%90AMPPZ2014%E3%80%91Petrol%20MST/</loc>
+        <lastmod>2018-04-20T09:16:25.752Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ4237%E3%80%90JOI2013%E3%80%91%E7%A8%BB%E8%8D%89%E4%BA%BA%20CDQ%E5%88%86%E6%B2%BB/</loc>
+        <lastmod>2018-04-20T07:49:01.482Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ5180%E3%80%90Baltic2016%E3%80%91Cities%20%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/</loc>
+        <lastmod>2018-04-17T05:45:42.709Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/WXH%E8%A1%A8%E6%83%85%E5%8C%85/</loc>
+        <lastmod>2018-04-17T04:54:22.154Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/%E5%A4%A7%E4%BD%AC%E4%BC%A0/</loc>
+        <lastmod>2018-04-17T04:48:34.337Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ2756%E3%80%90SCOI2012%E3%80%91%E5%A5%87%E6%80%AA%E7%9A%84%E6%B8%B8%E6%88%8F%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <lastmod>2018-04-17T04:43:22.432Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://azrael.top/BZOJ2809%E3%80%90APIO2012%E3%80%91Dispatching%20%E5%8F%AF%E5%B9%B6%E5%A0%86/</loc>
         <lastmod>2018-04-16T08:51:55.549Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -183,14 +263,6 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4237%E3%80%90JOI2013%E3%80%91%E7%A8%BB%E8%8D%89%E4%BA%BA%20CDQ%E5%88%86%E6%B2%BB/</loc>
-        <lastmod>2018-03-30T11:53:13.839Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://azrael.top/%E6%B4%9B%E8%B0%B7%E6%A8%A1%E6%9D%BF%E6%B1%87%E6%80%BB/</loc>
         <lastmod>2018-03-29T11:31:43.323Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -297,22 +369,6 @@
     <url>
         <loc>http://azrael.top/HDU3068%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%20Manacher/</loc>
         <lastmod>2018-03-27T12:24:51.916Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ1821%E3%80%90JSOI2010%E3%80%91Group%E9%83%A8%E8%90%BD%E5%88%92%E5%88%86%20MST/</loc>
-        <lastmod>2018-03-27T12:24:37.714Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ4144%E3%80%90AMPPZ2014%E3%80%91Petrol%20MST/</loc>
-        <lastmod>2018-03-27T12:24:23.282Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -689,22 +745,6 @@
     <url>
         <loc>http://azrael.top/20170623%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:01:55.292Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/%E5%A4%A7%E4%BD%AC%E4%BC%A0/</loc>
-        <lastmod>2018-03-08T14:34:38.025Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/WXH%E8%A1%A8%E6%83%85%E5%8C%85/</loc>
-        <lastmod>2018-03-08T14:34:30.308Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
