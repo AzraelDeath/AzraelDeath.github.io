@@ -81,7 +81,7 @@
 
 
 
-  <meta name="keywords" content="网络流,BZOJ,省选,图论,费用流," />
+  <meta name="keywords" content="BZOJ,省选,图论,网络流,费用流," />
 
 
 
@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="Problem【SDOI2016】数字配对Time Limit: $10 Sec$Memory Limit: $128 MB$ Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获">
-<meta name="keywords" content="网络流,BZOJ,省选,图论,费用流">
+<meta name="description" content="Problem【SDOI2016】数字配对$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_">
+<meta name="keywords" content="BZOJ,省选,图论,网络流,费用流">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4514【SDOI2016】数字配对 &lt;费用流&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4514【SDOI2016】数字配对 费用流/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem【SDOI2016】数字配对Time Limit: $10 Sec$Memory Limit: $128 MB$ Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获">
+<meta property="og:description" content="Problem【SDOI2016】数字配对$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T07:50:08.021Z">
+<meta property="og:updated_time" content="2018-04-21T03:31:08.451Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4514【SDOI2016】数字配对 &lt;费用流&gt;">
-<meta name="twitter:description" content="Problem【SDOI2016】数字配对Time Limit: $10 Sec$Memory Limit: $128 MB$ Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获">
+<meta name="twitter:description" content="Problem【SDOI2016】数字配对$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  919
+                  921
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2016】数字配对"><a href="#【SDOI2016】数字配对" class="headerlink" title="【SDOI2016】数字配对"></a>【SDOI2016】数字配对</h3><p>Time Limit: $10 Sec$<br>Memory Limit: $128 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2016】数字配对"><a href="#【SDOI2016】数字配对" class="headerlink" title="【SDOI2016】数字配对"></a>【SDOI2016】数字配对</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。<br>若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获得 $c_i\times c_j$ 的价值。<br>一个数字只能参与一次配对，可以不参与配对。<br>在获得的价值总和不小于 $0$ 的前提下，求最多进行多少次配对。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数 $n$。<br>第二行 $n$ 个整数 $a_1,a_2,\cdots,a_n$。<br>第三行 $n$ 个整数$b_1,b_2,\cdots,b_n$。<br>第四行 $n$ 个整数 $c_1,c_2,\cdots,c_n$。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个数，最多进行多少次配对<br><a id="more"></a></p>
@@ -470,13 +470,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
-          
             <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
           
             <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
+          
+            <a href="/tags/网络流/" rel="tag"> <i class="fa fa-tag"></i> 网络流</a>
           
             <a href="/tags/费用流/" rel="tag"> <i class="fa fa-tag"></i> 费用流</a>
           
@@ -491,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/" rel="next" title="BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP>">
-                <i class="fa fa-chevron-left"></i> BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP>
+              <a href="/BZOJ4205【FJ2015集训】卡牌配对 网络流/" rel="next" title="BZOJ4205【FJ2015集训】卡牌配对 <网络流>">
+                <i class="fa fa-chevron-left"></i> BZOJ4205【FJ2015集训】卡牌配对 <网络流>
               </a>
             
           </div>
@@ -501,8 +501,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ2321【BJ2011集训】星器 物理/" rel="prev" title="BZOJ2321【BJ2011集训】星器 <物理>">
-                BZOJ2321【BJ2011集训】星器 <物理> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/" rel="prev" title="BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP>">
+                BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -615,7 +615,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">155</span>
+                  <span class="site-state-item-count">156</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -628,7 +628,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">92</span>
+                  <span class="site-state-item-count">91</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -785,7 +785,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">161.1k</span>
+    <span title="Site words total count">162.5k</span>
   
 </div>
 

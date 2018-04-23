@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>http://azrael.top/SCOI2018%E6%80%BB%E7%BB%93/</loc>
+        <lastmod>2018-04-23T05:35:18.555Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ2588%20Count%20on%20a%20tree%20%E6%A0%91%E4%B8%8A%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+        <lastmod>2018-04-21T10:50:23.816Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ4514%E3%80%90SDOI2016%E3%80%91%E6%95%B0%E5%AD%97%E9%85%8D%E5%AF%B9%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <lastmod>2018-04-21T03:31:08.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://azrael.top/BZOJ1178%E3%80%90APIO2009%E3%80%91%E4%BC%9A%E8%AE%AE%E4%B8%AD%E5%BF%83%20%E8%B4%AA%E5%BF%83+%E5%80%8D%E5%A2%9E/</loc>
         <lastmod>2018-04-20T12:58:24.673Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -879,14 +903,6 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4514%E3%80%90SDOI2016%E3%80%91%E6%95%B0%E5%AD%97%E9%85%8D%E5%AF%B9%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
-        <lastmod>2018-03-08T07:50:08.021Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://azrael.top/BZOJ1475%20%E6%96%B9%E6%A0%BC%E5%8F%96%E6%95%B0%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-03-08T07:48:06.527Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -993,14 +1009,6 @@
     <url>
         <loc>http://azrael.top/BZOJ2521%E3%80%90SHOI2010%E3%80%91%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-03-08T06:51:17.646Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ2588%20Count%20on%20a%20tree%20DFS%E5%BA%8F+LCA+%E5%80%BC%E5%9F%9F%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
-        <lastmod>2018-03-08T06:48:37.833Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
