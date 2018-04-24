@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem【APIO2015】巴厘岛的雕塑$\mathrm{Time\;Limit: \;10\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description印尼巴厘岛的公路上有许多的雕塑,我们来关注它的一条主干道。在这条主干道上一共有$N$座雕塑，为方便起见，我们把这些雕塑从$1$到$N$连续地进行标号，其中第 i 座雕塑的年龄是$Y_i$年。为了使这">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-24T09:01:25.019Z">
+<meta property="og:updated_time" content="2018-04-24T09:14:48.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4069【APIO2015】巴厘岛的雕塑 &lt; DP &gt;">
 <meta name="twitter:description" content="Problem【APIO2015】巴厘岛的雕塑$\mathrm{Time\;Limit: \;10\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description印尼巴厘岛的公路上有许多的雕塑,我们来关注它的一条主干道。在这条主干道上一共有$N$座雕塑，为方便起见，我们把这些雕塑从$1$到$N$连续地进行标号，其中第 i 座雕塑的年龄是$Y_i$年。为了使这">
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,236
+                  1,226
                 </span>
               
 
@@ -435,35 +435,35 @@
 <tr>
 <td style="text-align:center">$1$</td>
 <td style="text-align:center">$1\le N\le20$</td>
-<td style="text-align:center">$1\le A,B\le N$</td>
+<td style="text-align:center">$A,B\le N$</td>
 <td style="text-align:center">$0\le Y_i\le10^9$</td>
 <td style="text-align:center">$\mathrm{9\;pts}$</td>
 </tr>
 <tr>
 <td style="text-align:center">$2$</td>
 <td style="text-align:center">$1\le N\le 50$</td>
-<td style="text-align:center">$1\le A,B\le\min(20,N)$</td>
+<td style="text-align:center">$A,B\le\min(20,N)$</td>
 <td style="text-align:center">$0\le Y_i\le10$</td>
 <td style="text-align:center">$\mathrm{16\;pts}$</td>
 </tr>
 <tr>
 <td style="text-align:center">$3$</td>
 <td style="text-align:center">$1\le N\le100$</td>
-<td style="text-align:center">$A=1,\;1\le B\le N$</td>
+<td style="text-align:center">$A=1,\;B\le N$</td>
 <td style="text-align:center">$0\le Y_i\le20$</td>
 <td style="text-align:center">$\mathrm{21\;pts}$</td>
 </tr>
 <tr>
 <td style="text-align:center">$4$</td>
 <td style="text-align:center">$1\le N\le100$</td>
-<td style="text-align:center">$1\le A,B\le N$</td>
+<td style="text-align:center">$A,B\le N$</td>
 <td style="text-align:center">$0\le Y_i\le10^9$</td>
 <td style="text-align:center">$\mathrm{25\;pts}$</td>
 </tr>
 <tr>
 <td style="text-align:center">$5$</td>
 <td style="text-align:center">$1\le N\le2000$</td>
-<td style="text-align:center">$A=1,\;1\le B\le N$</td>
+<td style="text-align:center">$A=1,\;B\le N$</td>
 <td style="text-align:center">$0\le Y_i\le10^9$</td>
 <td style="text-align:center">$\mathrm{29\;pts}$</td>
 </tr>
@@ -471,7 +471,7 @@
 </table>
 <p>标签：<code>DP</code></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>奇葩的面向数据编程题。</p>
-<p>由于算答案是按位或，可以考虑从高位向低位贪心，每次判断在前面的位都取到最优情况下，这一位能否取$0$。这个判断的过程可以$\mathrm{DP}$实现。<br>$f[i][j]$表示考虑前$i$个雕塑，分成$j$个组，能否在当前位上取$0$。<br>那么$f[i][j]=true$当且仅当$\exist k\in[j-1,i)$，满足$f[k][j-1]=true$，并且$sum_{k+1,i}$和当前答案取或的结果还是当前答案（即不会使得前面位上不为最优解），还需要$sum_{k+1,j}$在当前位上的值为$0$（这样当前位才能取$0$）。<br>求出所有$f$后，判断是否$\exist t\in[A,B]$满足$f[n][t]=true$，如果存在则可以取$0$，否则此位取$1$。</p>
+<p>由于算答案是按位或，可以考虑从高位向低位贪心，每次判断在前面的位都取到最优情况下，这一位能否取$0$。这个判断的过程可以$\mathrm{DP}$实现。<br>$f[i][j]$表示考虑前$i$个雕塑，分成$j$个组，能否在当前位上取$0$。<br>那么$f[i][j]=true$当且仅当$\exists k\in[j-1,i)$，满足$f[k][j-1]=true$，并且$sum_{k+1,i}$和当前答案取或的结果还是当前答案（即不会使得前面位上不为最优解），还需要$sum_{k+1,j}$在当前位上的值为$0$（这样当前位才能取$0$）。<br>求出所有$f$后，判断是否$\exists t\in[A,B]$满足$f[n][t]=true$，如果存在则可以取$0$，否则此位取$1$。</p>
 <p>然而这样并不能得满分。上面的方法是$O(n^3)$处理出所有$f$值，不能通过$n=2000$的$\mathrm{Subtask\;5}$。</p>
 <p>而对于$\mathrm{Subtask\;5}$，发现$A=1$，则每次使得分的组数量尽量小肯定是最优的。于是用$g[i]$表示当前位考虑前$i$个雕塑，最少需要分成几组才能使当前位上可以取$0$。如果在当前位处理$g$后发现$g[n]&gt;B$，那么必须取$1$，否则可以取$0$。这样复杂度降成了$O(n^2)$，可以解决$\mathrm{Subtask\;5}$。</p>
 <p>综上，特判数据分两种情况分别做即可。</p>
@@ -832,7 +832,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">168.2k</span>
+    <span title="Site words total count">168.1k</span>
   
 </div>
 

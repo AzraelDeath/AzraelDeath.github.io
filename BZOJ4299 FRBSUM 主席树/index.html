@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="ProblemFRBSUM$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\empty)$，$1(S">
+<meta name="description" content="ProblemFRBSUM$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\emptyset)$，$">
 <meta name="keywords" content="BZOJ,数据结构,主席树,CodeChef">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4299 FRBSUM &lt;主席树&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4299 FRBSUM 主席树/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="ProblemFRBSUM$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\empty)$，$1(S">
+<meta property="og:description" content="ProblemFRBSUM$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\emptyset)$，$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-24T08:33:19.948Z">
+<meta property="og:updated_time" content="2018-04-24T09:17:30.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4299 FRBSUM &lt;主席树&gt;">
-<meta name="twitter:description" content="ProblemFRBSUM$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\empty)$，$1(S">
+<meta name="twitter:description" content="ProblemFRBSUM$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\emptyset)$，$">
 
 
 
@@ -415,7 +415,7 @@
 
       
         <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="FRBSUM"><a href="#FRBSUM" class="headerlink" title="FRBSUM"></a>FRBSUM</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。<br>例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\empty)$，$1(S’={1})$，$2(S’={1,1})$，$3(S’={3})$，$4(S’={1,3})$，$5(S’={1,1,3})$，但是它无法得到$6$。因此$S$的$\mathrm{Forbidden\;Sum}$为$6$。<br>给定一个序列$A$，你的任务是回答该数列的一些子区间所形成的数集的$\mathrm{Forbidden\;Sum}$是多少。</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。<br>例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\emptyset)$，$1(S’={1})$，$2(S’={1,1})$，$3(S’={3})$，$4(S’={1,3})$，$5(S’={1,1,3})$，但是它无法得到$6$。因此$S$的$\mathrm{Forbidden\;Sum}$为$6$。<br>给定一个序列$A$，你的任务是回答该数列的一些子区间所形成的数集的$\mathrm{Forbidden\;Sum}$是多少。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入数据的第一行包含一个整数$N$，表示序列的长度。<br>接下来一行包含$N$个数，表示给定的序列$A$（从$1$标号）。<br>接下来一行包含一个整数$M$，表示询问的组数。<br>接下来$M$行，每行一对整数，表示一组询问。</p>
 <h3 id="Ouput"><a href="#Ouput" class="headerlink" title="Ouput"></a>Ouput</h3><p>对于每组询问，输出一行表示对应的答案。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">1 2 4 9 10</span><br><span class="line">5</span><br><span class="line">1 1</span><br><span class="line">1 2</span><br><span class="line">1 3</span><br><span class="line">1 4</span><br><span class="line">1 5</span><br></pre></td></tr></table></figure>
@@ -490,8 +490,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1913【APIO2010】信号覆盖 极角排序+双指针/" rel="next" title="BZOJ1913【APIO2010】信号覆盖 <极角排序+双指针>">
-                <i class="fa fa-chevron-left"></i> BZOJ1913【APIO2010】信号覆盖 <极角排序+双指针>
+              <a href="/BZOJ4293【PA2015】Siano 线段树/" rel="next" title="BZOJ4293【PA2015】Siano <线段树>">
+                <i class="fa fa-chevron-left"></i> BZOJ4293【PA2015】Siano <线段树>
               </a>
             
           </div>
@@ -499,10 +499,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/BZOJ4293【PA2015】Siano 线段树/" rel="prev" title="BZOJ4293【PA2015】Siano <线段树>">
-                BZOJ4293【PA2015】Siano <线段树> <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -784,7 +780,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">168.2k</span>
+    <span title="Site words total count">168.1k</span>
   
 </div>
 
