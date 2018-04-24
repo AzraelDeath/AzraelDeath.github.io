@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "bb54c613"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="BZOJ,图论,APIO,分块,最短路," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="NIRVANA" type="application/atom+xml" />
+
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('Password') !== ''){
+                alert('ERROR! Wrong Password!');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+<meta name="description" content="Problem【APIO2015】雅加达的摩天楼$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description印尼首都雅加达市有$N$座摩天楼，它们排列成一条直线，我们从左到右依次将它们编号为$0$到$N-1$。除了这$N$座摩天楼外，雅加达市没有其他摩天楼。有$M$只叫做$\mathrm{doge}$的">
+<meta name="keywords" content="BZOJ,图论,APIO,分块,最短路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ4070【APIO2015】雅加达的摩天楼 &lt;分块+最短路&gt;">
+<meta property="og:url" content="http://azrael.top/BZOJ4070【APIO2015】雅加达的摩天楼 分块+最短路/index.html">
+<meta property="og:site_name" content="NIRVANA">
+<meta property="og:description" content="Problem【APIO2015】雅加达的摩天楼$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description印尼首都雅加达市有$N$座摩天楼，它们排列成一条直线，我们从左到右依次将它们编号为$0$到$N-1$。除了这$N$座摩天楼外，雅加达市没有其他摩天楼。有$M$只叫做$\mathrm{doge}$的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-23T14:45:59.462Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BZOJ4070【APIO2015】雅加达的摩天楼 &lt;分块+最短路&gt;">
+<meta name="twitter:description" content="Problem【APIO2015】雅加达的摩天楼$\mathrm{Time\;Limit:\;10\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description印尼首都雅加达市有$N$座摩天楼，它们排列成一条直线，我们从左到右依次将它们编号为$0$到$N-1$。除了这$N$座摩天楼外，雅加达市没有其他摩天楼。有$M$只叫做$\mathrm{doge}$的">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://azrael.top/BZOJ4070【APIO2015】雅加达的摩天楼 分块+最短路/"/>
+
+
+
+
+
+  <title>BZOJ4070【APIO2015】雅加达的摩天楼 <分块+最短路> | NIRVANA</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+	  <div class="headband"></div>
+
+	  <a href="https://github.com/AzraelDeath/" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NIRVANA</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            HOME
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            TAGS
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            ARCHIVES
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            SITEMAP
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            SEARCH
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4070【APIO2015】雅加达的摩天楼 分块+最短路/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">BZOJ4070【APIO2015】雅加达的摩天楼 <分块+最短路></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-21T00:00:00+08:00">
+                2018-04-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,365
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【APIO2015】雅加达的摩天楼"><a href="#【APIO2015】雅加达的摩天楼" class="headerlink" title="【APIO2015】雅加达的摩天楼"></a>【APIO2015】雅加达的摩天楼</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;256\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>印尼首都雅加达市有$N$座摩天楼，它们排列成一条直线，我们从左到右依次将它们编号为$0$到$N-1$。除了这$N$座摩天楼外，雅加达市没有其他摩天楼。<br>有$M$只叫做$\mathrm{doge}$的神秘生物在雅加达市居住，它们的编号依次是$0$到$M-1$。编号为$i$的$\mathrm{doge}$最初居住于编号为$B_i$的摩天楼。每只$\mathrm{doge}$都有一种神秘的力量，使它们能够在摩天楼之间跳跃，编号为$i$的$\mathrm{doge}$的跳跃能力为$P_i\;(P_i&gt;0)$。<br>在一次跳跃中，位于摩天楼$b$而跳跃能力为$p$的$\mathrm{doge}$可以跳跃到编号为$b-p$（如果$0\le b-p&lt;N$）或$b+p$（如果$0\le b+p&lt;N$）的摩天楼。<br>编号为$0$的$\mathrm{doge}$是所有$\mathrm{doge}$的首领，它有一条紧急的消息要尽快传送给编号为$1$的$\mathrm{doge}$。<br>任何一个收到消息的$\mathrm{doge}$有以下两个选择:</p>
+<ul>
+<li>跳跃到其他摩天楼上</li>
+<li>将消息传递给它当前所在的摩天楼上的其他$\mathrm{doge}$</li>
+</ul>
+<p>请帮助$\mathrm{doge}$们计算将消息从$0$号$\mathrm{doge}$传递到$1$号$\mathrm{doge}$所需要的最少总跳跃步数，或者告诉它们消息永远不可能传递到$1$号$\mathrm{doge}$。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含两个整数$N$和$M$。<br>接下来$M$行，每行包含两个整数$B_i$和$P_i$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一行，表示所需要的最少步数。<br>如果消息永远无法传递到$1$号$\mathrm{doge}$，输出$-1$。<br><a id="more"></a></p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">5 3</span><br><span class="line">0 2</span><br><span class="line">1 1</span><br><span class="line">4 1</span><br></pre></td></tr></table></figure>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+<h3 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation"></a>Explanation</h3><p>下面是一种步数为$5$的解决方案：<br>$0$号$\mathrm{doge}$跳跃到$2$号摩天楼，再跳跃到$4$号摩天楼（$2$步）。<br>$0$号$\mathrm{doge}$将消息传递给$2$号$\mathrm{doge}$。<br>$2$号$\mathrm{doge}$跳跃到$3$号摩天楼,接着跳跃到$2$号摩天楼，再跳跃到$1$号摩天楼（$3$步）。<br>$2$号$\mathrm{doge}$将消息传递给$1$号$\mathrm{doge}$。</p>
+<h3 id="HINT"><a href="#HINT" class="headerlink" title="HINT"></a>HINT</h3><p>$1\le N,P_i\le3\times10^4,\;2\le M\le3\times 10^4,\;0\le B_i&lt;N$</p>
+<p>标签：<code>最短路</code> <code>分块</code></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p><code>分块</code>优化最短路建边。新姿势$\mathrm{get}$。</p>
+<p>考虑直接建边，由于可以多次跳跃，最多会形成$n^2$条边，肯定不行。</p>
+<p>正解是给每个结点建立若干个辅助结点，像分块一样把建边数降下来。<br>具体来说，设块大小为$\mathrm{MAGIC}$，</p>
+<ul>
+<li>对于$p_i&gt;\mathrm{MAGIC}$，连出的边数较少，可以直接连边</li>
+<li>对于$p_i\le\mathrm{MAGIC}$，连出的边数较多，需要对每个点建立$\mathrm{MAGIC}$个中转节点，第$i$个点的第$k$个中转节点只会通向距离$i$距离恰为$k$的结点$j$的第$k$个中转节点。可以理解为建立的图为$\mathrm{MAGIC}$层的高架桥，越高层的道路每次走的距离越大。对于点$i$，连接第$0$层的$i$结点（表示$i$结点本身）到第$p_i$层的$i$结点（表示每次走的距离都是$p_i$）。</li>
+</ul>
+<p>初始化同节点层与层之间的连边，即对于$i$结点，连接其每个中转节点到其本身（即第$0$层的$i$结点）边权为$0$，这样如果在某节点$u$想要停止跳过来时的步长$x$，转用$u$结点本身的步长$y$，则可以从$i$的第$x$个中转节点花费$0$的代价走到$i$结点本身，再花费$0$的代价走到$i$的第$y$个中转节点。</p>
+<p>如此，边数和点数都变成了$n\sqrt{n}​$级别，由于卡内存，可以把$\mathrm{MAGIC}​$调成$\min(\sqrt{n},100)​$。</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mp make_pair</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fir top().first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> sec top().second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 4000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_M 15000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 0x3f3f3f3f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; pii;</span><br><span class="line"><span class="keyword">typedef</span> priority_queue&lt;pii&gt; pri_que;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt; <span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) &#123;</span></span><br><span class="line">	x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n, m, MAGIC, b[MAX_N+<span class="number">5</span>], p[MAX_N+<span class="number">5</span>], d[MAX_N+<span class="number">5</span>], cnt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span><span class="keyword">int</span> v, c, nxt;&#125; E[MAX_M+<span class="number">5</span>]; <span class="keyword">int</span> pr[MAX_N+<span class="number">5</span>]; pri_que que;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> v, <span class="keyword">int</span> c)</span> </span>&#123;E[cnt] = (node)&#123;v, c, pr[u]&#125;, pr[u] = cnt++;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Dijkstra</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> s = b[<span class="number">1</span>], t = b[<span class="number">2</span>];</span><br><span class="line">	<span class="built_in">memset</span>(d, <span class="number">0x3f</span>, <span class="keyword">sizeof</span> d);</span><br><span class="line">	d[s] = <span class="number">0</span>, que.push(mp(-d[s], s));</span><br><span class="line">	<span class="keyword">while</span> (!que.empty()) &#123;</span><br><span class="line">		<span class="keyword">int</span> u = que.sec, w = -que.fir;</span><br><span class="line">		que.pop(); <span class="keyword">if</span> (d[u]^w) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = pr[u], v, c; ~i; i = E[i].nxt)</span><br><span class="line">			<span class="keyword">if</span> (d[u]+(c=E[i].c) &lt; d[v = E[i].v])</span><br><span class="line">				d[v] = d[u]+c, que.push(mp(-d[v], v));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> d[t] == INF ? <span class="number">-1</span> : d[t];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(pr, <span class="number">-1</span>, <span class="keyword">sizeof</span> pr);</span><br><span class="line">	read(n), read(m), MAGIC = min((<span class="keyword">int</span>)<span class="built_in">sqrt</span>(n), <span class="number">100</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) read(b[i]), read(p[i]), b[i]++;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= MAGIC; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) addedge(i*n+j, j, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= MAGIC; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n-i; j++)</span><br><span class="line">		addedge(i*n+j, i*n+i+j, <span class="number">1</span>), addedge(i*n+i+j, i*n+j, <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)</span><br><span class="line">		<span class="keyword">if</span> (p[i] &lt;= MAGIC) addedge(b[i], p[i]*n+b[i], <span class="number">0</span>);</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = b[i]+p[i]; j &lt;= n; j += p[i])</span><br><span class="line">				addedge(b[i], j, (j-b[i])/p[i]);</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = b[i]-p[i]; j &gt;= <span class="number">1</span>; j -= p[i])</span><br><span class="line">				addedge(b[i], j, (b[i]-j)/p[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, Dijkstra()), <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------------- Thanks For Reading -------------</div>
+    
+</div>
+
+	  
+	</div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Azrael_Death
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://azrael.top/BZOJ4070【APIO2015】雅加达的摩天楼 分块+最短路/" title="BZOJ4070【APIO2015】雅加达的摩天楼 <分块+最短路>">http://azrael.top/BZOJ4070【APIO2015】雅加达的摩天楼 分块+最短路/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
+          
+            <a href="/tags/图论/" rel="tag"> <i class="fa fa-tag"></i> 图论</a>
+          
+            <a href="/tags/APIO/" rel="tag"> <i class="fa fa-tag"></i> APIO</a>
+          
+            <a href="/tags/分块/" rel="tag"> <i class="fa fa-tag"></i> 分块</a>
+          
+            <a href="/tags/最短路/" rel="tag"> <i class="fa fa-tag"></i> 最短路</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/BZOJ1178【APIO2009】会议中心 贪心+倍增/" rel="next" title="BZOJ1178【APIO2009】会议中心 <贪心+倍增>">
+                <i class="fa fa-chevron-left"></i> BZOJ1178【APIO2009】会议中心 <贪心+倍增>
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/BZOJ4069【APIO2015】巴厘岛的雕塑 DP/" rel="prev" title="BZOJ4069【APIO2015】巴厘岛的雕塑 < DP >">
+                BZOJ4069【APIO2015】巴厘岛的雕塑 < DP > <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDUxNC8xMTA1Mg=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="Azrael_Death" />
+            
+              <p class="site-author-name" itemprop="name">Azrael_Death</p>
+              <p class="site-description motion-element" itemprop="description">Veni, Vidi, Vici</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">161</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">94</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/AzraelDeath" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/azraeldeath" target="_blank" title="ZhiHu">
+                      
+                        <i class="fa fa-fw fa-globe"></i>ZhiHu</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友链
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.csdn.net/OwenOwl" title="OwenOwl" target="_blank">OwenOwl</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.csdn.net/Joker_69" title="Joker" target="_blank">Joker</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/aziint" title="Aziint" target="_blank">Aziint</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://dangxingyu.com" title="DXY" target="_blank">DXY</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.csdn.net/demon_rieman" title="Demon_Rieman" target="_blank">Demon_Rieman</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.csdn.net/myjs999" title="myjs99" target="_blank">myjs99</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/YangZehai41" title="wsyzh" target="_blank">wsyzh</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://309459245.lofter.com" title="YJQ" target="_blank">YJQ</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/candy99" title="Candy" target="_blank">Candy</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/zig-zag" title="ZigZag" target="_blank">ZigZag</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://cxjyxx.me" title="cxjyxx_me" target="_blank">cxjyxx_me</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.shuizilong.com" title="ShuiZiLong" target="_blank">ShuiZiLong</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/kuangbin" title="KuangBin" target="_blank">KuangBin</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://acrazyczy.github.io" title="Crazy_Cloud" target="_blank">Crazy_Cloud</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【APIO2015】雅加达的摩天楼"><span class="nav-number">1.1.</span> <span class="nav-text">【APIO2015】雅加达的摩天楼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.2.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.3.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.4.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.6.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Explanation"><span class="nav-number">1.7.</span> <span class="nav-text">Explanation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HINT"><span class="nav-number">1.8.</span> <span class="nav-text">HINT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Azrael_Death</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">168.2k</span>
+  
+</div>
+
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  
+  <span class="post-meta-divider">|</span>
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+    
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"sciptForm":"local","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":50,"height":100,"position":"left","hOffset":0,"vOffset":0},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2}});</script></body>
+</html>

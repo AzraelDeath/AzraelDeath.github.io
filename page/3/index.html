@@ -315,7 +315,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1078【SCOI2008】斜堆 可并堆/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4568【SCOI2016】幸运数字 LCA+线性基/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -334,7 +334,663 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ1078【SCOI2008】斜堆 可并堆/" itemprop="url">BZOJ1078【SCOI2008】斜堆 <可并堆></a></h1>
+                <a class="post-title-link" href="/BZOJ4568【SCOI2016】幸运数字 LCA+线性基/" itemprop="url">BZOJ4568【SCOI2016】幸运数字 <LCA+线性基></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-02T00:00:00+08:00">
+                2018-04-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,247
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2016】幸运数字"><a href="#【SCOI2016】幸运数字" class="headerlink" title="【SCOI2016】幸运数字"></a>【SCOI2016】幸运数字</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;256MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$A$国共有$n$座城市，这些城市由$n-1$条道路相连，使得任意两座城市可以互达，且路径唯一。每座城市都有一个幸运数字，以纪念碑的形式矗立在这座城市的正中心，作为城市的象征。一些旅行者希望游览$A$国。旅行者计划乘飞机降落在$x$号城市，沿着$x$号城市到$y$号城市之间那条唯一的路径游览，最终从$y$城市起飞离开$A$国。在经过每一座城市时，游览者就会有机会与这座城市的幸运数字拍照，从而将这份幸运保存到自己身上。然而，幸运是不能简单叠加的，这一点游览者也十分清楚。他们迷信着幸运数字是以异或的方式保留在自己身上的。例如，游览者拍了$3$张照片，幸运值分别是$5,7,11$，那么最终保留在自己身上的幸运值就是 $\mathrm{9\;(5\oplus7\oplus11)}$。有些聪明的游览者发现，只要选择性地进行拍照，便能获得更大的幸运值。例如在上述三个幸运值中，只选择$5$和$11$，可以保留的幸运值为$14$ 。现在，一些游览者找到了聪明的你，希望你帮他们计算出在他们的行程安排中可以保留的最大幸运值是多少。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含$2$个正整数$n,q$，分别表示城市的数量和旅行者数量。第二行包含$n$个非负整数，其中第$i$个整数$G_i$表示$i$号城市的幸运值。随后$n-1$行，每行包含两个正整数$x,y$，表示$x$号城市和$y$号城市之间有一条道路相连。随后$q$行，每行包含两个正整数$x,y$，表示这名旅行者的旅行计划是从$x$号城市到$y$号城市。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出需要包含$q$行，每行包含$1$个非负整数，表示这名旅行者可以保留的最大幸运值。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ4568【SCOI2016】幸运数字 LCA+线性基/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2177 曼哈顿最小生成树 树状数组优化建边/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ2177 曼哈顿最小生成树 树状数组优化建边/" itemprop="url">BZOJ2177 曼哈顿最小生成树 <树状数组优化建边></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-29T00:00:00+08:00">
+                2018-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,244
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="曼哈顿最小生成树"><a href="#曼哈顿最小生成树" class="headerlink" title="曼哈顿最小生成树"></a>曼哈顿最小生成树</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;256\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>平面坐标系$\mathrm{xOy}$内，给定$n$个顶点$V=(x,y)$。对于顶点$u,\;v$，$u$与$v$之间的距离$d$定义为$|x_u-x_v|+|y_u-y_v|$。你的任务是求出这$n$个顶点的最小生成树。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个正整数$n$，表示定点个数。<br>接下来$n$行每行两个正整数$x,\;y$，描述一个顶点。 </p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一行，为最小生成树的边的距离和。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ2177 曼哈顿最小生成树 树状数组优化建边/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4695 最假女选手 SegBeats/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ4695 最假女选手 SegBeats/" itemprop="url">BZOJ4695 最假女选手 < SegBeats ></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T00:00:00+08:00">
+                2018-03-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,735
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="最假女选手"><a href="#最假女选手" class="headerlink" title="最假女选手"></a>最假女选手</h3><p>$\mathrm{Time\;Limit:\;50\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在刚刚结束的水题嘉年华的压轴节目放水大赛中，$\mathrm{wyywyy}$如愿以偿的得到了最假女选手的奖项。但是作为主办人的$\mathrm{C_SUNSHINE}$为了证明$\mathrm{wyywyy}$确实在放水，决定出一道基础题考察$\mathrm{wyywyy}$的姿势水平。给定一个长度为$N$序列，编号从$1$到$N$。要求支持下面几种操作：</p>
+<ol>
+<li>给一个区间$[L,R]$加上一个数$x$ </li>
+<li>把一个区间$[L,R]$里小于$x$的数变成$x$</li>
+<li>把一个区间$[L,R]$里大于$x$的数变成$x$ </li>
+<li>求区间$[L,R]$的和</li>
+<li>求区间$[L,R]$的最大值</li>
+<li>求区间$[L,R]$的最小值</li>
+</ol>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数$N$表示序列长度<br>第二行$N$个整数$A_i$表示初始序列<br>第三行一个整数$M$表示操作个数<br>接下来$M$行，每行三或四个整数，第一个整数$Tp$表示操作类型，接下来$L,R,X$或$L,R$表述操作数</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每个$4,5,6$类型的操作，输出一行一个整数表示答案<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ4695 最假女选手 SegBeats/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1071【SCOI2007】组队 双指针/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1071【SCOI2007】组队 双指针/" itemprop="url">BZOJ1071【SCOI2007】组队 <双指针></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T00:00:00+08:00">
+                2018-03-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  843
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2007】组队"><a href="#【SCOI2007】组队" class="headerlink" title="【SCOI2007】组队"></a>【SCOI2007】组队</h3><p>$\mathrm{Time\;Limit:\;3\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$NBA$每年都有球员选秀环节。通常用速度和身高两项数据来衡量一个篮球运动员的基本素质。假如一支球队里速度最慢的球员速度为$min_V$，身高最矮的球员高度为$min_H$，那么这支球队的所有队员都应该满足：$A\times(height-min_H)+B\times(speed-min_V)\le C$。其中$A$和$B,C$为给定的经验值。这个式子很容易理解，如果一个球队的球员速度和身高差距太大，会造成配合的不协调。 请问作为球队管理层的你，在$N$名选秀球员中，最多能有多少名符合条件的候选球员。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行四个数$N,A,B,C$。<br>下接$N$行每行两个数描述一个球员的$height$和$speed$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>最多候选球员数目。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ1071【SCOI2007】组队 双指针/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1006【HNOI2008】神奇的国度 弦图+MCS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1006【HNOI2008】神奇的国度 弦图+MCS/" itemprop="url">BZOJ1006【HNOI2008】神奇的国度 <弦图+MCS></a></h1>
         
 
         <div class="post-meta">
@@ -378,7 +1034,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  912
+                  702
                 </span>
               
 
@@ -416,18 +1072,13 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2008】斜堆"><a href="#【SCOI2008】斜堆" class="headerlink" title="【SCOI2008】斜堆"></a>【SCOI2008】斜堆</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>斜堆$\mathrm{(skew\;heap)}$是一种常用的数据结构。它也是二叉树，且满足与二叉堆相同的堆性质：每个非根结点的值都比它父亲大。因此在整棵斜堆中，根的值最小。但斜堆不必是平衡的，每个结点的左右儿子的大小关系也没有任何规定。在本题中，斜堆中各个元素的值均不相同。<br>在斜堆$H$中插入新元素$X$的过程是递归进行的：</p>
-<ul>
-<li>当$H$为空或者$X$小于$H$的根结点时X变为新的树根，而原来的树根（如果有的话）变为$X$的左儿子。</li>
-<li>当$X$大于$H$的根结点时，$H$根结点的两棵子树交换，而$X$（递归）插入到交换后的左子树中。 </li>
-</ul>
-<p>给出一棵斜堆，包含值为$0\sim n$的结点各一次。求一个结点序列，使得该斜堆可以通过在空树中依次插入这些结点得到。<br>如果答案不惟一，输出字典序最小的解。输入保证有解。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含一个整数$n$。<br>第二行包含$n$个整数$d_1,d_2,\cdots,d_n$，$d_i&lt;100$表示$i$是$d_i$的左儿子，$d_i\ge100$表示$i$是$d_i-100$的右儿子。<br>显然$0$总是根，所以输入中不含$d_0$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅一行，包含$n+1$整数，即字典序最小的插入序列。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【HNOI2008】神奇的国度"><a href="#【HNOI2008】神奇的国度" class="headerlink" title="【HNOI2008】神奇的国度"></a>【HNOI2008】神奇的国度</h3><p>$\mathrm{Time\;Limit:\;20\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$K$国是一个热衷三角形的国度，连人的交往也只喜欢三角原则。他们认为三角关系：即$A,B$相互认识，$B,C$相互认识，$C,A$相互认识，是简洁高效的。<br>为了巩固三角关系，$K$国禁止四边关系，五边关系等等的存在。所谓$N$边关系，是指$N$个人$A_1,A_2\cdots A_n$之间仅存在$N$对认识关系：$(A_1,A_2)(A_2,A_3)\cdots(A_n,A_1)$，而没有其它认识关系。比如四边关系指$A,B,C,D$四个人 $(A,B)$，$(B,C)$，$(C,D)$，$(D,A)$相互认识，而$(A,C)$，$(B,D)$不认识。<br>全民比赛时，为了防止做弊，规定任意一对相互认识的人不得在一队。国王想知道，最少可以分多少支队。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个整数$N,M$。表示有$N$个人，$M$对认识关系。<br>接下来$M$行每行输入一对朋友。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数，最少可以分多少队。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1078【SCOI2008】斜堆 可并堆/#more" rel="contents">
+            <a class="btn" href="/BZOJ1006【HNOI2008】神奇的国度 弦图+MCS/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -590,6 +1241,173 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/BZOJ2820 YY的GCD 莫比乌斯反演/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1078【SCOI2008】斜堆 可并堆/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1078【SCOI2008】斜堆 可并堆/" itemprop="url">BZOJ1078【SCOI2008】斜堆 <可并堆></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-26T00:00:00+08:00">
+                2018-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  912
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2008】斜堆"><a href="#【SCOI2008】斜堆" class="headerlink" title="【SCOI2008】斜堆"></a>【SCOI2008】斜堆</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>斜堆$\mathrm{(skew\;heap)}$是一种常用的数据结构。它也是二叉树，且满足与二叉堆相同的堆性质：每个非根结点的值都比它父亲大。因此在整棵斜堆中，根的值最小。但斜堆不必是平衡的，每个结点的左右儿子的大小关系也没有任何规定。在本题中，斜堆中各个元素的值均不相同。<br>在斜堆$H$中插入新元素$X$的过程是递归进行的：</p>
+<ul>
+<li>当$H$为空或者$X$小于$H$的根结点时X变为新的树根，而原来的树根（如果有的话）变为$X$的左儿子。</li>
+<li>当$X$大于$H$的根结点时，$H$根结点的两棵子树交换，而$X$（递归）插入到交换后的左子树中。 </li>
+</ul>
+<p>给出一棵斜堆，包含值为$0\sim n$的结点各一次。求一个结点序列，使得该斜堆可以通过在空树中依次插入这些结点得到。<br>如果答案不惟一，输出字典序最小的解。输入保证有解。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含一个整数$n$。<br>第二行包含$n$个整数$d_1,d_2,\cdots,d_n$，$d_i&lt;100$表示$i$是$d_i$的左儿子，$d_i\ge100$表示$i$是$d_i-100$的右儿子。<br>显然$0$总是根，所以输入中不含$d_0$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅一行，包含$n+1$整数，即字典序最小的插入序列。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ1078【SCOI2008】斜堆 可并堆/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1117,827 +1935,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1095【ZJOI2007】Hide捉迷藏 括号序列+线段树/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ1095【ZJOI2007】Hide捉迷藏 括号序列+线段树/" itemprop="url">BZOJ1095【ZJOI2007】Hide捉迷藏 <括号序列+线段树></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T00:00:00+08:00">
-                2018-03-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  2,009
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  9
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【ZJOI2007】Hide捉迷藏"><a href="#【ZJOI2007】Hide捉迷藏" class="headerlink" title="【ZJOI2007】Hide捉迷藏"></a>【ZJOI2007】Hide捉迷藏</h3><p>$\mathrm{Time\;Limit:\;40\;Sec}$<br>$\mathrm{Memory\;Limit:\;256\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>捉迷藏$\mathrm{Jiajia}$和$\mathrm{Wind}$是一对恩爱的夫妻，并且他们有很多孩子。某天，$\mathrm{Jiajia}$、$\mathrm{Wind}$和孩子们决定在家里玩捉迷藏游戏。他们的家很大且构造很奇特，由$N$个屋子和$N-1$条双向走廊组成，这$N-1$条走廊的分布使得任意两个屋子都互相可达。<br>游戏是这样进行的，孩子们负责躲藏，$\mathrm{Jiajia}$负责找，而$\mathrm{Wind}$负责操纵这$N$个屋子的灯。在起初的时候，所有的灯都没有被打开。每一次，孩子们只会躲藏在没有开灯的房间中，但是为了增加刺激性，孩子们会要求打开某个房间的电灯或者关闭某个房间的电灯。为了评估某一次游戏的复杂性，$\mathrm{Jiajia}$希望知道可能的最远的两个孩子的距离（即最远的两个关灯房间的距离）。<br>我们将以如下形式定义每一种操作：</p>
-<ul>
-<li>$\mathrm{C(hange)}\;i$ ：改变第$i$个房间的照明状态，若原来打开，则关闭；若原来关闭，则打开。</li>
-<li>$\mathrm{G(ame)}$ ：开始一次游戏，查询最远的两个关灯房间的距离。</li>
-</ul>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含一个整数$N$，表示房间的个数，房间将被编号为$1,2,3\cdots N$的整数。接下来$N-1$行每行两个整数$a,b$，表示房间$a$与房间$b$之间有一条走廊相连。接下来一行包含一个整数$Q$，表示操作次数。接着$Q$行，每行一个操作，如上文所示。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每一个操作$\mathrm{G(ame)}$，输出一个非负整数，表示最远的两个关灯房间的距离。<br>若只有一个房间是关着灯的，输出$0$；若所有房间的灯都开着，输出$-1$。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1095【ZJOI2007】Hide捉迷藏 括号序列+线段树/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1068【SCOI2007】压缩 区间DP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ1068【SCOI2007】压缩 区间DP/" itemprop="url">BZOJ1068【SCOI2007】压缩 <区间DP></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T00:00:00+08:00">
-                2018-03-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  935
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2007】压缩"><a href="#【SCOI2007】压缩" class="headerlink" title="【SCOI2007】压缩"></a>【SCOI2007】压缩</h3><p>$\mathrm{Time\;Limit:\;1\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给一个由小写字母组成的字符串，我们可以用一种简单的方法来压缩其中的重复信息。压缩后的字符串除了小写字母外还可以（但不必）包含大写字母$\mathrm{R}$与$\mathrm{M}$，其中$\mathrm{M}$标记重复串的开始，$\mathrm{R}$重复从上一个$\mathrm{M}$（如果当前位置左边没有$\mathrm{M}$，则从串的开始算起）开始的解压结果（称为缓冲串）。 $\mathrm{bcdcdcdcd}$可以压缩为$\mathrm{bMcdRR}$，下面是解压缩的过程：<br><img src="http://www.lydsy.com/JudgeOnline/images/1068/1.jpg" alt=""></p>
-<p>另一个例子是$\mathrm{abcabcdabcabcdxyxyz}$可以被压缩为$\mathrm{abcRdRMxyRz}$。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入仅一行，包含待压缩字符串，仅包含小写字母，长度为$n$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出仅一行，即压缩后字符串的最短长度。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1068【SCOI2007】压缩 区间DP/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1857【SCOI2010】传送带 三分法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ1857【SCOI2010】传送带 三分法/" itemprop="url">BZOJ1857【SCOI2010】传送带 <三分法></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T00:00:00+08:00">
-                2018-03-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  872
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2010】传送带"><a href="#【SCOI2010】传送带" class="headerlink" title="【SCOI2010】传送带"></a>【SCOI2010】传送带</h3><p>$\mathrm{Time\;Limit:\;1\;Sec}$<br>$\mathrm{Memory\;Limit:\;64\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在一个$2$维平面上有两条传送带，每一条传送带可以看成是一条线段。两条传送带分别为线段$AB$和线段$CD$。<br>$\mathrm{lxhgww}$在$AB$上的移动速度为$P$，在$CD$上的移动速度为$Q$，在平面上的移动速度$R$。<br>现在$\mathrm{lxhgww}$想从$A$点走到$D$点，他想知道最少需要走多长时间。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入数据第一行是$4$个整数，表示$A$和$B$的坐标，分别为$A_x,A_y,B_x,B_y$。<br>第二行是$4$个整数，表示$C$和$D$的坐标，分别为$C_x,C_y,D_x,D_y$。<br>第三行是$3$个整数，分别是$P,Q,R$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出数据为一行，表示$\mathrm{lxhgww}$从$A$点走到$D$点的最短时间，保留到小数点后$2$位。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1857【SCOI2010】传送带 三分法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3597【SCOI2014】方伯伯运椰子 费用流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ3597【SCOI2014】方伯伯运椰子 费用流/" itemprop="url">BZOJ3597【SCOI2014】方伯伯运椰子 <费用流></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-15T00:00:00+08:00">
-                2018-03-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,052
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2014】方伯伯运椰子"><a href="#【SCOI2014】方伯伯运椰子" class="headerlink" title="【SCOI2014】方伯伯运椰子"></a>【SCOI2014】方伯伯运椰子</h3><p>$\mathrm{Time\;Limit:\;30\;Sec}$<br>$\mathrm{Memory\;Limit:\;64\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><center><br><img src="http://www.lydsy.com/JudgeOnline/upload/201503/f1.PNG" alt=""><br></center>
-
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含二个整数$N$,$M$。<br>接下来$M$行代表$M$条边，表示这个交通网络。<br>每行六个整数，表示$U_i,V_i,A_i,B_i,C_i,D_i$。<br>接下来一行包含一条边，表示连接起点的边。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个浮点数，保留二位小数。表示答案，数据保证答案大于$0$。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3597【SCOI2014】方伯伯运椰子 费用流/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4443【SCOI2015】小凸玩矩阵 二分+网络流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ4443【SCOI2015】小凸玩矩阵 二分+网络流/" itemprop="url">BZOJ4443【SCOI2015】小凸玩矩阵 <二分+网络流></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-14T00:00:00+08:00">
-                2018-03-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  788
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2015】小凸玩矩阵"><a href="#【SCOI2015】小凸玩矩阵" class="headerlink" title="【SCOI2015】小凸玩矩阵"></a>【SCOI2015】小凸玩矩阵</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>小凸和小方是好朋友，小方给小凸一个$N\times M\;(N\le M)$的矩阵$A$,要求小秃从其中选出$N$个数，其中任意两个数字不能在同一行或同一列，现小凸想知道选出来的$N$个数中第$K$大的数字的最小值是多少。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行给出三个整数$N,M,K$<br>接下来$N$行，每行$M$个数字，用来描述这个矩阵</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数，表示第$K$大数字的最小值<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4443【SCOI2015】小凸玩矩阵 二分+网络流/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1987,7 +1989,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">156</span>
+                  <span class="site-state-item-count">161</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2000,7 +2002,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">91</span>
+                  <span class="site-state-item-count">94</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2141,7 +2143,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">162.5k</span>
+    <span title="Site words total count">168.2k</span>
   
 </div>
 
