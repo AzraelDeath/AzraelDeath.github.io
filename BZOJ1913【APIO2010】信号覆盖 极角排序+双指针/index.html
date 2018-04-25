@@ -106,19 +106,19 @@
 </script>
 
 
-<meta name="description" content="Problem【APIO2010】信号覆盖$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description&amp;lt;\center&amp;gt; Input输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$">
+<meta name="description" content="Problem【APIO2010】信号覆盖$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description  Input输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$x_i$和$y_i$来表示，">
 <meta name="keywords" content="BZOJ,计算几何,APIO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1913【APIO2010】信号覆盖 &lt;极角排序+双指针&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1913【APIO2010】信号覆盖 极角排序+双指针/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem【APIO2010】信号覆盖$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description&amp;lt;\center&amp;gt; Input输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$">
+<meta property="og:description" content="Problem【APIO2010】信号覆盖$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description  Input输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$x_i$和$y_i$来表示，">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.lydsy.com/JudgeOnline/images/1913_1.jpg">
-<meta property="og:updated_time" content="2018-04-23T13:26:50.254Z">
+<meta property="og:updated_time" content="2018-04-24T14:06:34.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1913【APIO2010】信号覆盖 &lt;极角排序+双指针&gt;">
-<meta name="twitter:description" content="Problem【APIO2010】信号覆盖$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description&amp;lt;\center&amp;gt; Input输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$">
+<meta name="twitter:description" content="Problem【APIO2010】信号覆盖$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;64\;MB}$ Description  Input输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$x_i$和$y_i$来表示，">
 <meta name="twitter:image" content="https://www.lydsy.com/JudgeOnline/images/1913_1.jpg">
 
 
@@ -379,7 +379,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  932
+                  931
                 </span>
               
 
@@ -417,7 +417,8 @@
 
       
         <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【APIO2010】信号覆盖"><a href="#【APIO2010】信号覆盖" class="headerlink" title="【APIO2010】信号覆盖"></a>【APIO2010】信号覆盖</h3><p>$\mathrm{Time\;Limit:\;20\;Sec}$<br>$\mathrm{Memory\;Limit:\;64\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p><center><br><img src="https://www.lydsy.com/JudgeOnline/images/1913_1.jpg" alt=""><br>&lt;\center&gt;</center></p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><center><br><img src="https://www.lydsy.com/JudgeOnline/images/1913_1.jpg" alt=""><br></center>
+
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入第一行包含一个正整数$n$，表示房子的总数。接下来有$n$行，分别表示每一个房子的位置。对于，$i=1,2,\cdots,n$第$i$个房子的坐标用一对整数$x_i$和$y_i$来表示，中间用空格隔开。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出文件包含一个实数，表示平均有多少个房子被信号所覆盖，需保证输出结果与精确值的绝对误差不超过$0.01$。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">0 2</span><br><span class="line">4 4</span><br><span class="line">0 0</span><br><span class="line">2 0</span><br></pre></td></tr></table></figure>
@@ -505,8 +506,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4293【PA2015】Siano 线段树/" rel="prev" title="BZOJ4293【PA2015】Siano <线段树>">
-                BZOJ4293【PA2015】Siano <线段树> <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ4299 FRBSUM 主席树/" rel="prev" title="BZOJ4299 FRBSUM <主席树>">
+                BZOJ4299 FRBSUM <主席树> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -619,7 +620,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">161</span>
+                  <span class="site-state-item-count">162</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -632,7 +633,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">94</span>
+                  <span class="site-state-item-count">96</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -789,7 +790,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">168.1k</span>
+    <span title="Site words total count">169.0k</span>
   
 </div>
 

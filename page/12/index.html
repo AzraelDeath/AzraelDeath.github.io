@@ -315,6 +315,272 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1972【SDOI2010】猪国杀 模拟/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1972【SDOI2010】猪国杀 模拟/" itemprop="url">BZOJ1972 【SDOI2010】 猪国杀 <模拟></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-17T00:00:00+08:00">
+                2017-10-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  6,336
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  31
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2010】猪国杀"><a href="#【SDOI2010】猪国杀" class="headerlink" title="【SDOI2010】猪国杀"></a>【SDOI2010】猪国杀</h3><p>Time Limit: $1 Sec$<br>Memory Limit: $64 MB$</p>
+<h3 id="题目描述-Description"><a href="#题目描述-Description" class="headerlink" title="题目描述 Description"></a>题目描述 Description</h3><ol>
+<li>概述<pre><code>《猪国杀》是一种多猪牌类回合制游戏，一共有三种角色：主猪，忠猪，反猪。
+每局游戏主猪有且只有一只，忠猪和反猪可以有多只，每只猪扮演一种角色。
+</code></pre></li>
+<li>游戏目的：<pre><code>·主猪（MP）：自己存活的情况下消灭所有的反猪。
+·忠猪（ZP）：不惜一切保护主猪，胜利条件与主猪相同。
+·反猪（FP）：杀死主猪。
+</code></pre></li>
+<li>游戏过程：<pre><code>·游戏开始时候，每个玩家手里都会有4张牌，且体力上限和初始体力都是4。
+·开始游戏时，从主猪开始，按照逆时针方向（数据中就是按照编号从1,2,3..n,1..的顺序）依次行动。
+·每个玩家自己的回合可以分为2个阶段：
+·摸牌阶段：
+    ·从牌堆顶部摸两张牌，依次放到手牌的最右边。
+·出牌阶段：
+    ·你可以使用0张到任意张牌，每次使用牌的时候都使用最靠左的能够使用的牌。
+    ·当然，要满足如下规则：
+        ·1.如果没有猪哥连弩，每个出牌阶段只能使用一次“杀”来攻击。
+        ·2.任何牌被使用后被弃置（武器是装备上）。
+        ·被弃置的牌以后都不能再用，即与游戏无关。
+</code></pre></li>
+<li>各种牌介绍：<pre><code>·每张手牌用一个字母表示，字母代表牌的种类。
+·基本牌：
+    『桃(P)』：
+        ·在自己的回合内，如果自己的体力值不等于体力上限，那么使用一个桃可以为自己补充一点体力，否则不能使用桃。
+        ·桃只能对自己使用。
+        ·在自己的回合外，如果自己的血变为0或者更低，那么也可以使用。
+    『杀(K)』：
+        ·在自己的回合内，对攻击范围内除自己以外的一名角色使用。
+        ·如果没有被『闪』抵消，则造成1点伤害。无论有无武器，杀的攻击范围都是1。
+    『闪(D)』：
+        ·当你受到杀的攻击时，可以弃置一张闪来抵消杀的效果。
+·锦囊牌：
+    『决斗(F)』：
+        ·出牌阶段，对除自己以外任意一名角色使用，由目标角色先开始，自己和目标角色轮流弃置一张杀，首先没有杀可弃的一方受到1点伤害，另一方视为此伤害的来源。
+    『南猪入侵(N)』：
+        ·出牌阶段，对除你以外所有角色使用，按逆时针顺序从使用者下家开始依次结算，除非弃置一张杀，否则受到1点伤害。
+    『万箭齐发(W)』：
+        ·和南猪入侵类似，不过要弃置的不是杀而是闪。
+    『无懈可击(J)』：
+        ·在目标锦囊生效前抵消其效果。
+        ·每次有一张锦囊即将生效时，从使用这张锦囊的猪开始，按照逆时针顺序，依次得到使用无懈可击的机会。
+        ·效果：
+            ·用于决斗时，决斗无效并弃置。
+            ·用于南猪入侵或万箭齐发时，当结算到某个角色时才能使用，当前角色不需弃置牌并且不会受到伤害（仅对一个角色产生效果）。
+            ·用于无懈可击时，成为目标的无懈可击被无效。
+·装备牌：
+    『猪哥连弩(Z)』：
+        ·武器，攻击范围1，出牌阶段你可以使用任意张杀。
+    ·同一时刻最多只能装一个武器。
+    ·如果先前已经有了一把武器，那么之后再装武器的话，会弃置以前的武器来装现在的武器。
+</code></pre></li>
+<li>特殊事件及概念解释：<pre><code>·伤害来源：
+    ·杀、南猪入侵、万箭齐发的伤害来源均是使用该牌的猪。
+    ·决斗的伤害来源如上。
+·距离：
+    ·两只猪的距离定义为沿着逆时针方向间隔的猪数＋1。即初始时1和2的距离为1，但是2和1的距离就是n-1。
+    ·注意一个角色的死亡会导致一些猪距离的改变；
+·玩家死亡：
+    ·如果该玩家的体力降到0或者更低，并且自己手中没有足够的桃使得自己的体力值回到1，那么就死亡了。
+    ·死亡后所有的牌（装备区，手牌区）被弃置。
+·奖励与惩罚：
+    ·反猪死亡时，最后一个伤害来源处（即使是反猪）立即摸三张牌。
+    ·忠猪死亡时，如果最后一个伤害来源是主猪，那么主猪所有装备牌、手牌被弃置。
+·注意，一旦达成胜利条件，游戏立刻结束，因此即使会摸3张牌或者还有牌可以用也不用执行了。
+</code></pre></li>
+<li>几种行为：<pre><code>·献殷勤：
+    ·使用无懈可击挡下南猪入侵、万箭齐发、决斗。
+    ·使用无懈可击抵消表敌意。
+·表敌意：
+    ·对某个角色使用杀、决斗。
+    ·使用无懈可击抵消献殷勤。
+·跳忠：
+    ·即通过行动表示自己是忠猪。
+    ·跳忠行动就是对主猪或对某只已经跳忠的猪献殷勤，或者对某只已经跳反的猪表敌意。
+·跳反：
+    ·即通过行动表示自己是反猪。
+    ·跳反行动就是对主猪或对某只已经跳忠的猪表敌意，或者对某只已经跳反的猪献殷勤。
+·忠猪不会跳反，反猪也不会跳忠。
+·不管是忠猪还是反猪，能够跳必然跳。
+</code></pre></li>
+<li>行动准则：<pre><code>·共性：
+    ·每个角色如果手里有桃且生命值未满，那么必然吃掉。
+    ·有南猪入侵、万箭齐发、必然使用。
+    ·有装备必然装上。
+    ·受到杀时，有闪必然弃置。
+    ·响应南猪入侵或者万箭齐发时候，有杀/闪必然弃置。
+    ·不会对未表明身份的猪献殷勤（包括自己）。
+·特性：
+    ·主猪：
+        ·主猪会认为没有跳身份，且用南猪入侵/万箭齐发对自己造成伤害的猪是类反猪（没伤害到不算，注意类反猪并没有表明身份），如果之后跳了，那么主猪会重新认识这只猪。
+        ·对于每种表敌意的方式，对逆时针方向能够执行到的第一只类反猪或者已跳反猪表；如果没有，那么就不表敌意。
+        ·决斗时会不遗余力弃置杀。
+        ·如果能对已经跳忠的猪或自己献殷勤，那么一定献。
+        ·如果能够对已经跳反的猪表敌意，那么一定表。
+    ·忠猪：
+        ·对于每种表敌意的方式，对逆时针方向能够执行到的第一只已经跳反的猪表，如果没有，那么就不表敌意。
+        ·决斗时，如果对方是主猪，那么不会弃置杀，否则，会不遗余力弃置杀。
+        ·如果有机会对主猪或者已经跳忠的猪献殷勤，那么一定献。
+    ·反猪：
+        ·对于每种表敌意的方式，如果有机会则对主猪表，否则，对逆时针方向能够执行到的第一只已经跳忠的猪表，如果没有，那么就不表敌意。
+        ·决斗时会不遗余力弃置杀。
+        ·如果有机会对已经跳反的猪献殷勤，那么一定献。
+</code></pre></li>
+</ol>
+<p>现在，我们已经知道每只猪的角色、手牌，还有牌堆初始情况，并且假设每个角色会按照如下的行为准则进行游戏，你需要做的就是告诉小猪$iPig$最后的结果。<br>限于$iPig$只会用$P++$语言写$A+B$，他请你用$Pigcal(Pascal)$、$P(C)$或$P++(C++)$语言来帮他预测最后的结果。</p>
+<h3 id="输入描述-Input-Description"><a href="#输入描述-Input-Description" class="headerlink" title="输入描述 Input Description"></a>输入描述 Input Description</h3><p>输入文件第一行包含两个正整数$n$($2\le n\le 10$)和$m$($m\le 2000$)，分别代表玩家数和牌堆中牌的数量。数据保证牌的数量够用。<br>接下来$n$行，每行$5$个字符串，依次表示对第$i$只猪的角色和初始$4$张手牌描述。编号为$1$的肯定是主猪。<br>再接下来一行，一共$m$个字符串，按照从牌堆顶部到牌堆底部的顺序描述每张牌。<br>所有的相邻的两个字符串都严格用$1$个空格隔开，行尾没有多余空格。</p>
+<h3 id="输出描述-Output-Description"><a href="#输出描述-Output-Description" class="headerlink" title="输出描述 Output Description"></a>输出描述 Output Description</h3><p>输出数据第一行包含一个字符串代表游戏结果。如果是主猪胜利，那么输出$MP$，否则输出$FP$。数据保证游戏总会结束。<br>接下来$n$行，第$i$行是对第$i$只猪的手牌描述（注意只需要输出手牌），按照手牌从左往右的顺序输出，相邻两张牌用一个空格隔开，行末尾没有多余空格。如果这只猪已阵亡，那么只要输出$DEAD$即可。注意如果要输出手牌而没有手牌的话，那么只需输出一个空行。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ1972【SDOI2010】猪国杀 模拟/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1001【BJOI2006】狼抓兔子 网络流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -483,6 +749,167 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/" itemprop="url">POJ3207 Ikki's Story IV - Panda's Trick < 2-SAT ></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T00:00:00+08:00">
+                2017-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  717
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Ikki’s-Story-IV-Panda’s-Trick"><a href="#Ikki’s-Story-IV-Panda’s-Trick" class="headerlink" title="Ikki’s Story IV - Panda’s Trick"></a>Ikki’s Story IV - Panda’s Trick</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>liympanda, one of Ikki’s friend, likes playing games with Ikki. Today after minesweeping with Ikki and winning so many times, he is tired of such easy games and wants to play another game with Ikki.<br>liympanda has a magic circle and he puts it on a plane, there are n points on its boundary in circular border: $0, 1, 2, \cdots , n-1$. Evil panda claims that he is connecting m pairs of points. To connect two points, liympanda either places the link entirely inside the circle or entirely outside the circle. Now liympanda tells Ikki no two links touch inside/outside the circle, except on the boundary. He wants Ikki to figure out whether this is possible…<br>Despaired at the minesweeping game just played, Ikki is totally at a loss, so he decides to write a program to help him.</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The input contains exactly one test case.<br>In the test case there will be a line consisting of of two integers: $n$ and $m$ $(n \le 1,000, m \le 500)$. The following $m$ lines each contain two integers $a_i$ and $b_i$, which denote the endpoints of the $i^{th}$ wire. Every point will have at most one link.</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Output a line, either “panda is telling the truth…” or “the evil panda is lying again”.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1997【HNOI2010】Planer 2-SAT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -592,167 +1019,6 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/BZOJ1997【HNOI2010】Planer 2-SAT/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/" itemprop="url">POJ3207 Ikki's Story IV - Panda's Trick < 2-SAT ></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T00:00:00+08:00">
-                2017-10-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  717
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Ikki’s-Story-IV-Panda’s-Trick"><a href="#Ikki’s-Story-IV-Panda’s-Trick" class="headerlink" title="Ikki’s Story IV - Panda’s Trick"></a>Ikki’s Story IV - Panda’s Trick</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>liympanda, one of Ikki’s friend, likes playing games with Ikki. Today after minesweeping with Ikki and winning so many times, he is tired of such easy games and wants to play another game with Ikki.<br>liympanda has a magic circle and he puts it on a plane, there are n points on its boundary in circular border: $0, 1, 2, \cdots , n-1$. Evil panda claims that he is connecting m pairs of points. To connect two points, liympanda either places the link entirely inside the circle or entirely outside the circle. Now liympanda tells Ikki no two links touch inside/outside the circle, except on the boundary. He wants Ikki to figure out whether this is possible…<br>Despaired at the minesweeping game just played, Ikki is totally at a loss, so he decides to write a program to help him.</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The input contains exactly one test case.<br>In the test case there will be a line consisting of of two integers: $n$ and $m$ $(n \le 1,000, m \le 500)$. The following $m$ lines each contain two integers $a_i$ and $b_i$, which denote the endpoints of the $i^{th}$ wire. Every point will have at most one link.</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>Output a line, either “panda is telling the truth…” or “the evil panda is lying again”.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/POJ3207 Ikki's Story IV - Panda's Trick 2-SAT/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1322,6 +1588,167 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/" itemprop="url">BZOJ1103【POI2007】大都市meg <树上差分+树状数组></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  990
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【POI2007】大都市meg"><a href="#【POI2007】大都市meg" class="headerlink" title="【POI2007】大都市meg"></a>【POI2007】大都市meg</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>经济全球化浪潮的影响下,习惯于漫步在清晨的乡间小路的邮递员$Blue Mary$也开始骑着摩托车传递邮件了。不过，她经常回忆起以前在乡间漫步的情景。昔日，乡下有依次编号为$1\sim n$的$n$个小村庄，某些村庄之间有一些双向的土路。从每个村庄都恰好有一条路径到达村庄$1$（即比特堡）。并且，对于每个村庄，它到比特堡的路径恰好只经过编号比它的编号小的村庄。另外，对于所有道路而言，它们都不在除村庄以外的其他地点相遇。在这个未开化的地方，从来没有过高架桥和地下铁道。随着时间的推移，越来越多的土路被改造成了公路。至今，$Blue Mary$还清晰地记得最后一条土路被改造为公路的情景。现在，这里已经没有土路了——所有的路都成为了公路，而昔日的村庄已经变成了一个大都市。 $Blue Mary$想起了在改造期间她送信的经历。她从比特堡出发，需要去某个村庄，并且在两次送信经历的间隔期间,有某些土路被改造成了公路.现在$Blue Mary$需要你的帮助：计算出每次送信她需要走过的土路数目。（对于公路，她可以骑摩托车；而对于土路，她就只好推车了。）</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行是一个数$n$  ($1\le  n\le 250000$)<br>以下$n-1$行，每行两个整数$a,b$($1\le a &lt; b\le n$)，表示原有一条路连接$a$和$b$<br>以下一行，包含一个整数$m$($1\le m\le 250000$)，表示$Blue Mary$曾经在改造期间送过$m$次信。<br>以下$n+m-1$行，每行有两种格式的若干信息，表示按时间先后发生过的$n+m-1$次事件:<br>若这行为 $A a b$  ($1\le a &lt; b\le n$)，表示将$a$到$b$的土路修为公路。<br>若这行为 $W a$, 则表示$Blue Mary$曾经从比特堡送信到村庄$a$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>有m行，每行包含一个整数，表示对应的某次送信时经过的土路数目。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/HDU3068 最长回文 Manacher/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1632,328 +2059,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2038 小Z的袜子 莫队/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ2038 小Z的袜子 莫队/" itemprop="url">BZOJ2038 小Z的袜子 <莫队></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
-                2017-09-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,048
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="小Z的袜子"><a href="#小Z的袜子" class="headerlink" title="小Z的袜子"></a>小Z的袜子</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>作为一个生活散漫的人，小$Z$每天早上都要耗费很久从一堆五颜六色的袜子中找出一双来穿。终于有一天，小$Z$再也无法忍受这恼人的找袜子过程，于是他决定听天由命……<br>具体来说，小$Z$把这$N$只袜子从$1$到$N$编号，然后从编号$L$到$R$(尽管小$Z$并不在意两只袜子是不是完整的一双，甚至不在意两只袜子是否一左一右，他却很在意袜子的颜色，毕竟穿两只不同色的袜子会很尴尬)。<br>你的任务便是告诉小$Z$，他有多大的概率抽到两只颜色相同的袜子。当然，小$Z$希望这个概率尽量高，所以他可能会询问多个$(L,R)$以方便自己选择。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件第一行包含两个正整数$N$和$M$。$N$为袜子的数量，$M$为小$Z$所提的询问的数量。接下来一行包含$N$个正整数$C_i$，其中$C_i$表示第$i$只袜子的颜色，相同的颜色用相同的数字表示。再接下来$M$行，每行两个正整数$L$，$R$表示一个询问。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>包含$M$行，对于每个询问在一行中输出分数$A/B$表示从该询问的区间$[L,R]$中随机抽出两只袜子颜色相同的概率。若该概率为$0$则输出$0/1$，否则输出的$A/B$必须为最简分数。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ2038 小Z的袜子 莫队/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/" itemprop="url">BZOJ1103【POI2007】大都市meg <树上差分+树状数组></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+08:00">
-                2017-09-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  990
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【POI2007】大都市meg"><a href="#【POI2007】大都市meg" class="headerlink" title="【POI2007】大都市meg"></a>【POI2007】大都市meg</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>经济全球化浪潮的影响下,习惯于漫步在清晨的乡间小路的邮递员$Blue Mary$也开始骑着摩托车传递邮件了。不过，她经常回忆起以前在乡间漫步的情景。昔日，乡下有依次编号为$1\sim n$的$n$个小村庄，某些村庄之间有一些双向的土路。从每个村庄都恰好有一条路径到达村庄$1$（即比特堡）。并且，对于每个村庄，它到比特堡的路径恰好只经过编号比它的编号小的村庄。另外，对于所有道路而言，它们都不在除村庄以外的其他地点相遇。在这个未开化的地方，从来没有过高架桥和地下铁道。随着时间的推移，越来越多的土路被改造成了公路。至今，$Blue Mary$还清晰地记得最后一条土路被改造为公路的情景。现在，这里已经没有土路了——所有的路都成为了公路，而昔日的村庄已经变成了一个大都市。 $Blue Mary$想起了在改造期间她送信的经历。她从比特堡出发，需要去某个村庄，并且在两次送信经历的间隔期间,有某些土路被改造成了公路.现在$Blue Mary$需要你的帮助：计算出每次送信她需要走过的土路数目。（对于公路，她可以骑摩托车；而对于土路，她就只好推车了。）</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行是一个数$n$  ($1\le  n\le 250000$)<br>以下$n-1$行，每行两个整数$a,b$($1\le a &lt; b\le n$)，表示原有一条路连接$a$和$b$<br>以下一行，包含一个整数$m$($1\le m\le 250000$)，表示$Blue Mary$曾经在改造期间送过$m$次信。<br>以下$n+m-1$行，每行有两种格式的若干信息，表示按时间先后发生过的$n+m-1$次事件:<br>若这行为 $A a b$  ($1\le a &lt; b\le n$)，表示将$a$到$b$的土路修为公路。<br>若这行为 $W a$, 则表示$Blue Mary$曾经从比特堡送信到村庄$a$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>有m行，每行包含一个整数，表示对应的某次送信时经过的土路数目。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1103【POI2007】大都市meg 树上差分+树状数组/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2008,7 +2113,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">161</span>
+                  <span class="site-state-item-count">162</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2021,7 +2126,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">94</span>
+                  <span class="site-state-item-count">96</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2162,7 +2267,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">168.1k</span>
+    <span title="Site words total count">169.0k</span>
   
 </div>
 
