@@ -81,7 +81,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,组合数学,数论数学,Prufer序列," />
+  <meta name="keywords" content="组合数学,BZOJ,数论数学,Prufer序列," />
 
 
 
@@ -107,14 +107,14 @@
 
 
 <meta name="description" content="Problem小猴打架$\mathrm{Time\;Limit:\;5\;Sec}$$\mathrm{Memory\;Limit:\;162\;MB}$ Description一开始森林里面有$N$只互不相识的小猴子，它们经常打架，但打架的双方都必须不是好朋友。每次打完架后，打架的双方以及它们的好朋友就会互相认识，成为好朋友。经过$N-1$次打架之后，整个森林的小猴都会成为好朋友。 现在的问题是，">
-<meta name="keywords" content="BZOJ,组合数学,数论数学,Prufer序列">
+<meta name="keywords" content="组合数学,BZOJ,数论数学,Prufer序列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1430 小猴打架 &lt; Prufer序列+组合数学 &gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ1430 小猴打架 Prufer序列+组合数学/index.html">
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem小猴打架$\mathrm{Time\;Limit:\;5\;Sec}$$\mathrm{Memory\;Limit:\;162\;MB}$ Description一开始森林里面有$N$只互不相识的小猴子，它们经常打架，但打架的双方都必须不是好朋友。每次打完架后，打架的双方以及它们的好朋友就会互相认识，成为好朋友。经过$N-1$次打架之后，整个森林的小猴都会成为好朋友。 现在的问题是，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-27T12:23:19.346Z">
+<meta property="og:updated_time" content="2018-04-26T15:15:29.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ1430 小猴打架 &lt; Prufer序列+组合数学 &gt;">
 <meta name="twitter:description" content="Problem小猴打架$\mathrm{Time\;Limit:\;5\;Sec}$$\mathrm{Memory\;Limit:\;162\;MB}$ Description一开始森林里面有$N$只互不相识的小猴子，它们经常打架，但打架的双方都必须不是好朋友。每次打完架后，打架的双方以及它们的好朋友就会互相认识，成为好朋友。经过$N-1$次打架之后，整个森林的小猴都会成为好朋友。 现在的问题是，">
@@ -416,7 +416,7 @@
       
         <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="小猴打架"><a href="#小猴打架" class="headerlink" title="小猴打架"></a>小猴打架</h3><p>$\mathrm{Time\;Limit:\;5\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>一开始森林里面有$N$只互不相识的小猴子，它们经常打架，但打架的双方都必须不是好朋友。每次打完架后，打架的双方以及它们的好朋友就会互相认识，成为好朋友。经过$N-1$次打架之后，整个森林的小猴都会成为好朋友。 现在的问题是，总共有多少种不同的打架过程。 比如当$N=3$时，就有$\lbrace1-2,1-3\rbrace$ $\lbrace1-2,2-3\rbrace$ $\lbrace1-3,1-2\rbrace$ $\lbrace1-3,2-3\rbrace$ $\lbrace2-3,1-2\rbrace$ $\lbrace2-3,1-3\rbrace$六种不同的打架过程。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>一个整数N，$N\le10^6$</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>一个整数$N$，$N\le10^6$</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行，方案数$\mod{9999991}$。<br><a id="more"></a></p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">96</span><br></pre></td></tr></table></figure>
@@ -468,9 +468,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
-          
             <a href="/tags/组合数学/" rel="tag"> <i class="fa fa-tag"></i> 组合数学</a>
+          
+            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/数论数学/" rel="tag"> <i class="fa fa-tag"></i> 数论数学</a>
           

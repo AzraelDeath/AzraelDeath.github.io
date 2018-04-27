@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="ProblemDZY Loves Fibonacci NumbersTime limit: $4Sec$Memory limit: $256MB$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F">
+<meta name="description" content="ProblemDZY Loves Fibonacci Numbers$\mathrm{Time\;limit:\;4\;Sec}$$\mathrm{Memory\;limit:\;256\;MB}$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recu">
 <meta name="keywords" content="线段树,数据结构,CodeForces">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CF446C DZY Loves Fibonacci Numbers &lt;线段树&gt;">
 <meta property="og:url" content="http://azrael.top/CF446C DZY Loves Fibonacci Numbers 线段树/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="ProblemDZY Loves Fibonacci NumbersTime limit: $4Sec$Memory limit: $256MB$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F">
+<meta property="og:description" content="ProblemDZY Loves Fibonacci Numbers$\mathrm{Time\;limit:\;4\;Sec}$$\mathrm{Memory\;limit:\;256\;MB}$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T04:49:44.391Z">
+<meta property="og:updated_time" content="2018-04-26T15:17:51.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CF446C DZY Loves Fibonacci Numbers &lt;线段树&gt;">
-<meta name="twitter:description" content="ProblemDZY Loves Fibonacci NumbersTime limit: $4Sec$Memory limit: $256MB$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F">
+<meta name="twitter:description" content="ProblemDZY Loves Fibonacci Numbers$\mathrm{Time\;limit:\;4\;Sec}$$\mathrm{Memory\;limit:\;256\;MB}$ DescriptionIn mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recu">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,317
+                  1,324
                 </span>
               
 
@@ -414,13 +414,13 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="DZY-Loves-Fibonacci-Numbers"><a href="#DZY-Loves-Fibonacci-Numbers" class="headerlink" title="DZY Loves Fibonacci Numbers"></a>DZY Loves Fibonacci Numbers</h3><p>Time limit: $4Sec$<br>Memory limit: $256MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F_2 = 1,F_3=F_1+F_2=3,\cdots F_n = F_{n-1}+F_{n-2}$.<br>$DZY$ loves Fibonacci numbers very much. Today $DZY$ gives you an array consisting of $n$ integers: $a_1, a_2,cdots , a_n$. Moreover, there are $m$ queries, each query has one of the two types:</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="DZY-Loves-Fibonacci-Numbers"><a href="#DZY-Loves-Fibonacci-Numbers" class="headerlink" title="DZY Loves Fibonacci Numbers"></a>DZY Loves Fibonacci Numbers</h3><p>$\mathrm{Time\;limit:\;4\;Sec}$<br>$\mathrm{Memory\;limit:\;256\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In mathematical terms, the sequence $F_n$ of $Fibonacci$ $numbers$ is defined by the recurrence relation $F_1 = 1,F_2 = 1,F_3=F_1+F_2=3,\cdots F_n = F_{n-1}+F_{n-2}$.<br>​$\mathrm{DZY}$ loves Fibonacci numbers very much. Today $\mathrm{DZY}$ gives you an array consisting of $n$ integers: $a_1, a_2,\cdots,a_n$. Moreover, there are $m$ queries, each query has one of the two types:</p>
 <ol>
 <li>Format of the query “$1$ $l$ $r$”. In reply to the query, you need to add $F_{i-l+1}$ to each element $a_i$, where $l\le i\le r$.</li>
 <li>Format of the query “$2$ $l$ $r$”. In reply to the query you should output the value of  $\sum_{i=l}^{r}{a_i}$ modulo $10^9+9$.</li>
 </ol>
-<p>Help $DZY$ reply to all the queries.</p>
+<p>Help $\mathrm{DZY}$ reply to all the queries.</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The first line of the input contains two integers $n$ and $m$ $(1 \le n, m \le 3\times 10^5)$. The second line contains <em>n</em> integers $a_1, a_2, \cdots, a_n (1 ≤ a_i \le10^9)$ — initial array $a$.<br>Then, <em>m</em> lines follow. A single line describes a single query in the format given in the statement. It is guaranteed that for each query inequality $1 \le l \le r \le n$ holds.</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each query of the second type, print the value of the sum on a single line.<br><a id="more"></a></p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p><strong>Input</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">4 4</span><br><span class="line">1 2 3 4</span><br><span class="line">1 1 4</span><br><span class="line">2 1 4</span><br><span class="line">1 2 4</span><br><span class="line">2 1 3</span><br></pre></td></tr></table></figure></p>
