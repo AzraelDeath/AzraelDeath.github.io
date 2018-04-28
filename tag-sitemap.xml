@@ -254,13 +254,6 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
-        <lastmod>2018-04-02T03:18:12.172Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://azrael.top/tags/%E7%89%A9%E7%90%86/</loc>
         <lastmod>2018-04-02T03:21:17.653Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -443,14 +436,14 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/APIO/</loc>
+        <loc>http://azrael.top/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/</loc>
         <lastmod>2018-04-24T14:06:34.100Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/</loc>
+        <loc>http://azrael.top/tags/APIO/</loc>
         <lastmod>2018-04-24T14:06:34.100Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -541,13 +534,6 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E7%9C%81%E9%80%89/</loc>
-        <lastmod>2018-04-26T15:14:51.322Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://azrael.top/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
         <lastmod>2018-04-26T15:14:51.322Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -556,20 +542,6 @@
 
     <url>
         <loc>http://azrael.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
-        <lastmod>2018-04-26T15:15:29.935Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://azrael.top/tags/BZOJ/</loc>
-        <lastmod>2018-04-26T15:15:29.935Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://azrael.top/tags/%E6%95%B0%E8%AE%BA%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2018-04-26T15:15:29.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -646,14 +618,14 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/MST/</loc>
+        <loc>http://azrael.top/tags/LCA/</loc>
         <lastmod>2018-04-26T15:21:55.154Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/LCA/</loc>
+        <loc>http://azrael.top/tags/MST/</loc>
         <lastmod>2018-04-26T15:21:55.154Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -669,6 +641,34 @@
     <url>
         <loc>http://azrael.top/tags/LG/</loc>
         <lastmod>2018-04-26T15:21:55.154Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://azrael.top/tags/BZOJ/</loc>
+        <lastmod>2018-04-28T02:17:59.349Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://azrael.top/tags/%E7%9C%81%E9%80%89/</loc>
+        <lastmod>2018-04-28T02:17:59.349Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://azrael.top/tags/%E6%95%B0%E8%AE%BA%E6%95%B0%E5%AD%A6/</loc>
+        <lastmod>2018-04-28T02:17:59.349Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://azrael.top/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <lastmod>2018-04-28T02:17:59.349Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

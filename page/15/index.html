@@ -315,7 +315,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1012【JSOI2008】最大数 线段树/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -334,7 +334,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/" itemprop="url">BZOJ2434【NOI2011】阿狸的打字机 <AC自动机+Fail树+树状数组></a></h1>
+                <a class="post-title-link" href="/BZOJ1012【JSOI2008】最大数 线段树/" itemprop="url">BZOJ1012【JSOI2008】最大数 <线段树></a></h1>
         
 
         <div class="post-meta">
@@ -378,7 +378,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,688
+                  699
                 </span>
               
 
@@ -394,7 +394,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  3
                 </span>
               
             </div>
@@ -416,18 +416,16 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="阿狸的打字机"><a href="#阿狸的打字机" class="headerlink" title="阿狸的打字机"></a>阿狸的打字机</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>阿狸喜欢收藏各种稀奇古怪的东西，最近他淘到一台老式的打字机。打字机上只有$28$个按键，分别印有$26$个小写英文字母和$B$、$P$两个字母。<br>经阿狸研究发现，这个打字机是这样工作的：</p>
-<ul>
-<li>输入小写字母，打字机的一个凹槽中会加入这个字母(这个字母加在凹槽的最后)。</li>
-<li>按一下印有$B$的按键，打字机凹槽中最后一个字母会消失。</li>
-<li>按一下印有$P$的按键，打字机会在纸上打印出凹槽中现有的所有字母并换行，但凹槽中的字母不会消失。</li>
-</ul>
-<p>例如，阿狸输入$aPaPBbP$，纸上被打印的字符如下：<br>$a$<br>$aa$<br>$ab$<br>我们把纸上打印出来的字符串从$1$开始顺序编号，一直到$n$。打字机有一个非常有趣的功能，在打字机中暗藏一个带数字的小键盘，在小键盘上输入两个数$(x,y)$（其中$1\le x,y\le n$），打字机会显示第$x$个打印的字符串在第$y$个打印的字符串中出现了多少次。<br>阿狸发现了这个功能以后很兴奋，他想写个程序完成同样的功能，你能帮助他么？</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含一个字符串，按阿狸的输入顺序给出所有阿狸输入的字符。<br>第二行包含一个整数$m$，表示询问个数。<br>接下来$m$行描述所有由小键盘输入的询问。其中第$i$行包含两个整数$x$, $y$，表示第$i$个询问为$(x, y)$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$m$行，其中第$i$行包含一个整数，表示第$i$个询问的答案。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="最大数"><a href="#最大数" class="headerlink" title="最大数"></a>最大数</h3><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>现在请求你维护一个数列，要求提供以下两种操作：</p>
+<ol>
+<li>查询操作。<br>语法：$Q  L$<br>功能：查询当前数列中末尾$L$个数中的最大的数，并输出这个数的值。<br>限制：$L$不超过当前数列的长度。</li>
+<li>插入操作。<br>语法：$A  n$<br>功能：将$n$加上$t$，其中$t$是最近一次查询操作的答案（如果还未执行过查询操作，则$t=0$），并将所得结果对一个固定的常数$D$取模，将所得答案插入到数列的末尾。<br>限制：$n$是整数（可能为负数）并且在长整范围内。</li>
+</ol>
+<p><strong>注意：初始时数列是空的，没有一个数。</strong></p>
+<h3 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h3><p><strong>输入格式</strong><br>第一行两个整数，$M$和$D$，其中$M$表示操作的个数$(M\le 2\times 10^5)$，$D$如上文中所述，满足$(0&lt;D&lt;2\times 10^9)$<br>接下来的$M$行，每行一个字符串，描述一个具体的操作。语法如上文所述。<br><strong>输出格式</strong><br>对于每一个查询操作，你应该按照顺序依次输出结果，每个结果占一行。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/#more" rel="contents">
+            <a class="btn" href="/BZOJ1012【JSOI2008】最大数 线段树/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -482,7 +480,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2588 Count on a tree 树上主席树/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/HDU5340 Three Palindromes Manacher/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -501,7 +499,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ2588 Count on a tree 树上主席树/" itemprop="url">BZOJ2588 Count on a tree <树上主席树></a></h1>
+                <a class="post-title-link" href="/HDU5340 Three Palindromes Manacher/" itemprop="url">HDU5340 Three Palindromes < Manacher ></a></h1>
         
 
         <div class="post-meta">
@@ -545,7 +543,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,116
+                  578
                 </span>
               
 
@@ -561,7 +559,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  3
                 </span>
               
             </div>
@@ -583,12 +581,334 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Count-on-a-tree"><a href="#Count-on-a-tree" class="headerlink" title="Count on a tree"></a>Count on a tree</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一棵$N$个节点的树，每个点有一个权值，对于$M$个询问$(u,v,k)$，你需要回答$u  xor  lastans$和$v$这两个节点间第$K$小的点权。其中$lastans$是上一个询问的答案，初始为$0$，即第一个询问的$u$是明文。 </p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个整数$N,M$。<br>第二行有$N$个整数，其中第$i$个整数表示点$i$的权值。<br>后面$N-1$行每行$2$个整数$(x,y)$，表示点$x$到点$y$有一条边。<br>最后$M$行每行$3$个整数$(u,v,k)$，表示一组询问。 </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>$M$行，表示每个询问的答案。最后一个询问不输出换行符<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Three-Palindromes"><a href="#Three-Palindromes" class="headerlink" title="Three Palindromes"></a>Three Palindromes</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Can we divided a given string $S$ into three nonempty palindromes? </p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>First line contains a single integer $T\le 20$ which denotes the number of test cases.<br>For each test case , there is an single line contains a string $S$ which only consist of lowercase English letters.$1\le |s|\le 20000$</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each case, output the $Yes$ or $No$ in a single line.<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ2588 Count on a tree 树上主席树/#more" rel="contents">
+            <a class="btn" href="/HDU5340 Three Palindromes Manacher/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3673 可持久化并查集 by zky 可持久化数组/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ3673 可持久化并查集 by zky 可持久化数组/" itemprop="url">BZOJ3673 可持久化并查集 by zky <可持久化数组></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T00:00:00+08:00">
+                2017-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  856
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="可持久化并查集-by-zky"><a href="#可持久化并查集-by-zky" class="headerlink" title="可持久化并查集 by zky"></a>可持久化并查集 by zky</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$n$个集合 $m$个操作<br>操作：<br>$1\;a\;b$ 合并$a,b$所在集合<br>$2\;k$ 回到第$k$次操作之后的状态(查询算作操作)<br>$3\;a\;b$ 询问$a,b$是否属于同一集合，是则输出$1$否则输出$0$</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个整数$n,m$<br>以后$m$行，每行三个或两个整数$opt\;a\;b$或$opt\;k$，意义如上所述</p>
+<h3 id="Ouput"><a href="#Ouput" class="headerlink" title="Ouput"></a>Ouput</h3><p>对于每个$3$操作，输出$1/0$<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ3673 可持久化并查集 by zky 可持久化数组/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ1201 Intervals 差分约束系统/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/POJ1201 Intervals 差分约束系统/" itemprop="url">POJ1201 Intervals <差分约束系统></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T00:00:00+08:00">
+                2017-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  826
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Intervals"><a href="#Intervals" class="headerlink" title="Intervals"></a>Intervals</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>You are given $n$ closed, integer intervals $[a_i, b_i]$ and $n$ integers $c_1\sim c_n$.<br>Write a program that:<br>reads the number of intervals, their end points and integers $c_1\sim c_n$ from the standard input, computes the minimal size of a set $Z$ of integers which has at least $c_i$ common elements with interval $[a_i, b_i]$, for each $i=1,2,\cdots ,n$, writes the answer to the standard output. </p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The first line of the input contains an integer $n$ ($1\le n\le 5\times 10^4$) – the number of intervals. The following n lines describe the intervals. The $(i+1)^{th}$ line of the input contains three integers $a_i$, $b_i$ and $c_i$ separated by single spaces and such that $0\le a_i\le b_i\le 5\times 10^4$ and $1\le c_i\le b_i - a_i+1$. </p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>The output contains exactly one integer equal to the minimal size of set $Z$ sharing at least $c_i$ elements with interval $[a_i, b_i]$, for each $i=1,2,\cdots ,n$.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/POJ1201 Intervals 差分约束系统/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -809,6 +1129,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1179【APOI2009】ATM Tarjan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ1179【APOI2009】ATM Tarjan/" itemprop="url">BZOJ1179【APIO2009】ATM < Tarjan ></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T00:00:00+08:00">
+                2017-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,191
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="ATM"><a href="#ATM" class="headerlink" title="ATM"></a>ATM</h3><p>$\mathrm{Time\;Limit:\;15\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$\mathrm{Siruseri}$城中的道路都是单向的。不同的道路由路口连接。按照法律规定，在每个路口都设立了一个$\mathrm{Siruseri}$银行的$\mathrm{ATM}$取款机。令人奇怪的是，$\mathrm{Siruseri}$的酒吧都设在路口，虽然并不是每个路口都设有酒吧。<br>$\mathrm{Banditiji}$计划实施$\mathrm{Siruseri}$有史以来最惊天动地的$\mathrm{ATM}$抢劫。他将从市中心出发，沿着单向道路行驶，抢劫所有他途径的$\mathrm{ATM}$机，最终他将在一个酒吧庆祝他的胜利。<br>使用高超的黑客技术，他获知了每个$\mathrm{ATM}$机中可以掠取的现金数额。他希望你帮助他计算从市中心出发最后到达某酒吧时最多能抢劫的现金数额。他希望你帮助他计算从市中心出发最后到达某个酒吧时最多能抢劫的现金总数。他可以经过同一路口或道路任意多次。但只要他抢劫某个$\mathrm{ATM}$机后，该$\mathrm{ATM}$机就不会再有钱了。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个整数$N$、$M$。$N$表示路口的个数，$M$表示道路条数。接下来$M$行，每行两个整数，这两个整数都在$1$到$N$之间，第$i+1$行的两个整数表示第i条道路的起点和终点的路口编号。接下来$N$行，每行一个整数，按顺序表示每个路口处的$\mathrm{ATM}$机中的钱数。接下来一行包含两个整数$S$、$P$，$S$表示市中心的编号，也就是出发的路口。$P$表示酒吧数目。接下来的一行中有$P$个整数，表示$P$个有酒吧的路口的编号</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数，表示$\mathrm{Banditji}$从市中心开始到某个酒吧结束所能抢劫的最多的现金总数。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ1179【APOI2009】ATM Tarjan/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1798【AHOI2009】 seq维护序列 线段树/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -969,7 +1451,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/POJ1201 Intervals 差分约束系统/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -988,7 +1470,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/POJ1201 Intervals 差分约束系统/" itemprop="url">POJ1201 Intervals <差分约束系统></a></h1>
+                <a class="post-title-link" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/" itemprop="url">BZOJ2434【NOI2011】阿狸的打字机 <AC自动机+Fail树+树状数组></a></h1>
         
 
         <div class="post-meta">
@@ -1032,7 +1514,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  826
+                  1,688
                 </span>
               
 
@@ -1048,7 +1530,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  8
                 </span>
               
             </div>
@@ -1070,334 +1552,18 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Intervals"><a href="#Intervals" class="headerlink" title="Intervals"></a>Intervals</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>You are given $n$ closed, integer intervals $[a_i, b_i]$ and $n$ integers $c_1\sim c_n$.<br>Write a program that:<br>reads the number of intervals, their end points and integers $c_1\sim c_n$ from the standard input, computes the minimal size of a set $Z$ of integers which has at least $c_i$ common elements with interval $[a_i, b_i]$, for each $i=1,2,\cdots ,n$, writes the answer to the standard output. </p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>The first line of the input contains an integer $n$ ($1\le n\le 5\times 10^4$) – the number of intervals. The following n lines describe the intervals. The $(i+1)^{th}$ line of the input contains three integers $a_i$, $b_i$ and $c_i$ separated by single spaces and such that $0\le a_i\le b_i\le 5\times 10^4$ and $1\le c_i\le b_i - a_i+1$. </p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>The output contains exactly one integer equal to the minimal size of set $Z$ sharing at least $c_i$ elements with interval $[a_i, b_i]$, for each $i=1,2,\cdots ,n$.<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="阿狸的打字机"><a href="#阿狸的打字机" class="headerlink" title="阿狸的打字机"></a>阿狸的打字机</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>阿狸喜欢收藏各种稀奇古怪的东西，最近他淘到一台老式的打字机。打字机上只有$28$个按键，分别印有$26$个小写英文字母和$B$、$P$两个字母。<br>经阿狸研究发现，这个打字机是这样工作的：</p>
+<ul>
+<li>输入小写字母，打字机的一个凹槽中会加入这个字母(这个字母加在凹槽的最后)。</li>
+<li>按一下印有$B$的按键，打字机凹槽中最后一个字母会消失。</li>
+<li>按一下印有$P$的按键，打字机会在纸上打印出凹槽中现有的所有字母并换行，但凹槽中的字母不会消失。</li>
+</ul>
+<p>例如，阿狸输入$aPaPBbP$，纸上被打印的字符如下：<br>$a$<br>$aa$<br>$ab$<br>我们把纸上打印出来的字符串从$1$开始顺序编号，一直到$n$。打字机有一个非常有趣的功能，在打字机中暗藏一个带数字的小键盘，在小键盘上输入两个数$(x,y)$（其中$1\le x,y\le n$），打字机会显示第$x$个打印的字符串在第$y$个打印的字符串中出现了多少次。<br>阿狸发现了这个功能以后很兴奋，他想写个程序完成同样的功能，你能帮助他么？</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第一行包含一个字符串，按阿狸的输入顺序给出所有阿狸输入的字符。<br>第二行包含一个整数$m$，表示询问个数。<br>接下来$m$行描述所有由小键盘输入的询问。其中第$i$行包含两个整数$x$, $y$，表示第$i$个询问为$(x, y)$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$m$行，其中第$i$行包含一个整数，表示第$i$个询问的答案。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/POJ1201 Intervals 差分约束系统/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2002 Bounce 弹飞绵羊 分块/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ2002 Bounce 弹飞绵羊 分块/" itemprop="url">BZOJ2002 Bounce 弹飞绵羊 <分块></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T00:00:00+08:00">
-                2017-08-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  713
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Bounce-弹飞绵羊"><a href="#Bounce-弹飞绵羊" class="headerlink" title="Bounce 弹飞绵羊"></a>Bounce 弹飞绵羊</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>某天，$Lostmonkey$发明了一种超级弹力装置，为了在他的绵羊朋友面前显摆，他邀请小绵羊一起玩个游戏。游戏一开始，$Lostmonkey$在地上沿着一条直线摆上$n$个装置，每个装置设定初始弹力系数$k_i$，当绵羊达到第$i$个装置时，它会往后弹$k_i$步，达到第$i+k_i$个装置，若不存在第$i+k_i$个装置，则绵羊被弹飞。绵羊想知道当它从第$i$个装置起步时，被弹几次后会被弹飞。为了使得游戏更有趣，$Lostmonkey$可以修改某个弹力装置的弹力系数，任何时候弹力系数均为正整数。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含一个整数$n$，表示地上有$n$个装置，装置的编号从$0$到$n-1$,接下来一行有$n$个正整数，依次为那$n$个装置的初始弹力系数。第三行有一个正整数$m$，接下来$m$行每行至少有两个数$i$、$j$，若$i=1$，你要输出从$j$出发被弹几次后被弹飞，若$i=2$则还会再输入一个正整数$k$，表示第$j$个弹力装置的系数被修改成$k$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每个$i=1$的情况，你都要输出一个需要的步数，占一行。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ2002 Bounce 弹飞绵羊 分块/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/HDU5340 Three Palindromes Manacher/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/HDU5340 Three Palindromes Manacher/" itemprop="url">HDU5340 Three Palindromes < Manacher ></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T00:00:00+08:00">
-                2017-08-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  578
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Three-Palindromes"><a href="#Three-Palindromes" class="headerlink" title="Three Palindromes"></a>Three Palindromes</h3><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Can we divided a given string $S$ into three nonempty palindromes? </p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>First line contains a single integer $T\le 20$ which denotes the number of test cases.<br>For each test case , there is an single line contains a string $S$ which only consist of lowercase English letters.$1\le |s|\le 20000$</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>For each case, output the $Yes$ or $No$ in a single line.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/HDU5340 Three Palindromes Manacher/#more" rel="contents">
+            <a class="btn" href="/BZOJ2434【NOI2011】阿狸的打字机 AC自动机+Fail树+树状数组/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1757,165 +1923,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/20170706总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/20170706总结/" itemprop="url">20170706总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T00:00:00+08:00">
-                2017-07-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  276
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>$20170706$<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/20170706总结/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1970,7 +1977,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">165</span>
+                  <span class="site-state-item-count">166</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2124,7 +2131,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">172.9k</span>
+    <span title="Site words total count">174.1k</span>
   
 </div>
 
