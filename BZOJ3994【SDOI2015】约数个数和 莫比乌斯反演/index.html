@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem【SDOI2015】约数个数和$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description设$d(x)$为$x$的约数个数，给定$N,M$，求$\sum_{i=1}^{n}\sum_{j=1}^{m}d(i\cdot j)$ Input输入文件包含多组测试数据。第一行，一个整数$T$，表示">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-28T02:17:59.349Z">
+<meta property="og:updated_time" content="2018-04-28T04:00:54.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ3994【SDOI2015】约数个数和 &lt;莫比乌斯反演&gt;">
 <meta name="twitter:description" content="Problem【SDOI2015】约数个数和$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;128\;MB}$ Description设$d(x)$为$x$的约数个数，给定$N,M$，求$\sum_{i=1}^{n}\sum_{j=1}^{m}d(i\cdot j)$ Input输入文件包含多组测试数据。第一行，一个整数$T$，表示">
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,155
+                  1,156
                 </span>
               
 
@@ -425,8 +425,8 @@
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>挺神的反演，没推出来，需要一个结论。</p>
 <p>首先考虑如何把$d(x)$变为我们更为熟悉的数学语言。<br>对于$d(x\cdot y)$，考虑$x\times y$的约数，每个约数均可表示为$i\times \frac{y}{j}$，其中$i|x,j|y$。那么用$\sum_{i|x}\sum_{j|y}1$统计约数，一定会不漏地枚举到所有约数，但显然是有重复的。注意到这种重复的造成只有一种情况，即若$(i,j)$符合条件，那么$(i\times t,j\times t)$也符合条件，而两者所代表的最终约数是相同的，重复计数。也就是说只要$\gcd(i,j)\ne1$，那么一定是重复计算的。于是不重不漏地计算只需要把$\sum_{i|x}\sum_{j|y}1$中的$1$加上$\gcd(i,j)=1$的限制即可。<br>因此推出重要结论$d(x\cdot y)=\sum_{i|x}\sum_{j|y}[\gcd(i,j)=1]$。</p>
 <p>接下来就可以推反演了：<br>$$<br>\begin{aligned}<br>Ans&amp;=\sum_{k=1}^{n}\sum_{w=1}^{m}d(k\cdot w)\\<br>&amp;=\sum_{k=1}^{n}\sum_{w=1}^{m}\sum_{i|k}\sum_{j|w}[\gcd(i,j)=1]\\<br>&amp;=\sum_{i=1}^{n}\sum_{j=1}^{m}\lfloor\frac{n}{i}\rfloor\lfloor\frac{m}{j}\rfloor[\gcd(i,j)=1]\\<br>&amp;=\sum_{i=1}^{n}\sum_{j=1}^{m}\lfloor\frac{n}{i}\rfloor\lfloor\frac{m}{j}\rfloor\sum_{d|i,d|j}\mu(d)\\<br>&amp;=\sum_{d=1}^{n}\mu(d)\sum_{i=1}^{\lfloor n/d\rfloor}\sum_{j=1}^{\lfloor m/d\rfloor}\lfloor\frac{n}{i\cdot d}\rfloor\lfloor\frac{m}{j\cdot d}\rfloor\\<br>&amp;=\sum_{d=1}^{n}\mu(d)\sum_{i=1}^{\lfloor n/d\rfloor}\lfloor\frac{n}{i\cdot d}\rfloor\sum_{j=1}^{\lfloor m/d\rfloor}\lfloor\frac{m}{j\cdot d}\rfloor\\<br>\end{aligned}<br>$$<br>如果能预处理出$F(x)=\sum_{i=1}^{x}\lfloor\frac{x}{i}\rfloor$的值，就可以根号分块计算答案。</p>
-<p>考虑$\sum_{i=1}^{x}\lfloor\frac{x}{i}\rfloor$的意义，即枚举一个数，统计其在$[1,x]$内的倍数有多少个，可以理解为枚举约数，计算它在$1\sim x$中是多少个数的约数，即计算其对$\sum_{i=1}^{x}d(i)$的贡献。于是$F(x)=\sum_{i=1}^{x}d(i)$，我们需要预处理出$d(x)$。</p>
-<p>由于$d(x)$是积性函数，对于$d(x\cdot p)\;(x\in \N^*,\;p&lt;x,\;p是质数)$，我们有：</p>
+<p>考虑$\sum_{i=1}^{x}\lfloor\frac{x}{i}\rfloor​$的意义，即枚举一个数，统计其在$[1,x]​$内的倍数有多少个，可以理解为枚举约数，计算它在$1\sim x​$中是多少个数的约数，即计算其对$\sum_{i=1}^{x}d(i)​$的贡献。于是$F(x)=\sum_{i=1}^{x}d(i)​$，我们需要预处理出$d(x)​$。</p>
+<p>由于$d(x)$是积性函数，对于$d(x\cdot p)\;(x\in \mathbb{N}^*,\;p&lt;x,\;p是质数)$，我们有：</p>
 <ol>
 <li>$p\nmid x$：$d(x\cdot p)=d(x)\cdot d(p)$</li>
 <li>$p\mid x$：$d(x\cdot p)=d(\frac{x}{p^k}\cdot p^{k+1})=d(\frac{x}{p^k})\cdot d(p^{k+1})=\frac{d(x)\cdot(k+2)}{k+1}$，其中$p$一定为$x$的最小质因子</li>
