@@ -315,6 +315,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2321【BJ2011集训】星器 物理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ2321【BJ2011集训】星器 物理/" itemprop="url">BZOJ2321【BJ2011集训】星器 <物理></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,164
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【BJ2011集训】星器"><a href="#【BJ2011集训】星器" class="headerlink" title="【BJ2011集训】星器"></a>【BJ2011集训】星器</h3><p>$\mathrm{Time\;Limit:\;1\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$\mathrm{Magic\;Land}$上的时间又过了若干世纪……<br>现在，人们谈论着一个传说：从前，他们的祖先来到了一个位于东方的岛屿，那里简直就是另外一个世界。善于分析与构造的$\mathrm{Magic\;Land}$上的人们总是不明白那里的人们是如何不借助精确的实验与计算驱动和操纵魔法。<br>偶然地，一个魔法使（$\mathrm{Magician}$）来到了$\mathrm{Magic\;Land}$，在临走的时候留下了一个神奇的盒子，叫做星器（$\mathrm{casket\;of\;star}$）。<br>虽然不知道这个盒子是做什么的，但是经过了大量的实验和计算后，人们已经清楚它的一些事实：</p>
+<ul>
+<li>星器之中有$N\times M$个区域，可看作分成$N$行和$M$列的格子，每个区域之中有若干单位的称为“星”的对象，这个对象的最小单位已经被确定，所以，这个数量总是整数。</li>
+<li>魔法使可以驱动星器中位于同一行或同一列的不相邻（有公共边的区域称为相邻的）两个区域中各1单位的“星”，使得它们分别向中心移动1格。</li>
+<li>每一次使用2中的方法驱动“星”，将会产生魔力，魔法使会得到这一部分魔力。魔力的量等于这个两个区域之间所间隔的区域数。<br>这样，我们可以用一个$N\times M$的数表来表示星器的状态，比如$N=2$，$M=3$时：<center><br><img src="https://i.loli.net/2018/02/13/5a829d1a6f7f2.png" alt=""><br></center>
+
+</li>
+</ul>
+<p>当星器为左图的状态时，通过操纵第一行的第$1$和$3$个区域中的“星”（加粗的数字对应的区域），变为右图所示的状态，同时，将产生$1$单位的魔力（因为这两个区域之间恰好隔了$1$个区域）。<br>在经过了进一步的研究之后，人们知道了这个星器最初的状态（$\mathrm{Ini}$）以及最终被他们得到时的状态（$\mathrm{Fin}$）。<br>你希望知道，星器最多帮助它的拥有者提供了多少的魔力。即：经过一系列上述操作由初态（$\mathrm{Ini}$）变为终态（$\mathrm{Fin}$），至多产生多少魔力。<br>需要注意的是，显然操作过程中每个区域内“星”的数量不能是负的，即：如果那个区域已经没有“星”了，当然就不能继续操作了。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个正整数$N$、$M$表示星器的大小。<br>接下来的$N$行，每行包含$M$个自然数：$Ini_{i,j}$，描绘了初态（$Ini$）。<br>在一个空行后的$N$行，每行包含$M$个自然数：$Fin_{i,j}$，描绘了终态（$Fin$）。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个正整数，表示至多产生的魔力。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ2321【BJ2011集训】星器 物理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1565【NOI2009】植物大战僵尸 网络流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -479,7 +649,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4205【FJ2015集训】卡牌配对 网络流/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1877【SDOI2009】晨跑 拆点费用流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -498,7 +668,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ4205【FJ2015集训】卡牌配对 网络流/" itemprop="url">BZOJ4205【FJ2015集训】卡牌配对 <网络流></a></h1>
+                <a class="post-title-link" href="/BZOJ1877【SDOI2009】晨跑 拆点费用流/" itemprop="url">BZOJ1877【SDOI2009】晨跑 <拆点费用流></a></h1>
         
 
         <div class="post-meta">
@@ -542,7 +712,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,309
+                  896
                 </span>
               
 
@@ -558,7 +728,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  4
                 </span>
               
             </div>
@@ -580,13 +750,13 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【FJ2015集训】卡牌配对"><a href="#【FJ2015集训】卡牌配对" class="headerlink" title="【FJ2015集训】卡牌配对"></a>【FJ2015集训】卡牌配对</h3><p>Time Limit: $20 Sec$<br>Memory Limit: $512 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>现在有一种卡牌游戏，每张卡牌上有三个属性值：$A,B,C$。把卡牌分为$X,Y$两类，分别有$n_1,n_2$张。<br>两张卡牌能够配对，当且仅当，存在至多一项属性值使得两张卡牌该项属性值互质，且两张卡牌类别不同。<br>比如一张$X$类卡牌属性值分别是$225,233,101$，一张$Y$类卡牌属性值分别为$115,466,99$。那么这两张牌是可以配对的，因为只有$101$和$99$一组属性互质。<br>游戏的目的是最大化匹配上的卡牌组数，当然每张卡牌只能用一次。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>数据第一行两个数$n_1$，$n_2$，空格分割。<br>接下来$n_1$行，每行$3$个数，依次表示每张$X$类卡牌的$3$项属性值。<br>接下来$n_2$行，每行$3$个数，依次表示每张$Y$类卡牌的$3$项属性值。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数：最多能够匹配的数目。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2009】晨跑"><a href="#【SDOI2009】晨跑" class="headerlink" title="【SDOI2009】晨跑"></a>【SDOI2009】晨跑</h3><p>Time Limit: $4 Sec$<br>Memory Limit: $64 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$Elaxia$最近迷恋上了空手道，他为自己设定了一套健身计划，比如俯卧撑、仰卧起坐等 等，不过到目前为止，他坚持下来的只有晨跑。 现在给出一张学校附近的地图，这张地图中包含$N$个十字路口和$M$条街道，$Elaxia$只能从 一个十字路口跑向另外一个十字路口，街道之间只在十字路口处相交。$Elaxia$每天从寝室出发 跑到学校，保证寝室编号为$1$，学校编号为$N$。 $Elaxia$的晨跑计划是按周期（包含若干天）进行的，由于他不喜欢走重复的路线，所以在一个周期内，每天的晨跑路线都不会相交（在十字路口处），寝室和学校不算十字路 口。$Elaxia$耐力不太好，他希望在一个周期内跑的路程尽量短，但是又希望训练周期包含的天数尽量长。 除了练空手道，$Elaxia$其他时间都花在了学习和找$MM$上面，所有他想请你帮忙为他设计 一套满足他要求的晨跑计划。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行：两个数$N,M$。表示十字路口数和街道数。<br>接下来$M$行，每行$3$个数$a,b,c$，表示路口$a$和路口$b$之间有条长度为$c$的街道（单向）。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>两个数，第一个数为最长周期的天数，第二个数为满足最长天数的条件下最短的路程长度。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4205【FJ2015集训】卡牌配对 网络流/#more" rel="contents">
+            <a class="btn" href="/BZOJ1877【SDOI2009】晨跑 拆点费用流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -749,6 +919,330 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/BZOJ1190【HNOI2007】梦幻岛宝珠 分层DP/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4514【SDOI2016】数字配对 费用流/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ4514【SDOI2016】数字配对 费用流/" itemprop="url">BZOJ4514【SDOI2016】数字配对 <费用流></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  921
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SDOI2016】数字配对"><a href="#【SDOI2016】数字配对" class="headerlink" title="【SDOI2016】数字配对"></a>【SDOI2016】数字配对</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>有 $n$ 种数字，第 $i$ 种数字是 $a_i$、有 $b_i$ 个，权值是 $c_i$。<br>若两个数字 $a_i, a_j$ 满足，$a_i$ 是 $a_j$ 的倍数，且 $\frac{a_i}{a_j}$ 是一个质数，那么这两个数字可以配对，并获得 $c_i\times c_j$ 的价值。<br>一个数字只能参与一次配对，可以不参与配对。<br>在获得的价值总和不小于 $0$ 的前提下，求最多进行多少次配对。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数 $n$。<br>第二行 $n$ 个整数 $a_1,a_2,\cdots,a_n$。<br>第三行 $n$ 个整数$b_1,b_2,\cdots,b_n$。<br>第四行 $n$ 个整数 $c_1,c_2,\cdots,c_n$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个数，最多进行多少次配对<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ4514【SDOI2016】数字配对 费用流/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4205【FJ2015集训】卡牌配对 网络流/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ4205【FJ2015集训】卡牌配对 网络流/" itemprop="url">BZOJ4205【FJ2015集训】卡牌配对 <网络流></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:00:00+08:00">
+                2017-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,309
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【FJ2015集训】卡牌配对"><a href="#【FJ2015集训】卡牌配对" class="headerlink" title="【FJ2015集训】卡牌配对"></a>【FJ2015集训】卡牌配对</h3><p>Time Limit: $20 Sec$<br>Memory Limit: $512 MB$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>现在有一种卡牌游戏，每张卡牌上有三个属性值：$A,B,C$。把卡牌分为$X,Y$两类，分别有$n_1,n_2$张。<br>两张卡牌能够配对，当且仅当，存在至多一项属性值使得两张卡牌该项属性值互质，且两张卡牌类别不同。<br>比如一张$X$类卡牌属性值分别是$225,233,101$，一张$Y$类卡牌属性值分别为$115,466,99$。那么这两张牌是可以配对的，因为只有$101$和$99$一组属性互质。<br>游戏的目的是最大化匹配上的卡牌组数，当然每张卡牌只能用一次。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>数据第一行两个数$n_1$，$n_2$，空格分割。<br>接下来$n_1$行，每行$3$个数，依次表示每张$X$类卡牌的$3$项属性值。<br>接下来$n_2$行，每行$3$个数，依次表示每张$Y$类卡牌的$3$项属性值。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出一个整数：最多能够匹配的数目。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ4205【FJ2015集训】卡牌配对 网络流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1292,168 +1786,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1475 方格取数 最小割/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ1475 方格取数 最小割/" itemprop="url">BZOJ1475 方格取数 <黑白染色+最小割></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T00:00:00+08:00">
-                2017-12-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  632
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="方格取数"><a href="#方格取数" class="headerlink" title="方格取数"></a>方格取数</h3><p>Time Limit: $5 Sec$<br>Memory Limit: $64 MB$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>在一个$n\times n$的方格里，每个格子里都有一个正整数。从中取出若干数，使得任意两个取出的数所在格子没有公共边，且取出的数的总和尽量大。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个数$n$（$n\le 30$），接下来$n$行每行$n$个数描述一个方阵</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅一个数，即最大和<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1475 方格取数 最小割/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2521【SHOI2010】最小生成树 最小割/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1608,335 +1940,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3158 千钧一发 最小割/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ3158 千钧一发 最小割/" itemprop="url">BZOJ3158 千钧一发 <黑白染色+最小割></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T00:00:00+08:00">
-                2017-12-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  647
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="千钧一发"><a href="#千钧一发" class="headerlink" title="千钧一发"></a>千钧一发</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;512\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><center><br><img src="http://www.lydsy.com/JudgeOnline/upload/201305/1(3).jpg" alt=""><br></center>
-
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个正整数$N$。<br>第二行共包括$N$个正整数，第 个正整数表示$A_i$。<br>第三行共包括$N$个正整数，第 个正整数表示$B_i$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>共一行，包括一个正整数，表示在合法的选择条件下，可以获得的能量值总和的最大值。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3158 千钧一发 最小割/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3275 Number 黑白染色+最小割/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ3275 Number 黑白染色+最小割/" itemprop="url">BZOJ3275 Number <黑白染色+最小割></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T00:00:00+08:00">
-                2017-12-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  596
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>有$N$个正整数，需要从中选出一些数，使这些数的和最大。<br>若两个数$a,b$同时满足以下条件，则$a,b$不能同时被选</p>
-<ol>
-<li>存在正整数$c$，使$a^2+b^2=c^2$</li>
-<li>$\gcd(a,b)=1$</li>
-</ol>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个正整数$N$，表示数的个数。<br>第二行$N$个正整数$a_1,a_2,\cdots ,a_N$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>最大的和。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3275 Number 黑白染色+最小割/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1991,7 +1994,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">166</span>
+                  <span class="site-state-item-count">169</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2004,7 +2007,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">96</span>
+                  <span class="site-state-item-count">98</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2145,7 +2148,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">174.1k</span>
+    <span title="Site words total count">177.5k</span>
   
 </div>
 
