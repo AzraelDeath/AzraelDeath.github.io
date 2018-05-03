@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="Problem【SCOI2016】萌萌哒Time Limit: $20 Sec$Memory Limit: $256 MB$ Description一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_2$，$r_2$，即两个长度相同的区间，表示子串">
+<meta name="description" content="Problem【SCOI2016】萌萌哒$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_">
 <meta name="keywords" content="BZOJ,省选,数据结构,并查集,ST表">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4569【SCOI2016】萌萌哒 &lt;并查集+ST表&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ4569【SCOI2016】萌萌哒 并查集+ST表/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem【SCOI2016】萌萌哒Time Limit: $20 Sec$Memory Limit: $256 MB$ Description一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_2$，$r_2$，即两个长度相同的区间，表示子串">
+<meta property="og:description" content="Problem【SCOI2016】萌萌哒$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T15:13:56.429Z">
+<meta property="og:updated_time" content="2018-05-03T08:33:45.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ4569【SCOI2016】萌萌哒 &lt;并查集+ST表&gt;">
-<meta name="twitter:description" content="Problem【SCOI2016】萌萌哒Time Limit: $20 Sec$Memory Limit: $256 MB$ Description一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_2$，$r_2$，即两个长度相同的区间，表示子串">
+<meta name="twitter:description" content="Problem【SCOI2016】萌萌哒$\mathrm{Time\;Limit:\;20\;Sec}$$\mathrm{Memory\;Limit:\;256\;MB}$ Description一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  967
+                  969
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2016】萌萌哒"><a href="#【SCOI2016】萌萌哒" class="headerlink" title="【SCOI2016】萌萌哒"></a>【SCOI2016】萌萌哒</h3><p>Time Limit: $20 Sec$<br>Memory Limit: $256 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2016】萌萌哒"><a href="#【SCOI2016】萌萌哒" class="headerlink" title="【SCOI2016】萌萌哒"></a>【SCOI2016】萌萌哒</h3><p>$\mathrm{Time\;Limit:\;20\;Sec}$<br>$\mathrm{Memory\;Limit:\;256\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>一个长度为$n$的大数，用$S_1S_2S_3\cdots S_n$表示，其中$S_i$表示数的第$i$位，$S_1$是数的最高位，告诉你一些限制条件，每个条件表示为四个数，$l_1$，$r_1$，$l_2$，$r_2$，即两个长度相同的区间，表示子串$S_{l_1}S_{l_1+1}S_{l_1+2}\cdots S_{r_1}$与$S_{l_2}S_{l_2+1}S_{l_2+2}\cdots S_{r_2}$完全相同。比如$n=6$时，某限制条件$l_1=1$，$r_1=3$，$l_2=4$，$r_2=6$，那么$123123$，$351351$均满足条件，但是$12012$，$131141$不满足条件，前者数的长度不为$6$，后者第二位与第五位不同。问满足以上所有条件的数有多少个。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个数$n$和$m$，分别表示大数的长度，以及限制条件的个数。接下来$m$行，对于第$i$行，有$4$个数$l_{i_1}$，$r_{i_1}$，$l_{i_2}$，$r_{i_2}$，分别表示该限制条件对应的两个区间。<br>$1\le n\le 10^5$，$1\le m\le 10^5$，$1\le l_{i_1},r_{i_1},l_{i_2},r_{i_2}\le n$；并且保证$r_{i_1}-l_{i_1}=r_{i_2}-l_{i_2}$。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一个数，表示满足所有条件且长度为$n$的大数的个数，答案可能很大，因此输出答案模$10^9+7$的结果即可。<br><a id="more"></a></p>
@@ -615,7 +615,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">169</span>
+                  <span class="site-state-item-count">171</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -628,7 +628,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">98</span>
+                  <span class="site-state-item-count">100</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -785,7 +785,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">177.5k</span>
+    <span title="Site words total count">180.6k</span>
   
 </div>
 

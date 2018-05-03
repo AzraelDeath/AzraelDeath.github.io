@@ -315,7 +315,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3697 采药人的路径 点分治/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ2006【NOI2010】超级钢琴 ST表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -334,7 +334,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ3697 采药人的路径 点分治/" itemprop="url">BZOJ3697 采药人的路径 <点分治></a></h1>
+                <a class="post-title-link" href="/BZOJ2006【NOI2010】超级钢琴 ST表/" itemprop="url">BZOJ2006【NOI2010】超级钢琴 <ST表+堆></a></h1>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T00:00:00+08:00">
-                2018-05-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-03T00:00:00+08:00">
+                2018-05-03
               </time>
             
 
@@ -378,7 +378,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,241
+                  1,322
                 </span>
               
 
@@ -416,13 +416,175 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="采药人的路径"><a href="#采药人的路径" class="headerlink" title="采药人的路径"></a>采药人的路径</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>采药人的药田是一个树状结构，每条路径上都种植着同种药材。<br>采药人以自己对药材独到的见解，对每种药材进行了分类。大致分为两类，一种是阴性的，一种是阳性的。<br>采药人每天都要进行采药活动。他选择的路径是很有讲究的，他认为阴阳平衡是很重要的，所以他走的一定是两种药材数目相等的路径。<br>采药工作是很辛苦的，所以他希望他选出的路径中有一个可以作为休息站的节点（不包括起点和终点），满足起点到休息站和休息站到终点的路径也是阴阳平衡的。<br>他想知道他一共可以选择多少种不同的路径。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第$1$行包含一个整数$N$。<br>接下来$N-1$行，每行包含三个整数$a_i,b_i,t_i$，表示$a_i$到$b_i$这条路上药材的类型为$t_i$。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出符合采药人要求的路径数目。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【SCOI2016】萌萌哒"><a href="#【SCOI2016】萌萌哒" class="headerlink" title="【SCOI2016】萌萌哒"></a>【SCOI2016】萌萌哒</h3><p>$\mathrm{Time\;Limit:\;20\;Sec}$<br>$\mathrm{Memory\;Limit:\;512\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$\mathrm{小Z}$是一个小有名气的钢琴家，最近$\mathrm{C博士}$送给了$\mathrm{小Z}$一架超级钢琴，$\mathrm{小Z}$希望能够用这架钢琴创作出世界上最美妙的音乐。<br>这架超级钢琴可以弹奏出$n$个音符，编号为$1\sim n$。第$i$个音符的美妙度为$A_i$，其中$A_i$可正可负。<br>一个“超级和弦“由若干个编号连续的音符组成，包含的音符个数不少于$L$且不多于$R$。我们定义超级和弦的美妙度为其包含的所有音符的美妙度之和。两个超级和弦被认为是相同的，当且仅当这两个超级和弦所包含的音符集合是相同的。<br>$\mathrm{小Z}$决定创作一首由$k$个超级和弦组成的乐曲，为了使得乐曲更加动听，$\mathrm{小Z}$要求该乐曲由$k$个不同的超级和弦组成。我们定义一首乐曲的美妙度为其所包含的所有超级和弦的美妙度之和。$\mathrm{小Z}$想知道他能够创作出来的乐曲美妙度最大值是多少。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含四个正整数$n,k,L,R$。其中$n$为音符的个数，$k$为乐曲所包含的超级和弦个数，$L$和$R$分别是超级和弦所包含音符个数的下限和上限。<br>接下来$n$行，每行包含一个整数$A_i$，表示按编号从小到大每个音符的美妙度。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一个整数，表示乐曲美妙度的最大值。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3697 采药人的路径 点分治/#more" rel="contents">
+            <a class="btn" href="/BZOJ2006【NOI2010】超级钢琴 ST表/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3219 巡游 二分答案+点分治+单调队列/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ3219 巡游 二分答案+点分治+单调队列/" itemprop="url">BZOJ3219 巡游 <二分答案+点分治+单调队列></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T00:00:00+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,717
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  9
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="巡游"><a href="#巡游" class="headerlink" title="巡游"></a>巡游</h3><p>$\mathrm{Time\;Limit:\;25\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$\mathrm{Tar}$国正在准备每年一次的巡游活动。国王将会在一个城市$S$里召集人群，沿着城市间的道路进行游览，最终在一个城市$T$里发表他每年一次的著名演讲。<br>$\mathrm{Tar}$国有$N$个城市，由于国家的特殊要求，每两个城市之间存在一条唯一的简单通路。国王希望借着这个机会视察$\mathrm{Tar}$国的城市建设，因此他提出$S$到$T$的距离不能少于$L$条道路。<br>同时，国王的私人医生检查了他的身体情况后，断定国王的身体不适合做长途旅行，因此他要求$S$到$T$的距离不能多于$R$条道路。<br>另外，政府希望跟随国王的人民沿途不仅能看到城市风景，还能看到城市外的美丽乡村。因此每条道路定义了一个魅力值$C_i$，一条路径的魅力值定义为这条路径的中位数。更详细的说法是这样的：将路径上所有边的魅力值排序，得到序列$\lbrace A_i\rbrace$。假设$i=2k+c\;(0\le c\le 1)$，中位数就是$A_{k+1}$。<br>你的任务就是求出魅力值最大的路径，并输出这个魅力值。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行是三个整数$N,L,R$，表示$\mathrm{Tar}$国的城市个数、路径的最小和最大长度。<br>接下来$N-1$行，每行$3$个整数$A_i,B_i,C_i$，表示有一条连接$A_i$和$B_i$且魅力值$C_i$的道路。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅一行，表示最大的魅力值。如果不存在这样的路径，输出$-1$。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ3219 巡游 二分答案+点分治+单调队列/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -585,6 +747,168 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/BZOJ4974【Lydsy1708月赛】字符串大师 KMP+贪心构造/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+	  
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3697 采药人的路径 点分治/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Azrael_Death">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NIRVANA">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/BZOJ3697 采药人的路径 点分治/" itemprop="url">BZOJ3697 采药人的路径 <点分治></a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T00:00:00+08:00">
+                2018-05-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,241
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="采药人的路径"><a href="#采药人的路径" class="headerlink" title="采药人的路径"></a>采药人的路径</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>采药人的药田是一个树状结构，每条路径上都种植着同种药材。<br>采药人以自己对药材独到的见解，对每种药材进行了分类。大致分为两类，一种是阴性的，一种是阳性的。<br>采药人每天都要进行采药活动。他选择的路径是很有讲究的，他认为阴阳平衡是很重要的，所以他走的一定是两种药材数目相等的路径。<br>采药工作是很辛苦的，所以他希望他选出的路径中有一个可以作为休息站的节点（不包括起点和终点），满足起点到休息站和休息站到终点的路径也是阴阳平衡的。<br>他想知道他一共可以选择多少种不同的路径。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第$1$行包含一个整数$N$。<br>接下来$N-1$行，每行包含三个整数$a_i,b_i,t_i$，表示$a_i$到$b_i$这条路上药材的类型为$t_i$。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出符合采药人要求的路径数目。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/BZOJ3697 采药人的路径 点分治/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -963,173 +1287,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3438 小M的作物 最小割/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ3438 小M的作物 最小割/" itemprop="url">BZOJ3438 小M的作物 <最小割></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-26T00:00:00+08:00">
-                2018-04-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,281
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="小M的作物"><a href="#小M的作物" class="headerlink" title="小M的作物"></a>小M的作物</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$\mathrm{小M}$在$\mathrm{MC}$里开辟了两块巨大的耕地$A$和$B$（你可以认为容量是无穷）。<br>现在，$\mathrm{小M}$有种$n$作物的种子，每种作物的种子有$1$个（就是可以种一棵作物）（用$1\sim n$编号），第$i$种作物种植在$A$中种植可以获得$a_i$的收益，在$B$中种植可以获得$b_i$的收益，而且，现在还有这么一种神奇的现象，就是某些作物共同种在一块耕地中可以获得额外的收益。<br>$\mathrm{小M}$找到了规则中共有$m$种作物组合，第$i$个组合中的作物共同种在$A$中可以获得$c_{i,1}$的额外收益，共同总在$B$中可以获得$c_{i,2}$的额外收益。<br>$\mathrm{小M}$很快的算出了种植的最大收益，但是他想要考考你，你能回答他这个问题么？</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包括一个整数$n$<br>第二行包括$n$个整数，表示$a_i$<br>第三行包括$n$个整数，表示$b_i$<br>第四行包括一个整数$m$<br>接下来$m$行，第$i$行依次输入：</p>
-<ul>
-<li>一个整数$k_i$，表示第$i$个作物组合中共有$k_i$种作物</li>
-<li>两个整数$c_{i,1},c_{i,2}$，表示两种收益分别是多少</li>
-<li>$k_i$个整数，表示该组合中的作物编号</li>
-</ul>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一行，包括一个整数，表示最大收益<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ3438 小M的作物 最小割/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3626【LNOI2014】LCA 离线+树链剖分/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1292,7 +1449,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1061【NOI2008】志愿者招募 线性规划转费用流/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3438 小M的作物 最小割/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1311,7 +1468,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ1061【NOI2008】志愿者招募 线性规划转费用流/" itemprop="url">BZOJ1061【NOI2008】志愿者招募 <线性规划转费用流></a></h1>
+                <a class="post-title-link" href="/BZOJ3438 小M的作物 最小割/" itemprop="url">BZOJ3438 小M的作物 <最小割></a></h1>
         
 
         <div class="post-meta">
@@ -1323,8 +1480,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T00:00:00+08:00">
-                2018-04-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-26T00:00:00+08:00">
+                2018-04-26
               </time>
             
 
@@ -1355,7 +1512,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,456
+                  1,281
                 </span>
               
 
@@ -1371,7 +1528,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  6
                 </span>
               
             </div>
@@ -1393,13 +1550,18 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【NOI2008】志愿者招募"><a href="#【NOI2008】志愿者招募" class="headerlink" title="【NOI2008】志愿者招募"></a>【NOI2008】志愿者招募</h3><p>$\mathrm{Time\;Limit:\;20\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>申奥成功后，布布经过不懈努力，终于成为奥组委下属公司人力资源部门的主管。布布刚上任就遇到了一个难题：为即将启动的奥运新项目招募一批短期志愿者。<br>经过估算，这个项目需要$N$天才能完成，其中第$i$天至少需要$A_i$个人。布布通过了解得知，一共有$M$类志愿者可以招募。其中第$i$类可以从第$S_i$天工作到第$T_i$天，招募费用是每人$C_i$元。<br>新官上任三把火，为了出色地完成自己的工作，布布希望用尽量少的费用招募足够的志愿者，但这并不是他的特长！于是布布找到了你，希望你帮他设计一种最优的招募方案。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个整数$N,M$，表示完成项目的天数和可以招募的志愿者的种类。<br>接下来的一行中包含$N$个非负整数，表示每天至少需要的志愿者人数。<br>接下来的$M$行中每行包含三个整数$S_i,T_i,C_i$，含义如上文所述。<br>为了方便起见，我们可以认为每类志愿者的数量都是无限多的。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅包含一个整数，表示你所设计的最优方案的总费用。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="小M的作物"><a href="#小M的作物" class="headerlink" title="小M的作物"></a>小M的作物</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>$\mathrm{小M}$在$\mathrm{MC}$里开辟了两块巨大的耕地$A$和$B$（你可以认为容量是无穷）。<br>现在，$\mathrm{小M}$有种$n$作物的种子，每种作物的种子有$1$个（就是可以种一棵作物）（用$1\sim n$编号），第$i$种作物种植在$A$中种植可以获得$a_i$的收益，在$B$中种植可以获得$b_i$的收益，而且，现在还有这么一种神奇的现象，就是某些作物共同种在一块耕地中可以获得额外的收益。<br>$\mathrm{小M}$找到了规则中共有$m$种作物组合，第$i$个组合中的作物共同种在$A$中可以获得$c_{i,1}$的额外收益，共同总在$B$中可以获得$c_{i,2}$的额外收益。<br>$\mathrm{小M}$很快的算出了种植的最大收益，但是他想要考考你，你能回答他这个问题么？</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包括一个整数$n$<br>第二行包括$n$个整数，表示$a_i$<br>第三行包括$n$个整数，表示$b_i$<br>第四行包括一个整数$m$<br>接下来$m$行，第$i$行依次输入：</p>
+<ul>
+<li>一个整数$k_i$，表示第$i$个作物组合中共有$k_i$种作物</li>
+<li>两个整数$c_{i,1},c_{i,2}$，表示两种收益分别是多少</li>
+<li>$k_i$个整数，表示该组合中的作物编号</li>
+</ul>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>只有一行，包括一个整数，表示最大收益<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ1061【NOI2008】志愿者招募 线性规划转费用流/#more" rel="contents">
+            <a class="btn" href="/BZOJ3438 小M的作物 最小割/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1616,7 +1778,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4299 FRBSUM 主席树/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ1061【NOI2008】志愿者招募 线性规划转费用流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1635,7 +1797,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/BZOJ4299 FRBSUM 主席树/" itemprop="url">BZOJ4299 FRBSUM <主席树></a></h1>
+                <a class="post-title-link" href="/BZOJ1061【NOI2008】志愿者招募 线性规划转费用流/" itemprop="url">BZOJ1061【NOI2008】志愿者招募 <线性规划转费用流></a></h1>
         
 
         <div class="post-meta">
@@ -1647,8 +1809,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T00:00:00+08:00">
-                2018-04-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T00:00:00+08:00">
+                2018-04-25
               </time>
             
 
@@ -1679,7 +1841,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  806
+                  1,456
                 </span>
               
 
@@ -1695,7 +1857,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  7
                 </span>
               
             </div>
@@ -1717,175 +1879,13 @@
 
       
         
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="FRBSUM"><a href="#FRBSUM" class="headerlink" title="FRBSUM"></a>FRBSUM</h3><p>$\mathrm{Time\;Limit:\;10\;Sec}$<br>$\mathrm{Memory\;Limit:\;128\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>数集$S$的$\mathrm{Forbidden\;Sum}$定义为无法用$S$的某个子集（可以为空）的和表示的最小的非负整数。<br>例如，$S={1,1,3,7}$，则它的子集和中包含$0(S’=\emptyset)$，$1(S’={1})$，$2(S’={1,1})$，$3(S’={3})$，$4(S’={1,3})$，$5(S’={1,1,3})$，但是它无法得到$6$。因此$S$的$\mathrm{Forbidden\;Sum}$为$6$。<br>给定一个序列$A$，你的任务是回答该数列的一些子区间所形成的数集的$\mathrm{Forbidden\;Sum}$是多少。</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入数据的第一行包含一个整数$N$，表示序列的长度。<br>接下来一行包含$N$个数，表示给定的序列$A$（从$1$标号）。<br>接下来一行包含一个整数$M$，表示询问的组数。<br>接下来$M$行，每行一对整数，表示一组询问。</p>
-<h3 id="Ouput"><a href="#Ouput" class="headerlink" title="Ouput"></a>Ouput</h3><p>对于每组询问，输出一行表示对应的答案。<br>
+          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【NOI2008】志愿者招募"><a href="#【NOI2008】志愿者招募" class="headerlink" title="【NOI2008】志愿者招募"></a>【NOI2008】志愿者招募</h3><p>$\mathrm{Time\;Limit:\;20\;Sec}$<br>$\mathrm{Memory\;Limit:\;162\;MB}$</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>申奥成功后，布布经过不懈努力，终于成为奥组委下属公司人力资源部门的主管。布布刚上任就遇到了一个难题：为即将启动的奥运新项目招募一批短期志愿者。<br>经过估算，这个项目需要$N$天才能完成，其中第$i$天至少需要$A_i$个人。布布通过了解得知，一共有$M$类志愿者可以招募。其中第$i$类可以从第$S_i$天工作到第$T_i$天，招募费用是每人$C_i$元。<br>新官上任三把火，为了出色地完成自己的工作，布布希望用尽量少的费用招募足够的志愿者，但这并不是他的特长！于是布布找到了你，希望你帮他设计一种最优的招募方案。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个整数$N,M$，表示完成项目的天数和可以招募的志愿者的种类。<br>接下来的一行中包含$N$个非负整数，表示每天至少需要的志愿者人数。<br>接下来的$M$行中每行包含三个整数$S_i,T_i,C_i$，含义如上文所述。<br>为了方便起见，我们可以认为每类志愿者的数量都是无限多的。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>仅包含一个整数，表示你所设计的最优方案的总费用。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4299 FRBSUM 主席树/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-	  
-	</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4293【PA2015】Siano 线段树/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Azrael_Death">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NIRVANA">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/BZOJ4293【PA2015】Siano 线段树/" itemprop="url">BZOJ4293【PA2015】Siano <线段树></a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T00:00:00+08:00">
-                2018-04-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,329
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="【PA2015】Siano"><a href="#【PA2015】Siano" class="headerlink" title="【PA2015】Siano"></a>【PA2015】Siano</h3><p>$\mathrm{Time\;Limit:\;30\;Sec}$<br>$\mathrm{Memory\;Limit:\;256\;MB}$</p>
-<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>农夫$\mathrm{Byteasar}$买了一片$n$亩的土地，他要在这上面种草。<br>他在每一亩土地上都种植了一种独一无二的草，其中，第$i$亩土地的草每天会长高$a_i$厘米。<br>$\mathrm{Byteasar}$一共会进行$m$次收割，其中第$i$次收割在第$d_i$天，并把所有高度大于等于$b_i$的部分全部割去。<br>$\mathrm{Byteasar}$想知道，每次收割得到的草的高度总和是多少，你能帮帮他吗？</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行包含两个正整数$n,m$，分别表示亩数和收割次数。<br>第二行包含$n$个正整数，其中第$i$个数为$a_i$，依次表示每亩种植的草的生长能力。<br>接下来$m$行，每行包含两个正整数$d_i,b_i$，依次描述每次收割。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出$m$行，每行一个整数，依次回答每次收割能得到的草的高度总和。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/BZOJ4293【PA2015】Siano 线段树/#more" rel="contents">
+            <a class="btn" href="/BZOJ1061【NOI2008】志愿者招募 线性规划转费用流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1931,7 +1931,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1981,7 +1981,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">169</span>
+                  <span class="site-state-item-count">171</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1994,7 +1994,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">98</span>
+                  <span class="site-state-item-count">100</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2135,7 +2135,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">177.5k</span>
+    <span title="Site words total count">180.6k</span>
   
 </div>
 
