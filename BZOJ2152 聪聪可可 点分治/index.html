@@ -106,18 +106,18 @@
 </script>
 
 
-<meta name="description" content="Problem聪聪可可Time Limit: $3 Sec$Memory Limit: $259 MB$ Description聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的爸爸快被他们的争吵烦死了，所以他发明了一个新游戏">
+<meta name="description" content="Problem聪聪可可$\mathrm{Time\;Limit:\;3\;Sec}$$\mathrm{Memory\;Limit:\;259\;MB}$ Description聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的">
 <meta name="keywords" content="BZOJ,图论,树分治">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ2152 聪聪可可 &lt;点分治&gt;">
 <meta property="og:url" content="http://azrael.top/BZOJ2152 聪聪可可 点分治/index.html">
 <meta property="og:site_name" content="NIRVANA">
-<meta property="og:description" content="Problem聪聪可可Time Limit: $3 Sec$Memory Limit: $259 MB$ Description聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的爸爸快被他们的争吵烦死了，所以他发明了一个新游戏">
+<meta property="og:description" content="Problem聪聪可可$\mathrm{Time\;Limit:\;3\;Sec}$$\mathrm{Memory\;Limit:\;259\;MB}$ Description聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T07:06:11.315Z">
+<meta property="og:updated_time" content="2018-05-03T08:58:52.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ2152 聪聪可可 &lt;点分治&gt;">
-<meta name="twitter:description" content="Problem聪聪可可Time Limit: $3 Sec$Memory Limit: $259 MB$ Description聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的爸爸快被他们的争吵烦死了，所以他发明了一个新游戏">
+<meta name="twitter:description" content="Problem聪聪可可$\mathrm{Time\;Limit:\;3\;Sec}$$\mathrm{Memory\;Limit:\;259\;MB}$ Description聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的">
 
 
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  967
+                  969
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="聪聪可可"><a href="#聪聪可可" class="headerlink" title="聪聪可可"></a>聪聪可可</h3><p>Time Limit: $3 Sec$<br>Memory Limit: $259 MB$</p>
+        <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="聪聪可可"><a href="#聪聪可可" class="headerlink" title="聪聪可可"></a>聪聪可可</h3><p>$\mathrm{Time\;Limit:\;3\;Sec}$<br>$\mathrm{Memory\;Limit:\;259\;MB}$</p>
 <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>聪聪和可可是兄弟俩，他们俩经常为了一些琐事打起来，例如家中只剩下最后一根冰棍而两人都想吃、两个人都想玩儿电脑（可是他们家只有一台电脑）……遇到这种问题，一般情况下石头剪刀布就好了，可是他们已经玩儿腻了这种低智商的游戏。他们的爸爸快被他们的争吵烦死了，所以他发明了一个新游戏：由爸爸在纸上画$n$个“点”，并用$n-1$条“边”把这$n$个“点”恰好连通（其实这就是一棵树）。并且每条“边”上都有一个数。接下来由聪聪和可可分别随即选一个点（当然他们选点时是看不到这棵树的），如果两个点之间所有边上数的和加起来恰好是$3$的倍数，则判聪聪赢，否则可可赢。聪聪非常爱思考问题，在每次游戏后都会仔细研究这棵树，希望知道对于这张图自己的获胜概率是多少。现请你帮忙求出这个值以验证聪聪的答案是否正确。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入的第$1$行包含$1$个正整数$n$。后面$n-1$行，每行$3$个整数$x$、$y$、$w$，表示$x$号点和$y$号点之间有一条边，上面的数是$w$。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>以即约分数形式输出这个概率（即“$a/b$”的形式，其中$a$和$b$必须互质。如果概率为$1$，输出“$1/1$”）。<br><a id="more"></a></p>
@@ -486,8 +486,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ4151【AMPPZ2014】The Cave 树相关/" rel="next" title="BZOJ4151【AMPPZ2014】The Cave <树相关>">
-                <i class="fa fa-chevron-left"></i> BZOJ4151【AMPPZ2014】The Cave <树相关>
+              <a href="/BZOJ4237【JOI2013】稻草人 CDQ分治/" rel="next" title="BZOJ4237【JOI2013】稻草人 < CDQ分治+单调栈 >">
+                <i class="fa fa-chevron-left"></i> BZOJ4237【JOI2013】稻草人 < CDQ分治+单调栈 >
               </a>
             
           </div>
@@ -496,8 +496,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4237【JOI2013】稻草人 CDQ分治/" rel="prev" title="BZOJ4237【JOI2013】稻草人 < CDQ分治+单调栈 >">
-                BZOJ4237【JOI2013】稻草人 < CDQ分治+单调栈 > <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ2599【IOI2011】Race 点分治/" rel="prev" title="BZOJ2599【IOI2011】Race <点分治>">
+                BZOJ2599【IOI2011】Race <点分治> <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -610,7 +610,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">171</span>
+                  <span class="site-state-item-count">172</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -780,7 +780,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">180.6k</span>
+    <span title="Site words total count">181.8k</span>
   
 </div>
 
