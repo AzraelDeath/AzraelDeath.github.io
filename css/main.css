@@ -1951,7 +1951,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b8daaf;
+  background: #545783;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3055,4 +3055,28 @@ pre {
 code,
 pre {
   border: 1px solid #d6d6d6;
+}
+.pagination {
+  border: none;
+  margin: 0px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f79533;
+}
+.mjpage__block {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  overflow-x: auto;
 }
