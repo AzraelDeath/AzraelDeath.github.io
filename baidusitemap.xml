@@ -4,6 +4,100 @@
 
     
   <url>
+    <loc>http://azrael.top/CF235E%20Number%20Challenge%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+    <lastmod>2018-05-27T14:10:58.154Z</lastmod>
+    <data>
+        <display>
+        <title>CF235E Number Challenge <莫比乌斯反演></title>
+        <pubTime>2018-05-26T16:00:00.000Z</pubTime>
+        
+        <tag>数论数学</tag>
+         
+        <tag>莫比乌斯反演</tag>
+         
+        <tag>CodeForces</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ4930%20%E6%A3%8B%E7%9B%98%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+    <lastmod>2018-05-27T13:52:14.343Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ4930 棋盘 <费用流></title>
+        <pubTime>2018-05-24T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>费用流</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1927%E3%80%90SDOI2010%E3%80%91%E6%98%9F%E9%99%85%E7%AB%9E%E9%80%9F%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+    <lastmod>2018-05-27T13:27:42.980Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1927【SDOI2010】星际竞速 <费用流></title>
+        <pubTime>2018-05-23T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>费用流</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1930%E3%80%90SHOI2003%E3%80%91Pacman%20%E5%90%83%E8%B1%86%E8%B1%86%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+    <lastmod>2018-05-27T13:13:55.043Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1930【SHOI2003】Pacman 吃豆豆 <费用流></title>
+        <pubTime>2017-12-26T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>费用流</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2018-05-23T07:43:17.356Z</lastmod>
     <data>
@@ -141,9 +235,9 @@
         <title>BZOJ5343【CTSC2018】混合果汁 <整体二分+线段树></title>
         <pubTime>2018-05-15T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>整体二分</tag>
          
@@ -418,9 +512,9 @@
         <title>BZOJ4355 Play with sequence < SegBeats ></title>
         <pubTime>2018-05-17T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>数据结构</tag>
          
@@ -443,9 +537,9 @@
          
         <tag>图论</tag>
          
-        <tag>连通分量</tag>
-         
         <tag>NOI</tag>
+         
+        <tag>连通分量</tag>
          
          
            
@@ -466,9 +560,9 @@
          
         <tag>图论</tag>
          
-        <tag>Tarjan</tag>
-         
         <tag>APIO</tag>
+         
+        <tag>Tarjan</tag>
          
          
            
@@ -640,9 +734,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>图论</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>图论</tag>
          
         <tag>树分治</tag>
          
@@ -738,9 +832,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>图论</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>图论</tag>
          
         <tag>二分答案</tag>
          
@@ -874,11 +968,11 @@
         <title>BZOJ4334【JSOI2012】铁拳 <上下界网络流></title>
         <pubTime>2018-02-09T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>线性规划</tag>
          
@@ -1083,11 +1177,11 @@
         <title>BZOJ3626【LNOI2014】LCA <离线+树链剖分></title>
         <pubTime>2018-04-25T16:00:00.000Z</pubTime>
         
+        <tag>线段树</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
@@ -1108,11 +1202,11 @@
         <title>BZOJ3438 小M的作物 <最小割></title>
         <pubTime>2018-04-25T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>最小割</tag>
          
@@ -1131,11 +1225,11 @@
         <title>BZOJ3275 Number <黑白染色+最小割></title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>最小割</tag>
          
@@ -1154,17 +1248,17 @@
         <title>BZOJ1061【NOI2008】志愿者招募 <线性规划转费用流></title>
         <pubTime>2018-04-24T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
          
-        <tag>NOI</tag>
+        <tag>网络流</tag>
+         
+        <tag>线性规划</tag>
          
         <tag>费用流</tag>
          
-        <tag>线性规划</tag>
+        <tag>NOI</tag>
          
          
            
@@ -1198,11 +1292,11 @@
         <title>BZOJ1283 序列 <费用流></title>
         <pubTime>2017-12-26T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -1332,9 +1426,9 @@
         <title>BZOJ4293【PA2015】Siano <线段树></title>
         <pubTime>2018-04-23T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>数据结构</tag>
          
@@ -1424,9 +1518,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>图论</tag>
-         
         <tag>DP</tag>
+         
+        <tag>图论</tag>
          
         <tag>状压DP</tag>
          
@@ -1495,13 +1589,13 @@
         <title>BZOJ4514【SDOI2016】数字配对 <费用流></title>
         <pubTime>2017-12-24T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -1522,11 +1616,11 @@
         
         <tag>BZOJ</tag>
          
-        <tag>APIO</tag>
-         
         <tag>贪心</tag>
          
         <tag>倍增</tag>
+         
+        <tag>APIO</tag>
          
          
            
@@ -1692,13 +1786,13 @@
         <title>BZOJ2756【SCOI2012】奇怪的游戏 <二分答案+网络流></title>
         <pubTime>2018-04-03T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>二分答案</tag>
          
@@ -1721,9 +1815,9 @@
          
         <tag>数据结构</tag>
          
-        <tag>可并堆</tag>
-         
         <tag>APIO</tag>
+         
+        <tag>可并堆</tag>
          
          
            
@@ -1740,13 +1834,13 @@
         <title>BZOJ5251【2018多省省队联测】劈配 <网络流></title>
         <pubTime>2018-04-13T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
          
            
@@ -1763,13 +1857,13 @@
         <title>BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流></title>
         <pubTime>2017-09-15T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
          
            
@@ -1788,9 +1882,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>DP</tag>
-         
         <tag>斜率优化</tag>
+         
+        <tag>DP</tag>
          
         <tag>APIO</tag>
          
@@ -1811,9 +1905,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>DP</tag>
-         
         <tag>斜率优化</tag>
+         
+        <tag>DP</tag>
          
         <tag>APIO</tag>
          
@@ -1874,11 +1968,11 @@
         <title>BZOJ3226【SDOI2008】校门外的区间 <线段树></title>
         <pubTime>2017-09-21T16:00:00.000Z</pubTime>
         
+        <tag>线段树</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
@@ -2035,11 +2129,11 @@
         <title>BZOJ3158 千钧一发 <黑白染色+最小割></title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>最小割</tag>
          
@@ -2144,9 +2238,9 @@
         <title>【福利】洛谷模板汇总</title>
         <pubTime>2017-09-28T16:00:00.000Z</pubTime>
         
-        <tag>图论</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>图论</tag>
          
         <tag>数论数学</tag>
          
@@ -2215,11 +2309,11 @@
         <title>BZOJ4034【HAOI2015】树上操作 <树链剖分></title>
         <pubTime>2017-11-08T16:00:00.000Z</pubTime>
         
+        <tag>线段树</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
@@ -2244,11 +2338,11 @@
          
         <tag>省选</tag>
          
-        <tag>图论</tag>
-         
         <tag>弦图</tag>
          
         <tag>MCS</tag>
+         
+        <tag>图论</tag>
          
          
            
@@ -2311,13 +2405,13 @@
         <title>BZOJ3993【SDOI2015】星际战争 <二分+网络流></title>
         <pubTime>2017-10-23T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>二分答案</tag>
          
@@ -2336,9 +2430,9 @@
         <title>LG1073【NOIp2009】最优贸易 < Tarjan+DP ></title>
         <pubTime>2017-08-19T16:00:00.000Z</pubTime>
         
-        <tag>图论</tag>
-         
         <tag>DP</tag>
+         
+        <tag>图论</tag>
          
         <tag>Tarjan</tag>
          
@@ -2445,9 +2539,9 @@
         <title>BZOJ4695 最假女选手 < SegBeats ></title>
         <pubTime>2018-03-26T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>数据结构</tag>
          
@@ -2491,9 +2585,9 @@
         <title>BZOJ4491 我也不知道题目名字是什么 <线段树></title>
         <pubTime>2017-11-08T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>数据结构</tag>
          
@@ -2513,11 +2607,11 @@
         <title>BZOJ1095【ZJOI2007】Hide捉迷藏 <括号序列+线段树></title>
         <pubTime>2018-03-21T16:00:00.000Z</pubTime>
         
+        <tag>线段树</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
@@ -2609,9 +2703,9 @@
          
         <tag>省选</tag>
          
-        <tag>DP</tag>
-         
         <tag>斜率优化</tag>
+         
+        <tag>DP</tag>
          
          
            
@@ -2651,13 +2745,13 @@
         <title>BZOJ1070【SCOI2007】修车 <费用流></title>
         <pubTime>2017-10-16T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -2726,9 +2820,9 @@
          
         <tag>省选</tag>
          
-        <tag>DP</tag>
-         
         <tag>斜率优化</tag>
+         
+        <tag>DP</tag>
          
          
            
@@ -2745,13 +2839,13 @@
         <title>BZOJ3597【SCOI2014】方伯伯运椰子 <费用流></title>
         <pubTime>2018-03-14T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -2814,13 +2908,13 @@
         <title>BZOJ4443【SCOI2015】小凸玩矩阵 <二分+网络流></title>
         <pubTime>2018-03-13T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>二分答案</tag>
          
@@ -2839,13 +2933,13 @@
         <title>BZOJ1001【BJOI2006】狼抓兔子 <网络流></title>
         <pubTime>2017-10-15T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
          
            
@@ -3151,11 +3245,11 @@
         <title>BZOJ3691 游行 <二分+费用流></title>
         <pubTime>2017-12-25T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -3176,13 +3270,13 @@
         <title>BZOJ4205【FJ2015集训】卡牌配对 <网络流></title>
         <pubTime>2017-12-24T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
          
            
@@ -3199,11 +3293,11 @@
         <title>BZOJ1565【NOI2009】植物大战僵尸 <最大权闭合子图+拓扑></title>
         <pubTime>2017-12-24T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>NOI</tag>
          
@@ -3222,13 +3316,13 @@
         <title>BZOJ1934【SHOI2007】善意的投票 <网络流></title>
         <pubTime>2017-09-17T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
          
            
@@ -3245,11 +3339,11 @@
         <title>BZOJ1012【JSOI2008】最大数 <线段树></title>
         <pubTime>2017-08-14T16:00:00.000Z</pubTime>
         
+        <tag>线段树</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
@@ -3314,13 +3408,13 @@
         <title>BZOJ1066【SCOI2007】蜥蜴 <网络流></title>
         <pubTime>2017-09-14T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
          
            
@@ -3452,11 +3546,11 @@
         <title>BZOJ1475 方格取数 <黑白染色+最小割></title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>最小割</tag>
          
@@ -3542,11 +3636,11 @@
         <title>BZOJ2406 矩阵 <上下界网络流></title>
         <pubTime>2018-02-06T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>线性规划</tag>
          
@@ -3695,13 +3789,13 @@
         <title>BZOJ2521【SHOI2010】最小生成树 <最小割></title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>最小割</tag>
          
@@ -3741,13 +3835,13 @@
         <title>BZOJ3144【HZNOI2013】切糕 <最小割></title>
         <pubTime>2017-09-16T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>最小割</tag>
          
@@ -3818,9 +3912,9 @@
          
         <tag>NOIp</tag>
          
-        <tag>二分图</tag>
-         
         <tag>LG</tag>
+         
+        <tag>二分图</tag>
          
          
            
@@ -3925,11 +4019,11 @@
         <title>BZOJ1798【AHOI2009】seq维护序列 <线段树></title>
         <pubTime>2017-08-14T16:00:00.000Z</pubTime>
         
+        <tag>线段树</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
@@ -3948,13 +4042,13 @@
         <title>BZOJ1822【JSOI2010】Frozen Nova 冷冻波 <二分+最大流></title>
         <pubTime>2017-12-09T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>二分答案</tag>
          
@@ -3973,13 +4067,13 @@
         <title>BZOJ1877【SDOI2009】晨跑 <拆点费用流></title>
         <pubTime>2017-12-24T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -3998,13 +4092,13 @@
         <title>BZOJ1221【HNOI2001】软件开发 <拆点费用流></title>
         <pubTime>2017-12-25T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -4023,11 +4117,11 @@
         <title>BZOJ3442 学习小组 <费用流></title>
         <pubTime>2017-12-26T16:00:00.000Z</pubTime>
         
-        <tag>网络流</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
+         
+        <tag>网络流</tag>
          
         <tag>费用流</tag>
          
@@ -4053,31 +4147,6 @@
         <tag>字符串</tag>
          
         <tag>回文自动机</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ1930%E3%80%90SHOI2003%E3%80%91Pacman%20%E5%90%83%E8%B1%86%E8%B1%86%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
-    <lastmod>2018-03-08T04:41:40.899Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ1930【SHOI2003】Pacman 吃豆豆 <费用流></title>
-        <pubTime>2017-12-26T16:00:00.000Z</pubTime>
-        
-        <tag>网络流</tag>
-         
-        <tag>BZOJ</tag>
-         
-        <tag>省选</tag>
-         
-        <tag>图论</tag>
-         
-        <tag>费用流</tag>
          
          
            
