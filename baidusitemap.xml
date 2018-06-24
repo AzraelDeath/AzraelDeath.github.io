@@ -4,6 +4,79 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ4657%20Tower%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+    <lastmod>2018-06-24T14:30:03.256Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ4657 Tower <最小割></title>
+        <pubTime>2018-06-13T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>最小割</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ3876%E3%80%90JSOI2014%E3%80%91%E6%94%AF%E7%BA%BF%E5%89%A7%E6%83%85%20%E5%B8%A6%E4%B8%8B%E7%95%8C%E7%9A%84%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+    <lastmod>2018-06-24T14:26:31.058Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ3876【JSOI2014】支线剧情 <带下界的费用流></title>
+        <pubTime>2018-06-21T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>费用流</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1877%E3%80%90SDOI2009%E3%80%91%E6%99%A8%E8%B7%91%20%E6%8B%86%E7%82%B9%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+    <lastmod>2018-06-24T14:06:02.672Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1877【SDOI2009】晨跑 <拆点费用流></title>
+        <pubTime>2017-12-24T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>费用流</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/BZOJ2095%E3%80%90POI2010%E3%80%91Bridges%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
     <lastmod>2018-06-21T09:13:26.040Z</lastmod>
     <data>
@@ -134,9 +207,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>DP</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>DP</tag>
          
         <tag>线段树</tag>
          
@@ -995,9 +1068,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>图论</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>图论</tag>
          
         <tag>树分治</tag>
          
@@ -1093,9 +1166,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>图论</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>图论</tag>
          
         <tag>二分答案</tag>
          
@@ -1515,9 +1588,9 @@
          
         <tag>网络流</tag>
          
-        <tag>费用流</tag>
-         
         <tag>线性规划</tag>
+         
+        <tag>费用流</tag>
          
         <tag>NOI</tag>
          
@@ -1779,9 +1852,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>图论</tag>
-         
         <tag>DP</tag>
+         
+        <tag>图论</tag>
          
         <tag>状压DP</tag>
          
@@ -2501,9 +2574,9 @@
         
         <tag>数论数学</tag>
          
-        <tag>图论</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>图论</tag>
          
         <tag>字符串</tag>
          
@@ -2691,9 +2764,9 @@
         <title>LG1073【NOIp2009】最优贸易 < Tarjan+DP ></title>
         <pubTime>2017-08-19T16:00:00.000Z</pubTime>
         
-        <tag>图论</tag>
-         
         <tag>DP</tag>
+         
+        <tag>图论</tag>
          
         <tag>Tarjan</tag>
          
@@ -4291,31 +4364,6 @@
         <tag>网络流</tag>
          
         <tag>二分答案</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ1877%E3%80%90SDOI2009%E3%80%91%E6%99%A8%E8%B7%91%20%E6%8B%86%E7%82%B9%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
-    <lastmod>2018-03-08T04:42:58.409Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ1877【SDOI2009】晨跑 <拆点费用流></title>
-        <pubTime>2017-12-24T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>省选</tag>
-         
-        <tag>图论</tag>
-         
-        <tag>网络流</tag>
-         
-        <tag>费用流</tag>
          
          
            
