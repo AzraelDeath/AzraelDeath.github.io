@@ -73,7 +73,7 @@
 
 
 
-  <meta name="keywords" content="组合数学,补集转换,BZOJ,省选,数论数学,">
+  <meta name="keywords" content="BZOJ,省选,组合数学,补集转换,数论数学,">
 
 
 
@@ -99,7 +99,7 @@
 
 
 <meta name="description" content="Problem【HNOI2008】越狱                                                                                                   Description监狱有连续编号为              的        个房间，每个房间关押一个犯人，有        种宗教，每个犯人可能信仰其中一种">
-<meta name="keywords" content="组合数学,补集转换,BZOJ,省选,数论数学">
+<meta name="keywords" content="BZOJ,省选,组合数学,补集转换,数论数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ1008【HNOI2008】越狱 <补集转换>">
 <meta property="og:url" content="http://azrael.top/BZOJ1008【HNOI2008】越狱 补集转换/index.html">
@@ -667,7 +667,7 @@
 </g>
 </g>
 </svg></span>种方案，快速幂求出，相减即可。注意处理负数。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 100003</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="function">lnt <span class="title">PowerMod</span><span class="params">(lnt a, lnt b)</span> </span>{</span><br><span class="line">	<span class="keyword">if</span> (b == <span class="number">1</span>)	<span class="keyword">return</span> a%MOD;</span><br><span class="line">	lnt ret = PowerMod(a, b/<span class="number">2</span>);</span><br><span class="line">	<span class="keyword">return</span> b&amp;<span class="number">1</span> ? a%MOD*ret%MOD*ret%MOD : ret*ret%MOD;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	lnt m, n;	<span class="built_in">scanf</span>(<span class="string">"%lld%lld"</span>, &amp;m, &amp;n);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%lld"</span>, ((PowerMod(m, n)-m%MOD*PowerMod(m<span class="number">-1</span>, n<span class="number">-1</span>))%MOD+MOD)%MOD);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 100003</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="function">lnt <span class="title">PowerMod</span><span class="params">(lnt a, lnt b)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">1</span>)	<span class="keyword">return</span> a%MOD;</span><br><span class="line">    lnt ret = PowerMod(a, b/<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">return</span> b&amp;<span class="number">1</span> ? a%MOD*ret%MOD*ret%MOD : ret*ret%MOD;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    lnt m, n;	<span class="built_in">scanf</span>(<span class="string">"%lld%lld"</span>, &amp;m, &amp;n);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld"</span>, ((PowerMod(m, n)-m%MOD*PowerMod(m<span class="number">-1</span>, n<span class="number">-1</span>))%MOD+MOD)%MOD);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
       
     </div>
     
@@ -713,13 +713,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/组合数学/" rel="tag"> <i class="fa fa-tag"></i> 组合数学</a>
-          
-            <a href="/tags/补集转换/" rel="tag"> <i class="fa fa-tag"></i> 补集转换</a>
-          
             <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/省选/" rel="tag"> <i class="fa fa-tag"></i> 省选</a>
+          
+            <a href="/tags/组合数学/" rel="tag"> <i class="fa fa-tag"></i> 组合数学</a>
+          
+            <a href="/tags/补集转换/" rel="tag"> <i class="fa fa-tag"></i> 补集转换</a>
           
             <a href="/tags/数论数学/" rel="tag"> <i class="fa fa-tag"></i> 数论数学</a>
           
@@ -734,8 +734,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/" rel="next" title="BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流>">
-                <i class="fa fa-chevron-left"></i> BZOJ1189【HNOI2007】紧急疏散evacuate &lt;二分答案+网络流&gt;
+              <a href="/BZOJ1066【SCOI2007】蜥蜴 网络流/" rel="next" title="BZOJ1066【SCOI2007】蜥蜴 <网络流>">
+                <i class="fa fa-chevron-left"></i> BZOJ1066【SCOI2007】蜥蜴 &lt;网络流&gt;
               </a>
             
           </div>
@@ -744,8 +744,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ1015【JSOI2008】星球大战 离线并查集/" rel="prev" title="BZOJ1015【JSOI2008】星球大战 <离线并查集>">
-                BZOJ1015【JSOI2008】星球大战 &lt;离线并查集&gt; <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1189【HNOI2007】紧急疏散evacuate 二分答案+网络流/" rel="prev" title="BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流>">
+                BZOJ1189【HNOI2007】紧急疏散evacuate &lt;二分答案+网络流&gt; <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

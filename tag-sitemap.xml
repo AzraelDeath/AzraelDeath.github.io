@@ -422,14 +422,14 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/APIO/</loc>
+        <loc>http://azrael.top/tags/Tarjan/</loc>
         <lastmod>2018-05-17T14:44:05.796Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/Tarjan/</loc>
+        <loc>http://azrael.top/tags/APIO/</loc>
         <lastmod>2018-05-17T14:44:05.796Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -681,14 +681,14 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E6%95%B0%E8%AE%BA%E6%95%B0%E5%AD%A6/</loc>
+        <loc>http://azrael.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-06-12T01:27:44.961Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azrael.top/tags/%E6%95%B0%E8%AE%BA%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2018-06-12T01:27:44.961Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -751,6 +751,13 @@
     </url>
 
     <url>
+        <loc>http://azrael.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <lastmod>2018-06-24T14:30:03.256Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://azrael.top/tags/BZOJ/</loc>
         <lastmod>2018-06-24T14:30:03.256Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -759,13 +766,6 @@
 
     <url>
         <loc>http://azrael.top/tags/%E5%9B%BE%E8%AE%BA/</loc>
-        <lastmod>2018-06-24T14:30:03.256Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://azrael.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-06-24T14:30:03.256Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
