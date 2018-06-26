@@ -4,6 +4,79 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ3747%E3%80%90POI2015%E3%80%91Kinoman%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2018-06-26T03:55:23.184Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ3747【POI2015】Kinoman <线段树></title>
+        <pubTime>2018-06-25T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>POI</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ3996%E3%80%90TJOI2015%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%20%E6%9C%80%E5%A4%A7%E6%9D%83%E9%97%AD%E5%90%88%E5%AD%90%E5%9B%BE/</loc>
+    <lastmod>2018-06-26T03:34:13.848Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ3996【TJOI2015】线性代数 <最大权闭合子图></title>
+        <pubTime>2018-06-24T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>最大权闭合子图</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1565%E3%80%90NOI2009%E3%80%91%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%9C%80%E5%A4%A7%E6%9D%83%E9%97%AD%E5%90%88%E5%AD%90%E5%9B%BE+%E6%8B%93%E6%89%91/</loc>
+    <lastmod>2018-06-26T03:13:12.281Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1565【NOI2009】植物大战僵尸 <最大权闭合子图+拓扑></title>
+        <pubTime>2017-12-24T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>网络流</tag>
+         
+        <tag>NOI</tag>
+         
+        <tag>最大权闭合子图</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/UOJ300%E3%80%90CTSC2017%E3%80%91%E5%90%89%E5%A4%AB%E7%89%B9%20%E5%AD%90%E9%9B%86DP/</loc>
     <lastmod>2018-06-25T07:59:40.933Z</lastmod>
     <data>
@@ -253,11 +326,11 @@
         
         <tag>BZOJ</tag>
          
-        <tag>DP</tag>
-         
         <tag>线段树</tag>
          
         <tag>数据结构</tag>
+         
+        <tag>DP</tag>
          
         <tag>树链剖分</tag>
          
@@ -808,9 +881,9 @@
         <title>HDU5340 Three Palindromes < Manacher ></title>
         <pubTime>2017-08-14T16:00:00.000Z</pubTime>
         
-        <tag>字符串</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
          
         <tag>HDU</tag>
          
@@ -852,9 +925,9 @@
         
         <tag>DP</tag>
          
-        <tag>CodeForces</tag>
-         
         <tag>树形DP</tag>
+         
+        <tag>CodeForces</tag>
          
          
            
@@ -1024,9 +1097,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>字符串</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
          
          
            
@@ -1538,9 +1611,9 @@
          
         <tag>POI</tag>
          
-        <tag>AC自动机</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>AC自动机</tag>
          
          
            
@@ -2400,9 +2473,9 @@
          
         <tag>树状数组</tag>
          
-        <tag>AC自动机</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>AC自动机</tag>
          
          
            
@@ -2856,9 +2929,9 @@
         <title>HDU3068 最长回文 < Manacher ></title>
         <pubTime>2017-09-24T16:00:00.000Z</pubTime>
         
-        <tag>字符串</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
          
         <tag>HDU</tag>
          
@@ -3631,9 +3704,9 @@
          
         <tag>网络流</tag>
          
-        <tag>费用流</tag>
-         
         <tag>二分答案</tag>
+         
+        <tag>费用流</tag>
          
          
            
@@ -3657,29 +3730,6 @@
         <tag>图论</tag>
          
         <tag>网络流</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ1565%E3%80%90NOI2009%E3%80%91%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
-    <lastmod>2018-03-08T08:39:31.558Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ1565【NOI2009】植物大战僵尸 <最大权闭合子图+拓扑></title>
-        <pubTime>2017-12-24T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>图论</tag>
-         
-        <tag>网络流</tag>
-         
-        <tag>NOI</tag>
          
          
            
@@ -4271,9 +4321,9 @@
          
         <tag>NOIp</tag>
          
-        <tag>二分图</tag>
-         
         <tag>LG</tag>
+         
+        <tag>二分图</tag>
          
          
            
@@ -4292,9 +4342,9 @@
         
         <tag>DP</tag>
          
-        <tag>CodeForces</tag>
-         
         <tag>树形DP</tag>
+         
+        <tag>CodeForces</tag>
          
          
            
