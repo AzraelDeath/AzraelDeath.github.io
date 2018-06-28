@@ -4,35 +4,8 @@
 
     
   <url>
-    <loc>http://azrael.top/BZOJ3551%E3%80%90ONTAK2010%E3%80%91Peaks%E5%8A%A0%E5%BC%BA%E7%89%88%20Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
-    <lastmod>2018-06-28T08:16:25.303Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ3551【ONTAK2010】Peaks加强版 <Kruskal重构树+DFS序+主席树></title>
-        <pubTime>2018-06-26T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>线段树</tag>
-         
-        <tag>数据结构</tag>
-         
-        <tag>Kruskal重构树</tag>
-         
-        <tag>DFS序</tag>
-         
-        <tag>ONTAK</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://azrael.top/BZOJ3545%E3%80%90ONTAK2010%E3%80%91Peaks%20%E5%B9%B6%E6%9F%A5%E9%9B%86+%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
-    <lastmod>2018-06-28T04:00:51.325Z</lastmod>
+    <lastmod>2018-06-28T08:46:33.983Z</lastmod>
     <data>
         <display>
         <title>BZOJ3545【ONTAK2010】Peaks <并查集+线段树合并></title>
@@ -47,6 +20,33 @@
         <tag>并查集</tag>
          
         <tag>ONTAK</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ3551%E3%80%90ONTAK2010%E3%80%91Peaks%E5%8A%A0%E5%BC%BA%E7%89%88%20Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+    <lastmod>2018-06-28T08:45:59.626Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ3551【ONTAK2010】Peaks加强版 < Kruskal重构树+DFS序+主席树 ></title>
+        <pubTime>2018-06-26T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>ONTAK</tag>
+         
+        <tag>Kruskal重构树</tag>
+         
+        <tag>DFS序</tag>
          
          
            
@@ -397,11 +397,11 @@
          
         <tag>省选</tag>
          
+        <tag>数论数学</tag>
+         
         <tag>线段树</tag>
          
         <tag>数据结构</tag>
-         
-        <tag>数论数学</tag>
          
         <tag>扩展欧拉定理</tag>
          
@@ -445,11 +445,11 @@
         
         <tag>BZOJ</tag>
          
-        <tag>DP</tag>
-         
         <tag>线段树</tag>
          
         <tag>数据结构</tag>
+         
+        <tag>DP</tag>
          
         <tag>树链剖分</tag>
          
@@ -698,9 +698,9 @@
          
         <tag>省选</tag>
          
-        <tag>DP</tag>
-         
         <tag>组合数学</tag>
+         
+        <tag>DP</tag>
          
         <tag>计数</tag>
          
@@ -918,9 +918,9 @@
         
         <tag>图论</tag>
          
-        <tag>POJ</tag>
-         
         <tag>差分约束系统</tag>
+         
+        <tag>POJ</tag>
          
          
            
@@ -1023,9 +1023,9 @@
         
         <tag>DP</tag>
          
-        <tag>树形DP</tag>
-         
         <tag>CodeForces</tag>
+         
+        <tag>树形DP</tag>
          
          
            
@@ -1088,9 +1088,9 @@
          
         <tag>图论</tag>
          
-        <tag>连通分量</tag>
-         
         <tag>NOI</tag>
+         
+        <tag>连通分量</tag>
          
          
            
@@ -1218,9 +1218,9 @@
          
         <tag>省选</tag>
          
-        <tag>高斯消元</tag>
-         
         <tag>数论数学</tag>
+         
+        <tag>高斯消元</tag>
          
          
            
@@ -1241,9 +1241,9 @@
          
         <tag>省选</tag>
          
-        <tag>高斯消元</tag>
-         
         <tag>数论数学</tag>
+         
+        <tag>高斯消元</tag>
          
          
            
@@ -1264,9 +1264,9 @@
          
         <tag>省选</tag>
          
-        <tag>高斯消元</tag>
-         
         <tag>数论数学</tag>
+         
+        <tag>高斯消元</tag>
          
          
            
@@ -1657,9 +1657,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数论数学</tag>
-         
         <tag>组合数学</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>Prufer序列</tag>
          
@@ -1805,11 +1805,11 @@
          
         <tag>图论</tag>
          
-        <tag>NOI</tag>
-         
         <tag>线性规划</tag>
          
         <tag>费用流</tag>
+         
+        <tag>NOI</tag>
          
          
            
@@ -2745,9 +2745,9 @@
         
         <tag>图论</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>数论数学</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>字符串</tag>
          
@@ -2868,11 +2868,11 @@
          
         <tag>省选</tag>
          
-        <tag>数论数学</tag>
-         
         <tag>组合数学</tag>
          
         <tag>补集转换</tag>
+         
+        <tag>数论数学</tag>
          
          
            
@@ -4394,9 +4394,9 @@
         
         <tag>DP</tag>
          
-        <tag>树形DP</tag>
-         
         <tag>CodeForces</tag>
+         
+        <tag>树形DP</tag>
          
          
            
