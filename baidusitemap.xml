@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ5336%E3%80%90TJOI2018%E3%80%91party%20DP%E5%A5%97DP%20%E7%8A%B6%E5%8E%8BDP/</loc>
+    <lastmod>2018-07-30T14:07:53.970Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ5336【TJOI2018】party <DP套DP/状压DP></title>
+        <pubTime>2018-07-27T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>状压DP</tag>
+         
+        <tag>DP套DP</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1100%E3%80%90POI2007%E3%80%91%E5%AF%B9%E7%A7%B0%E8%BD%B4osi%20Manacher/</loc>
+    <lastmod>2018-07-30T12:49:05.497Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1100【POI2007】对称轴osi <Manacher></title>
+        <pubTime>2018-07-27T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>Manacher</tag>
+         
+        <tag>POI</tag>
+         
+        <tag>字符串</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/LOJ2325%E3%80%8C%E6%B8%85%E5%8D%8E%E9%9B%86%E8%AE%AD2017%E3%80%8D%E5%B0%8FY%E5%92%8C%E6%81%90%E6%80%96%E7%9A%84%E5%A5%B4%E9%9A%B6%E4%B8%BB/</loc>
     <lastmod>2018-07-25T11:10:06.441Z</lastmod>
     <data>
@@ -40,9 +88,9 @@
          
         <tag>DP</tag>
          
-        <tag>概率DP</tag>
-         
         <tag>Lydsy月赛</tag>
+         
+        <tag>概率DP</tag>
          
          
            
@@ -650,11 +698,11 @@
         
         <tag>BZOJ</tag>
          
-        <tag>DP</tag>
-         
         <tag>线段树</tag>
          
         <tag>数据结构</tag>
+         
+        <tag>DP</tag>
          
         <tag>树链剖分</tag>
          
@@ -1184,9 +1232,9 @@
         <title>HDU5340 Three Palindromes < Manacher ></title>
         <pubTime>2017-08-14T16:00:00.000Z</pubTime>
         
-        <tag>字符串</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
          
         <tag>HDU</tag>
          
@@ -1293,9 +1341,9 @@
          
         <tag>图论</tag>
          
-        <tag>NOI</tag>
-         
         <tag>连通分量</tag>
+         
+        <tag>NOI</tag>
          
          
            
@@ -1400,9 +1448,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>字符串</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
          
          
            
@@ -1632,15 +1680,15 @@
         
         <tag>BZOJ</tag>
          
-        <tag>贪心</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>贪心</tag>
          
         <tag>构造</tag>
          
-        <tag>Lydsy月赛</tag>
-         
         <tag>KMP</tag>
+         
+        <tag>Lydsy月赛</tag>
          
          
            
@@ -1816,9 +1864,9 @@
         
         <tag>图论</tag>
          
-        <tag>MST</tag>
-         
         <tag>LCA</tag>
+         
+        <tag>MST</tag>
          
         <tag>NOIp</tag>
          
@@ -1914,9 +1962,9 @@
          
         <tag>POI</tag>
          
-        <tag>AC自动机</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>AC自动机</tag>
          
          
            
@@ -2010,11 +2058,11 @@
          
         <tag>网络流</tag>
          
+        <tag>NOI</tag>
+         
         <tag>线性规划</tag>
          
         <tag>费用流</tag>
-         
-        <tag>NOI</tag>
          
          
            
@@ -2728,11 +2776,11 @@
          
         <tag>NOI</tag>
          
+        <tag>字符串</tag>
+         
         <tag>树状数组</tag>
          
         <tag>AC自动机</tag>
-         
-        <tag>字符串</tag>
          
          
            
@@ -3186,9 +3234,9 @@
         <title>HDU3068 最长回文 < Manacher ></title>
         <pubTime>2017-09-24T16:00:00.000Z</pubTime>
         
-        <tag>字符串</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
          
         <tag>HDU</tag>
          
@@ -4122,11 +4170,11 @@
          
         <tag>数据结构</tag>
          
+        <tag>POI</tag>
+         
         <tag>差分</tag>
          
         <tag>树状数组</tag>
-         
-        <tag>POI</tag>
          
          
            
@@ -4191,9 +4239,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>AMPPZ</tag>
-         
         <tag>构造</tag>
+         
+        <tag>AMPPZ</tag>
          
          
            
@@ -4737,9 +4785,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>APIO</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>APIO</tag>
          
         <tag>回文自动机</tag>
          
