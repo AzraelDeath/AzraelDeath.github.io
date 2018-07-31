@@ -709,13 +709,6 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/ONTAK/</loc>
-        <lastmod>2018-07-19T05:37:04.296Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://azrael.top/tags/Kruskal%E9%87%8D%E6%9E%84%E6%A0%91/</loc>
         <lastmod>2018-07-19T05:37:04.296Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -730,14 +723,21 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E5%9B%BE%E8%AE%BA/</loc>
-        <lastmod>2018-07-19T05:38:27.708Z</lastmod>
+        <loc>http://azrael.top/tags/ONTAK/</loc>
+        <lastmod>2018-07-19T05:37:04.296Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://azrael.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <lastmod>2018-07-19T05:38:27.708Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://azrael.top/tags/%E5%9B%BE%E8%AE%BA/</loc>
         <lastmod>2018-07-19T05:38:27.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
