@@ -555,14 +555,14 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/UOJ/</loc>
+        <loc>http://azrael.top/tags/%E5%AD%90%E9%9B%86DP/</loc>
         <lastmod>2018-06-25T07:59:40.933Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E5%AD%90%E9%9B%86DP/</loc>
+        <loc>http://azrael.top/tags/UOJ/</loc>
         <lastmod>2018-06-25T07:59:40.933Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -653,14 +653,14 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E5%9B%BE%E8%AE%BA/</loc>
+        <loc>http://azrael.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-07-19T05:38:27.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azrael.top/tags/%E5%9B%BE%E8%AE%BA/</loc>
         <lastmod>2018-07-19T05:38:27.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -870,29 +870,29 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
-        <lastmod>2018-08-04T09:31:00.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://azrael.top/tags/%E5%AE%B9%E6%96%A5/</loc>
-        <lastmod>2018-08-04T09:31:00.529Z</lastmod>
+        <lastmod>2018-08-05T06:51:41.243Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://azrael.top/tags/%E8%AE%A1%E6%95%B0/</loc>
-        <lastmod>2018-08-04T09:31:00.529Z</lastmod>
+        <lastmod>2018-08-05T06:51:41.243Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://azrael.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
+        <lastmod>2018-08-05T06:51:41.243Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://azrael.top/tags/51Nod/</loc>
-        <lastmod>2018-08-04T09:31:00.529Z</lastmod>
+        <lastmod>2018-08-05T06:51:41.243Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
