@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ4206%20%E6%9C%80%E5%A4%A7%E5%9B%A2%20%E5%87%A0%E4%BD%95+DP/</loc>
+    <lastmod>2018-08-12T13:01:29.956Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ4206 最大团 <几何+DP></title>
+        <pubTime>2018-08-09T16:00:00.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>几何</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1004%E3%80%90HNOI2008%E3%80%91Cards%20Burside%E5%BC%95%E7%90%86+%E8%83%8C%E5%8C%85DP/</loc>
+    <lastmod>2018-08-12T09:15:53.607Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1004【HNOI2008】Cards < Burside引理+背包DP ></title>
+        <pubTime>2018-08-04T16:00:00.000Z</pubTime>
+        
+        <tag>计数</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>Burnside引理</tag>
+         
+        <tag>群论</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/51Nod1667%20%E6%A6%82%E7%8E%87%E5%A5%BD%E9%A2%98%20%E5%AE%B9%E6%96%A5+%E8%AE%A1%E6%95%B0/</loc>
     <lastmod>2018-08-05T06:51:41.243Z</lastmod>
     <data>
@@ -224,9 +272,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>Manacher</tag>
-         
         <tag>POI</tag>
+         
+        <tag>Manacher</tag>
          
         <tag>字符串</tag>
          
@@ -1462,9 +1510,9 @@
         
         <tag>DP</tag>
          
-        <tag>树形DP</tag>
-         
         <tag>CodeForces</tag>
+         
+        <tag>树形DP</tag>
          
          
            
@@ -1550,9 +1598,9 @@
          
         <tag>图论</tag>
          
-        <tag>APIO</tag>
-         
         <tag>Tarjan</tag>
+         
+        <tag>APIO</tag>
          
          
            
@@ -1724,9 +1772,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>图论</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>树分治</tag>
          
@@ -1822,9 +1870,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>图论</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>二分答案</tag>
          
@@ -2094,9 +2142,9 @@
          
         <tag>省选</tag>
          
-        <tag>数论数学</tag>
-         
         <tag>图论</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>LCA</tag>
          
@@ -2326,9 +2374,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>计算几何</tag>
-         
         <tag>APIO</tag>
+         
+        <tag>计算几何</tag>
          
          
            
@@ -2487,9 +2535,9 @@
          
         <tag>图论</tag>
          
-        <tag>AMPPZ</tag>
-         
         <tag>最短路</tag>
+         
+        <tag>AMPPZ</tag>
          
          
            
@@ -2535,9 +2583,9 @@
          
         <tag>BZOJ</tag>
          
-        <tag>倍增</tag>
-         
         <tag>APIO</tag>
+         
+        <tag>倍增</tag>
          
          
            
@@ -2629,9 +2677,9 @@
          
         <tag>MST</tag>
          
-        <tag>AMPPZ</tag>
-         
         <tag>最短路</tag>
+         
+        <tag>AMPPZ</tag>
          
          
            
@@ -2732,9 +2780,9 @@
          
         <tag>数据结构</tag>
          
-        <tag>APIO</tag>
-         
         <tag>可并堆</tag>
+         
+        <tag>APIO</tag>
          
          
            
@@ -2935,9 +2983,9 @@
          
         <tag>NOI</tag>
          
-        <tag>字符串</tag>
-         
         <tag>树状数组</tag>
+         
+        <tag>字符串</tag>
          
         <tag>AC自动机</tag>
          
@@ -3155,11 +3203,11 @@
         <title>【福利】洛谷模板汇总</title>
         <pubTime>2017-09-28T16:00:00.000Z</pubTime>
         
+        <tag>图论</tag>
+         
         <tag>数论数学</tag>
          
         <tag>数据结构</tag>
-         
-        <tag>图论</tag>
          
         <tag>字符串</tag>
          
@@ -3278,11 +3326,11 @@
         
         <tag>组合数学</tag>
          
-        <tag>补集转换</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>补集转换</tag>
          
         <tag>数论数学</tag>
          
@@ -3691,9 +3739,9 @@
          
         <tag>省选</tag>
          
-        <tag>旋转卡壳</tag>
-         
         <tag>计算几何</tag>
+         
+        <tag>旋转卡壳</tag>
          
          
            
@@ -4329,11 +4377,11 @@
          
         <tag>数据结构</tag>
          
-        <tag>POI</tag>
-         
         <tag>差分</tag>
          
         <tag>树状数组</tag>
+         
+        <tag>POI</tag>
          
          
            
@@ -4490,9 +4538,9 @@
          
         <tag>省选</tag>
          
-        <tag>旋转卡壳</tag>
-         
         <tag>计算几何</tag>
+         
+        <tag>旋转卡壳</tag>
          
          
            
@@ -4733,9 +4781,9 @@
         
         <tag>DP</tag>
          
-        <tag>树形DP</tag>
-         
         <tag>CodeForces</tag>
+         
+        <tag>树形DP</tag>
          
          
            
@@ -4896,9 +4944,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>字符串</tag>
-         
         <tag>APIO</tag>
+         
+        <tag>字符串</tag>
          
         <tag>回文自动机</tag>
          
