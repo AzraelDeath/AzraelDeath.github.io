@@ -4,20 +4,22 @@
 
     
   <url>
-    <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
-    <lastmod>2018-09-06T06:14:29.602Z</lastmod>
+    <loc>http://azrael.top/BZOJ1604%E3%80%90USACO2008%20Open%E3%80%91%E5%A5%B6%E7%89%9B%E7%9A%84%E9%82%BB%E5%B1%85%20%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95+set/</loc>
+    <lastmod>2018-09-06T12:40:00.406Z</lastmod>
     <data>
         <display>
-        <title>BZOJ5415【NOI2018】归程 <扩展CRT></title>
-        <pubTime>2018-07-19T16:00:00.000Z</pubTime>
+        <title>BZOJ1604【USACO2008 Open】奶牛的邻居 < 计算几何+set ></title>
+        <pubTime>2018-09-04T16:00:00.000Z</pubTime>
         
         <tag>BZOJ</tag>
          
-        <tag>数论数学</tag>
+        <tag>数据结构</tag>
          
-        <tag>NOI</tag>
+        <tag>计算几何</tag>
          
-        <tag>CRT</tag>
+        <tag>USACO</tag>
+         
+        <tag>set</tag>
          
          
            
@@ -27,11 +29,84 @@
 
     
   <url>
-    <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-    <lastmod>2018-09-06T05:24:24.847Z</lastmod>
+    <loc>http://azrael.top/BZOJ1594%E3%80%90USACO2008%20Jan%E3%80%91%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2018-09-06T12:26:56.386Z</lastmod>
     <data>
         <display>
-        <title>BZOJ5415【NOI2018】归程 < 最短路径+Kruskal重构树+DFS序+线段树 ></title>
+        <title>BZOJ1594【USACO2008 Jan】猜数游戏 <二分答案+线段树></title>
+        <pubTime>2018-09-04T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>二分答案</tag>
+         
+        <tag>USACO</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ3611%E3%80%90HEOI2014%E3%80%91%E5%A4%A7%E5%B7%A5%E7%A8%8B%20%E8%99%9A%E6%A0%91+DP/</loc>
+    <lastmod>2018-09-06T11:57:46.757Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ3611【HEOI2014】大工程 < 虚树+DP ></title>
+        <pubTime>2018-08-23T16:00:00.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>虚树</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1057%E3%80%90ZJOI2007%E3%80%91%E6%A3%8B%E7%9B%98%E5%88%B6%E4%BD%9C%20%E6%82%AC%E7%BA%BF%E6%B3%95DP/</loc>
+    <lastmod>2018-09-06T11:23:25.251Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1057【ZJOI2007】棋盘制作 < 悬线法DP ></title>
+        <pubTime>2018-08-22T16:00:00.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>悬线法</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2018-09-06T07:45:25.639Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ5415【NOI2018】归程 < 最短路+Kruskal重构树+DFS序+线段树 ></title>
         <pubTime>2018-07-17T16:00:00.000Z</pubTime>
         
         <tag>BZOJ</tag>
@@ -46,7 +121,30 @@
          
         <tag>DFS序</tag>
          
-        <tag>最短路径</tag>
+        <tag>最短路</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
+    <lastmod>2018-09-06T07:44:00.892Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ5418【NOI2018】屠龙勇士 < 扩展CRT ></title>
+        <pubTime>2018-07-19T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
+         
+        <tag>NOI</tag>
+         
+        <tag>CRT</tag>
          
          
            
@@ -222,9 +320,9 @@
         <title>BZOJ4206 最大团 <几何+DP></title>
         <pubTime>2018-08-09T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>几何</tag>
          
@@ -245,6 +343,8 @@
         
         <tag>计数</tag>
          
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
@@ -252,8 +352,6 @@
         <tag>Burnside引理</tag>
          
         <tag>群论</tag>
-         
-        <tag>DP</tag>
          
          
            
@@ -293,9 +391,9 @@
         <title>BZOJ2306【CTSC2011】幸福路径 <期望DP></title>
         <pubTime>2018-07-23T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>期望DP</tag>
          
@@ -339,9 +437,9 @@
         <title>BZOJ4720【NOIp2016】换教室 <期望DP></title>
         <pubTime>2017-11-08T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>NOIp</tag>
          
@@ -364,9 +462,9 @@
         
         <tag>容斥</tag>
          
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>线段树</tag>
          
@@ -385,9 +483,9 @@
         <title>AGC026E Synchronized Subsequence <贪心+DP></title>
         <pubTime>2018-07-31T16:00:00.000Z</pubTime>
         
-        <tag>DP</tag>
-         
         <tag>贪心</tag>
+         
+        <tag>DP</tag>
          
         <tag>AtCoder</tag>
          
@@ -429,9 +527,9 @@
         <title>BZOJ4974【Lydsy201708月赛】字符串大师 <KMP+贪心构造></title>
         <pubTime>2018-04-30T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>贪心</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>字符串</tag>
          
@@ -456,11 +554,11 @@
         <title>BZOJ5336【TJOI2018】party <DP套DP/状压DP></title>
         <pubTime>2018-07-27T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>状压DP</tag>
          
@@ -483,9 +581,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>Manacher</tag>
-         
         <tag>POI</tag>
+         
+        <tag>Manacher</tag>
          
         <tag>字符串</tag>
          
@@ -529,9 +627,9 @@
         <title>BZOJ4832【Lydsy1704月赛】抵制克苏恩 <概率DP></title>
         <pubTime>2018-07-08T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>概率DP</tag>
          
@@ -606,11 +704,11 @@
          
         <tag>数据结构</tag>
          
-        <tag>ONTAK</tag>
-         
         <tag>Kruskal重构树</tag>
          
         <tag>DFS序</tag>
+         
+        <tag>ONTAK</tag>
          
          
            
@@ -907,9 +1005,9 @@
          
         <tag>CTSC</tag>
          
-        <tag>UOJ</tag>
-         
         <tag>子集DP</tag>
+         
+        <tag>UOJ</tag>
          
          
            
@@ -1095,11 +1193,11 @@
          
         <tag>省选</tag>
          
+        <tag>数论数学</tag>
+         
         <tag>线段树</tag>
          
         <tag>数据结构</tag>
-         
-        <tag>数论数学</tag>
          
         <tag>扩展欧拉定理</tag>
          
@@ -1141,9 +1239,9 @@
         <title>BZOJ5210 最大连通子块和 <树链剖分+树形DP></title>
         <pubTime>2018-06-04T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>线段树</tag>
          
@@ -1166,11 +1264,11 @@
         <title>BZOJ2326【HNOI2011】数学作业 <矩阵快速幂优化DP></title>
         <pubTime>2018-06-03T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>矩阵快速幂</tag>
          
@@ -1396,11 +1494,11 @@
          
         <tag>组合数学</tag>
          
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
          
            
@@ -2604,9 +2702,9 @@
         <title>BZOJ4069【APIO2015】巴厘岛的雕塑 < DP ></title>
         <pubTime>2018-04-21T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>APIO</tag>
          
@@ -2648,11 +2746,11 @@
         <title>BZOJ1860【ZJOI2006】Mahjong麻将 < DP ></title>
         <pubTime>2017-11-07T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
          
            
@@ -2715,11 +2813,11 @@
         <title>BZOJ5180【Baltic2016】Cities <斯坦纳树></title>
         <pubTime>2018-04-16T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>图论</tag>
-         
-        <tag>DP</tag>
          
         <tag>状压DP</tag>
          
@@ -2790,9 +2888,9 @@
         <title>BZOJ1178【APIO2009】会议中心 <贪心+倍增></title>
         <pubTime>2018-04-19T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>贪心</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>倍增</tag>
          
@@ -3056,9 +3154,9 @@
         <title>BZOJ3675【APIO2014】序列分割 <斜率优化></title>
         <pubTime>2018-04-12T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>斜率优化</tag>
          
@@ -3079,9 +3177,9 @@
         <title>BZOJ1911【APIO2010】特别行动队 <斜率优化></title>
         <pubTime>2018-04-12T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>斜率优化</tag>
          
@@ -3194,9 +3292,9 @@
          
         <tag>NOI</tag>
          
-        <tag>字符串</tag>
-         
         <tag>树状数组</tag>
+         
+        <tag>字符串</tag>
          
         <tag>AC自动机</tag>
          
@@ -3261,11 +3359,11 @@
         <title>BZOJ1190【HNOI2007】梦幻岛宝珠 <分层DP></title>
         <pubTime>2017-12-24T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>分层DP</tag>
          
@@ -3416,9 +3514,9 @@
         
         <tag>图论</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>数论数学</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>字符串</tag>
          
@@ -3606,9 +3704,9 @@
         <title>LG1073【NOIp2009】最优贸易 < Tarjan+DP ></title>
         <pubTime>2017-08-19T16:00:00.000Z</pubTime>
         
-        <tag>图论</tag>
-         
         <tag>DP</tag>
+         
+        <tag>图论</tag>
          
         <tag>Tarjan</tag>
          
@@ -3694,11 +3792,11 @@
         <title>BZOJ1046【HAOI2007】上升序列 < DP ></title>
         <pubTime>2017-11-08T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
          
            
@@ -3808,11 +3906,11 @@
         <title>BZOJ1068【SCOI2007】压缩 <区间DP></title>
         <pubTime>2018-03-19T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>区间DP</tag>
          
@@ -3852,11 +3950,11 @@
         <title>BZOJ3594【SCOI2014】方伯伯的玉米田 <树状数组优化DP></title>
         <pubTime>2018-03-13T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>树状数组</tag>
          
@@ -3875,11 +3973,11 @@
         <title>BZOJ1096【ZJOI2007】仓库建设 <斜率优化></title>
         <pubTime>2018-02-21T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>斜率优化</tag>
          
@@ -3898,11 +3996,11 @@
         <title>BZOJ1087【SCOI2005】互不侵犯King <状压DP></title>
         <pubTime>2017-11-08T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>状压DP</tag>
          
@@ -3969,11 +4067,11 @@
         <title>BZOJ1026【SCOI2009】Windy数 <数位DP></title>
         <pubTime>2017-11-07T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>数位DP</tag>
          
@@ -3992,11 +4090,11 @@
         <title>BZOJ1010【HNOI2008】玩具装箱toy <斜率优化></title>
         <pubTime>2018-02-21T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>斜率优化</tag>
          
@@ -4565,11 +4663,11 @@
          
         <tag>数据结构</tag>
          
-        <tag>POI</tag>
-         
         <tag>差分</tag>
          
         <tag>树状数组</tag>
+         
+        <tag>POI</tag>
          
          
            
@@ -4609,9 +4707,9 @@
         <title>BZOJ4145【AMPPZ2014】The Prices <状压DP></title>
         <pubTime>2017-11-29T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>状压DP</tag>
          
@@ -4653,9 +4751,9 @@
         <title>BZOJ4325【NOIp2015】斗地主 <搜索+贪心></title>
         <pubTime>2017-10-24T16:00:00.000Z</pubTime>
         
-        <tag>BZOJ</tag>
-         
         <tag>贪心</tag>
+         
+        <tag>BZOJ</tag>
          
         <tag>NOIp</tag>
          
@@ -4699,11 +4797,11 @@
         <title>BZOJ4565【HAOI2016】字符合并 <状压DP></title>
         <pubTime>2017-11-10T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>状压DP</tag>
          
@@ -4812,11 +4910,11 @@
         <title>BZOJ1833【ZJOI2010】count数字计数 <数位DP></title>
         <pubTime>2017-11-07T16:00:00.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
-         
-        <tag>DP</tag>
          
         <tag>数位DP</tag>
          
@@ -4948,9 +5046,9 @@
          
         <tag>NOIp</tag>
          
-        <tag>LG</tag>
-         
         <tag>二分图</tag>
+         
+        <tag>LG</tag>
          
          
            
