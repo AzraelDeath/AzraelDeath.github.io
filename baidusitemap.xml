@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ4001%E3%80%90TJOI2015%E3%80%91%E6%A6%82%E7%8E%87%E8%AE%BA%20%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2018-09-18T11:11:05.587Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ4001【TJOI2015】概率论 <生成函数></title>
+        <pubTime>2018-09-17T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>数论数学</tag>
+         
+        <tag>生成函数</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ2957%20%E6%A5%BC%E6%88%BF%E9%87%8D%E5%BB%BA%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2018-09-14T03:31:59.891Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ2957 楼房重建 <线段树></title>
+        <pubTime>2018-08-20T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/BZOJ4184%20Shallot%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB+%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
     <lastmod>2018-09-13T12:09:48.471Z</lastmod>
     <data>
@@ -111,9 +155,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>NOI</tag>
          
@@ -165,9 +209,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -186,9 +230,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>set</tag>
          
@@ -234,9 +278,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>二分答案</tag>
          
@@ -298,29 +342,6 @@
 
     
   <url>
-    <loc>http://azrael.top/BZOJ2957%20%E6%A5%BC%E6%88%BF%E9%87%8D%E5%BB%BA%20%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-    <lastmod>2018-08-22T12:59:33.536Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ2957 楼房重建 <李超线段树></title>
-        <pubTime>2018-08-20T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>数据结构</tag>
-         
-        <tag>线段树</tag>
-         
-        <tag>李超线段树</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://azrael.top/BZOJ3165%E3%80%90HEOI2013%E3%80%91Segment%20%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
     <lastmod>2018-08-22T12:44:22.291Z</lastmod>
     <data>
@@ -332,9 +353,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>李超线段树</tag>
          
@@ -700,9 +721,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>POI</tag>
-         
         <tag>Manacher</tag>
+         
+        <tag>POI</tag>
          
         <tag>字符串</tag>
          
@@ -819,9 +840,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>ONTAK</tag>
          
@@ -932,9 +953,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>并查集</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>并查集</tag>
          
         <tag>线段树分治</tag>
          
@@ -955,11 +976,11 @@
         
         <tag>BZOJ</tag>
          
-        <tag>并查集</tag>
+        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
-        <tag>线段树</tag>
+        <tag>并查集</tag>
          
         <tag>ONTAK</tag>
          
@@ -980,9 +1001,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>LCA</tag>
          
@@ -1003,9 +1024,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>CodeChef</tag>
          
@@ -1024,9 +1045,9 @@
         <title>HDU4348 To The Moon <带修主席树></title>
         <pubTime>2017-08-19T16:00:00.000Z</pubTime>
         
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>HDU</tag>
          
@@ -1047,9 +1068,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>POI</tag>
          
@@ -1314,9 +1335,9 @@
          
         <tag>数论数学</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>扩展欧拉定理</tag>
          
@@ -1362,9 +1383,9 @@
          
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>树链剖分</tag>
          
@@ -1410,11 +1431,11 @@
          
         <tag>省选</tag>
          
-        <tag>并查集</tag>
+        <tag>线段树</tag>
          
         <tag>数据结构</tag>
          
-        <tag>线段树</tag>
+        <tag>并查集</tag>
          
          
            
@@ -1957,9 +1978,9 @@
         <title>CF446C DZY Loves Fibonacci Numbers <线段树></title>
         <pubTime>2018-02-19T16:00:00.000Z</pubTime>
         
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>CodeForces</tag>
          
@@ -1980,9 +2001,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -2003,9 +2024,9 @@
          
         <tag>图论</tag>
          
-        <tag>连通分量</tag>
-         
         <tag>NOI</tag>
+         
+        <tag>连通分量</tag>
          
          
            
@@ -2275,9 +2296,9 @@
          
         <tag>省选</tag>
          
-        <tag>并查集</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>并查集</tag>
          
         <tag>ST表</tag>
          
@@ -2620,9 +2641,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>树链剖分</tag>
          
@@ -2693,11 +2714,11 @@
          
         <tag>图论</tag>
          
-        <tag>NOI</tag>
-         
         <tag>线性规划</tag>
          
         <tag>费用流</tag>
+         
+        <tag>NOI</tag>
          
          
            
@@ -2844,9 +2865,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>PA</tag>
          
@@ -3078,9 +3099,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>并查集</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>并查集</tag>
          
         <tag>APIO</tag>
          
@@ -3208,9 +3229,9 @@
          
         <tag>数据结构</tag>
          
-        <tag>APIO</tag>
-         
         <tag>可并堆</tag>
+         
+        <tag>APIO</tag>
          
          
            
@@ -3365,9 +3386,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -3411,9 +3432,9 @@
          
         <tag>NOI</tag>
          
-        <tag>树状数组</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>树状数组</tag>
          
         <tag>AC自动机</tag>
          
@@ -3706,9 +3727,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>树链剖分</tag>
          
@@ -3934,9 +3955,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -3980,9 +4001,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -4004,9 +4025,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
         <tag>括号序列</tag>
          
@@ -4690,9 +4711,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -4713,9 +4734,9 @@
          
         <tag>省选</tag>
          
-        <tag>并查集</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>并查集</tag>
          
          
            
@@ -4782,11 +4803,11 @@
          
         <tag>数据结构</tag>
          
+        <tag>POI</tag>
+         
         <tag>差分</tag>
          
         <tag>树状数组</tag>
-         
-        <tag>POI</tag>
          
          
            
@@ -5165,9 +5186,9 @@
          
         <tag>NOIp</tag>
          
-        <tag>二分图</tag>
-         
         <tag>LG</tag>
+         
+        <tag>二分图</tag>
          
          
            
@@ -5255,9 +5276,9 @@
          
         <tag>省选</tag>
          
-        <tag>数据结构</tag>
-         
         <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
          
          
            
@@ -5349,9 +5370,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>APIO</tag>
-         
         <tag>字符串</tag>
+         
+        <tag>APIO</tag>
          
         <tag>回文自动机</tag>
          
@@ -5370,9 +5391,9 @@
         <title>POJ1182 【NOI2001】 食物链 <种类并查集></title>
         <pubTime>2017-08-16T16:00:00.000Z</pubTime>
         
-        <tag>并查集</tag>
-         
         <tag>数据结构</tag>
+         
+        <tag>并查集</tag>
          
         <tag>NOI</tag>
          
