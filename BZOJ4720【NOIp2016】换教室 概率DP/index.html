@@ -73,7 +73,7 @@
 
 
 
-  <meta name="keywords" content="DP,BZOJ,NOIp,期望DP,">
+  <meta name="keywords" content="DP,BZOJ,概率DP,NOIp,">
 
 
 
@@ -99,16 +99,16 @@
 
 
 <meta name="description" content="Problem【NOIp2016】换教室题目描述对于刚上大学的牛牛来说，他面临的第一个问题是如何根据实际情况申请合适的课程。在可以选择的课程中，有             节课程安排在          个时间段上。在第         （                   ）个时间段上，两节内容相同的课程同时在不同的地点进行，其中，牛牛预先被安排在教室             上课，而另一节课">
-<meta name="keywords" content="DP,BZOJ,NOIp,期望DP">
+<meta name="keywords" content="DP,BZOJ,概率DP,NOIp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BZOJ4720【NOIp2016】换教室 <期望DP>">
-<meta property="og:url" content="http://azrael.top/BZOJ4720【NOIp2016】换教室 期望DP/index.html">
+<meta property="og:title" content="BZOJ4720【NOIp2016】换教室 <概率DP>">
+<meta property="og:url" content="http://azrael.top/BZOJ4720【NOIp2016】换教室 概率DP/index.html">
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem【NOIp2016】换教室题目描述对于刚上大学的牛牛来说，他面临的第一个问题是如何根据实际情况申请合适的课程。在可以选择的课程中，有             节课程安排在          个时间段上。在第         （                   ）个时间段上，两节内容相同的课程同时在不同的地点进行，其中，牛牛预先被安排在教室             上课，而另一节课">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-03T00:24:40.913Z">
+<meta property="og:updated_time" content="2018-09-28T07:29:16.811Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BZOJ4720【NOIp2016】换教室 <期望DP>">
+<meta name="twitter:title" content="BZOJ4720【NOIp2016】换教室 <概率DP>">
 <meta name="twitter:description" content="Problem【NOIp2016】换教室题目描述对于刚上大学的牛牛来说，他面临的第一个问题是如何根据实际情况申请合适的课程。在可以选择的课程中，有             节课程安排在          个时间段上。在第         （                   ）个时间段上，两节内容相同的课程同时在不同的地点进行，其中，牛牛预先被安排在教室             上课，而另一节课">
 
 
@@ -139,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://azrael.top/BZOJ4720【NOIp2016】换教室 期望DP/">
+  <link rel="canonical" href="http://azrael.top/BZOJ4720【NOIp2016】换教室 概率DP/">
 
 
 
 
 
-  <title>BZOJ4720【NOIp2016】换教室 &lt;期望DP&gt; | NIRVANA</title>
+  <title>BZOJ4720【NOIp2016】换教室 &lt;概率DP&gt; | NIRVANA</title>
   
 
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4720【NOIp2016】换教室 期望DP/">
+    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4720【NOIp2016】换教室 概率DP/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -333,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">BZOJ4720【NOIp2016】换教室 &lt;期望DP&gt;</h1>
+          <h1 class="post-title" itemprop="name headline">BZOJ4720【NOIp2016】换教室 &lt;概率DP&gt;</h1>
         
 
         <div class="post-meta">
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  1,638
+                  1,632
                 </span>
               
 
@@ -1041,65 +1041,96 @@
 <p><strong>输出样例#1</strong><br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.80</span><br></pre></td></tr></tbody></table></figure><p></p>
 <h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><ul>
 <li>道路中可能会有多条双向道路连接相同的两间教室。 也有可能有道路两端连接的是同一间教室。</li>
-<li>请注意区分n,m,v,e的意义, n不是教室的数量, m不是道路的数量。</li>
-</ul>
-<p>标签：<code>期望DP</code></p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>期望题，有点超纲。<br>考虑<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<li>请注意区分<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="8.748ex" height="2.009ex" style="vertical-align: -0.671ex;" viewBox="0 -576.1 3766.5 865.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<path stroke-width="1" id="E57-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path>
-<path stroke-width="1" id="E57-MJMATHI-50" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path>
+<path stroke-width="1" id="E57-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E57-MJMAIN-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path>
+<path stroke-width="1" id="E57-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E57-MJMATHI-76" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"></path>
+<path stroke-width="1" id="E57-MJMATHI-65" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path>
 </defs>
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
- <use xlink:href="#E57-MJMATHI-44" x="0" y="0"></use>
- <use xlink:href="#E57-MJMATHI-50" x="828" y="0"></use>
+ <use xlink:href="#E57-MJMATHI-6E" x="0" y="0"></use>
+ <use xlink:href="#E57-MJMAIN-2C" x="600" y="0"></use>
+ <use xlink:href="#E57-MJMATHI-6D" x="1045" y="0"></use>
+ <use xlink:href="#E57-MJMAIN-2C" x="1924" y="0"></use>
+ <use xlink:href="#E57-MJMATHI-76" x="2369" y="0"></use>
+ <use xlink:href="#E57-MJMAIN-2C" x="2854" y="0"></use>
+ <use xlink:href="#E57-MJMATHI-65" x="3300" y="0"></use>
+</g>
+</svg></span>的意义, <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 600.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E58-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E58-MJMATHI-6E" x="0" y="0"></use>
+</g>
+</svg></span>不是教室的数量, <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.04ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 878.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E59-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E59-MJMATHI-6D" x="0" y="0"></use>
+</g>
+</svg></span>不是道路的数量。</li>
+</ul>
+<p>标签：<code>概率DP</code></p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>期望题，有点超纲。<br>考虑<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.358ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1446 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E60-MJMAIN-44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z"></path>
+<path stroke-width="1" id="E60-MJMAIN-50" d="M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E60-MJMAIN-44" x="0" y="0"></use>
+ <use xlink:href="#E60-MJMAIN-50" x="764" y="0"></use>
 </g>
 </svg></span>。<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10.408ex" height="2.843ex" style="vertical-align: -0.838ex;" viewBox="0 -863.1 4481 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<path stroke-width="1" id="E58-MJMATHI-66" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path>
-<path stroke-width="1" id="E58-MJMAIN-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path>
-<path stroke-width="1" id="E58-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path>
-<path stroke-width="1" id="E58-MJMAIN-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path>
-<path stroke-width="1" id="E58-MJMATHI-6A" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path>
-<path stroke-width="1" id="E58-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
-<path stroke-width="1" id="E58-MJMAIN-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path>
-<path stroke-width="1" id="E58-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E61-MJMATHI-66" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path>
+<path stroke-width="1" id="E61-MJMAIN-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path>
+<path stroke-width="1" id="E61-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E61-MJMAIN-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path>
+<path stroke-width="1" id="E61-MJMATHI-6A" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path>
+<path stroke-width="1" id="E61-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+<path stroke-width="1" id="E61-MJMAIN-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path>
+<path stroke-width="1" id="E61-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
 </defs>
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
- <use xlink:href="#E58-MJMATHI-66" x="0" y="0"></use>
- <use xlink:href="#E58-MJMAIN-5B" x="550" y="0"></use>
- <use xlink:href="#E58-MJMATHI-69" x="829" y="0"></use>
- <use xlink:href="#E58-MJMAIN-5D" x="1174" y="0"></use>
- <use xlink:href="#E58-MJMAIN-5B" x="1453" y="0"></use>
- <use xlink:href="#E58-MJMATHI-6A" x="1731" y="0"></use>
- <use xlink:href="#E58-MJMAIN-5D" x="2144" y="0"></use>
- <use xlink:href="#E58-MJMAIN-5B" x="2422" y="0"></use>
- <use xlink:href="#E58-MJMAIN-30" x="2701" y="0"></use>
- <use xlink:href="#E58-MJMAIN-2F" x="3201" y="0"></use>
- <use xlink:href="#E58-MJMAIN-31" x="3702" y="0"></use>
- <use xlink:href="#E58-MJMAIN-5D" x="4202" y="0"></use>
+ <use xlink:href="#E61-MJMATHI-66" x="0" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-5B" x="550" y="0"></use>
+ <use xlink:href="#E61-MJMATHI-69" x="829" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-5D" x="1174" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-5B" x="1453" y="0"></use>
+ <use xlink:href="#E61-MJMATHI-6A" x="1731" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-5D" x="2144" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-5B" x="2422" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-30" x="2701" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-2F" x="3201" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-31" x="3702" y="0"></use>
+ <use xlink:href="#E61-MJMAIN-5D" x="4202" y="0"></use>
 </g>
 </svg></span>表示选到第<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<path stroke-width="1" id="E59-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E62-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path>
 </defs>
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
- <use xlink:href="#E59-MJMATHI-69" x="0" y="0"></use>
+ <use xlink:href="#E62-MJMATHI-69" x="0" y="0"></use>
 </g>
 </svg></span>个时间段，换了<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.985ex" height="2.509ex" style="vertical-align: -0.671ex; margin-left: -0.027ex;" viewBox="-11.5 -791.3 424 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<path stroke-width="1" id="E60-MJMATHI-6A" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path>
+<path stroke-width="1" id="E63-MJMATHI-6A" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path>
 </defs>
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
- <use xlink:href="#E60-MJMATHI-6A" x="0" y="0"></use>
+ <use xlink:href="#E63-MJMATHI-6A" x="0" y="0"></use>
 </g>
-</svg></span>节课，这节课是否换的期望。<br>那么可以枚举是否换成功的情况进行转移。具体见代码。<br><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.67ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1580 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+</svg></span>节课，这节课是否换的期望。<br>那么可以枚举是否换成功的情况进行转移。具体见代码。<br><span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.358ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 1446 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<path stroke-width="1" id="E61-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path>
-<path stroke-width="1" id="E61-MJMATHI-50" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path>
+<path stroke-width="1" id="E64-MJMAIN-44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z"></path>
+<path stroke-width="1" id="E64-MJMAIN-50" d="M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z"></path>
 </defs>
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
- <use xlink:href="#E61-MJMATHI-44" x="0" y="0"></use>
- <use xlink:href="#E61-MJMATHI-50" x="828" y="0"></use>
+ <use xlink:href="#E64-MJMAIN-44" x="0" y="0"></use>
+ <use xlink:href="#E64-MJMAIN-50" x="764" y="0"></use>
 </g>
 </svg></span>方程挺长，但还是比较好想的。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_V 300</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 2000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> INF 0x3f3f3f3f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">int</span> n, m, v, e;</span><br><span class="line"><span class="keyword">int</span> c[MAX_N+<span class="number">5</span>], d[MAX_N+<span class="number">5</span>];	dnt k[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> dis[MAX_V+<span class="number">5</span>][MAX_V+<span class="number">5</span>];	dnt f[MAX_N+<span class="number">5</span>][MAX_N+<span class="number">5</span>][<span class="number">2</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Floyed</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= v; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= v; j++)	dis[i][j] = i == j ? <span class="number">0</span> : INF;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, x, y, z; i &lt; e; i++)	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;x, &amp;y, &amp;z), dis[x][y] = dis[y][x] = min(dis[x][y], z);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= v; k++)	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= v; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= v; j++)	dis[i][j] = min(dis[i][j], dis[i][k]+dis[k][j]);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DP</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= m; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= <span class="number">1</span>; k++)	f[i][j][k] = INF;</span><br><span class="line">    f[<span class="number">1</span>][<span class="number">0</span>][<span class="number">0</span>] = f[<span class="number">1</span>][<span class="number">1</span>][<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++)	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= min(m, i); j++) {</span><br><span class="line">        f[i][j][<span class="number">0</span>] = min(f[i<span class="number">-1</span>][j][<span class="number">0</span>]+dis[c[i<span class="number">-1</span>]][c[i]], f[i<span class="number">-1</span>][j][<span class="number">1</span>]+dis[d[i<span class="number">-1</span>]][c[i]]*k[i<span class="number">-1</span>]+dis[c[i<span class="number">-1</span>]][c[i]]*(<span class="number">1</span>-k[i<span class="number">-1</span>]));</span><br><span class="line">        <span class="keyword">if</span> (j)	f[i][j][<span class="number">1</span>] = min(f[i<span class="number">-1</span>][j<span class="number">-1</span>][<span class="number">0</span>]+dis[c[i<span class="number">-1</span>]][d[i]]*k[i]+dis[c[i<span class="number">-1</span>]][c[i]]*(<span class="number">1</span>-k[i]), f[i<span class="number">-1</span>][j<span class="number">-1</span>][<span class="number">1</span>]+dis[c[i<span class="number">-1</span>]][c[i]]*(<span class="number">1</span>-k[i<span class="number">-1</span>])*(<span class="number">1</span>-k[i])+dis[c[i<span class="number">-1</span>]][d[i]]*(<span class="number">1</span>-k[i<span class="number">-1</span>])*k[i]+dis[d[i<span class="number">-1</span>]][c[i]]*k[i<span class="number">-1</span>]*(<span class="number">1</span>-k[i])+dis[d[i<span class="number">-1</span>]][d[i]]*k[i<span class="number">-1</span>]*k[i]);</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="function">dnt <span class="title">MIN</span><span class="params">()</span> </span>{dnt ret = INF;	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= m; j++)	<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">2</span>; k++)	ret = min(ret, f[n][j][k]);	<span class="keyword">return</span> ret;}</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;n, &amp;m, &amp;v, &amp;e);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, c+i);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, d+i);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)	<span class="built_in">scanf</span>(<span class="string">"%lf"</span>, k+i);</span><br><span class="line">    Floyed(), DP(), <span class="built_in">printf</span>(<span class="string">"%.2lf"</span>, MIN());	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
@@ -1133,7 +1164,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://azrael.top/BZOJ4720【NOIp2016】换教室 期望DP/" title="BZOJ4720【NOIp2016】换教室 <期望DP>">http://azrael.top/BZOJ4720【NOIp2016】换教室 期望DP/</a>
+    <a href="http://azrael.top/BZOJ4720【NOIp2016】换教室 概率DP/" title="BZOJ4720【NOIp2016】换教室 <概率DP>">http://azrael.top/BZOJ4720【NOIp2016】换教室 概率DP/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -1152,9 +1183,9 @@
           
             <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
-            <a href="/tags/NOIp/" rel="tag"> <i class="fa fa-tag"></i> NOIp</a>
+            <a href="/tags/概率DP/" rel="tag"> <i class="fa fa-tag"></i> 概率DP</a>
           
-            <a href="/tags/期望DP/" rel="tag"> <i class="fa fa-tag"></i> 期望DP</a>
+            <a href="/tags/NOIp/" rel="tag"> <i class="fa fa-tag"></i> NOIp</a>
           
         </div>
       
@@ -1167,8 +1198,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ4721【NOIp2016】蚯蚓 队列/" rel="next" title="BZOJ4721【NOIp2016】蚯蚓 <队列>">
-                <i class="fa fa-chevron-left"></i> BZOJ4721【NOIp2016】蚯蚓 &lt;队列&gt;
+              <a href="/BZOJ4491 我也不知道题目名字是什么 线段树/" rel="next" title="BZOJ4491 我也不知道题目名字是什么 <线段树>">
+                <i class="fa fa-chevron-left"></i> BZOJ4491 我也不知道题目名字是什么 &lt;线段树&gt;
               </a>
             
           </div>
@@ -1177,8 +1208,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ4034【HAOI2015】树上操作 树链剖分/" rel="prev" title="BZOJ4034【HAOI2015】树上操作 <树链剖分>">
-                BZOJ4034【HAOI2015】树上操作 &lt;树链剖分&gt; <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ1046【HAOI2007】上升序列 DP/" rel="prev" title="BZOJ1046【HAOI2007】上升序列 < DP >">
+                BZOJ1046【HAOI2007】上升序列 &lt; DP &gt; <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1291,7 +1322,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">253</span>
+                  <span class="site-state-item-count">258</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1304,7 +1335,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">149</span>
+                  <span class="site-state-item-count">150</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1477,7 +1508,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count:</span>
     
-    <span title="Site words total count">239.6k</span>
+    <span title="Site words total count">243.4k</span>
   
 </div>
 
