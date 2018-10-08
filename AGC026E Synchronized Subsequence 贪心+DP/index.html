@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="ProblemSynchronized Subsequence                                                                                                      StatementYou are given a string          of length            , con">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-02T02:41:56.959Z">
+<meta property="og:updated_time" content="2018-10-08T07:36:26.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AGC026E Synchronized Subsequence <贪心+DP>">
 <meta name="twitter:description" content="ProblemSynchronized Subsequence                                                                                                      StatementYou are given a string          of length            , con">
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计:</span>
                 
                 <span title="字数统计">
-                  817
+                  816
                 </span>
               
 
@@ -680,8 +680,7 @@
  <use xlink:href="#E21-MJMATHI-69" x="0" y="0"></use>
 </g>
 </svg></span>个<code>b</code>。求最终形成的字典序最大的串。</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>官方题解戳<a href="https://img.atcoder.jp/agc026/editorial.pdf" target="_blank" rel="noopener">这里</a>。</p>
-<p>首先将整个串分为若干段，每一段都保证<code>a</code>的个数和<code>b</code>的个数相等。<br>设第<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>首先将整个串分为若干段，每一段都保证<code>a</code>的个数和<code>b</code>的个数相等。<br>设第<span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <path stroke-width="1" id="E22-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path>
 </defs>
@@ -1009,6 +1008,14 @@
  <use xlink:href="#E41-MJMAIN-7D" x="7998" y="0"></use>
 </g>
 </svg></span>。</p>
+<p>附上官方题解：<br>
+
+	</p><div class="row">
+    <embed src="https://file.floj.tech/export/BZaLKaBvhr8GtOZtqnBp" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+<p></p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_N 3000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt; <span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) {</span></span><br><span class="line">    x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">}</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="built_in">string</span>&gt; S;</span><br><span class="line"><span class="built_in">string</span> s, f[MAX_N+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">sol</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; a, b, id, p;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)s.size(); i++)</span><br><span class="line">        <span class="keyword">if</span> (s[i] == <span class="string">'a'</span>) a.push_back(i);</span><br><span class="line">        <span class="keyword">else</span> b.push_back(i);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, pa = <span class="number">0</span>, pb = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)s.size(); i++)</span><br><span class="line">        <span class="keyword">if</span> (s[i] == <span class="string">'a'</span>) id.push_back(pa), p.push_back(b[pa]), pa++;</span><br><span class="line">        <span class="keyword">else</span> id.push_back(pb), p.push_back(a[pb]), pb++;</span><br><span class="line">    <span class="built_in">string</span> ret = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">if</span> (s[<span class="number">0</span>] == <span class="string">'a'</span>) {</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)s.size(); i++)</span><br><span class="line">            <span class="keyword">if</span> (s[i] == <span class="string">'a'</span>) ret += <span class="string">"ab"</span>, i = p[i];</span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = (<span class="keyword">int</span>)id.size()<span class="number">-1</span>; ~i; i--) {</span><br><span class="line">            <span class="built_in">string</span> ss = <span class="string">""</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; (<span class="keyword">int</span>)s.size(); j++)</span><br><span class="line">                <span class="keyword">if</span> (id[j] &gt;= i) ss.push_back(s[j]);</span><br><span class="line">            ret = max(ret, ss);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">int</span> n; read(n); <span class="built_in">string</span> str; <span class="built_in">cin</span> &gt;&gt; str, s = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, cnt = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)str.size(); i++) {</span><br><span class="line">        s.push_back(str[i]), cnt += str[i] == <span class="string">'a'</span> ? <span class="number">1</span> : <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span> (!cnt) S.push_back(sol()), s.clear();</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">string</span> ans = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = (<span class="keyword">int</span>)S.size()<span class="number">-1</span>; ~i; i--) {</span><br><span class="line">        f[i] = S[i];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; (<span class="keyword">int</span>)S.size(); j++)</span><br><span class="line">            f[i] = max(f[i], S[i]+f[j]);</span><br><span class="line">        ans = max(ans, f[i]);</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
       
     </div>
@@ -1074,9 +1081,9 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/BZOJ5336【TJOI2018】Party DP套DP 状压DP/" rel="next" title="BZOJ5336【TJOI2018】Party <DP套DP/状压DP>">
-                <i class="fa fa-chevron-left"></i> BZOJ5336【TJOI2018】Party <dp套dp 状压dp="">
-              </dp套dp></a>
+              <a href="/BZOJ1100【POI2007】对称轴osi Manacher/" rel="next" title="BZOJ1100【POI2007】对称轴osi <Manacher>">
+                <i class="fa fa-chevron-left"></i> BZOJ1100【POI2007】对称轴osi <manacher>
+              </manacher></a>
             
           </div>
 
@@ -1198,7 +1205,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">258</span>
+                  <span class="site-state-item-count">263</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1211,7 +1218,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">150</span>
+                  <span class="site-state-item-count">151</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1384,7 +1391,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count:</span>
     
-    <span title="Site words total count">243.4k</span>
+    <span title="Site words total count">248.7k</span>
   
 </div>
 
