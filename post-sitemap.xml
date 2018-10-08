@@ -7,8 +7,56 @@
     </url>
 
     <url>
+        <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
+        <lastmod>2018-10-08T12:53:48.986Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <lastmod>2018-10-08T12:53:33.733Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ5197%E3%80%90CERC2017%E3%80%91Gambling%20Guide%20%E6%A6%82%E7%8E%87DP+Dijkstra/</loc>
+        <lastmod>2018-10-08T12:53:12.687Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/BZOJ2815%E3%80%90ZJOI2012%E3%80%91%E7%81%BE%E9%9A%BE%20%E7%81%AD%E7%BB%9D%E6%A0%91+DP/</loc>
+        <lastmod>2018-10-08T12:52:33.163Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/CF264E%20Roadside%20Trees%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <lastmod>2018-10-08T12:51:52.696Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://azrael.top/AGC026E%20Synchronized%20Subsequence%20%E8%B4%AA%E5%BF%83+DP/</loc>
+        <lastmod>2018-10-08T12:51:09.208Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://azrael.top/AGC018E%20Sightseeing%20Plan%20%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
-        <lastmod>2018-10-08T07:43:04.432Z</lastmod>
+        <lastmod>2018-10-08T12:48:40.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,22 +65,6 @@
     <url>
         <loc>http://azrael.top/BZOJ3033%20%E5%A4%AA%E9%BC%93%E8%BE%BE%E4%BA%BA%20%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</loc>
         <lastmod>2018-10-08T07:40:54.284Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/AGC026E%20Synchronized%20Subsequence%20%E8%B4%AA%E5%BF%83+DP/</loc>
-        <lastmod>2018-10-08T07:36:26.643Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/CF264E%20Roadside%20Trees%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-        <lastmod>2018-10-08T00:10:08.059Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -57,14 +89,6 @@
     <url>
         <loc>http://azrael.top/BZOJ1415%E3%80%90NOI2005%E3%80%91%E8%81%AA%E8%81%AA%E5%92%8C%E5%8F%AF%E5%8F%AF%20%E6%A6%82%E7%8E%87DP+%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
         <lastmod>2018-09-29T06:15:43.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ5197%E3%80%90CERC2017%E3%80%91Gambling%20Guide%20%E6%A6%82%E7%8E%87DP+Dijkstra/</loc>
-        <lastmod>2018-09-29T05:56:23.050Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -273,30 +297,6 @@
     <url>
         <loc>http://azrael.top/BZOJ4184%20Shallot%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB+%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
         <lastmod>2018-09-13T12:09:48.471Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ2815%E3%80%90ZJOI2012%E3%80%91%E7%81%BE%E9%9A%BE%20%E7%81%AD%E7%BB%9D%E6%A0%91+DP/</loc>
-        <lastmod>2018-09-13T11:59:04.995Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
-        <lastmod>2018-09-13T11:56:28.683Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-        <lastmod>2018-09-13T11:56:17.592Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

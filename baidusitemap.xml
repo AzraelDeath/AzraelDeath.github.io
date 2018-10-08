@@ -4,8 +4,156 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
+    <lastmod>2018-10-08T12:53:48.986Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ5418【NOI2018】屠龙勇士 < 扩展CRT ></title>
+        <pubTime>2018-07-19T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
+         
+        <tag>NOI</tag>
+         
+        <tag>CRT</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2018-10-08T12:53:33.733Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ5415【NOI2018】归程 < 最短路+Kruskal重构树+DFS序+线段树 ></title>
+        <pubTime>2018-07-17T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>NOI</tag>
+         
+        <tag>最短路</tag>
+         
+        <tag>Kruskal重构树</tag>
+         
+        <tag>DFS序</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ5197%E3%80%90CERC2017%E3%80%91Gambling%20Guide%20%E6%A6%82%E7%8E%87DP+Dijkstra/</loc>
+    <lastmod>2018-10-08T12:53:12.687Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ5197【CERC2017】Gambling Guide <概率DP+Dijkstra></title>
+        <pubTime>2018-09-26T16:00:00.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>期望</tag>
+         
+        <tag>概率DP</tag>
+         
+        <tag>最短路</tag>
+         
+        <tag>CERC</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ2815%E3%80%90ZJOI2012%E3%80%91%E7%81%BE%E9%9A%BE%20%E7%81%AD%E7%BB%9D%E6%A0%91+DP/</loc>
+    <lastmod>2018-10-08T12:52:33.163Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ2815【ZJOI2012】灾难 <灭绝树+DP></title>
+        <pubTime>2018-09-12T16:00:00.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+        <tag>灭绝树</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/CF264E%20Roadside%20Trees%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <lastmod>2018-10-08T12:51:52.696Z</lastmod>
+    <data>
+        <display>
+        <title>CF264E Roadside Trees <线段树></title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        
+        <tag>线段树</tag>
+         
+        <tag>数据结构</tag>
+         
+        <tag>CodeForces</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/AGC026E%20Synchronized%20Subsequence%20%E8%B4%AA%E5%BF%83+DP/</loc>
+    <lastmod>2018-10-08T12:51:09.208Z</lastmod>
+    <data>
+        <display>
+        <title>AGC026E Synchronized Subsequence <贪心+DP></title>
+        <pubTime>2018-07-31T16:00:00.000Z</pubTime>
+        
+        <tag>AtCoder</tag>
+         
+        <tag>AGC</tag>
+         
+        <tag>贪心</tag>
+         
+        <tag>DP</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/AGC018E%20Sightseeing%20Plan%20%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2018-10-08T07:43:04.432Z</lastmod>
+    <lastmod>2018-10-08T12:48:40.701Z</lastmod>
     <data>
         <display>
         <title>AGC018E Sightseeing Plan <组合数学></title>
@@ -39,50 +187,6 @@
         <tag>图论</tag>
          
         <tag>欧拉回路</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/AGC026E%20Synchronized%20Subsequence%20%E8%B4%AA%E5%BF%83+DP/</loc>
-    <lastmod>2018-10-08T07:36:26.643Z</lastmod>
-    <data>
-        <display>
-        <title>AGC026E Synchronized Subsequence <贪心+DP></title>
-        <pubTime>2018-07-31T16:00:00.000Z</pubTime>
-        
-        <tag>AtCoder</tag>
-         
-        <tag>AGC</tag>
-         
-        <tag>贪心</tag>
-         
-        <tag>DP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/CF264E%20Roadside%20Trees%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-    <lastmod>2018-10-08T00:10:08.059Z</lastmod>
-    <data>
-        <display>
-        <title>CF264E Roadside Trees <线段树></title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
-        
-        <tag>线段树</tag>
-         
-        <tag>数据结构</tag>
-         
-        <tag>CodeForces</tag>
          
          
            
@@ -158,33 +262,6 @@
         <tag>概率DP</tag>
          
         <tag>最短路</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ5197%E3%80%90CERC2017%E3%80%91Gambling%20Guide%20%E6%A6%82%E7%8E%87DP+Dijkstra/</loc>
-    <lastmod>2018-09-29T05:56:23.050Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ5197【CERC2017】Gambling Guide <概率DP+Dijkstra></title>
-        <pubTime>2018-09-26T16:00:00.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>BZOJ</tag>
-         
-        <tag>期望</tag>
-         
-        <tag>概率DP</tag>
-         
-        <tag>最短路</tag>
-         
-        <tag>CERC</tag>
          
          
            
@@ -786,83 +863,6 @@
         <tag>线性基</tag>
          
         <tag>线段树分治</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ2815%E3%80%90ZJOI2012%E3%80%91%E7%81%BE%E9%9A%BE%20%E7%81%AD%E7%BB%9D%E6%A0%91+DP/</loc>
-    <lastmod>2018-09-13T11:59:04.995Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ2815【ZJOI2012】灾难 <灭绝树+DP></title>
-        <pubTime>2018-09-12T16:00:00.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>BZOJ</tag>
-         
-        <tag>省选</tag>
-         
-        <tag>图论</tag>
-         
-        <tag>灭绝树</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
-    <lastmod>2018-09-13T11:56:28.683Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ5418【NOI2018】屠龙勇士 < 扩展CRT ></title>
-        <pubTime>2018-07-19T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>数论数学</tag>
-         
-        <tag>NOI</tag>
-         
-        <tag>CRT</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
-    <lastmod>2018-09-13T11:56:17.592Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ5415【NOI2018】归程 < 最短路+Kruskal重构树+DFS序+线段树 ></title>
-        <pubTime>2018-07-17T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>线段树</tag>
-         
-        <tag>数据结构</tag>
-         
-        <tag>NOI</tag>
-         
-        <tag>最短路</tag>
-         
-        <tag>Kruskal重构树</tag>
-         
-        <tag>DFS序</tag>
          
          
            
