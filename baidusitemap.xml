@@ -4,6 +4,73 @@
 
     
   <url>
+    <loc>http://azrael.top/BZOJ1100%E3%80%90POI2007%E3%80%91%E5%AF%B9%E7%A7%B0%E8%BD%B4osi%20Manacher/</loc>
+    <lastmod>2018-12-20T15:03:53.757Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1100【POI2007】对称轴osi < Manacher ></title>
+        <pubTime>2018-07-27T16:00:00.000Z</pubTime>
+        
+        <tag>BZOJ</tag>
+         
+        <tag>POI</tag>
+         
+        <tag>Manacher</tag>
+         
+        <tag>字符串</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/51Nod1355%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E7%9A%84%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0%20Min-Max%E5%AE%B9%E6%96%A5/</loc>
+    <lastmod>2018-12-20T14:58:13.784Z</lastmod>
+    <data>
+        <display>
+        <title>51Nod1355 斐波那契的最小公倍数 < Min-Max容斥 ></title>
+        <pubTime>2018-10-11T16:00:00.000Z</pubTime>
+        
+        <tag>数论数学</tag>
+         
+        <tag>容斥</tag>
+         
+        <tag>51Nod</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://azrael.top/BZOJ1189%E3%80%90HNOI2007%E3%80%91%E7%B4%A7%E6%80%A5%E7%96%8F%E6%95%A3evacuate%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+    <lastmod>2018-11-01T01:52:53.116Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流></title>
+        <pubTime>2017-09-15T16:00:00.000Z</pubTime>
+        
+        <tag>网络流</tag>
+         
+        <tag>BZOJ</tag>
+         
+        <tag>省选</tag>
+         
+        <tag>图论</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://azrael.top/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F2%E3%80%91%E9%93%B6%E6%B2%B3%E6%88%98%E8%88%B0%20%E7%BA%BF%E6%AE%B5%E6%A0%91+%E7%9F%A9%E9%98%B5/</loc>
     <lastmod>2018-10-26T12:59:10.655Z</lastmod>
     <data>
@@ -130,27 +197,6 @@
 
     
   <url>
-    <loc>http://azrael.top/51Nod1355%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E7%9A%84%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0%20Min-Max%E5%AE%B9%E6%96%A5/</loc>
-    <lastmod>2018-10-26T03:48:47.366Z</lastmod>
-    <data>
-        <display>
-        <title>51Nod1355 斐波那契的最小公倍数 <Min-Max容斥></title>
-        <pubTime>2018-10-11T16:00:00.000Z</pubTime>
-        
-        <tag>容斥</tag>
-         
-        <tag>51Nod</tag>
-         
-        <tag>数论数学</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://azrael.top/BZOJ4176%20Lucas%E7%9A%84%E6%95%B0%E8%AE%BA%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94+%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
     <lastmod>2018-10-26T02:27:14.579Z</lastmod>
     <data>
@@ -158,9 +204,9 @@
         <title>BZOJ4176 Lucas的数论 <莫比乌斯反演+杜教筛></title>
         <pubTime>2018-10-10T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -181,9 +227,9 @@
         <title>BZOJ5418【NOI2018】屠龙勇士 < 扩展CRT ></title>
         <pubTime>2018-07-19T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>NOI</tag>
          
@@ -237,13 +283,13 @@
          
         <tag>BZOJ</tag>
          
+        <tag>CERC</tag>
+         
         <tag>期望</tag>
          
         <tag>概率DP</tag>
          
         <tag>最短路</tag>
-         
-        <tag>CERC</tag>
          
          
            
@@ -310,9 +356,9 @@
          
         <tag>AGC</tag>
          
-        <tag>贪心</tag>
-         
         <tag>DP</tag>
+         
+        <tag>贪心</tag>
          
          
            
@@ -616,9 +662,9 @@
         <title>CF995F Cowmpany Cowmpensation < 树形DP+多项式插值 ></title>
         <pubTime>2018-09-21T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>DP</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>树形DP</tag>
          
@@ -666,11 +712,11 @@
         <title>BZOJ4002【JLOI2015】有意义的字符串 <线性齐次递推></title>
         <pubTime>2018-09-19T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>线性递推</tag>
          
@@ -689,9 +735,9 @@
         <title>BZOJ3516 国王奇遇记加强版 <扰动法></title>
         <pubTime>2018-09-18T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>扰动法</tag>
          
@@ -710,9 +756,9 @@
         <title>BZOJ3157 国王奇遇记 <倍增></title>
         <pubTime>2018-09-18T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>倍增</tag>
          
@@ -731,9 +777,9 @@
         <title>BZOJ4126 国王奇遇记加强版之再加强版 <多项式插值></title>
         <pubTime>2018-09-20T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>多项式插值</tag>
          
@@ -781,9 +827,9 @@
         <title>BZOJ2693 jzptab <莫比乌斯反演></title>
         <pubTime>2018-02-25T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -957,11 +1003,11 @@
         <title>BZOJ4001【TJOI2015】概率论 <生成函数></title>
         <pubTime>2018-09-17T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>生成函数</tag>
          
@@ -1001,9 +1047,9 @@
         <title>BZOJ4184 Shallot <线段树分治+凸包></title>
         <pubTime>2018-09-12T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>数据结构</tag>
          
@@ -1030,9 +1076,9 @@
          
         <tag>数据结构</tag>
          
-        <tag>凸包</tag>
-         
         <tag>计算几何</tag>
+         
+        <tag>凸包</tag>
          
         <tag>线段树分治</tag>
          
@@ -1377,11 +1423,11 @@
         <title>51Nod1667 概率好题 <容斥+计数></title>
         <pubTime>2018-08-03T16:00:00.000Z</pubTime>
         
-        <tag>容斥</tag>
-         
         <tag>计数</tag>
          
         <tag>组合数学</tag>
+         
+        <tag>容斥</tag>
          
         <tag>51Nod</tag>
          
@@ -1423,11 +1469,11 @@
         <title>BZOJ4361 isn <容斥+DP+线段树优化></title>
         <pubTime>2018-07-26T16:00:00.000Z</pubTime>
         
-        <tag>容斥</tag>
-         
         <tag>DP</tag>
          
         <tag>BZOJ</tag>
+         
+        <tag>容斥</tag>
          
         <tag>线段树</tag>
          
@@ -1446,9 +1492,9 @@
         <title>BZOJ4589 Hard Nim < FWT ></title>
         <pubTime>2018-07-25T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>FWT</tag>
          
@@ -1467,9 +1513,9 @@
         <title>BZOJ4974【Lydsy201708月赛】字符串大师 <KMP+贪心构造></title>
         <pubTime>2018-04-30T16:00:00.000Z</pubTime>
         
-        <tag>贪心</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>贪心</tag>
          
         <tag>字符串</tag>
          
@@ -1478,29 +1524,6 @@
         <tag>Lydsy月赛</tag>
          
         <tag>KMP</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ1100%E3%80%90POI2007%E3%80%91%E5%AF%B9%E7%A7%B0%E8%BD%B4osi%20Manacher/</loc>
-    <lastmod>2018-07-30T12:49:05.497Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ1100【POI2007】对称轴osi <Manacher></title>
-        <pubTime>2018-07-27T16:00:00.000Z</pubTime>
-        
-        <tag>BZOJ</tag>
-         
-        <tag>POI</tag>
-         
-        <tag>Manacher</tag>
-         
-        <tag>字符串</tag>
          
          
            
@@ -1542,9 +1565,9 @@
         <title>BZOJ3240【NOI2013】矩阵游戏 <欧拉定理></title>
         <pubTime>2018-07-19T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>NOI</tag>
          
@@ -1596,11 +1619,11 @@
          
         <tag>数据结构</tag>
          
-        <tag>ONTAK</tag>
-         
         <tag>Kruskal重构树</tag>
          
         <tag>DFS序</tag>
+         
+        <tag>ONTAK</tag>
          
          
            
@@ -1617,9 +1640,9 @@
         <title>BZOJ3512 DZY Loves Math IV <莫比乌斯反演+杜教筛></title>
         <pubTime>2018-07-14T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -1640,9 +1663,9 @@
         <title>BZOJ3309 DZY Loves Math <莫比乌斯反演></title>
         <pubTime>2018-02-27T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -1661,9 +1684,9 @@
         <title>BZOJ2987 Earthquake <类欧几里得></title>
         <pubTime>2018-07-14T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>类欧几里得</tag>
          
@@ -1682,9 +1705,9 @@
         <title>BZOJ2187 fraction <类欧几里得></title>
         <pubTime>2018-07-14T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>类欧几里得</tag>
          
@@ -1897,9 +1920,9 @@
          
         <tag>CTSC</tag>
          
-        <tag>子集DP</tag>
-         
         <tag>UOJ</tag>
+         
+        <tag>子集DP</tag>
          
          
            
@@ -2081,11 +2104,11 @@
         <title>BZOJ4869【SHOI2017】相逢是问候 <扩展欧拉定理+线段树></title>
         <pubTime>2018-06-10T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>线段树</tag>
          
@@ -2451,9 +2474,9 @@
         <title>BZOJ2194 快速傅立叶之二 < FFT ></title>
         <pubTime>2018-05-20T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>FFT</tag>
          
@@ -2606,9 +2629,9 @@
         
         <tag>图论</tag>
          
-        <tag>差分约束系统</tag>
-         
         <tag>POJ</tag>
+         
+        <tag>差分约束系统</tag>
          
          
            
@@ -2776,9 +2799,9 @@
          
         <tag>图论</tag>
          
-        <tag>NOI</tag>
-         
         <tag>连通分量</tag>
+         
+        <tag>NOI</tag>
          
          
            
@@ -2858,11 +2881,11 @@
         <title>BZOJ4816【SDOI2017】数字表格 <莫比乌斯反演></title>
         <pubTime>2018-05-04T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -2902,11 +2925,11 @@
         <title>BZOJ3143【HNOI2013】游走 <高斯消元></title>
         <pubTime>2018-05-03T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>高斯消元</tag>
          
@@ -2925,11 +2948,11 @@
         <title>BZOJ1013【JSOI2008】球形空间产生器 <高斯消元></title>
         <pubTime>2018-05-03T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>高斯消元</tag>
          
@@ -2948,11 +2971,11 @@
         <title>BZOJ2466【中山市选2009】树 <高斯消元></title>
         <pubTime>2017-10-16T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>高斯消元</tag>
          
@@ -3205,9 +3228,9 @@
         <title>BZOJ4174 tty的求助 <莫比乌斯反演></title>
         <pubTime>2018-04-28T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -3226,11 +3249,11 @@
         <title>BZOJ3994【SDOI2015】约数个数和 <莫比乌斯反演></title>
         <pubTime>2018-04-27T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -3249,9 +3272,9 @@
         <title>BZOJ2154 Crash的数字表格 <莫比乌斯反演></title>
         <pubTime>2018-02-25T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -3272,9 +3295,9 @@
         
         <tag>图论</tag>
          
-        <tag>MST</tag>
-         
         <tag>LCA</tag>
+         
+        <tag>MST</tag>
          
         <tag>NOIp</tag>
          
@@ -3318,9 +3341,9 @@
         
         <tag>组合数学</tag>
          
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>Prufer序列</tag>
          
@@ -3339,13 +3362,13 @@
         <title>BZOJ4568【SCOI2016】幸运数字 < LCA+线性基 ></title>
         <pubTime>2018-04-01T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>图论</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>LCA</tag>
          
@@ -3466,11 +3489,11 @@
          
         <tag>图论</tag>
          
+        <tag>NOI</tag>
+         
         <tag>线性规划</tag>
          
         <tag>费用流</tag>
-         
-        <tag>NOI</tag>
          
          
            
@@ -3527,13 +3550,13 @@
         <title>BZOJ2440【中山市选2011】完全平方数 <二分+莫比乌斯容斥></title>
         <pubTime>2018-04-24T16:00:00.000Z</pubTime>
         
-        <tag>容斥</tag>
-         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
+         
+        <tag>数论数学</tag>
+         
+        <tag>容斥</tag>
          
         <tag>二分</tag>
          
@@ -3780,9 +3803,9 @@
         <title>BZOJ1178【APIO2009】会议中心 <贪心+倍增></title>
         <pubTime>2018-04-19T16:00:00.000Z</pubTime>
         
-        <tag>贪心</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>贪心</tag>
          
         <tag>APIO</tag>
          
@@ -3981,9 +4004,9 @@
          
         <tag>数据结构</tag>
          
-        <tag>可并堆</tag>
-         
         <tag>APIO</tag>
+         
+        <tag>可并堆</tag>
          
          
            
@@ -3999,29 +4022,6 @@
         <display>
         <title>BZOJ5251【2018多省省队联测】劈配 <网络流></title>
         <pubTime>2018-04-13T16:00:00.000Z</pubTime>
-        
-        <tag>网络流</tag>
-         
-        <tag>BZOJ</tag>
-         
-        <tag>省选</tag>
-         
-        <tag>图论</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://azrael.top/BZOJ1189%E3%80%90HNOI2007%E3%80%91%E7%B4%A7%E6%80%A5%E7%96%8F%E6%95%A3evacuate%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
-    <lastmod>2018-04-16T08:23:03.957Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ1189【HNOI2007】紧急疏散evacuate <二分答案+网络流></title>
-        <pubTime>2017-09-15T16:00:00.000Z</pubTime>
         
         <tag>网络流</tag>
          
@@ -4157,9 +4157,9 @@
         <title>BZOJ3944 Sum <杜教筛></title>
         <pubTime>2018-04-03T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>杜教筛</tag>
          
@@ -4228,9 +4228,9 @@
         <title>BZOJ2115【WC2011】Xor <线性基></title>
         <pubTime>2018-04-01T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>线性基</tag>
          
@@ -4318,9 +4318,9 @@
         <title>BZOJ2820 YY的GCD <莫比乌斯反演></title>
         <pubTime>2018-03-25T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -4339,9 +4339,9 @@
         <title>BZOJ2671 Calc <莫比乌斯反演></title>
         <pubTime>2018-02-11T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -4383,9 +4383,9 @@
         <title>【福利】洛谷模板汇总</title>
         <pubTime>2017-09-28T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>图论</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>数据结构</tag>
          
@@ -4506,13 +4506,13 @@
         
         <tag>组合数学</tag>
          
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
          
         <tag>省选</tag>
          
         <tag>补集转换</tag>
+         
+        <tag>数论数学</tag>
          
          
            
@@ -5009,9 +5009,9 @@
         <title>BZOJ4407 于神之怒加强版 <莫比乌斯反演></title>
         <pubTime>2018-03-01T16:00:00.000Z</pubTime>
         
-        <tag>数论数学</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>数论数学</tag>
          
         <tag>莫比乌斯反演</tag>
          
@@ -5557,9 +5557,9 @@
         
         <tag>BZOJ</tag>
          
-        <tag>AMPPZ</tag>
-         
         <tag>构造</tag>
+         
+        <tag>AMPPZ</tag>
          
          
            
@@ -5576,9 +5576,9 @@
         <title>BZOJ4325【NOIp2015】斗地主 <搜索+贪心></title>
         <pubTime>2017-10-24T16:00:00.000Z</pubTime>
         
-        <tag>贪心</tag>
-         
         <tag>BZOJ</tag>
+         
+        <tag>贪心</tag>
          
         <tag>NOIp</tag>
          
