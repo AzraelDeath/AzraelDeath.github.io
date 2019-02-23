@@ -102,7 +102,7 @@
 <meta name="keywords" content="DP,BZOJ,期望,概率DP,Lydsy月赛">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ4832【Lydsy1704月赛】抵制克苏恩 <概率DP>">
-<meta property="og:url" content="http://azrael.top/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/index.html">
+<meta property="og:url" content="http://azraeldeath.github.io/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/index.html">
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem【Lydsy1704月赛】抵制克苏恩                                                                                                   Description     小    同学现在沉迷炉石传说不能自拔。他发现一张名为克苏恩的牌很不公平。如果你不玩炉石传说，不必担心，     小">
 <meta property="og:locale" content="zh-Hans">
@@ -139,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="http://azrael.top/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/">
+  <link rel="canonical" href="http://azraeldeath.github.io/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/">
 
 
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/">
+    <link itemprop="mainEntityOfPage" href="http://azraeldeath.github.io/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -885,7 +885,7 @@
  <use xlink:href="#E40-MJMAIN-5D" x="5371" y="0"></use>
 </g>
 </svg></span>。</p>
-<p>加强版：<a href="http://azrael.top/LOJ2325%E3%80%8C%E6%B8%85%E5%8D%8E%E9%9B%86%E8%AE%AD2017%E3%80%8D%E5%B0%8FY%E5%92%8C%E6%81%90%E6%80%96%E7%9A%84%E5%A5%B4%E9%9A%B6%E4%B8%BB/">LOJ2325「清华集训2017」小Y和恐怖的奴隶主</a>。</p>
+<p>加强版：<a href="http://azrael.top/LOJ2325%E3%80%8C%E6%B8%85%E5%8D%8E%E9%9B%86%E8%AE%AD2017%E3%80%8D%E5%B0%8FY%E5%92%8C%E6%81%90%E6%80%96%E7%9A%84%E5%A5%B4%E9%9A%B6%E4%B8%BB/" target="_blank" rel="noopener">LOJ2325「清华集训2017」小Y和恐怖的奴隶主</a>。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> dnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt; <span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) {</span></span><br><span class="line">    x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">}</span><br><span class="line">dnt f[<span class="number">50</span>][<span class="number">10</span>][<span class="number">10</span>][<span class="number">10</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">49</span>; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> a = <span class="number">0</span>; a &lt;= <span class="number">7</span>; a++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> b = <span class="number">0</span>; b &lt;= <span class="number">7</span>-a; b++)</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> c = <span class="number">0</span>; c &lt;= <span class="number">7</span>-a-b; c++) {</span><br><span class="line">                    dnt p = <span class="number">1.0</span>/(a+b+c+<span class="number">1.0</span>);</span><br><span class="line">                    f[i+<span class="number">1</span>][a][b][c] += (f[i][a][b][c]+<span class="number">1.0</span>)*p;</span><br><span class="line">                    <span class="keyword">if</span> (a) f[i+<span class="number">1</span>][a][b][c] += f[i][a<span class="number">-1</span>][b][c]*a*p;</span><br><span class="line">                    <span class="keyword">if</span> (b &amp;&amp; a+b+c &lt; <span class="number">7</span>) f[i+<span class="number">1</span>][a][b][c] += f[i][a+<span class="number">1</span>][b<span class="number">-1</span>][c+<span class="number">1</span>]*b*p;</span><br><span class="line">                    <span class="keyword">if</span> (b &amp;&amp; a+b+c &gt;= <span class="number">7</span>) f[i+<span class="number">1</span>][a][b][c] += f[i][a+<span class="number">1</span>][b<span class="number">-1</span>][c]*b*p;</span><br><span class="line">                    <span class="keyword">if</span> (c &amp;&amp; a+b+c &lt; <span class="number">7</span>) f[i+<span class="number">1</span>][a][b][c] += f[i][a][b+<span class="number">1</span>][c]*c*p;</span><br><span class="line">                    <span class="keyword">if</span> (c &amp;&amp; a+b+c &gt;= <span class="number">7</span>) f[i+<span class="number">1</span>][a][b][c] += f[i][a][b+<span class="number">1</span>][c<span class="number">-1</span>]*c*p;</span><br><span class="line">                }</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="keyword">int</span> T; read(T), init();</span><br><span class="line">    <span class="keyword">while</span> (T--) {</span><br><span class="line">        <span class="keyword">int</span> n, a, b, c;</span><br><span class="line">        read(n), read(a), read(b), read(c);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>, f[n][a][b][c]);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
       
     </div>
@@ -917,7 +917,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://azrael.top/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/" title="BZOJ4832【Lydsy1704月赛】抵制克苏恩 <概率DP>">http://azrael.top/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/</a>
+    <a href="http://azraeldeath.github.io/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/" title="BZOJ4832【Lydsy1704月赛】抵制克苏恩 <概率DP>">http://azraeldeath.github.io/BZOJ4832【Lydsy1704月赛】抵制克苏恩 概率DP/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -1249,7 +1249,7 @@ var jiathis_config={
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async="" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">© <span itemprop="copyrightYear">2018</span>
+<div class="copyright">© <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

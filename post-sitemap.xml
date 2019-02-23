@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://azrael.top</loc>
+        <loc>http://azraeldeath.github.io</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1100%E3%80%90POI2007%E3%80%91%E5%AF%B9%E7%A7%B0%E8%BD%B4osi%20Manacher/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1100%E3%80%90POI2007%E3%80%91%E5%AF%B9%E7%A7%B0%E8%BD%B4osi%20Manacher/</loc>
         <lastmod>2018-12-20T15:03:53.757Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -15,7 +15,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/51Nod1355%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E7%9A%84%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0%20Min-Max%E5%AE%B9%E6%96%A5/</loc>
+        <loc>http://azraeldeath.github.io/51Nod1355%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E7%9A%84%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0%20Min-Max%E5%AE%B9%E6%96%A5/</loc>
         <lastmod>2018-12-20T14:58:13.784Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -23,7 +23,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1189%E3%80%90HNOI2007%E3%80%91%E7%B4%A7%E6%80%A5%E7%96%8F%E6%95%A3evacuate%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1189%E3%80%90HNOI2007%E3%80%91%E7%B4%A7%E6%80%A5%E7%96%8F%E6%95%A3evacuate%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-11-01T01:52:53.116Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -31,7 +31,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F2%E3%80%91%E9%93%B6%E6%B2%B3%E6%88%98%E8%88%B0%20%E7%BA%BF%E6%AE%B5%E6%A0%91+%E7%9F%A9%E9%98%B5/</loc>
+        <loc>http://azraeldeath.github.io/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F2%E3%80%91%E9%93%B6%E6%B2%B3%E6%88%98%E8%88%B0%20%E7%BA%BF%E6%AE%B5%E6%A0%91+%E7%9F%A9%E9%98%B5/</loc>
         <lastmod>2018-10-26T12:59:10.655Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -39,7 +39,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2018%E6%A8%A1%E6%8B%9F3%E3%80%91%E6%89%8B%E6%8B%89%E6%89%8B%20%E6%A6%82%E7%8E%87DP/</loc>
+        <loc>http://azraeldeath.github.io/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2018%E6%A8%A1%E6%8B%9F3%E3%80%91%E6%89%8B%E6%8B%89%E6%89%8B%20%E6%A6%82%E7%8E%87DP/</loc>
         <lastmod>2018-10-26T12:55:11.169Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -47,7 +47,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2018%E6%A8%A1%E6%8B%9F1%E3%80%91%E6%95%B0%E4%B8%89%E8%A7%92%E5%BD%A2%20%E6%A6%82%E7%8E%87/</loc>
+        <loc>http://azraeldeath.github.io/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2018%E6%A8%A1%E6%8B%9F1%E3%80%91%E6%95%B0%E4%B8%89%E8%A7%92%E5%BD%A2%20%E6%A6%82%E7%8E%87/</loc>
         <lastmod>2018-10-26T12:34:27.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -55,7 +55,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F3%E3%80%91%E6%95%B0%E4%B8%89%E8%A7%92%E5%BD%A2%20%E8%AE%A1%E6%95%B0/</loc>
+        <loc>http://azraeldeath.github.io/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F3%E3%80%91%E6%95%B0%E4%B8%89%E8%A7%92%E5%BD%A2%20%E8%AE%A1%E6%95%B0/</loc>
         <lastmod>2018-10-26T11:42:27.155Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -63,7 +63,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F3%E3%80%91%E4%BB%BB%E6%80%A7%E7%9A%84%E5%9B%BD%E7%8E%8B%20%E7%BA%BF%E6%AE%B5%E6%A0%91+MST/</loc>
+        <loc>http://azraeldeath.github.io/%E8%AE%A1%E8%92%9C%E5%AE%A2%E3%80%90NOIP2017%E6%A8%A1%E6%8B%9F3%E3%80%91%E4%BB%BB%E6%80%A7%E7%9A%84%E5%9B%BD%E7%8E%8B%20%E7%BA%BF%E6%AE%B5%E6%A0%91+MST/</loc>
         <lastmod>2018-10-26T11:16:33.579Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -71,7 +71,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E3%80%90ACM-ICPC%202018%20%E5%8D%97%E4%BA%AC%E8%B5%9B%E5%8C%BA%E7%BD%91%E7%BB%9C%E9%A2%84%E8%B5%9B%E3%80%91Set%20%E5%B9%B6%E6%9F%A5%E9%9B%86+Trie%E5%90%88%E5%B9%B6/</loc>
+        <loc>http://azraeldeath.github.io/%E3%80%90ACM-ICPC%202018%20%E5%8D%97%E4%BA%AC%E8%B5%9B%E5%8C%BA%E7%BD%91%E7%BB%9C%E9%A2%84%E8%B5%9B%E3%80%91Set%20%E5%B9%B6%E6%9F%A5%E9%9B%86+Trie%E5%90%88%E5%B9%B6/</loc>
         <lastmod>2018-10-26T10:37:19.842Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -79,7 +79,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4176%20Lucas%E7%9A%84%E6%95%B0%E8%AE%BA%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94+%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4176%20Lucas%E7%9A%84%E6%95%B0%E8%AE%BA%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94+%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
         <lastmod>2018-10-26T02:27:14.579Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -87,7 +87,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5418%E3%80%90NOI2018%E3%80%91%E5%B1%A0%E9%BE%99%E5%8B%87%E5%A3%AB%20%E6%89%A9%E5%B1%95CRT/</loc>
         <lastmod>2018-10-08T12:53:48.986Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -95,7 +95,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5415%E3%80%90NOI2018%E3%80%91%E5%BD%92%E7%A8%8B%20%E6%9C%80%E7%9F%AD%E8%B7%AF+Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-10-08T12:53:33.733Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -103,7 +103,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5197%E3%80%90CERC2017%E3%80%91Gambling%20Guide%20%E6%A6%82%E7%8E%87DP+Dijkstra/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5197%E3%80%90CERC2017%E3%80%91Gambling%20Guide%20%E6%A6%82%E7%8E%87DP+Dijkstra/</loc>
         <lastmod>2018-10-08T12:53:12.687Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -111,7 +111,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2815%E3%80%90ZJOI2012%E3%80%91%E7%81%BE%E9%9A%BE%20%E7%81%AD%E7%BB%9D%E6%A0%91+DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2815%E3%80%90ZJOI2012%E3%80%91%E7%81%BE%E9%9A%BE%20%E7%81%AD%E7%BB%9D%E6%A0%91+DP/</loc>
         <lastmod>2018-10-08T12:52:33.163Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -119,7 +119,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF264E%20Roadside%20Trees%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/CF264E%20Roadside%20Trees%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-10-08T12:51:52.696Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -127,7 +127,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/AGC026E%20Synchronized%20Subsequence%20%E8%B4%AA%E5%BF%83+DP/</loc>
+        <loc>http://azraeldeath.github.io/AGC026E%20Synchronized%20Subsequence%20%E8%B4%AA%E5%BF%83+DP/</loc>
         <lastmod>2018-10-08T12:51:09.208Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -135,7 +135,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/AGC018E%20Sightseeing%20Plan%20%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
+        <loc>http://azraeldeath.github.io/AGC018E%20Sightseeing%20Plan%20%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2018-10-08T12:48:40.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -143,7 +143,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3033%20%E5%A4%AA%E9%BC%93%E8%BE%BE%E4%BA%BA%20%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3033%20%E5%A4%AA%E9%BC%93%E8%BE%BE%E4%BA%BA%20%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</loc>
         <lastmod>2018-10-08T07:40:54.284Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -151,7 +151,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4872%E3%80%90SHOI2017%E3%80%91%E5%88%86%E6%89%8B%E6%98%AF%E7%A5%9D%E6%84%BF%20%E6%A6%82%E7%8E%87DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4872%E3%80%90SHOI2017%E3%80%91%E5%88%86%E6%89%8B%E6%98%AF%E7%A5%9D%E6%84%BF%20%E6%A6%82%E7%8E%87DP/</loc>
         <lastmod>2018-10-03T11:51:32.999Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -159,7 +159,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1415%E3%80%90NOI2005%E3%80%91%E8%81%AA%E8%81%AA%E5%92%8C%E5%8F%AF%E5%8F%AF%20%E6%A6%82%E7%8E%87DP+%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1415%E3%80%90NOI2005%E3%80%91%E8%81%AA%E8%81%AA%E5%92%8C%E5%8F%AF%E5%8F%AF%20%E6%A6%82%E7%8E%87DP+%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
         <lastmod>2018-09-29T06:15:43.529Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -167,7 +167,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3566%E3%80%90SHOI2014%E3%80%91%E6%A6%82%E7%8E%87%E5%85%85%E7%94%B5%E5%99%A8%20%E6%A6%82%E7%8E%87DP+%E6%A0%91%E5%BD%A2DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3566%E3%80%90SHOI2014%E3%80%91%E6%A6%82%E7%8E%87%E5%85%85%E7%94%B5%E5%99%A8%20%E6%A6%82%E7%8E%87DP+%E6%A0%91%E5%BD%A2DP/</loc>
         <lastmod>2018-09-28T08:59:03.502Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -175,7 +175,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2688%20Green%20Hackenbush%20%E6%A6%82%E7%8E%87DP+%E5%8D%9A%E5%BC%88%E8%AE%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2688%20Green%20Hackenbush%20%E6%A6%82%E7%8E%87DP+%E5%8D%9A%E5%BC%88%E8%AE%BA/</loc>
         <lastmod>2018-09-28T08:45:57.232Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -183,7 +183,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2201%20%E5%BD%A9%E8%89%B2%E5%9C%86%E7%8E%AF%20%E6%A6%82%E7%8E%87DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2201%20%E5%BD%A9%E8%89%B2%E5%9C%86%E7%8E%AF%20%E6%A6%82%E7%8E%87DP/</loc>
         <lastmod>2018-09-28T08:12:58.306Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -191,7 +191,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4832%E3%80%90Lydsy1704%E6%9C%88%E8%B5%9B%E3%80%91%E6%8A%B5%E5%88%B6%E5%85%8B%E8%8B%8F%E6%81%A9%20%E6%A6%82%E7%8E%87DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4832%E3%80%90Lydsy1704%E6%9C%88%E8%B5%9B%E3%80%91%E6%8A%B5%E5%88%B6%E5%85%8B%E8%8B%8F%E6%81%A9%20%E6%A6%82%E7%8E%87DP/</loc>
         <lastmod>2018-09-28T07:59:09.040Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -199,7 +199,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4720%E3%80%90NOIp2016%E3%80%91%E6%8D%A2%E6%95%99%E5%AE%A4%20%E6%A6%82%E7%8E%87DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4720%E3%80%90NOIp2016%E3%80%91%E6%8D%A2%E6%95%99%E5%AE%A4%20%E6%A6%82%E7%8E%87DP/</loc>
         <lastmod>2018-09-28T07:29:16.811Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -207,7 +207,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2306%E3%80%90CTSC2011%E3%80%91%E5%B9%B8%E7%A6%8F%E8%B7%AF%E5%BE%84%20%E6%A6%82%E7%8E%87DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2306%E3%80%90CTSC2011%E3%80%91%E5%B9%B8%E7%A6%8F%E8%B7%AF%E5%BE%84%20%E6%A6%82%E7%8E%87DP/</loc>
         <lastmod>2018-09-28T07:28:38.795Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -215,7 +215,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/ARC072E%20Alice%20in%20linear%20land%20DP/</loc>
+        <loc>http://azraeldeath.github.io/ARC072E%20Alice%20in%20linear%20land%20DP/</loc>
         <lastmod>2018-09-25T08:42:30.256Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -223,7 +223,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/AGC021E%20Ball%20Eat%20Chameleons%20%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
+        <loc>http://azraeldeath.github.io/AGC021E%20Ball%20Eat%20Chameleons%20%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2018-09-25T07:55:31.171Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -231,7 +231,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF995F%20Cowmpany%20Cowmpensation%20%E6%A0%91%E5%BD%A2DP+%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%8F%92%E5%80%BC/</loc>
+        <loc>http://azraeldeath.github.io/CF995F%20Cowmpany%20Cowmpensation%20%E6%A0%91%E5%BD%A2DP+%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%8F%92%E5%80%BC/</loc>
         <lastmod>2018-09-25T02:30:01.227Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -239,7 +239,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/ARC068F%20Solitaire%20%E8%AE%A1%E6%95%B0DP/</loc>
+        <loc>http://azraeldeath.github.io/ARC068F%20Solitaire%20%E8%AE%A1%E6%95%B0DP/</loc>
         <lastmod>2018-09-21T11:20:44.773Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -247,7 +247,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4002%E3%80%90JLOI2015%E3%80%91%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%20%E7%BA%BF%E6%80%A7%E9%BD%90%E6%AC%A1%E9%80%92%E6%8E%A8/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4002%E3%80%90JLOI2015%E3%80%91%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%20%E7%BA%BF%E6%80%A7%E9%BD%90%E6%AC%A1%E9%80%92%E6%8E%A8/</loc>
         <lastmod>2018-09-21T10:55:14.814Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -255,7 +255,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3516%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%20%E6%89%B0%E5%8A%A8%E6%B3%95/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3516%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%20%E6%89%B0%E5%8A%A8%E6%B3%95/</loc>
         <lastmod>2018-09-21T10:28:34.448Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -263,7 +263,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3157%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%20%E5%80%8D%E5%A2%9E/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3157%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%20%E5%80%8D%E5%A2%9E/</loc>
         <lastmod>2018-09-21T10:28:33.321Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -271,7 +271,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4126%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%E4%B9%8B%E5%86%8D%E5%8A%A0%E5%BC%BA%E7%89%88%20%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%8F%92%E5%80%BC/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4126%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%E4%B9%8B%E5%86%8D%E5%8A%A0%E5%BC%BA%E7%89%88%20%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%8F%92%E5%80%BC/</loc>
         <lastmod>2018-09-21T10:23:29.722Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -279,7 +279,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2001%E3%80%90HNOI2010%E3%80%91%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE%20CDQ%E5%88%86%E6%B2%BB+MST/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2001%E3%80%90HNOI2010%E3%80%91%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE%20CDQ%E5%88%86%E6%B2%BB+MST/</loc>
         <lastmod>2018-09-19T11:29:27.085Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -287,7 +287,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2693%20jzptab%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2693%20jzptab%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-09-19T11:08:04.654Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -295,7 +295,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/HR34E%20Magic%20Cards%20%E7%8A%B6%E5%8E%8B/</loc>
+        <loc>http://azraeldeath.github.io/HR34E%20Magic%20Cards%20%E7%8A%B6%E5%8E%8B/</loc>
         <lastmod>2018-09-19T10:51:52.390Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -303,7 +303,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1087%E3%80%90SCOI2005%E3%80%91%E4%BA%92%E4%B8%8D%E4%BE%B5%E7%8A%AFKing%20%E7%8A%B6%E5%8E%8BDP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1087%E3%80%90SCOI2005%E3%80%91%E4%BA%92%E4%B8%8D%E4%BE%B5%E7%8A%AFKing%20%E7%8A%B6%E5%8E%8BDP/</loc>
         <lastmod>2018-09-19T10:40:34.152Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -311,7 +311,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4145%E3%80%90AMPPZ2014%E3%80%91The%20Prices%20%E7%8A%B6%E5%8E%8BDP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4145%E3%80%90AMPPZ2014%E3%80%91The%20Prices%20%E7%8A%B6%E5%8E%8BDP/</loc>
         <lastmod>2018-09-19T10:40:25.573Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -319,7 +319,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4565%E3%80%90HAOI2016%E3%80%91%E5%AD%97%E7%AC%A6%E5%90%88%E5%B9%B6%20%E7%8A%B6%E5%8E%8BDP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4565%E3%80%90HAOI2016%E3%80%91%E5%AD%97%E7%AC%A6%E5%90%88%E5%B9%B6%20%E7%8A%B6%E5%8E%8BDP/</loc>
         <lastmod>2018-09-19T10:39:54.223Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -327,7 +327,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF453B%20Little%20Pony%20and%20Harmony%20Chest%20%E7%8A%B6%E5%8E%8BDP/</loc>
+        <loc>http://azraeldeath.github.io/CF453B%20Little%20Pony%20and%20Harmony%20Chest%20%E7%8A%B6%E5%8E%8BDP/</loc>
         <lastmod>2018-09-19T10:39:25.440Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -335,7 +335,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5336%E3%80%90TJOI2018%E3%80%91Party%20DP%E5%A5%97DP%20%E7%8A%B6%E5%8E%8BDP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5336%E3%80%90TJOI2018%E3%80%91Party%20DP%E5%A5%97DP%20%E7%8A%B6%E5%8E%8BDP/</loc>
         <lastmod>2018-09-19T10:39:11.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -343,7 +343,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF40E%20Number%20Table%20%E8%AE%A1%E6%95%B0/</loc>
+        <loc>http://azraeldeath.github.io/CF40E%20Number%20Table%20%E8%AE%A1%E6%95%B0/</loc>
         <lastmod>2018-09-19T10:10:49.494Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -351,7 +351,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4001%E3%80%90TJOI2015%E3%80%91%E6%A6%82%E7%8E%87%E8%AE%BA%20%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4001%E3%80%90TJOI2015%E3%80%91%E6%A6%82%E7%8E%87%E8%AE%BA%20%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/</loc>
         <lastmod>2018-09-18T11:11:05.587Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -359,7 +359,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2957%20%E6%A5%BC%E6%88%BF%E9%87%8D%E5%BB%BA%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2957%20%E6%A5%BC%E6%88%BF%E9%87%8D%E5%BB%BA%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-09-14T03:31:59.891Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -367,7 +367,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4184%20Shallot%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB+%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4184%20Shallot%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB+%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
         <lastmod>2018-09-13T12:09:48.471Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -375,7 +375,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4311%20%E5%90%91%E9%87%8F%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB+%E5%87%B8%E5%8C%85/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4311%20%E5%90%91%E9%87%8F%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB+%E5%87%B8%E5%8C%85/</loc>
         <lastmod>2018-09-12T12:08:02.761Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -383,7 +383,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3702%20%E4%BA%8C%E5%8F%89%E6%A0%91%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3702%20%E4%BA%8C%E5%8F%89%E6%A0%91%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
         <lastmod>2018-09-12T11:54:47.093Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -391,7 +391,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4373%20%E7%AE%97%E6%9C%AF%E5%A4%A9%E6%89%8D%E2%91%A8%E4%B8%8E%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%20%E7%BA%BF%E6%AE%B5%E6%A0%91+set/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4373%20%E7%AE%97%E6%9C%AF%E5%A4%A9%E6%89%8D%E2%91%A8%E4%B8%8E%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%20%E7%BA%BF%E6%AE%B5%E6%A0%91+set/</loc>
         <lastmod>2018-09-12T08:00:43.503Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -399,7 +399,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1604%E3%80%90USACO2008%20Open%E3%80%91%E5%A5%B6%E7%89%9B%E7%9A%84%E9%82%BB%E5%B1%85%20%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95+set/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1604%E3%80%90USACO2008%20Open%E3%80%91%E5%A5%B6%E7%89%9B%E7%9A%84%E9%82%BB%E5%B1%85%20%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95+set/</loc>
         <lastmod>2018-09-06T12:40:00.406Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -407,7 +407,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1594%E3%80%90USACO2008%20Jan%E3%80%91%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1594%E3%80%90USACO2008%20Jan%E3%80%91%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-09-06T12:26:56.386Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -415,7 +415,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3611%E3%80%90HEOI2014%E3%80%91%E5%A4%A7%E5%B7%A5%E7%A8%8B%20%E8%99%9A%E6%A0%91+DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3611%E3%80%90HEOI2014%E3%80%91%E5%A4%A7%E5%B7%A5%E7%A8%8B%20%E8%99%9A%E6%A0%91+DP/</loc>
         <lastmod>2018-09-06T11:57:46.757Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -423,7 +423,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1057%E3%80%90ZJOI2007%E3%80%91%E6%A3%8B%E7%9B%98%E5%88%B6%E4%BD%9C%20%E6%82%AC%E7%BA%BF%E6%B3%95DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1057%E3%80%90ZJOI2007%E3%80%91%E6%A3%8B%E7%9B%98%E5%88%B6%E4%BD%9C%20%E6%82%AC%E7%BA%BF%E6%B3%95DP/</loc>
         <lastmod>2018-09-06T11:23:25.251Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -431,7 +431,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3165%E3%80%90HEOI2013%E3%80%91Segment%20%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3165%E3%80%90HEOI2013%E3%80%91Segment%20%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-08-22T12:44:22.291Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -439,7 +439,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1797%E3%80%90AHOI2009%E3%80%91Mincut%E6%9C%80%E5%B0%8F%E5%89%B2%20%E7%BD%91%E7%BB%9C%E6%B5%81+Tarjan/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1797%E3%80%90AHOI2009%E3%80%91Mincut%E6%9C%80%E5%B0%8F%E5%89%B2%20%E7%BD%91%E7%BB%9C%E6%B5%81+Tarjan/</loc>
         <lastmod>2018-08-22T12:38:43.180Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -447,7 +447,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4205%E3%80%90FJ2015%E9%9B%86%E8%AE%AD%E3%80%91%E5%8D%A1%E7%89%8C%E9%85%8D%E5%AF%B9%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4205%E3%80%90FJ2015%E9%9B%86%E8%AE%AD%E3%80%91%E5%8D%A1%E7%89%8C%E9%85%8D%E5%AF%B9%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-08-22T12:14:19.866Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -455,7 +455,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1552%E3%80%90CERC2007%E3%80%91Robotic%20Sort%20Splay/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1552%E3%80%90CERC2007%E3%80%91Robotic%20Sort%20Splay/</loc>
         <lastmod>2018-08-21T05:09:38.646Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -463,7 +463,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1503%E3%80%90NOI2004%E3%80%91%E9%83%81%E9%97%B7%E7%9A%84%E5%87%BA%E7%BA%B3%E5%91%98%20Splay/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1503%E3%80%90NOI2004%E3%80%91%E9%83%81%E9%97%B7%E7%9A%84%E5%87%BA%E7%BA%B3%E5%91%98%20Splay/</loc>
         <lastmod>2018-08-21T05:03:05.548Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -471,7 +471,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4864%E3%80%90BJWC2017%E3%80%91%E7%A5%9E%E7%A7%98%E7%89%A9%E8%B4%A8%20Splay/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4864%E3%80%90BJWC2017%E3%80%91%E7%A5%9E%E7%A7%98%E7%89%A9%E8%B4%A8%20Splay/</loc>
         <lastmod>2018-08-21T03:44:22.786Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -479,7 +479,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4206%20%E6%9C%80%E5%A4%A7%E5%9B%A2%20%E5%87%A0%E4%BD%95+DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4206%20%E6%9C%80%E5%A4%A7%E5%9B%A2%20%E5%87%A0%E4%BD%95+DP/</loc>
         <lastmod>2018-08-12T13:01:29.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -487,7 +487,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1004%E3%80%90HNOI2008%E3%80%91Cards%20Burside%E5%BC%95%E7%90%86+%E8%83%8C%E5%8C%85DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1004%E3%80%90HNOI2008%E3%80%91Cards%20Burside%E5%BC%95%E7%90%86+%E8%83%8C%E5%8C%85DP/</loc>
         <lastmod>2018-08-12T09:15:53.607Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -495,7 +495,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/51Nod1667%20%E6%A6%82%E7%8E%87%E5%A5%BD%E9%A2%98%20%E5%AE%B9%E6%96%A5+%E8%AE%A1%E6%95%B0/</loc>
+        <loc>http://azraeldeath.github.io/51Nod1667%20%E6%A6%82%E7%8E%87%E5%A5%BD%E9%A2%98%20%E5%AE%B9%E6%96%A5+%E8%AE%A1%E6%95%B0/</loc>
         <lastmod>2018-08-05T06:51:41.243Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -503,7 +503,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4721%E3%80%90NOIp2016%E3%80%91%E8%9A%AF%E8%9A%93%20%E9%98%9F%E5%88%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4721%E3%80%90NOIp2016%E3%80%91%E8%9A%AF%E8%9A%93%20%E9%98%9F%E5%88%97/</loc>
         <lastmod>2018-08-03T00:24:45.897Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -511,7 +511,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4361%20isn%20%E5%AE%B9%E6%96%A5+DP+%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%BC%98%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4361%20isn%20%E5%AE%B9%E6%96%A5+DP+%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2018-08-02T14:13:52.054Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -519,7 +519,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4589%20Hard%20Nim%20FWT/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4589%20Hard%20Nim%20FWT/</loc>
         <lastmod>2018-08-02T01:59:23.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -527,7 +527,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4974%E3%80%90Lydsy1708%E6%9C%88%E8%B5%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%A7%E5%B8%88%20KMP+%E8%B4%AA%E5%BF%83%E6%9E%84%E9%80%A0/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4974%E3%80%90Lydsy1708%E6%9C%88%E8%B5%9B%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%A7%E5%B8%88%20KMP+%E8%B4%AA%E5%BF%83%E6%9E%84%E9%80%A0/</loc>
         <lastmod>2018-08-01T02:53:58.529Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -535,7 +535,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/LOJ2325%E3%80%8C%E6%B8%85%E5%8D%8E%E9%9B%86%E8%AE%AD2017%E3%80%8D%E5%B0%8FY%E5%92%8C%E6%81%90%E6%80%96%E7%9A%84%E5%A5%B4%E9%9A%B6%E4%B8%BB/</loc>
+        <loc>http://azraeldeath.github.io/LOJ2325%E3%80%8C%E6%B8%85%E5%8D%8E%E9%9B%86%E8%AE%AD2017%E3%80%8D%E5%B0%8FY%E5%92%8C%E6%81%90%E6%80%96%E7%9A%84%E5%A5%B4%E9%9A%B6%E4%B8%BB/</loc>
         <lastmod>2018-07-25T11:10:06.441Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -543,7 +543,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3240%E3%80%90NOI2013%E3%80%91%E7%9F%A9%E9%98%B5%E6%B8%B8%E6%88%8F%20%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3240%E3%80%90NOI2013%E3%80%91%E7%9F%A9%E9%98%B5%E6%B8%B8%E6%88%8F%20%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/</loc>
         <lastmod>2018-07-20T09:58:56.086Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -551,7 +551,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3144%E3%80%90HNOI2013%E3%80%91%E5%88%87%E7%B3%95%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3144%E3%80%90HNOI2013%E3%80%91%E5%88%87%E7%B3%95%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-07-19T05:38:27.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -559,7 +559,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3551%E3%80%90ONTAK2010%E3%80%91Peaks%E5%8A%A0%E5%BC%BA%E7%89%88%20Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3551%E3%80%90ONTAK2010%E3%80%91Peaks%E5%8A%A0%E5%BC%BA%E7%89%88%20Kruskal%E9%87%8D%E6%9E%84%E6%A0%91+DFS%E5%BA%8F+%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
         <lastmod>2018-07-19T05:37:04.296Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -567,7 +567,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3512%20DZY%20Loves%20Math%20IV%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94+%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3512%20DZY%20Loves%20Math%20IV%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94+%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
         <lastmod>2018-07-19T01:04:48.900Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -575,7 +575,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3309%20DZY%20Loves%20Math%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3309%20DZY%20Loves%20Math%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-07-19T00:46:28.029Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -583,7 +583,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2987%20Earthquake%20%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2987%20Earthquake%20%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/</loc>
         <lastmod>2018-07-16T04:30:27.761Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -591,7 +591,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2187%20fraction%20%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2187%20fraction%20%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/</loc>
         <lastmod>2018-07-16T02:16:45.126Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -599,7 +599,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4025%20%E4%BA%8C%E5%88%86%E5%9B%BE%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4025%20%E4%BA%8C%E5%88%86%E5%9B%BE%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-07-07T06:52:04.154Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -607,7 +607,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3545%E3%80%90ONTAK2010%E3%80%91Peaks%20%E5%B9%B6%E6%9F%A5%E9%9B%86+%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3545%E3%80%90ONTAK2010%E3%80%91Peaks%20%E5%B9%B6%E6%9F%A5%E9%9B%86+%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
         <lastmod>2018-06-28T08:46:33.983Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -615,7 +615,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2588%20Count%20on%20a%20tree%20%E6%A0%91%E4%B8%8A%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2588%20Count%20on%20a%20tree%20%E6%A0%91%E4%B8%8A%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
         <lastmod>2018-06-28T03:57:45.836Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -623,7 +623,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4299%20FRBSUM%20%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4299%20FRBSUM%20%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
         <lastmod>2018-06-28T03:57:35.319Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -631,7 +631,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/HDU4348%20To%20The%20Moon%20%E5%B8%A6%E4%BF%AE%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/HDU4348%20To%20The%20Moon%20%E5%B8%A6%E4%BF%AE%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
         <lastmod>2018-06-28T03:55:21.957Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -639,7 +639,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3747%E3%80%90POI2015%E3%80%91Kinoman%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3747%E3%80%90POI2015%E3%80%91Kinoman%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-06-27T01:41:35.674Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -647,7 +647,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3996%E3%80%90TJOI2015%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%20%E6%9C%80%E5%A4%A7%E6%9D%83%E9%97%AD%E5%90%88%E5%AD%90%E5%9B%BE/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3996%E3%80%90TJOI2015%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%20%E6%9C%80%E5%A4%A7%E6%9D%83%E9%97%AD%E5%90%88%E5%AD%90%E5%9B%BE/</loc>
         <lastmod>2018-06-26T03:34:13.848Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -655,7 +655,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1565%E3%80%90NOI2009%E3%80%91%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%9C%80%E5%A4%A7%E6%9D%83%E9%97%AD%E5%90%88%E5%AD%90%E5%9B%BE+%E6%8B%93%E6%89%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1565%E3%80%90NOI2009%E3%80%91%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%9C%80%E5%A4%A7%E6%9D%83%E9%97%AD%E5%90%88%E5%AD%90%E5%9B%BE+%E6%8B%93%E6%89%91/</loc>
         <lastmod>2018-06-26T03:13:12.281Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -663,7 +663,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/UOJ300%E3%80%90CTSC2017%E3%80%91%E5%90%89%E5%A4%AB%E7%89%B9%20%E5%AD%90%E9%9B%86DP/</loc>
+        <loc>http://azraeldeath.github.io/UOJ300%E3%80%90CTSC2017%E3%80%91%E5%90%89%E5%A4%AB%E7%89%B9%20%E5%AD%90%E9%9B%86DP/</loc>
         <lastmod>2018-06-25T07:59:40.933Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -671,7 +671,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3231%E3%80%90SDOI2008%E3%80%91%E9%80%92%E5%BD%92%E6%95%B0%E5%88%97%20%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3231%E3%80%90SDOI2008%E3%80%91%E9%80%92%E5%BD%92%E6%95%B0%E5%88%97%20%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/</loc>
         <lastmod>2018-06-25T07:43:20.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -679,7 +679,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4657%20Tower%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4657%20Tower%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-06-24T14:30:03.256Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -687,7 +687,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3876%E3%80%90JSOI2014%E3%80%91%E6%94%AF%E7%BA%BF%E5%89%A7%E6%83%85%20%E5%B8%A6%E4%B8%8B%E7%95%8C%E7%9A%84%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3876%E3%80%90JSOI2014%E3%80%91%E6%94%AF%E7%BA%BF%E5%89%A7%E6%83%85%20%E5%B8%A6%E4%B8%8B%E7%95%8C%E7%9A%84%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-06-24T14:26:31.058Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -695,7 +695,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1877%E3%80%90SDOI2009%E3%80%91%E6%99%A8%E8%B7%91%20%E6%8B%86%E7%82%B9%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1877%E3%80%90SDOI2009%E3%80%91%E6%99%A8%E8%B7%91%20%E6%8B%86%E7%82%B9%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-06-24T14:06:02.672Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -703,7 +703,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2095%E3%80%90POI2010%E3%80%91Bridges%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2095%E3%80%90POI2010%E3%80%91Bridges%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-06-21T09:13:26.040Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -711,7 +711,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2821%20%E4%BD%9C%E8%AF%97%20%E5%88%86%E5%9D%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2821%20%E4%BD%9C%E8%AF%97%20%E5%88%86%E5%9D%97/</loc>
         <lastmod>2018-06-21T04:04:15.768Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -719,7 +719,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3532%E3%80%90SDOI2014%E3%80%91Lis%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3532%E3%80%90SDOI2014%E3%80%91Lis%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-06-19T04:38:36.728Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -727,7 +727,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4869%E3%80%90SHOI2017%E3%80%91%E7%9B%B8%E9%80%A2%E6%98%AF%E9%97%AE%E5%80%99%20%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4869%E3%80%90SHOI2017%E3%80%91%E7%9B%B8%E9%80%A2%E6%98%AF%E9%97%AE%E5%80%99%20%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-06-12T01:27:44.961Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -735,7 +735,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4289%E3%80%90PA2012%E3%80%91Tax%20%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4289%E3%80%90PA2012%E3%80%91Tax%20%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
         <lastmod>2018-06-12T01:07:12.095Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -743,7 +743,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5210%20%E6%9C%80%E5%A4%A7%E8%BF%9E%E9%80%9A%E5%AD%90%E5%9D%97%E5%92%8C%20%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86+%E6%A0%91%E4%B8%8ADP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5210%20%E6%9C%80%E5%A4%A7%E8%BF%9E%E9%80%9A%E5%AD%90%E5%9D%97%E5%92%8C%20%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86+%E6%A0%91%E4%B8%8ADP/</loc>
         <lastmod>2018-06-10T11:04:24.992Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -751,7 +751,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2326%E3%80%90HNOI2011%E3%80%91%E6%95%B0%E5%AD%A6%E4%BD%9C%E4%B8%9A%20%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E4%BC%98%E5%8C%96DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2326%E3%80%90HNOI2011%E3%80%91%E6%95%B0%E5%AD%A6%E4%BD%9C%E4%B8%9A%20%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E4%BC%98%E5%8C%96DP/</loc>
         <lastmod>2018-06-07T12:50:43.364Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -759,7 +759,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2733%E3%80%90HNOI2012%E3%80%91%E6%B0%B8%E6%97%A0%E4%B9%A1%20%E5%B9%B6%E6%9F%A5%E9%9B%86+%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2733%E3%80%90HNOI2012%E3%80%91%E6%B0%B8%E6%97%A0%E4%B9%A1%20%E5%B9%B6%E6%9F%A5%E9%9B%86+%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/</loc>
         <lastmod>2018-06-07T12:34:15.905Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -767,7 +767,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/UOJ62%E3%80%90UR5%E3%80%91%E6%80%8E%E6%A0%B7%E8%B7%91%E5%BE%97%E6%9B%B4%E5%BF%AB%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/UOJ62%E3%80%90UR5%E3%80%91%E6%80%8E%E6%A0%B7%E8%B7%91%E5%BE%97%E6%9B%B4%E5%BF%AB%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-05-29T08:18:53.678Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -775,7 +775,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2141%20%E6%8E%92%E9%98%9F%20%E5%88%86%E5%9D%97+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2141%20%E6%8E%92%E9%98%9F%20%E5%88%86%E5%9D%97+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-05-29T08:15:39.799Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -783,7 +783,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2002%20Bounce%20%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A%20%E5%88%86%E5%9D%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2002%20Bounce%20%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A%20%E5%88%86%E5%9D%97/</loc>
         <lastmod>2018-05-29T08:00:10.094Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -791,7 +791,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-05-27T14:48:47.659Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -799,7 +799,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF235E%20Number%20Challenge%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/CF235E%20Number%20Challenge%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-05-27T14:10:58.154Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -807,7 +807,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4930%20%E6%A3%8B%E7%9B%98%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4930%20%E6%A3%8B%E7%9B%98%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-05-27T13:52:14.343Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -815,7 +815,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1927%E3%80%90SDOI2010%E3%80%91%E6%98%9F%E9%99%85%E7%AB%9E%E9%80%9F%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1927%E3%80%90SDOI2010%E3%80%91%E6%98%9F%E9%99%85%E7%AB%9E%E9%80%9F%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-05-27T13:27:42.980Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -823,7 +823,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1930%E3%80%90SHOI2003%E3%80%91Pacman%20%E5%90%83%E8%B1%86%E8%B1%86%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1930%E3%80%90SHOI2003%E3%80%91Pacman%20%E5%90%83%E8%B1%86%E8%B1%86%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-05-27T13:13:55.043Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -831,7 +831,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2339%E3%80%90HNOI2011%E3%80%91%E5%8D%A1%E5%86%9C%20%E8%AE%A1%E6%95%B0DP+%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2339%E3%80%90HNOI2011%E3%80%91%E5%8D%A1%E5%86%9C%20%E8%AE%A1%E6%95%B0DP+%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2018-05-23T04:37:55.050Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -839,7 +839,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3295%E3%80%90CQOI2011%E3%80%91%E5%8A%A8%E6%80%81%E9%80%86%E5%BA%8F%E5%AF%B9%20CDQ%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3295%E3%80%90CQOI2011%E3%80%91%E5%8A%A8%E6%80%81%E9%80%86%E5%BA%8F%E5%AF%B9%20CDQ%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-05-22T03:37:36.284Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -847,7 +847,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3262%20%E9%99%8C%E4%B8%8A%E8%8A%B1%E5%BC%80%20CDQ%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3262%20%E9%99%8C%E4%B8%8A%E8%8A%B1%E5%BC%80%20CDQ%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-05-22T03:30:46.872Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -855,7 +855,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2194%20%E5%BF%AB%E9%80%9F%E5%82%85%E7%AB%8B%E5%8F%B6%E4%B9%8B%E4%BA%8C%20FFT/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2194%20%E5%BF%AB%E9%80%9F%E5%82%85%E7%AB%8B%E5%8F%B6%E4%B9%8B%E4%BA%8C%20FFT/</loc>
         <lastmod>2018-05-22T03:17:10.254Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -863,7 +863,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5087%20polycomp%20bitset+%E5%88%86%E5%9D%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5087%20polycomp%20bitset+%E5%88%86%E5%9D%97/</loc>
         <lastmod>2018-05-22T03:06:28.763Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -871,7 +871,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5343%E3%80%90CTSC2018%E3%80%91%E6%B7%B7%E5%90%88%E6%9E%9C%E6%B1%81%20%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5343%E3%80%90CTSC2018%E3%80%91%E6%B7%B7%E5%90%88%E6%9E%9C%E6%B1%81%20%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-05-21T06:38:46.358Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -879,7 +879,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/UVa12345%20Dynamic%20len(set(a%5BLR%5D))%20%E5%B8%A6%E4%BF%AE%E8%8E%AB%E9%98%9F/</loc>
+        <loc>http://azraeldeath.github.io/UVa12345%20Dynamic%20len(set(a%5BLR%5D))%20%E5%B8%A6%E4%BF%AE%E8%8E%AB%E9%98%9F/</loc>
         <lastmod>2018-05-19T03:19:41.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -887,7 +887,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ3228%20Gold%20Transportation%20MST/</loc>
+        <loc>http://azraeldeath.github.io/POJ3228%20Gold%20Transportation%20MST/</loc>
         <lastmod>2018-05-19T03:18:43.605Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -895,7 +895,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ3207%20Ikki's%20Story%20IV%20-%20Panda's%20Trick%202-SAT/</loc>
+        <loc>http://azraeldeath.github.io/POJ3207%20Ikki's%20Story%20IV%20-%20Panda's%20Trick%202-SAT/</loc>
         <lastmod>2018-05-19T03:18:23.536Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -903,7 +903,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ2728%20Desert%20King%20%E4%BA%8C%E5%88%86+MST/</loc>
+        <loc>http://azraeldeath.github.io/POJ2728%20Desert%20King%20%E4%BA%8C%E5%88%86+MST/</loc>
         <lastmod>2018-05-19T03:18:12.357Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -911,7 +911,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ1201%20Intervals%20%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F%E7%B3%BB%E7%BB%9F/</loc>
+        <loc>http://azraeldeath.github.io/POJ1201%20Intervals%20%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F%E7%B3%BB%E7%BB%9F/</loc>
         <lastmod>2018-05-19T03:17:45.864Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -919,7 +919,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ1170%20Shopping%20Offers%20%E4%BA%94%E7%BB%B4DP/</loc>
+        <loc>http://azraeldeath.github.io/POJ1170%20Shopping%20Offers%20%E4%BA%94%E7%BB%B4DP/</loc>
         <lastmod>2018-05-19T03:17:27.224Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -927,7 +927,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/HDU4757%20Tree%20LCA+%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96Trie/</loc>
+        <loc>http://azraeldeath.github.io/HDU4757%20Tree%20LCA+%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96Trie/</loc>
         <lastmod>2018-05-19T03:16:03.805Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -935,7 +935,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/HDU5340%20Three%20Palindromes%20Manacher/</loc>
+        <loc>http://azraeldeath.github.io/HDU5340%20Three%20Palindromes%20Manacher/</loc>
         <lastmod>2018-05-19T03:15:45.619Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -943,7 +943,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF896C%20Willem,%20Chtholly%20and%20Seniorious%20ODT/</loc>
+        <loc>http://azraeldeath.github.io/CF896C%20Willem,%20Chtholly%20and%20Seniorious%20ODT/</loc>
         <lastmod>2018-05-19T01:40:15.159Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -951,7 +951,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF291D%20Choosing%20Capital%20for%20Treeland%20%E6%A0%91%E5%BD%A2DP/</loc>
+        <loc>http://azraeldeath.github.io/CF291D%20Choosing%20Capital%20for%20Treeland%20%E6%A0%91%E5%BD%A2DP/</loc>
         <lastmod>2018-05-19T01:38:01.268Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -959,7 +959,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/CF446C%20DZY%20Loves%20Fibonacci%20Numbers%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/CF446C%20DZY%20Loves%20Fibonacci%20Numbers%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-05-19T01:37:06.720Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -967,7 +967,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4355%20Play%20with%20sequence%20SegBeats/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4355%20Play%20with%20sequence%20SegBeats/</loc>
         <lastmod>2018-05-19T00:50:39.929Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -975,7 +975,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1064%E3%80%90NOI2008%E3%80%91%E5%81%87%E9%9D%A2%E8%88%9E%E4%BC%9A%20%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1064%E3%80%90NOI2008%E3%80%91%E5%81%87%E9%9D%A2%E8%88%9E%E4%BC%9A%20%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/</loc>
         <lastmod>2018-05-17T14:55:32.872Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -983,7 +983,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1179%E3%80%90APIO2009%E3%80%91ATM%20Tarjan/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1179%E3%80%90APIO2009%E3%80%91ATM%20Tarjan/</loc>
         <lastmod>2018-05-17T14:44:05.796Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -991,7 +991,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2527%E3%80%90POI2011%E3%80%91Meteors%20%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2527%E3%80%90POI2011%E3%80%91Meteors%20%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/</loc>
         <lastmod>2018-05-16T15:14:29.176Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -999,7 +999,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1901%20Dynamic%20Rankings%20%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1901%20Dynamic%20Rankings%20%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/</loc>
         <lastmod>2018-05-14T06:17:36.145Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1007,7 +1007,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4816%E3%80%90SDOI2017%E3%80%91%E6%95%B0%E5%AD%97%E8%A1%A8%E6%A0%BC%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4816%E3%80%90SDOI2017%E3%80%91%E6%95%B0%E5%AD%97%E8%A1%A8%E6%A0%BC%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-05-05T05:55:14.936Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1015,7 +1015,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2565%20%E6%9C%80%E9%95%BF%E5%8F%8C%E5%9B%9E%E6%96%87%E4%B8%B2%20Manacher/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2565%20%E6%9C%80%E9%95%BF%E5%8F%8C%E5%9B%9E%E6%96%87%E4%B8%B2%20Manacher/</loc>
         <lastmod>2018-05-05T04:37:32.480Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1023,7 +1023,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3143%E3%80%90HNOI2013%E3%80%91%E6%B8%B8%E8%B5%B0%20%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3143%E3%80%90HNOI2013%E3%80%91%E6%B8%B8%E8%B5%B0%20%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</loc>
         <lastmod>2018-05-04T14:52:13.549Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1031,7 +1031,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1013%E3%80%90JSOI2008%E3%80%91%E7%90%83%E5%BD%A2%E7%A9%BA%E9%97%B4%E4%BA%A7%E7%94%9F%E5%99%A8%20%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1013%E3%80%90JSOI2008%E3%80%91%E7%90%83%E5%BD%A2%E7%A9%BA%E9%97%B4%E4%BA%A7%E7%94%9F%E5%99%A8%20%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</loc>
         <lastmod>2018-05-04T12:09:58.132Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1039,7 +1039,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2466%E3%80%90%E4%B8%AD%E5%B1%B1%E5%B8%82%E9%80%892009%E3%80%91%E6%A0%91%20%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2466%E3%80%90%E4%B8%AD%E5%B1%B1%E5%B8%82%E9%80%892009%E3%80%91%E6%A0%91%20%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</loc>
         <lastmod>2018-05-04T11:52:48.285Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1047,7 +1047,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3784%20%E6%A0%91%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84%20%E7%82%B9%E5%88%86%E6%B2%BB+ST%E8%A1%A8+%E5%A0%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3784%20%E6%A0%91%E4%B8%8A%E7%9A%84%E8%B7%AF%E5%BE%84%20%E7%82%B9%E5%88%86%E6%B2%BB+ST%E8%A1%A8+%E5%A0%86/</loc>
         <lastmod>2018-05-03T09:31:40.157Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1055,7 +1055,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2006%E3%80%90NOI2010%E3%80%91%E8%B6%85%E7%BA%A7%E9%92%A2%E7%90%B4%20ST%E8%A1%A8+%E5%A0%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2006%E3%80%90NOI2010%E3%80%91%E8%B6%85%E7%BA%A7%E9%92%A2%E7%90%B4%20ST%E8%A1%A8+%E5%A0%86/</loc>
         <lastmod>2018-05-03T09:04:38.864Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1063,7 +1063,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2152%20%E8%81%AA%E8%81%AA%E5%8F%AF%E5%8F%AF%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2152%20%E8%81%AA%E8%81%AA%E5%8F%AF%E5%8F%AF%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-05-03T08:58:52.657Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1071,7 +1071,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4569%E3%80%90SCOI2016%E3%80%91%E8%90%8C%E8%90%8C%E5%93%92%20%E5%B9%B6%E6%9F%A5%E9%9B%86+ST%E8%A1%A8/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4569%E3%80%90SCOI2016%E3%80%91%E8%90%8C%E8%90%8C%E5%93%92%20%E5%B9%B6%E6%9F%A5%E9%9B%86+ST%E8%A1%A8/</loc>
         <lastmod>2018-05-03T08:33:45.210Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1079,7 +1079,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3219%20%E5%B7%A1%E6%B8%B8%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%82%B9%E5%88%86%E6%B2%BB+%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3219%20%E5%B7%A1%E6%B8%B8%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88+%E7%82%B9%E5%88%86%E6%B2%BB+%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/</loc>
         <lastmod>2018-05-03T08:31:09.443Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1087,7 +1087,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/NOIp2017%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/NOIp2017%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-05-03T02:39:28.281Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1095,7 +1095,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4516%E3%80%90SHOI2016%E3%80%91%E7%94%9F%E6%88%90%E9%AD%94%E5%92%92%20%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4516%E3%80%90SHOI2016%E3%80%91%E7%94%9F%E6%88%90%E9%AD%94%E5%92%92%20%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2018-05-02T06:35:02.654Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1103,7 +1103,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3697%20%E9%87%87%E8%8D%AF%E4%BA%BA%E7%9A%84%E8%B7%AF%E5%BE%84%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3697%20%E9%87%87%E8%8D%AF%E4%BA%BA%E7%9A%84%E8%B7%AF%E5%BE%84%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-05-02T06:31:23.091Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1111,7 +1111,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2599%E3%80%90IOI2011%E3%80%91Race%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2599%E3%80%90IOI2011%E3%80%91Race%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-05-02T06:13:26.103Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1119,7 +1119,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4334%E3%80%90JSOI2012%E3%80%91%E9%93%81%E6%8B%B3%20%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4334%E3%80%90JSOI2012%E3%80%91%E9%93%81%E6%8B%B3%20%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-05-01T08:17:25.970Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1127,7 +1127,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4174%20tty%E7%9A%84%E6%B1%82%E5%8A%A9%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4174%20tty%E7%9A%84%E6%B1%82%E5%8A%A9%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-05-01T00:39:30.099Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1135,7 +1135,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3994%E3%80%90SDOI2015%E3%80%91%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0%E5%92%8C%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3994%E3%80%90SDOI2015%E3%80%91%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0%E5%92%8C%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-04-30T11:46:43.242Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1143,7 +1143,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2154%20Crash%E7%9A%84%E6%95%B0%E5%AD%97%E8%A1%A8%E6%A0%BC%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2154%20Crash%E7%9A%84%E6%95%B0%E5%AD%97%E8%A1%A8%E6%A0%BC%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-04-28T01:32:00.688Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1151,7 +1151,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/LG1967%E3%80%90NOIp2013%E3%80%91%E8%B4%A7%E8%BD%A6%E8%BF%90%E8%BE%93%20LCA/</loc>
+        <loc>http://azraeldeath.github.io/LG1967%E3%80%90NOIp2013%E3%80%91%E8%B4%A7%E8%BD%A6%E8%BF%90%E8%BE%93%20LCA/</loc>
         <lastmod>2018-04-26T15:21:55.154Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1159,7 +1159,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/HDU4560%20%E6%88%91%E6%98%AF%E6%AD%8C%E6%89%8B%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/HDU4560%20%E6%88%91%E6%98%AF%E6%AD%8C%E6%89%8B%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-04-26T15:19:02.117Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1167,7 +1167,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1430%20%E5%B0%8F%E7%8C%B4%E6%89%93%E6%9E%B6%20Prufer%E5%BA%8F%E5%88%97+%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1430%20%E5%B0%8F%E7%8C%B4%E6%89%93%E6%9E%B6%20Prufer%E5%BA%8F%E5%88%97+%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2018-04-26T15:15:29.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1175,7 +1175,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4568%E3%80%90SCOI2016%E3%80%91%E5%B9%B8%E8%BF%90%E6%95%B0%E5%AD%97%20LCA+%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4568%E3%80%90SCOI2016%E3%80%91%E5%B9%B8%E8%BF%90%E6%95%B0%E5%AD%97%20LCA+%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
         <lastmod>2018-04-26T15:14:51.322Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1183,7 +1183,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2938%E3%80%90POI2000%E3%80%91%E7%97%85%E6%AF%92%20AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2938%E3%80%90POI2000%E3%80%91%E7%97%85%E6%AF%92%20AC%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2018-04-26T15:14:15.323Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1191,7 +1191,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3626%E3%80%90LNOI2014%E3%80%91LCA%20%E7%A6%BB%E7%BA%BF+%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3626%E3%80%90LNOI2014%E3%80%91LCA%20%E7%A6%BB%E7%BA%BF+%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</loc>
         <lastmod>2018-04-26T15:09:01.127Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1199,7 +1199,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3438%20%E5%B0%8FM%E7%9A%84%E4%BD%9C%E7%89%A9%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3438%20%E5%B0%8FM%E7%9A%84%E4%BD%9C%E7%89%A9%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-04-26T14:49:47.513Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1207,7 +1207,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3275%20Number%20%E9%BB%91%E7%99%BD%E6%9F%93%E8%89%B2+%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3275%20Number%20%E9%BB%91%E7%99%BD%E6%9F%93%E8%89%B2+%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-04-26T14:23:22.106Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1215,7 +1215,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1061%E3%80%90NOI2008%E3%80%91%E5%BF%97%E6%84%BF%E8%80%85%E6%8B%9B%E5%8B%9F%20%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E8%BD%AC%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1061%E3%80%90NOI2008%E3%80%91%E5%BF%97%E6%84%BF%E8%80%85%E6%8B%9B%E5%8B%9F%20%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E8%BD%AC%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-04-26T12:40:25.453Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1223,7 +1223,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/SCOI2018%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/SCOI2018%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-04-25T14:45:48.762Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1231,7 +1231,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1283%20%E5%BA%8F%E5%88%97%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1283%20%E5%BA%8F%E5%88%97%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-04-25T14:30:43.446Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1239,7 +1239,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2440%E3%80%90%E4%B8%AD%E5%B1%B1%E5%B8%82%E9%80%892011%E3%80%91%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0%20%E4%BA%8C%E5%88%86+%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%AE%B9%E6%96%A5/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2440%E3%80%90%E4%B8%AD%E5%B1%B1%E5%B8%82%E9%80%892011%E3%80%91%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0%20%E4%BA%8C%E5%88%86+%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%AE%B9%E6%96%A5/</loc>
         <lastmod>2018-04-25T04:52:39.223Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1247,7 +1247,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1033%E3%80%90ZJOI2007%E3%80%91%E6%9D%80%E8%9A%82%E8%9A%81%20%E6%A8%A1%E6%8B%9F/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1033%E3%80%90ZJOI2007%E3%80%91%E6%9D%80%E8%9A%82%E8%9A%81%20%E6%A8%A1%E6%8B%9F/</loc>
         <lastmod>2018-04-24T14:10:20.533Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1255,7 +1255,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1913%E3%80%90APIO2010%E3%80%91%E4%BF%A1%E5%8F%B7%E8%A6%86%E7%9B%96%20%E6%9E%81%E8%A7%92%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1913%E3%80%90APIO2010%E3%80%91%E4%BF%A1%E5%8F%B7%E8%A6%86%E7%9B%96%20%E6%9E%81%E8%A7%92%E6%8E%92%E5%BA%8F+%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
         <lastmod>2018-04-24T14:06:34.100Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1263,7 +1263,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4069%E3%80%90APIO2015%E3%80%91%E5%B7%B4%E5%8E%98%E5%B2%9B%E7%9A%84%E9%9B%95%E5%A1%91%20DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4069%E3%80%90APIO2015%E3%80%91%E5%B7%B4%E5%8E%98%E5%B2%9B%E7%9A%84%E9%9B%95%E5%A1%91%20DP/</loc>
         <lastmod>2018-04-24T09:14:48.567Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1271,7 +1271,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4293%E3%80%90PA2015%E3%80%91Siano%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4293%E3%80%90PA2015%E3%80%91Siano%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-04-24T09:10:30.439Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1279,7 +1279,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1860%E3%80%90ZJOI2006%E3%80%91Mahjong%E9%BA%BB%E5%B0%86%20DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1860%E3%80%90ZJOI2006%E3%80%91Mahjong%E9%BA%BB%E5%B0%86%20DP/</loc>
         <lastmod>2018-04-24T08:34:41.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1287,7 +1287,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3673%20%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86%20by%20zky%20%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3673%20%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86%20by%20zky%20%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-04-24T08:20:47.201Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1295,7 +1295,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4070%E3%80%90APIO2015%E3%80%91%E9%9B%85%E5%8A%A0%E8%BE%BE%E7%9A%84%E6%91%A9%E5%A4%A9%E6%A5%BC%20%E5%88%86%E5%9D%97+%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4070%E3%80%90APIO2015%E3%80%91%E9%9B%85%E5%8A%A0%E8%BE%BE%E7%9A%84%E6%91%A9%E5%A4%A9%E6%A5%BC%20%E5%88%86%E5%9D%97+%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
         <lastmod>2018-04-23T14:45:59.462Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1303,7 +1303,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5180%E3%80%90Baltic2016%E3%80%91Cities%20%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5180%E3%80%90Baltic2016%E3%80%91Cities%20%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/</loc>
         <lastmod>2018-04-23T13:53:16.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1311,7 +1311,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4152%E3%80%90AMPPZ2014%E3%80%91The%20Captain%20%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4152%E3%80%90AMPPZ2014%E3%80%91The%20Captain%20%E6%9C%80%E7%9F%AD%E8%B7%AF/</loc>
         <lastmod>2018-04-23T13:27:59.953Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1319,7 +1319,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4514%E3%80%90SDOI2016%E3%80%91%E6%95%B0%E5%AD%97%E9%85%8D%E5%AF%B9%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4514%E3%80%90SDOI2016%E3%80%91%E6%95%B0%E5%AD%97%E9%85%8D%E5%AF%B9%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-04-21T03:31:08.451Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1327,7 +1327,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1178%E3%80%90APIO2009%E3%80%91%E4%BC%9A%E8%AE%AE%E4%B8%AD%E5%BF%83%20%E8%B4%AA%E5%BF%83+%E5%80%8D%E5%A2%9E/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1178%E3%80%90APIO2009%E3%80%91%E4%BC%9A%E8%AE%AE%E4%B8%AD%E5%BF%83%20%E8%B4%AA%E5%BF%83+%E5%80%8D%E5%A2%9E/</loc>
         <lastmod>2018-04-20T12:58:24.673Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1335,7 +1335,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2753%E3%80%90SCOI2012%E3%80%91%E6%BB%91%E9%9B%AA%E4%B8%8E%E6%97%B6%E9%97%B4%E8%83%B6%E5%9B%8A%20MST/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2753%E3%80%90SCOI2012%E3%80%91%E6%BB%91%E9%9B%AA%E4%B8%8E%E6%97%B6%E9%97%B4%E8%83%B6%E5%9B%8A%20MST/</loc>
         <lastmod>2018-04-20T12:45:02.026Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1343,7 +1343,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1821%E3%80%90JSOI2010%E3%80%91Group%E9%83%A8%E8%90%BD%E5%88%92%E5%88%86%20MST/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1821%E3%80%90JSOI2010%E3%80%91Group%E9%83%A8%E8%90%BD%E5%88%92%E5%88%86%20MST/</loc>
         <lastmod>2018-04-20T12:29:56.260Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1351,7 +1351,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2303%E3%80%90APIO2011%E3%80%91%E6%96%B9%E6%A0%BC%E6%9F%93%E8%89%B2%20%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2303%E3%80%90APIO2011%E3%80%91%E6%96%B9%E6%A0%BC%E6%9F%93%E8%89%B2%20%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
         <lastmod>2018-04-20T12:21:28.438Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1359,7 +1359,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4144%E3%80%90AMPPZ2014%E3%80%91Petrol%20MST/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4144%E3%80%90AMPPZ2014%E3%80%91Petrol%20MST/</loc>
         <lastmod>2018-04-20T09:16:25.752Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1367,7 +1367,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4237%E3%80%90JOI2013%E3%80%91%E7%A8%BB%E8%8D%89%E4%BA%BA%20CDQ%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4237%E3%80%90JOI2013%E3%80%91%E7%A8%BB%E8%8D%89%E4%BA%BA%20CDQ%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-04-20T07:49:01.482Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1375,7 +1375,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/WXH%E8%A1%A8%E6%83%85%E5%8C%85/</loc>
+        <loc>http://azraeldeath.github.io/WXH%E8%A1%A8%E6%83%85%E5%8C%85/</loc>
         <lastmod>2018-04-17T04:54:22.154Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1383,7 +1383,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E5%A4%A7%E4%BD%AC%E4%BC%A0/</loc>
+        <loc>http://azraeldeath.github.io/%E5%A4%A7%E4%BD%AC%E4%BC%A0/</loc>
         <lastmod>2018-04-17T04:48:34.337Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1391,7 +1391,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2756%E3%80%90SCOI2012%E3%80%91%E5%A5%87%E6%80%AA%E7%9A%84%E6%B8%B8%E6%88%8F%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2756%E3%80%90SCOI2012%E3%80%91%E5%A5%87%E6%80%AA%E7%9A%84%E6%B8%B8%E6%88%8F%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-04-17T04:43:22.432Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1399,7 +1399,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2809%E3%80%90APIO2012%E3%80%91Dispatching%20%E5%8F%AF%E5%B9%B6%E5%A0%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2809%E3%80%90APIO2012%E3%80%91Dispatching%20%E5%8F%AF%E5%B9%B6%E5%A0%86/</loc>
         <lastmod>2018-04-16T08:51:55.549Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1407,7 +1407,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ5251%E3%80%902018%E5%A4%9A%E7%9C%81%E7%9C%81%E9%98%9F%E8%81%94%E6%B5%8B%E3%80%91%E5%8A%88%E9%85%8D%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ5251%E3%80%902018%E5%A4%9A%E7%9C%81%E7%9C%81%E9%98%9F%E8%81%94%E6%B5%8B%E3%80%91%E5%8A%88%E9%85%8D%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-04-16T08:38:56.018Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1415,7 +1415,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3675%E3%80%90APIO2014%E3%80%91%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3675%E3%80%90APIO2014%E3%80%91%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2018-04-16T03:59:00.225Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1423,7 +1423,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1911%E3%80%90APIO2010%E3%80%91%E7%89%B9%E5%88%AB%E8%A1%8C%E5%8A%A8%E9%98%9F%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1911%E3%80%90APIO2010%E3%80%91%E7%89%B9%E5%88%AB%E8%A1%8C%E5%8A%A8%E9%98%9F%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2018-04-16T03:39:04.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1431,7 +1431,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3730%20%E9%9C%87%E6%B3%A2%20%E5%8A%A8%E6%80%81%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3730%20%E9%9C%87%E6%B3%A2%20%E5%8A%A8%E6%80%81%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-04-14T08:43:17.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1439,7 +1439,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1468%20Tree%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1468%20Tree%20%E7%82%B9%E5%88%86%E6%B2%BB/</loc>
         <lastmod>2018-04-14T08:22:52.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1447,7 +1447,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3226%E3%80%90SDOI2008%E3%80%91%E6%A0%A1%E9%97%A8%E5%A4%96%E7%9A%84%E5%8C%BA%E9%97%B4%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3226%E3%80%90SDOI2008%E3%80%91%E6%A0%A1%E9%97%A8%E5%A4%96%E7%9A%84%E5%8C%BA%E9%97%B4%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-04-13T08:22:56.426Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1455,7 +1455,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3944%20Sum%20%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3944%20Sum%20%E6%9D%9C%E6%95%99%E7%AD%9B/</loc>
         <lastmod>2018-04-12T14:45:55.652Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1463,7 +1463,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2434%E3%80%90NOI2011%E3%80%91%E9%98%BF%E7%8B%B8%E7%9A%84%E6%89%93%E5%AD%97%E6%9C%BA%20AC%E8%87%AA%E5%8A%A8%E6%9C%BA+Fail%E6%A0%91+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2434%E3%80%90NOI2011%E3%80%91%E9%98%BF%E7%8B%B8%E7%9A%84%E6%89%93%E5%AD%97%E6%9C%BA%20AC%E8%87%AA%E5%8A%A8%E6%9C%BA+Fail%E6%A0%91+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-04-04T12:59:10.517Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1471,7 +1471,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3289%20Mato%E7%9A%84%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%20%E8%8E%AB%E9%98%9F+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3289%20Mato%E7%9A%84%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%20%E8%8E%AB%E9%98%9F+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-04-04T12:58:39.293Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1479,7 +1479,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2115%E3%80%90WC2011%E3%80%91Xor%20%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2115%E3%80%90WC2011%E3%80%91Xor%20%E7%BA%BF%E6%80%A7%E5%9F%BA/</loc>
         <lastmod>2018-04-02T13:03:14.912Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1487,7 +1487,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1190%E3%80%90HNOI2007%E3%80%91%E6%A2%A6%E5%B9%BB%E5%B2%9B%E5%AE%9D%E7%8F%A0%20%E5%88%86%E5%B1%82DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1190%E3%80%90HNOI2007%E3%80%91%E6%A2%A6%E5%B9%BB%E5%B2%9B%E5%AE%9D%E7%8F%A0%20%E5%88%86%E5%B1%82DP/</loc>
         <lastmod>2018-04-02T05:14:46.675Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1495,7 +1495,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2321%E3%80%90BJ2011%E9%9B%86%E8%AE%AD%E3%80%91%E6%98%9F%E5%99%A8%20%E7%89%A9%E7%90%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2321%E3%80%90BJ2011%E9%9B%86%E8%AE%AD%E3%80%91%E6%98%9F%E5%99%A8%20%E7%89%A9%E7%90%86/</loc>
         <lastmod>2018-04-02T03:21:17.653Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1503,7 +1503,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3158%20%E5%8D%83%E9%92%A7%E4%B8%80%E5%8F%91%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3158%20%E5%8D%83%E9%92%A7%E4%B8%80%E5%8F%91%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-04-02T03:19:08.159Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1511,7 +1511,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2820%20YY%E7%9A%84GCD%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2820%20YY%E7%9A%84GCD%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-04-02T03:17:28.130Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1519,7 +1519,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2671%20Calc%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2671%20Calc%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-04-02T03:02:20.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1527,7 +1527,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2177%20%E6%9B%BC%E5%93%88%E9%A1%BF%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%20%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E4%BC%98%E5%8C%96%E5%BB%BA%E8%BE%B9/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2177%20%E6%9B%BC%E5%93%88%E9%A1%BF%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%20%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E4%BC%98%E5%8C%96%E5%BB%BA%E8%BE%B9/</loc>
         <lastmod>2018-03-30T12:38:44.771Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1535,7 +1535,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/%E6%B4%9B%E8%B0%B7%E6%A8%A1%E6%9D%BF%E6%B1%87%E6%80%BB/</loc>
+        <loc>http://azraeldeath.github.io/%E6%B4%9B%E8%B0%B7%E6%A8%A1%E6%9D%BF%E6%B1%87%E6%80%BB/</loc>
         <lastmod>2018-03-29T11:31:43.323Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1543,7 +1543,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1078%E3%80%90SCOI2008%E3%80%91%E6%96%9C%E5%A0%86%20%E5%8F%AF%E5%B9%B6%E5%A0%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1078%E3%80%90SCOI2008%E3%80%91%E6%96%9C%E5%A0%86%20%E5%8F%AF%E5%B9%B6%E5%A0%86/</loc>
         <lastmod>2018-03-28T12:46:40.985Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1551,7 +1551,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1071%E3%80%90SCOI2007%E3%80%91%E7%BB%84%E9%98%9F%20%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1071%E3%80%90SCOI2007%E3%80%91%E7%BB%84%E9%98%9F%20%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
         <lastmod>2018-03-28T12:32:31.475Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1559,7 +1559,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4034%E3%80%90HAOI2015%E3%80%91%E6%A0%91%E4%B8%8A%E6%93%8D%E4%BD%9C%20%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4034%E3%80%90HAOI2015%E3%80%91%E6%A0%91%E4%B8%8A%E6%93%8D%E4%BD%9C%20%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</loc>
         <lastmod>2018-03-28T12:14:20.500Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1567,7 +1567,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1006%E3%80%90HNOI2008%E3%80%91%E7%A5%9E%E5%A5%87%E7%9A%84%E5%9B%BD%E5%BA%A6%20%E5%BC%A6%E5%9B%BE+MCS/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1006%E3%80%90HNOI2008%E3%80%91%E7%A5%9E%E5%A5%87%E7%9A%84%E5%9B%BD%E5%BA%A6%20%E5%BC%A6%E5%9B%BE+MCS/</loc>
         <lastmod>2018-03-28T12:11:07.442Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1575,7 +1575,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1008%E3%80%90HNOI2008%E3%80%91%E8%B6%8A%E7%8B%B1%20%E8%A1%A5%E9%9B%86%E8%BD%AC%E6%8D%A2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1008%E3%80%90HNOI2008%E3%80%91%E8%B6%8A%E7%8B%B1%20%E8%A1%A5%E9%9B%86%E8%BD%AC%E6%8D%A2/</loc>
         <lastmod>2018-03-28T12:01:14.775Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1583,7 +1583,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1052%E3%80%90HAOI2007%E3%80%91%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1052%E3%80%90HAOI2007%E3%80%91%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98%20%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/</loc>
         <lastmod>2018-03-28T11:59:08.224Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1591,7 +1591,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3993%E3%80%90SDOI2015%E3%80%91%E6%98%9F%E9%99%85%E6%88%98%E4%BA%89%20%E4%BA%8C%E5%88%86+%E6%9C%80%E5%A4%A7%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3993%E3%80%90SDOI2015%E3%80%91%E6%98%9F%E9%99%85%E6%88%98%E4%BA%89%20%E4%BA%8C%E5%88%86+%E6%9C%80%E5%A4%A7%E6%B5%81/</loc>
         <lastmod>2018-03-28T11:51:31.008Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1599,7 +1599,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/LG1073%E3%80%90NOIp2009%E3%80%91%E6%9C%80%E4%BC%98%E8%B4%B8%E6%98%93%20Tarjan+DP/</loc>
+        <loc>http://azraeldeath.github.io/LG1073%E3%80%90NOIp2009%E3%80%91%E6%9C%80%E4%BC%98%E8%B4%B8%E6%98%93%20Tarjan+DP/</loc>
         <lastmod>2018-03-27T12:25:41.212Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1607,7 +1607,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3282%20Tree%20LCT/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3282%20Tree%20LCT/</loc>
         <lastmod>2018-03-27T12:25:30.206Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1615,7 +1615,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/HDU3068%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%20Manacher/</loc>
+        <loc>http://azraeldeath.github.io/HDU3068%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%20Manacher/</loc>
         <lastmod>2018-03-27T12:24:51.916Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1623,7 +1623,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1997%E3%80%90HNOI2010%E3%80%91Planer%202-SAT/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1997%E3%80%90HNOI2010%E3%80%91Planer%202-SAT/</loc>
         <lastmod>2018-03-27T12:24:17.180Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1631,7 +1631,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1046%E3%80%90HAOI2007%E3%80%91%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%20DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1046%E3%80%90HAOI2007%E3%80%91%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%20DP/</loc>
         <lastmod>2018-03-27T12:23:54.716Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1639,7 +1639,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4695%20%E6%9C%80%E5%81%87%E5%A5%B3%E9%80%89%E6%89%8B%20SegBeats/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4695%20%E6%9C%80%E5%81%87%E5%A5%B3%E9%80%89%E6%89%8B%20SegBeats/</loc>
         <lastmod>2018-03-27T12:22:40.679Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1647,7 +1647,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1027%E3%80%90JSOI2007%E3%80%91%E5%90%88%E9%87%91%20%E5%87%B8%E5%8C%85+Floyed/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1027%E3%80%90JSOI2007%E3%80%91%E5%90%88%E9%87%91%20%E5%87%B8%E5%8C%85+Floyed/</loc>
         <lastmod>2018-03-27T11:53:43.348Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1655,7 +1655,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4491%20%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E9%A2%98%E7%9B%AE%E5%90%8D%E5%AD%97%E6%98%AF%E4%BB%80%E4%B9%88%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4491%20%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E9%A2%98%E7%9B%AE%E5%90%8D%E5%AD%97%E6%98%AF%E4%BB%80%E4%B9%88%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-03-27T11:25:47.627Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1663,7 +1663,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1095%E3%80%90ZJOI2007%E3%80%91Hide%E6%8D%89%E8%BF%B7%E8%97%8F%20%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1095%E3%80%90ZJOI2007%E3%80%91Hide%E6%8D%89%E8%BF%B7%E8%97%8F%20%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97+%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-03-23T13:06:12.164Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1671,7 +1671,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1068%E3%80%90SCOI2007%E3%80%91%E5%8E%8B%E7%BC%A9%20%E5%8C%BA%E9%97%B4DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1068%E3%80%90SCOI2007%E3%80%91%E5%8E%8B%E7%BC%A9%20%E5%8C%BA%E9%97%B4DP/</loc>
         <lastmod>2018-03-21T15:08:41.880Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1679,7 +1679,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1857%E3%80%90SCOI2010%E3%80%91%E4%BC%A0%E9%80%81%E5%B8%A6%20%E4%B8%89%E5%88%86%E6%B3%95/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1857%E3%80%90SCOI2010%E3%80%91%E4%BC%A0%E9%80%81%E5%B8%A6%20%E4%B8%89%E5%88%86%E6%B3%95/</loc>
         <lastmod>2018-03-20T03:50:21.082Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1687,7 +1687,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3594%E3%80%90SCOI2014%E3%80%91%E6%96%B9%E4%BC%AF%E4%BC%AF%E7%9A%84%E7%8E%89%E7%B1%B3%E7%94%B0%20%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E4%BC%98%E5%8C%96DP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3594%E3%80%90SCOI2014%E3%80%91%E6%96%B9%E4%BC%AF%E4%BC%AF%E7%9A%84%E7%8E%89%E7%B1%B3%E7%94%B0%20%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E4%BC%98%E5%8C%96DP/</loc>
         <lastmod>2018-03-18T07:20:28.842Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1695,7 +1695,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1096%E3%80%90ZJOI2007%E3%80%91%E4%BB%93%E5%BA%93%E5%BB%BA%E8%AE%BE%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1096%E3%80%90ZJOI2007%E3%80%91%E4%BB%93%E5%BA%93%E5%BB%BA%E8%AE%BE%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2018-03-18T04:45:26.666Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1703,7 +1703,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1070%E3%80%90SCOI2007%E3%80%91%E4%BF%AE%E8%BD%A6%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1070%E3%80%90SCOI2007%E3%80%91%E4%BF%AE%E8%BD%A6%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-03-18T04:44:04.542Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1711,7 +1711,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1069%E3%80%90SCOI2007%E3%80%91%E6%9C%80%E5%A4%A7%E5%9C%9F%E5%9C%B0%E9%9D%A2%E7%A7%AF%20%E6%97%8B%E8%BD%AC%E5%8D%A1%E5%A3%B3/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1069%E3%80%90SCOI2007%E3%80%91%E6%9C%80%E5%A4%A7%E5%9C%9F%E5%9C%B0%E9%9D%A2%E7%A7%AF%20%E6%97%8B%E8%BD%AC%E5%8D%A1%E5%A3%B3/</loc>
         <lastmod>2018-03-18T04:43:16.679Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1719,7 +1719,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1026%E3%80%90SCOI2009%E3%80%91Windy%E6%95%B0%20%E6%95%B0%E4%BD%8DDP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1026%E3%80%90SCOI2009%E3%80%91Windy%E6%95%B0%20%E6%95%B0%E4%BD%8DDP/</loc>
         <lastmod>2018-03-16T15:43:15.742Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1727,7 +1727,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1010%E3%80%90HNOI2008%E3%80%91%E7%8E%A9%E5%85%B7%E8%A3%85%E7%AE%B1toy%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1010%E3%80%90HNOI2008%E3%80%91%E7%8E%A9%E5%85%B7%E8%A3%85%E7%AE%B1toy%20%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2018-03-16T15:41:41.415Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1735,7 +1735,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3597%E3%80%90SCOI2014%E3%80%91%E6%96%B9%E4%BC%AF%E4%BC%AF%E8%BF%90%E6%A4%B0%E5%AD%90%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3597%E3%80%90SCOI2014%E3%80%91%E6%96%B9%E4%BC%AF%E4%BC%AF%E8%BF%90%E6%A4%B0%E5%AD%90%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-03-16T06:17:24.278Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1743,7 +1743,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3998%E3%80%90TJOI2015%E3%80%91%E5%BC%A6%E8%AE%BA%20%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3998%E3%80%90TJOI2015%E3%80%91%E5%BC%A6%E8%AE%BA%20%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2018-03-16T06:16:08.577Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1751,7 +1751,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4407%20%E4%BA%8E%E7%A5%9E%E4%B9%8B%E6%80%92%E5%8A%A0%E5%BC%BA%E7%89%88%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4407%20%E4%BA%8E%E7%A5%9E%E4%B9%8B%E6%80%92%E5%8A%A0%E5%BC%BA%E7%89%88%20%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/</loc>
         <lastmod>2018-03-16T06:15:34.957Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1759,7 +1759,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4443%E3%80%90SCOI2015%E3%80%91%E5%B0%8F%E5%87%B8%E7%8E%A9%E7%9F%A9%E9%98%B5%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4443%E3%80%90SCOI2015%E3%80%91%E5%B0%8F%E5%87%B8%E7%8E%A9%E7%9F%A9%E9%98%B5%20%E4%BA%8C%E5%88%86+%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-03-16T06:14:21.559Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1767,7 +1767,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1001%E3%80%90BJOI2006%E3%80%91%E7%8B%BC%E6%8A%93%E5%85%94%E5%AD%90%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1001%E3%80%90BJOI2006%E3%80%91%E7%8B%BC%E6%8A%93%E5%85%94%E5%AD%90%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-03-16T06:13:55.925Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1775,7 +1775,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20171219-30%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20171219-30%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-11T12:07:07.124Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1783,7 +1783,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20171001-08%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20171001-08%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-11T12:06:58.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1791,7 +1791,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170918-24%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170918-24%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-11T08:48:13.583Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1799,7 +1799,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170710%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170710%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T08:00:04.504Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1807,7 +1807,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170707%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170707%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T07:51:27.791Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1815,7 +1815,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170706%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170706%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T07:49:44.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1823,7 +1823,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170705%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170705%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T07:20:04.392Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1831,7 +1831,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170704%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170704%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T07:19:09.582Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1839,7 +1839,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170703%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170703%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T07:16:33.232Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1847,7 +1847,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170701%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170701%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T07:14:50.205Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1855,7 +1855,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170630%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170630%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:10:27.518Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1863,7 +1863,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170629%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170629%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:08:19.615Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1871,7 +1871,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170628%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170628%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:06:16.617Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1879,7 +1879,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170627%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170627%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:05:11.763Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1887,7 +1887,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170626%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170626%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:03:30.199Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1895,7 +1895,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170622%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170622%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:02:11.368Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1903,7 +1903,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/20170623%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://azraeldeath.github.io/20170623%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2018-03-09T06:01:55.292Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1911,7 +1911,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3691%20%E6%B8%B8%E8%A1%8C%20%E4%BA%8C%E5%88%86+%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3691%20%E6%B8%B8%E8%A1%8C%20%E4%BA%8C%E5%88%86+%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-03-08T08:42:44.409Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1919,7 +1919,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1934%E3%80%90SHOI2007%E3%80%91%E5%96%84%E6%84%8F%E7%9A%84%E6%8A%95%E7%A5%A8%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1934%E3%80%90SHOI2007%E3%80%91%E5%96%84%E6%84%8F%E7%9A%84%E6%8A%95%E7%A5%A8%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-03-08T08:36:45.667Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1927,7 +1927,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1012%E3%80%90JSOI2008%E3%80%91%E6%9C%80%E5%A4%A7%E6%95%B0%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1012%E3%80%90JSOI2008%E3%80%91%E6%9C%80%E5%A4%A7%E6%95%B0%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-03-08T08:33:39.150Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1935,7 +1935,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1015%E3%80%90JSOI2008%E3%80%91%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98%20%E7%A6%BB%E7%BA%BF%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1015%E3%80%90JSOI2008%E3%80%91%E6%98%9F%E7%90%83%E5%A4%A7%E6%88%98%20%E7%A6%BB%E7%BA%BF%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
         <lastmod>2018-03-08T08:31:58.032Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1943,7 +1943,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4199%E3%80%90NOI2015%E3%80%91%E5%93%81%E9%85%92%E5%A4%A7%E4%BC%9A%20%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4199%E3%80%90NOI2015%E3%80%91%E5%93%81%E9%85%92%E5%A4%A7%E4%BC%9A%20%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-03-08T08:25:31.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1951,7 +1951,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1066%E3%80%90SCOI2007%E3%80%91%E8%9C%A5%E8%9C%B4%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1066%E3%80%90SCOI2007%E3%80%91%E8%9C%A5%E8%9C%B4%20%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-03-08T08:23:50.904Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1959,7 +1959,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1103%E3%80%90POI2007%E3%80%91%E5%A4%A7%E9%83%BD%E5%B8%82meg%20%E6%A0%91%E4%B8%8A%E5%B7%AE%E5%88%86+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1103%E3%80%90POI2007%E3%80%91%E5%A4%A7%E9%83%BD%E5%B8%82meg%20%E6%A0%91%E4%B8%8A%E5%B7%AE%E5%88%86+%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-03-08T08:19:03.711Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1967,7 +1967,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3632%20%E5%A4%96%E5%A4%AA%E7%A9%BA%E6%97%85%E8%A1%8C%20%E9%9A%8F%E6%9C%BA%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3632%20%E5%A4%96%E5%A4%AA%E7%A9%BA%E6%97%85%E8%A1%8C%20%E9%9A%8F%E6%9C%BA%E5%8C%96/</loc>
         <lastmod>2018-03-08T08:18:11.349Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1975,7 +1975,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4148%E3%80%90AMPPZ2014%E3%80%91Pillars%20%E6%9E%84%E9%80%A0/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4148%E3%80%90AMPPZ2014%E3%80%91Pillars%20%E6%9E%84%E9%80%A0/</loc>
         <lastmod>2018-03-08T08:00:28.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1983,7 +1983,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4325%E3%80%90NOIp2015%E3%80%91%E6%96%97%E5%9C%B0%E4%B8%BB%20%E6%90%9C%E7%B4%A2+%E8%B4%AA%E5%BF%83/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4325%E3%80%90NOIp2015%E3%80%91%E6%96%97%E5%9C%B0%E4%B8%BB%20%E6%90%9C%E7%B4%A2+%E8%B4%AA%E5%BF%83/</loc>
         <lastmod>2018-03-08T07:54:32.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1991,7 +1991,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1475%20%E6%96%B9%E6%A0%BC%E5%8F%96%E6%95%B0%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1475%20%E6%96%B9%E6%A0%BC%E5%8F%96%E6%95%B0%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-03-08T07:48:06.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1999,7 +1999,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ2187%20Beauty%20Contest%20%E6%97%8B%E8%BD%AC%E5%8D%A1%E5%A3%B3/</loc>
+        <loc>http://azraeldeath.github.io/POJ2187%20Beauty%20Contest%20%E6%97%8B%E8%BD%AC%E5%8D%A1%E5%A3%B3/</loc>
         <lastmod>2018-03-08T07:33:58.762Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2007,7 +2007,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1787%E3%80%90AHOI2008%E3%80%91Meet%E7%B4%A7%E6%80%A5%E9%9B%86%E5%90%88%20LCA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1787%E3%80%90AHOI2008%E3%80%91Meet%E7%B4%A7%E6%80%A5%E9%9B%86%E5%90%88%20LCA/</loc>
         <lastmod>2018-03-08T07:32:44.004Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2015,7 +2015,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2406%20%E7%9F%A9%E9%98%B5%20%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2406%20%E7%9F%A9%E9%98%B5%20%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
         <lastmod>2018-03-08T07:31:21.120Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2023,7 +2023,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1972%E3%80%90SDOI2010%E3%80%91%E7%8C%AA%E5%9B%BD%E6%9D%80%20%E6%A8%A1%E6%8B%9F/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1972%E3%80%90SDOI2010%E3%80%91%E7%8C%AA%E5%9B%BD%E6%9D%80%20%E6%A8%A1%E6%8B%9F/</loc>
         <lastmod>2018-03-08T07:27:45.108Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2031,7 +2031,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1833%E3%80%90ZJOI2010%E3%80%91count%E6%95%B0%E5%AD%97%E8%AE%A1%E6%95%B0%20%E6%95%B0%E4%BD%8DDP/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1833%E3%80%90ZJOI2010%E3%80%91count%E6%95%B0%E5%AD%97%E8%AE%A1%E6%95%B0%20%E6%95%B0%E4%BD%8DDP/</loc>
         <lastmod>2018-03-08T07:21:45.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2039,7 +2039,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1999%E3%80%90NOIp2007%E3%80%91Core%E6%A0%91%E7%BD%91%E7%9A%84%E6%A0%B8%20%E6%A0%91%E7%9B%B8%E5%85%B3/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1999%E3%80%90NOIp2007%E3%80%91Core%E6%A0%91%E7%BD%91%E7%9A%84%E6%A0%B8%20%E6%A0%91%E7%9B%B8%E5%85%B3/</loc>
         <lastmod>2018-03-08T07:11:38.172Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2047,7 +2047,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2038%20%E5%B0%8FZ%E7%9A%84%E8%A2%9C%E5%AD%90%20%E8%8E%AB%E9%98%9F/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2038%20%E5%B0%8FZ%E7%9A%84%E8%A2%9C%E5%AD%90%20%E8%8E%AB%E9%98%9F/</loc>
         <lastmod>2018-03-08T07:09:29.415Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2055,7 +2055,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2396%20%E7%A5%9E%E5%A5%87%E7%9A%84%E7%9F%A9%E9%98%B5%20%E9%9A%8F%E6%9C%BA%E5%8C%96/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2396%20%E7%A5%9E%E5%A5%87%E7%9A%84%E7%9F%A9%E9%98%B5%20%E9%9A%8F%E6%9C%BA%E5%8C%96/</loc>
         <lastmod>2018-03-08T06:54:22.727Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2063,7 +2063,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ2521%E3%80%90SHOI2010%E3%80%91%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ2521%E3%80%90SHOI2010%E3%80%91%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%20%E6%9C%80%E5%B0%8F%E5%89%B2/</loc>
         <lastmod>2018-03-08T06:51:17.646Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2071,7 +2071,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3110%20K%E5%A4%A7%E6%95%B0%E6%9F%A5%E8%AF%A2%20%E6%A0%91%E5%A5%97%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3110%20K%E5%A4%A7%E6%95%B0%E6%9F%A5%E8%AF%A2%20%E6%A0%91%E5%A5%97%E6%A0%91/</loc>
         <lastmod>2018-03-08T05:04:35.573Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2079,7 +2079,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/LG1155%E3%80%90NOIp2008%E3%80%91%E5%8F%8C%E6%A0%88%E6%8E%92%E5%BA%8F%20%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9F%93%E8%89%B2/</loc>
+        <loc>http://azraeldeath.github.io/LG1155%E3%80%90NOIp2008%E3%80%91%E5%8F%8C%E6%A0%88%E6%8E%92%E5%BA%8F%20%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9F%93%E8%89%B2/</loc>
         <lastmod>2018-03-08T04:56:54.111Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2087,7 +2087,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ4151%E3%80%90AMPPZ2014%E3%80%91The%20Cave%20%E6%A0%91%E7%9B%B8%E5%85%B3/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ4151%E3%80%90AMPPZ2014%E3%80%91The%20Cave%20%E6%A0%91%E7%9B%B8%E5%85%B3/</loc>
         <lastmod>2018-03-08T04:50:14.948Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2095,7 +2095,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ2155%20Matrix%20%E6%A0%91%E5%A5%97%E6%A0%91%E4%BA%8C%E7%BB%B4%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
+        <loc>http://azraeldeath.github.io/POJ2155%20Matrix%20%E6%A0%91%E5%A5%97%E6%A0%91%E4%BA%8C%E7%BB%B4%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</loc>
         <lastmod>2018-03-08T04:46:55.141Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2103,7 +2103,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1798%E3%80%90AHOI2009%E3%80%91%20seq%E7%BB%B4%E6%8A%A4%E5%BA%8F%E5%88%97%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1798%E3%80%90AHOI2009%E3%80%91%20seq%E7%BB%B4%E6%8A%A4%E5%BA%8F%E5%88%97%20%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
         <lastmod>2018-03-08T04:45:19.844Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2111,7 +2111,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1822%E3%80%90JSOI2010%E3%80%91Frozen%20Nove%20%E5%86%B7%E5%86%BB%E6%B3%A2%20%E4%BA%8C%E5%88%86+%E6%9C%80%E5%A4%A7%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1822%E3%80%90JSOI2010%E3%80%91Frozen%20Nove%20%E5%86%B7%E5%86%BB%E6%B3%A2%20%E4%BA%8C%E5%88%86+%E6%9C%80%E5%A4%A7%E6%B5%81/</loc>
         <lastmod>2018-03-08T04:43:38.673Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2119,7 +2119,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ1221%E3%80%90HNOI2001%E3%80%91%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%20%E6%8B%86%E7%82%B9%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ1221%E3%80%90HNOI2001%E3%80%91%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%20%E6%8B%86%E7%82%B9%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-03-08T04:42:46.734Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2127,7 +2127,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3442%20%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%84%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3442%20%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%84%20%E8%B4%B9%E7%94%A8%E6%B5%81/</loc>
         <lastmod>2018-03-08T04:42:36.300Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2135,7 +2135,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/BZOJ3676%E3%80%90APIO2014%E3%80%91%E5%9B%9E%E6%96%87%E4%B8%B2%20%E5%9B%9E%E6%96%87%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
+        <loc>http://azraeldeath.github.io/BZOJ3676%E3%80%90APIO2014%E3%80%91%E5%9B%9E%E6%96%87%E4%B8%B2%20%E5%9B%9E%E6%96%87%E8%87%AA%E5%8A%A8%E6%9C%BA/</loc>
         <lastmod>2018-03-08T04:42:24.641Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2143,7 +2143,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/POJ1182%20%E3%80%90NOI2001%E3%80%91%20%E9%A3%9F%E7%89%A9%E9%93%BE%20%E7%A7%8D%E7%B1%BB%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+        <loc>http://azraeldeath.github.io/POJ1182%20%E3%80%90NOI2001%E3%80%91%20%E9%A3%9F%E7%89%A9%E9%93%BE%20%E7%A7%8D%E7%B1%BB%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
         <lastmod>2018-03-08T04:40:59.205Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2151,7 +2151,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/hello-world/</loc>
+        <loc>http://azraeldeath.github.io/hello-world/</loc>
         <lastmod>2018-03-04T10:35:58.014Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2159,7 +2159,7 @@
     </url>
 
     <url>
-        <loc>http://azrael.top/MathJax/</loc>
+        <loc>http://azraeldeath.github.io/MathJax/</loc>
         <lastmod>2018-03-03T08:09:21.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

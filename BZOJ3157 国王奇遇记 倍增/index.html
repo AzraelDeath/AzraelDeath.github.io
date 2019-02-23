@@ -73,7 +73,7 @@
 
 
 
-  <meta name="keywords" content="BZOJ,数论数学,倍增,">
+  <meta name="keywords" content="数论数学,BZOJ,倍增,">
 
 
 
@@ -99,10 +99,10 @@
 
 
 <meta name="description" content="Problem国王奇遇记                                                                                                        Description Input共一行，包括两个正整数        和        。 Output共一行，为所求表达式的值对">
-<meta name="keywords" content="BZOJ,数论数学,倍增">
+<meta name="keywords" content="数论数学,BZOJ,倍增">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BZOJ3157 国王奇遇记 <倍增>">
-<meta property="og:url" content="http://azrael.top/BZOJ3157 国王奇遇记 倍增/index.html">
+<meta property="og:url" content="http://azraeldeath.github.io/BZOJ3157 国王奇遇记 倍增/index.html">
 <meta property="og:site_name" content="NIRVANA">
 <meta property="og:description" content="Problem国王奇遇记                                                                                                        Description Input共一行，包括两个正整数        和        。 Output共一行，为所求表达式的值对">
 <meta property="og:locale" content="zh-Hans">
@@ -141,7 +141,7 @@
 
 
 
-  <link rel="canonical" href="http://azrael.top/BZOJ3157 国王奇遇记 倍增/">
+  <link rel="canonical" href="http://azraeldeath.github.io/BZOJ3157 国王奇遇记 倍增/">
 
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://azrael.top/BZOJ3157 国王奇遇记 倍增/">
+    <link itemprop="mainEntityOfPage" href="http://azraeldeath.github.io/BZOJ3157 国王奇遇记 倍增/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Azrael_Death">
@@ -1211,7 +1211,7 @@
 </g>
 </g>
 </svg></span>的问题，递归处理即可。</p>
-<p>加强版见<a href="http://azrael.top/BZOJ3516%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%20%E6%89%B0%E5%8A%A8%E6%B3%95/">BZOJ3516</a>，加强版之再加强版见<a href="http://azrael.top/BZOJ4126%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%E4%B9%8B%E5%86%8D%E5%8A%A0%E5%BC%BA%E7%89%88%20%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%8F%92%E5%80%BC/">BZOJ4126</a>。</p>
+<p>加强版见<a href="http://azrael.top/BZOJ3516%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%20%E6%89%B0%E5%8A%A8%E6%B3%95/" target="_blank" rel="noopener">BZOJ3516</a>，加强版之再加强版见<a href="http://azrael.top/BZOJ4126%20%E5%9B%BD%E7%8E%8B%E5%A5%87%E9%81%87%E8%AE%B0%E5%8A%A0%E5%BC%BA%E7%89%88%E4%B9%8B%E5%86%8D%E5%8A%A0%E5%BC%BA%E7%89%88%20%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%8F%92%E5%80%BC/" target="_blank" rel="noopener">BZOJ4126</a>。</p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MX 200</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> P 1000000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lnt;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt; <span class="title">inline</span> <span class="title">void</span> <span class="title">read</span>(<span class="title">T</span> &amp;<span class="title">x</span>) {</span></span><br><span class="line">    x = <span class="number">0</span>; <span class="keyword">int</span> c = getchar(), f = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span> (c == <span class="number">45</span>) f = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; <span class="built_in">isdigit</span>(c); c = getchar()) (x *= <span class="number">10</span>) += f*(c-<span class="string">'0'</span>);</span><br><span class="line">}</span><br><span class="line"><span class="keyword">int</span> n, m; lnt f[<span class="number">60</span>][MX+<span class="number">5</span>], p[MX+<span class="number">5</span>], fac[MX+<span class="number">5</span>], inv[MX+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>{</span><br><span class="line">    fac[<span class="number">0</span>] = inv[<span class="number">0</span>] = inv[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= MX; i++) fac[i] = fac[i<span class="number">-1</span>]*i%P;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= MX; i++) inv[i] = (P-P/i*inv[P%i]%P)%P;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= MX; i++) inv[i] = inv[i<span class="number">-1</span>]*inv[i]%P;</span><br><span class="line">}</span><br><span class="line"><span class="function">lnt <span class="title">Pow</span><span class="params">(lnt x, <span class="keyword">int</span> k)</span> </span>{</span><br><span class="line">    lnt ret = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; k; k &gt;&gt;= <span class="number">1</span>, x = x*x%P)</span><br><span class="line">        <span class="keyword">if</span> (k&amp;<span class="number">1</span>) ret = ret*x%P;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">}</span><br><span class="line"><span class="function">lnt <span class="title">C</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> m)</span> </span>{<span class="keyword">return</span> fac[n]*inv[m]%P*inv[n-m]%P;}</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">calc</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> stp)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (!n) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">if</span> (n&amp;<span class="number">1</span>) {</span><br><span class="line">        calc(n<span class="number">-1</span>, stp+<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= m; i++) f[stp][i] = m;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= m; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= i; j++)</span><br><span class="line">            f[stp][i] = (f[stp][i]+m*C(i, j)%P*f[stp+<span class="number">1</span>][j]%P)%P;</span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        calc(n/<span class="number">2</span>, stp+<span class="number">1</span>); lnt pw = Pow(m, n/<span class="number">2</span>); p[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) p[i] = p[i<span class="number">-1</span>]*(n/<span class="number">2</span>)%P;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= m; i++) f[stp][i] = f[stp+<span class="number">1</span>][i];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= m; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= i; j++)</span><br><span class="line">            f[stp][i] = (f[stp][i]+pw*C(i, j)%P*p[i-j]%P*f[stp+<span class="number">1</span>][j]%P)%P;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    read(n), read(m);</span><br><span class="line">    init(), calc(n, <span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, f[<span class="number">0</span>][m]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
       
     </div>
@@ -1243,7 +1243,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://azrael.top/BZOJ3157 国王奇遇记 倍增/" title="BZOJ3157 国王奇遇记 <倍增>">http://azrael.top/BZOJ3157 国王奇遇记 倍增/</a>
+    <a href="http://azraeldeath.github.io/BZOJ3157 国王奇遇记 倍增/" title="BZOJ3157 国王奇遇记 <倍增>">http://azraeldeath.github.io/BZOJ3157 国王奇遇记 倍增/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -1258,9 +1258,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
-          
             <a href="/tags/数论数学/" rel="tag"> <i class="fa fa-tag"></i> 数论数学</a>
+          
+            <a href="/tags/BZOJ/" rel="tag"> <i class="fa fa-tag"></i> BZOJ</a>
           
             <a href="/tags/倍增/" rel="tag"> <i class="fa fa-tag"></i> 倍增</a>
           
@@ -1275,8 +1275,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/CF40E Number Table 计数/" rel="next" title="CF40E Number Table <计数>">
-                <i class="fa fa-chevron-left"></i> CF40E Number Table &lt;计数&gt;
+              <a href="/BZOJ4001【TJOI2015】概率论 生成函数/" rel="next" title="BZOJ4001【TJOI2015】概率论 <生成函数>">
+                <i class="fa fa-chevron-left"></i> BZOJ4001【TJOI2015】概率论 &lt;生成函数&gt;
               </a>
             
           </div>
@@ -1285,8 +1285,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/BZOJ3516 国王奇遇记加强版 扰动法/" rel="prev" title="BZOJ3516 国王奇遇记加强版 <扰动法>">
-                BZOJ3516 国王奇遇记加强版 &lt;扰动法&gt; <i class="fa fa-chevron-right"></i>
+              <a href="/BZOJ2001【HNOI2010】城市建设 CDQ分治+MST/" rel="prev" title="BZOJ2001【HNOI2010】城市建设 < CDQ分治+MST >">
+                BZOJ2001【HNOI2010】城市建设 &lt; CDQ分治+MST &gt; <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1571,7 +1571,7 @@ var jiathis_config={
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async="" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">© <span itemprop="copyrightYear">2018</span>
+<div class="copyright">© <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
